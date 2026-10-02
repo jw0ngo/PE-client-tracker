@@ -1,0 +1,600 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title>PE Client Tracker</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a deal-desk list. One sticky strip of controls, then one card per announcement,
+   each led by its event and the pitch it opens. Hot items carry a left stripe, nothing else
+   gets a colour wash, so a screen of them still reads as text. */
+:root {
+  --bg: #f3f5f6;
+  --surface: #ffffff;
+  --fg: #16202a;
+  --muted: #5b6b78;
+  --faint: #8a98a4;
+  --rule: #d9e0e5;
+  --accent: #0f6e73;
+  --accent-soft: #dcefef;
+  --hot: #c9661a;
+  --hot-soft: #fbe9d9;
+  --ok: #2f6b45;
+  --ok-soft: #e1efe5;
+  --info: #3b5a7c;
+  --info-soft: #e3ebf4;
+  --display: "Archivo Narrow", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --body: "IBM Plex Sans", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101518; --surface: #171e23; --fg: #e6ebee; --muted: #9aa8b2; --faint: #65737d;
+    --rule: #263037; --accent: #4fc0c3; --accent-soft: #123538;
+    --hot: #e98a3c; --hot-soft: #3a2415; --ok: #7cc094; --ok-soft: #15291c;
+    --info: #93b3d6; --info-soft: #182636; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101518; --surface: #171e23; --fg: #e6ebee; --muted: #9aa8b2; --faint: #65737d;
+  --rule: #263037; --accent: #4fc0c3; --accent-soft: #123538;
+  --hot: #e98a3c; --hot-soft: #3a2415; --ok: #7cc094; --ok-soft: #15291c;
+  --info: #93b3d6; --info-soft: #182636; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.45 var(--body); -webkit-text-size-adjust: 100%; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+button:focus-visible, a:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+a { color: inherit; }
+.wrap { max-width: 640px; margin: 0 auto; padding-block: 0 48px; padding-inline: 16px; }
+
+/* ── header + controls ── */
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 14px 10px; display: flex; flex-direction: column; gap: 10px; }
+.mast { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.mast h1 { font-family: var(--display); font-weight: 700; font-size: 28px; letter-spacing: -.01em; margin: 0; line-height: 1; }
+.firms { display: flex; gap: 6px; flex-wrap: wrap; margin-top: -2px; }
+.firm { display: flex; align-items: center; gap: 8px; padding: 4px 10px 4px 4px; border-radius: 999px; border: 1px solid var(--rule); background: var(--surface); }
+.firm.on { border-color: var(--accent); background: var(--accent-soft); }
+.firm-logo { width: 24px; height: 24px; flex: none; border-radius: 5px; }
+.firm-name { font-family: var(--display); font-weight: 600; font-size: 15px; color: var(--muted); letter-spacing: .01em; }
+.firm.on .firm-name { color: var(--fg); }
+.stamp { font-family: var(--mono); font-size: 11.5px; color: var(--faint); white-space: nowrap; }
+.tabs { display: flex; gap: 18px; border-bottom: 1px solid var(--rule); }
+.tabs button { font-family: var(--display); font-weight: 700; font-size: 16px; letter-spacing: .01em; color: var(--faint); padding: 2px 0 8px; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+.tabs button.on { color: var(--fg); border-bottom-color: var(--accent); }
+.tgt .name { display: block; color: inherit; margin-top: 6px; font-family: var(--display); font-weight: 700; font-size: 20px; line-height: 1.2; text-decoration: none; }
+.tgt .where { font-size: 12.5px; color: var(--muted); margin-top: 3px; }
+.tgt .why { margin: 8px 0 0; font-size: 14px; line-height: 1.45; }
+.sig { margin-top: 9px; padding-left: 10px; border-left: 2px solid var(--rule); display: flex; flex-direction: column; gap: 5px; }
+.sig a { font-size: 13.5px; line-height: 1.35; text-decoration: none; color: var(--fg); }
+.src { font-family: var(--mono); font-size: 11px; color: var(--faint); text-decoration: underline; text-decoration-color: var(--rule); }
+.sig .src { font-size: 11px; }
+.sig a:hover { color: var(--accent); }
+.sig .d { font-family: var(--mono); font-size: 11px; color: var(--faint); margin-right: 6px; }
+.tag.live { color: var(--hot); background: var(--hot-soft); }
+.hold { display: inline-flex; align-items: baseline; gap: 5px; font-size: 11.5px; font-weight: 500; border-radius: 4px; padding: 2px 7px; color: var(--muted); background: var(--bg); border: 1px solid var(--rule); }
+.hold b { font-family: var(--mono); font-weight: 500; font-variant-numeric: tabular-nums; }
+.hold.ripe { color: var(--hot); background: var(--hot-soft); border-color: transparent; }
+.tag.watch { color: var(--info); background: var(--info-soft); }
+.seg { display: flex; background: var(--surface); border: 1px solid var(--rule); border-radius: 9px; padding: 3px; gap: 3px; }
+.seg button { flex: 1; padding: 7px 4px; border-radius: 6px; font-family: var(--display); font-weight: 600; font-size: 15px; color: var(--muted); }
+.seg button.on { background: var(--accent-soft); color: var(--accent); }
+.focus { display: flex; flex-direction: column; gap: 6px; }
+.focus-label { font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-size: 12.5px; font-weight: 500; color: var(--muted); border: 1px solid var(--rule); background: var(--surface); border-radius: 999px; padding: 5px 10px; }
+.chip.on { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+.banner { font-size: 13px; color: var(--muted); background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 8px 11px; }
+.banner.warn { color: var(--hot); background: var(--hot-soft); border-color: transparent; }
+
+/* ── cards ── */
+.list { display: flex; flex-direction: column; gap: 10px; padding-top: 6px; }
+.deal { background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--rule); border-radius: 10px; padding: 11px 13px 12px; min-width: 0; }
+.deal.hot { border-left-color: var(--hot); }
+.deal.warm { border-left-color: var(--accent); }
+.deal.gone { opacity: .55; }
+.meta { display: flex; align-items: baseline; gap: 7px; flex-wrap: wrap; font-size: 12px; color: var(--muted); }
+.tag { font-family: var(--mono); font-size: 10.5px; font-weight: 500; letter-spacing: .06em; padding: 2px 6px; border-radius: 4px; }
+.tag.release { color: var(--ok); background: var(--ok-soft); }
+.tag.reported { color: var(--hot); background: var(--hot-soft); }
+.tag.press { color: var(--info); background: var(--info-soft); }
+.kind { font-family: var(--display); font-weight: 700; font-size: 14px; color: var(--fg); letter-spacing: .01em; }
+.when { margin-left: auto; font-family: var(--mono); font-size: 11.5px; color: var(--faint); font-variant-numeric: tabular-nums; }
+.title { display: block; margin-top: 6px; font-family: var(--display); font-weight: 600; font-size: 19px; line-height: 1.22; text-decoration: none; text-wrap: balance; }
+.title:hover { color: var(--accent); }
+.fit { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+.th, .apac { font-size: 11.5px; font-weight: 500; border-radius: 4px; padding: 2px 7px; color: var(--info); background: var(--info-soft); }
+.th i { font-style: normal; font-weight: 400; opacity: .75; margin-left: 5px; }
+.apac { color: var(--ok); background: var(--ok-soft); }
+.move { margin: 9px 0 0; padding-left: 10px; border-left: 2px solid var(--accent); font-size: 14px; line-height: 1.45; }
+.summary { margin: 7px 0 0; font-size: 13.5px; color: var(--muted); line-height: 1.45; }
+.note { margin-top: 8px; font-size: 13.5px; line-height: 1.45; background: var(--bg); border-radius: 7px; padding: 7px 9px; white-space: pre-wrap; }
+.act { display: flex; gap: 6px; margin-top: 10px; align-items: center; flex-wrap: wrap; }
+.btn { font-size: 13px; font-weight: 500; color: var(--muted); border: 1px solid var(--rule); border-radius: 7px; padding: 6px 11px; }
+.btn.sel { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); font-weight: 600; }
+.btn:disabled { opacity: .5; cursor: default; }
+.lnk { margin-left: auto; font-size: 12.5px; color: var(--muted); text-decoration: underline; text-decoration-color: var(--rule); }
+.noted { margin-top: 8px; display: flex; flex-direction: column; gap: 6px; }
+.noted textarea { font: inherit; font-size: 14px; width: 100%; min-height: 64px; padding: 8px 9px; border: 1px solid var(--rule); border-radius: 7px; background: var(--bg); color: var(--fg); resize: vertical; }
+.noted .row { display: flex; gap: 6px; }
+.empty { text-align: center; color: var(--faint); font-size: 14.5px; padding: 48px 16px; line-height: 1.55; }
+.empty b { color: var(--muted); font-weight: 500; }
+.foot { font-size: 12.5px; color: var(--faint); line-height: 1.5; padding-top: 16px; }
+.toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 12px); z-index: 20;
+  background: var(--fg); color: var(--bg); font-size: 13px; font-weight: 500; padding: 8px 14px; border-radius: 999px; opacity: 0; pointer-events: none; transition: opacity .18s, transform .18s; }
+.toast.on { opacity: 1; transform: translate(-50%, 0); }
+@media (prefers-reduced-motion: reduce) { .toast { transition: none; } }
+</style>
+
+<div class="wrap">
+  <div class="top">
+    <div class="mast">
+      <h1 id="h1">PE Client Tracker</h1>
+      <span class="stamp" id="stamp">loading</span>
+    </div>
+    <!-- One button per firm. The mark is a monogram stand-in until a real logo is on hand. -->
+    <div class="firms" id="firms"></div>
+    <div class="tabs" id="tabs">
+      <button data-tab="news">Announcements</button>
+      <button data-tab="targets">Potential Targets</button>
+    </div>
+    <div class="seg" id="seg">
+      <button data-seg="priority">Priority</button>
+      <button data-seg="latest">Latest</button>
+      <button data-seg="pipeline" id="segPipeline">Pipeline</button>
+    </div>
+    <div class="focus" id="focus"><span class="focus-label">Focus areas</span><div class="chips" id="chips"></div></div>
+    <div class="banner" id="banner" hidden></div>
+  </div>
+  <div class="list" id="list">
+    <div class="empty"><b>Loading announcements.</b><br>Each one will show the event, the thesis it fits, and the SSG pitch it opens.</div>
+  </div>
+  <p class="foot" id="footNews">Event, thesis and APAC are read from the headline by keyword. The matched words sit under each tag. <span id="footTriage">Pursue, Watch, Dismiss and notes are saved and shared with anyone who can open this page.</span></p>
+  <p class="foot" id="footTargets" hidden>Targets are Jobi's candidates, not anything Warburg Pincus has said: companies in a focus area that look like what the firm buys, with the signals that make the case. A live process is reported by the press; everything else is a watch. Priority puts sponsor-owned companies first, longest hold at the top: a fund four or more years in is the seller most likely to run a process.</p>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const FIRMS = [{
+  id: "warburg-pincus", name: "Warburg Pincus", match: /warburg/i,
+  theses: [{"id":"data","label":"Data","short":"Data","strong":["information services","data provider","market data","data and analytics","data & analytics","analytics","intelligence","benchmarking","ratings","credit data","risk data","pricing data","data platform","proprietary data","research and data","index provider","data business","databases","data connectivity","data integration","data management","data infrastructure"],"weak":["data","insights","research","information","content","index","reporting"]},{"id":"fintech","label":"Fintech","short":"Fintech","strong":["fintech","financial technology","payments","payment","insurtech","wealthtech","wealth tech","regtech","core banking","banking software","lending platform","neobank","digital bank","remittance","investment accounting","trading platform","brokerage","buy now pay later","bnpl","merchant acquiring","card issuing","fund administration","wealth management platform"],"weak":["financial services","lending","credit","banking","insurance","wealth","asset management","capital markets","treasury","compliance"]},{"id":"ai","label":"AI Apps","short":"AI Apps","strong":["artificial intelligence","machine learning","generative ai","genai","agentic","ai-native","ai-powered","ai-driven","ai platform","vertical software","vertical saas","llm","computer vision","workflow automation"],"weak":["software","saas","cloud","automation","platform","workflow","erp","cybersecurity"]},{"id":"markets","label":"Marketplaces","short":"Marketplaces","strong":["marketplace","marketplaces","two-sided","network effects","classifieds","b2b platform","b2b marketplace","e-commerce platform","ecommerce platform","online platform","aggregator","booking platform","travel distribution","freight network","exchange platform","super app","super-app"],"weak":["network","e-commerce","ecommerce","online","travel","logistics","exchange","connects","buyers and sellers","community"]}]
+},{
+  id: "kkr", name: "KKR", match: /\bKKR\b/,
+  theses: [{"id":"software","label":"Software","short":"Software","strong":["software","saas","enterprise software","vertical software","cybersecurity","security software","cloud platform","erp","workflow","developer tools","infrastructure software","artificial intelligence","machine learning","generative ai","genai","agentic","ai-native","ai-powered","ai-driven","ai platform","vertical software","vertical saas","llm","computer vision","workflow automation"],"weak":["cloud","platform","automation","technology","digital","it services"]},{"id":"fintech","label":"Fintech","short":"Fintech","strong":["fintech","financial technology","payments","payment","insurtech","wealthtech","wealth tech","regtech","core banking","banking software","lending platform","neobank","digital bank","remittance","investment accounting","trading platform","brokerage","buy now pay later","bnpl","merchant acquiring","card issuing","fund administration","wealth management platform"],"weak":["financial services","lending","credit","banking","insurance","wealth","asset management","capital markets","treasury","compliance"]},{"id":"data","label":"Data","short":"Data","strong":["information services","data provider","market data","data and analytics","data & analytics","analytics","intelligence","benchmarking","ratings","credit data","risk data","pricing data","data platform","proprietary data","research and data","index provider","data business","databases","data connectivity","data integration","data management","data infrastructure"],"weak":["data","insights","research","information","content","index","reporting"]},{"id":"internet","label":"Consumer Internet","short":"Internet","strong":["consumer internet","digital media","streaming","gaming","social platform","creator","e-commerce platform","ecommerce platform","online platform","subscription","app","marketplace","marketplaces","two-sided","network effects","classifieds","b2b platform","b2b marketplace","e-commerce platform","ecommerce platform","online platform","aggregator","booking platform","travel distribution","freight network","exchange platform","super app","super-app"],"weak":["media","entertainment","consumer","online","content","sports","network","brand"]}]
+},{
+  id: "tpg", name: "TPG", match: /\bTPG\b(?!\s*(?:telecom|telecoms|mobile|internet))/i,
+  theses: [{"id":"software","label":"Software","short":"Software","strong":["software","saas","enterprise software","vertical software","cybersecurity","security software","cloud platform","erp","workflow","developer tools","infrastructure software","artificial intelligence","machine learning","generative ai","genai","agentic","ai-native","ai-powered","ai-driven","ai platform","vertical software","vertical saas","llm","computer vision","workflow automation"],"weak":["cloud","platform","automation","technology","digital","it services"]},{"id":"fintech","label":"Fintech","short":"Fintech","strong":["fintech","financial technology","payments","payment","insurtech","wealthtech","wealth tech","regtech","core banking","banking software","lending platform","neobank","digital bank","remittance","investment accounting","trading platform","brokerage","buy now pay later","bnpl","merchant acquiring","card issuing","fund administration","wealth management platform"],"weak":["financial services","lending","credit","banking","insurance","wealth","asset management","capital markets","treasury","compliance"]},{"id":"healthit","label":"Healthcare IT","short":"Health IT","strong":["healthcare it","health it","healthtech","health tech","digital health","medical software","clinical software","healthcare data","health data","care management","electronic health","ehr","emr","telehealth","medtech software"],"weak":["healthcare","health","clinical","hospital","care","patient","pharma","life sciences"]},{"id":"internet","label":"Internet & Media","short":"Internet","strong":["consumer internet","digital media","streaming","gaming","social platform","creator","e-commerce platform","ecommerce platform","online platform","subscription","app","marketplace","marketplaces","two-sided","network effects","classifieds","b2b platform","b2b marketplace","e-commerce platform","ecommerce platform","online platform","aggregator","booking platform","travel distribution","freight network","exchange platform","super app","super-app"],"weak":["media","entertainment","consumer","online","content","sports","network","brand"]}]
+}];
+
+const RUMOUR = /\b(in talks|talks to|weighs|weighing|considers|considering|explores?|exploring|mulls|mulling|eyes|eyeing|nears|nearing|said to|sources say|people familiar|according to people|in the running|shortlist(?:ed)?|binding bids?|non-binding|frontrunner|front-runner|bid for|bids for|takeover bid|takeover offer|revised offer|higher bid|could sell|could buy|plans to sell|seeks? buyers?|hires? (?:banks?|advisers?|advisors?)|kicks off sale|sale process|strategic review|strategic options|strategic alternatives)\b/i;
+const EVENTS = [["fund", /\b(closes?|closed|closing of|raises?|raised|final close|first close|hard cap)\b.{0,80}?\bfund\b|\bfund\b.{0,60}?\b(close|closes|closed|closing)\b/i],
+  ["people", /\b(appoints?|appointed|names|named|hires|hired|joins|promotes?|promoted|welcomes|shifts|moves|relocates|transfers)\b.{0,80}?\b(partner|managing director|md|principal|head|chief|ceo|cfo|cto|chair(?:man|woman)?|operating partner|senior advis[oe]r|dealmaker)\b/i],
+  ["exit", /\b(sells?|selling|sold|sale of|to divest|divests?|divestiture|exits?|exiting|ipo|initial public offering|lists on|files? for (?:an? )?(?:ipo|listing)|offload|offloads|stake sale|secondary sale|to be acquired by|acquired by|agrees to be acquired|completes sale|sale to)\b/i],
+  ["acquire", /\b(acquires?|acquired|acquiring|acquisition|to buy|buys|buyout|take[- ]private|takes? private|takeover|controlling (?:interest|stake)|majority (?:interest|stake)|merger|merge|tender offer)\b/i],
+  ["platform", /\b(establishes|launches|forms|creates|unveils|opens)\b.{0,60}?\b(platform|strategy|team|office|business)\b/i],
+  ["invest", /\b(invests?|investment|invested|investing|growth equity|minority (?:stake|investment)|leads?|led|series [a-h]\b|funding round|raises|backs|commits?|capital from|strategic partnership)\b/i]];
+const ANGLES = {
+  "acquire:rumour": {
+    "heat": 3,
+    "move": "Live process — buy-side tech DD is being scoped now. The most time-critical call on this list."
+  },
+  "acquire:signed": {
+    "heat": 2,
+    "move": "Signed — buy-side DD is done. Pitch the post-close work: 100-day tech plan, separation/TSA if a carve-out, AI-readiness."
+  },
+  "acquire:closed": {
+    "heat": 1,
+    "move": "Closed — the value-creation window. Tech roadmap, platform consolidation, R&D productivity."
+  },
+  "addon:rumour": {
+    "heat": 3,
+    "move": "Platform shopping for an add-on — tech DD on the target plus integration fit with the platform stack."
+  },
+  "addon:signed": {
+    "heat": 2,
+    "move": "Add-on agreed — the integration plan is the open question: stack consolidation, data migration, product overlap."
+  },
+  "addon:closed": {
+    "heat": 1,
+    "move": "Add-on closed — integration is now. Buy-and-build platforms keep buying; get on the next one early."
+  },
+  "exit:rumour": {
+    "heat": 3,
+    "move": "Exit in preparation — sell-side tech VDD gets scoped before advisers are picked. Pitch now."
+  },
+  "exit:signed": {
+    "heat": 1,
+    "move": "Sale agreed — VDD is spent. The buyer now owns integration; the sponsor has proceeds to redeploy."
+  },
+  "exit:closed": {
+    "heat": 1,
+    "move": "Exit done — capital returning to the fund; the deal team is free for the next platform."
+  },
+  "invest:rumour": {
+    "heat": 2,
+    "move": "Growth/minority round in the works — lighter, faster confirmatory tech review."
+  },
+  "invest:signed": {
+    "heat": 1,
+    "move": "Minority/growth investment — confirmatory DD likely done. An AI-readiness or scale-up diagnostic is the follow-on."
+  },
+  "invest:closed": {
+    "heat": 1,
+    "move": "Minority/growth investment — confirmatory DD likely done. An AI-readiness or scale-up diagnostic is the follow-on."
+  },
+  "fund:signed": {
+    "heat": 2,
+    "move": "Fresh dry powder — the deployment pipeline is about to fill. A relationship touchpoint with the deal team."
+  },
+  "people:signed": {
+    "heat": 2,
+    "move": "New senior hire — a relationship to open before their first deal needs an adviser."
+  },
+  "platform:signed": {
+    "heat": 2,
+    "move": "New strategy or team — they will need repeatable diligence partners. Get on the panel early."
+  }
+};
+const APAC = /\b(asia|asian|apac|asia[- ]pacific|southeast asia|south east asia|asean|india|indian|singapore|china|chinese|hong kong|japan|japanese|korea|korean|indonesia|indonesian|vietnam|vietnamese|philippines|thailand|thai|malaysia|malaysian|australia|australian|aussie|asx|new zealand|taiwan|mumbai|bengaluru|bangalore|delhi|gurugram|shanghai|beijing|shenzhen|tokyo|seoul|jakarta|sydney|melbourne|crore|inr|sgd|aud)\b/i;
+const escRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\/*__CLASSIFIER__*/');
+function scoreTerms(src, strong, weak) {
+  let s = ` ${src.toLowerCase()} `;
+  const hits = [];
+  let score = 0;
+  const terms = [...strong.map((t) => [t, 2]), ...weak.map((t) => [t, 1])]
+    .sort((a, b) => b[0].length - a[0].length);
+  for (const [term, w] of terms) {
+    const re = new RegExp(`(^|[^a-z0-9])${escRe(term)}(?=[^a-z0-9]|$)`, 'g');
+    if (re.test(s)) {
+      score += w;
+      hits.push(term);
+      s = s.replace(re, (all, pre) => pre + ' '.repeat(all.length - pre.length));
+    }
+  }
+  return { score, hits };
+}
+function theses(f, title, summary) {
+  // "AI" counts only as the capitalised word: lowercase "ai" is inside too many names.
+  // "Artificial intelligence" is folded to it first, so it cannot also score as data "intelligence".
+  const src = `${title} . ${summary}`.replace(/artificial intelligence/gi, 'AI');
+  const bareAI = /(^|[^A-Za-z])AI(?=[^A-Za-z]|$)/.test(src);
+  const out = [];
+  for (const t of f.theses) {
+    const r = scoreTerms(src.replace(/(^|[^A-Za-z])AI(?=[^A-Za-z]|$)/g, '$1  '), t.strong, t.weak);
+    if (t.id === 'ai' && bareAI) { r.score += 2; r.hits.unshift('AI'); }
+    if (r.score >= 2) out.push({ id: t.id, label: t.short, score: r.score, terms: r.hits.slice(0, 4) });
+  }
+  return out.sort((a, b) => b.score - a.score);
+}
+function classify(f, raw) {
+  const title = raw.title;
+  const all = `${title} . ${raw.summary || ''}`;
+  let kind = 'other';
+  // "<Name> joins Warburg Pincus" carries no title to match on; the firm as the thing joined is enough.
+  if (/\bjoins\b/i.test(title) && new RegExp(`joins\\s+(?:the\\s+)?${f.match.source}`, 'i').test(title)) kind = 'people';
+  for (const [k, re] of EVENTS) {
+    if (kind !== 'other') break;
+    // A new platform is the firm's own move. A portfolio company launching a platform is product news.
+    if (k === 'platform' && (/-backed|backed by/i.test(title) ||
+        !new RegExp(`^${f.match.source}`, 'i').test(title.replace(/^the\s+/i, '')))) continue;
+    if (re.test(title)) { kind = k; break; }
+  }
+  // "Clearwater to be acquired by Permira and Warburg Pincus" reads as an exit by its verb, but
+  // the firm is the buyer. Selling *to* the firm is the firm acquiring.
+  if (kind === 'exit' && new RegExp(`\\b(?:to|by)\\s+(?:an?\\s+|the\\s+)?(?:[\\w&.'-]+\\s+){0,4}?${f.match.source}`, 'i').test(title)) {
+    kind = 'acquire';
+  }
+  // A firm-backed company buying something, or any acquisition headline that does not name the
+  // firm at all (a release on the firm's own feed, or coverage that only names it further down),
+  // is a portfolio company buying — an add-on.
+  if (kind === 'acquire' && (/-backed|backed by|portfolio company/i.test(title) || !f.match.test(title))) {
+    kind = 'addon';
+  }
+
+  const rumour = !raw.official && RUMOUR.test(title);
+  const closed = /\b(completes?|completed|completion|closes|closed|finali[sz]es)\b/i.test(title);
+  const stage = rumour ? 'rumour' : closed ? 'closed' : 'signed';
+  const angle = ANGLES[`${kind}:${stage}`] || ANGLES[`${kind}:signed`] || null;
+
+  const th = theses(f, title, raw.summary || '');
+  const apac = APAC.test(all);
+  const ageDays = raw.date ? Math.max(0, (Date.now() - Date.parse(raw.date)) / 86400000) : 30;
+
+  // Heat is the event; thesis fit and region tilt the order; age decays it. A process reported a
+  // month ago is not hot any more, whatever it was. The number is only for
+  // sorting — the client shows hot/warm/cool, not a score pretending to precision it does not have.
+  const base = angle ? angle.heat : 0;
+  const score = (base * 10 + (th.length ? 8 + Math.min(th[0].score, 6) : 0) + (apac ? 4 : 0)) *
+    Math.pow(0.5, ageDays / 21);
+  return {
+    kind, stage, rumour,
+    theses: th,
+    inThesis: th.length > 0,
+    apac,
+    move: angle ? angle.move : null,
+    heat: !angle || ageDays > 45 ? 'cool'
+      : base >= 3 && th.length && ageDays <= 14 ? 'hot'
+      : base >= 2 ? 'warm' : 'cool',
+    score: Math.round(score * 10) / 10,
+  };
+}
+
+const DATA = {"builtAt":"2026-10-02T06:24:30.138Z","deals":[{"id":"1573e8088d64","firm":"tpg","title":"TPG invests in LMNP AI","url":"https://www.tpg.com/news-and-insights","date":"2026-09-16T00:00:00.000Z","summary":"","publisher":"TPG","source":"press","official":true,"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"1d3368a61bbb","firm":"tpg","title":"TPG-backed Fibe files for IPO with over ₹1,584 crore FY26 revenue","url":"https://inc42.com/features/indian-startup-ipo-tracker-2026/","date":"2026-08-20T00:00:00.000Z","summary":"Indian consumer-lending fintech.","publisher":"Inc42","source":"backed","official":false,"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"4289c0fcf691","firm":"kkr","title":"Integer to Be Acquired by KKR in Transaction Valued at Approximately $5.7 Billion","url":"https://investor.integer.net/news-events/press-releases/news-details/2026/Integer-to-Be-Acquired-by-KKR-in-Transaction-Valued-at-Approximately-5-7-Billion/default.aspx","date":"2026-08-25T00:00:00.000Z","summary":"Medical-device contract manufacturer (NYSE: ITGR). $2.1bn leveraged loan wrapped 11 Sept.","publisher":"Integer Holdings","source":"press","official":true,"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"43734fedacda","firm":"warburg-pincus","title":"Lemon Tree Hotels Announces Strategic Reorganization and Investment from Warburg Pincus in Fleur Hotels","url":"https://warburgpincus.com/2026/01/09/lemon-tree-hotels-announces-strategic-reorganization-and-investment-from-warburg-pincus-in-fleur-hotels-to-unlock-long-term-shareholder-value/","date":"2026-01-09T00:00:00.000Z","summary":"Primary investment of up to INR 960 crore in Fleur Hotels.","publisher":"Warburg Pincus","source":"press","official":true,"firstSeen":"2026-10-02T03:43:20.557Z"},{"id":"4ea74315ea2f","firm":"tpg","title":"TPG invests in Agilex Biolabs","url":"https://www.tpg.com/news-and-insights","date":"2026-09-25T00:00:00.000Z","summary":"Australian clinical-trial bioanalytical lab.","publisher":"TPG","source":"press","official":true,"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"5330b382b447","firm":"warburg-pincus","title":"Warburg Pincus hits $12bn of exits in 2026","url":"https://www.privateequitywire.co.uk/warburg-pincus-hits-12bn-of-exits-in-2026/","date":"2026-09-30T00:00:00.000Z","summary":"Around $12bn realised so far this year, matching all of 2025. CEO Jeffrey Perlman, speaking at SuperReturn Asia in Singapore, expects to pass it.","publisher":"Private Equity Wire","source":"coverage","official":false,"firstSeen":"2026-10-02T03:43:20.557Z"},{"id":"53b726d3ac0e","firm":"warburg-pincus","title":"Warburg Pincus in Talks to Buy KNDS Stake From German Family, Sources Say","url":"https://www.bloomberg.com/news/articles/2026-10-01/warburg-pincus-said-to-hold-talks-to-buy-knds-stake-from-family","date":"2026-10-01T00:00:00.000Z","summary":"Talks to acquire a substantial stake in the Franco-German tankmaker from the family that co-owns it. The German government's own 40% stake deal is contingent on an IPO.","publisher":"Bloomberg","source":"coverage","official":false,"firstSeen":"2026-10-02T04:05:00.000Z"},{"id":"5460c6377e03","firm":"tpg","title":"TPG Rise Funds to make significant investment in Tablet Command","url":"https://www.tpg.com/news-and-insights","date":"2026-09-18T00:00:00.000Z","summary":"Emergency incident-management software for fire departments and emergency response agencies.","publisher":"TPG","source":"press","official":true,"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"54d7cc5b6803","firm":"warburg-pincus","title":"Warburg Pincus Celebrates Its 30th Anniversary in India","url":"https://warburgpincus.com/2026/02/04/warburg-pincus-celebrates-its-30th-anniversary-in-india/","date":"2026-02-04T00:00:00.000Z","summary":"More than 80 companies backed in India, the firm's largest market outside the US.","publisher":"Warburg Pincus","source":"press","official":true,"firstSeen":"2026-10-02T03:43:20.557Z"},{"id":"5efb7773e3ce","firm":"tpg","title":"Smith + Howard announces significant investment from TPG","url":"https://www.tpg.com/news-and-insights/smith-howard-announces-significant-investment-from-tpg","date":"2026-06-10T00:00:00.000Z","summary":"Accounting and advisory firm.","publisher":"TPG","source":"press","official":true,"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"619403890b1e","firm":"warburg-pincus","title":"Warburg Pincus Closes on $3.0 Billion Financial Services Fund","url":"https://warburgpincus.com/2026/01/07/warburg-pincus-closes-on-3-0-billion-financial-services-fund/","date":"2026-01-07T00:00:00.000Z","summary":"Warburg Pincus Financial Sector III.","publisher":"Warburg Pincus","source":"press","official":true,"firstSeen":"2026-10-02T03:43:20.557Z"},{"id":"6405e4a59c39","firm":"warburg-pincus","title":"Warburg Pincus private wealth platform opens to Australian advisers via Channel Capital feeder fund","url":"https://www.moneymanagement.com.au/pe-giant-warburg-pincus-offers-access-to-australian-advisers/","date":"2026-08-06T00:00:00.000Z","summary":"","publisher":"Money Management","source":"coverage","official":false,"firstSeen":"2026-10-02T03:43:20.557Z"},{"id":"6d0a374526db","firm":"warburg-pincus","title":"Warburg Pincus Partners with DC Connects and Wide Creek AMC to Acquire Land to Develop 80MW Hyperscale Data Centre in South Korea","url":"https://warburgpincus.com/2025/09/25/warburg-pincus-partners-with-dc-connects-and-wide-creek-amc-to-acquire-land-to-develop-80mw-hyperscale-data-centre-in-south-korea/","date":"2025-09-25T00:00:00.000Z","summary":"","publisher":"Warburg Pincus","source":"press","official":true,"firstSeen":"2026-10-02T03:43:20.557Z"},{"id":"7b80b99ffeae","firm":"kkr","title":"KKR to sell minority stake in Nordic Bioscience to founder Claus Christiansen","url":"https://media.kkr.com/","date":"2026-09-03T00:00:00.000Z","summary":"","publisher":"KKR","source":"press","official":true,"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"83a645c7b3d1","firm":"warburg-pincus","title":"Global Eggs Receives Investment of Up to $1 Billion from Warburg Pincus","url":"https://warburgpincus.com/2026/03/02/global-eggs-receives-investment-of-up-to-1-billion-from-warburg-pincus/","date":"2026-03-02T00:00:00.000Z","summary":"Company valued at $8 billion.","publisher":"Warburg Pincus","source":"press","official":true,"firstSeen":"2026-10-02T03:43:20.557Z"},{"id":"9545d44334fb","firm":"tpg","title":"TPG acquires majority of Five Good Friends, plans to scale Lookout care-management SaaS","url":"https://www.tpg.com/news-and-insights","date":"2026-05-12T00:00:00.000Z","summary":"Australian technology-enabled home care.","publisher":"TPG","source":"press","official":true,"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"9dad214388d7","firm":"kkr","title":"KKR invests in Datavant","url":"https://media.kkr.com/","date":"2026-09-17T00:00:00.000Z","summary":"Health-data connectivity and tokenisation platform.","publisher":"KKR","source":"press","official":true,"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"9f80e78a5640","firm":"kkr","title":"KKR launches Akrapoint Commercial Capital with $350 million commitment","url":"https://www.kirkland.com/news/press-release/2026/09/kirkland-advises-kkr-on-launch-of-akrapoint-commercial-capital","date":"2026-09-24T00:00:00.000Z","summary":"Mid-ticket equipment finance company, funded from KKR Asset-Based Finance.","publisher":"Kirkland & Ellis","source":"coverage","official":false,"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"a92e9e063f93","firm":"tpg","title":"TPG invests in Cloudnine Hospitals","url":"https://www.tpg.com/news-and-insights","date":"2026-09-29T00:00:00.000Z","summary":"Indian maternity and paediatric hospital chain.","publisher":"TPG","source":"press","official":true,"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"a93d72ae4c26","firm":"kkr","title":"KKR invests in Malaysian healthcare platform Avisena Healthcare","url":"https://media.kkr.com/","date":"2026-09-03T00:00:00.000Z","summary":"Private hospital group, Malaysia.","publisher":"KKR","source":"press","official":true,"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"d0d4722a5f48","firm":"tpg","title":"TPG establishes One Aged Care platform in Singapore and Malaysia","url":"https://www.privsource.com/acquisitions/deal/tpg-establishes-one-aged-care-platform-mwSJDb","date":"2026-03-05T00:00:00.000Z","summary":"Econ Healthcare, Orange Valley Nursing Homes and Ambulance Medical Service combined.","publisher":"PrivSource","source":"coverage","official":false,"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"d1cbd181238d","firm":"warburg-pincus","title":"Permira and Warburg Pincus agree $8.4bn Clearwater Analytics take-private","url":"https://fintech.global/2025/12/23/permira-and-warburg-pincus-agree-8-4bn-clearwater-deal/","date":"2025-12-23T00:00:00.000Z","summary":"Cloud-native investment accounting, reporting and analytics for institutional investors, asset managers and insurers. Valued at about $8.4bn including debt.","publisher":"FinTech Global","source":"coverage","official":false,"firstSeen":"2026-10-02T03:43:20.557Z"},{"id":"d284cd573e33","firm":"tpg","title":"TPG Rise invests $250 million in Findhelp","url":"https://www.tpg.com/news-and-insights","date":"2026-03-18T00:00:00.000Z","summary":"Social-care referral technology platform.","publisher":"TPG","source":"press","official":true,"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"d377f4db2681","firm":"warburg-pincus","title":"Warburg Pincus-Led Investor Group Agrees to Acquire Controlling Interest in PANTHERx Rare","url":"https://warburgpincus.com/2026/07/13/warburg-pincus-led-investor-group-agrees-to-acquire-controlling-interest-in-pantherx-rare/","date":"2026-07-13T00:00:00.000Z","summary":"Rare-disease specialty pharmacy.","publisher":"Warburg Pincus","source":"press","official":true,"firstSeen":"2026-10-02T03:43:20.557Z"},{"id":"d9c82e82c4e5","firm":"kkr","title":"KKR wraps up $2.1 billion leveraged loan for Integer acquisition","url":"https://www.bloomberg.com/news/articles/2026-09-11/kkr-wraps-up-2-1-billion-leveraged-loan-for-integer-acquisition","date":"2026-09-11T00:00:00.000Z","summary":"","publisher":"Bloomberg","source":"coverage","official":false,"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"dc6e706c6596","firm":"warburg-pincus","title":"Warburg Pincus attains 82.35% of all PSI shares - Additional Acceptance Period for Public Takeover Offer for PSI commences","url":"https://www.eqs-news.com/news/corporate/warburg-pincus-erreicht-8235-aller-psi-aktien-weitere-annahmefrist-fur-offentliches-ubernahmeangebot-fur-psi-beginnt/140cc4f0-a7ad-4624-9d35-d7c771b3d0d7_en","date":"2026-10-01T00:00:00.000Z","summary":"PSI Software SE (Berlin): industrial process control and energy-grid management software. The public takeover offer has passed its minimum acceptance; an additional acceptance period is open.","publisher":"EQS News","source":"coverage","official":false,"firstSeen":"2026-10-02T04:05:00.000Z"},{"id":"e822a101413e","firm":"warburg-pincus","title":"Warburg Pincus Establishes European Defence Investment Platform","url":"https://warburgpincus.com/2026/04/10/warburg-pincus-establishes-european-defence-investment-platform/","date":"2026-04-10T00:00:00.000Z","summary":"MEAG, asset manager of Munich Re Group, is an early backer of the strategy.","publisher":"Warburg Pincus","source":"press","official":true,"firstSeen":"2026-10-02T03:43:20.557Z"},{"id":"f232aeb5395c","firm":"warburg-pincus","title":"Ingenia Board to Review Higher Takeover Bid from Warburg Pincus","url":"https://www.bloomberg.com/news/articles/2026-09-27/ingenia-board-to-review-higher-takeover-bid-from-warburg-pincus","date":"2026-09-27T00:00:00.000Z","summary":"Ingenia Communities Group (ASX) will assess a revised bid from Warburg Pincus and affiliates at A$5.25 per stapled security.","publisher":"Bloomberg","source":"coverage","official":false,"firstSeen":"2026-10-02T03:43:20.557Z"},{"id":"f2d286995682","firm":"kkr","title":"KKR acquires Arctos for $1 billion","url":"https://youthsportsbusinessreport.com/kkr-acquires-arctos-for-1-billion-what-it-could-mean-for-youth-sports-investment/","date":"2026-09-10T00:00:00.000Z","summary":"Sports-franchise investment manager.","publisher":"Youth Sports Business Report","source":"coverage","official":false,"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"f649305bd6f6","firm":"tpg","title":"TPG to Acquire Peppertree Capital Management","url":"https://shareholders.tpg.com/news-releases/news-release-details/tpg-acquire-peppertree-capital-management","date":"2026-07-15T00:00:00.000Z","summary":"Digital-infrastructure investment manager.","publisher":"TPG","source":"press","official":true,"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"fb51664b058f","firm":"warburg-pincus","title":"James von Moltke joins Warburg Pincus","url":"https://warburgpincus.com/news/","date":"2026-09-08T00:00:00.000Z","summary":"Former Deutsche Bank CFO joins the firm.","publisher":"Warburg Pincus","source":"press","official":true,"firstSeen":"2026-10-02T03:43:20.557Z"},{"id":"feec0625c270","firm":"warburg-pincus","title":"Warburg Pincus shifts NYC dealmaker Andrew Park to Singapore to lead pan-Asian tech investing","url":"https://www.ceoinsightsasia.com/news/warburg-pincus-shifts-nyc-dealmaker-to-singapore-nwid-11996.html","date":"2026-09-15T00:00:00.000Z","summary":"Managing director known for technology and healthcare IT investments relocates to Singapore; principal Alexander Roso also moves, reporting to Southeast Asia head Saurabh Agarwal.","publisher":"CEO Insights Asia","source":"coverage","official":false,"firstSeen":"2026-10-02T03:43:20.557Z"}],"targets":[{"id":"anaplan","firm":"tpg","name":"Anaplan","area":"software","hq":"San Francisco","listed":"","apac":false,"live":true,"ownership":"pe","owner":"Thoma Bravo","ownerSince":"2022-06-22","why":"Connected-planning SaaS, $10.4bn take-private, 4.3 years in and preparing a return to public markets. A pre-IPO stake or a pre-emptive bid is where TPG's software team has played before.","move":"IPO track. Confirmatory tech review for a pre-IPO investor: platform scalability, the AI forecasting layer, R&D efficiency since the take-private.","signals":[{"date":"2026-08-05","publisher":"PE Insights","title":"Thoma Bravo-backed Anaplan moves towards return to public markets","url":"https://peinsights.substack.com/p/thoma-bravo-backed-anaplan-moves"}],"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"banking-circle","name":"Banking Circle","area":"fintech","hq":"Luxembourg","listed":"","apac":false,"live":true,"ownership":"pe","owner":"EQT","ownerSince":"2018-10-01","why":"Payments and clearing infrastructure behind Stripe, Nuvei and other fintechs. EQT has Morgan Stanley sounding out buyers at $2–4bn — exactly the financial-infrastructure asset Warburg's new $3bn Financial Sector III fund is sized for.","move":"Sell-side process under way, so VDD is spent; the buy-side tech DD for whichever sponsor bids is the work to win.","signals":[{"date":"2026-02-10","publisher":"Reuters via MarketScreener","title":"EQT reportedly evaluating selling a majority stake in Banking Circle","url":"https://uk.marketscreener.com/quote/stock/EQT-AB-66480635/news/EQT-reportedly-evaluating-selling-a-majority-stake-in-Banking-Circle-Reuters-47855036/"},{"date":"2026-03-04","publisher":"The Paypers","title":"EQT and Financial Technology Partners seek buyers for Banking Circle","url":"https://thepaypers.com/fintech/news/eqt-and-financial-technology-partners-look-into-selling-banking-circle"}],"firstSeen":"2026-10-02T04:30:00.000Z"},{"id":"carro","name":"Carro","area":"markets","hq":"Singapore","listed":"","apac":true,"live":true,"ownership":"vc","owner":"SoftBank-backed","why":"Southeast Asia's largest used-car marketplace, SoftBank-backed, exploring a US IPO of up to $500m at ~$3bn with an SGX secondary. A dual-track at that size is where a sponsor pre-empts: Warburg has moved its tech dealmakers to Singapore this month.","move":"IPO-readiness work is already scoped by the banks. The sponsor-side angle is a pre-IPO stake or a full pre-emption, which needs a marketplace-economics and platform read.","signals":[{"date":"2026-06-18","publisher":"GuruFocus","title":"Carro explores U.S. IPO for up to $500M","url":"https://www.gurufocus.com/news/8927370/carro-explores-us-ipo-for-up-to-500m"}],"firstSeen":"2026-10-02T04:30:00.000Z"},{"id":"carsome","name":"Carsome","area":"markets","hq":"Kuala Lumpur","listed":"","apac":true,"live":false,"ownership":"vc","owner":"VC-backed","why":"Carro's direct rival across Malaysia, Indonesia, Thailand and Singapore. Raised $30m in March from HKIC, Gobi and Asia Partners and is an IPO candidate on Nasdaq or SGX. Whichever of the two does not list first becomes a sponsor target.","move":"Watch. If Carro lists, Carsome's path narrows to a sponsor or a strategic, and the DD is unit economics by market.","signals":[{"date":"2026-03-12","publisher":"CB Insights","title":"Carsome raises $30m+ strategic round from HKIC, Gobi, Asia Partners","url":"https://www.cbinsights.com/company/carsome/financials"}],"firstSeen":"2026-10-02T04:30:00.000Z"},{"id":"cfs","name":"Colonial First State","area":"fintech","hq":"Sydney","listed":"","apac":true,"live":false,"ownership":"pe","owner":"KKR (55%)","ownerSince":"2021-11-30","why":"Australian superannuation and wealth platform, A$1.7bn for KKR's 55% from CBA, standalone since December 2021. Four years and ten months in, with a multi-year platform rebuild as the thesis, it is approaching the point where KKR tests the market or CBA's remaining 45% changes hands.","move":"Watch. A buyer would need the platform-rebuild read: how much of the legacy admin stack has been replaced and what remains.","signals":[{"date":"2021-11-30","publisher":"Private Banker International","title":"CBA completes sale of 55% of Colonial First State to KKR","url":"https://www.privatebankerinternational.com/news/cba-colonial-first-state-kkr/"}],"firstSeen":"2026-10-02T05:10:00.000Z"},{"id":"clarivate","name":"Clarivate","area":"data","hq":"London","listed":"NYSE: CLVT","apac":false,"live":false,"ownership":"listed","owner":"NYSE-listed","why":"Scientific, IP and academic information services (Web of Science, Derwent, ProQuest), ~$3bn market cap under its debt. Sold Life Sciences & Healthcare to Altaris for $600m in July under a strategic review — a slimmer core that reads as a take-private candidate. Warburg bought Pharma Intelligence out of Informa on the same logic.","move":"Carve-out just agreed, so a TSA and data-separation plan exist. A whole-company bid would need a product-portfolio and AI-exposure read across the remaining segments.","signals":[{"date":"2026-07-06","publisher":"Nasdaq","title":"Clarivate announces sale of Life Sciences & Healthcare segment for $600 million","url":"https://www.nasdaq.com/press-release/clarivate-announces-sale-life-sciences-healthcare-segment-600-million-2026-07-06"}],"firstSeen":"2026-10-02T04:30:00.000Z"},{"id":"cornerstone","firm":"kkr","name":"Cornerstone OnDemand","area":"software","hq":"Santa Monica","listed":"","apac":false,"live":false,"ownership":"pe","owner":"Clearlake","ownerSince":"2021-10-15","why":"Learning and talent-management SaaS, $5.2bn take-private, five years in. Clearlake has rolled in SumTotal and Saba and the platform is at the point where a 2021-vintage fund looks for a buyer. HR software with a large installed base suits a buy-and-build owner.","move":"Watch. Three merged codebases is the DD: how much consolidation has actually happened and what the AI skills layer is built on.","signals":[{"date":"2021-10-15","publisher":"Clearlake","title":"Clearlake Capital completes acquisition of Cornerstone OnDemand","url":"https://clearlake.com/news/clearlake-capital-completes-acquisition-of-cornerstone-ondemand/"}],"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"csg","firm":"tpg","name":"Cloud Software Group (Citrix + TIBCO)","area":"software","hq":"Fort Lauderdale","listed":"","apac":false,"live":false,"ownership":"pe","owner":"Vista & Elliott","ownerSince":"2022-09-30","why":"Citrix merged with TIBCO under Vista and Elliott, four years in, carrying heavy interest expense and refinancing through 2025-26. Too big for one sponsor whole; a carve-out of a business unit is the realistic entry.","move":"Watch. A carve-out brings separation and TSA scoping; the broader question is which units still have standalone product momentum.","signals":[{"date":"2022-09-30","publisher":"Wikipedia","title":"Vista and Elliott complete Citrix take-private, merge with TIBCO as Cloud Software Group","url":"https://en.wikipedia.org/wiki/Citrix"}],"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"fdv","name":"Frontier Digital Ventures","area":"markets","hq":"Petaling Jaya","listed":"ASX: FDV","apac":true,"live":false,"ownership":"listed","owner":"ASX-listed","why":"Owner-operator of property and auto classifieds across Latin America, MENA and Asia. Small cap, founder-CEO stepped down this year, record EBITDA and a 17% margin. A classifieds portfolio at a sub-scale listing is what EQT paid up for in PropertyGuru.","move":"Watch. A bid would need a market-by-market platform read; the portfolio runs on several separate stacks.","signals":[{"date":"2026-08-26","publisher":"Listcorp","title":"2026 half-year results: record revenue and EBITDA, led by 360 LATAM","url":"https://www.listcorp.com/asx/fdv/frontier-digital-ventures-limited/news/2026-half-year-results-presentation-3410725.html"},{"date":"2026-05-27","publisher":"Quartr","title":"AGM 2026: Shaun Di Gregorio steps down","url":"https://quartr.com/events/frontier-digital-ventures-limited-fdv-agm-2026_FGPFBbsH"}],"firstSeen":"2026-10-02T04:30:00.000Z"},{"id":"humanforce","name":"Humanforce","area":"ai","hq":"Sydney","listed":"","apac":true,"live":false,"ownership":"pe","owner":"Accel-KKR","ownerSince":"2019-06-01","why":"Workforce-management SaaS for shift-based employers, built by acquisition under Accel-KKR since 2019 (intelliHR, Emprevo, ShiftMatch in April). Seven years in and still buying, which usually means the owner is assembling the platform it will sell.","move":"Watch. A buy-and-build at this stage carries an integration question across four acquired stacks.","signals":[{"date":"2026-04-13","publisher":"Capital Brief","title":"Humanforce acquires Emprevo and ShiftMatch amid global expansion","url":"https://www.capitalbrief.com/article/humanforce-acquires-emprevo-and-shiftmatch-amid-global-expansion-4b0040b3-7cb7-4f5b-8a74-7b90711b106f/"}],"firstSeen":"2026-10-02T05:10:00.000Z"},{"id":"inovalon","firm":"tpg","name":"Inovalon","area":"healthit","hq":"Bowie, MD","listed":"","apac":false,"live":false,"ownership":"pe","owner":"Nordic Capital","ownerSince":"2021-11-24","why":"Healthcare data and analytics for payers and providers, $7.3bn take-private, 4.9 years in — the five-year mark is next month. Healthcare data is TPG's strongest sector and a Nordic Capital fund of that vintage will be planning the exit.","move":"Watch for a 2027 process. DD is the data-asset read: coverage, refresh cadence, and how defensible the payer integrations are.","signals":[{"date":"2021-11-24","publisher":"Tracxn","title":"Nordic Capital completes acquisition of Inovalon","url":"https://tracxn.com/d/companies/inovalon/__o3nvTPI1b635kBUSvcBJcRIquxt-vhiK9dtG2ZWo1Hc"}],"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"iress","name":"Iress","area":"data","hq":"Melbourne","listed":"ASX: IRE","apac":true,"live":true,"ownership":"listed","owner":"ASX-listed","why":"Market data, trading and wealth-platform software across APAC, UK and Canada — the data-plus-fintech shape Warburg bought in Clearwater. In play: Blackstone and Thoma Bravo in early talks after a withdrawn A$10.50 approach, and EQT walked away in 2021. A counter-bid or a consortium seat is the obvious angle.","move":"A live process with two US sponsors engaged. Buy-side tech DD is being scoped by someone this quarter; the platform's legacy-stack question (Xplan, trading) is the diligence.","signals":[{"date":"2026-09-20","publisher":"Markets Group","title":"Blackstone, Thoma Bravo in takeover talks with Australia's Iress","url":"https://www.marketsgroup.org/news/blackstone-thoma-bravo-in-takeover-talks-with-australias-iress"},{"date":"2026-09-18","publisher":"IFA","title":"Streamlined Iress core earnings rise amid takeover talks","url":"https://www.ifa.com.au/streamlined-iress-core-earnings-rise-amid-takeover-talks/"}],"firstSeen":"2026-10-02T04:30:00.000Z"},{"id":"kantar","name":"Kantar","area":"data","hq":"London","listed":"","apac":false,"live":true,"ownership":"pe","owner":"Bain Capital","ownerSince":"2019-07-12","why":"Market research and consumer data. Bain and WPP have decided on a full sale rather than an IPO, in two stages: Worldpanel (consumer panel data, $5–7bn) first, the insights business after, bankers appointed this autumn. Kantar Media already went to H.I.G. for $1bn. A data asset at seven years in a 2019 vintage fund is the textbook secondary.","move":"Process launching now. Buy-side tech DD on Worldpanel for whichever sponsor bids — panel infrastructure, data pipelines, the AI story on top of it.","signals":[{"date":"2026-09-10","publisher":"M&A Insights","title":"WPP and Bain Capital plan full divestment of Kantar, advisers to be appointed in autumn","url":"https://www.mainsights.io/ma-news/advertising-group-wpp-publ-and-bain-capital-plan-full-divestment-of-market-research-and-data-analytics-firm-kantar-with-advisors-to-be-appointed-in-autumn"},{"date":"2026-09-08","publisher":"BW Marketing World","title":"Bain Capital and WPP set to split, plan sale of Kantar Worldpanel data unit","url":"https://www.bwmarketingworld.com/article/bain-capital-wpp-set-to-split-plan-sale-of-kantar-worldpanel-data-unit-report-550442"}],"firstSeen":"2026-10-02T05:10:00.000Z"},{"id":"kreditbee","name":"KreditBee","area":"fintech","hq":"Bengaluru","listed":"","apac":true,"live":false,"ownership":"vc","owner":"VC-backed","why":"Indian consumer-lending platform, $1.5bn after a $280m Series E, preparing an IPO for late 2026 or early 2027. Warburg's India franchise is 30 years old and its last fintech there was Avanse; a pre-IPO round is the usual way in.","move":"Pre-IPO growth cheque, so a lighter confirmatory review: credit-decisioning stack, model governance, RBI compliance posture.","signals":[{"date":"2026-04-08","publisher":"Inc42","title":"KreditBee raises $280m Series E at $1.5bn, India's second unicorn of 2026","url":"https://inc42.com/lists/top-30-funded-fintech-startups-in-india-2026/"}],"firstSeen":"2026-10-02T04:30:00.000Z"},{"id":"mcafee","firm":"kkr","name":"McAfee","area":"software","hq":"San Jose","listed":"","apac":false,"live":false,"ownership":"pe","owner":"Advent, Permira, CPP, GIC","ownerSince":"2022-03-01","why":"Consumer security, $14bn take-private by an Advent-led consortium, 4.6 years in. A consortium that large usually exits by IPO, but a sponsor-to-sponsor deal for a cash-generative subscription business is live if markets stay shut.","move":"Watch. A consumer subscription stack with a long legacy; DD is renewal-engine resilience and the AI scam-detection roadmap.","signals":[{"date":"2022-03-01","publisher":"Wikipedia","title":"Advent-led consortium completes $14bn acquisition of McAfee","url":"https://en.wikipedia.org/wiki/McAfee"}],"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"medallia","firm":"tpg","name":"Medallia","area":"software","hq":"San Francisco","listed":"","apac":false,"live":true,"ownership":"pe","owner":"Lender group (Blackstone, Apollo, FS KKR)","ownerSince":"2026-06-01","why":"Experience-management SaaS. Thoma Bravo handed it to its lenders this year, wiping ~$5.1bn of equity. Lenders do not hold software companies for long; a sponsor buying a de-levered Medallia at a reset basis is the obvious next trade.","move":"Live, in the sense that the owners are not natural owners. DD is product viability after a distressed year: churn, roadmap, the AI story versus Qualtrics.","signals":[{"date":"2026-06-15","publisher":"SaaStr","title":"Medallia is just the opening act: PE SaaS deals with $50bn+ in debt at risk","url":"https://www.saastr.com/medallia-is-just-the-opening-act-heres-the-list-of-pe-saas-deals-most-at-risk/"}],"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"myob","name":"MYOB","area":"fintech","hq":"Melbourne","listed":"","apac":true,"live":true,"ownership":"pe","owner":"KKR","ownerSince":"2019-05-10","why":"Australia and New Zealand's incumbent SME accounting and payroll platform, ~A$1.6bn when KKR took it private. KKR has been sounding out a sale at over $2.7bn, including talks with ANZ. Seven years in, with the Xero fight defining the equity story, this is an exit the fund needs.","move":"Sell-side under way. The buy-side DD is cloud migration progress off the desktop base and churn to Xero — a classic SSG product/tech read.","signals":[{"date":"2026-08-14","publisher":"PE Insights","title":"KKR said to seek over $2.7bn for MYOB in talks with ANZ","url":"https://pe-insights.com/kkr-is-said-to-seek-over-2-7bn-for-myob-group-in-talks-with-anz/"}],"firstSeen":"2026-10-02T05:10:00.000Z"},{"id":"nielsen","name":"Nielsen","area":"data","hq":"New York","listed":"","apac":false,"live":false,"ownership":"pe","owner":"Elliott & Brookfield","ownerSince":"2022-10-11","why":"Audience measurement and data, taken private for $16bn in October 2022 by an Elliott- and Brookfield-led consortium. Four years in with a heavy debt load and a measurement-credibility rebuild behind it. A whole-company secondary is big even for Warburg; a carve-out of a data unit is the more likely door.","move":"Watch. Any carve-out brings a data-separation and TSA scoping question.","signals":[{"date":"2022-10-11","publisher":"Nasdaq","title":"Nielsen completes $16bn sale to Evergreen- and Brookfield-led consortium","url":"https://www.nasdaq.com/press-release/nielsen-announces-closing-of-transaction-with-evergreen-and-brookfield-led-consortium"}],"firstSeen":"2026-10-02T05:10:00.000Z"},{"id":"nuix","name":"Nuix","area":"ai","hq":"Sydney","listed":"ASX: NXL","apac":true,"live":false,"ownership":"listed","owner":"ASX-listed","why":"Investigation and e-discovery software with a defensible data moat, mid-migration to the Neo platform and buying French graph-AI firm Linkurious for $35m. Sub-A$1bn, scarred by its 2021 IPO, and the kind of vertical AI application a sponsor can take private and re-platform.","move":"The DD is the Neo migration itself: how much of the installed base has moved, and whether the AI layer is product or marketing.","signals":[{"date":"2026-02-23","publisher":"Investing.com","title":"Nuix reports strong H1 2026 growth amid Neo platform expansion","url":"https://www.investing.com/news/transcripts/earnings-call-transcript-nuix-ltd-reports-strong-h1-2026-growth-amid-neo-platform-expansion-93CH-4517631"},{"date":"2026-02-23","publisher":"Capital Brief","title":"Nuix acquires French AI decision platform Linkurious for $35m","url":"https://www.capitalbrief.com/briefing/nuix-acquires-french-ai-decision-platform-linkurious-for-35m-360e5d09-4b9c-4d47-b845-86e5b766a9ca/"}],"firstSeen":"2026-10-02T04:30:00.000Z"},{"id":"proofpoint","firm":"kkr","name":"Proofpoint","area":"software","hq":"Sunnyvale","listed":"","apac":false,"live":true,"ownership":"pe","owner":"Thoma Bravo","ownerSince":"2021-08-31","why":"Email and people-centric security, taken private for $12.3bn, ~$4.7bn of debt, past five years. Thoma Bravo has been exploring pre-IPO financing and acquisitions for a public-market return; a sponsor with KKR's cheque size is the alternative to a difficult IPO.","move":"Exit preparation under way. Buy-side DD on a security platform this size: product-line consolidation, AI threat-detection claims, and the debt-service case.","signals":[{"date":"2026-07-22","publisher":"Tech Monitor","title":"Proofpoint explores pre-IPO financing and acquisition strategy for public-market return","url":"https://www.techmonitor.ai/technology/cybersecurity/proofpoint-explores-pre-ipo-financing-and-acquisition-strategy-for-public-market-return"}],"firstSeen":"2026-10-02T05:40:00.000Z"},{"id":"teg","name":"TEG (Ticketek)","area":"markets","hq":"Sydney","listed":"","apac":true,"live":false,"ownership":"pe","owner":"Silver Lake","ownerSince":"2020-01-31","why":"Ticketing and live-entertainment marketplace, bought by Silver Lake for US$1.3bn. Lost the Melbourne Park contract to AXS in April and is cutting jobs; the company denies a sale but the market expects Silver Lake to bring in a strategic investor. Six years in, under pressure, is where a minority or full secondary gets done.","move":"Watch. Any entrant would want a ticketing-platform and contract-retention read before pricing it.","signals":[{"date":"2026-07-02","publisher":"People Matters","title":"Ticketek owner TEG cuts jobs amid contract losses and restructuring","url":"https://anz.peoplemattersglobal.com/news/business/ticketek-owner-teg-cuts-jobs-amid-contract-losses-and-restructuring-50610"}],"firstSeen":"2026-10-02T05:10:00.000Z"},{"id":"trade-me","name":"Trade Me","area":"markets","hq":"Wellington","listed":"","apac":true,"live":false,"ownership":"pe","owner":"Apax Partners","ownerSince":"2019-05-06","why":"New Zealand's dominant classifieds and marketplace (property, motors, jobs, general), bought by Apax for NZ$2.56bn in 2019. Apax was weighing a relisting in 2024 and has not transacted since; it bought half of Stuff Digital in 2025 instead. Seven years in, a secondary to a sponsor who likes network businesses is the alternative to an IPO.","move":"No process announced. If one opens, the DD is platform modernisation across four verticals and the Stuff integration.","signals":[{"date":"2025-06-20","publisher":"Wikipedia","title":"Trade Me acquires 50% stake in Stuff Digital","url":"https://en.wikipedia.org/wiki/Trade_Me"},{"date":"2024-03-15","publisher":"NZ Herald","title":"Trade Me private equity owners eyeing sharemarket float","url":"https://www.nzherald.co.nz/business/markets-with-madison/trade-me-private-equity-owners-eyeing-sharemarket-float-in-2024/6F6USG55D5D4VEZZ67A2ULNZZQ/"}],"firstSeen":"2026-10-02T05:10:00.000Z"},{"id":"tyro","name":"Tyro Payments","area":"fintech","hq":"Sydney","listed":"ASX: TYR","apac":true,"live":false,"ownership":"listed","owner":"ASX-listed","why":"Australia's largest non-bank merchant acquirer, ~A$1bn, repeatedly approached (Potentia 2023, unnamed parties Aug 2025) and rejected on value. Buying Thriday adds an AI-led SME finance layer. A listed APAC fintech at a discount is the Ingenia playbook in a different sector.","move":"No process yet. If a bid lands, the DD question is the acquiring stack's resilience and how real the Thriday AI layer is.","signals":[{"date":"2026-01-12","publisher":"Startup Daily","title":"ASX-listed Tyro is buying NAB-backed fintech Thriday","url":"https://www.startupdaily.net/topic/business/asx-listed-payments-platform-tyro-is-buying-nab-backed-rising-star-fintech-thriday/"},{"date":"2025-08-20","publisher":"Capital Brief","title":"Tyro says proposed takeover bid had insufficient value","url":"https://www.capitalbrief.com/briefing/tyro-says-proposed-takeover-bid-had-insufficient-value-cb40d16f-e82a-4db5-ace8-4045ad5f1fd2/"}],"firstSeen":"2026-10-02T04:30:00.000Z"},{"id":"yayoi","name":"Yayoi","area":"ai","hq":"Tokyo","listed":"","apac":true,"live":false,"ownership":"pe","owner":"KKR","ownerSince":"2022-03-01","why":"Japan's largest SME accounting software, 2.5m registered users, bought from ORIX for ¥240bn ($2.1bn). KKR is at 4.6 years with a cloud-transition story (Yayoi Next) that is the whole value-creation case. Japan vertical software at this scale has few natural buyers, which is what makes a sponsor-to-sponsor deal likely.","move":"Watch for a process in 2027. The DD is desktop-to-cloud migration and whether the AI bookkeeping layer is shipping.","signals":[{"date":"2022-03-01","publisher":"ORIX","title":"KKR completes acquisition of Yayoi from ORIX","url":"https://www.orix.co.jp/grp/en/newsrelease/220301_ORIXE.html"}],"firstSeen":"2026-10-02T05:10:00.000Z"},{"id":"zendesk","firm":"tpg","name":"Zendesk","area":"software","hq":"San Francisco","listed":"","apac":false,"live":false,"ownership":"pe","owner":"Hellman & Friedman, Permira (ADIA, GIC)","ownerSince":"2022-11-22","why":"Customer-service SaaS, $13.9bn take-private, 3.9 years in. An IPO is no longer expected; the owners will look at a secondary or a strategic. AI agents are rewriting the category, which cuts both ways for the equity story.","move":"Watch. The DD is whether the AI-agent product is holding seat counts or cannibalising them.","signals":[{"date":"2026-05-20","publisher":"IPOs.fyi","title":"Zendesk taken private: IPO no longer expected","url":"https://ipos.fyi/tracker/zendesk-ipo"}],"firstSeen":"2026-10-02T05:40:00.000Z"}]};
+const PUBLIC = typeof DATA !== 'undefined';
+
+const KIND = { acquire: 'Buyout', addon: 'Add-on', exit: 'Exit', invest: 'Growth', fund: 'Fund', people: 'People', platform: 'New platform', other: 'News' };
+const MONO = { 'warburg-pincus': ['WP', '#1b2a4a'], kkr: ['KKR', '#2b2b2b'], tpg: ['TPG', '#0b4f6c'] };
+let firm = FIRMS[0];
+const $ = (id) => document.getElementById(id);
+// Headlines open a Google News search for the story rather than one outlet's copy of it, so the
+// whole coverage is one tap away. The original article stays reachable as the small "source" link.
+const gnews = (q) => `https://www.google.com/search?tbm=nws&q=${encodeURIComponent(q)}`;
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+// Per-viewer conveniences only. Triage lives in the shared store.
+const PREFS = 'pe-client-tracker.view';
+let view = { firm: FIRMS[0].id, tab: 'news', seg: 'priority', thesis: 'all', apac: false, showDismissed: false };
+try { view = { ...view, ...JSON.parse(localStorage.getItem(PREFS) || '{}'), showDismissed: false }; } catch {}
+const savePrefs = () => { try { localStorage.setItem(PREFS, JSON.stringify({ firm: view.firm, tab: view.tab, seg: view.seg, thesis: view.thesis, apac: view.apac })); } catch {} };
+
+let items = [];          // raw rows from the store
+let triage = {};         // id → { status, note, at }
+let targets = [];        // candidate companies, seeded by Jobi
+let targetTriage = {};   // id → { status, note, at }
+let db = null, canWrite = true, editing = null, loaded = false;
+
+function dayLabel(iso) {
+  const t = Date.parse(iso); if (Number.isNaN(t)) return '';
+  const days = Math.round((Date.now() - t) / 86400000);
+  if (days <= 0) return 'today';
+  if (days === 1) return 'yesterday';
+  if (days < 7) return `${days}d ago`;
+  return new Date(t).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: days > 300 ? 'numeric' : undefined });
+}
+
+let toastTimer;
+function toast(msg) {
+  const el = $('toast'); el.textContent = msg; el.classList.add('on');
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => el.classList.remove('on'), 2200);
+}
+
+function classified() {
+  return items.filter((i) => (i.firm || FIRMS[0].id) === firm.id).map((i) => {
+    const t = triage[i.id] || {};
+    return { ...i, ...classify(firm, i), status: t.status || 'new', note: t.note || '' };
+  });
+}
+
+function card(i) {
+  const fit = i.theses.map((t) => `<span class="th" title="${esc(t.terms.join(', '))}">${esc(t.label)}<i>${esc(t.terms.slice(0, 2).join(' · '))}</i></span>`).join('')
+    + (i.apac ? '<span class="apac">APAC</span>' : '');
+  const btn = (s, l) => PUBLIC ? '' : `<button class="btn${i.status === s ? ' sel' : ''}" data-st="${s}"${canWrite ? '' : ' disabled'}>${l}</button>`;
+  const noteBox = PUBLIC ? '' : editing === i.id ? `
+    <div class="noted">
+      <textarea id="note-${i.id}" placeholder="Who to call, what you know">${esc(i.note)}</textarea>
+      <div class="row"><button class="btn sel" data-save="1">Save note</button><button class="btn" data-cancel="1">Cancel</button></div>
+    </div>` : (i.note ? `<div class="note">${esc(i.note)}</div>` : '');
+  return `
+    <article class="deal ${i.heat}${i.status === 'dismiss' ? ' gone' : ''}" data-id="${i.id}">
+      <div class="meta">
+        <span class="tag ${i.official ? 'release' : i.rumour ? 'reported' : 'press'}">${i.official ? 'RELEASE' : i.rumour ? 'REPORTED' : 'PRESS'}</span>
+        <span class="kind">${esc(KIND[i.kind] || 'News')}</span>
+        <span>${esc(i.publisher || '')}</span>
+        <a class="src" href="${esc(i.url)}" target="_blank" rel="noopener noreferrer">source</a>
+        <span class="when">${esc(dayLabel(i.date))}</span>
+      </div>
+      <a class="title" href="${esc(gnews(i.title))}" target="_blank" rel="noopener noreferrer">${esc(i.title)}</a>
+      ${fit ? `<div class="fit">${fit}</div>` : ''}
+      ${i.move ? `<p class="move">${esc(i.move)}</p>` : ''}
+      ${i.summary ? `<p class="summary">${esc(i.summary)}</p>` : ''}
+      ${noteBox}
+      ${PUBLIC ? '' : `<div class="act">
+        ${btn('pursue', 'Pursue')}${btn('watch', 'Watch')}${btn('dismiss', 'Dismiss')}
+        ${canWrite && editing !== i.id ? `<button class="lnk" data-note="1">${i.note ? 'edit note' : 'note'}</button>` : ''}
+      </div>`}
+    </article>`;
+}
+
+// Years since the current owner bought in. Past four is where a sponsor starts planning the exit.
+const held = (t) => (t.ownership === 'pe' && t.ownerSince ? (Date.now() - Date.parse(t.ownerSince)) / (365.25 * 86400000) : null);
+const holdChip = (t) => {
+  const y = held(t);
+  if (y === null) return t.owner ? `<span class="hold">${esc(t.owner)}</span>` : '';
+  return `<span class="hold${y >= 4 ? ' ripe' : ''}">${esc(t.owner)} <b>${y.toFixed(1)} yrs held</b></span>`;
+};
+
+function targetCard(t) {
+  const st = targetTriage[t.id] || {};
+  const status = st.status || 'new', note = st.note || '';
+  const area = firm.theses.find((x) => x.id === t.area);
+  const sigs = (t.signals || []).slice().sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
+  const btn = (s, l) => PUBLIC ? '' : `<button class="btn${status === s ? ' sel' : ''}" data-st="${s}"${canWrite ? '' : ' disabled'}>${l}</button>`;
+  const noteBox = PUBLIC ? '' : editing === t.id ? `
+    <div class="noted">
+      <textarea id="note-${t.id}" placeholder="Who to call, what you know">${esc(note)}</textarea>
+      <div class="row"><button class="btn sel" data-save="1">Save note</button><button class="btn" data-cancel="1">Cancel</button></div>
+    </div>` : (note ? `<div class="note">${esc(note)}</div>` : '');
+  return `
+    <article class="deal tgt ${t.live ? 'hot' : 'warm'}${status === 'dismiss' ? ' gone' : ''}" data-id="${t.id}">
+      <div class="meta">
+        <span class="tag ${t.live ? 'live' : 'watch'}">${t.live ? 'LIVE PROCESS' : 'WATCH'}</span>
+        <span class="kind">${esc(area ? area.label : t.area)}</span>
+        ${t.apac ? '<span class="apac">APAC</span>' : ''}
+        <span class="when">${sigs[0] ? esc(dayLabel(sigs[0].date)) : ''}</span>
+      </div>
+      <a class="name" href="${esc(gnews(`${t.name} ${t.owner && t.ownership === 'pe' ? t.owner.split(/[ ,(]/)[0] : ''} sale OR acquisition OR IPO`))}" target="_blank" rel="noopener noreferrer">${esc(t.name)}</a>
+      <div class="where">${esc([t.hq, t.listed].filter(Boolean).join(' · '))}</div>
+      <div class="fit">${holdChip(t)}</div>
+      <p class="why">${esc(t.why)}</p>
+      ${sigs.length ? `<div class="sig">${sigs.slice(0, 3).map((g) => `<div><a href="${esc(gnews(g.title))}" target="_blank" rel="noopener noreferrer"><span class="d">${esc(dayLabel(g.date))}</span>${esc(g.title)}</a> <a class="src" href="${esc(g.url)}" target="_blank" rel="noopener noreferrer">${esc(g.publisher || 'source')}</a></div>`).join('')}</div>` : ''}
+      ${t.move ? `<p class="move">${esc(t.move)}</p>` : ''}
+      ${noteBox}
+      ${PUBLIC ? '' : `<div class="act">
+        ${btn('pursue', 'Pursue')}${btn('watch', 'Watch')}${btn('dismiss', 'Dismiss')}
+        ${canWrite && editing !== t.id ? `<button class="lnk" data-note="1">${note ? 'edit note' : 'note'}</button>` : ''}
+      </div>`}
+    </article>`;
+}
+
+function renderTargets() {
+  const v = view;
+  const withStatus = targets.filter((t) => (t.firm || FIRMS[0].id) === firm.id).map((t) => ({ ...t, status: (targetTriage[t.id] || {}).status || 'new' }));
+  const live = withStatus.filter((t) => t.status !== 'dismiss');
+  const n = (pred) => { const k = live.filter(pred).length; return k ? ` · ${k}` : ''; };
+  const chip = (id, label) => `<button class="chip${v.thesis === id ? ' on' : ''}" data-th="${id}">${esc(label)}</button>`;
+  $('chips').innerHTML = firm.theses.map((t) => chip(t.id, t.label + n((x) => x.area === t.id))).join('')
+    + `<button class="chip${v.apac ? ' on' : ''}" data-apac="1">APAC${n((x) => x.apac)}</button>`;
+  let list = v.seg === 'pipeline' ? withStatus.filter((t) => t.status === 'pursue' || t.status === 'watch')
+    : withStatus.filter((t) => t.status !== 'dismiss' || v.showDismissed);
+  if (v.seg !== 'pipeline') {
+    if (v.thesis !== 'all') list = list.filter((t) => t.area === v.thesis);
+    if (v.apac) list = list.filter((t) => t.apac);
+  }
+  const newest = (t) => Math.max(0, ...(t.signals || []).map((g) => Date.parse(g.date) || 0));
+  const hold = (t) => held(t) ?? -1;
+  if (v.seg === 'priority') list.sort((a, b) => (b.status === 'pursue') - (a.status === 'pursue') || hold(b) - hold(a) || (b.live - a.live) || newest(b) - newest(a));
+  else list.sort((a, b) => (v.seg === 'pipeline' ? (b.status === 'pursue') - (a.status === 'pursue') : 0) || newest(b) - newest(a));
+  const emptyMsg = !loaded ? '<b>Loading targets.</b><br>Each one will show why it fits a focus area and the latest signals on it.'
+    : v.seg === 'pipeline' ? 'No targets marked Pursue or Watch yet.'
+    : targets.length ? 'No targets in this focus area yet.' : '<b>No targets yet.</b><br>Ask Jobi to propose some.';
+  $('list').innerHTML = list.length ? list.map(targetCard).join('') : `<div class="empty">${emptyMsg}</div>`;
+  if (editing) { const ta = $(`note-${editing}`); if (ta) ta.focus(); }
+}
+
+function render() {
+  if (PUBLIC) { $('segPipeline').hidden = true; if (view.seg === 'pipeline') view.seg = 'priority'; }
+  firm = FIRMS.find((f) => f.id === view.firm) || FIRMS[0];
+  if (firm.theses.every((t) => t.id !== view.thesis)) view.thesis = 'all';
+  $('firms').innerHTML = FIRMS.map((f) => { const [m, c] = MONO[f.id] || [f.name.slice(0, 3).toUpperCase(), '#444']; return `
+    <button class="firm${f.id === firm.id ? ' on' : ''}" data-firm="${f.id}">
+      <svg class="firm-logo" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="6" fill="${c}"/><text x="20" y="26" text-anchor="middle" font-family="Archivo Narrow, Arial Narrow, sans-serif" font-weight="700" font-size="${m.length > 2 ? 15 : 19}" fill="#fff" letter-spacing=".3">${m}</text></svg>
+      <span class="firm-name">${esc(f.name)}</span>
+    </button>`; }).join('');
+  $('tabs').querySelectorAll('button').forEach((b) => b.classList.toggle('on', b.dataset.tab === view.tab));
+  $('footNews').hidden = view.tab !== 'news';
+  $('footTargets').hidden = view.tab !== 'targets';
+  $('focus').hidden = view.seg === 'pipeline';
+  if (view.tab === 'targets') {
+    const pipe = targets.filter((t) => ['pursue', 'watch'].includes((targetTriage[t.id] || {}).status)).length;
+    $('seg').querySelectorAll('button').forEach((b) => {
+      b.classList.toggle('on', b.dataset.seg === view.seg);
+      b.textContent = b.dataset.seg === 'priority' ? 'Priority' : b.dataset.seg === 'pipeline' ? `Pipeline${pipe ? ` · ${pipe}` : ''}` : 'Latest';
+    });
+    return renderTargets();
+  }
+  const all = classified();
+  const latest = all.reduce((m, i) => (i.firstSeen > m ? i.firstSeen : m), '');
+  $('stamp').textContent = !loaded ? 'loading' : latest ? `pulled ${dayLabel(latest)}` : 'nothing pulled';
+  const pipeline = all.filter((i) => i.status === 'pursue' || i.status === 'watch');
+  const dismissed = all.filter((i) => i.status === 'dismiss');
+  const hot = all.filter((i) => i.heat === 'hot' && i.status !== 'dismiss').length;
+  const v = view;
+
+  $('seg').querySelectorAll('button').forEach((b) => {
+    b.classList.toggle('on', b.dataset.seg === v.seg);
+    b.textContent = b.dataset.seg === 'priority' ? `Priority${hot ? ` · ${hot}` : ''}`
+      : b.dataset.seg === 'pipeline' ? `Pipeline${pipeline.length ? ` · ${pipeline.length}` : ''}` : 'Latest';
+  });
+  const chip = (id, label) => `<button class="chip${v.thesis === id ? ' on' : ''}" data-th="${id}">${esc(label)}</button>`;
+  // No "all" chip: tapping the selected area again clears it.
+  // Each button carries its count, so a zero never has to be discovered by tapping.
+  const live = all.filter((i) => i.status !== 'dismiss');
+  const n = (pred) => { const k = live.filter(pred).length; return k ? ` · ${k}` : ''; };
+  $('chips').innerHTML = firm.theses.map((t) => chip(t.id, t.label + n((i) => i.theses.some((x) => x.id === t.id)))).join('')
+    + `<button class="chip${v.apac ? ' on' : ''}" data-apac="1">APAC${n((i) => i.apac)}</button>`;
+
+  let list = v.seg === 'pipeline' ? pipeline : all.filter((i) => i.status !== 'dismiss' || v.showDismissed);
+  if (v.seg !== 'pipeline') {
+    if (v.thesis !== 'all') list = list.filter((i) => i.theses.some((t) => t.id === v.thesis));
+    if (v.apac) list = list.filter((i) => i.apac);
+  }
+  if (v.seg === 'priority') list.sort((a, b) => (b.status === 'pursue') - (a.status === 'pursue') || b.score - a.score);
+  else list.sort((a, b) => (v.seg === 'pipeline' ? (b.status === 'pursue') - (a.status === 'pursue') : 0) || Date.parse(b.date) - Date.parse(a.date));
+
+  const emptyMsg = !loaded ? '<b>Loading announcements.</b><br>Each one will show the event, the thesis it fits, and the SSG pitch it opens.'
+    : v.seg === 'pipeline' ? 'Nothing marked Pursue or Watch yet.'
+    : all.length ? 'Nothing matches this filter.' : '<b>No announcements stored yet.</b><br>Ask Jobi to pull the latest.';
+  $('list').innerHTML = list.length ? list.map(card).join('') : `<div class="empty">${emptyMsg}</div>`;
+  if (v.seg === 'latest' && dismissed.length) {
+    $('list').insertAdjacentHTML('beforeend', `<div class="foot"><button class="lnk" style="margin:0" id="showGone">${v.showDismissed ? 'Hide' : 'Show'} ${dismissed.length} dismissed</button></div>`);
+    $('showGone').addEventListener('click', () => { v.showDismissed = !v.showDismissed; render(); });
+  }
+  if (editing) { const ta = $(`note-${editing}`); if (ta) ta.focus(); }
+}
+
+async function saveTriage(id, patch) {
+  if (!db) { toast('Not connected'); return; }
+  const store = view.tab === 'targets' ? targetTriage : triage;
+  const col = view.tab === 'targets' ? 'targetTriage' : 'triage';
+  const prev = store[id] || {};
+  const next = { status: patch.status ?? prev.status ?? 'new', note: patch.note ?? prev.note ?? '', at: new Date().toISOString() };
+  try {
+    if (next.status === 'new' && !next.note) { await db.doc(`${col}/${id}`).delete(); delete store[id]; }
+    else { await db.doc(`${col}/${id}`).set(next); store[id] = next; }
+    return true;
+  } catch (e) {
+    if (e && e.code === 'invalid_argument') { canWrite = false; toast('This link is read-only'); render(); }
+    else toast('Could not save');
+    return false;
+  }
+}
+
+$('firms').addEventListener('click', (e) => { const b = e.target.closest('[data-firm]'); if (!b) return; view.firm = b.dataset.firm; editing = null; savePrefs(); render(); });
+$('tabs').addEventListener('click', (e) => { const b = e.target.closest('[data-tab]'); if (!b) return; view.tab = b.dataset.tab; editing = null; savePrefs(); render(); });
+$('seg').addEventListener('click', (e) => { const b = e.target.closest('[data-seg]'); if (!b) return; view.seg = b.dataset.seg; savePrefs(); render(); });
+$('chips').addEventListener('click', (e) => {
+  const b = e.target.closest('button'); if (!b) return;
+  if (b.dataset.th) view.thesis = view.thesis === b.dataset.th ? 'all' : b.dataset.th; else view.apac = !view.apac;
+  savePrefs(); render();
+});
+$('list').addEventListener('click', async (e) => {
+  const cardEl = e.target.closest('.deal'); if (!cardEl) return;
+  const id = cardEl.dataset.id;
+  const st = e.target.closest('[data-st]');
+  if (st) {
+    const cur = ((view.tab === 'targets' ? targetTriage : triage)[id] || {}).status || 'new';
+    const status = cur === st.dataset.st ? 'new' : st.dataset.st;   // tap again to clear
+    if (await saveTriage(id, { status })) { toast(status === 'new' ? 'Cleared' : status === 'dismiss' ? 'Dismissed' : `Marked ${status}`); render(); }
+    return;
+  }
+  if (e.target.closest('[data-note]')) { editing = id; render(); return; }
+  if (e.target.closest('[data-cancel]')) { editing = null; render(); return; }
+  if (e.target.closest('[data-save]')) {
+    const note = $(`note-${id}`).value.trim();
+    if (await saveTriage(id, { note })) { editing = null; toast(note ? 'Note saved' : 'Note cleared'); render(); }
+  }
+});
+
+render();
+
+(async () => {
+  if (PUBLIC) {
+    items = DATA.deals; targets = DATA.targets; loaded = true;
+    $('footTriage').textContent = `Read-only copy, refreshed ${DATA.builtAt ? dayLabel(DATA.builtAt) : ''}.`;
+    render(); return;
+  }
+  db = await claude.use('db');
+  if (!db) { loaded = true; $('stamp').textContent = 'offline'; $('banner').hidden = false; $('banner').textContent = 'The store is not reachable from this view, so nothing can be shown or saved.'; render(); return; }
+  const user = await claude.use('user');
+  if (user) { const w = await user.can('data.write'); if (w === false) canWrite = false; }
+
+  db.collection('deals').onSnapshot((snap) => {
+    items = snap.docs.filter((d) => d.exists).map((d) => ({ id: d.id, ...d.data() }));
+    loaded = true;
+    render();
+  }, () => { $('banner').hidden = false; $('banner').className = 'banner warn'; $('banner').textContent = 'Lost the connection to the store. Reload to reconnect.'; });
+
+  db.collection('triage').onSnapshot((snap) => {
+    triage = {};
+    snap.docs.forEach((d) => { if (d.exists) triage[d.id] = d.data(); });
+    render();
+  });
+  db.collection('targets').onSnapshot((snap) => {
+    targets = snap.docs.filter((d) => d.exists).map((d) => ({ id: d.id, ...d.data() }));
+    render();
+  });
+  db.collection('targetTriage').onSnapshot((snap) => {
+    targetTriage = {};
+    snap.docs.forEach((d) => { if (d.exists) targetTriage[d.id] = d.data(); });
+    render();
+  });
+})();
+</script>
+</body></html>
