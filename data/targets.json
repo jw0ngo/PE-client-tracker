@@ -1,17 +1,18 @@
 [
  {
-  "apac": false,
-  "area": "software",
+  "id": "anaplan",
   "firm": "tpg",
-  "firstSeen": "2026-10-02T05:40:00.000Z",
+  "name": "Anaplan",
+  "area": "software",
   "hq": "San Francisco",
   "listed": "",
+  "apac": false,
   "live": true,
-  "move": "IPO track. Confirmatory tech review for a pre-IPO investor: platform scalability, the AI forecasting layer, R&D efficiency since the take-private.",
-  "name": "Anaplan",
+  "ownership": "pe",
   "owner": "Thoma Bravo",
   "ownerSince": "2022-06-22",
-  "ownership": "pe",
+  "why": "Connected-planning SaaS, $10.4bn take-private, 4.3 years in and preparing a return to public markets. A pre-IPO stake or a pre-emptive bid is where TPG's software team has played before.",
+  "move": "IPO track. Confirmatory tech review for a pre-IPO investor: platform scalability, the AI forecasting layer, R&D efficiency since the take-private.",
   "signals": [
    {
     "date": "2026-08-05",
@@ -20,21 +21,21 @@
     "url": "https://peinsights.substack.com/p/thoma-bravo-backed-anaplan-moves"
    }
   ],
-  "why": "Connected-planning SaaS, $10.4bn take-private, 4.3 years in and preparing a return to public markets. A pre-IPO stake or a pre-emptive bid is where TPG's software team has played before.",
-  "id": "anaplan"
+  "firstSeen": "2026-10-02T05:40:00.000Z"
  },
  {
-  "apac": false,
+  "id": "banking-circle",
+  "name": "Banking Circle",
   "area": "fintech",
-  "firstSeen": "2026-10-02T04:30:00.000Z",
   "hq": "Luxembourg",
   "listed": "",
+  "apac": false,
   "live": true,
-  "move": "Sell-side process under way, so VDD is spent; the buy-side tech DD for whichever sponsor bids is the work to win.",
-  "name": "Banking Circle",
+  "ownership": "pe",
   "owner": "EQT",
   "ownerSince": "2018-10-01",
-  "ownership": "pe",
+  "why": "Payments and clearing infrastructure behind Stripe, Nuvei and other fintechs. EQT has Morgan Stanley sounding out buyers at $2–4bn — exactly the financial-infrastructure asset Warburg's new $3bn Financial Sector III fund is sized for.",
+  "move": "Sell-side process under way, so VDD is spent; the buy-side tech DD for whichever sponsor bids is the work to win.",
   "signals": [
    {
     "date": "2026-02-10",
@@ -49,20 +50,20 @@
     "url": "https://thepaypers.com/fintech/news/eqt-and-financial-technology-partners-look-into-selling-banking-circle"
    }
   ],
-  "why": "Payments and clearing infrastructure behind Stripe, Nuvei and other fintechs. EQT has Morgan Stanley sounding out buyers at $2\u20134bn \u2014 exactly the financial-infrastructure asset Warburg's new $3bn Financial Sector III fund is sized for.",
-  "id": "banking-circle"
+  "firstSeen": "2026-10-02T04:30:00.000Z"
  },
  {
-  "apac": true,
+  "id": "carro",
+  "name": "Carro",
   "area": "markets",
-  "firstSeen": "2026-10-02T04:30:00.000Z",
   "hq": "Singapore",
   "listed": "",
+  "apac": true,
   "live": true,
-  "move": "IPO-readiness work is already scoped by the banks. The sponsor-side angle is a pre-IPO stake or a full pre-emption, which needs a marketplace-economics and platform read.",
-  "name": "Carro",
-  "owner": "SoftBank-backed",
   "ownership": "vc",
+  "owner": "SoftBank-backed",
+  "why": "Southeast Asia's largest used-car marketplace, SoftBank-backed, exploring a US IPO of up to $500m at ~$3bn with an SGX secondary. A dual-track at that size is where a sponsor pre-empts: Warburg has moved its tech dealmakers to Singapore this month.",
+  "move": "IPO-readiness work is already scoped by the banks. The sponsor-side angle is a pre-IPO stake or a full pre-emption, which needs a marketplace-economics and platform read.",
   "signals": [
    {
     "date": "2026-06-18",
@@ -71,20 +72,20 @@
     "url": "https://www.gurufocus.com/news/8927370/carro-explores-us-ipo-for-up-to-500m"
    }
   ],
-  "why": "Southeast Asia's largest used-car marketplace, SoftBank-backed, exploring a US IPO of up to $500m at ~$3bn with an SGX secondary. A dual-track at that size is where a sponsor pre-empts: Warburg has moved its tech dealmakers to Singapore this month.",
-  "id": "carro"
+  "firstSeen": "2026-10-02T04:30:00.000Z"
  },
  {
-  "apac": true,
+  "id": "carsome",
+  "name": "Carsome",
   "area": "markets",
-  "firstSeen": "2026-10-02T04:30:00.000Z",
   "hq": "Kuala Lumpur",
   "listed": "",
+  "apac": true,
   "live": false,
-  "move": "Watch. If Carro lists, Carsome's path narrows to a sponsor or a strategic, and the DD is unit economics by market.",
-  "name": "Carsome",
-  "owner": "VC-backed",
   "ownership": "vc",
+  "owner": "VC-backed",
+  "why": "Carro's direct rival across Malaysia, Indonesia, Thailand and Singapore. Raised $30m in March from HKIC, Gobi and Asia Partners and is an IPO candidate on Nasdaq or SGX. Whichever of the two does not list first becomes a sponsor target.",
+  "move": "Watch. If Carro lists, Carsome's path narrows to a sponsor or a strategic, and the DD is unit economics by market.",
   "signals": [
    {
     "date": "2026-03-12",
@@ -93,21 +94,21 @@
     "url": "https://www.cbinsights.com/company/carsome/financials"
    }
   ],
-  "why": "Carro's direct rival across Malaysia, Indonesia, Thailand and Singapore. Raised $30m in March from HKIC, Gobi and Asia Partners and is an IPO candidate on Nasdaq or SGX. Whichever of the two does not list first becomes a sponsor target.",
-  "id": "carsome"
+  "firstSeen": "2026-10-02T04:30:00.000Z"
  },
  {
-  "apac": true,
+  "id": "cfs",
+  "name": "Colonial First State",
   "area": "fintech",
-  "firstSeen": "2026-10-02T05:10:00.000Z",
   "hq": "Sydney",
   "listed": "",
+  "apac": true,
   "live": false,
-  "move": "Watch. A buyer would need the platform-rebuild read: how much of the legacy admin stack has been replaced and what remains.",
-  "name": "Colonial First State",
+  "ownership": "pe",
   "owner": "KKR (55%)",
   "ownerSince": "2021-11-30",
-  "ownership": "pe",
+  "why": "Australian superannuation and wealth platform, A$1.7bn for KKR's 55% from CBA, standalone since December 2021. Four years and ten months in, with a multi-year platform rebuild as the thesis, it is approaching the point where KKR tests the market or CBA's remaining 45% changes hands.",
+  "move": "Watch. A buyer would need the platform-rebuild read: how much of the legacy admin stack has been replaced and what remains.",
   "signals": [
    {
     "date": "2021-11-30",
@@ -116,20 +117,20 @@
     "url": "https://www.privatebankerinternational.com/news/cba-colonial-first-state-kkr/"
    }
   ],
-  "why": "Australian superannuation and wealth platform, A$1.7bn for KKR's 55% from CBA, standalone since December 2021. Four years and ten months in, with a multi-year platform rebuild as the thesis, it is approaching the point where KKR tests the market or CBA's remaining 45% changes hands.",
-  "id": "cfs"
+  "firstSeen": "2026-10-02T05:10:00.000Z"
  },
  {
-  "apac": false,
+  "id": "clarivate",
+  "name": "Clarivate",
   "area": "data",
-  "firstSeen": "2026-10-02T04:30:00.000Z",
   "hq": "London",
   "listed": "NYSE: CLVT",
+  "apac": false,
   "live": false,
-  "move": "Carve-out just agreed, so a TSA and data-separation plan exist. A whole-company bid would need a product-portfolio and AI-exposure read across the remaining segments.",
-  "name": "Clarivate",
-  "owner": "NYSE-listed",
   "ownership": "listed",
+  "owner": "NYSE-listed",
+  "why": "Scientific, IP and academic information services (Web of Science, Derwent, ProQuest), ~$3bn market cap under its debt. Sold Life Sciences & Healthcare to Altaris for $600m in July under a strategic review — a slimmer core that reads as a take-private candidate. Warburg bought Pharma Intelligence out of Informa on the same logic.",
+  "move": "Carve-out just agreed, so a TSA and data-separation plan exist. A whole-company bid would need a product-portfolio and AI-exposure read across the remaining segments.",
   "signals": [
    {
     "date": "2026-07-06",
@@ -138,22 +139,22 @@
     "url": "https://www.nasdaq.com/press-release/clarivate-announces-sale-life-sciences-healthcare-segment-600-million-2026-07-06"
    }
   ],
-  "why": "Scientific, IP and academic information services (Web of Science, Derwent, ProQuest), ~$3bn market cap under its debt. Sold Life Sciences & Healthcare to Altaris for $600m in July under a strategic review \u2014 a slimmer core that reads as a take-private candidate. Warburg bought Pharma Intelligence out of Informa on the same logic.",
-  "id": "clarivate"
+  "firstSeen": "2026-10-02T04:30:00.000Z"
  },
  {
-  "apac": false,
-  "area": "software",
+  "id": "cornerstone",
   "firm": "kkr",
-  "firstSeen": "2026-10-02T05:40:00.000Z",
+  "name": "Cornerstone OnDemand",
+  "area": "software",
   "hq": "Santa Monica",
   "listed": "",
+  "apac": false,
   "live": false,
-  "move": "Watch. Three merged codebases is the DD: how much consolidation has actually happened and what the AI skills layer is built on.",
-  "name": "Cornerstone OnDemand",
+  "ownership": "pe",
   "owner": "Clearlake",
   "ownerSince": "2021-10-15",
-  "ownership": "pe",
+  "why": "Learning and talent-management SaaS, $5.2bn take-private, five years in. Clearlake has rolled in SumTotal and Saba and the platform is at the point where a 2021-vintage fund looks for a buyer. HR software with a large installed base suits a buy-and-build owner.",
+  "move": "Watch. Three merged codebases is the DD: how much consolidation has actually happened and what the AI skills layer is built on.",
   "signals": [
    {
     "date": "2021-10-15",
@@ -162,22 +163,22 @@
     "url": "https://clearlake.com/news/clearlake-capital-completes-acquisition-of-cornerstone-ondemand/"
    }
   ],
-  "why": "Learning and talent-management SaaS, $5.2bn take-private, five years in. Clearlake has rolled in SumTotal and Saba and the platform is at the point where a 2021-vintage fund looks for a buyer. HR software with a large installed base suits a buy-and-build owner.",
-  "id": "cornerstone"
+  "firstSeen": "2026-10-02T05:40:00.000Z"
  },
  {
-  "apac": false,
-  "area": "software",
+  "id": "csg",
   "firm": "tpg",
-  "firstSeen": "2026-10-02T05:40:00.000Z",
+  "name": "Cloud Software Group (Citrix + TIBCO)",
+  "area": "software",
   "hq": "Fort Lauderdale",
   "listed": "",
+  "apac": false,
   "live": false,
-  "move": "Watch. A carve-out brings separation and TSA scoping; the broader question is which units still have standalone product momentum.",
-  "name": "Cloud Software Group (Citrix + TIBCO)",
+  "ownership": "pe",
   "owner": "Vista & Elliott",
   "ownerSince": "2022-09-30",
-  "ownership": "pe",
+  "why": "Citrix merged with TIBCO under Vista and Elliott, four years in, carrying heavy interest expense and refinancing through 2025-26. Too big for one sponsor whole; a carve-out of a business unit is the realistic entry.",
+  "move": "Watch. A carve-out brings separation and TSA scoping; the broader question is which units still have standalone product momentum.",
   "signals": [
    {
     "date": "2022-09-30",
@@ -186,20 +187,20 @@
     "url": "https://en.wikipedia.org/wiki/Citrix"
    }
   ],
-  "why": "Citrix merged with TIBCO under Vista and Elliott, four years in, carrying heavy interest expense and refinancing through 2025-26. Too big for one sponsor whole; a carve-out of a business unit is the realistic entry.",
-  "id": "csg"
+  "firstSeen": "2026-10-02T05:40:00.000Z"
  },
  {
-  "apac": true,
+  "id": "fdv",
+  "name": "Frontier Digital Ventures",
   "area": "markets",
-  "firstSeen": "2026-10-02T04:30:00.000Z",
   "hq": "Petaling Jaya",
   "listed": "ASX: FDV",
+  "apac": true,
   "live": false,
-  "move": "Watch. A bid would need a market-by-market platform read; the portfolio runs on several separate stacks.",
-  "name": "Frontier Digital Ventures",
-  "owner": "ASX-listed",
   "ownership": "listed",
+  "owner": "ASX-listed",
+  "why": "Owner-operator of property and auto classifieds across Latin America, MENA and Asia. Small cap, founder-CEO stepped down this year, record EBITDA and a 17% margin. A classifieds portfolio at a sub-scale listing is what EQT paid up for in PropertyGuru.",
+  "move": "Watch. A bid would need a market-by-market platform read; the portfolio runs on several separate stacks.",
   "signals": [
    {
     "date": "2026-08-26",
@@ -214,21 +215,21 @@
     "url": "https://quartr.com/events/frontier-digital-ventures-limited-fdv-agm-2026_FGPFBbsH"
    }
   ],
-  "why": "Owner-operator of property and auto classifieds across Latin America, MENA and Asia. Small cap, founder-CEO stepped down this year, record EBITDA and a 17% margin. A classifieds portfolio at a sub-scale listing is what EQT paid up for in PropertyGuru.",
-  "id": "fdv"
+  "firstSeen": "2026-10-02T04:30:00.000Z"
  },
  {
-  "apac": true,
+  "id": "humanforce",
+  "name": "Humanforce",
   "area": "ai",
-  "firstSeen": "2026-10-02T05:10:00.000Z",
   "hq": "Sydney",
   "listed": "",
+  "apac": true,
   "live": false,
-  "move": "Watch. A buy-and-build at this stage carries an integration question across four acquired stacks.",
-  "name": "Humanforce",
+  "ownership": "pe",
   "owner": "Accel-KKR",
   "ownerSince": "2019-06-01",
-  "ownership": "pe",
+  "why": "Workforce-management SaaS for shift-based employers, built by acquisition under Accel-KKR since 2019 (intelliHR, Emprevo, ShiftMatch in April). Seven years in and still buying, which usually means the owner is assembling the platform it will sell.",
+  "move": "Watch. A buy-and-build at this stage carries an integration question across four acquired stacks.",
   "signals": [
    {
     "date": "2026-04-13",
@@ -237,22 +238,22 @@
     "url": "https://www.capitalbrief.com/article/humanforce-acquires-emprevo-and-shiftmatch-amid-global-expansion-4b0040b3-7cb7-4f5b-8a74-7b90711b106f/"
    }
   ],
-  "why": "Workforce-management SaaS for shift-based employers, built by acquisition under Accel-KKR since 2019 (intelliHR, Emprevo, ShiftMatch in April). Seven years in and still buying, which usually means the owner is assembling the platform it will sell.",
-  "id": "humanforce"
+  "firstSeen": "2026-10-02T05:10:00.000Z"
  },
  {
-  "apac": false,
-  "area": "healthit",
+  "id": "inovalon",
   "firm": "tpg",
-  "firstSeen": "2026-10-02T05:40:00.000Z",
+  "name": "Inovalon",
+  "area": "healthit",
   "hq": "Bowie, MD",
   "listed": "",
+  "apac": false,
   "live": false,
-  "move": "Watch for a 2027 process. DD is the data-asset read: coverage, refresh cadence, and how defensible the payer integrations are.",
-  "name": "Inovalon",
+  "ownership": "pe",
   "owner": "Nordic Capital",
   "ownerSince": "2021-11-24",
-  "ownership": "pe",
+  "why": "Healthcare data and analytics for payers and providers, $7.3bn take-private, 4.9 years in — the five-year mark is next month. Healthcare data is TPG's strongest sector and a Nordic Capital fund of that vintage will be planning the exit.",
+  "move": "Watch for a 2027 process. DD is the data-asset read: coverage, refresh cadence, and how defensible the payer integrations are.",
   "signals": [
    {
     "date": "2021-11-24",
@@ -261,20 +262,20 @@
     "url": "https://tracxn.com/d/companies/inovalon/__o3nvTPI1b635kBUSvcBJcRIquxt-vhiK9dtG2ZWo1Hc"
    }
   ],
-  "why": "Healthcare data and analytics for payers and providers, $7.3bn take-private, 4.9 years in \u2014 the five-year mark is next month. Healthcare data is TPG's strongest sector and a Nordic Capital fund of that vintage will be planning the exit.",
-  "id": "inovalon"
+  "firstSeen": "2026-10-02T05:40:00.000Z"
  },
  {
-  "apac": true,
+  "id": "iress",
+  "name": "Iress",
   "area": "data",
-  "firstSeen": "2026-10-02T04:30:00.000Z",
   "hq": "Melbourne",
   "listed": "ASX: IRE",
+  "apac": true,
   "live": true,
-  "move": "A live process with two US sponsors engaged. Buy-side tech DD is being scoped by someone this quarter; the platform's legacy-stack question (Xplan, trading) is the diligence.",
-  "name": "Iress",
-  "owner": "ASX-listed",
   "ownership": "listed",
+  "owner": "ASX-listed",
+  "why": "Market data, trading and wealth-platform software across APAC, UK and Canada — the data-plus-fintech shape Warburg bought in Clearwater. In play: Blackstone and Thoma Bravo in early talks after a withdrawn A$10.50 approach, and EQT walked away in 2021. A counter-bid or a consortium seat is the obvious angle.",
+  "move": "A live process with two US sponsors engaged. Buy-side tech DD is being scoped by someone this quarter; the platform's legacy-stack question (Xplan, trading) is the diligence.",
   "signals": [
    {
     "date": "2026-09-20",
@@ -289,21 +290,21 @@
     "url": "https://www.ifa.com.au/streamlined-iress-core-earnings-rise-amid-takeover-talks/"
    }
   ],
-  "why": "Market data, trading and wealth-platform software across APAC, UK and Canada \u2014 the data-plus-fintech shape Warburg bought in Clearwater. In play: Blackstone and Thoma Bravo in early talks after a withdrawn A$10.50 approach, and EQT walked away in 2021. A counter-bid or a consortium seat is the obvious angle.",
-  "id": "iress"
+  "firstSeen": "2026-10-02T04:30:00.000Z"
  },
  {
-  "apac": false,
+  "id": "kantar",
+  "name": "Kantar",
   "area": "data",
-  "firstSeen": "2026-10-02T05:10:00.000Z",
   "hq": "London",
   "listed": "",
+  "apac": false,
   "live": true,
-  "move": "Process launching now. Buy-side tech DD on Worldpanel for whichever sponsor bids \u2014 panel infrastructure, data pipelines, the AI story on top of it.",
-  "name": "Kantar",
+  "ownership": "pe",
   "owner": "Bain Capital",
   "ownerSince": "2019-07-12",
-  "ownership": "pe",
+  "why": "Market research and consumer data. Bain and WPP have decided on a full sale rather than an IPO, in two stages: Worldpanel (consumer panel data, $5–7bn) first, the insights business after, bankers appointed this autumn. Kantar Media already went to H.I.G. for $1bn. A data asset at seven years in a 2019 vintage fund is the textbook secondary.",
+  "move": "Process launching now. Buy-side tech DD on Worldpanel for whichever sponsor bids — panel infrastructure, data pipelines, the AI story on top of it.",
   "signals": [
    {
     "date": "2026-09-10",
@@ -318,20 +319,20 @@
     "url": "https://www.bwmarketingworld.com/article/bain-capital-wpp-set-to-split-plan-sale-of-kantar-worldpanel-data-unit-report-550442"
    }
   ],
-  "why": "Market research and consumer data. Bain and WPP have decided on a full sale rather than an IPO, in two stages: Worldpanel (consumer panel data, $5\u20137bn) first, the insights business after, bankers appointed this autumn. Kantar Media already went to H.I.G. for $1bn. A data asset at seven years in a 2019 vintage fund is the textbook secondary.",
-  "id": "kantar"
+  "firstSeen": "2026-10-02T05:10:00.000Z"
  },
  {
-  "apac": true,
+  "id": "kreditbee",
+  "name": "KreditBee",
   "area": "fintech",
-  "firstSeen": "2026-10-02T04:30:00.000Z",
   "hq": "Bengaluru",
   "listed": "",
+  "apac": true,
   "live": false,
-  "move": "Pre-IPO growth cheque, so a lighter confirmatory review: credit-decisioning stack, model governance, RBI compliance posture.",
-  "name": "KreditBee",
-  "owner": "VC-backed",
   "ownership": "vc",
+  "owner": "VC-backed",
+  "why": "Indian consumer-lending platform, $1.5bn after a $280m Series E, preparing an IPO for late 2026 or early 2027. Warburg's India franchise is 30 years old and its last fintech there was Avanse; a pre-IPO round is the usual way in.",
+  "move": "Pre-IPO growth cheque, so a lighter confirmatory review: credit-decisioning stack, model governance, RBI compliance posture.",
   "signals": [
    {
     "date": "2026-04-08",
@@ -340,22 +341,22 @@
     "url": "https://inc42.com/lists/top-30-funded-fintech-startups-in-india-2026/"
    }
   ],
-  "why": "Indian consumer-lending platform, $1.5bn after a $280m Series E, preparing an IPO for late 2026 or early 2027. Warburg's India franchise is 30 years old and its last fintech there was Avanse; a pre-IPO round is the usual way in.",
-  "id": "kreditbee"
+  "firstSeen": "2026-10-02T04:30:00.000Z"
  },
  {
-  "apac": false,
-  "area": "software",
+  "id": "mcafee",
   "firm": "kkr",
-  "firstSeen": "2026-10-02T05:40:00.000Z",
+  "name": "McAfee",
+  "area": "software",
   "hq": "San Jose",
   "listed": "",
+  "apac": false,
   "live": false,
-  "move": "Watch. A consumer subscription stack with a long legacy; DD is renewal-engine resilience and the AI scam-detection roadmap.",
-  "name": "McAfee",
+  "ownership": "pe",
   "owner": "Advent, Permira, CPP, GIC",
   "ownerSince": "2022-03-01",
-  "ownership": "pe",
+  "why": "Consumer security, $14bn take-private by an Advent-led consortium, 4.6 years in. A consortium that large usually exits by IPO, but a sponsor-to-sponsor deal for a cash-generative subscription business is live if markets stay shut.",
+  "move": "Watch. A consumer subscription stack with a long legacy; DD is renewal-engine resilience and the AI scam-detection roadmap.",
   "signals": [
    {
     "date": "2022-03-01",
@@ -364,22 +365,22 @@
     "url": "https://en.wikipedia.org/wiki/McAfee"
    }
   ],
-  "why": "Consumer security, $14bn take-private by an Advent-led consortium, 4.6 years in. A consortium that large usually exits by IPO, but a sponsor-to-sponsor deal for a cash-generative subscription business is live if markets stay shut.",
-  "id": "mcafee"
+  "firstSeen": "2026-10-02T05:40:00.000Z"
  },
  {
-  "apac": false,
-  "area": "software",
+  "id": "medallia",
   "firm": "tpg",
-  "firstSeen": "2026-10-02T05:40:00.000Z",
+  "name": "Medallia",
+  "area": "software",
   "hq": "San Francisco",
   "listed": "",
+  "apac": false,
   "live": true,
-  "move": "Live, in the sense that the owners are not natural owners. DD is product viability after a distressed year: churn, roadmap, the AI story versus Qualtrics.",
-  "name": "Medallia",
+  "ownership": "pe",
   "owner": "Lender group (Blackstone, Apollo, FS KKR)",
   "ownerSince": "2026-06-01",
-  "ownership": "pe",
+  "why": "Experience-management SaaS. Thoma Bravo handed it to its lenders this year, wiping ~$5.1bn of equity. Lenders do not hold software companies for long; a sponsor buying a de-levered Medallia at a reset basis is the obvious next trade.",
+  "move": "Live, in the sense that the owners are not natural owners. DD is product viability after a distressed year: churn, roadmap, the AI story versus Qualtrics.",
   "signals": [
    {
     "date": "2026-06-15",
@@ -388,21 +389,21 @@
     "url": "https://www.saastr.com/medallia-is-just-the-opening-act-heres-the-list-of-pe-saas-deals-most-at-risk/"
    }
   ],
-  "why": "Experience-management SaaS. Thoma Bravo handed it to its lenders this year, wiping ~$5.1bn of equity. Lenders do not hold software companies for long; a sponsor buying a de-levered Medallia at a reset basis is the obvious next trade.",
-  "id": "medallia"
+  "firstSeen": "2026-10-02T05:40:00.000Z"
  },
  {
-  "apac": true,
+  "id": "myob",
+  "name": "MYOB",
   "area": "fintech",
-  "firstSeen": "2026-10-02T05:10:00.000Z",
   "hq": "Melbourne",
   "listed": "",
+  "apac": true,
   "live": true,
-  "move": "Sell-side under way. The buy-side DD is cloud migration progress off the desktop base and churn to Xero \u2014 a classic SSG product/tech read.",
-  "name": "MYOB",
+  "ownership": "pe",
   "owner": "KKR",
   "ownerSince": "2019-05-10",
-  "ownership": "pe",
+  "why": "Australia and New Zealand's incumbent SME accounting and payroll platform, ~A$1.6bn when KKR took it private. KKR has been sounding out a sale at over $2.7bn, including talks with ANZ. Seven years in, with the Xero fight defining the equity story, this is an exit the fund needs.",
+  "move": "Sell-side under way. The buy-side DD is cloud migration progress off the desktop base and churn to Xero — a classic SSG product/tech read.",
   "signals": [
    {
     "date": "2026-08-14",
@@ -411,21 +412,21 @@
     "url": "https://pe-insights.com/kkr-is-said-to-seek-over-2-7bn-for-myob-group-in-talks-with-anz/"
    }
   ],
-  "why": "Australia and New Zealand's incumbent SME accounting and payroll platform, ~A$1.6bn when KKR took it private. KKR has been sounding out a sale at over $2.7bn, including talks with ANZ. Seven years in, with the Xero fight defining the equity story, this is an exit the fund needs.",
-  "id": "myob"
+  "firstSeen": "2026-10-02T05:10:00.000Z"
  },
  {
-  "apac": false,
+  "id": "nielsen",
+  "name": "Nielsen",
   "area": "data",
-  "firstSeen": "2026-10-02T05:10:00.000Z",
   "hq": "New York",
   "listed": "",
+  "apac": false,
   "live": false,
-  "move": "Watch. Any carve-out brings a data-separation and TSA scoping question.",
-  "name": "Nielsen",
+  "ownership": "pe",
   "owner": "Elliott & Brookfield",
   "ownerSince": "2022-10-11",
-  "ownership": "pe",
+  "why": "Audience measurement and data, taken private for $16bn in October 2022 by an Elliott- and Brookfield-led consortium. Four years in with a heavy debt load and a measurement-credibility rebuild behind it. A whole-company secondary is big even for Warburg; a carve-out of a data unit is the more likely door.",
+  "move": "Watch. Any carve-out brings a data-separation and TSA scoping question.",
   "signals": [
    {
     "date": "2022-10-11",
@@ -434,20 +435,20 @@
     "url": "https://www.nasdaq.com/press-release/nielsen-announces-closing-of-transaction-with-evergreen-and-brookfield-led-consortium"
    }
   ],
-  "why": "Audience measurement and data, taken private for $16bn in October 2022 by an Elliott- and Brookfield-led consortium. Four years in with a heavy debt load and a measurement-credibility rebuild behind it. A whole-company secondary is big even for Warburg; a carve-out of a data unit is the more likely door.",
-  "id": "nielsen"
+  "firstSeen": "2026-10-02T05:10:00.000Z"
  },
  {
-  "apac": true,
+  "id": "nuix",
+  "name": "Nuix",
   "area": "ai",
-  "firstSeen": "2026-10-02T04:30:00.000Z",
   "hq": "Sydney",
   "listed": "ASX: NXL",
+  "apac": true,
   "live": false,
-  "move": "The DD is the Neo migration itself: how much of the installed base has moved, and whether the AI layer is product or marketing.",
-  "name": "Nuix",
-  "owner": "ASX-listed",
   "ownership": "listed",
+  "owner": "ASX-listed",
+  "why": "Investigation and e-discovery software with a defensible data moat, mid-migration to the Neo platform and buying French graph-AI firm Linkurious for $35m. Sub-A$1bn, scarred by its 2021 IPO, and the kind of vertical AI application a sponsor can take private and re-platform.",
+  "move": "The DD is the Neo migration itself: how much of the installed base has moved, and whether the AI layer is product or marketing.",
   "signals": [
    {
     "date": "2026-02-23",
@@ -462,22 +463,22 @@
     "url": "https://www.capitalbrief.com/briefing/nuix-acquires-french-ai-decision-platform-linkurious-for-35m-360e5d09-4b9c-4d47-b845-86e5b766a9ca/"
    }
   ],
-  "why": "Investigation and e-discovery software with a defensible data moat, mid-migration to the Neo platform and buying French graph-AI firm Linkurious for $35m. Sub-A$1bn, scarred by its 2021 IPO, and the kind of vertical AI application a sponsor can take private and re-platform.",
-  "id": "nuix"
+  "firstSeen": "2026-10-02T04:30:00.000Z"
  },
  {
-  "apac": false,
-  "area": "software",
+  "id": "proofpoint",
   "firm": "kkr",
-  "firstSeen": "2026-10-02T05:40:00.000Z",
+  "name": "Proofpoint",
+  "area": "software",
   "hq": "Sunnyvale",
   "listed": "",
+  "apac": false,
   "live": true,
-  "move": "Exit preparation under way. Buy-side DD on a security platform this size: product-line consolidation, AI threat-detection claims, and the debt-service case.",
-  "name": "Proofpoint",
+  "ownership": "pe",
   "owner": "Thoma Bravo",
   "ownerSince": "2021-08-31",
-  "ownership": "pe",
+  "why": "Email and people-centric security, taken private for $12.3bn, ~$4.7bn of debt, past five years. Thoma Bravo has been exploring pre-IPO financing and acquisitions for a public-market return; a sponsor with KKR's cheque size is the alternative to a difficult IPO.",
+  "move": "Exit preparation under way. Buy-side DD on a security platform this size: product-line consolidation, AI threat-detection claims, and the debt-service case.",
   "signals": [
    {
     "date": "2026-07-22",
@@ -486,21 +487,21 @@
     "url": "https://www.techmonitor.ai/technology/cybersecurity/proofpoint-explores-pre-ipo-financing-and-acquisition-strategy-for-public-market-return"
    }
   ],
-  "why": "Email and people-centric security, taken private for $12.3bn, ~$4.7bn of debt, past five years. Thoma Bravo has been exploring pre-IPO financing and acquisitions for a public-market return; a sponsor with KKR's cheque size is the alternative to a difficult IPO.",
-  "id": "proofpoint"
+  "firstSeen": "2026-10-02T05:40:00.000Z"
  },
  {
-  "apac": true,
+  "id": "teg",
+  "name": "TEG (Ticketek)",
   "area": "markets",
-  "firstSeen": "2026-10-02T05:10:00.000Z",
   "hq": "Sydney",
   "listed": "",
+  "apac": true,
   "live": false,
-  "move": "Watch. Any entrant would want a ticketing-platform and contract-retention read before pricing it.",
-  "name": "TEG (Ticketek)",
+  "ownership": "pe",
   "owner": "Silver Lake",
   "ownerSince": "2020-01-31",
-  "ownership": "pe",
+  "why": "Ticketing and live-entertainment marketplace, bought by Silver Lake for US$1.3bn. Lost the Melbourne Park contract to AXS in April and is cutting jobs; the company denies a sale but the market expects Silver Lake to bring in a strategic investor. Six years in, under pressure, is where a minority or full secondary gets done.",
+  "move": "Watch. Any entrant would want a ticketing-platform and contract-retention read before pricing it.",
   "signals": [
    {
     "date": "2026-07-02",
@@ -509,21 +510,21 @@
     "url": "https://anz.peoplemattersglobal.com/news/business/ticketek-owner-teg-cuts-jobs-amid-contract-losses-and-restructuring-50610"
    }
   ],
-  "why": "Ticketing and live-entertainment marketplace, bought by Silver Lake for US$1.3bn. Lost the Melbourne Park contract to AXS in April and is cutting jobs; the company denies a sale but the market expects Silver Lake to bring in a strategic investor. Six years in, under pressure, is where a minority or full secondary gets done.",
-  "id": "teg"
+  "firstSeen": "2026-10-02T05:10:00.000Z"
  },
  {
-  "apac": true,
+  "id": "trade-me",
+  "name": "Trade Me",
   "area": "markets",
-  "firstSeen": "2026-10-02T05:10:00.000Z",
   "hq": "Wellington",
   "listed": "",
+  "apac": true,
   "live": false,
-  "move": "No process announced. If one opens, the DD is platform modernisation across four verticals and the Stuff integration.",
-  "name": "Trade Me",
+  "ownership": "pe",
   "owner": "Apax Partners",
   "ownerSince": "2019-05-06",
-  "ownership": "pe",
+  "why": "New Zealand's dominant classifieds and marketplace (property, motors, jobs, general), bought by Apax for NZ$2.56bn in 2019. Apax was weighing a relisting in 2024 and has not transacted since; it bought half of Stuff Digital in 2025 instead. Seven years in, a secondary to a sponsor who likes network businesses is the alternative to an IPO.",
+  "move": "No process announced. If one opens, the DD is platform modernisation across four verticals and the Stuff integration.",
   "signals": [
    {
     "date": "2025-06-20",
@@ -538,20 +539,20 @@
     "url": "https://www.nzherald.co.nz/business/markets-with-madison/trade-me-private-equity-owners-eyeing-sharemarket-float-in-2024/6F6USG55D5D4VEZZ67A2ULNZZQ/"
    }
   ],
-  "why": "New Zealand's dominant classifieds and marketplace (property, motors, jobs, general), bought by Apax for NZ$2.56bn in 2019. Apax was weighing a relisting in 2024 and has not transacted since; it bought half of Stuff Digital in 2025 instead. Seven years in, a secondary to a sponsor who likes network businesses is the alternative to an IPO.",
-  "id": "trade-me"
+  "firstSeen": "2026-10-02T05:10:00.000Z"
  },
  {
-  "apac": true,
+  "id": "tyro",
+  "name": "Tyro Payments",
   "area": "fintech",
-  "firstSeen": "2026-10-02T04:30:00.000Z",
   "hq": "Sydney",
   "listed": "ASX: TYR",
+  "apac": true,
   "live": false,
-  "move": "No process yet. If a bid lands, the DD question is the acquiring stack's resilience and how real the Thriday AI layer is.",
-  "name": "Tyro Payments",
-  "owner": "ASX-listed",
   "ownership": "listed",
+  "owner": "ASX-listed",
+  "why": "Australia's largest non-bank merchant acquirer, ~A$1bn, repeatedly approached (Potentia 2023, unnamed parties Aug 2025) and rejected on value. Buying Thriday adds an AI-led SME finance layer. A listed APAC fintech at a discount is the Ingenia playbook in a different sector.",
+  "move": "No process yet. If a bid lands, the DD question is the acquiring stack's resilience and how real the Thriday AI layer is.",
   "signals": [
    {
     "date": "2026-01-12",
@@ -566,21 +567,21 @@
     "url": "https://www.capitalbrief.com/briefing/tyro-says-proposed-takeover-bid-had-insufficient-value-cb40d16f-e82a-4db5-ace8-4045ad5f1fd2/"
    }
   ],
-  "why": "Australia's largest non-bank merchant acquirer, ~A$1bn, repeatedly approached (Potentia 2023, unnamed parties Aug 2025) and rejected on value. Buying Thriday adds an AI-led SME finance layer. A listed APAC fintech at a discount is the Ingenia playbook in a different sector.",
-  "id": "tyro"
+  "firstSeen": "2026-10-02T04:30:00.000Z"
  },
  {
-  "apac": true,
+  "id": "yayoi",
+  "name": "Yayoi",
   "area": "ai",
-  "firstSeen": "2026-10-02T05:10:00.000Z",
   "hq": "Tokyo",
   "listed": "",
+  "apac": true,
   "live": false,
-  "move": "Watch for a process in 2027. The DD is desktop-to-cloud migration and whether the AI bookkeeping layer is shipping.",
-  "name": "Yayoi",
+  "ownership": "pe",
   "owner": "KKR",
   "ownerSince": "2022-03-01",
-  "ownership": "pe",
+  "why": "Japan's largest SME accounting software, 2.5m registered users, bought from ORIX for ¥240bn ($2.1bn). KKR is at 4.6 years with a cloud-transition story (Yayoi Next) that is the whole value-creation case. Japan vertical software at this scale has few natural buyers, which is what makes a sponsor-to-sponsor deal likely.",
+  "move": "Watch for a process in 2027. The DD is desktop-to-cloud migration and whether the AI bookkeeping layer is shipping.",
   "signals": [
    {
     "date": "2022-03-01",
@@ -589,22 +590,22 @@
     "url": "https://www.orix.co.jp/grp/en/newsrelease/220301_ORIXE.html"
    }
   ],
-  "why": "Japan's largest SME accounting software, 2.5m registered users, bought from ORIX for \u00a5240bn ($2.1bn). KKR is at 4.6 years with a cloud-transition story (Yayoi Next) that is the whole value-creation case. Japan vertical software at this scale has few natural buyers, which is what makes a sponsor-to-sponsor deal likely.",
-  "id": "yayoi"
+  "firstSeen": "2026-10-02T05:10:00.000Z"
  },
  {
-  "apac": false,
-  "area": "software",
+  "id": "zendesk",
   "firm": "tpg",
-  "firstSeen": "2026-10-02T05:40:00.000Z",
+  "name": "Zendesk",
+  "area": "software",
   "hq": "San Francisco",
   "listed": "",
+  "apac": false,
   "live": false,
-  "move": "Watch. The DD is whether the AI-agent product is holding seat counts or cannibalising them.",
-  "name": "Zendesk",
+  "ownership": "pe",
   "owner": "Hellman & Friedman, Permira (ADIA, GIC)",
   "ownerSince": "2022-11-22",
-  "ownership": "pe",
+  "why": "Customer-service SaaS, $13.9bn take-private, 3.9 years in. An IPO is no longer expected; the owners will look at a secondary or a strategic. AI agents are rewriting the category, which cuts both ways for the equity story.",
+  "move": "Watch. The DD is whether the AI-agent product is holding seat counts or cannibalising them.",
   "signals": [
    {
     "date": "2026-05-20",
@@ -613,7 +614,6 @@
     "url": "https://ipos.fyi/tracker/zendesk-ipo"
    }
   ],
-  "why": "Customer-service SaaS, $13.9bn take-private, 3.9 years in. An IPO is no longer expected; the owners will look at a secondary or a strategic. AI agents are rewriting the category, which cuts both ways for the equity story.",
-  "id": "zendesk"
+  "firstSeen": "2026-10-02T05:40:00.000Z"
  }
 ]
