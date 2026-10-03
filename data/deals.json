@@ -12,6 +12,30 @@
   "firstSeen": "2026-10-02T05:40:00.000Z"
  },
  {
+  "id": "15a350420b8b",
+  "firm": "kkr",
+  "title": "Samsung to inject $1 billion into Nvidia- and KKR-backed AI infrastructure firm",
+  "url": "https://www.cnbc.com/2026/09/29/samsung-investment-nvidia-kkr-ai-helix-digital.html",
+  "date": "2026-09-29T00:00:00.000Z",
+  "summary": "Samsung and affiliates will invest $1bn in Helix Digital Infrastructure, the AI infrastructure company KKR launched in June, on top of more than $10bn already committed.",
+  "publisher": "CNBC",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-03T01:40:00.000Z"
+ },
+ {
+  "id": "1b6a0a3786f1",
+  "firm": "kkr",
+  "title": "KKR, RWE Submit Joint Bid for Germany’s State-Owned Uniper, Sources Say",
+  "url": "https://www.bloomberg.com/news/articles/2026-09-28/kkr-and-rwe-said-to-jointly-bid-for-german-state-owned-uniper",
+  "date": "2026-09-28T00:00:00.000Z",
+  "summary": "KKR and RWE have joined up in a non-binding bid for Germany's state-owned energy company Uniper SE, according to Bloomberg.",
+  "publisher": "Bloomberg",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-03T01:40:00.000Z"
+ },
+ {
   "id": "1c9d245e23fa",
   "firm": "warburg-pincus",
   "title": "Awayday Announces Strategic Investment from Warburg Pincus",
@@ -312,6 +336,18 @@
   "firstSeen": "2026-10-02T05:40:00.000Z"
  },
  {
+  "id": "ab5f062a367d",
+  "firm": "warburg-pincus",
+  "title": "KKR, Blackstone Weigh Bids for Windshield Repair Firm Cary, Sources Say",
+  "url": "https://bloomberg.com/news/articles/2026-10-02/kkr-blackstone-are-among-suitors-for-windshield-repairer-cary",
+  "date": "2026-10-02T00:00:00.000Z",
+  "summary": "Warburg Pincus is reported alongside KKR and Blackstone as considering a bid for windshield-repair company Cary; first-round bids are expected in the coming weeks.",
+  "publisher": "Bloomberg",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-03T01:40:00.000Z"
+ },
+ {
   "id": "b64bf10697fb",
   "firm": "kkr",
   "title": "KKR takes majority stake in Cisternina Logistics for India bulk-liquid storage platform",
@@ -382,6 +418,30 @@
   "source": "press",
   "official": true,
   "firstSeen": "2026-10-02T03:43:20.557Z"
+ },
+ {
+  "id": "d8136a38376c",
+  "firm": "tpg",
+  "title": "TPG explores roughly $5bn sale of Lyric with JPMorgan",
+  "url": "https://www.investing.com/news/stock-market-news/exclusivetpg-explores-5-billion-sale-of-healthcare-software-company-lyric-sources-say-4894415",
+  "date": "2026-09-09T00:00:00.000Z",
+  "summary": "Healthcare claims-payment software (the former ClaimsXten, bought from Change Healthcare for ~$2.2bn in 2022); ~$250m EBITDA, so ~20x. Clients include UnitedHealth, CVS and Humana. Reuters exclusive; no certainty of a deal.",
+  "publisher": "Reuters via Investing.com",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-03T01:50:00.000Z"
+ },
+ {
+  "id": "d8bb56d189c0",
+  "firm": "tpg",
+  "title": "TPG runs dual-track sale or IPO of Asia OneHealthcare; confidential Kuala Lumpur IPO filing reported",
+  "url": "https://www.bloomberg.com/news/articles/2026-09-02/tpg-s-asia-onehealthcare-is-said-to-confidentially-file-for-2-5-billion-ipo",
+  "date": "2026-09-02T00:00:00.000Z",
+  "summary": "Malaysian hospital group (ex-Columbia Asia, plus the Ramsay Sime Darby JV), TPG-controlled since 2019 with Hong Leong, ADIA and EPF. Confidential filing for up to RM10bn; a trade sale to operators or sponsors stays open. Listing eyed for Q1 2027 at ~RM30bn.",
+  "publisher": "Bloomberg",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-03T01:50:00.000Z"
  },
  {
   "id": "d9c82e82c4e5",
@@ -456,6 +516,18 @@
   "firstSeen": "2026-10-02T05:40:00.000Z"
  },
  {
+  "id": "f743e1514139",
+  "firm": "kkr",
+  "title": "KKR, Blackstone Weigh Bids for Windshield Repair Firm Cary, Sources Say",
+  "url": "https://bloomberg.com/news/articles/2026-10-02/kkr-blackstone-are-among-suitors-for-windshield-repairer-cary",
+  "date": "2026-10-02T00:00:00.000Z",
+  "summary": "KKR and Blackstone are among suitors considering bids for windshield-repair company Cary, with first-round bids expected in the coming weeks, per Bloomberg.",
+  "publisher": "Bloomberg",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-03T01:40:00.000Z"
+ },
+ {
   "id": "fb51664b058f",
   "firm": "warburg-pincus",
   "title": "James von Moltke joins Warburg Pincus",
@@ -466,6 +538,18 @@
   "source": "press",
   "official": true,
   "firstSeen": "2026-10-02T03:43:20.557Z"
+ },
+ {
+  "id": "fd0cc51c265a",
+  "firm": "kkr",
+  "title": "KKR-Backed Advanta Said to Start Road Show for $400 Million IPO",
+  "url": "https://www.bloomberg.com/news/articles/2026-09-28/kkr-backed-advanta-said-to-start-road-show-for-400-million-ipo",
+  "date": "2026-09-28T00:00:00.000Z",
+  "summary": "KKR-backed Advanta Enterprises has begun investor meetings for an Indian IPO that could raise as much as $400 million, per Bloomberg.",
+  "publisher": "Bloomberg",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-03T01:40:00.000Z"
  },
  {
   "id": "feec0625c270",
