@@ -48,6 +48,30 @@
   "firstSeen": "2026-10-02T06:00:00.000Z"
  },
  {
+  "id": "23faa85f8aa5",
+  "firm": "kkr",
+  "title": "Thomson Reuters and KKR complete joint venture for Global Print Business",
+  "url": "https://ir.thomsonreuters.com/news-releases/news-release-details/thomson-reuters-and-kkr-complete-joint-venture-global-print",
+  "date": "2026-10-01T00:00:00.000Z",
+  "summary": "KKR capital accounts take 51% of the Global Print business for ~$500m gross proceeds; Thomson Reuters keeps 49%, IP and editorial control. Now operating as Westbridge Print across 13 countries.",
+  "publisher": "Thomson Reuters",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-03T01:25:00.000Z"
+ },
+ {
+  "id": "381d253e99ff",
+  "firm": "kkr",
+  "title": "KKR warns of growing credit market risks from AI borrowing spree",
+  "url": "https://www.theglobeandmail.com/business/article-kkr-warns-about-the-growing-pile-of-ai-debt/",
+  "date": "2026-09-30T00:00:00.000Z",
+  "summary": "KKR credit co-head Christopher Sheldon: ~$600bn of AI-related credit outstanding, about 6% of US investment grade; off-balance-sheet financing makes true exposure larger.",
+  "publisher": "Financial Times / Globe and Mail",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-03T01:25:00.000Z"
+ },
+ {
   "id": "4289c0fcf691",
   "firm": "kkr",
   "title": "Integer to Be Acquired by KKR in Transaction Valued at Approximately $5.7 Billion",
