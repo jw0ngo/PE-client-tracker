@@ -192,6 +192,18 @@
   "firstSeen": "2026-10-02T05:40:00.000Z"
  },
  {
+  "id": "81727854b412",
+  "firm": "kkr",
+  "title": "KKR seals three Asia infrastructure deals in India, Japan and Korea",
+  "url": "https://www.financeasia.com/article/kkr-seals-three-asia-infrastructure-deals/508457",
+  "date": "2026-09-30T00:00:00.000Z",
+  "summary": "Bought an Indian logistics firm and sold Korean and Japanese terminal businesses, all announced 30 September.",
+  "publisher": "FinanceAsia",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-03T01:10:00.000Z"
+ },
+ {
   "id": "83a645c7b3d1",
   "firm": "warburg-pincus",
   "title": "Global Eggs Receives Investment of Up to $1 Billion from Warburg Pincus",
@@ -202,6 +214,18 @@
   "source": "press",
   "official": true,
   "firstSeen": "2026-10-02T03:43:20.557Z"
+ },
+ {
+  "id": "8e607701a249",
+  "firm": "kkr",
+  "title": "Integer receives early HSR termination for pending $5.7bn KKR acquisition; shareholder vote 21 October",
+  "url": "https://www.theglobeandmail.com/investing/markets/stocks/ITGR-N/pressreleases/4904696/integer-holdings-advances-toward-kkr-acquisition-completion/",
+  "date": "2026-09-30T00:00:00.000Z",
+  "summary": "US antitrust waiting period ended early; $127 per share cash merger still subject to shareholder approval.",
+  "publisher": "Integer Holdings via Globe and Mail",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-03T01:10:00.000Z"
  },
  {
   "id": "9545d44334fb",
@@ -262,6 +286,30 @@
   "source": "press",
   "official": true,
   "firstSeen": "2026-10-02T05:40:00.000Z"
+ },
+ {
+  "id": "b64bf10697fb",
+  "firm": "kkr",
+  "title": "KKR takes majority stake in Cisternina Logistics for India bulk-liquid storage platform",
+  "url": "https://www.tradingview.com/news/moodys:cf9232686615d:0-kkr-takes-majority-stake-in-cisternina-for-india-logistics-platform/",
+  "date": "2026-10-01T00:00:00.000Z",
+  "summary": "Definitive agreement for a majority investment; Cisternina will buy the liquid storage terminal and rail business of Ganesh Benzoplast as the platform's anchor asset.",
+  "publisher": "TradingView",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-03T01:10:00.000Z"
+ },
+ {
+  "id": "bdfa5f2e70b5",
+  "firm": "kkr",
+  "title": "Ganesh Benzoplast sells terminal business to KKR-backed Cisternina",
+  "url": "https://splash247.com/ganesh-benzoplast-sells-terminal-business-to-kkr-backed-cisternina/",
+  "date": "2026-10-01T00:00:00.000Z",
+  "summary": "",
+  "publisher": "Splash247",
+  "source": "backed",
+  "official": false,
+  "firstSeen": "2026-10-03T01:10:00.000Z"
  },
  {
   "id": "d0d4722a5f48",

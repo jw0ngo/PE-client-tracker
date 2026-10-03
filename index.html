@@ -337,6 +337,7 @@ const savePrefs = () => { try { localStorage.setItem(PREFS, JSON.stringify({ fir
 let items = [];          // raw rows from the store
 let triage = {};         // id → { status, note, at }
 let targets = [];        // candidate companies, seeded by Jobi
+let pull = null;         // { at, added } — written by the morning routine
 let targetTriage = {};   // id → { status, note, at }
 let db = null, canWrite = true, editing = null, loaded = false;
 
@@ -480,8 +481,8 @@ function render() {
     return renderTargets();
   }
   const all = classified();
-  const latest = all.reduce((m, i) => (i.firstSeen > m ? i.firstSeen : m), '');
-  $('stamp').textContent = !loaded ? 'loading' : latest ? `pulled ${dayLabel(latest)}` : 'nothing pulled';
+  const at = pull && pull.at;
+  $('stamp').textContent = !loaded ? 'loading' : at ? `pulled ${dayLabel(at)} ${new Date(at).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })}` : 'no pull recorded';
   const pipeline = all.filter((i) => i.status === 'pursue' || i.status === 'watch');
   const dismissed = all.filter((i) => i.status === 'dismiss');
   const hot = all.filter((i) => i.heat === 'hot' && i.status !== 'dismiss').length;
@@ -570,10 +571,10 @@ render();
     // small JSON files and never a rebuild of this file.
     try {
       const bust = `?t=${Math.floor(Date.now() / 600000)}`;
-      const [d, t] = await Promise.all([fetch(`${DATA.base}deals.json${bust}`), fetch(`${DATA.base}targets.json${bust}`)]);
+      const [d, t, m] = await Promise.all([fetch(`${DATA.base}deals.json${bust}`), fetch(`${DATA.base}targets.json${bust}`), fetch(`${DATA.base}meta.json${bust}`).catch(() => null)]);
       items = await d.json(); targets = await t.json();
-      const newest = items.reduce((m, i) => (i.firstSeen > m ? i.firstSeen : m), '');
-      $('footTriage').textContent = `Read-only copy${newest ? `, last refreshed ${dayLabel(newest)}` : ''}.`;
+      if (m && m.ok) { const meta = await m.json(); pull = meta.pull || null; }
+      $('footTriage').textContent = `Read-only copy${pull && pull.at ? `, last pulled ${dayLabel(pull.at)}` : ''}.`;
     } catch (e) {
       $('banner').hidden = false; $('banner').className = 'banner warn'; $('banner').textContent = 'Could not load the data files. Reload to try again.';
     }
@@ -599,6 +600,7 @@ render();
     targets = snap.docs.filter((d) => d.exists).map((d) => ({ id: d.id, ...d.data() }));
     render();
   });
+  db.doc('meta/pull').onSnapshot((snap) => { pull = snap.exists ? snap.data() : null; render(); });
   db.collection('targetTriage').onSnapshot((snap) => {
     targetTriage = {};
     snap.docs.forEach((d) => { if (d.exists) targetTriage[d.id] = d.data(); });
