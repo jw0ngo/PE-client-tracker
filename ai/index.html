@@ -135,7 +135,7 @@ a { color: inherit; }
   <div class="list" id="list">
     <div class="empty"><b>Loading developments.</b><br>Each one will show the event, the diligence lens it touches, and what to re-check on a software target.</div>
   </div>
-  <p class="foot" id="foot">Priority is the one list: the latest developments relevant to SSG, APAC first. An APAC item is in whenever it carries an event or a lens; a global item only when it is live or signed and in a lens, or a billion-dollar round or deal. The rest is kept behind the link at the bottom. Event, lens and APAC are read from the headline by keyword; the matched words sit under each tag, and the small label is the beat the story came from. <span id="footTriage">Pursue, Watch, Dismiss and notes are saved and shared with anyone who can open this page.</span></p>
+  <p class="foot" id="foot">Priority is the one list: the latest developments relevant to SSG, APAC first. An APAC item is in whenever it carries an event or a lens; a global item only when it is live or signed and in a lens, or a billion-dollar round or deal. The rest is kept behind the link at the bottom; the page carries the last 90 days and the archive in the repo keeps everything. Event, lens and APAC are read from the headline by keyword; the matched words sit under each tag, and the small label is the beat the story came from. <span id="footTriage">Pursue, Watch, Dismiss and notes are saved and shared with anyone who can open this page.</span></p>
 </div>
 <div class="toast" id="toast"></div>
 
@@ -597,7 +597,8 @@ render();
   const user = await claude.use('user');
   if (user) { const w = await user.can('data.write'); if (w === false) canWrite = false; }
 
-  db.collection('items').onSnapshot((snap) => {
+  const since = new Date(Date.now() - 120 * 86400000).toISOString();
+  db.collection('items').where('date', '>=', since).onSnapshot((snap) => {
     items = snap.docs.filter((d) => d.exists).map((d) => ({ id: d.id, ...d.data() }));
     loaded = true;
     render();

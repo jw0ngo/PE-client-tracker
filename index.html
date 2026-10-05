@@ -157,7 +157,7 @@ a { color: inherit; }
   <div class="list" id="list">
     <div class="empty"><b>Loading announcements.</b><br>Each one will show the event, the thesis it fits, and the SSG pitch it opens.</div>
   </div>
-  <p class="foot" id="footNews">Priority is the one list: the latest news relevant to SSG, APAC first. An APAC item is in whenever it carries an event or a focus area; a global item only when it is live or signed and in a focus area, or a fund close, a new platform or a senior hire. The rest is kept behind the link at the bottom. Event, thesis and APAC are read from the headline by keyword; the matched words sit under each tag. <span id="footTriage">Pursue, Watch, Dismiss and notes are saved and shared with anyone who can open this page.</span></p>
+  <p class="foot" id="footNews">Priority is the one list: the latest news relevant to SSG, APAC first. An APAC item is in whenever it carries an event or a focus area; a global item only when it is live or signed and in a focus area, or a fund close, a new platform or a senior hire. The rest is kept behind the link at the bottom; the page carries the last 90 days and the archive in the repo keeps everything. Event, thesis and APAC are read from the headline by keyword; the matched words sit under each tag. <span id="footTriage">Pursue, Watch, Dismiss and notes are saved and shared with anyone who can open this page.</span></p>
   <p class="foot" id="footTargets" hidden>Targets are Jobi's candidates, not anything Warburg Pincus has said: companies in a focus area that look like what the firm buys, with the signals that make the case. A live process is reported by the press; everything else is a watch. Priority puts sponsor-owned companies first, longest hold at the top: a fund four or more years in is the seller most likely to run a process.</p>
 </div>
 <div class="toast" id="toast"></div>
@@ -671,7 +671,10 @@ render();
   const user = await claude.use('user');
   if (user) { const w = await user.can('data.write'); if (w === false) canWrite = false; }
 
-  db.collection('deals').onSnapshot((snap) => {
+  // The last 120 days by date: the store keeps everything for the archive, the page does not need
+  // to classify all of it on every render. Targets and triage are small and read whole.
+  const since = new Date(Date.now() - 120 * 86400000).toISOString();
+  db.collection('deals').where('date', '>=', since).onSnapshot((snap) => {
     items = snap.docs.filter((d) => d.exists).map((d) => ({ id: d.id, ...d.data() }));
     loaded = true;
     render();
