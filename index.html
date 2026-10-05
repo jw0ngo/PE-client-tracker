@@ -256,7 +256,8 @@ function bigMoney(title) {
 }
 const STOP = new Set(["the","and","for","with","from","into","after","before","over","says","said","sources","say","source","report","reports","reported","reportedly","news","update","updated","market","chatter","investing","com","its","their","has","have","will","could","may","backed","firm","company","inc","ltd","group","that","this","than","more","about","amid","via","per","pct","year","week","today","new","latest","press","release","announces","announced","nyse","nasdaq","asx","otcmkts","what","why","how","who"]);
 function storyTokens(title, drop) {
-  const t = String(title || '').toLowerCase().replace(drop || /$^/, ' ').replace(/[^a-z0-9]+/g, ' ').split(' ').filter((w) => w.length >= 3 && !STOP.has(w));
+  const re = drop ? new RegExp(drop.source, 'gi') : /$^/;   // every occurrence, whatever flags the caller's pattern had
+  const t = String(title || '').toLowerCase().replace(re, ' ').replace(/[^a-z0-9]+/g, ' ').split(' ').filter((w) => w.length >= 3 && !STOP.has(w));
   return new Set(t);
 }
 function sameStory(a, b) {
