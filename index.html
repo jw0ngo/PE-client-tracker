@@ -145,7 +145,6 @@ a { color: inherit; }
     </div>
     <div class="seg" id="seg">
       <button data-seg="priority">Priority</button>
-      <button data-seg="latest">Latest</button>
       <button data-seg="pipeline" id="segPipeline">Pipeline</button>
     </div>
     <div class="focus" id="focus"><span class="focus-label">Focus areas</span><div class="chips" id="chips"></div></div>
@@ -154,7 +153,7 @@ a { color: inherit; }
   <div class="list" id="list">
     <div class="empty"><b>Loading announcements.</b><br>Each one will show the event, the thesis it fits, and the SSG pitch it opens.</div>
   </div>
-  <p class="foot" id="footNews">Event, thesis and APAC are read from the headline by keyword. The matched words sit under each tag. <span id="footTriage">Pursue, Watch, Dismiss and notes are saved and shared with anyone who can open this page.</span></p>
+  <p class="foot" id="footNews">Priority is the one list: the latest news relevant to SSG, APAC first. An APAC item is in whenever it carries an event or a focus area; a global item only when it is live or signed and in a focus area, or a fund close, a new platform or a senior hire. The rest is kept behind the link at the bottom. Event, thesis and APAC are read from the headline by keyword; the matched words sit under each tag. <span id="footTriage">Pursue, Watch, Dismiss and notes are saved and shared with anyone who can open this page.</span></p>
   <p class="foot" id="footTargets" hidden>Targets are Jobi's candidates, not anything Warburg Pincus has said: companies in a focus area that look like what the firm buys, with the signals that make the case. A live process is reported by the press; everything else is a watch. Priority puts sponsor-owned companies first, longest hold at the top: a fund four or more years in is the seller most likely to run a process.</p>
 </div>
 <div class="toast" id="toast"></div>
@@ -309,21 +308,31 @@ function classify(f, raw) {
   const th = theses(f, title, raw.summary || '');
   const apac = APAC.test(all);
   const ageDays = raw.date ? Math.max(0, (Date.now() - Date.parse(raw.date)) / 86400000) : 30;
-
-  // Heat is the event; thesis fit and region tilt the order; age decays it. A process reported a
-  // month ago is not hot any more, whatever it was. The number is only for
-  // sorting — the client shows hot/warm/cool, not a score pretending to precision it does not have.
   const base = angle ? angle.heat : 0;
-  const score = (base * 10 + (th.length ? 8 + Math.min(th[0].score, 6) : 0) + (apac ? 4 : 0)) *
-    Math.pow(0.5, ageDays / 21);
+
+  // Relevance, APAC first. The team's business is Asia-Pacific, so an APAC item is in whenever
+  // the headline carries an event or a thesis. A global item has to earn its place: a live or
+  // signed event (heat 2+) that is in a focus area, or one of the relationship events — a fund
+  // close, a new platform, a senior hire — that matter wherever they happen. Everything else is
+  // kept in the store and hidden on the page behind "show filtered", never deleted.
+  const relevant = apac ? (kind !== 'other' || th.length > 0)
+    : base >= 2 && (th.length > 0 || kind === 'fund' || kind === 'platform' || kind === 'people');
+
+  // Priority is the one list, so its order is "the latest relevant news": heat is the event,
+  // thesis fit tilts it, APAC tilts it harder than a thesis, and a ten-day half-life keeps the
+  // list current — a process reported three weeks ago has sunk below this week's news whatever
+  // it was. The number is only for sorting; the client shows hot/warm/cool.
+  const score = (base * 10 + (th.length ? 8 + Math.min(th[0].score, 6) : 0) + (apac ? 14 : 0)) *
+    Math.pow(0.5, ageDays / 10);
   return {
     kind, stage, rumour,
     theses: th,
     inThesis: th.length > 0,
     apac,
+    relevant,
     move: angle ? angle.move : null,
-    heat: !angle || ageDays > 45 ? 'cool'
-      : base >= 3 && th.length && ageDays <= 14 ? 'hot'
+    heat: !angle || ageDays > 30 ? 'cool'
+      : base >= 3 && th.length && ageDays <= 10 ? 'hot'
       : base >= 2 ? 'warm' : 'cool',
     score: Math.round(score * 10) / 10,
   };
@@ -464,7 +473,7 @@ function renderTargets() {
   const newest = (t) => Math.max(0, ...(t.signals || []).map((g) => Date.parse(g.date) || 0));
   const hold = (t) => held(t) ?? -1;
   if (v.seg === 'priority') list.sort((a, b) => (b.status === 'pursue') - (a.status === 'pursue') || hold(b) - hold(a) || (b.live - a.live) || newest(b) - newest(a));
-  else list.sort((a, b) => (v.seg === 'pipeline' ? (b.status === 'pursue') - (a.status === 'pursue') : 0) || newest(b) - newest(a));
+  else list.sort((a, b) => (b.status === 'pursue') - (a.status === 'pursue') || newest(b) - newest(a));
   const emptyMsg = !loaded ? '<b>Loading targets.</b><br>Each one will show why it fits a focus area and the latest signals on it.'
     : v.seg === 'pipeline' ? 'No targets marked Pursue or Watch yet.'
     : targets.length ? 'No targets in this focus area yet.' : '<b>No targets yet.</b><br>Ask Jobi to propose some.';
@@ -473,7 +482,8 @@ function renderTargets() {
 }
 
 function render() {
-  if (PUBLIC) { $('segPipeline').hidden = true; if (view.seg === 'pipeline') view.seg = 'priority'; }
+  if (PUBLIC) { $('seg').hidden = true; if (view.seg === 'pipeline') view.seg = 'priority'; }
+  if (view.seg === 'latest') view.seg = 'priority';   // a preference saved before Latest was removed
   firm = FIRMS.find((f) => f.id === view.firm) || FIRMS[0];
   if (firm.theses.every((t) => t.id !== view.thesis)) view.thesis = 'all';
   $('firms').innerHTML = FIRMS.map((f) => { const [m, c] = MONO[f.id] || [f.name.slice(0, 3).toUpperCase(), '#444']; return `
@@ -489,7 +499,7 @@ function render() {
     const pipe = targets.filter((t) => ['pursue', 'watch'].includes((targetTriage[t.id] || {}).status)).length;
     $('seg').querySelectorAll('button').forEach((b) => {
       b.classList.toggle('on', b.dataset.seg === view.seg);
-      b.textContent = b.dataset.seg === 'priority' ? 'Priority' : b.dataset.seg === 'pipeline' ? `Pipeline${pipe ? ` · ${pipe}` : ''}` : 'Latest';
+      b.textContent = b.dataset.seg === 'priority' ? 'Priority' : `Pipeline${pipe ? ` · ${pipe}` : ''}`;
     });
     return renderTargets();
   }
@@ -504,7 +514,7 @@ function render() {
   $('seg').querySelectorAll('button').forEach((b) => {
     b.classList.toggle('on', b.dataset.seg === v.seg);
     b.textContent = b.dataset.seg === 'priority' ? `Priority${hot ? ` · ${hot}` : ''}`
-      : b.dataset.seg === 'pipeline' ? `Pipeline${pipeline.length ? ` · ${pipeline.length}` : ''}` : 'Latest';
+      : `Pipeline${pipeline.length ? ` · ${pipeline.length}` : ''}`;
   });
   const chip = (id, label) => `<button class="chip${v.thesis === id ? ' on' : ''}" data-th="${id}">${esc(label)}</button>`;
   // No "all" chip: tapping the selected area again clears it.
@@ -514,20 +524,25 @@ function render() {
   $('chips').innerHTML = firm.theses.map((t) => chip(t.id, t.label + n((i) => i.theses.some((x) => x.id === t.id)))).join('')
     + `<button class="chip${v.apac ? ' on' : ''}" data-apac="1">APAC${n((i) => i.apac)}</button>`;
 
-  let list = v.seg === 'pipeline' ? pipeline : all.filter((i) => i.status !== 'dismiss' || v.showDismissed);
+  // Priority shows what is relevant (APAC first; global only when big) and not dismissed. What it
+  // hides is counted and reachable from the link at the bottom, never thrown away.
+  const hidden = all.filter((i) => i.status !== 'dismiss' && !i.relevant);
+  let list = v.seg === 'pipeline' ? pipeline : all.filter((i) => v.showDismissed || (i.status !== 'dismiss' && i.relevant));
   if (v.seg !== 'pipeline') {
     if (v.thesis !== 'all') list = list.filter((i) => i.theses.some((t) => t.id === v.thesis));
     if (v.apac) list = list.filter((i) => i.apac);
   }
   if (v.seg === 'priority') list.sort((a, b) => (b.status === 'pursue') - (a.status === 'pursue') || b.score - a.score);
-  else list.sort((a, b) => (v.seg === 'pipeline' ? (b.status === 'pursue') - (a.status === 'pursue') : 0) || Date.parse(b.date) - Date.parse(a.date));
+  else list.sort((a, b) => (b.status === 'pursue') - (a.status === 'pursue') || Date.parse(b.date) - Date.parse(a.date));
 
   const emptyMsg = !loaded ? '<b>Loading announcements.</b><br>Each one will show the event, the thesis it fits, and the SSG pitch it opens.'
     : v.seg === 'pipeline' ? 'Nothing marked Pursue or Watch yet.'
     : all.length ? 'Nothing matches this filter.' : '<b>No announcements stored yet.</b><br>Ask Jobi to pull the latest.';
   $('list').innerHTML = list.length ? list.map(card).join('') : `<div class="empty">${emptyMsg}</div>`;
-  if (v.seg === 'latest' && dismissed.length) {
-    $('list').insertAdjacentHTML('beforeend', `<div class="foot"><button class="lnk" style="margin:0" id="showGone">${v.showDismissed ? 'Hide' : 'Show'} ${dismissed.length} dismissed</button></div>`);
+  const gone = hidden.length + dismissed.length;
+  if (v.seg === 'priority' && gone) {
+    const what = [hidden.length ? `${hidden.length} below the bar` : '', dismissed.length ? `${dismissed.length} dismissed` : ''].filter(Boolean).join(', ');
+    $('list').insertAdjacentHTML('beforeend', `<div class="foot"><button class="lnk" style="margin:0" id="showGone">${v.showDismissed ? 'Hide' : 'Show'} ${what}</button></div>`);
     $('showGone').addEventListener('click', () => { v.showDismissed = !v.showDismissed; render(); });
   }
   if (editing) { const ta = $(`note-${editing}`); if (ta) ta.focus(); }

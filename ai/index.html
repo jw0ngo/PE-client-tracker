@@ -123,7 +123,6 @@ a { color: inherit; }
     <p class="blurb">What the AI and tech industry did this week, read for what it changes in a software target's technology thesis.</p>
     <div class="seg" id="seg">
       <button data-seg="priority">Priority</button>
-      <button data-seg="latest">Latest</button>
       <button data-seg="pipeline" id="segPipeline">Pipeline</button>
     </div>
     <div class="focus" id="focus"><span class="focus-label">Diligence lenses</span><div class="chips" id="chips"></div></div>
@@ -132,7 +131,7 @@ a { color: inherit; }
   <div class="list" id="list">
     <div class="empty"><b>Loading developments.</b><br>Each one will show the event, the diligence lens it touches, and what to re-check on a software target.</div>
   </div>
-  <p class="foot" id="foot">Event, lens and APAC are read from the headline by keyword. The matched words sit under each tag; the small label is the beat the story came from. <span id="footTriage">Pursue, Watch, Dismiss and notes are saved and shared with anyone who can open this page.</span></p>
+  <p class="foot" id="foot">Priority is the one list: the latest developments relevant to SSG, APAC first. An APAC item is in whenever it carries an event or a lens; a global item only when it is live or signed and in a lens, or a billion-dollar round or deal. The rest is kept behind the link at the bottom. Event, lens and APAC are read from the headline by keyword; the matched words sit under each tag, and the small label is the beat the story came from. <span id="footTriage">Pursue, Watch, Dismiss and notes are saved and shared with anyone who can open this page.</span></p>
 </div>
 <div class="toast" id="toast"></div>
 
@@ -162,6 +161,13 @@ const THEMES = [{
 const LENSES = [{"id":"moat","label":"Moat compression","short":"Moat","strong":["ai agent","ai agents","agentic","autonomous agent","autonomous agents","copilot","ai-native","ai native","replaces","replace","replacing","disrupt","disrupts","disruption","disrupting","threat to","challenger","challengers","commoditi","commoditise","commoditize","commoditization","commoditisation","vibe coding","coding agent","coding agents","coding assistant","customer service agent","service agent","built-in","natively","end-to-end","moat","moats","seat compression","headcount","does the work","no-code","low-code","vertical ai","vertical agent"],"weak":["saas","software","incumbent","incumbents","startup","startups","vertical","workflow","workflows","automation","automate","automates","enterprise","rival","rivals","competes","competition","competitor","competitors","market share","customers"]},{"id":"pricing","label":"Pricing model","short":"Pricing","strong":["pricing","price cut","price cuts","cuts prices","cuts price","price increase","price hike","raises prices","per seat","per-seat","seat-based","per user","per-user","consumption-based","consumption based","usage-based","usage based","outcome-based","outcome based","pay per","pay-per","free tier","paid tier","premium tier","subscription price","token price","token prices","per million tokens","api price","api prices","api pricing","cheaper","discount","discounts","bundle","bundles","bundling","unbundle","unbundling","new plan","new tier","pro plan","max plan","enterprise plan","a month","per month","/month"],"weak":["price","prices","cost","costs","subscription","subscriptions","seats","revenue","margin","margins","arr","monetization","monetisation","monetize","monetise","plan","tier","ads","advertising"]},{"id":"platform","label":"Platform dependency","short":"Platform","strong":["open-weights","open weights","open-weight","open weight","open-source model","open source model","open-source","open source","open-sources","deprecate","deprecates","deprecated","deprecation","api change","api changes","exclusive","exclusivity","default provider","default model","default assistant","multi-model","model-agnostic","switching costs","lock-in","lock in","vendor lock","distribution deal","distribution agreement","preinstalled","pre-installed","default search","app store","mcp","model context protocol","interoperability","interoperable","rate limit","rate limits","terms of service","build vs buy","in-house model","in-house models","own model","own models","first-party","first party","wrapper","wrappers","foundation model","frontier model","compute deal","cloud deal","cloud agreement","primary cloud"],"weak":["api","apis","platform","ecosystem","integration","integrations","partnership","partner","partners","developers","developer","sdk","cloud","azure","aws","google cloud","bedrock","vertex","marketplace","plugin","plugins","extension","extensions"]},{"id":"cost","label":"Compute cost","short":"Compute","strong":["gpu","gpus","chip","chips","tpu","tpus","accelerator","accelerators","semiconductor","semiconductors","data center","data centers","data centre","data centres","datacenter","datacenters","capex","capital expenditure","capital expenditures","capital spending","inference cost","inference costs","training cost","training costs","compute cost","compute costs","cost per token","tokens per second","gigawatt","gigawatts","megawatt","megawatts","nuclear","power demand","power supply","electricity demand","hbm","memory chips","foundry","fab","blackwell","rubin","tsmc","supply constraints","shortage","shortages","gross margin","gross margins","unit economics","burn rate","cash burn","compute capacity","cluster","clusters","supercomputer","export controls","h20","h100","h200","gb200","gb300","mi300","mi350","mi400"],"weak":["compute","infrastructure","cloud","servers","server","hardware","electricity","energy","power","cost","costs","margin","margins","efficiency","efficient","cheaper","inference","training","capacity","spending","investment"]},{"id":"reg","label":"Regulation & trust","short":"Regulation","strong":["regulation","regulations","regulator","regulators","regulatory","ai act","export controls","export control","export ban","export curbs","sanctions","antitrust","anti-trust","competition authority","competition watchdog","ftc","doj","european commission","lawsuit","lawsuits","sues","sued","copyright","ruling","court","judge","settlement","settles","fine","fined","fines","ban","bans","banned","compliance","data protection","gdpr","privacy","safety","jailbreak","breach","data breach","outage","hack","hacked","vulnerability","executive order","legislation","national security","licence requirement","license requirement","sovereign ai","data residency","investigation","probe","subpoena","watchdog","misuse","deepfake","deepfakes","prompt injection","guardrails"],"weak":["law","laws","legal","government","policy","security","trust","audit","liability","restrictions","guidelines","standards","ethics","oversight","parliament","congress","senate"]}];
 const RUMOUR = /\b(in talks|talks to|weighs|weighing|considers|considering|explores?|exploring|mulls|mulling|eyes|eyeing|nears|nearing|said to|sources say|people familiar|according to people|in the running|shortlist(?:ed)?|binding bids?|non-binding|frontrunner|front-runner|bid for|bids for|takeover bid|takeover offer|revised offer|higher bid|could sell|could buy|plans to sell|seeks? buyers?|hires? (?:banks?|advisers?|advisors?)|kicks off sale|sale process|strategic review|strategic options|strategic alternatives|reportedly|is said to|plans to|planning to|preparing to|poised to|is working on|working on|testing|in development|internally|leak|leaked|leaks|could launch|may launch|expected to|set to launch|set to release|aims to|will reportedly)\b/i;
 const LIVE = /\b(launch(?:es|ed)|releases?|released|introduc(?:es|ed)|debuts?|debuted|now available|generally available|general availability|rolls? out|rolled out|rolling out|ships?|shipped|completes?|completed|closes?|closed|goes live|went live|live today|available today|starting today|is out|open to all)\b/i;
+const MONEY = /(?:\$|US\$|USD|€|£|A\$|S\$|¥|₹|HK\$)?\s?(\d+(?:[.,]\d+)?)\s?(tn|trillion|bn|billion|b\b|mn|million|m\b)/i;
+function bigMoney(title) {
+  const m = MONEY.exec(title); if (!m) return false;
+  const n = parseFloat(m[1].replace(',', '.')); const u = m[2].toLowerCase();
+  const bn = u.startsWith('t') ? n * 1000 : u.startsWith('b') ? n : n / 1000;
+  return bn >= 1;
+}
 const EVENTS = [["pricing", /\b(pric(?:e|es|ed|ing)|per[- ]seat|per[- ]user|per million tokens|free tier|paid tier|cheaper|discount(?:s|ed)?|cuts? (?:the )?(?:price|cost)s?|slash(?:es|ed)? (?:price|cost)s?|price hike|subscription (?:price|plan|tier)s?|new (?:plan|tier)s?|\$\d+(?:\.\d+)?(?:\/|\s?per\s|\s?a\s)(?:month|user|seat|mo\b|year))/i],
   ["research", /\b(paper|study|studies|researchers?|arxiv|report finds|finds? that|survey|system card|safety report|red[- ]team(?:ing|ed)?)\b/i],
   ["incident", /\b(outage|went down|goes down|is down|down for|data breach|breach(?:ed)?|hacked|hack\b|vulnerability|vulnerabilities|exploit(?:ed)?|jailbreak|jailbroken|prompt injection|security (?:flaw|incident|issue|hole)|recall(?:ed|s)?|deepfake|deepfakes|scam|misuse|exposed (?:data|chats|conversations))\b/i],
@@ -332,17 +338,26 @@ function classify(t, raw) {
   }
   const apac = APAC.test(all);
   const ageDays = raw.date ? Math.max(0, (Date.now() - Date.parse(raw.date)) / 86400000) : 30;
-
-  // Heat is the event; lens fit and region tilt the order; age decays it faster than on the PE
-  // page because this beat moves faster — a model release is old news in a fortnight.
   const base = angle ? angle.heat : 0;
-  const score = (base * 10 + (ln.length ? 8 + Math.min(ln[0].score, 6) : 0) + (apac ? 4 : 0)) *
-    Math.pow(0.5, ageDays / 10);
+
+  // Relevance, APAC first. An APAC item is in whenever the headline carries an event or a lens.
+  // A global item has to be big: a live or signed event (heat 2+) in a lens, or a money event — a
+  // round, a deal — with a billion-dollar figure in the headline, so a $200m Series C in Austin
+  // stays out while a $3bn acquisition comes in. Filtered items stay in the store, hidden on the page.
+  const money = bigMoney(title);
+  const relevant = apac ? (kind !== 'other' || ln.length > 0)
+    : base >= 2 && (kind === 'funding' || kind === 'deal' ? money : ln.length > 0);
+
+  // Priority is the one list: heat is the event, lens fit tilts it, APAC tilts it harder than a
+  // lens, and a seven-day half-life keeps it current — a model release is old news in a fortnight.
+  const score = (base * 10 + (ln.length ? 8 + Math.min(ln[0].score, 6) : 0) + (apac ? 14 : 0)) *
+    Math.pow(0.5, ageDays / 7);
   return {
     kind, stage, rumour,
     lenses: ln,
     inLens: ln.length > 0,
     apac,
+    relevant,
     move: angle ? angle.move : null,
     heat: !angle || ageDays > 30 ? 'cool'
       : base >= 3 && ln.length && ageDays <= 7 ? 'hot'
@@ -427,7 +442,8 @@ function card(i) {
 }
 
 function render() {
-  if (PUBLIC) { $('segPipeline').hidden = true; if (view.seg === 'pipeline') view.seg = 'priority'; }
+  if (PUBLIC) { $('seg').hidden = true; if (view.seg === 'pipeline') view.seg = 'priority'; }
+  if (view.seg === 'latest') view.seg = 'priority';   // a preference saved before Latest was removed
   if (LENSES.every((l) => l.id !== view.lens)) view.lens = 'all';
   $('focus').hidden = view.seg === 'pipeline';
   const all = classified();
@@ -441,7 +457,7 @@ function render() {
   $('seg').querySelectorAll('button').forEach((b) => {
     b.classList.toggle('on', b.dataset.seg === v.seg);
     b.textContent = b.dataset.seg === 'priority' ? `Priority${hot ? ` · ${hot}` : ''}`
-      : b.dataset.seg === 'pipeline' ? `Pipeline${pipeline.length ? ` · ${pipeline.length}` : ''}` : 'Latest';
+      : `Pipeline${pipeline.length ? ` · ${pipeline.length}` : ''}`;
   });
   const chip = (id, label) => `<button class="chip${v.lens === id ? ' on' : ''}" data-ln="${id}">${esc(label)}</button>`;
   // No "all" chip: tapping the selected lens again clears it. Each carries its count.
@@ -450,20 +466,25 @@ function render() {
   $('chips').innerHTML = LENSES.map((l) => chip(l.id, l.short + n((i) => i.lenses.some((x) => x.id === l.id)))).join('')
     + `<button class="chip${v.apac ? ' on' : ''}" data-apac="1">APAC${n((i) => i.apac)}</button>`;
 
-  let list = v.seg === 'pipeline' ? pipeline : all.filter((i) => i.status !== 'dismiss' || v.showDismissed);
+  // Priority shows what is relevant (APAC first; global only when big) and not dismissed. What it
+  // hides is counted and reachable from the link at the bottom, never thrown away.
+  const hidden = all.filter((i) => i.status !== 'dismiss' && !i.relevant);
+  let list = v.seg === 'pipeline' ? pipeline : all.filter((i) => v.showDismissed || (i.status !== 'dismiss' && i.relevant));
   if (v.seg !== 'pipeline') {
     if (v.lens !== 'all') list = list.filter((i) => i.lenses.some((l) => l.id === v.lens));
     if (v.apac) list = list.filter((i) => i.apac);
   }
   if (v.seg === 'priority') list.sort((a, b) => (b.status === 'pursue') - (a.status === 'pursue') || b.score - a.score);
-  else list.sort((a, b) => (v.seg === 'pipeline' ? (b.status === 'pursue') - (a.status === 'pursue') : 0) || Date.parse(b.date) - Date.parse(a.date));
+  else list.sort((a, b) => (b.status === 'pursue') - (a.status === 'pursue') || Date.parse(b.date) - Date.parse(a.date));
 
   const emptyMsg = !loaded ? '<b>Loading developments.</b><br>Each one will show the event, the diligence lens it touches, and what to re-check on a software target.'
     : v.seg === 'pipeline' ? 'Nothing marked Pursue or Watch yet.'
     : all.length ? 'Nothing matches this filter.' : '<b>Nothing stored yet.</b><br>The morning pull fills it; ask Jobi to run one now.';
   $('list').innerHTML = list.length ? list.map(card).join('') : `<div class="empty">${emptyMsg}</div>`;
-  if (v.seg === 'latest' && dismissed.length) {
-    $('list').insertAdjacentHTML('beforeend', `<div class="foot"><button class="lnk" style="margin:0" id="showGone">${v.showDismissed ? 'Hide' : 'Show'} ${dismissed.length} dismissed</button></div>`);
+  const gone = hidden.length + dismissed.length;
+  if (v.seg === 'priority' && gone) {
+    const what = [hidden.length ? `${hidden.length} below the bar` : '', dismissed.length ? `${dismissed.length} dismissed` : ''].filter(Boolean).join(', ');
+    $('list').insertAdjacentHTML('beforeend', `<div class="foot"><button class="lnk" style="margin:0" id="showGone">${v.showDismissed ? 'Hide' : 'Show'} ${what}</button></div>`);
     $('showGone').addEventListener('click', () => { v.showDismissed = !v.showDismissed; render(); });
   }
   if (editing) { const ta = $(`note-${editing}`); if (ta) ta.focus(); }
