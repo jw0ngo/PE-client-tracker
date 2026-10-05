@@ -1,0 +1,1656 @@
+[
+ {
+  "id": "kkr-bmc-software",
+  "firm": "kkr",
+  "name": "BMC Software",
+  "slug": "bmc-software",
+  "industry": "software",
+  "industryLabel": "Mainframe and IT operations software",
+  "hq": "Houston, United States",
+  "geos": [
+   "Global"
+  ],
+  "apac": false,
+  "heldSince": "2018",
+  "stake": "majority",
+  "valuation": {
+   "amount": "US$15bn",
+   "basis": "reported potential sale/IPO value incl. debt, Apr 2024 (Bloomberg)",
+   "url": "https://www.bnnbloomberg.ca/kkr-weighs-sale-or-ipo-for-15-billion-bmc-software-1.2057505"
+  },
+  "summary": "Enterprise IT software (mainframe automation, DataOps, workload automation) sold to large enterprises; KKR bought it from Bain-led owners in 2018 (~US$8–10bn reported). KKR carved out and sold the Helix ServiceOps unit to Montagu in 2026 ahead of a planned BMC IPO.",
+  "signals": [
+   {
+    "date": "2026-06-17",
+    "title": "KKR Agrees to Sell BMC Helix to PE Firm Montagu for $875 Million",
+    "url": "https://news.bloomberglaw.com/private-equity/kkr-agrees-to-sell-bmc-helix-to-pe-firm-montagu-for-875-million",
+    "publisher": "Bloomberg Law"
+   },
+   {
+    "date": "2026-02-20",
+    "title": "KKR explores $1.5 billion sale of BMC Helix, sources say",
+    "url": "https://srnnews.com/kkr-explores-1-5-billion-sale-of-bmc-helix-sources-say/",
+    "publisher": "Reuters"
+   },
+   {
+    "date": "2024-04-10",
+    "title": "KKR weighs sale or IPO for $15 billion BMC Software",
+    "url": "https://www.bnnbloomberg.ca/kkr-weighs-sale-or-ipo-for-15-billion-bmc-software-1.2057505",
+    "publisher": "Bloomberg via BNN"
+   }
+  ],
+  "exit": {
+   "status": "process",
+   "note": "Reuters 2026-02-20: BMC filed confidentially for an IPO and KKR plans IPO groundwork as early as 2026 after the Helix carve-out; Helix majority sold to Montagu (US$875m) in Jun 2026, BMC retains a minority."
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "kkr-cotiviti",
+  "firm": "kkr",
+  "name": "Cotiviti",
+  "slug": "cotiviti",
+  "industry": "healthit",
+  "industryLabel": "Payer analytics and payment-integrity software",
+  "hq": "South Jordan, Utah, United States",
+  "geos": [
+   "United States"
+  ],
+  "apac": false,
+  "heldSince": "2024-05",
+  "stake": "co-control",
+  "valuation": {
+   "amount": "US$10.5bn",
+   "basis": "recapitalization valuation, Feb 2024 (reported)",
+   "url": "https://law360.com/healthcare-authority/amp/articles/1797760"
+  },
+  "summary": "Data-driven healthcare software for US payers: payment accuracy, risk adjustment, quality improvement and (via Edifecs) interoperability. KKR (North America Fund XIII) and Veritas hold equal co-control stakes after a 2024 recapitalization; Edifecs acquired in 2025.",
+  "signals": [
+   {
+    "date": "2025-03-31",
+    "title": "Cotiviti Completes Acquisition of Edifecs",
+    "url": "https://www.businesswire.com/news/home/20250331312660/en",
+    "publisher": "Business Wire"
+   },
+   {
+    "date": "2025-02-10",
+    "title": "Cotiviti Announces Agreement to Acquire Edifecs",
+    "url": "https://www.businesswire.com/news/home/20250210247496/en/Cotiviti-Announces-Agreement-to-Acquire-Edifecs",
+    "publisher": "Business Wire"
+   },
+   {
+    "date": "2024-05-02",
+    "title": "Cotiviti Completes Recapitalization with KKR and Long-Standing Owner Veritas",
+    "url": "https://business.minstercommunitypost.com/minstercommunitypost/article/bizwire-2024-5-2-cotiviti-completes-recapitalization-with-kkr-and-long-standing-owner-veritas",
+    "publisher": "Business Wire"
+   },
+   {
+    "date": "2024-02-14",
+    "title": "Cotiviti Announces Recapitalization with KKR and Long-Standing Owner Veritas",
+    "url": "https://www.cotiviti.com/press-release/cotiviti-announces-recapitalization-with-kkr-and-long-standing-owner-veritas",
+    "publisher": "Cotiviti"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "kkr-employment-hero",
+  "firm": "kkr",
+  "name": "Employment Hero",
+  "slug": "employment-hero",
+  "industry": "software",
+  "industryLabel": "SMB HR and payroll SaaS",
+  "hq": "Sydney, Australia",
+  "geos": [
+   "Australia",
+   "United Kingdom",
+   "Canada",
+   "Southeast Asia"
+  ],
+  "apac": true,
+  "heldSince": "2025-02",
+  "stake": "minority",
+  "valuation": {
+   "amount": "A$2.2bn",
+   "basis": "implied by KKR secondary purchase from SEEK, Feb 2025 (reported)",
+   "url": "https://www.capitalbrief.com/briefing/kkr-buys-stake-in-employment-hero-from-seek-investments-231df9cb-5082-4a9e-9c44-11383d4ee6dc/"
+  },
+  "summary": "Cloud HR, payroll and employee-engagement platform ('employment OS') serving 300,000+ SMEs and 2m+ employees across ANZ, UK, Canada and SE Asia (A$250m ARR). KKR bought a minority stake from SEEK Investments for ~A$95m via its Asia Next Generation Technology strategy.",
+  "signals": [
+   {
+    "date": "2025-02-17",
+    "title": "KKR Acquires Stake in HRM Platform Employment Hero from SEEK Investments",
+    "url": "https://www.businesswire.com/news/home/20250217503570/en",
+    "publisher": "Business Wire"
+   },
+   {
+    "date": "2025-01-09",
+    "title": "Humi to be acquired by Employment Hero in $69.5 million deal",
+    "url": "https://unleash.ai/emerging-tech/news/humi-to-be-acquired-by-employment-hero-in-69-5-million-deal",
+    "publisher": "UNLEASH"
+   },
+   {
+    "date": "2025-01-08",
+    "title": "Employment Hero acquires Canadian employment platform Humi in $100M+ global expansion move",
+    "url": "https://employmenthero.com/blog/employment-hero-acquires-canadian-employment-platform-humi-in-100m-global-expansion-move",
+    "publisher": "Employment Hero"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "kkr-fuji-soft",
+  "firm": "kkr",
+  "name": "FUJI SOFT",
+  "slug": "fuji-soft",
+  "industry": "software",
+  "industryLabel": "Embedded and enterprise system integration",
+  "hq": "Yokohama, Japan",
+  "geos": [
+   "Japan"
+  ],
+  "apac": true,
+  "heldSince": "2025-02",
+  "stake": "majority",
+  "valuation": {
+   "amount": "US$4.4bn",
+   "basis": "take-private tender offer at ¥9,850/share, Feb 2025 (reported)",
+   "url": "https://stocktwits.com/news-articles/markets/equity/kkr-completes-second-tender-offer-to-acquire-fujisoft/ch5H2keRwv"
+  },
+  "summary": "Japanese system integrator (10,000+ engineers) focused on embedded, control and operational software for industrial and enterprise clients. KKR won a contested take-private against Bain, reaching 57.9% in Feb 2025 and 100% via squeeze-out; delisted from TSE Prime 16 May 2025.",
+  "signals": [
+   {
+    "date": "2025-03-24",
+    "title": "KKR Enters into MoU with Founding Family of FUJI SOFT; to Acquire 100% of FUJI SOFT",
+    "url": "https://www.businesswire.com/news/home/20250324347162/en",
+    "publisher": "Business Wire"
+   },
+   {
+    "date": "2025-02-19",
+    "title": "KKR Completes Tender Offer for FUJI SOFT",
+    "url": "https://www.businesswire.com/news/home/20250219106284/en/KKR-Completes-Tender-Offer-for-FUJI-SOFT",
+    "publisher": "Business Wire"
+   },
+   {
+    "date": "2024-12-19",
+    "title": "KKR Extends Tender Offer for Fuji Soft to Jan. 9",
+    "url": "https://nippon.com/en/news/yjj2024121901087",
+    "publisher": "Jiji Press via nippon.com"
+   },
+   {
+    "date": "2024-08-08",
+    "title": "KKR Announces Tender Offer to Acquire FUJI SOFT",
+    "url": "https://www.businesswire.com/news/home/20240808217610/en/KKR-Announces-Tender-Offer-to-Acquire-FUJI-SOFT",
+    "publisher": "Business Wire"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": "Privatisation only completed mid-2025 (delisted 2025-05-16); no exit reports."
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "kkr-instructure",
+  "firm": "kkr",
+  "name": "Instructure",
+  "slug": "instructure",
+  "industry": "software",
+  "industryLabel": "Education learning-management SaaS",
+  "hq": "Salt Lake City, Utah, United States",
+  "geos": [
+   "United States",
+   "Global"
+  ],
+  "apac": false,
+  "heldSince": "2024-11",
+  "stake": "majority",
+  "valuation": {
+   "amount": "US$4.8bn",
+   "basis": "take-private enterprise value, Jul 2024",
+   "url": "https://www.nasdaq.com/press-release/instructure-be-acquired-kkr-48-billion-2024-07-25"
+  },
+  "summary": "Maker of the Canvas LMS and Parchment credentialing platform for K-12 and higher education (~200m learners, 100+ countries). KKR, with Dragoneer, took it private from Thoma Bravo at US$23.60/share in Nov 2024, targeting US$1bn revenue by 2028; hit by a ShinyHunters breach in Apr–May 2026.",
+  "signals": [
+   {
+    "date": "2026-05-08",
+    "title": "Deconstructing the Canvas (Instructure) Data Breach: What Happened and What Should Your Institution Do Next?",
+    "url": "https://www.bsk.com/news-events-videos/deconstructing-the-canvas-instructure-data-breach-what-happened-and-what-should-your-institution-do-next",
+    "publisher": "Bond, Schoeneck & King"
+   },
+   {
+    "date": "2024-07-25",
+    "title": "Instructure to be Acquired by KKR for $4.8 Billion",
+    "url": "https://www.nasdaq.com/press-release/instructure-be-acquired-kkr-48-billion-2024-07-25",
+    "publisher": "Business Wire via Nasdaq"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "kkr-internet-brands",
+  "firm": "kkr",
+  "name": "Internet Brands",
+  "slug": "internet-brands",
+  "industry": "internet",
+  "industryLabel": "Vertical online media and SaaS",
+  "hq": "El Segundo, California, United States",
+  "geos": [
+   "United States",
+   "Global"
+  ],
+  "apac": false,
+  "heldSince": "2014",
+  "stake": "majority",
+  "valuation": {
+   "amount": "US$12bn+",
+   "basis": "recapitalization valuation, Jul 2022",
+   "url": "https://warburgpincus.com/2022/07/19/internet-brands-completes-multibillion-dollar-recapitalization-with-kkr-temasek-and-warburg-pincus-to-drive-further-growth"
+  },
+  "summary": "Owner of vertical web properties and SaaS in health (WebMD, Medscape, Henry Schein One), legal (Avvo, Nolo, Martindale) and auto; 250m+ monthly visitors. KKR bought it for US$1.1bn in 2014, added WebMD (US$2.8bn, 2017) and remains majority owner after a 2022 recap with Temasek and Warburg Pincus.",
+  "signals": [
+   {
+    "date": "2022-07-19",
+    "title": "Internet Brands Completes Multibillion-Dollar Recapitalization with KKR, Temasek and Warburg Pincus to Drive Further Growth",
+    "url": "https://www.prnewswire.com/news-releases/internet-brands-completes-multibillion-dollar-recapitalization-with-kkr-temasek-and-warburg-pincus-to-drive-further-growth-301588812.html",
+    "publisher": "PR Newswire"
+   },
+   {
+    "date": "2017-07-24",
+    "title": "Private equity giant KKR is buying WebMD for $2.8 billion",
+    "url": "https://fortune.com/2017/07/24/private-equity-giant-kkr-is-buying-webmd-for-2-8-billion",
+    "publisher": "Fortune"
+   }
+  ],
+  "exit": {
+   "status": "partial",
+   "note": "Jul 2022 recapitalization brought in a Warburg Pincus-led investor group at >US$12bn; KKR stayed majority. No 2025–2026 sale/IPO reports found."
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "kkr-jio-platforms",
+  "firm": "kkr",
+  "name": "Jio Platforms",
+  "slug": "jio-platforms",
+  "industry": "internet",
+  "industryLabel": "Indian digital services and telecom platform",
+  "hq": "Mumbai, India",
+  "geos": [
+   "India"
+  ],
+  "apac": true,
+  "heldSince": "2020-05",
+  "stake": "minority",
+  "valuation": {
+   "amount": "US$137bn",
+   "basis": "implied valuation at proposed IPO issue size, Aug 2026 (reported)",
+   "url": "https://www.outlookbusiness.com/corporate/jio-platforms-gets-sebi-nod-for-38-bn-ipo-set-to-be-indias-biggest"
+  },
+  "summary": "Reliance's digital arm housing Jio mobile/fixed broadband (~506m subscribers), apps and digital services. KKR invested INR11,367cr (US$1.5bn) for 2.32% in May 2020 alongside Meta, Google and other sponsors; a ~US$3.8bn IPO cleared SEBI in Aug 2026.",
+  "signals": [
+   {
+    "date": "2026-08-28",
+    "title": "Jio Platforms Gets Sebi Nod To Launch Country's Biggest-Ever IPO",
+    "url": "https://www.etvbharat.com/en/business/jio-platforms-gets-sebi-nod-to-launch-country-biggest-ever-ipo-enn26082804614",
+    "publisher": "ETV Bharat"
+   },
+   {
+    "date": "2020-05-22",
+    "title": "RIL gains as KKR to buy stake in Jio Platforms",
+    "url": "https://www.business-standard.com/article/news-cm/ril-gains-as-kkr-to-buy-stake-in-jio-platforms-120052200255_1.html",
+    "publisher": "Business Standard"
+   }
+  ],
+  "exit": {
+   "status": "process",
+   "note": "SEBI approved a ~INR37,700cr (US$3.8bn) fresh-issue IPO on 2026-08-28, launch expected around Nov 2026; listing would give KKR a liquidity path."
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "kkr-kiotviet",
+  "firm": "kkr",
+  "name": "KiotViet",
+  "slug": "kiotviet",
+  "industry": "software",
+  "industryLabel": "Cloud POS and retail ERP for MSMEs",
+  "hq": "Hanoi, Vietnam",
+  "geos": [
+   "Vietnam"
+  ],
+  "apac": true,
+  "heldSince": "2021-09",
+  "stake": "minority",
+  "valuation": {
+   "amount": null,
+   "basis": null,
+   "url": null
+  },
+  "summary": "Cloud point-of-sale, inventory, CRM and staff-management software for 110,000+ Vietnamese micro and small merchants, expanding into embedded payments and lending with bank partners. KKR led the US$45m Series B as its first SE Asia growth-tech software deal and is the largest investor.",
+  "signals": [
+   {
+    "date": "2021-09-04",
+    "title": "Vietnam's startup KiotViet raises $45 mn from global investment firm",
+    "url": "https://news.tuoitre.vn/vietnams-startup-kiotviet-raises-45-mn-from-global-investment-firm-10362929.htm",
+    "publisher": "Tuoi Tre News"
+   },
+   {
+    "date": "2021-09-03",
+    "title": "Vietnamese Merchant Platform KiotViet Scores $45 Million In Series B Funding Led By KKR",
+    "url": "https://vietcetera.com/en/vietnamese-merchant-platform-kiotviet-scores-45-million-in-series-b-funding-led-by-kkr",
+    "publisher": "Vietcetera"
+   },
+   {
+    "date": "2021-09-01",
+    "title": "KKR Leads Series B Funding Round in Vietnam's KiotViet",
+    "url": "https://www.businesswire.com/news/home/20210901006099/en",
+    "publisher": "Business Wire"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "kkr-myob",
+  "firm": "kkr",
+  "name": "MYOB",
+  "slug": "myob",
+  "industry": "software",
+  "industryLabel": "SME accounting and business management SaaS",
+  "hq": "Melbourne, Australia",
+  "geos": [
+   "Australia",
+   "New Zealand"
+  ],
+  "apac": true,
+  "heldSince": "2019",
+  "stake": "majority",
+  "valuation": {
+   "amount": "A$2bn",
+   "basis": "take-private equity value, 2019 (reported, Bloomberg)",
+   "url": "https://accountingtoday.com/articles/kkr-eyes-over-a-4b-value-for-myob-in-anz-talks-sources-say"
+  },
+  "summary": "Accounting, payroll and business-management software for 1m+ ANZ SMEs and 10,000+ accounting practices. KKR took it private off the ASX in 2019 at A$3.40/share; a 2022–23 ~A$4bn sale to ANZ collapsed and KKR has since focused on reinvestment and cloud migration.",
+  "signals": [
+   {
+    "date": "2018-12-24",
+    "title": "Australia's MYOB recommends KKR's marked-down $1 billion buyout offer; shares rise",
+    "url": "https://www.business-standard.com/article/reuters/australia-s-myob-recommends-kkr-s-marked-down-1-billion-buyout-offer-shares-rise-118122400082_1.html",
+    "publisher": "Reuters via Business Standard"
+   },
+   {
+    "date": "2018-10-08",
+    "title": "KKR launches $1.2 billion offer for Australian accounting software firm MYOB",
+    "url": "https://www.business-standard.com/article/reuters/kkr-launches-1-2-billion-offer-for-australian-accounting-software-firm-myob-118100800336_1.html",
+    "publisher": "Reuters via Business Standard"
+   }
+  ],
+  "exit": {
+   "status": "rumoured",
+   "note": "Capital Brief (2025) reported industry sources expect a trade-sale process with Macquarie/Jefferies tipped; no mandate in place and a KKR source said no imminent exit. ANZ talks (~A$4bn) ended 2023."
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "kkr-privy",
+  "firm": "kkr",
+  "name": "Privy",
+  "slug": "privy",
+  "industry": "fintech",
+  "industryLabel": "Digital identity and e-signature platform",
+  "hq": "Jakarta, Indonesia",
+  "geos": [
+   "Indonesia",
+   "Australia"
+  ],
+  "apac": true,
+  "heldSince": "2022-11",
+  "stake": "minority",
+  "valuation": {
+   "amount": null,
+   "basis": null,
+   "url": null
+  },
+  "summary": "Indonesia's leading licensed digital-trust provider (digital ID verification, legally binding e-signatures, document management; 71m verified users, 167k organisations by end-2025) serving banks, insurers, healthcare and government e-procurement. KKR led its US$48m Series C.",
+  "signals": [
+   {
+    "date": "2026-04-20",
+    "title": "Tanda Tangan Digital Meledak! Privy Catat Lonjakan Fantastis 250% YoY di Awal 2026",
+    "url": "https://pasardana.id/news/2026/4/20/tanda-tangan-digital-meledak-privy-catat-lonjakan-fantastis-250-yoy-di-awal-2026",
+    "publisher": "Pasardana"
+   },
+   {
+    "date": "2026-01-05",
+    "title": "Privy Tutup 2025 dengan 71 Juta Pengguna, Fokus Jaga Kepercayaan Digital",
+    "url": "https://money.kompas.com/read/2026/01/05/162756026/privy-tutup-2025-dengan-71-juta-pengguna-fokus-jaga-kepercayaan-digital",
+    "publisher": "Kompas"
+   },
+   {
+    "date": "2025-09-16",
+    "title": "Privy Siap Tadah Pendanaan Baru Tahun Depan, Jumlah Pelanggan Melonjak",
+    "url": "https://teknologi.bisnis.com/read/20250916/266/1911781/privy-siap-tadah-pendanaan-baru-tahun-depan-jumlah-pelanggan-melonjak",
+    "publisher": "Bisnis.com"
+   },
+   {
+    "date": "2024-02-18",
+    "title": "Privy Akuisisi Startup AyoPajak, Bidik Jutaan Wajib Pajak RI",
+    "url": "https://teknologi.bisnis.com/read/20240218/266/1741832/privy-akuisisi-startup-ayopajak-bidik-jutaan-wajib-pajak-ri",
+    "publisher": "Bisnis.com"
+   },
+   {
+    "date": "2022-11-13",
+    "title": "KKR Leads Series C Round in Indonesian Digital Trust Provider Privy",
+    "url": "https://www.businesswire.com/news/home/20221113005093/en/KKR-Leads-Series-C-Round-in-Indonesian-Digital-Trust-Provider-Privy",
+    "publisher": "Business Wire"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": "Sep 2025: company said it is preparing a new funding round for 2026 (growth capital, not an exit)."
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "kkr-samsung-sds",
+  "firm": "kkr",
+  "name": "Samsung SDS",
+  "slug": "samsung-sds",
+  "industry": "software",
+  "industryLabel": "Enterprise IT, cloud and AI services",
+  "hq": "Seoul, South Korea",
+  "geos": [
+   "South Korea",
+   "Global"
+  ],
+  "apac": true,
+  "heldSince": "2026-04",
+  "stake": "minority",
+  "valuation": {
+   "amount": null,
+   "basis": "KRW1.22tn (US$820m) convertible bonds, Apr 2026; company is KRX-listed",
+   "url": "https://www.cnbc.com/2026/04/15/samsung-sds-kkr-820m-ai-investment-shares-surge-convertible-bonds-expansion.html"
+  },
+  "summary": "Listed Samsung-group enterprise IT services arm (cloud, AI transformation, logistics IT; ~26,000 staff, KRW14tn revenue). KKR invested KRW1.22tn (US$820m) via convertible bonds from Asia Fund IV as an active minority partner advising on M&A, capital allocation and overseas expansion.",
+  "signals": [
+   {
+    "date": "2026-04-15",
+    "title": "Samsung SDS shares jump 20% on KKR partnership and $820 million bond purchase",
+    "url": "https://www.cnbc.com/2026/04/15/samsung-sds-kkr-820m-ai-investment-shares-surge-convertible-bonds-expansion.html",
+    "publisher": "CNBC"
+   },
+   {
+    "date": "2026-04-15",
+    "title": "Samsung SDS issues $820 mil. convertible bonds to KKR for future AI investment",
+    "url": "https://www.koreatimes.co.kr/business/tech-science/20260415/samsung-sds-issues-820-mil-convertible-bonds-to-kkr-for-future-ai-investment",
+    "publisher": "The Korea Times"
+   },
+   {
+    "date": "2026-04-15",
+    "title": "KKR and Samsung SDS Form Strategic Partnership to Drive Long-Term Value Creation",
+    "url": "https://www.nasdaq.com/press-release/kkr-and-samsung-sds-form-strategic-partnership-drive-long-term-value-creation-2026-04",
+    "publisher": "Business Wire via Nasdaq"
+   }
+  ],
+  "exit": {
+   "status": "listed",
+   "note": "Company is KRX-listed; KKR holds newly issued convertible bonds (deal announced 2026-04-15, closing expected Q2 2026)."
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "kkr-yayoi",
+  "firm": "kkr",
+  "name": "Yayoi",
+  "slug": "yayoi",
+  "industry": "software",
+  "industryLabel": "SME accounting and tax software",
+  "hq": "Tokyo, Japan",
+  "geos": [
+   "Japan"
+  ],
+  "apac": true,
+  "heldSince": "2022-03",
+  "stake": "majority",
+  "valuation": {
+   "amount": "US$1.75bn+",
+   "basis": "reported sale price from ORIX, Oct 2021 (Bloomberg via Reuters)",
+   "url": "https://www.nippon.com/en/news/reu20211026KBN2HG0JA/"
+  },
+  "summary": "Japan's largest accounting, payroll and tax-filing software provider for SMEs and sole proprietors (2.5m+ registered users, No.1 cloud accounting by users). KKR bought it from ORIX via Asia Fund IV to drive cloud migration and bolt-ons (Alarm Box, Miletos).",
+  "signals": [
+   {
+    "date": "2026-07-17",
+    "title": "「弥生会計 Next」と「Misoca」が連携",
+    "url": "https://www.yayoi-kk.co.jp/company/pressrelease/detail.20260717/",
+    "publisher": "Yayoi Co., Ltd."
+   },
+   {
+    "date": "2025-10-01",
+    "title": "新執行役員就任のお知らせ",
+    "url": "https://www.yayoi-kk.co.jp/company/pressrelease/detail.press_20251001/",
+    "publisher": "Yayoi Co., Ltd."
+   },
+   {
+    "date": "2022-03-01",
+    "title": "KKR Completes Acquisition of Leading Software Provider Yayoi",
+    "url": "https://www.nasdaq.com/press-release/kkr-completes-acquisition-of-leading-software-provider-yayoi-2022-03-01",
+    "publisher": "Business Wire via Nasdaq"
+   },
+   {
+    "date": "2021-12-17",
+    "title": "KKR to buy Japanese software developer from Orix",
+    "url": "https://www.nippon.com/en/news/reu20211217KBN2IW0IR/",
+    "publisher": "Reuters via nippon.com"
+   },
+   {
+    "date": "2021-10-26",
+    "title": "Japan's Orix to sell software firm Yayoi for more than $1.75 billion -Bloomberg",
+    "url": "https://www.nippon.com/en/news/reu20211026KBN2HG0JA/",
+    "publisher": "Reuters via nippon.com"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": "No 2025–2026 sale/IPO reports found; Jan 2026 rollout of broad-based employee ownership programme suggests continued hold."
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "tpg-airtel-money",
+  "firm": "tpg",
+  "name": "Airtel Money",
+  "slug": "airtel-money",
+  "industry": "fintech",
+  "industryLabel": "Mobile money platform, Africa",
+  "hq": "Amsterdam, Netherlands (operations across 14 African markets)",
+  "geos": [
+   "Sub-Saharan Africa"
+  ],
+  "apac": false,
+  "heldSince": "2021-03",
+  "stake": "minority",
+  "valuation": {
+   "amount": "US$5.3bn",
+   "basis": "London IPO priced at $1.96/share, Oct 2026",
+   "url": "https://nairametrics.com/2026/10/01/airtel-money-sets-ipo-price-at-1-96-values-business-at-5-3-billion/"
+  },
+  "summary": "Airtel Africa's mobile-money arm (wallets, payments, lending) serving ~14 African markets, ~US$200bn annualised transaction value. TPG's Rise Fund invested US$200m in Mar 2021 at US$2.65bn; the unit priced a secondary-only London IPO in Oct 2026.",
+  "signals": [
+   {
+    "date": "2026-10-01",
+    "title": "Airtel Money sets IPO price at $1.96, values business at $5.3 billion",
+    "url": "https://nairametrics.com/2026/10/01/airtel-money-sets-ipo-price-at-1-96-values-business-at-5-3-billion/",
+    "publisher": "Nairametrics"
+   },
+   {
+    "date": "2026-09-24",
+    "title": "Airtel Money will list in London and the IPO raises no new money for the business",
+    "url": "https://tech-ish.com/2026/09/24/airtel-money-will-list-in-london-and-the-ipo-raises-no-new-money-for-the-business/",
+    "publisher": "Tech-ish"
+   },
+   {
+    "date": "2026-09-23",
+    "title": "Airtel Money announces IPO plans, targets London Stock Exchange listing",
+    "url": "https://nairametrics.com/2026/09/23/airtel-money-announces-ipo-plans-targets-london-stock-exchange-listing/",
+    "publisher": "Nairametrics"
+   },
+   {
+    "date": "2025-10-28",
+    "title": "Airtel Africa's mobile money processes nearly $200bn as it readies public listing",
+    "url": "https://techcabal.com/2025/10/28/airtel-africas-mobile-money-processes-nearly-200bn-as-it-readies-public-listing/",
+    "publisher": "TechCabal"
+   }
+  ],
+  "exit": {
+   "status": "process",
+   "note": "LSE IPO priced 1 Oct 2026 at $1.96/share (US$5.3bn); offer is entirely secondary shares from existing minority holders (Airtel Africa not selling), giving TPG a liquidity route."
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "tpg-altimetrik",
+  "firm": "tpg",
+  "name": "Altimetrik",
+  "slug": "altimetrik",
+  "industry": "software",
+  "industryLabel": "Digital engineering & enterprise AI services",
+  "hq": "Southfield (Detroit), US / Bengaluru, India",
+  "geos": [
+   "United States",
+   "India",
+   "Global"
+  ],
+  "apac": true,
+  "heldSince": "2024-09",
+  "stake": "majority",
+  "valuation": {
+   "amount": "~US$1.5bn",
+   "basis": "reported entry valuation, Sep 2024 (TPG Capital Asia majority stake)",
+   "url": "https://www.dbusiness.com/daily-news/altimetrik-in-detroit-completes-deal-to-sell-majority-stake-to-californias-tpg/"
+  },
+  "summary": "India-centric digital engineering and enterprise-AI services firm (platform modernisation, cloud, data, AI) serving US/global enterprises. TPG Asia took majority control in 2024 to scale toward US$1bn revenue; bought SLK Software (~US$600m reported) in Oct 2025.",
+  "signals": [
+   {
+    "date": "2026-06-16",
+    "title": "Altimetrik Unveils New Brand Identity Marking Its Evolution into an Enterprise AI Engineering Powerhouse",
+    "url": "https://secure.businesswire.com/news/home/20260616564024/en/Altimetrik-Unveils-New-Brand-Identity-Marking-Its-Evolution-into-an-Enterprise-AI-Engineering-Powerhouse",
+    "publisher": "Business Wire"
+   },
+   {
+    "date": "2025-10-24",
+    "title": "Altimetrik Completes Acquisition of SLK Software",
+    "url": "https://www.businesswire.com/news/home/20251024035009/en",
+    "publisher": "Business Wire"
+   },
+   {
+    "date": "2024-06-27",
+    "title": "TPG Makes Significant Strategic Investment in Altimetrik to Accelerate Growth and Innovation",
+    "url": "https://www.businesswire.com/news/home/20240627725389/en/TPG-Makes-Significant-Strategic-Investment-in-Altimetrik-to-Accelerate-Growth-and-Innovation",
+    "publisher": "Business Wire"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "tpg-aven-hospitality",
+  "firm": "tpg",
+  "name": "Aven Hospitality",
+  "slug": "aven-hospitality",
+  "industry": "software",
+  "industryLabel": "Hotel reservation & distribution SaaS, global",
+  "hq": "Dallas–Fort Worth, Texas, US",
+  "geos": [
+   "Global",
+   "United States",
+   "Asia-Pacific"
+  ],
+  "apac": false,
+  "heldSince": "2025-07",
+  "stake": "majority",
+  "valuation": {
+   "amount": "US$1.1bn",
+   "basis": "carve-out purchase price from Sabre, closed Jul 2025",
+   "url": "https://pulse2.com/tpg-1-1-billion-acquisition-of-sabres-hospitality-solutions-business-completed"
+  },
+  "summary": "Formerly Sabre Hospitality Solutions: SynXis central reservation, distribution and booking-engine software used by >40% of leading hotel brands. TPG Capital carved it out of Sabre for US$1.1bn in Jul 2025, installed ex-Trintech CEO Teresa Mackintosh and brought hotel operator MCR in as minority investor; rebranded Aven Hospitality in Feb 2026.",
+  "signals": [
+   {
+    "date": "2026-02-16",
+    "title": "Aven Hospitality debuts to shape the future of hospitality technology",
+    "url": "https://asia.hsmai.org/2026/02/16/aven-hospitality-debuts-to-shape-the-future-of-hospitality-technology/",
+    "publisher": "HSMAI Asia"
+   },
+   {
+    "date": "2025-07-07",
+    "title": "TPG Closes Its $1.1B Acquisition of Hospitality Solutions from Sabre, Announces Tech Platform's New CEO",
+    "url": "https://dallasinnovates.com/tpg-closes-its-1-1b-acquisition-of-hospitality-solutions-from-sabre-announces-tech-platforms-new-ceo/",
+    "publisher": "Dallas Innovates"
+   },
+   {
+    "date": "2025-04-28",
+    "title": "Sabre To Sell Hospitality Solutions To TPG For $1.1 Billion",
+    "url": "https://pulse2.com/sabre-to-sell-hospitality-solutions-to-tpg-for-1-1-billion",
+    "publisher": "Pulse 2.0"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "tpg-avidxchange",
+  "firm": "tpg",
+  "name": "AvidXchange",
+  "slug": "avidxchange",
+  "industry": "fintech",
+  "industryLabel": "AP automation & B2B payments, US",
+  "hq": "Charlotte, North Carolina, US",
+  "geos": [
+   "United States"
+  ],
+  "apac": false,
+  "heldSince": "2025-10",
+  "stake": "majority",
+  "valuation": {
+   "amount": "US$2.2bn",
+   "basis": "take-private at $10.00/share, closed Oct 2025",
+   "url": "https://www.avidxchange.com/press-releases/tpg-corpay-complete-acquisition-of-avidxchange"
+  },
+  "summary": "Accounts-payable automation and B2B payments platform for US mid-market businesses (~US$450m revenue). TPG Capital took majority control in an Oct 2025 US$2.2bn take-private, with Corpay holding ~33–34% as strategic minority partner.",
+  "signals": [
+   {
+    "date": "2025-10-15",
+    "title": "TPG & Corpay Complete Acquisition of AvidXchange",
+    "url": "https://www.avidxchange.com/press-releases/tpg-corpay-complete-acquisition-of-avidxchange",
+    "publisher": "AvidXchange"
+   },
+   {
+    "date": "2025-05-06",
+    "title": "AvidXchange To Go Private For 22% Premium In M&A Deal",
+    "url": "https://finance.yahoo.com/news/avidxchange-private-22-premium-m-122022347.html",
+    "publisher": "Yahoo Finance"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "tpg-boomi",
+  "firm": "tpg",
+  "name": "Boomi",
+  "slug": "boomi",
+  "industry": "software",
+  "industryLabel": "Cloud integration platform (iPaaS), global",
+  "hq": "Conshohocken, Pennsylvania, US",
+  "geos": [
+   "United States",
+   "Global"
+  ],
+  "apac": false,
+  "heldSince": "2021-10",
+  "stake": "co-control",
+  "valuation": {
+   "amount": "US$4bn",
+   "basis": "entry EV, carve-out from Dell closed Oct 2021",
+   "url": "https://pulse2.com/dell-to-sell-boomi-to-francisco-partners-and-tpg-in-4-billion-deal"
+  },
+  "summary": "Integration-platform-as-a-service vendor (API, data and AI-agent integration) with 30,000+ customers and >US$500m ARR. TPG Capital and Francisco Partners carved it out of Dell for US$4bn in 2021; an IPO-experienced CFO joined in Sep 2026 amid reported listing deliberations.",
+  "signals": [
+   {
+    "date": "2026-09-24",
+    "title": "Boomi Appoints Mike Hickman as Chief Financial Officer",
+    "url": "https://secure.businesswire.com/news/home/20260924761566/en/Boomi-Appoints-Mike-Hickman-as-Chief-Financial-Officer",
+    "publisher": "Business Wire"
+   },
+   {
+    "date": "2021-05-02",
+    "title": "Francisco Partners and TPG to Acquire Boomi from Dell Technologies",
+    "url": "https://boomi.com/resources/resources-library/francisco-partners-and-tpg-to-acquire-boomi-from-dell-technologies/",
+    "publisher": "Boomi"
+   }
+  ],
+  "exit": {
+   "status": "rumoured",
+   "note": "Late-2025 reports said owners were weighing a 2026 IPO at US$7–9bn; no filing as of Sep 2026."
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "tpg-dream-sports",
+  "firm": "tpg",
+  "name": "Dream Sports",
+  "slug": "dream-sports",
+  "industry": "internet",
+  "industryLabel": "Sports tech & fantasy gaming, India",
+  "hq": "Mumbai, India",
+  "geos": [
+   "India"
+  ],
+  "apac": true,
+  "heldSince": "2020-09",
+  "stake": "minority",
+  "valuation": {
+   "amount": "US$8bn",
+   "basis": "last round (US$840m), Nov 2021",
+   "url": "https://businesstoday.in/latest/corporate/story/dream11-parent-company-raises-840-mn-at-a-valuation-of-8-bn-313272-2021-11-24"
+  },
+  "summary": "Parent of Dream11 (fantasy sports), FanCode, DreamSetGo and other sports-tech units. TPG (Tech Adjacencies) invested in Sep 2020 and followed on in Nov 2021; India's 2025 real-money gaming ban wiped ~95% of revenue, prompting a Dec 2025 split into eight units.",
+  "signals": [
+   {
+    "date": "2025-12-14",
+    "title": "Dream Sports Splits into Eight Independent Start-Ups after Real-Money Gaming Ban",
+    "url": "https://www.outlookbusiness.com/news/dream-sports-splits-into-eight-independent-start-ups-after-real-money-gaming-ban",
+    "publisher": "Outlook Business"
+   },
+   {
+    "date": "2021-11-24",
+    "title": "Dream11 parent company raises $840 mn at a valuation of $8 bn",
+    "url": "https://businesstoday.in/latest/corporate/story/dream11-parent-company-raises-840-mn-at-a-valuation-of-8-bn-313272-2021-11-24",
+    "publisher": "Business Today"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "tpg-fractal-analytics",
+  "firm": "tpg",
+  "name": "Fractal Analytics",
+  "slug": "fractal-analytics",
+  "industry": "ai",
+  "industryLabel": "Enterprise AI & analytics services, India",
+  "hq": "Mumbai, India",
+  "geos": [
+   "India",
+   "United States",
+   "Global"
+  ],
+  "apac": true,
+  "heldSince": "2022-01",
+  "stake": "minority",
+  "valuation": {
+   "amount": "US$1bn+",
+   "basis": "TPG US$360m round (unicorn), Jan 2022; IPO priced Rs900/share Feb 2026",
+   "url": "https://inc42.com/buzz/fractal-enters-unicorn-club-after-raising-360-mn-from-tpg"
+  },
+  "summary": "Mumbai-based enterprise AI and decision-intelligence services provider to Fortune 500 clients. TPG Asia invested US$360m in Jan 2022 (primary plus secondary from Apax); sold part of its stake in the Feb 2026 IPO and remains a listed-company shareholder.",
+  "signals": [
+   {
+    "date": "2026-02-04",
+    "title": "TPG, Gaja Captial-backed Fractal Analytics IPO to open on Feb 9; check key details",
+    "url": "https://www.businesstoday.in/amp/markets/ipo-corner/story/tpg-gaja-captial-backed-fractal-analytics-ipo-to-open-on-feb-9-check-key-details-details-514511-2026-02-04",
+    "publisher": "Business Today"
+   },
+   {
+    "date": "2022-01-05",
+    "title": "PE firm TPG invests $360 mn in AI and analytics services firm Fractal",
+    "url": "https://www.business-standard.com/article/companies/pe-firm-tpg-invests-360-mn-in-ai-and-analytics-services-firm-fractal-122010500847_1.html",
+    "publisher": "Business Standard"
+   }
+  ],
+  "exit": {
+   "status": "listed",
+   "note": "Listed on NSE/BSE 16 Feb 2026 (Rs876 vs Rs900 issue price); TPG Fett Holdings sold up to Rs450cr in the OFS, retains residual stake."
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "tpg-infomedia",
+  "firm": "tpg",
+  "name": "Infomedia",
+  "slug": "infomedia",
+  "industry": "software",
+  "industryLabel": "Automotive aftersales SaaS/DaaS, global",
+  "hq": "Sydney, Australia",
+  "geos": [
+   "Australia",
+   "Asia-Pacific",
+   "Europe",
+   "Americas"
+  ],
+  "apac": true,
+  "heldSince": "2025-12",
+  "stake": "control",
+  "valuation": {
+   "amount": "A$651m",
+   "basis": "take-private equity value at A$1.72/share, Aug 2025",
+   "url": "https://www.businessnewsaustralia.com/articles/asx-listed-automotive-saas-group-infomedia-straps-in-for--651-million-buyout-from-tpg.html"
+  },
+  "summary": "ASX-delisted provider of parts, service and data (DaaS/SaaS) software to automotive OEMs, national sales companies and dealers worldwide. TPG Capital Asia took it private in Dec 2025 and is funding European M&A (Veact, Jun 2026).",
+  "signals": [
+   {
+    "date": "2026-06-09",
+    "title": "Infomedia Announces Acquisition of Veact in Europe, Expanding Global Automotive Aftersales Ecosystem",
+    "url": "https://www.aap.com.au/aapreleases/cision20260609ae68904/",
+    "publisher": "AAP / Cision"
+   },
+   {
+    "date": "2025-12-03",
+    "title": "Infomedia acquisition finalized, shares delisted from ASX",
+    "url": "https://filingreader.com/news-wire/sydney/2025-12-03/infomedia-acquisition-finalized-shares-delisted-from-asx",
+    "publisher": "FilingReader"
+   },
+   {
+    "date": "2025-08-06",
+    "title": "ASX-listed automotive SaaS group Infomedia straps in for $651 million buyout from TPG",
+    "url": "https://www.businessnewsaustralia.com/articles/asx-listed-automotive-saas-group-infomedia-straps-in-for--651-million-buyout-from-tpg.html",
+    "publisher": "Business News Australia"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "tpg-jio-platforms",
+  "firm": "tpg",
+  "name": "Jio Platforms",
+  "slug": "jio-platforms",
+  "industry": "internet",
+  "industryLabel": "Digital services & telecom platform, India",
+  "hq": "Mumbai, India",
+  "geos": [
+   "India"
+  ],
+  "apac": true,
+  "heldSince": "2020-06",
+  "stake": "minority",
+  "valuation": {
+   "amount": "~US$137bn",
+   "basis": "implied IPO valuation per SEBI-approved offer, Aug 2026",
+   "url": "https://www.exchange4media.com/digital-news/jio-platforms-secures-sebi-nod-for-38-billion-ipo-157755.html"
+  },
+  "summary": "Reliance's digital services holding company (Jio telecom, apps, digital platforms). TPG invested Rs4,546.8cr for a 0.93% stake in Jun 2020 at Rs4.91 lakh crore equity value; a ~US$3.8bn IPO cleared SEBI in Aug 2026 with launch expected around Oct–Nov 2026.",
+  "signals": [
+   {
+    "date": "2026-09-08",
+    "title": "Jio Platforms gears up for IPO marketing next week: Report",
+    "url": "https://www.businesstoday.in/amp/markets/ipo-corner/story/jio-platforms-gears-up-for-ipo-marketing-next-week-report-553848-2026-09-08",
+    "publisher": "Business Today"
+   },
+   {
+    "date": "2026-08-28",
+    "title": "Jio Platforms Gets Sebi Nod To Launch Country's Biggest-Ever IPO",
+    "url": "https://www.etvbharat.com/en/business/jio-platforms-gets-sebi-nod-to-launch-country-biggest-ever-ipo-enn26082804614",
+    "publisher": "ETV Bharat"
+   },
+   {
+    "date": "2020-06-13",
+    "title": "Jio Platforms to raise Rs 4,546 crore from TPG",
+    "url": "https://www.businesstoday.in/current/corporate/jio-platforms-to-raise-rs-4546-crore-from-tpg/story/406868.html",
+    "publisher": "Business Today"
+   }
+  ],
+  "exit": {
+   "status": "process",
+   "note": "SEBI approved ~US$3.8bn fresh-issue IPO on 28 Aug 2026; launch expected late Oct/Nov 2026 — would give TPG a listed exit route for its ~1% stake."
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "tpg-novotech",
+  "firm": "tpg",
+  "name": "Novotech",
+  "slug": "novotech",
+  "industry": "healthit",
+  "industryLabel": "Biotech-focused clinical CRO, APAC",
+  "hq": "Sydney, Australia",
+  "geos": [
+   "Australia",
+   "Asia-Pacific",
+   "United States",
+   "Global"
+  ],
+  "apac": true,
+  "heldSince": "2017",
+  "stake": "control",
+  "valuation": {
+   "amount": "A$3bn (~US$1.9bn)",
+   "basis": "GIC/Temasek stake purchase, Mar 2025",
+   "url": "https://theedgemalaysia.com/node/749874"
+  },
+  "summary": "Asia-Pacific-rooted clinical research organisation running biotech trials across APAC, US and Europe. TPG has controlled it since 2017 (Asia VI), rolled into Asia VIII in Mar 2025 alongside new investors GIC and Temasek to fund global M&A.",
+  "signals": [
+   {
+    "date": "2025-03-31",
+    "title": "Novotech Welcomes New Investment From GIC, Temasek, and Existing Investor TPG to Accelerate Global Growth",
+    "url": "https://www.gic.com.sg/newsroom/all/novotech-welcomes-new-investment-from-gic-temasek-and-existing-investor-tpg-to-accelerate-global-growth/",
+    "publisher": "GIC"
+   },
+   {
+    "date": "2022-05-05",
+    "title": "APAC biotech giant Novotech acquires US CRO NCGS expanding its global expertise",
+    "url": "https://www.biospectrumasia.com/news/26/20224/apac-biotech-giant-novotech-acquires-us-cro-ncgs-expanding-its-global-expertise.html",
+    "publisher": "BioSpectrum Asia"
+   }
+  ],
+  "exit": {
+   "status": "partial",
+   "note": "Mar 2025: TPG fully exited Asia VI position via GIC/Temasek stake sale but reinvested through Asia VIII and remains controlling shareholder; HK IPO shelved in 2021."
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "tpg-pathology-asia-holdings",
+  "firm": "tpg",
+  "name": "Pathology Asia Holdings",
+  "slug": "pathology-asia-holdings",
+  "industry": "other",
+  "industryLabel": "Clinical laboratory & genomics, Southeast Asia",
+  "hq": "Singapore",
+  "geos": [
+   "Singapore",
+   "Malaysia",
+   "Vietnam",
+   "Australia"
+  ],
+  "apac": true,
+  "heldSince": "2018",
+  "stake": "majority",
+  "valuation": {
+   "amount": "~US$2bn",
+   "basis": "reported, minority stake-sale talks, Dec 2021",
+   "url": "https://www.bnnbloomberg.ca/tpg-said-to-near-pathology-asia-stake-sale-at-2-billion-value-1.1709699"
+  },
+  "summary": "Pathology and diagnostics network (Quest Laboratories SG/VN, Gribbles Malaysia, LifeStrands Genomics) built by TPG Capital Asia from Healthscope's Asian labs (A$279m, 2018). Mayo Clinic Laboratories took a strategic stake in Sep 2026.",
+  "signals": [
+   {
+    "date": "2026-09-23",
+    "title": "Mayo Clinic Laboratories Invests in Pathology Asia Holdings and LifeStrands Genomics to Advance Diagnostics and Precision Medicine",
+    "url": "https://www.malaymail.com/news/money/mediaoutreach/2026/09/23/mayo-clinic-laboratories-invests-in-pathology-asia-holdings-and-lifestrands-genomics-to-advance-diagnostics-and-precision-medicine/489442",
+    "publisher": "Malay Mail / Media OutReach"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": "Singapore IPO and ~30% stake sale explored in 2021 (Bloomberg); no 2025–26 sale/IPO process reported."
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "tpg-surescripts",
+  "firm": "tpg",
+  "name": "Surescripts",
+  "slug": "surescripts",
+  "industry": "healthit",
+  "industryLabel": "E-prescribing & health information network, US",
+  "hq": "Arlington, Virginia, US",
+  "geos": [
+   "United States"
+  ],
+  "apac": false,
+  "heldSince": "2024-10",
+  "stake": "majority",
+  "valuation": {
+   "amount": null,
+   "basis": "terms not disclosed",
+   "url": null
+  },
+  "summary": "US health information network handling ~24bn annual e-prescribing and clinical/benefit data exchanges between pharmacies, PBMs, payers and providers. TPG Capital agreed a majority stake in Oct 2024 alongside legacy owners CVS, Express Scripts and pharmacy trade groups.",
+  "signals": [
+   {
+    "date": "2024-10-07",
+    "title": "Healthcare & Life Sciences Private Equity Deal Tracker: TPG Acquires Surescripts",
+    "url": "https://blogs.mcguirewoods.com/2024/10/07/healthcare-life-sciences-private-equity-deal-tracker-tpg-acquires-surescripts/",
+    "publisher": "McGuireWoods"
+   },
+   {
+    "date": "2024-10-01",
+    "title": "Surescripts Announces Strategic Partnership with TPG to Enhance Patient Care and Meet Evolving Healthcare Needs Nationwide",
+    "url": "https://www.businesswire.com/news/home/20241001198743/en/Surescripts-Announces-Strategic-Partnership-with-TPG-to-Enhance-Patient-Care-and-Meet-Evolving-Healthcare-Needs-Nationwide",
+    "publisher": "Business Wire"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "warburg-pincus-advance-intelligence-group",
+  "firm": "warburg-pincus",
+  "name": "Advance Intelligence Group",
+  "slug": "advance-intelligence-group",
+  "industry": "ai",
+  "industryLabel": "AI risk SaaS and BNPL lending",
+  "hq": "Singapore",
+  "geos": [
+   "Southeast Asia",
+   "Indonesia",
+   "Singapore"
+  ],
+  "apac": true,
+  "heldSince": "2021-09",
+  "stake": "minority",
+  "valuation": {
+   "amount": "US$2bn+",
+   "basis": "Series D led by SoftBank Vision Fund 2 and Warburg Pincus, Sep 2021",
+   "url": "https://www.bnnbloomberg.ca/ex-hedge-fund-manager-s-startup-hits-2-billion-value-1.1655765"
+  },
+  "summary": "Singapore group combining ADVANCE.AI (KYC/KYB, fraud and risk SaaS for enterprises), Atome Financial (BNPL and Kredit Pintar digital lending) and Ginee e-commerce tools. Warburg co-led the US$400m+ 2021 Series D and led the 2023 US$80m round.",
+  "signals": [
+   {
+    "date": "2026-05-06",
+    "title": "Atome Financial secures US$149 million capital injection from parent Advance Intelligence Group",
+    "url": "https://fintechnews.sg/131175/funding/atome-financial-capital-injection/",
+    "publisher": "Fintech News Singapore"
+   },
+   {
+    "date": "2026-01-13",
+    "title": "Singapore's Atome secures $345m syndicated loan",
+    "url": "https://context.ph/2026/01/13/singapores-atome-secures-345m-syndicated-loan/",
+    "publisher": "Context.ph"
+   },
+   {
+    "date": "2023-05-03",
+    "title": "Warburg-Backed Advance Intelligence Raises $80 Million Funding",
+    "url": "https://www.bloomberg.com/news/articles/2023-05-03/warburg-backed-advance-intelligence-raises-80-million-funding",
+    "publisher": "Bloomberg"
+   },
+   {
+    "date": "2021-09-22",
+    "title": "Ex-Hedge Fund Manager's Startup Hits $2 Billion Value",
+    "url": "https://www.bnnbloomberg.ca/ex-hedge-fund-manager-s-startup-hits-2-billion-value-1.1655765",
+    "publisher": "Bloomberg (BNN)"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "warburg-pincus-avanse-financial-services",
+  "firm": "warburg-pincus",
+  "name": "Avanse Financial Services",
+  "slug": "avanse-financial-services",
+  "industry": "fintech",
+  "industryLabel": "Education-focused digital lending NBFC",
+  "hq": "Mumbai, India",
+  "geos": [
+   "India"
+  ],
+  "apac": true,
+  "heldSince": "2019-03",
+  "stake": "majority",
+  "valuation": {
+   "amount": null,
+   "basis": "not disclosed in search results",
+   "url": "https://inc42.com/?p=463745"
+  },
+  "summary": "Education-finance NBFC lending to Indian students (domestic and study-abroad) and institutions. Warburg (via Olive Vine) bought 80% from DHFL/Wadhawan in 2019 and is promoter; SEBI-approved INR3,500cr IPO with Warburg OFS deferred amid US visa headwinds.",
+  "signals": [
+   {
+    "date": "2026-01-05",
+    "title": "Avanse Financial Services raises Rs 1,200 crore through rights issue",
+    "url": "https://www.business-standard.com/companies/news/avanse-financial-services-raises-1-200-crore-through-rights-issue-126010501175_1.html",
+    "publisher": "Business Standard"
+   },
+   {
+    "date": "2024-07-30",
+    "title": "Sebi returns IPO documents of Vishal Mega Mart, Avanse Fin, and 2 others",
+    "url": "https://www.business-standard.com/amp/markets/ipo/sebi-returns-ipo-documents-of-vishal-mega-mart-avanse-fin-and-2-others-124073000652_1.html",
+    "publisher": "Business Standard"
+   },
+   {
+    "date": "2019-03-16",
+    "title": "Warburg Pincus group to acquire 80 pc stake in Avanse Financial Services",
+    "url": "https://www.dailyexcelsior.com/news/archive/warburg-pincus-group-to-acquire-80-pc-stake-in-avanse-financial-services",
+    "publisher": "Daily Excelsior"
+   }
+  ],
+  "exit": {
+   "status": "process",
+   "note": "INR3,500cr IPO (Warburg OFS up to INR1,758cr) got SEBI nod Oct 2024 but was deferred in 2025 amid US student-visa headwinds; investors instead funded a INR1,200cr rights issue in Jan 2026."
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "warburg-pincus-capillary-technologies",
+  "firm": "warburg-pincus",
+  "name": "Capillary Technologies",
+  "slug": "capillary-technologies",
+  "industry": "software",
+  "industryLabel": "AI loyalty and customer engagement SaaS",
+  "hq": "Bengaluru, India",
+  "geos": [
+   "India",
+   "Southeast Asia",
+   "United States",
+   "Middle East"
+  ],
+  "apac": true,
+  "heldSince": "2015",
+  "stake": "minority",
+  "valuation": {
+   "amount": "INR4,400cr+ (~US$500m)",
+   "basis": "market capitalisation at NSE/BSE listing, Nov 2025",
+   "url": "https://www.outlookmoney.com/invest/capillary-technologies-ipo-listing-price-shares-debut-at-discount"
+  },
+  "summary": "Loyalty-management and customer-engagement SaaS for retailers and consumer brands, expanded via the Kognitiv acquisition. Warburg led the US$45m Series C in 2015 and re-upped in 2019; PE holders did not sell in the Nov 2025 INR877cr IPO and remain shareholders.",
+  "signals": [
+   {
+    "date": "2026-02-06",
+    "title": "Capillary Technology posts Rs 184 Cr revenue in Q3 FY26; profit falls 20%",
+    "url": "https://entrackr.com/fintrackr/capillary-technology-posts-rs-184-cr-revenue-in-q3-fy26-profit-falls-20-11081535",
+    "publisher": "Entrackr"
+   },
+   {
+    "date": "2025-11-21",
+    "title": "Capillary Technologies IPO listing: shares debut at discount",
+    "url": "https://www.outlookmoney.com/invest/capillary-technologies-ipo-listing-price-shares-debut-at-discount",
+    "publisher": "Outlook Money"
+   },
+   {
+    "date": "2025-11-14",
+    "title": "Capillary IPO to Open on Friday, Company to Target $17Bn Addressable Market",
+    "url": "https://india.entrepreneur.com/news-and-trends/capillary-ipo-to-open-on-friday-company-to-target-17bn/499452",
+    "publisher": "Entrepreneur India"
+   }
+  ],
+  "exit": {
+   "status": "listed",
+   "note": "Listed on NSE/BSE 21 Nov 2025 (issue price INR577); PE investors incl. Warburg stayed invested through the IPO."
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "warburg-pincus-cdata-software",
+  "firm": "warburg-pincus",
+  "name": "CData Software",
+  "slug": "cdata-software",
+  "industry": "data",
+  "industryLabel": "Data connectivity and integration platform",
+  "hq": "Chapel Hill, United States",
+  "geos": [
+   "Global",
+   "North America"
+  ],
+  "apac": false,
+  "heldSince": "2024-06",
+  "stake": "unknown",
+  "valuation": {
+   "amount": "US$800m+",
+   "basis": "reported post-money after US$350m growth round, Jun 2024",
+   "url": "https://tech.yahoo.com/general/articles/data-connectivity-company-cdata-software-120355219.html"
+  },
+  "summary": "Data connectivity platform (350+ connectors, real-time access and replication) used by 10,000+ customers and embedded by Google, Salesforce and Informatica. Warburg led a US$350m strategic growth investment in Jun 2024 with Accel to scale the AI-era data layer.",
+  "signals": [
+   {
+    "date": "2026-06-09",
+    "title": "CData Appoints Raviv Levi as Chief Product and Technology Officer, Expands Executive Team to Power the AI Data Layer",
+    "url": "https://www.storagenewsletter.com/2026/06/09/cdata-appoints-raviv-levi-as-chief-product-and-technology-officer-expands-executive-team-to-power-the-ai-data-layer",
+    "publisher": "StorageNewsletter"
+   },
+   {
+    "date": "2024-06-26",
+    "title": "CData Software Secures $350 Million in Strategic Growth Funding as AI Proliferation Sparks Increased Need for Data Connectivity",
+    "url": "https://itdigest.com/cloud-computing-mobility/analytics/cdata-software-secures-350-million-in-strategic-growth-funding-as-ai-proliferation-sparks-increased-need-for-data-connectivity/",
+    "publisher": "IT Digest"
+   },
+   {
+    "date": "2024-04-23",
+    "title": "CData Appoints Adam DeMichele as CRO, Expands GTM Leadership Team with Strategic Hires",
+    "url": "https://www.businesswire.com/news/home/20240423298323/en",
+    "publisher": "Business Wire"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "warburg-pincus-clearwater-analytics",
+  "firm": "warburg-pincus",
+  "name": "Clearwater Analytics",
+  "slug": "clearwater-analytics",
+  "industry": "software",
+  "industryLabel": "Investment accounting and analytics SaaS",
+  "hq": "Boise, United States",
+  "geos": [
+   "Global",
+   "North America",
+   "Europe"
+  ],
+  "apac": false,
+  "heldSince": "2020-10",
+  "stake": "co-control",
+  "valuation": {
+   "amount": "US$8.4bn",
+   "basis": "take-private enterprise value, closed Jun 2026",
+   "url": "https://www.permira.com/news-and-insights/announcements/clearwater-analytics-completes-84-billion-take-private-acquisition-by-permira-and-warburg-pincus"
+  },
+  "summary": "Cloud-native investment accounting, reporting and risk analytics for insurers, asset managers and institutional investors. Warburg invested in 2020, backed the 2021 NYSE IPO, and in Jun 2026 co-led with Permira the US$8.4bn take-private alongside Temasek and Francisco Partners.",
+  "signals": [
+   {
+    "date": "2026-06-25",
+    "title": "Clearwater Analytics Completes $8.4 Billion Take-Private Acquisition by Permira and Warburg Pincus",
+    "url": "https://www.permira.com/news-and-insights/announcements/clearwater-analytics-completes-84-billion-take-private-acquisition-by-permira-and-warburg-pincus",
+    "publisher": "Permira"
+   },
+   {
+    "date": "2025-12-23",
+    "title": "Permira and Warburg Pincus agree $8.4bn Clearwater deal",
+    "url": "https://fintech.global/2025/12/23/permira-and-warburg-pincus-agree-8-4bn-clearwater-deal/",
+    "publisher": "FinTech Global"
+   },
+   {
+    "date": "2025-12-21",
+    "title": "Clearwater Analytics to Be Acquired for $8.4 Billion by Permira and Warburg Pincus Supported by Francisco Partners and With Participation From Temasek",
+    "url": "https://www.businesswire.com/news/home/20251221034482/en/Clearwater-Analytics-to-Be-Acquired-for-$8.4-Billion-by-Permira-and-Warburg-Pincus-Supported-by-Francisco-Partners-and-With-Participation-From-Temasek",
+    "publisher": "Business Wire"
+   },
+   {
+    "date": "2020-10-12",
+    "title": "Clearwater Analytics Announces New Investment from Leading Growth Investors Permira, Warburg Pincus, Dragoneer and Durable Capital",
+    "url": "https://www.permira.com/news-and-insights/announcements/clearwater-analytics-announces-new-investment-from-leading-growth-investors-permira-warburg-pincus-dragoneer-and-durable-capital",
+    "publisher": "Permira"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": "Delisted from NYSE on 25 Jun 2026 take-private; Warburg re-underwrote rather than exited."
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "warburg-pincus-creditorwatch",
+  "firm": "warburg-pincus",
+  "name": "CreditorWatch",
+  "slug": "creditorwatch",
+  "industry": "data",
+  "industryLabel": "Commercial credit data and risk analytics",
+  "hq": "Sydney, Australia",
+  "geos": [
+   "Australia"
+  ],
+  "apac": true,
+  "heldSince": "2026-07",
+  "stake": "unknown",
+  "valuation": {
+   "amount": "A$500m+",
+   "basis": "reported deal valuation, Jul 2026 (Bloomberg)",
+   "url": "https://news.bloomberglaw.com/crypto/warburg-pincus-agrees-to-invest-in-australian-firm-creditorwatch"
+  },
+  "summary": "Sydney-based B2B credit reporting, risk analytics and monitoring platform serving 10,000+ customers from sole traders to listed companies. Warburg's first Australian data-services bet, signed Jul 2026 to fund platform and data expansion; closing targeted Q3 2026.",
+  "signals": [
+   {
+    "date": "2026-07-09",
+    "title": "Warburg Pincus Agrees to Invest in Australian Firm CreditorWatch",
+    "url": "https://news.bloomberglaw.com/crypto/warburg-pincus-agrees-to-invest-in-australian-firm-creditorwatch",
+    "publisher": "Bloomberg Law"
+   },
+   {
+    "date": "2026-07-09",
+    "title": "Warburg Pincus Signs Agreement to Invest in CreditorWatch",
+    "url": "https://warburgpincus.com/?p=24809",
+    "publisher": "Warburg Pincus"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "warburg-pincus-momo",
+  "firm": "warburg-pincus",
+  "name": "MoMo",
+  "slug": "momo",
+  "industry": "fintech",
+  "industryLabel": "Mobile wallet and financial super-app",
+  "hq": "Ho Chi Minh City, Vietnam",
+  "geos": [
+   "Vietnam"
+  ],
+  "apac": true,
+  "heldSince": "2019-01",
+  "stake": "minority",
+  "valuation": {
+   "amount": "US$2bn+",
+   "basis": "reported valuation in 2026 stake-sale process; Series E post-money US$2.27bn, Dec 2021",
+   "url": "https://www.sahmcapital.com/news/content/update-1-blackstone-cvc-and-mufg-among-bidders-for-stake-in-vietnams-momo-sources-say-2026-07-03"
+  },
+  "summary": "M_Service's MoMo is Vietnam's leading e-wallet and super-app spanning payments, consumer lending, insurance, savings and merchant tools; profitable since 2024. Warburg led the 2019 Series C and 2021 Series D and holds ~26%; a 2026 sale of up to 50% could let Warburg exit.",
+  "signals": [
+   {
+    "date": "2026-07-03",
+    "title": "Blackstone, CVC and MUFG among bidders for stake in Vietnam's MoMo, sources say",
+    "url": "https://www.sahmcapital.com/news/content/update-1-blackstone-cvc-and-mufg-among-bidders-for-stake-in-vietnams-momo-sources-say-2026-07-03",
+    "publisher": "Reuters"
+   },
+   {
+    "date": "2019-01-18",
+    "title": "Warburg Pincus leads around $100m funding in Vietnamese e-wallet MoMo",
+    "url": "https://dealstreetasia.com/?p=117956",
+    "publisher": "DealStreetAsia"
+   }
+  ],
+  "exit": {
+   "status": "process",
+   "note": "Jul 2026: Morgan Stanley/Jefferies running sale of up to 50% stake (bidders Blackstone, CVC, MUFG; binding bids due Sep 2026); Warburg (~26%) and Goodwater could divest."
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "warburg-pincus-oona-insurance",
+  "firm": "warburg-pincus",
+  "name": "Oona Insurance",
+  "slug": "oona-insurance",
+  "industry": "fintech",
+  "industryLabel": "Digital general insurance platform",
+  "hq": "Singapore",
+  "geos": [
+   "Indonesia",
+   "Philippines",
+   "Southeast Asia"
+  ],
+  "apac": true,
+  "heldSince": "2022-10",
+  "stake": "majority",
+  "valuation": {
+   "amount": null,
+   "basis": "no valuation disclosed; Warburg US$350m equity commitment at formation, Oct 2022",
+   "url": "https://warburgpincus.com/?p=20397"
+  },
+  "summary": "Warburg-founded digital general insurer (motor, property, group health) built via buy-and-build acquisitions of ABDA (Indonesia) and Mapfre Insular (Philippines). H1 2026 group net income +130%, COR 96%, and actively pursuing further SE Asia acquisitions.",
+  "signals": [
+   {
+    "date": "2026-08-21",
+    "title": "Oona enters top 10 PHL non-life insurers",
+    "url": "https://tribune.net.ph/2026/08/21/oona-enters-top-10-phl-non-life-insurers",
+    "publisher": "Daily Tribune"
+   },
+   {
+    "date": "2026-08-20",
+    "title": "Oona Insurance Eyes Southeast Asia Acquisitions With 130% Net Income Growth, Outpacing Regional Insurance Markets",
+    "url": "https://en.prnasia.com/story/544605-0.shtml",
+    "publisher": "PR Newswire Asia"
+   },
+   {
+    "date": "2022-10-20",
+    "title": "Warburg Pincus announces equity commitment to establish Oona",
+    "url": "https://coverager.com/warburg-pincus-announces-equity-commitment-to-establish-oona/",
+    "publisher": "Coverager"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "warburg-pincus-perfios",
+  "firm": "warburg-pincus",
+  "name": "Perfios",
+  "slug": "perfios",
+  "industry": "data",
+  "industryLabel": "Credit underwriting data and analytics SaaS",
+  "hq": "Bengaluru, India",
+  "geos": [
+   "India",
+   "Southeast Asia",
+   "Middle East"
+  ],
+  "apac": true,
+  "heldSince": "2019-11",
+  "stake": "minority",
+  "valuation": {
+   "amount": "US$1bn+",
+   "basis": "last primary round (Teachers' Venture Growth US$80m), Mar 2024",
+   "url": "https://techcrunch.com/2024/03/12/ontario-teachers-mints-new-unicorn-in-indian-fintech-perfios/"
+  },
+  "summary": "B2B SaaS providing real-time financial-data aggregation, credit underwriting and decisioning to banks and lenders across ~20 markets. Warburg led the 2019 Series B and 2022 Series C; FY25 revenue INR670cr, PAT INR104cr, with a US$500m IPO long flagged.",
+  "signals": [
+   {
+    "date": "2024-03-12",
+    "title": "Ontario Teachers' mints new unicorn in Indian fintech Perfios",
+    "url": "https://techcrunch.com/2024/03/12/ontario-teachers-mints-new-unicorn-in-indian-fintech-perfios/",
+    "publisher": "TechCrunch"
+   },
+   {
+    "date": "2024-01-25",
+    "title": "Indian fintech Perfios weighs $500M IPO",
+    "url": "https://www.axios.com/pro/fintech-deals/2024/01/25/indian-fintech-perfios-weighs-500m-ipo",
+    "publisher": "Axios Pro"
+   }
+  ],
+  "exit": {
+   "status": "rumoured",
+   "note": "Company has flagged a ~US$500m domestic IPO since Jan 2024 and set up ESOP 2025-A ahead of it (Feb 2025); no DRHP filed as of search results."
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "warburg-pincus-psi-software",
+  "firm": "warburg-pincus",
+  "name": "PSI Software",
+  "slug": "psi-software",
+  "industry": "software",
+  "industryLabel": "Energy and industrial control software",
+  "hq": "Berlin, Germany",
+  "geos": [
+   "Germany",
+   "Europe",
+   "Global"
+  ],
+  "apac": false,
+  "heldSince": "2025-10",
+  "stake": "majority",
+  "valuation": {
+   "amount": "€700m+",
+   "basis": "public takeover offer at €45 per share, Oct 2025",
+   "url": "https://www.privsource.com/acquisitions/deal/warburg-pincus-to-take-psi-software-private-for-over-700-million-6pSXoM"
+  },
+  "summary": "Software for optimising energy and material flows for utilities, grid operators and industrial producers. Warburg (via Zest BidCo) launched a €45/share takeover in Oct 2025, reached 82.33% by Jul 2026 alongside anchor E.ON (17.77%), and agreed a delisting offer in Sep 2026.",
+  "signals": [
+   {
+    "date": "2026-09-08",
+    "title": "PSI enters into delisting agreement with Warburg Pincus; Warburg Pincus announces public delisting acquisition offer for PSI Software SE",
+    "url": "https://www.psi.de/en/company/newsroom/press-releases/psi-enters-into-a-delisting-agreement-with-warburg-pincus-warburg-pincus-announces-public-delisting-acquisition-offer-for-psi-software-se",
+    "publisher": "PSI Software SE"
+   },
+   {
+    "date": "2026-07-01",
+    "title": "PSI Software SE and Warburg Pincus: All regulatory approvals obtained for the voluntary public takeover offer, settlement to occur shortly",
+    "url": "https://www.psi.de/en/company/newsroom/press-releases/psi-software-se-and-warburg-pincus-all-regulatory-approvals-obtained-for-the-voluntary-public-takeover-offer-settlement-to-occur-shortly",
+    "publisher": "PSI Software SE"
+   },
+   {
+    "date": "2025-10-13",
+    "title": "PSI Software SE enters into investment agreement with Warburg Pincus to accelerate growth; public takeover offer announced",
+    "url": "https://www.psi.de/en/company/newsroom/press-releases/psi-software-se-enters-into-investment-agreement-with-warburg-pincus-to-accelerate-growth-public-takeover-offer-announced",
+    "publisher": "PSI Software SE"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "warburg-pincus-quantexa",
+  "firm": "warburg-pincus",
+  "name": "Quantexa",
+  "slug": "quantexa",
+  "industry": "ai",
+  "industryLabel": "Decision intelligence and entity resolution",
+  "hq": "London, United Kingdom",
+  "geos": [
+   "Global",
+   "United Kingdom",
+   "North America"
+  ],
+  "apac": false,
+  "heldSince": "2021-07",
+  "stake": "minority",
+  "valuation": {
+   "amount": "US$2.6bn",
+   "basis": "Series F led by Teachers' Venture Growth, Mar 2025",
+   "url": "https://fintech.global/2025/03/05/uk-ai-fintech-quantexa-secures-175m-series-f-to-fuel-north-american-growth/"
+  },
+  "summary": "AI decision-intelligence platform for entity resolution, financial-crime, fraud and risk analytics used by banks, insurers and governments. Warburg led the US$153m Series D in 2021 and holds ~9-10%; in Aug 2026 it mandated Citi to explore a stake sale as Quantexa weighs a UK/US IPO.",
+  "signals": [
+   {
+    "date": "2026-08-18",
+    "title": "British data group Quantexa explores UK or US IPO, sources say",
+    "url": "https://whbl.com/2026/08/18/british-data-group-quantexa-explores-uk-or-us-ipo-sources-say/",
+    "publisher": "Reuters"
+   },
+   {
+    "date": "2025-03-05",
+    "title": "UK AI FinTech Quantexa secures $175m Series F, hitting $2.6bn valuation",
+    "url": "https://fintech.global/2025/03/05/uk-ai-fintech-quantexa-secures-175m-series-f-to-fuel-north-american-growth/",
+    "publisher": "FinTech Global"
+   }
+  ],
+  "exit": {
+   "status": "process",
+   "note": "Aug 2026: Warburg working with Citi on options incl. sale of its 9-10% stake (auction expected late 2026); company IPO-ready since Jan 2026, eyeing >US$3bn valuation."
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "warburg-pincus-vistaar-financial-services",
+  "firm": "warburg-pincus",
+  "name": "Vistaar Financial Services",
+  "slug": "vistaar-financial-services",
+  "industry": "fintech",
+  "industryLabel": "Secured MSME lending NBFC",
+  "hq": "Bengaluru, India",
+  "geos": [
+   "India"
+  ],
+  "apac": true,
+  "heldSince": "2022-10",
+  "stake": "majority",
+  "valuation": {
+   "amount": "US$250m (for 90%)",
+   "basis": "Warburg entry consideration, May 2023",
+   "url": "https://www.thetrustedinsight.com/investment-news/warburg-pincus-acquires-90-stake-in-vistaar-finance-for-250m-20230529256/"
+  },
+  "summary": "NBFC providing secured loans to micro and small enterprises across 12 Indian states via 250+ branches (AUM INR5,000cr+). Warburg bought 90% in 2023 (now 70.1% after an Aug 2025 INR1,360cr round led by Motilal Oswal Alternates).",
+  "signals": [
+   {
+    "date": "2025-08-26",
+    "title": "Vistaar gets 1,360 crore from Motilal, ABC, others",
+    "url": "https://www.magzter.com/nb/stories/newspaper/Mint-New-Delhi/VISTAAR-GETS-1360-CRORE-FROM-MOTILAL-ABC-OTHERS",
+    "publisher": "Mint"
+   },
+   {
+    "date": "2023-05-29",
+    "title": "Warburg Pincus acquires 90% stake in Vistaar Finance for $250m",
+    "url": "https://www.thetrustedinsight.com/investment-news/warburg-pincus-acquires-90-stake-in-vistaar-finance-for-250m-20230529256/",
+    "publisher": "The Trusted Insight"
+   },
+   {
+    "date": "2022-10-10",
+    "title": "Warburg Pincus to acquire majority stake in MSME lender Vistaar Finance",
+    "url": "https://www.business-standard.com/article/companies/warburg-pincus-to-acquire-majority-stake-in-msme-lender-vistaar-finance-122101000411_1.html",
+    "publisher": "Business Standard"
+   }
+  ],
+  "exit": {
+   "status": "partial",
+   "note": "Aug 2025 round included INR490cr of secondary sales; Warburg stake fell to 70.1% (Mar 2026) from 77.8% (ICRA)."
+  },
+  "firstSeen": "2026-10-05T10:37:52Z"
+ }
+]
