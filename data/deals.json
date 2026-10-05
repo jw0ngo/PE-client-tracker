@@ -1,5 +1,17 @@
 [
  {
+  "id": "107c770579c8",
+  "firm": "tpg",
+  "title": "TPG Sells More Shadowfax Shares Via ₹114 Cr Bulk Deal",
+  "url": "https://inc42.com/buzz/tpg-sells-more-shadowfax-shares-via-%E2%82%B9114-cr-bulk-deal/",
+  "date": "2026-10-01T00:00:00Z",
+  "summary": "TPG's NewQuest Asia Fund IV sold 40 lakh shares of listed logistics firm Shadowfax at about ₹284 apiece in an open-market deal worth ₹113.6 crore.",
+  "publisher": "Inc42",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-04T23:51:47Z"
+ },
+ {
   "id": "1573e8088d64",
   "firm": "tpg",
   "title": "TPG invests in LMNP AI",
@@ -240,6 +252,18 @@
   "firstSeen": "2026-10-02T05:40:00.000Z"
  },
  {
+  "id": "80234b83a9bb",
+  "firm": "warburg-pincus",
+  "title": "Ingenia Communities rejects revised $5.05 takeover offer",
+  "url": "https://www.fool.com.au/2026/09/21/ingenia-communities-rejects-revised-5-05-takeover-offer/",
+  "date": "2026-09-21T00:00:00Z",
+  "summary": "Ingenia's board rejected Warburg Pincus's revised A$5.05 per security non-binding proposal as undervaluing the company; Warburg later lifted it to A$5.25.",
+  "publisher": "The Motley Fool Australia",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-04T23:51:47Z"
+ },
+ {
   "id": "81727854b412",
   "firm": "kkr",
   "title": "KKR seals three Asia infrastructure deals in India, Japan and Korea",
@@ -478,6 +502,18 @@
   "source": "press",
   "official": true,
   "firstSeen": "2026-10-02T03:43:20.557Z"
+ },
+ {
+  "id": "e9c368a29cd2",
+  "firm": "tpg",
+  "title": "TPG Is Said in Talks to Buy Netrality for Up to $3 Billion",
+  "url": "https://news.bloomberglaw.com/tech-and-telecom-law/tpg-said-in-talks-to-buy-netrality-for-up-to-3-billion",
+  "date": "2026-07-27T00:00:00Z",
+  "summary": "TPG is reportedly in exclusive talks to buy Macquarie-backed Netrality Data Centers at a $2-3bn valuation, with a deal possible this fall. Date taken from a wire item dated 27 Jul 2026.",
+  "publisher": "Bloomberg",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-04T23:51:47Z"
  },
  {
   "id": "f232aeb5395c",
