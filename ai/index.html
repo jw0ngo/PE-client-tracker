@@ -1,0 +1,547 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title>SSG Newstracker</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one feed. The PE Client Tracker's deal-desk list with the client chips and the second
+   tab taken away: a sticky strip of controls — sort, then the diligence lenses as filters — and one
+   card per development, each led by its event and the diligence read it changes. The beat a story
+   came from is a small label on the card, not a navigation level. Hot items carry a left stripe,
+   nothing else gets a colour wash, so a screen of them still reads as text. Same type system as
+   the PE page; the accent shifts from teal to indigo so a glance tells them apart. */
+:root {
+  --bg: #f4f4f7;
+  --surface: #ffffff;
+  --fg: #171a26;
+  --muted: #5d6478;
+  --faint: #8c92a6;
+  --rule: #dcdee7;
+  --accent: #4a3fb5;
+  --accent-soft: #e6e3f7;
+  --hot: #c2541f;
+  --hot-soft: #fae6db;
+  --ok: #2f6b45;
+  --ok-soft: #e1efe5;
+  --info: #3b5a7c;
+  --info-soft: #e3ebf4;
+  --display: "Archivo Narrow", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --body: "IBM Plex Sans", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111218; --surface: #181a23; --fg: #e7e8ef; --muted: #9ba1b5; --faint: #666d82;
+    --rule: #272a36; --accent: #a79bff; --accent-soft: #231f45;
+    --hot: #e98a3c; --hot-soft: #3a2415; --ok: #7cc094; --ok-soft: #15291c;
+    --info: #93b3d6; --info-soft: #182636; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111218; --surface: #181a23; --fg: #e7e8ef; --muted: #9ba1b5; --faint: #666d82;
+  --rule: #272a36; --accent: #a79bff; --accent-soft: #231f45;
+  --hot: #e98a3c; --hot-soft: #3a2415; --ok: #7cc094; --ok-soft: #15291c;
+  --info: #93b3d6; --info-soft: #182636; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.45 var(--body); -webkit-text-size-adjust: 100%; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+button:focus-visible, a:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+a { color: inherit; }
+.wrap { max-width: 640px; margin: 0 auto; padding-block: 0 48px; padding-inline: 16px; }
+
+/* ── header + controls ── */
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 14px 10px; display: flex; flex-direction: column; gap: 10px; }
+/* ── site masthead: one brand, two sections ── */
+.site { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.brand { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--faint); }
+.nav { display: flex; gap: 4px; }
+.nav a { font-family: var(--display); font-weight: 600; font-size: 13px; color: var(--muted); text-decoration: none; padding: 3px 9px; border-radius: 999px; border: 1px solid transparent; }
+.nav a.on { color: var(--accent); background: var(--accent-soft); border-color: var(--accent); }
+.nav a:hover { color: var(--accent); }
+.mast { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.mast h1 { font-family: var(--display); font-weight: 700; font-size: 28px; letter-spacing: -.01em; margin: 0; line-height: 1; }
+.stamp { font-family: var(--mono); font-size: 11.5px; color: var(--faint); white-space: nowrap; }
+.blurb { font-size: 13px; color: var(--muted); line-height: 1.45; margin: -4px 0 0; }
+.seg { display: flex; background: var(--surface); border: 1px solid var(--rule); border-radius: 9px; padding: 3px; gap: 3px; }
+.seg button { flex: 1; padding: 7px 4px; border-radius: 6px; font-family: var(--display); font-weight: 600; font-size: 15px; color: var(--muted); }
+.seg button.on { background: var(--accent-soft); color: var(--accent); }
+.focus { display: flex; flex-direction: column; gap: 6px; }
+.focus-label { font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-size: 12.5px; font-weight: 500; color: var(--muted); border: 1px solid var(--rule); background: var(--surface); border-radius: 999px; padding: 5px 10px; }
+.chip.on { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+.banner { font-size: 13px; color: var(--muted); background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 8px 11px; }
+.banner.warn { color: var(--hot); background: var(--hot-soft); border-color: transparent; }
+
+/* ── cards ── */
+.list { display: flex; flex-direction: column; gap: 10px; padding-top: 6px; }
+.item { background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--rule); border-radius: 10px; padding: 11px 13px 12px; min-width: 0; }
+.item.hot { border-left-color: var(--hot); }
+.item.warm { border-left-color: var(--accent); }
+.item.gone { opacity: .55; }
+.meta { display: flex; align-items: baseline; gap: 7px; flex-wrap: wrap; font-size: 12px; color: var(--muted); }
+.tag { font-family: var(--mono); font-size: 10.5px; font-weight: 500; letter-spacing: .06em; padding: 2px 6px; border-radius: 4px; }
+.tag.official { color: var(--ok); background: var(--ok-soft); }
+.tag.reported { color: var(--hot); background: var(--hot-soft); }
+.tag.press { color: var(--info); background: var(--info-soft); }
+.kind { font-family: var(--display); font-weight: 700; font-size: 14px; color: var(--fg); letter-spacing: .01em; }
+.beat { font-family: var(--mono); font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--faint); }
+.when { margin-left: auto; font-family: var(--mono); font-size: 11.5px; color: var(--faint); font-variant-numeric: tabular-nums; }
+.title { display: block; margin-top: 6px; font-family: var(--display); font-weight: 600; font-size: 19px; line-height: 1.22; text-decoration: none; text-wrap: balance; }
+.title:hover { color: var(--accent); }
+.fit { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+.ln, .apac { font-size: 11.5px; font-weight: 500; border-radius: 4px; padding: 2px 7px; color: var(--info); background: var(--info-soft); }
+.ln i { font-style: normal; font-weight: 400; opacity: .75; margin-left: 5px; }
+.apac { color: var(--ok); background: var(--ok-soft); }
+.move { margin: 9px 0 0; padding-left: 10px; border-left: 2px solid var(--accent); font-size: 14px; line-height: 1.45; }
+.summary { margin: 7px 0 0; font-size: 13.5px; color: var(--muted); line-height: 1.45; }
+.note { margin-top: 8px; font-size: 13.5px; line-height: 1.45; background: var(--bg); border-radius: 7px; padding: 7px 9px; white-space: pre-wrap; }
+.act { display: flex; gap: 6px; margin-top: 10px; align-items: center; flex-wrap: wrap; }
+.btn { font-size: 13px; font-weight: 500; color: var(--muted); border: 1px solid var(--rule); border-radius: 7px; padding: 6px 11px; }
+.btn.sel { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); font-weight: 600; }
+.btn:disabled { opacity: .5; cursor: default; }
+.lnk { margin-left: auto; font-size: 12.5px; color: var(--muted); text-decoration: underline; text-decoration-color: var(--rule); }
+.src { font-family: var(--mono); font-size: 11px; color: var(--faint); text-decoration: underline; text-decoration-color: var(--rule); }
+.noted { margin-top: 8px; display: flex; flex-direction: column; gap: 6px; }
+.noted textarea { font: inherit; font-size: 14px; width: 100%; min-height: 64px; padding: 8px 9px; border: 1px solid var(--rule); border-radius: 7px; background: var(--bg); color: var(--fg); resize: vertical; }
+.noted .row { display: flex; gap: 6px; }
+.empty { text-align: center; color: var(--faint); font-size: 14.5px; padding: 48px 16px; line-height: 1.55; }
+.empty b { color: var(--muted); font-weight: 500; }
+.foot { font-size: 12.5px; color: var(--faint); line-height: 1.5; padding-top: 16px; }
+.toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 12px); z-index: 20;
+  background: var(--fg); color: var(--bg); font-size: 13px; font-weight: 500; padding: 8px 14px; border-radius: 999px; opacity: 0; pointer-events: none; transition: opacity .18s, transform .18s; }
+.toast.on { opacity: 1; transform: translate(-50%, 0); }
+@media (prefers-reduced-motion: reduce) { .toast { transition: none; } }
+</style>
+
+<div class="wrap">
+  <div class="top">
+    <div class="site"><span class="brand">SSG Newstracker</span><nav class="nav" id="nav" aria-label="Sections"></nav></div>
+    <div class="mast">
+      <h1 id="h1">AI & Tech Tracker</h1>
+      <span class="stamp" id="stamp">loading</span>
+    </div>
+    <p class="blurb">What the AI and tech industry did this week, read for what it changes in a software target's technology thesis.</p>
+    <div class="seg" id="seg">
+      <button data-seg="priority">Priority</button>
+      <button data-seg="latest">Latest</button>
+      <button data-seg="pipeline" id="segPipeline">Pipeline</button>
+    </div>
+    <div class="focus" id="focus"><span class="focus-label">Diligence lenses</span><div class="chips" id="chips"></div></div>
+    <div class="banner" id="banner" hidden></div>
+  </div>
+  <div class="list" id="list">
+    <div class="empty"><b>Loading developments.</b><br>Each one will show the event, the diligence lens it touches, and what to re-check on a software target.</div>
+  </div>
+  <p class="foot" id="foot">Event, lens and APAC are read from the headline by keyword. The matched words sit under each tag; the small label is the beat the story came from. <span id="footTriage">Pursue, Watch, Dismiss and notes are saved and shared with anyone who can open this page.</span></p>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const NAV = {"here":"ai","pe":"../","ai":"./"};
+// The two sections of one site. In the public copy the links are relative paths inside the repo;
+// in the private artifacts they are the other artifact's URL.
+document.getElementById('nav').innerHTML = [['pe', 'PE Clients'], ['ai', 'AI &amp; Tech']]
+  .map(([k, l]) => `<a href="${String(NAV[k]).replace(/"/g, '&quot;')}"${NAV.here === k ? ' class="on"' : ''}>${l}</a>`).join('');
+const THEMES = [{
+  id: "labs", name: "Frontier labs", short: "Labs", blurb: "Model releases and capability steps from the labs whose outputs every software target now builds on.",
+  defaultLens: "platform", match: /\b(openai|chatgpt|gpt-\d|gpt-?5|o[345]\b|anthropic|claude|google deepmind|deepmind|gemini|meta ai|llama|xai|grok|mistral|deepseek|qwen|alibaba cloud|moonshot|kimi|zhipu|glm-?\d|baidu|ernie|bytedance|doubao|sakana|cohere|ai21|reka|perplexity)\b/i
+},{
+  id: "agents", name: "Agents & dev tools", short: "Agents", blurb: "Coding agents, agent platforms and the protocols between them: where \"the software writes itself\" meets a target's R&D line.",
+  defaultLens: null, match: /\b(agent|agents|agentic|copilot|cursor|windsurf|replit|devin|cognition|lovable|bolt\.new|v0\b|claude code|codex|gemini cli|github copilot|mcp\b|model context protocol|a2a\b|langchain|langgraph|crewai|autogen|openai agents|agentforce|vibe coding|developer tools|dev tools|ide\b)\b/i
+},{
+  id: "enterprise", name: "Enterprise software", short: "Enterprise", blurb: "Incumbents repricing and rebuilding around AI, and the AI-native challengers attacking their categories. The moat question, live.",
+  defaultLens: null, match: /\b(salesforce|servicenow|sap\b|workday|oracle|microsoft 365|copilot|adobe|atlassian|hubspot|zendesk|intuit|snowflake|databricks|palantir|uipath|shopify|monday\.com|freshworks|zoho|notion|canva|figma|glean|harvey|sierra|decagon|writer|cognizant|accenture|infosys|tcs\b|wipro|saas|software stocks?|seat-based|per-seat|enterprise ai|ai adoption)\b/i
+},{
+  id: "infra", name: "Compute & infrastructure", short: "Compute", blurb: "Chips, data centres, power and the capex behind them: what inference costs next year, and who controls the supply.",
+  defaultLens: null, match: /\b(nvidia|amd\b|intel|tsmc|broadcom|arm\b|qualcomm|samsung|sk hynix|micron|hbm|gpu|gpus|tpu|tpus|trainium|inferentia|maia|data cent(?:er|re)s?|datacent(?:er|re)s?|coreweave|lambda|nebius|crusoe|oracle cloud|azure|aws|google cloud|hyperscaler|hyperscalers|capex|gigawatt|megawatt|nuclear|stargate|supercomputer|chips?|semiconductor)\b/i
+},{
+  id: "capital", name: "Deals & capital", short: "Capital", blurb: "Who is funding, buying and listing AI companies, at what price. Where the multiples come from before they reach a software target.",
+  defaultLens: null, match: /\b(raises?|raised|funding|valuation|valued at|series [a-h]\b|acquires?|acquired|acquisition|to buy|buys|merger|ipo|initial public offering|lists? on|stake|investment|invests?|tender offer|secondary|unicorn|venture|vc\b|private equity|softbank|sequoia|a16z|andreessen|thrive|lightspeed|temasek|gic\b|mubadala|mgx\b)\b/i
+}];
+
+const LENSES = [{"id":"moat","label":"Moat compression","short":"Moat","strong":["ai agent","ai agents","agentic","autonomous agent","autonomous agents","copilot","ai-native","ai native","replaces","replace","replacing","disrupt","disrupts","disruption","disrupting","threat to","challenger","challengers","commoditi","commoditise","commoditize","commoditization","commoditisation","vibe coding","coding agent","coding agents","coding assistant","customer service agent","service agent","built-in","natively","end-to-end","moat","moats","seat compression","headcount","does the work","no-code","low-code","vertical ai","vertical agent"],"weak":["saas","software","incumbent","incumbents","startup","startups","vertical","workflow","workflows","automation","automate","automates","enterprise","rival","rivals","competes","competition","competitor","competitors","market share","customers"]},{"id":"pricing","label":"Pricing model","short":"Pricing","strong":["pricing","price cut","price cuts","cuts prices","cuts price","price increase","price hike","raises prices","per seat","per-seat","seat-based","per user","per-user","consumption-based","consumption based","usage-based","usage based","outcome-based","outcome based","pay per","pay-per","free tier","paid tier","premium tier","subscription price","token price","token prices","per million tokens","api price","api prices","api pricing","cheaper","discount","discounts","bundle","bundles","bundling","unbundle","unbundling","new plan","new tier","pro plan","max plan","enterprise plan","a month","per month","/month"],"weak":["price","prices","cost","costs","subscription","subscriptions","seats","revenue","margin","margins","arr","monetization","monetisation","monetize","monetise","plan","tier","ads","advertising"]},{"id":"platform","label":"Platform dependency","short":"Platform","strong":["open-weights","open weights","open-weight","open weight","open-source model","open source model","open-source","open source","open-sources","deprecate","deprecates","deprecated","deprecation","api change","api changes","exclusive","exclusivity","default provider","default model","default assistant","multi-model","model-agnostic","switching costs","lock-in","lock in","vendor lock","distribution deal","distribution agreement","preinstalled","pre-installed","default search","app store","mcp","model context protocol","interoperability","interoperable","rate limit","rate limits","terms of service","build vs buy","in-house model","in-house models","own model","own models","first-party","first party","wrapper","wrappers","foundation model","frontier model","compute deal","cloud deal","cloud agreement","primary cloud"],"weak":["api","apis","platform","ecosystem","integration","integrations","partnership","partner","partners","developers","developer","sdk","cloud","azure","aws","google cloud","bedrock","vertex","marketplace","plugin","plugins","extension","extensions"]},{"id":"cost","label":"Compute cost","short":"Compute","strong":["gpu","gpus","chip","chips","tpu","tpus","accelerator","accelerators","semiconductor","semiconductors","data center","data centers","data centre","data centres","datacenter","datacenters","capex","capital expenditure","capital expenditures","capital spending","inference cost","inference costs","training cost","training costs","compute cost","compute costs","cost per token","tokens per second","gigawatt","gigawatts","megawatt","megawatts","nuclear","power demand","power supply","electricity demand","hbm","memory chips","foundry","fab","blackwell","rubin","tsmc","supply constraints","shortage","shortages","gross margin","gross margins","unit economics","burn rate","cash burn","compute capacity","cluster","clusters","supercomputer","export controls","h20","h100","h200","gb200","gb300","mi300","mi350","mi400"],"weak":["compute","infrastructure","cloud","servers","server","hardware","electricity","energy","power","cost","costs","margin","margins","efficiency","efficient","cheaper","inference","training","capacity","spending","investment"]},{"id":"reg","label":"Regulation & trust","short":"Regulation","strong":["regulation","regulations","regulator","regulators","regulatory","ai act","export controls","export control","export ban","export curbs","sanctions","antitrust","anti-trust","competition authority","competition watchdog","ftc","doj","european commission","lawsuit","lawsuits","sues","sued","copyright","ruling","court","judge","settlement","settles","fine","fined","fines","ban","bans","banned","compliance","data protection","gdpr","privacy","safety","jailbreak","breach","data breach","outage","hack","hacked","vulnerability","executive order","legislation","national security","licence requirement","license requirement","sovereign ai","data residency","investigation","probe","subpoena","watchdog","misuse","deepfake","deepfakes","prompt injection","guardrails"],"weak":["law","laws","legal","government","policy","security","trust","audit","liability","restrictions","guidelines","standards","ethics","oversight","parliament","congress","senate"]}];
+const RUMOUR = /\b(in talks|talks to|weighs|weighing|considers|considering|explores?|exploring|mulls|mulling|eyes|eyeing|nears|nearing|said to|sources say|people familiar|according to people|in the running|shortlist(?:ed)?|binding bids?|non-binding|frontrunner|front-runner|bid for|bids for|takeover bid|takeover offer|revised offer|higher bid|could sell|could buy|plans to sell|seeks? buyers?|hires? (?:banks?|advisers?|advisors?)|kicks off sale|sale process|strategic review|strategic options|strategic alternatives|reportedly|is said to|plans to|planning to|preparing to|poised to|is working on|working on|testing|in development|internally|leak|leaked|leaks|could launch|may launch|expected to|set to launch|set to release|aims to|will reportedly)\b/i;
+const LIVE = /\b(launch(?:es|ed)|releases?|released|introduc(?:es|ed)|debuts?|debuted|now available|generally available|general availability|rolls? out|rolled out|rolling out|ships?|shipped|completes?|completed|closes?|closed|goes live|went live|live today|available today|starting today|is out|open to all)\b/i;
+const EVENTS = [["pricing", /\b(pric(?:e|es|ed|ing)|per[- ]seat|per[- ]user|per million tokens|free tier|paid tier|cheaper|discount(?:s|ed)?|cuts? (?:the )?(?:price|cost)s?|slash(?:es|ed)? (?:price|cost)s?|price hike|subscription (?:price|plan|tier)s?|new (?:plan|tier)s?|\$\d+(?:\.\d+)?(?:\/|\s?per\s|\s?a\s)(?:month|user|seat|mo\b|year))/i],
+  ["research", /\b(paper|study|studies|researchers?|arxiv|report finds|finds? that|survey|system card|safety report|red[- ]team(?:ing|ed)?)\b/i],
+  ["incident", /\b(outage|went down|goes down|is down|down for|data breach|breach(?:ed)?|hacked|hack\b|vulnerability|vulnerabilities|exploit(?:ed)?|jailbreak|jailbroken|prompt injection|security (?:flaw|incident|issue|hole)|recall(?:ed|s)?|deepfake|deepfakes|scam|misuse|exposed (?:data|chats|conversations))\b/i],
+  ["regulation", /\b(regulat(?:or|ors|ion|ions|ory)|ai act|export (?:controls?|ban|curbs?|restrictions?|licen[cs]es?)|antitrust|anti-trust|competition (?:authority|watchdog|commission)|ftc|doj|european commission|eu (?:fines?|rules?|probes?|orders?)|lawsuit|sues?|sued|copyright|court|ruling|rules? (?:that|against|in favou?r)|judge|settlement|settles?|fines?|fined|bans?|banned|legislation|bill\b|executive order|probe|investigation|investigates?|subpoena|complaint|privacy watchdog|data protection|gdpr|licen[cs]e requirement|national security|sovereign)\b/i],
+  ["funding", /\b(raises?|raised|raising|funding round|funding|series [a-h]\b|seed round|valuation|valued at|investment of|invests?|invested|tender offer|secondary (?:sale|share sale)|ipo|initial public offering|files? (?:for|to go) public|goes public|lists? on|debuts? on|backs|backed by|takes? (?:a )?(?:minority )?stake|stake in|commits? \$|pledges? \$|to invest)\b/i],
+  ["earnings", /\b(earnings|quarterly results|financial results|reports? (?:first|second|third|fourth)[- ]quarter|q[1-4] (?:results|revenue|earnings)|revenue (?:rose|grew|jumps?|jumped|soars?|falls?|fell|hits?|tops?|beats?|misses?|reaches|reached|doubles?|doubled|tripled)|guidance|forecasts?|outlook|beats? (?:estimates|expectations|forecasts)|misses? (?:estimates|expectations|forecasts)|annuali[sz]ed revenue|run[- ]rate|\barr\b|capex|capital (?:expenditure|spending)|spending plans?|to spend \$|profit(?:able|ability)?|net loss|cash burn|burn rate|margins?)\b/i],
+  ["market", /\b(shares? (?:fall|fell|drop|dropped|plunge|plunged|slide|slid|tumble|tumbled|sink|sank|rise|rose|jump|jumped|surge|surged|rally|rallied|soar|soared)|stock (?:falls?|fell|drops?|plunges?|slides?|tumbles?|sinks?|rises?|jumps?|surges?|rallies?|soars?)|sell-?off|selloff|market (?:cap|value)|wipes? .{0,25}? off|downgrades?|analysts? (?:warn|say|cut|raise|see|expect)|short[- ]seller|valuation (?:drops?|falls?|hits?))\b/i],
+  ["deal", /\b(acquires?|acquired|acquiring|acquisition|to buy|buys|bought|buyout|take[- ]private|takeover|merger|merges?|acqui-?hire|acquihire|licens(?:es|ing) (?:deal|agreement)|absorbs?|snaps? up|scoops? up)\b/i],
+  ["people", /\b(appoints?|appointed|names|named|hires?|hired|hiring|joins|joined|promotes?|promoted|poach(?:es|ed)|resigns?|resigned|departs?|departed|leaves|left|steps? down|stepping down|quits?|exodus|exits? (?:the )?(?:company|firm|lab))\b.{0,100}?\b(ceo|cfo|cto|coo|cpo|chief|head of|president|chairman|chairwoman|chair\b|founder|co-?founder|researcher|researchers|scientist|scientists|engineer|engineers|team|executive|executives|leader|lead\b|vp\b|board)\b/i],
+  ["partnership", /\b(partners? with|partnership|partnering|teams? up|tie-?up|alliance|joint venture|collaborat(?:es|ion|ing)|deal with|agreement with|signs? (?:a )?(?:deal|agreement|contract|pact)|to supply|supply (?:deal|agreement)|integrates? with|integration with|available (?:on|in|through) (?:aws|azure|google cloud|bedrock|vertex|snowflake|databricks|salesforce|microsoft 365|workspace|copilot)|brings? .{0,40}? to (?:aws|azure|google cloud|snowflake|databricks|salesforce|workspace|copilot|windows|iphone|android)|picks? .{0,30}? (?:as|for) (?:its )?(?:ai|model|cloud|chip))\b/i],
+  ["launch", /\b(launch(?:es|ed|ing)?|unveils?|unveiled|releases?|released|introduc(?:es|ed|ing)|rolls? out|rolled out|rolling out|ships?|shipped|debuts?|debuted|now available|generally available|general availability|\bga\b|public preview|previews?|open[- ]sourc(?:es|ed|ing)|open[- ]weights?|new (?:model|models|version|feature|features|tool|tools|agent|agents|app|mode|api|chip|chips|gpu)|announces? (?:new )?(?:model|models|version|feature|tool|agent|agents|app|update|chip)|upgrades?|updates?|adds?|teases?|expands? .{0,30}? to)\b/i],
+  ["research", /\b(benchmark|benchmarks|evaluation|evals?|breakthrough|scores? \d|outperforms?|beats? (?:gpt|claude|gemini|llama|humans?|doctors|lawyers)|tops? [\w-]*bench|swe-bench|leaderboard|state[- ]of[- ]the[- ]art|\bsota\b|widens? (?:its |the )?(?:\w+ )?lead)\b/i]];
+const ANGLES = {
+  "pricing:announced": {
+    "heat": 3,
+    "move": "Pricing move — re-run NRR and seat-count exposure on any target priced per seat in this stack; consumption pricing migrates the category."
+  },
+  "pricing:live": {
+    "heat": 3,
+    "move": "Pricing move — re-run NRR and seat-count exposure on any target priced per seat in this stack; consumption pricing migrates the category."
+  },
+  "pricing:rumour": {
+    "heat": 2,
+    "move": "Pricing change reported — stress the target's pricing model before the vendor confirms; the market reprices on the rumour."
+  },
+  "launch:live": {
+    "heat": 3,
+    "move": "Capability step shipped — re-test any target whose moat is a workflow this now does natively. Refresh the build-vs-buy read."
+  },
+  "launch:announced": {
+    "heat": 2,
+    "move": "Capability step announced — list the targets whose roadmap assumed this was 12 months out; the gap just closed."
+  },
+  "launch:rumour": {
+    "heat": 1,
+    "move": "Launch reported — a watch item. Note which target categories it would touch; score it when it ships."
+  },
+  "deal:announced": {
+    "heat": 3,
+    "move": "Consolidation — a target's dependency, partner or competitor changes hands. Check platform exposure and the acquirer's roadmap for the category."
+  },
+  "deal:live": {
+    "heat": 2,
+    "move": "Deal closed — integration is now; expect bundling into the acquirer's stack. Re-check channel and partnership risk for targets in the category."
+  },
+  "deal:rumour": {
+    "heat": 3,
+    "move": "Deal in talks — who ends up owning this capability sets the competitive map for the category. Pre-read the exposure before it is signed."
+  },
+  "funding:announced": {
+    "heat": 2,
+    "move": "Fresh capital for a challenger — map the incumbent categories it attacks; a funded AI-native rival is a price-pressure and churn line in any DD there."
+  },
+  "funding:live": {
+    "heat": 2,
+    "move": "Fresh capital for a challenger — map the incumbent categories it attacks; a funded AI-native rival is a price-pressure and churn line in any DD there."
+  },
+  "funding:rumour": {
+    "heat": 2,
+    "move": "Round reported — the valuation sets the comp before the term sheet does. Note it for the next multiple discussion."
+  },
+  "earnings:announced": {
+    "heat": 2,
+    "move": "Disclosed numbers — benchmark a target's AI attach rate, gross margin and capex intensity against these; they are the comps a buyer will use."
+  },
+  "earnings:live": {
+    "heat": 2,
+    "move": "Disclosed numbers — benchmark a target's AI attach rate, gross margin and capex intensity against these; they are the comps a buyer will use."
+  },
+  "regulation:announced": {
+    "heat": 2,
+    "move": "Compliance line moves — check target exposure: data residency, model provenance, copyright in training data, export-controlled compute."
+  },
+  "regulation:live": {
+    "heat": 2,
+    "move": "Compliance line moves — check target exposure: data residency, model provenance, copyright in training data, export-controlled compute."
+  },
+  "regulation:rumour": {
+    "heat": 1,
+    "move": "Regulatory move reported — a watch item for targets in the jurisdiction or the data class it would touch."
+  },
+  "partnership:announced": {
+    "heat": 2,
+    "move": "Distribution shift — someone gets default placement in a stack. Check channel and platform risk for any target competing in that stack."
+  },
+  "partnership:live": {
+    "heat": 2,
+    "move": "Distribution shift — someone gets default placement in a stack. Check channel and platform risk for any target competing in that stack."
+  },
+  "partnership:rumour": {
+    "heat": 1,
+    "move": "Partnership reported — note which distribution it would redraw; score it when signed."
+  },
+  "incident:announced": {
+    "heat": 2,
+    "move": "Reliability or security event — a dependency risk to raise for any target running on this provider. Ask for their fallback and incident history."
+  },
+  "incident:live": {
+    "heat": 2,
+    "move": "Reliability or security event — a dependency risk to raise for any target running on this provider. Ask for their fallback and incident history."
+  },
+  "market:announced": {
+    "heat": 2,
+    "move": "Public comp re-rated — the multiple just moved for this category. Carry it into the valuation discussion and ask whether the target's category is the one being repriced."
+  },
+  "market:rumour": {
+    "heat": 2,
+    "move": "Public comp re-rated — the multiple just moved for this category. Carry it into the valuation discussion and ask whether the target's category is the one being repriced."
+  },
+  "people:announced": {
+    "heat": 1,
+    "move": "Talent signal — weak alone, strong with a product read. A lab losing a team or a vendor gaining one says where the next capability lands."
+  },
+  "research:announced": {
+    "heat": 1,
+    "move": "Capability research — the early signal of what becomes product in six to twelve months. Note which target workflows it reaches."
+  },
+  "research:live": {
+    "heat": 1,
+    "move": "Capability research — the early signal of what becomes product in six to twelve months. Note which target workflows it reaches."
+  }
+};
+const APAC = /\b(asia|asian|apac|asia[- ]pacific|southeast asia|south east asia|asean|india|indian|singapore|china|chinese|hong kong|japan|japanese|korea|korean|indonesia|indonesian|vietnam|vietnamese|philippines|thailand|thai|malaysia|malaysian|australia|australian|aussie|asx|new zealand|taiwan|mumbai|bengaluru|bangalore|delhi|gurugram|shanghai|beijing|shenzhen|tokyo|seoul|jakarta|sydney|melbourne|crore|inr|sgd|aud)\b/i;
+const escRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+function scoreTerms(src, strong, weak) {
+  let s = ` ${src.toLowerCase()} `;
+  const hits = [];
+  let score = 0;
+  const terms = [...strong.map((t) => [t, 2]), ...weak.map((t) => [t, 1])]
+    .sort((a, b) => b[0].length - a[0].length);
+  for (const [term, w] of terms) {
+    const re = new RegExp(`(^|[^a-z0-9])${escRe(term)}(?=[^a-z0-9]|$)`, 'g');
+    if (re.test(s)) {
+      score += w;
+      hits.push(term);
+      s = s.replace(re, (all, pre) => pre + ' '.repeat(all.length - pre.length));
+    }
+  }
+  return { score, hits };
+}
+function lenses(title, summary) {
+  const src = `${title} . ${summary || ''}`;
+  const out = [];
+  for (const l of LENSES) {
+    const r = scoreTerms(src, l.strong, l.weak);
+    if (r.score >= 2) out.push({ id: l.id, label: l.short, score: r.score, terms: r.hits.slice(0, 4) });
+  }
+  return out.sort((a, b) => b.score - a.score);
+}
+function classify(t, raw) {
+  const title = raw.title || '';
+  const summary = raw.summary || '';
+  const all = `${title} . ${summary}`;
+  let kind = 'other';
+  for (const [k, re] of EVENTS) {
+    if (re.test(title)) { kind = k; break; }
+  }
+  // Official posts are announcements by definition; coverage can only report.
+  const rumour = !raw.official && RUMOUR.test(title) && kind !== 'earnings';
+  const stage = rumour ? 'rumour' : LIVE.test(title) ? 'live' : 'announced';
+  const angle = ANGLES[`${kind}:${stage}`] || ANGLES[`${kind}:announced`] || null;
+
+  const ln = lenses(title, summary);
+  // A frontier lab shipping a model is platform news whatever the headline says: every target in
+  // the stack inherits the capability and the dependency.
+  if (t.defaultLens && kind === 'launch' && !ln.some((l) => l.id === t.defaultLens)) {
+    ln.push({ id: t.defaultLens, label: LENSES.find((l) => l.id === t.defaultLens).short, score: 2, terms: ['model release'] });
+  }
+  const apac = APAC.test(all);
+  const ageDays = raw.date ? Math.max(0, (Date.now() - Date.parse(raw.date)) / 86400000) : 30;
+
+  // Heat is the event; lens fit and region tilt the order; age decays it faster than on the PE
+  // page because this beat moves faster — a model release is old news in a fortnight.
+  const base = angle ? angle.heat : 0;
+  const score = (base * 10 + (ln.length ? 8 + Math.min(ln[0].score, 6) : 0) + (apac ? 4 : 0)) *
+    Math.pow(0.5, ageDays / 10);
+  return {
+    kind, stage, rumour,
+    lenses: ln,
+    inLens: ln.length > 0,
+    apac,
+    move: angle ? angle.move : null,
+    heat: !angle || ageDays > 30 ? 'cool'
+      : base >= 3 && ln.length && ageDays <= 7 ? 'hot'
+      : base >= 2 ? 'warm' : 'cool',
+    score: Math.round(score * 10) / 10,
+  };
+}
+
+const DATA = { base: 'data/' };
+const PUBLIC = typeof DATA !== 'undefined';
+
+const KIND = { launch: 'Launch', pricing: 'Pricing', funding: 'Funding', deal: 'M&A', partnership: 'Partnership', earnings: 'Numbers', market: 'Market', regulation: 'Regulation', incident: 'Incident', people: 'People', research: 'Research', other: 'News' };
+const $ = (id) => document.getElementById(id);
+const themeOf = (i) => THEMES.find((t) => t.id === i.theme) || THEMES[0];
+// Headlines open a Google News search for the story rather than one outlet's copy of it. The
+// original article stays reachable as the small "source" link.
+const gnews = (q) => `https://www.google.com/search?tbm=nws&q=${encodeURIComponent(q)}`;
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+// Per-viewer conveniences only. Triage lives in the shared store.
+const PREFS = 'ai-tech-tracker.view';
+let view = { seg: 'priority', lens: 'all', apac: false, showDismissed: false };
+try { view = { ...view, ...JSON.parse(localStorage.getItem(PREFS) || '{}'), showDismissed: false }; } catch {}
+const savePrefs = () => { try { localStorage.setItem(PREFS, JSON.stringify({ seg: view.seg, lens: view.lens, apac: view.apac })); } catch {} };
+
+let items = [];          // raw rows from the store
+let triage = {};         // id → { status, note, at }
+let pull = null;         // { at, added } — written by the morning routine
+let db = null, canWrite = true, editing = null, loaded = false;
+
+function dayLabel(iso) {
+  const t = Date.parse(iso); if (Number.isNaN(t)) return '';
+  const days = Math.round((Date.now() - t) / 86400000);
+  if (days <= 0) return 'today';
+  if (days === 1) return 'yesterday';
+  if (days < 7) return `${days}d ago`;
+  return new Date(t).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: days > 300 ? 'numeric' : undefined });
+}
+
+let toastTimer;
+function toast(msg) {
+  const el = $('toast'); el.textContent = msg; el.classList.add('on');
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => el.classList.remove('on'), 2200);
+}
+
+function classified() {
+  return items.map((i) => {
+    const t = triage[i.id] || {};
+    return { ...i, ...classify(themeOf(i), i), status: t.status || 'new', note: t.note || '' };
+  });
+}
+
+function card(i) {
+  const fit = i.lenses.map((l) => `<span class="ln" title="${esc(l.terms.join(', '))}">${esc(l.label)}<i>${esc(l.terms.slice(0, 2).join(' · '))}</i></span>`).join('')
+    + (i.apac ? '<span class="apac">APAC</span>' : '');
+  const btn = (s, l) => PUBLIC ? '' : `<button class="btn${i.status === s ? ' sel' : ''}" data-st="${s}"${canWrite ? '' : ' disabled'}>${l}</button>`;
+  const noteBox = PUBLIC ? '' : editing === i.id ? `
+    <div class="noted">
+      <textarea id="note-${i.id}" placeholder="Which target this touches, what to re-check">${esc(i.note)}</textarea>
+      <div class="row"><button class="btn sel" data-save="1">Save note</button><button class="btn" data-cancel="1">Cancel</button></div>
+    </div>` : (i.note ? `<div class="note">${esc(i.note)}</div>` : '');
+  return `
+    <article class="item ${i.heat}${i.status === 'dismiss' ? ' gone' : ''}" data-id="${i.id}">
+      <div class="meta">
+        <span class="tag ${i.official ? 'official' : i.rumour ? 'reported' : 'press'}">${i.official ? 'OFFICIAL' : i.rumour ? 'REPORTED' : 'PRESS'}</span>
+        <span class="kind">${esc(KIND[i.kind] || 'News')}</span>
+        <span class="beat">${esc(themeOf(i).short)}</span>
+        <span>${esc(i.publisher || '')}</span>
+        <a class="src" href="${esc(i.url)}" target="_blank" rel="noopener noreferrer">source</a>
+        <span class="when">${esc(dayLabel(i.date))}</span>
+      </div>
+      <a class="title" href="${esc(gnews(i.title))}" target="_blank" rel="noopener noreferrer">${esc(i.title)}</a>
+      ${fit ? `<div class="fit">${fit}</div>` : ''}
+      ${i.move ? `<p class="move">${esc(i.move)}</p>` : ''}
+      ${i.summary ? `<p class="summary">${esc(i.summary)}</p>` : ''}
+      ${noteBox}
+      ${PUBLIC ? '' : `<div class="act">
+        ${btn('pursue', 'Pursue')}${btn('watch', 'Watch')}${btn('dismiss', 'Dismiss')}
+        ${canWrite && editing !== i.id ? `<button class="lnk" data-note="1">${i.note ? 'edit note' : 'note'}</button>` : ''}
+      </div>`}
+    </article>`;
+}
+
+function render() {
+  if (PUBLIC) { $('segPipeline').hidden = true; if (view.seg === 'pipeline') view.seg = 'priority'; }
+  if (LENSES.every((l) => l.id !== view.lens)) view.lens = 'all';
+  $('focus').hidden = view.seg === 'pipeline';
+  const all = classified();
+  const at = pull && pull.at;
+  $('stamp').textContent = !loaded ? 'loading' : at ? `pulled ${dayLabel(at)} ${new Date(at).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })}` : 'no pull recorded';
+  const pipeline = all.filter((i) => i.status === 'pursue' || i.status === 'watch');
+  const dismissed = all.filter((i) => i.status === 'dismiss');
+  const hot = all.filter((i) => i.heat === 'hot' && i.status !== 'dismiss').length;
+  const v = view;
+
+  $('seg').querySelectorAll('button').forEach((b) => {
+    b.classList.toggle('on', b.dataset.seg === v.seg);
+    b.textContent = b.dataset.seg === 'priority' ? `Priority${hot ? ` · ${hot}` : ''}`
+      : b.dataset.seg === 'pipeline' ? `Pipeline${pipeline.length ? ` · ${pipeline.length}` : ''}` : 'Latest';
+  });
+  const chip = (id, label) => `<button class="chip${v.lens === id ? ' on' : ''}" data-ln="${id}">${esc(label)}</button>`;
+  // No "all" chip: tapping the selected lens again clears it. Each carries its count.
+  const live = all.filter((i) => i.status !== 'dismiss');
+  const n = (pred) => { const k = live.filter(pred).length; return k ? ` · ${k}` : ''; };
+  $('chips').innerHTML = LENSES.map((l) => chip(l.id, l.short + n((i) => i.lenses.some((x) => x.id === l.id)))).join('')
+    + `<button class="chip${v.apac ? ' on' : ''}" data-apac="1">APAC${n((i) => i.apac)}</button>`;
+
+  let list = v.seg === 'pipeline' ? pipeline : all.filter((i) => i.status !== 'dismiss' || v.showDismissed);
+  if (v.seg !== 'pipeline') {
+    if (v.lens !== 'all') list = list.filter((i) => i.lenses.some((l) => l.id === v.lens));
+    if (v.apac) list = list.filter((i) => i.apac);
+  }
+  if (v.seg === 'priority') list.sort((a, b) => (b.status === 'pursue') - (a.status === 'pursue') || b.score - a.score);
+  else list.sort((a, b) => (v.seg === 'pipeline' ? (b.status === 'pursue') - (a.status === 'pursue') : 0) || Date.parse(b.date) - Date.parse(a.date));
+
+  const emptyMsg = !loaded ? '<b>Loading developments.</b><br>Each one will show the event, the diligence lens it touches, and what to re-check on a software target.'
+    : v.seg === 'pipeline' ? 'Nothing marked Pursue or Watch yet.'
+    : all.length ? 'Nothing matches this filter.' : '<b>Nothing stored yet.</b><br>The morning pull fills it; ask Jobi to run one now.';
+  $('list').innerHTML = list.length ? list.map(card).join('') : `<div class="empty">${emptyMsg}</div>`;
+  if (v.seg === 'latest' && dismissed.length) {
+    $('list').insertAdjacentHTML('beforeend', `<div class="foot"><button class="lnk" style="margin:0" id="showGone">${v.showDismissed ? 'Hide' : 'Show'} ${dismissed.length} dismissed</button></div>`);
+    $('showGone').addEventListener('click', () => { v.showDismissed = !v.showDismissed; render(); });
+  }
+  if (editing) { const ta = $(`note-${editing}`); if (ta) ta.focus(); }
+}
+
+async function saveTriage(id, patch) {
+  if (!db) { toast('Not connected'); return; }
+  const prev = triage[id] || {};
+  const next = { status: patch.status ?? prev.status ?? 'new', note: patch.note ?? prev.note ?? '', at: new Date().toISOString() };
+  try {
+    if (next.status === 'new' && !next.note) { await db.doc(`triage/${id}`).delete(); delete triage[id]; }
+    else { await db.doc(`triage/${id}`).set(next); triage[id] = next; }
+    return true;
+  } catch (e) {
+    if (e && e.code === 'invalid_argument') { canWrite = false; toast('This link is read-only'); render(); }
+    else toast('Could not save');
+    return false;
+  }
+}
+
+$('seg').addEventListener('click', (e) => { const b = e.target.closest('[data-seg]'); if (!b) return; view.seg = b.dataset.seg; savePrefs(); render(); });
+$('chips').addEventListener('click', (e) => {
+  const b = e.target.closest('button'); if (!b) return;
+  if (b.dataset.ln) view.lens = view.lens === b.dataset.ln ? 'all' : b.dataset.ln; else view.apac = !view.apac;
+  savePrefs(); render();
+});
+$('list').addEventListener('click', async (e) => {
+  const cardEl = e.target.closest('.item'); if (!cardEl) return;
+  const id = cardEl.dataset.id;
+  const st = e.target.closest('[data-st]');
+  if (st) {
+    const cur = (triage[id] || {}).status || 'new';
+    const status = cur === st.dataset.st ? 'new' : st.dataset.st;   // tap again to clear
+    if (await saveTriage(id, { status })) { toast(status === 'new' ? 'Cleared' : status === 'dismiss' ? 'Dismissed' : `Marked ${status}`); render(); }
+    return;
+  }
+  if (e.target.closest('[data-note]')) { editing = id; render(); return; }
+  if (e.target.closest('[data-cancel]')) { editing = null; render(); return; }
+  if (e.target.closest('[data-save]')) {
+    const note = $(`note-${id}`).value.trim();
+    if (await saveTriage(id, { note })) { editing = null; toast(note ? 'Note saved' : 'Note cleared'); render(); }
+  }
+});
+
+render();
+
+(async () => {
+  if (PUBLIC) {
+    // The public copy fetches its rows from data/ next to the page, so a daily refresh is one
+    // small JSON file and never a rebuild of this file.
+    try {
+      const bust = `?t=${Math.floor(Date.now() / 600000)}`;
+      const [d, m] = await Promise.all([fetch(`${DATA.base}items.json${bust}`), fetch(`${DATA.base}meta.json${bust}`).catch(() => null)]);
+      items = await d.json();
+      if (m && m.ok) { const meta = await m.json(); pull = meta.pull || null; }
+      $('footTriage').textContent = `Read-only copy${pull && pull.at ? `, last pulled ${dayLabel(pull.at)}` : ''}.`;
+    } catch (e) {
+      $('banner').hidden = false; $('banner').className = 'banner warn'; $('banner').textContent = 'Could not load the data file. Reload to try again.';
+    }
+    loaded = true; render(); return;
+  }
+  db = await claude.use('db');
+  if (!db) { loaded = true; $('stamp').textContent = 'offline'; $('banner').hidden = false; $('banner').textContent = 'The store is not reachable from this view, so nothing can be shown or saved.'; render(); return; }
+  const user = await claude.use('user');
+  if (user) { const w = await user.can('data.write'); if (w === false) canWrite = false; }
+
+  db.collection('items').onSnapshot((snap) => {
+    items = snap.docs.filter((d) => d.exists).map((d) => ({ id: d.id, ...d.data() }));
+    loaded = true;
+    render();
+  }, () => { $('banner').hidden = false; $('banner').className = 'banner warn'; $('banner').textContent = 'Lost the connection to the store. Reload to reconnect.'; });
+
+  db.collection('triage').onSnapshot((snap) => {
+    triage = {};
+    snap.docs.forEach((d) => { if (d.exists) triage[d.id] = d.data(); });
+    render();
+  });
+  db.doc('meta/pull').onSnapshot((snap) => { pull = snap.exists ? snap.data() : null; render(); });
+})();
+</script>
+</body></html>

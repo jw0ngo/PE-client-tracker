@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title>PE Client Tracker</title>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title>SSG Newstracker</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
 /* Layout: a deal-desk list. One sticky strip of controls, then one card per announcement,
@@ -47,6 +47,13 @@ a { color: inherit; }
 
 /* ── header + controls ── */
 .top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 14px 10px; display: flex; flex-direction: column; gap: 10px; }
+/* ── site masthead: one brand, two sections ── */
+.site { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.brand { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--faint); }
+.nav { display: flex; gap: 4px; }
+.nav a { font-family: var(--display); font-weight: 600; font-size: 13px; color: var(--muted); text-decoration: none; padding: 3px 9px; border-radius: 999px; border: 1px solid transparent; }
+.nav a.on { color: var(--accent); background: var(--accent-soft); border-color: var(--accent); }
+.nav a:hover { color: var(--accent); }
 .mast { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
 .mast h1 { font-family: var(--display); font-weight: 700; font-size: 28px; letter-spacing: -.01em; margin: 0; line-height: 1; }
 .firms { display: flex; gap: 6px; flex-wrap: wrap; margin-top: -2px; }
@@ -125,6 +132,7 @@ a { color: inherit; }
 
 <div class="wrap">
   <div class="top">
+    <div class="site"><span class="brand">SSG Newstracker</span><nav class="nav" id="nav" aria-label="Sections"></nav></div>
     <div class="mast">
       <h1 id="h1">PE Client Tracker</h1>
       <span class="stamp" id="stamp">loading</span>
@@ -152,6 +160,11 @@ a { color: inherit; }
 <div class="toast" id="toast"></div>
 
 <script>
+const NAV = {"here":"pe","pe":"./","ai":"ai/"};
+// The two sections of one site. In the public copy the links are relative paths inside the repo;
+// in the private artifacts they are the other artifact's URL.
+document.getElementById('nav').innerHTML = [['pe', 'PE Clients'], ['ai', 'AI &amp; Tech']]
+  .map(([k, l]) => `<a href="${String(NAV[k]).replace(/"/g, '&quot;')}"${NAV.here === k ? ' class="on"' : ''}>${l}</a>`).join('');
 const FIRMS = [{
   id: "warburg-pincus", name: "Warburg Pincus", match: /warburg/i,
   theses: [{"id":"data","label":"Data","short":"Data","strong":["information services","data provider","market data","data and analytics","data & analytics","analytics","intelligence","benchmarking","ratings","credit data","risk data","pricing data","data platform","proprietary data","research and data","index provider","data business","databases","data connectivity","data integration","data management","data infrastructure"],"weak":["data","insights","research","information","content","index","reporting"]},{"id":"fintech","label":"Fintech","short":"Fintech","strong":["fintech","financial technology","payments","payment","insurtech","wealthtech","wealth tech","regtech","core banking","banking software","lending platform","neobank","digital bank","remittance","investment accounting","trading platform","brokerage","buy now pay later","bnpl","merchant acquiring","card issuing","fund administration","wealth management platform"],"weak":["financial services","lending","credit","banking","insurance","wealth","asset management","capital markets","treasury","compliance"]},{"id":"ai","label":"AI Apps","short":"AI Apps","strong":["artificial intelligence","machine learning","generative ai","genai","agentic","ai-native","ai-powered","ai-driven","ai platform","vertical software","vertical saas","llm","computer vision","workflow automation"],"weak":["software","saas","cloud","automation","platform","workflow","erp","cybersecurity"]},{"id":"markets","label":"Marketplaces","short":"Marketplaces","strong":["marketplace","marketplaces","two-sided","network effects","classifieds","b2b platform","b2b marketplace","e-commerce platform","ecommerce platform","online platform","aggregator","booking platform","travel distribution","freight network","exchange platform","super app","super-app"],"weak":["network","e-commerce","ecommerce","online","travel","logistics","exchange","connects","buyers and sellers","community"]}]
