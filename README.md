@@ -1,7 +1,8 @@
 # SSG Newstracker — public copy
 
-One site, two feeds, for EY-Parthenon's Software Strategy Group. Read-only; refreshed every
-morning. Built from [`jw0ngo/jobi`](https://github.com/jw0ngo/jobi).
+One site, two feeds, for EY-Parthenon's Software Strategy Group, at
+https://jw0ngo.github.io/ssg-newstracker/ (the AI & Tech section at `/ai/`). Read-only; refreshed
+every morning. Built from [`jw0ngo/jobi`](https://github.com/jw0ngo/jobi).
 
 | Section | Page | Data |
 |---|---|---|
