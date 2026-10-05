@@ -233,7 +233,7 @@ const ANGLES = {
   }
 };
 const APAC = /\b(asia|asian|apac|asia[- ]pacific|southeast asia|south east asia|asean|india|indian|singapore|china|chinese|hong kong|japan|japanese|korea|korean|indonesia|indonesian|vietnam|vietnamese|philippines|thailand|thai|malaysia|malaysian|australia|australian|aussie|asx|new zealand|taiwan|mumbai|bengaluru|bangalore|delhi|gurugram|shanghai|beijing|shenzhen|tokyo|seoul|jakarta|sydney|melbourne|crore|inr|sgd|aud)\b/i;
-const escRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\/*__CLASSIFIER__*/');
+const escRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 function scoreTerms(src, strong, weak) {
   let s = ` ${src.toLowerCase()} `;
   const hits = [];
