@@ -6,5 +6,7 @@
  "counts": {
   "items": 1032
  },
- "window": 90
+ "window": 90,
+ "published": 450,
+ "aboveBarOnly": true
 }

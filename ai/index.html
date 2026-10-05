@@ -579,6 +579,8 @@ render();
 
 (async () => {
   if (PUBLIC) {
+    // The public copy carries only what the bar lets through; say so instead of promising a link.
+    const f = $('foot'); if (f) f.innerHTML = f.innerHTML.replace('The rest is kept behind the link at the bottom; the page carries the last 90 days and the archive in the repo keeps everything.', 'Only items above the bar are published here; the private tracker and the archive in the repo hold everything.');
     // The public copy fetches its rows from data/ next to the page, so a daily refresh is one
     // small JSON file and never a rebuild of this file.
     try {
