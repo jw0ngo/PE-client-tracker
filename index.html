@@ -175,11 +175,11 @@ const FIRMS = [{
   theses: [{"id":"software","label":"Software","short":"Software","strong":["software","saas","enterprise software","vertical software","cybersecurity","security software","cloud platform","erp","workflow","developer tools","infrastructure software","artificial intelligence","machine learning","generative ai","genai","agentic","ai-native","ai-powered","ai-driven","ai platform","vertical software","vertical saas","llm","computer vision","workflow automation"],"weak":["cloud","platform","automation","technology","digital","it services"]},{"id":"fintech","label":"Fintech","short":"Fintech","strong":["fintech","financial technology","payments","payment","insurtech","wealthtech","wealth tech","regtech","core banking","banking software","lending platform","neobank","digital bank","remittance","investment accounting","trading platform","brokerage","buy now pay later","bnpl","merchant acquiring","card issuing","fund administration","wealth management platform"],"weak":["financial services","lending","credit","banking","insurance","wealth","asset management","capital markets","treasury","compliance"]},{"id":"healthit","label":"Healthcare IT","short":"Health IT","strong":["healthcare it","health it","healthtech","health tech","digital health","medical software","clinical software","healthcare data","health data","care management","electronic health","ehr","emr","telehealth","medtech software"],"weak":["healthcare","health","clinical","hospital","care","patient","pharma","life sciences"]},{"id":"internet","label":"Internet & Media","short":"Internet","strong":["consumer internet","digital media","streaming","gaming","social platform","creator","e-commerce platform","ecommerce platform","online platform","subscription","app","marketplace","marketplaces","two-sided","network effects","classifieds","b2b platform","b2b marketplace","e-commerce platform","ecommerce platform","online platform","aggregator","booking platform","travel distribution","freight network","exchange platform","super app","super-app"],"weak":["media","entertainment","consumer","online","content","sports","network","brand"]}]
 }];
 
-const RUMOUR = /\b(in talks|talks to|weighs|weighing|considers|considering|explores?|exploring|mulls|mulling|eyes|eyeing|nears|nearing|said to|sources say|people familiar|according to people|in the running|shortlist(?:ed)?|binding bids?|non-binding|frontrunner|front-runner|bid for|bids for|takeover bid|takeover offer|revised offer|higher bid|could sell|could buy|plans to sell|seeks? buyers?|hires? (?:banks?|advisers?|advisors?)|kicks off sale|sale process|strategic review|strategic options|strategic alternatives)\b/i;
+const RUMOUR = /\b(opens? (?:its |the )?(?:books|door|data room)|due diligence|data room|sweetens?|(?:improved|revised|higher|sweetened|rival|unsolicited) (?:[^\s]+ ){0,4}?(?:bid|offer|proposal)|lifts? (?:its |the )?(?:bid|offer)|raises? (?:its |the )?(?:bid|offer)|vies? for|vying for|weighs? (?:a )?bids?|in talks|talks to|weighs|weighing|considers|considering|explores?|exploring|mulls|mulling|eyes|eyeing|nears|nearing|said to|sources say|people familiar|according to people|in the running|shortlist(?:ed)?|binding bids?|non-binding|frontrunner|front-runner|bid for|bids for|takeover bid|takeover offer|revised offer|higher bid|could sell|could buy|plans to sell|seeks? buyers?|hires? (?:banks?|advisers?|advisors?)|kicks off sale|sale process|strategic review|strategic options|strategic alternatives)\b/i;
 const EVENTS = [["fund", /\b(closes?|closed|closing of|raises?|raised|final close|first close|hard cap)\b.{0,80}?\bfund\b|\bfund\b.{0,60}?\b(close|closes|closed|closing)\b/i],
   ["people", /\b(appoints?|appointed|names|named|hires|hired|joins|promotes?|promoted|welcomes|shifts|moves|relocates|transfers)\b.{0,80}?\b(partner|managing director|md|principal|head|chief|ceo|cfo|cto|chair(?:man|woman)?|operating partner|senior advis[oe]r|dealmaker)\b/i],
   ["exit", /\b(sells?|selling|sold|sale of|to divest|divests?|divestiture|exits?|exiting|ipo|initial public offering|lists on|files? for (?:an? )?(?:ipo|listing)|offload|offloads|stake sale|secondary sale|to be acquired by|acquired by|agrees to be acquired|completes sale|sale to)\b/i],
-  ["acquire", /\b(acquires?|acquired|acquiring|acquisition|to buy|buys|buyout|take[- ]private|takes? private|takeover|controlling (?:interest|stake)|majority (?:interest|stake)|merger|merge|tender offer)\b/i],
+  ["acquire", /\b(acquires?|acquired|acquiring|acquisition|to buy|buys|buyout|take[- ]private|takes? private|takeover|controlling (?:interest|stake)|majority (?:interest|stake)|merger|merge|tender offer|(?:improved|revised|higher|sweetened|final|binding|non-binding|indicative|cash|rival|unsolicited) (?:[^\s]+ ){0,4}?(?:bid|offer|proposal)|(?:bid|bids|offer|proposal)s? (?:for|to (?:buy|acquire))|(?:lifts?|raises?|sweetens?|bumps?|ups?) (?:its |the )?(?:bid|offer)|opens? (?:its |the )?(?:books|door|data room)|due diligence|data room|vies? for|vying for|weighs? (?:a )?bids?|vie for)\b/i],
   ["platform", /\b(establishes|launches|forms|creates|unveils|opens)\b.{0,60}?\b(platform|strategy|team|office|business)\b/i],
   ["invest", /\b(invests?|investment|invested|investing|growth equity|minority (?:stake|investment)|leads?|led|series [a-h]\b|funding round|raises|backs|commits?|capital from|strategic partnership)\b/i]];
 const ANGLES = {
@@ -245,6 +245,13 @@ const ANGLES = {
   }
 };
 const APAC = /\b(asia|asian|apac|asia[- ]pacific|southeast asia|south east asia|asean|india|indian|singapore|china|chinese|hong kong|japan|japanese|korea|korean|indonesia|indonesian|vietnam|vietnamese|philippines|thailand|thai|malaysia|malaysian|australia|australian|aussie|asx|new zealand|taiwan|mumbai|bengaluru|bangalore|delhi|gurugram|shanghai|beijing|shenzhen|tokyo|seoul|jakarta|sydney|melbourne|crore|inr|sgd|aud)\b/i;
+const MONEY = /(?:\$|US\$|USD|€|£|A\$|S\$|¥|₹|HK\$)?\s?(\d+(?:[.,]\d+)?)\s?(tn|trillion|bn|billion|b\b|mn|million|m\b)/i;
+function bigMoney(title) {
+  const m = MONEY.exec(title); if (!m) return false;
+  const n = parseFloat(m[1].replace(',', '.')); const u = m[2].toLowerCase();
+  const bn = u.startsWith('t') ? n * 1000 : u.startsWith('b') ? n : n / 1000;
+  return bn >= 1;
+}
 const escRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 function scoreTerms(src, strong, weak) {
   let s = ` ${src.toLowerCase()} `;
@@ -311,11 +318,13 @@ function classify(f, raw) {
   const base = angle ? angle.heat : 0;
 
   // Relevance, APAC first. The team's business is Asia-Pacific, so an APAC item is in whenever
-  // the headline carries an event or a thesis. A global item has to earn its place: a live or
-  // signed event (heat 2+) that is in a focus area, or one of the relationship events — a fund
-  // close, a new platform, a senior hire — that matter wherever they happen. Everything else is
-  // kept in the store and hidden on the page behind "show filtered", never deleted.
-  const relevant = apac ? (kind !== 'other' || th.length > 0)
+  // the headline carries an event, a thesis or a reported process. A global item has to earn its
+  // place: a live process (heat 3) that is in a focus area or a billion-dollar one; a signed event
+  // (heat 2) in a focus area; or one of the relationship events — a fund close, a new platform, a
+  // senior hire — that matter wherever they happen. Everything else is kept in the store and
+  // hidden on the page behind "show filtered", never deleted.
+  const relevant = apac ? (kind !== 'other' || th.length > 0 || rumour)
+    : base >= 3 ? (th.length > 0 || bigMoney(title))
     : base >= 2 && (th.length > 0 || kind === 'fund' || kind === 'platform' || kind === 'people');
 
   // Priority is the one list, so its order is "the latest relevant news": heat is the event,
@@ -348,6 +357,9 @@ const $ = (id) => document.getElementById(id);
 // Headlines open a Google News search for the story rather than one outlet's copy of it, so the
 // whole coverage is one tap away. The original article stays reachable as the small "source" link.
 const gnews = (q) => `https://www.google.com/search?tbm=nws&q=${encodeURIComponent(q)}`;
+// A Google News description is the headline plus the outlet; that is not a summary.
+const norm = (s) => String(s || '').replace(/\s+/g, ' ').trim().toLowerCase();
+const echo = (i) => norm(i.summary).startsWith(norm(i.title).slice(0, 60));
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
 // Per-viewer conveniences only. Triage lives in the shared store.
@@ -406,7 +418,7 @@ function card(i) {
       <a class="title" href="${esc(gnews(i.title))}" target="_blank" rel="noopener noreferrer">${esc(i.title)}</a>
       ${fit ? `<div class="fit">${fit}</div>` : ''}
       ${i.move ? `<p class="move">${esc(i.move)}</p>` : ''}
-      ${i.summary ? `<p class="summary">${esc(i.summary)}</p>` : ''}
+      ${i.summary && !echo(i) ? `<p class="summary">${esc(i.summary)}</p>` : ''}
       ${noteBox}
       ${PUBLIC ? '' : `<div class="act">
         ${btn('pursue', 'Pursue')}${btn('watch', 'Watch')}${btn('dismiss', 'Dismiss')}
@@ -532,7 +544,10 @@ function render() {
     if (v.thesis !== 'all') list = list.filter((i) => i.theses.some((t) => t.id === v.thesis));
     if (v.apac) list = list.filter((i) => i.apac);
   }
-  if (v.seg === 'priority') list.sort((a, b) => (b.status === 'pursue') - (a.status === 'pursue') || b.score - a.score);
+  // Priority is the latest relevant news: newest day first, and within a day the event, the
+  // thesis fit and APAC decide. A week-old live process never sits above this morning's story.
+  const day = (i) => Math.max(0, Math.round((Date.now() - Date.parse(i.date)) / 86400000));   // same rounding as dayLabel, so "today" sorts together
+  if (v.seg === 'priority') list.sort((a, b) => (b.status === 'pursue') - (a.status === 'pursue') || day(a) - day(b) || b.score - a.score);
   else list.sort((a, b) => (b.status === 'pursue') - (a.status === 'pursue') || Date.parse(b.date) - Date.parse(a.date));
 
   const emptyMsg = !loaded ? '<b>Loading announcements.</b><br>Each one will show the event, the thesis it fits, and the SSG pitch it opens.'
