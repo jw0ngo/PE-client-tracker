@@ -409,9 +409,13 @@ let triage = {};         // id → { status, note, at }
 let pull = null;         // { at, added } — written by the morning routine
 let db = null, canWrite = true, editing = null, loaded = false;
 
+// Calendar days in the viewer's time zone, so "today", the sort bucket and the day header agree:
+// two reports on 1 Oct are one day however many hours apart they were published.
+const calDay = (t) => { const d = new Date(t); return Math.floor((d.getTime() - d.getTimezoneOffset() * 60000) / 86400000); };
+const daysAgo = (t) => calDay(Date.now()) - calDay(t);
 function dayLabel(iso) {
   const t = Date.parse(iso); if (Number.isNaN(t)) return '';
-  const days = Math.round((Date.now() - t) / 86400000);
+  const days = daysAgo(t);
   if (days <= 0) return 'today';
   if (days === 1) return 'yesterday';
   if (days < 7) return `${days}d ago`;
@@ -498,7 +502,7 @@ function render() {
   }
   // Priority is the latest relevant news: newest day first, and within a day the event, the
   // thesis fit and APAC decide. A week-old live process never sits above this morning's story.
-  const day = (i) => Math.max(0, Math.round((Date.now() - Date.parse(i.date)) / 86400000));   // same rounding as dayLabel, so "today" sorts together
+  const day = (i) => Math.max(0, daysAgo(Date.parse(i.date)));   // calendar days, the same as dayLabel
   if (v.seg === 'priority') list.sort((a, b) => (b.status === 'pursue') - (a.status === 'pursue') || day(a) - day(b) || b.score - a.score);
   else list.sort((a, b) => (b.status === 'pursue') - (a.status === 'pursue') || Date.parse(b.date) - Date.parse(a.date));
 
