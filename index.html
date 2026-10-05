@@ -93,6 +93,8 @@ a { color: inherit; }
 
 /* ── cards ── */
 .list { display: flex; flex-direction: column; gap: 10px; padding-top: 6px; }
+.day { font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); padding: 8px 2px 0; }
+.day:first-child { padding-top: 2px; }
 .deal { background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--rule); border-radius: 10px; padding: 11px 13px 12px; min-width: 0; }
 .deal.hot { border-left-color: var(--hot); }
 .deal.warm { border-left-color: var(--accent); }
@@ -336,13 +338,14 @@ function classify(f, raw) {
 
   // Relevance, APAC first. The team's business is Asia-Pacific, so an APAC item is in whenever
   // the headline carries an event, a thesis or a reported process. A global item has to earn its
-  // place: any event with a billion-dollar figure in the headline; a live process (heat 3) in a
-  // focus area; a signed event (heat 2) in a focus area; or one of the relationship events — a
-  // fund close, a new platform, a senior hire — that matter wherever they happen. Everything else is kept in the store and
+  // place: any event with a billion-dollar figure in the headline; any live process (heat 3) —
+  // a client weighing a bid is the one event that is never quiet, whatever the asset; a signed
+  // event (heat 2) in a focus area; or one of the relationship events — a fund close, a new
+  // platform, a senior hire — that matter wherever they happen. Everything else is kept in the store and
   // hidden on the page behind "show filtered", never deleted.
   const relevant = apac ? (kind !== 'other' || th.length > 0 || rumour)
     : !!angle && bigMoney(title) ? true
-    : base >= 3 ? th.length > 0
+    : base >= 3 ? true
     : base >= 2 && (th.length > 0 || kind === 'fund' || kind === 'platform' || kind === 'people');
 
   // Priority is the one list, so its order is "the latest relevant news": heat is the event,
@@ -585,7 +588,11 @@ function render() {
   const emptyMsg = !loaded ? '<b>Loading announcements.</b><br>Each one will show the event, the thesis it fits, and the SSG pitch it opens.'
     : v.seg === 'pipeline' ? 'Nothing marked Pursue or Watch yet.'
     : all.length ? 'Nothing matches this filter.' : '<b>No announcements stored yet.</b><br>Ask Jobi to pull the latest.';
-  $('list').innerHTML = list.length ? list.map(card).join('') : `<div class="empty">${emptyMsg}</div>`;
+  // A day label before the first card of each day: a quiet day then reads as quiet, not as a
+  // feed that stopped. Pipeline keeps its own order and no labels.
+  const dayHead = (i) => { const k = day(i); return `<div class="day">${k === 0 ? 'Today' : k === 1 ? 'Yesterday' : esc(new Date(i.date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' }))}</div>`; };
+  let lastDay = -1;
+  $('list').innerHTML = list.length ? list.map((i) => { const k = v.seg === 'priority' ? day(i) : -1; const head = k !== lastDay ? dayHead(i) : ''; lastDay = k; return head + card(i); }).join('') : `<div class="empty">${emptyMsg}</div>`;
   const gone = hidden.length + dismissed.length;
   if (v.seg === 'priority' && gone) {
     const what = [hidden.length ? `${hidden.length} below the bar` : '', dismissed.length ? `${dismissed.length} dismissed` : ''].filter(Boolean).join(', ');

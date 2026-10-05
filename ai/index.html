@@ -74,6 +74,8 @@ a { color: inherit; }
 
 /* ── cards ── */
 .list { display: flex; flex-direction: column; gap: 10px; padding-top: 6px; }
+.day { font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); padding: 8px 2px 0; }
+.day:first-child { padding-top: 2px; }
 .item { background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--rule); border-radius: 10px; padding: 11px 13px 12px; min-width: 0; }
 .item.hot { border-left-color: var(--hot); }
 .item.warm { border-left-color: var(--accent); }
@@ -516,7 +518,11 @@ function render() {
   const emptyMsg = !loaded ? '<b>Loading developments.</b><br>Each one will show the event, the diligence lens it touches, and what to re-check on a software target.'
     : v.seg === 'pipeline' ? 'Nothing marked Pursue or Watch yet.'
     : all.length ? 'Nothing matches this filter.' : '<b>Nothing stored yet.</b><br>The morning pull fills it; ask Jobi to run one now.';
-  $('list').innerHTML = list.length ? list.map(card).join('') : `<div class="empty">${emptyMsg}</div>`;
+  // A day label before the first card of each day: a quiet day then reads as quiet, not as a
+  // feed that stopped. Pipeline keeps its own order and no labels.
+  const dayHead = (i) => { const k = day(i); return `<div class="day">${k === 0 ? 'Today' : k === 1 ? 'Yesterday' : esc(new Date(i.date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' }))}</div>`; };
+  let lastDay = -1;
+  $('list').innerHTML = list.length ? list.map((i) => { const k = v.seg === 'priority' ? day(i) : -1; const head = k !== lastDay ? dayHead(i) : ''; lastDay = k; return head + card(i); }).join('') : `<div class="empty">${emptyMsg}</div>`;
   const gone = hidden.length + dismissed.length;
   if (v.seg === 'priority' && gone) {
     const what = [hidden.length ? `${hidden.length} below the bar` : '', dismissed.length ? `${dismissed.length} dismissed` : ''].filter(Boolean).join(', ');
