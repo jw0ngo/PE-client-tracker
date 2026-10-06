@@ -24,6 +24,23 @@
   "firstSeen": "2026-10-02T05:40:00.000Z"
  },
  {
+  "id": "avanse-financial-services",
+  "firm": "eqt",
+  "name": "Avanse Financial Services",
+  "area": "fintech",
+  "hq": "Mumbai, India",
+  "listed": "",
+  "apac": true,
+  "live": true,
+  "ownership": "pe",
+  "owner": "Warburg Pincus (with IFC, Kedaara, Mubadala)",
+  "ownerSince": "",
+  "why": "Warburg-controlled education-loan NBFC, direct peer of EQT's Credila; Rs 3,500 cr IPO (Rs 2,500 cr OFS, Warburg selling Rs 1,758 cr) has SEBI approval but is reportedly being delayed by US visa headwinds, and a US$200–250m private secondary round is being explored — a sponsor seeking liquidity.",
+  "move": "Pitch buy-side DD to sponsors eyeing the private round; EQT would be a conflicted buyer (Credila) but the deal pulls in Credila's rivals.",
+  "signals": [],
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
   "id": "banking-circle",
   "name": "Banking Circle",
   "area": "fintech",
@@ -97,6 +114,30 @@
   "firstSeen": "2026-10-02T04:30:00.000Z"
  },
  {
+  "id": "catalyst-education",
+  "firm": "navis",
+  "name": "Catalyst Education",
+  "area": "software",
+  "hq": "Australia",
+  "listed": "",
+  "apac": true,
+  "live": false,
+  "ownership": "pe",
+  "owner": "For Purpose Investment Partners",
+  "ownerSince": "2021-03",
+  "why": "Sponsor-owned since Mar 2021 (bought from Anacacia), blended/online vocational training for childcare, aged care and disability workers; bolt-on of ARC Training in 2025 signals platform build ahead of an exit, matching Navis's education and Australia playbook.",
+  "move": "Map the RTO portfolio and LMS/online-delivery stack; monitor FPIP for adviser appointment in 2026-27.",
+  "signals": [
+   {
+    "date": "2025-03-24",
+    "title": "Hamilton Locke advises For Purpose Investment Partners on the acquisition of ARC Training",
+    "url": "https://hamiltonlocke.com.au/hamilton-locke-advises-for-purpose-investment-partners-on-the-acquisition-of-arc-training/",
+    "publisher": "Hamilton Locke"
+   }
+  ],
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
   "id": "cfs",
   "name": "Colonial First State",
   "area": "fintech",
@@ -166,6 +207,30 @@
   "firstSeen": "2026-10-02T05:40:00.000Z"
  },
  {
+  "id": "cover-genius",
+  "firm": "macquarie-capital",
+  "name": "Cover Genius",
+  "area": "fintech",
+  "hq": "Sydney, Australia",
+  "listed": "",
+  "apac": true,
+  "live": false,
+  "ownership": "vc",
+  "owner": "",
+  "ownerSince": "",
+  "why": "Australian-founded embedded-insurance platform (XCover) at ~US$1.9bn valuation after a US$100m Jul-2026 round backed by Vista Credit Partners; late-stage, APAC-rooted fintech of the kind Macquarie Capital backs; secondary/pre-IPO optionality.",
+  "move": "Pre-build an embedded-insurance product/tech view (partner integrations, claims automation, unit economics) ahead of any secondary or pre-IPO process.",
+  "signals": [
+   {
+    "date": "2026-07-15",
+    "title": "Cover Genius lands $100m to power AI embedded protection",
+    "url": "https://fintech.global/2026/07/15/cover-genius-lands-100m-to-power-ai-embedded-protection/",
+    "publisher": "FinTech Global"
+   }
+  ],
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
   "id": "csg",
   "firm": "tpg",
   "name": "Cloud Software Group (Citrix + TIBCO)",
@@ -218,6 +283,30 @@
   "firstSeen": "2026-10-02T04:30:00.000Z"
  },
  {
+  "id": "fractal-analytics",
+  "firm": "eqt",
+  "name": "Fractal Analytics",
+  "area": "data",
+  "hq": "Mumbai, India / New York, United States",
+  "listed": "NSE/BSE: Fractal Analytics (listed Feb 2026)",
+  "apac": true,
+  "live": false,
+  "ownership": "listed",
+  "owner": "TPG, Apax Partners (selling down)",
+  "ownerSince": "",
+  "why": "India's first pure-play enterprise AI/analytics firm (FY25 revenue +25.9%); Apax (since 2019) and TPG sold Rs 1,810 cr in the Feb 2026 IPO and will keep exiting — a listed data/AI asset with sponsor overhang, directly comparable to EQT's Straive build-up.",
+  "move": "Watch for sponsor block sales or a take-private approach; pre-build a data/AI services DD framework reusable across Straive-type comparables.",
+  "signals": [
+   {
+    "date": "2026-02-04",
+    "title": "TPG, Gaja Captial-backed Fractal Analytics IPO to open on Feb 9; check key details",
+    "url": "https://www.businesstoday.in/amp/markets/ipo-corner/story/tpg-gaja-captial-backed-fractal-analytics-ipo-to-open-on-feb-9-check-key-details-details-514511-2026-02-04",
+    "publisher": "Business Today"
+   }
+  ],
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
   "id": "humanforce",
   "name": "Humanforce",
   "area": "ai",
@@ -265,6 +354,30 @@
   "firstSeen": "2026-10-02T05:40:00.000Z"
  },
  {
+  "id": "iress-eqt",
+  "firm": "eqt",
+  "name": "Iress",
+  "area": "fintech",
+  "hq": "Melbourne, Australia",
+  "listed": "ASX: IRE",
+  "apac": true,
+  "live": true,
+  "ownership": "listed",
+  "owner": "",
+  "ownerSince": "",
+  "why": "ASX-listed wealth, trading and super software; Blackstone approached at A$10.50/share (withdrawn), board now in data-room talks with Blackstone and Thoma Bravo at a reported A$2–2.2bn; classic EQT-style take-private of a sponsor-contested fintech software asset.",
+  "move": "Live process — a sponsor will need buy-side product/tech DD on the core trading and wealth platforms; approach Blackstone/Thoma Bravo deal teams and Macquarie/UBS (Iress advisers) now.",
+  "signals": [
+   {
+    "date": "2025-08-08",
+    "title": "Response to media speculation",
+    "url": "https://announcements.asx.com.au/asxpdf/20250808/pdf/06mnvwb0k80zzh.pdf",
+    "publisher": "Iress / ASX"
+   }
+  ],
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
   "id": "iress",
   "name": "Iress",
   "area": "data",
@@ -291,6 +404,23 @@
    }
   ],
   "firstSeen": "2026-10-02T04:30:00.000Z"
+ },
+ {
+  "id": "juristech",
+  "firm": "navis",
+  "name": "Juris Technologies (JurisTech)",
+  "area": "fintech",
+  "hq": "Kuala Lumpur, Malaysia",
+  "listed": "",
+  "apac": true,
+  "live": false,
+  "ownership": "founder",
+  "owner": "",
+  "ownerSince": "",
+  "why": "Founder-led Malaysian lending/credit software (loan origination, onboarding, collections) founded 1997; CTOS Digital's sale of a 10% stake to Natsoft for RM50m (Jul 2026) implies ~RM500m (~US$110m) equity value, squarely Navis mid-market fintech territory.",
+  "move": "Track Natsoft/CTOS filings for the SSA completion and any further stake movement; pre-build a JurisTech product/architecture view and bank-reference list.",
+  "signals": [],
+  "firstSeen": "2026-10-06T00:58:19Z"
  },
  {
   "id": "kantar",
@@ -392,6 +522,59 @@
   "firstSeen": "2026-10-02T05:40:00.000Z"
  },
  {
+  "id": "megaport",
+  "firm": "macquarie-capital",
+  "name": "Megaport",
+  "area": "internet",
+  "hq": "Brisbane, Australia",
+  "listed": "ASX: MP1",
+  "apac": true,
+  "live": false,
+  "ownership": "listed",
+  "owner": "",
+  "ownerSince": "",
+  "why": "ASX-listed network-as-a-service/interconnection platform with AI-driven demand; Macquarie research is bullish (A$14.30–27.80 targets) and the asset sits at the software/digital-infra seam Macquarie Capital Principal Finance targets; no bid reported.",
+  "move": "Monitor for PE/infra approaches; prepare a NaaS architecture, churn and AI-interconnect workload DD framework.",
+  "signals": [
+   {
+    "date": "2026-10-01",
+    "title": "How high does Macquarie think Megaport shares will go?",
+    "url": "https://www.fool.com.au/2026/10/01/how-high-does-macquarie-think-megaport-shares-will-go-2/",
+    "publisher": "Motley Fool Australia"
+   },
+   {
+    "date": "2026-06-12",
+    "title": "4 ASX shares Macquarie says could return more than 40%",
+    "url": "https://www.fool.com.au/2026/06/12/4-asx-shares-macquarie-says-could-return-more-than-40/",
+    "publisher": "Motley Fool Australia"
+   },
+   {
+    "date": "2026-06-02",
+    "title": "Why did Megaport shares rocket 70% in May?",
+    "url": "https://www.fool.com.au/2026/06/02/why-did-megaport-shares-rocket-70-in-may/",
+    "publisher": "Motley Fool Australia"
+   }
+  ],
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "myhomecare-group",
+  "firm": "navis",
+  "name": "myHomecare Group",
+  "area": "healthit",
+  "hq": "Australia",
+  "listed": "",
+  "apac": true,
+  "live": true,
+  "ownership": "pe",
+  "owner": "Quadrant Private Equity",
+  "ownerSince": "",
+  "why": "Quadrant-owned Australian home-care platform back on the block for a second time in 2026; direct comparable to Navis's Caring Group and a tech-enabled care-services asset where SSG's platform/rostering/compliance-tech diligence applies.",
+  "move": "Request Quadrant's process timetable via advisers; build a Caring Group vs myHomecare tech benchmark now (care-management system, workforce app, NDIS/Support-at-Home compliance).",
+  "signals": [],
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
   "id": "myob",
   "name": "MYOB",
   "area": "fintech",
@@ -464,6 +647,71 @@
    }
   ],
   "firstSeen": "2026-10-02T04:30:00.000Z"
+ },
+ {
+  "id": "nuvama-wealth-management",
+  "firm": "ta-associates",
+  "name": "Nuvama Wealth Management",
+  "area": "fintech",
+  "hq": "Mumbai, India",
+  "listed": "NSE: NUVAMA",
+  "apac": true,
+  "live": true,
+  "ownership": "pe",
+  "owner": "PAG",
+  "ownerSince": "2021",
+  "why": "Listed Indian wealth manager (ex-Edelweiss Wealth) with ~54% controlled by PAG since 2021; PAG launched a sale in 2025 (US$1.2–1.8bn stake), CVC/EQT/Permira and later HSBC bidding. Mirrors TA's Prudent and Viridian wealth-platform bets.",
+  "move": "Pre-build a tech/ops diligence view of Nuvama's wealth platform and broking stack now; pitch SSG to bidders or to any TA interest before the PAG process concludes.",
+  "signals": [
+   {
+    "date": "2025-02-26",
+    "title": "Equity firm PAG considering sale of $1.2 billion stake in India's Nuvama",
+    "url": "https://www.business-standard.com/companies/news/equity-firm-pag-considering-sale-of-1-2-billion-stake-in-india-s-nuvama-125022600259_1.html",
+    "publisher": "Business Standard"
+   }
+  ],
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "perfios",
+  "firm": "eqt",
+  "name": "Perfios",
+  "area": "fintech",
+  "hq": "Bengaluru, India",
+  "listed": "",
+  "apac": true,
+  "live": false,
+  "ownership": "vc",
+  "owner": "Warburg Pincus, Kedaara Capital, Bessemer, TVG",
+  "ownerSince": "",
+  "why": "India's largest B2B SaaS fintech (credit decisioning/onboarding for 1,000+ lenders; FY24 revenue Rs 559 cr, profit up 819%); Warburg has been invested since the 2019 round and a US$500m IPO at ~US$2bn has been repeatedly flagged — sponsor-backed scale-up heading for an exit.",
+  "move": "Pre-wire with Warburg/Kedaara on a dual-track; offer vendor tech DD for the IPO or a sponsor-to-sponsor sale.",
+  "signals": [],
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "perpetual",
+  "firm": "macquarie-capital",
+  "name": "Perpetual",
+  "area": "fintech",
+  "hq": "Sydney, Australia",
+  "listed": "ASX: PPT",
+  "apac": true,
+  "live": true,
+  "ownership": "listed",
+  "owner": "",
+  "ownerSince": "",
+  "why": "Wealth/corporate-trust group with technology-heavy corporate trust and platform businesses; rejected an EQT-controlled A$21.64/share indicative proposal on 1 Jul 2026, so a contested take-private is open and Macquarie Capital-style FIG/fintech sponsors may circle. Weakest fit (financial services, not pure software).",
+  "move": "Scope a carve-out tech DD on corporate trust/wealth platforms in case a sponsor seeks a product and technology assessment.",
+  "signals": [
+   {
+    "date": "2026-07-01",
+    "title": "Perpetual Ltd Rejects A$21.64 Per Share EQT Backed Takeover Approach",
+    "url": "https://stockwirex.com/?p=31524",
+    "publisher": "StockWireX"
+   }
+  ],
+  "firstSeen": "2026-10-06T00:58:19Z"
  },
  {
   "id": "proofpoint",
@@ -540,6 +788,23 @@
    }
   ],
   "firstSeen": "2026-10-02T05:10:00.000Z"
+ },
+ {
+  "id": "tyro-eqt",
+  "firm": "eqt",
+  "name": "Tyro Payments",
+  "area": "fintech",
+  "hq": "Sydney, Australia",
+  "listed": "ASX: TYR",
+  "apac": true,
+  "live": true,
+  "ownership": "listed",
+  "owner": "",
+  "ownerSince": "",
+  "why": "ASX-listed merchant-acquiring and SME banking fintech that has disclosed multiple non-binding takeover approaches in 2025 (Stripe talks reported by AFR, Westpac mulling a bid, PE circling) and lost its CEO to a PE-backed firm — a stressed listed small-cap open to proposals.",
+  "move": "Approach interested sponsors for payments-platform and risk-tech DD; monitor ASX announcements for a binding proposal.",
+  "signals": [],
+  "firstSeen": "2026-10-06T00:58:19Z"
  },
  {
   "id": "tyro",

@@ -1,5 +1,450 @@
 [
  {
+  "id": "eqt-ags-health",
+  "firm": "eqt",
+  "name": "AGS Health",
+  "slug": "ags-health",
+  "industry": "healthit",
+  "industryLabel": "Revenue cycle management, US providers",
+  "hq": "Washington, D.C., United States / Chennai, India",
+  "geos": [
+   "United States",
+   "India",
+   "Philippines"
+  ],
+  "apac": true,
+  "heldSince": "2019",
+  "stake": "majority",
+  "valuation": {
+   "amount": "US$1.1–1.3bn",
+   "basis": "reported bid range in EQT sale process, 2025 (entry ~US$320m, 2019)",
+   "url": "https://www.angelone.in/news/market-updates/blackstone-leads-bid-for-eqt-owned-ags-health-in-1-1-1-3-billion-deal"
+  },
+  "summary": "AI-enabled revenue-cycle management for 150+ US hospital systems (~12,000 staff in India/Philippines/US, ~US$60m EBITDA); BPEA bought it in 2019 and EQT launched a sale via JPMorgan/BofA in early 2025 with Blackstone the frontrunner.",
+  "signals": [],
+  "exit": {
+   "status": "process",
+   "note": "Sale process launched early 2025 (JPMorgan, BofA); binding bids received, Blackstone frontrunner at US$1.1–1.3bn vs TPG–General Atlantic, Frazier, Vitruvian; no signing reported in results"
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "eqt-citiustech",
+  "firm": "eqt",
+  "name": "CitiusTech",
+  "slug": "citiustech",
+  "industry": "healthit",
+  "industryLabel": "Healthcare technology and data services",
+  "hq": "Princeton, New Jersey, United States / Mumbai, India",
+  "geos": [
+   "United States",
+   "India"
+  ],
+  "apac": true,
+  "heldSince": "2019",
+  "stake": "co-control",
+  "valuation": {
+   "amount": "US$1.5–1.7bn",
+   "basis": "reported binding bids for EQT's 40% stake (EQT sought US$2–2.5bn), 2026",
+   "url": "https://ionanalytics.com/insights/mergermarket/eqt-receives-binding-bids-for-citiustech-stake-sale/"
+  },
+  "summary": "Healthcare-only IT services, data/analytics and digital engineering for US payers, providers and medtech (FY25 revenue US$427.6m); BPEA bought control in 2019, sold part to Bain Capital in 2022, and EQT is now selling its remaining 40%.",
+  "signals": [],
+  "exit": {
+   "status": "process",
+   "note": "JPMorgan mandated Dec 2025 to sell EQT's 40%; binding bids from Advent and PAG (CVC, TA also interested; Blackstone, OTPP, Temasek, ChrysCapital reported in Feb 2026) at US$1.5–1.7bn vs US$2–2.5bn ask"
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "eqt-credila-financial-services",
+  "firm": "eqt",
+  "name": "Credila Financial Services (ex-HDFC Credila)",
+  "slug": "credila-financial-services",
+  "industry": "fintech",
+  "industryLabel": "Education-loan NBFC, India",
+  "hq": "Mumbai, India",
+  "geos": [
+   "India"
+  ],
+  "apac": true,
+  "heldSince": "2024-03",
+  "stake": "majority",
+  "valuation": {
+   "amount": null,
+   "basis": "IPO size Rs 5,000 cr (Rs 3,000 cr fresh + Rs 2,000 cr OFS); valuation not disclosed",
+   "url": "https://www.theweek.in/wire-updates/business/2025/06/27/dcm17-biz-ipo-credila-fin.html"
+  },
+  "summary": "India's only pure-play education-loan NBFC, lending to students for domestic and overseas study; EQT Private Capital Asia (Kopvoorn BV) and ChrysCapital bought ~90% from HDFC Bank in Mar 2024 (now 81.4% after Shinhan Bank took 11%).",
+  "signals": [
+   {
+    "date": "2025-06-27",
+    "title": "Credila Fin Services files updated draft papers for IPO to raise Rs 5,000 cr",
+    "url": "https://www.theweek.in/wire-updates/business/2025/06/27/dcm17-biz-ipo-credila-fin.html",
+    "publisher": "PTI via The Week"
+   }
+  ],
+  "exit": {
+   "status": "process",
+   "note": "IPO: SEBI approval 15 May 2025, updated DRHP 27 Jun 2025; EQT affiliate to sell Rs 950 cr in OFS; dates/price band not yet announced"
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "eqt-gebbs-healthcare-solutions",
+  "firm": "eqt",
+  "name": "GeBBS Healthcare Solutions",
+  "slug": "gebbs-healthcare-solutions",
+  "industry": "healthit",
+  "industryLabel": "RCM, coding and HIM outsourcing",
+  "hq": "Los Angeles, California, United States / Mumbai, India",
+  "geos": [
+   "United States",
+   "India",
+   "Philippines",
+   "Dominican Republic"
+  ],
+  "apac": true,
+  "heldSince": "2024",
+  "stake": "control",
+  "valuation": {
+   "amount": "US$850m+",
+   "basis": "reported purchase price from ChrysCapital, Sep 2024",
+   "url": "https://www.privateequitywire.co.uk/eqt-to-acquire-gebbs-healthcare-solutions-for-over-850m/"
+  },
+  "summary": "Revenue-cycle, medical coding and health-information-management outsourcing for US providers, delivered from India; EQT Private Capital Asia (BPEA Fund VIII) bought control from ChrysCapital in 2024 and is adding tuck-ins (CCD Health, RND OptimizAR).",
+  "signals": [
+   {
+    "date": "2024-09-09",
+    "title": "EQT to acquire GeBBS Healthcare Solutions, a leading healthcare technology solutions provider",
+    "url": "https://eqtgroup.com/news/2024/eqt-to-acquire-gebbs-healthcare-solutions-a-leading-healthcare-technology-solutions-provider/",
+    "publisher": "EQT"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "eqt-ifs",
+  "firm": "eqt",
+  "name": "IFS",
+  "slug": "ifs",
+  "industry": "software",
+  "industryLabel": "Industrial ERP and asset management",
+  "hq": "London, United Kingdom",
+  "geos": [
+   "Europe",
+   "North America",
+   "Asia-Pacific"
+  ],
+  "apac": false,
+  "heldSince": "2015",
+  "stake": "co-control",
+  "valuation": {
+   "amount": "€15bn+",
+   "basis": "secondary transaction (Hg to co-control, ADIA and CPP Investments join), 9 Apr 2025",
+   "url": "https://ifs.com/news/corporate/ifs-attracts-eur-15-billion-valuation"
+  },
+  "summary": "Cloud ERP, EAM and field-service software for asset-intensive industries (ARR >€1bn, 2024 revenue >€1.2bn, ARR since reported at €1.7bn); EQT has owned it since 2015 across EQT VII/VIII/IX, now co-controlling with Hg, TA minority. IPO being prepared.",
+  "signals": [
+   {
+    "date": "2025-04-09",
+    "title": "IFS attracts EUR 15 billion valuation",
+    "url": "https://ifs.com/news/corporate/ifs-attracts-eur-15-billion-valuation",
+    "publisher": "IFS"
+   }
+  ],
+  "exit": {
+   "status": "rumoured",
+   "note": "May 2026 reports: CEO Mark Moffat says IFS preparing an IPO within two years, venue London, Europe or New York"
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "eqt-indira-ivf",
+  "firm": "eqt",
+  "name": "Indira IVF",
+  "slug": "indira-ivf",
+  "industry": "other",
+  "industryLabel": "Fertility clinic chain, India",
+  "hq": "Udaipur, India",
+  "geos": [
+   "India"
+  ],
+  "apac": true,
+  "heldSince": "2023",
+  "stake": "majority",
+  "valuation": {
+   "amount": "Rs 3,500 cr (US$408m) OFS",
+   "basis": "reported IPO size, Jul 2025 (all offer-for-sale; valuation not disclosed)",
+   "url": "https://www.business-standard.com/markets/news/indira-ivf-s-408-million-india-ipo-may-see-eqt-founders-exit-stake-125071501657_1.html"
+  },
+  "summary": "India's largest ART/IVF chain (~40,000 cycles a year, top-five globally); EQT bought control from TA Associates and founders in 2023, Murdia family retains minority. Exit via India IPO where EQT and founders sell down.",
+  "signals": [
+   {
+    "date": "2026-01-02",
+    "title": "Sebi approves eight IPOs, including confidential filings by Indira IVF",
+    "url": "https://www.business-standard.com/markets/ipo/sebi-approves-eight-ipos-126010200990_1.html",
+    "publisher": "Business Standard"
+   },
+   {
+    "date": "2025-07-16",
+    "title": "EQT-backed Indira IVF refiles DRHP via confidential route",
+    "url": "https://www.business-standard.com/markets/ipo/eqt-backed-indira-ivf-refiles-drhp-via-confidential-route-125071600958_1.html",
+    "publisher": "Business Standard"
+   },
+   {
+    "date": "2025-07-15",
+    "title": "Indira IVF's $408 million India IPO may see EQT, founders exit stake",
+    "url": "https://www.business-standard.com/markets/news/indira-ivf-s-408-million-india-ipo-may-see-eqt-founders-exit-stake-125071501657_1.html",
+    "publisher": "Business Standard / Bloomberg"
+   },
+   {
+    "date": "2025-02-11",
+    "title": "EQT-backed Indira IVF confidentially files draft papers for Rs 6,500 cr IPO",
+    "url": "https://www.business-standard.com/markets/ipo/eqt-backed-indira-ivf-confidentially-files-draft-papers-for-rs-6-500-cr-ipo-125021101658_1.html",
+    "publisher": "Business Standard"
+   }
+  ],
+  "exit": {
+   "status": "process",
+   "note": "IPO: first DRHP Feb 2025 withdrawn Mar 2025; refiled Jul 2025; SEBI observations issued 30 Dec 2025; launch pending"
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "eqt-sagility",
+  "firm": "eqt",
+  "name": "Sagility India",
+  "slug": "sagility",
+  "industry": "healthit",
+  "industryLabel": "US healthcare payer/provider BPO",
+  "hq": "Bengaluru, India",
+  "geos": [
+   "United States",
+   "India",
+   "Philippines"
+  ],
+  "apac": true,
+  "heldSince": "2022",
+  "stake": "majority",
+  "valuation": {
+   "amount": "US$1.2bn",
+   "basis": "entry EV (carve-out from Hinduja Global Solutions), 2022",
+   "url": "https://www.globalprivatecapital.org/newsroom/eqt-exits-indias-sagility-b-v-for-usd314m/"
+  },
+  "summary": "Tech-enabled claims, member/provider services and RCM for US health insurers and providers; BPEA carved it out of HGS in 2022, listed it on NSE/BSE in Nov 2024 and has been selling down via OFS and block trades.",
+  "signals": [
+   {
+    "date": "2025-11-14",
+    "title": "Sagility soars 7% as over 950 million equity shares change hands on NSE",
+    "url": "https://www.business-standard.com/markets/news/sagility-soars-7-as-over-950-million-equity-shares-change-hands-on-nse-125111400664_1.html",
+    "publisher": "Business Standard"
+   },
+   {
+    "date": "2025-05-27",
+    "title": "Sagility India drops as promoter launches OFS",
+    "url": "https://www.business-standard.com/markets/capital-market-news/sagility-india-drops-as-promoter-launches-ofs-125052701071_1.html",
+    "publisher": "Business Standard"
+   }
+  ],
+  "exit": {
+   "status": "listed",
+   "note": "Listed Nov 2024; promoter Sagility B.V. sold 15% OFS (May 2025, ~US$314m) and 16.4% block (14 Nov 2025, Rs 3,660 cr) — holding now ~51%"
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "eqt-straive",
+  "firm": "eqt",
+  "name": "Straive (ex-SPi Global)",
+  "slug": "straive",
+  "industry": "data",
+  "industryLabel": "Data, AI and content operations",
+  "hq": "Singapore",
+  "geos": [
+   "United States",
+   "United Kingdom",
+   "India",
+   "Philippines"
+  ],
+  "apac": true,
+  "heldSince": "2021",
+  "stake": "majority",
+  "valuation": {
+   "amount": null,
+   "basis": "undisclosed (BPEA bought from Partners Group)",
+   "url": "https://www.dealstreetasia.com/stories/partners-group-straive-baring-256779"
+  },
+  "summary": "17,000-person data-operationalisation and AI services firm serving financial information, media, edtech and life-sciences clients; BPEA EQT bought it from Partners Group and is running a buy-and-build (SG Analytics 2025, NextGen Invent 2026).",
+  "signals": [
+   {
+    "date": "2026-06-22",
+    "title": "Straive Acquires NextGen Invent To Boost Data & AI Operationalization Capabilities",
+    "url": "https://bernama.com/en/press/news.php?id=2571368",
+    "publisher": "Bernama / PRNewswire"
+   },
+   {
+    "date": "2025-06-18",
+    "title": "Straive Acquires SG Analytics to Bolster Data Analytics & AI Operationalization Capabilities",
+    "url": "https://www.streetinsider.com/PRNewswire/Straive+Acquires+SG+Analytics+to+Bolster+Data+Analytics+%26amp%3B+AI+Operationalization+Capabilities/24950791.html",
+    "publisher": "PR Newswire via StreetInsider"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "eqt-virtusa",
+  "firm": "eqt",
+  "name": "Virtusa",
+  "slug": "virtusa",
+  "industry": "software",
+  "industryLabel": "IT services and digital engineering",
+  "hq": "Southborough, Massachusetts, United States",
+  "geos": [
+   "United States",
+   "India",
+   "Sri Lanka",
+   "United Kingdom"
+  ],
+  "apac": false,
+  "heldSince": "2021-02",
+  "stake": "majority",
+  "valuation": {
+   "amount": "US$7bn+",
+   "basis": "reported target valuation for India IPO, Apr 2026",
+   "url": "https://www.placera.se/telegram/eqt-market-chatter-eqt-s-virtusa-corp-mulls-indian-ipo-20260428"
+  },
+  "summary": "30,000-person IT services firm (BFSI, healthcare, telecom) with delivery concentrated in India and Sri Lanka; BPEA took it private from Nasdaq in 2021 and EQT is now preparing a US$1bn+ India IPO with Citi, JPMorgan and Morgan Stanley.",
+  "signals": [
+   {
+    "date": "2026-04-28",
+    "title": "Market Chatter: EQT's Virtusa Corp Mulls Indian IPO",
+    "url": "https://www.placera.se/telegram/eqt-market-chatter-eqt-s-virtusa-corp-mulls-indian-ipo-20260428",
+    "publisher": "MT Newswires via Placera"
+   }
+  ],
+  "exit": {
+   "status": "process",
+   "note": "India IPO being prepared (Apr 2026 reports): raise >US$1bn at US$7bn+; roadshow H2 2026, listing late 2026/2027"
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "eqt-waystar",
+  "firm": "eqt",
+  "name": "Waystar",
+  "slug": "waystar",
+  "industry": "healthit",
+  "industryLabel": "Healthcare payments software, US",
+  "hq": "Lehi, Utah, United States",
+  "geos": [
+   "United States"
+  ],
+  "apac": false,
+  "heldSince": "2019",
+  "stake": "minority",
+  "valuation": {
+   "amount": "US$2.7bn",
+   "basis": "entry valuation when EQT and CPPIB bought majority from Bain, 2019",
+   "url": "https://www.realtid.se/bors-finans/eqt-koper-del-i-waystar/"
+  },
+  "summary": "Cloud RCM and payments platform for US providers (Nasdaq: WAY, IPO Jun 2024); EQT, CPPIB and Bain have sold down through three 2025 secondaries while Waystar bought Iodine Software for US$1.25bn.",
+  "signals": [
+   {
+    "date": "2025-09-12",
+    "title": "Waystar and Selling Stockholders Complete $705 Million Secondary Offering",
+    "url": "https://www.stblaw.com/about-us/news/view/2025/09/12/waystar-and-selling-stockholders-complete-$705-million-secondary-offering",
+    "publisher": "Simpson Thacher"
+   },
+   {
+    "date": "2025-09-10",
+    "title": "Waystar Announces Launch of Secondary Offering of Common Stock",
+    "url": "https://www.waystar.com/news/waystar-announces-launch-of-secondary-offering-of-common-stock/",
+    "publisher": "Waystar"
+   },
+   {
+    "date": "2025-07-23",
+    "title": "Waystar to Acquire Iodine Software, Accelerating the AI-Powered Transformation of Healthcare Payments",
+    "url": "https://finviz.com/news/112914/waystar-to-acquire-iodine-software-accelerating-the-ai-powered-transformation-of-healthcare-payments",
+    "publisher": "Waystar via Finviz"
+   },
+   {
+    "date": "2025-05-22",
+    "title": "Waystar and Selling Stockholders Complete $557 Million Secondary Offering",
+    "url": "https://www.stblaw.com/about-us/news/view/2025/05/22/waystar-and-selling-stockholders-complete-$557-million-secondary-offering",
+    "publisher": "Simpson Thacher"
+   },
+   {
+    "date": "2025-02-26",
+    "title": "Waystar and Selling Stockholders Complete $920 Million Secondary Offering",
+    "url": "https://www.stblaw.com/about-us/news/view/2025/02/26/waystar-and-selling-stockholders-complete-$920-million-secondary-offering",
+    "publisher": "Simpson Thacher"
+   }
+  ],
+  "exit": {
+   "status": "listed",
+   "note": "Listed Jun 2024; EQT at 23.8% after Feb 2025 secondary, further reduced in May and Sep 2025 secondaries"
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "eqt-wso2",
+  "firm": "eqt",
+  "name": "WSO2",
+  "slug": "wso2",
+  "industry": "software",
+  "industryLabel": "API management, integration, IAM",
+  "hq": "Santa Clara, California, United States",
+  "geos": [
+   "United States",
+   "Sri Lanka",
+   "Europe",
+   "Asia-Pacific"
+  ],
+  "apac": false,
+  "heldSince": "2024-08",
+  "stake": "majority",
+  "valuation": {
+   "amount": "US$600m+",
+   "basis": "reported deal value at acquisition announcement, May 2024",
+   "url": "https://finder.techleap.nl/news/feed/eqt-buys-wso2-for-600m"
+  },
+  "summary": "Open-source API management, integration and identity platform (60tn transactions, 1bn identities a year) with engineering in Colombo, Sri Lanka; EQT bought a significant majority in 2024 and is funding M&A (Moesif 2025, new corp-dev head).",
+  "signals": [
+   {
+    "date": "2025-10-30",
+    "title": "WSO2 Expands Leadership Team with Appointment of Sudesh Vasudevan as VP, Head of Corporate Development",
+    "url": "https://wso2.com/about/news/wso2-expands-leadership-team-with-appointment-sudesh-vasudevan-vp-head-corporate-development/",
+    "publisher": "WSO2"
+   },
+   {
+    "date": "2025-05-28",
+    "title": "WSO2 Acquires Leading API Analytics and Monetization Startup Moesif",
+    "url": "https://www.streetinsider.com/Press+Releases/WSO2+Acquires+Leading+API+Analytics+and+Monetization+Startup+Moesif/24859036.html",
+    "publisher": "WSO2 via StreetInsider"
+   },
+   {
+    "date": "2024-08-14",
+    "title": "EQT completes acquisition of WSO2 adding to global portfolio of enterprise software companies",
+    "url": "https://www.intelligentcio.com/north-america/2024/08/14/eqt-completes-acquisition-of-wso2-adding-to-global-portfolio-of-enterprise-software-companies/",
+    "publisher": "Intelligent CIO"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
   "id": "kkr-bmc-software",
   "firm": "kkr",
   "name": "BMC Software",
@@ -570,6 +1015,773 @@
    "status": "none"
   },
   "firstSeen": "2026-10-05T10:37:52Z"
+ },
+ {
+  "id": "macquarie-capital-aryza",
+  "firm": "macquarie-capital",
+  "name": "Aryza",
+  "slug": "aryza",
+  "industry": "software",
+  "industryLabel": "Credit, debt and insolvency SaaS",
+  "hq": "Dublin, Ireland",
+  "geos": [
+   "United Kingdom",
+   "Ireland",
+   "Germany",
+   "Australia"
+  ],
+  "apac": false,
+  "heldSince": "2021-11",
+  "stake": "co-control",
+  "valuation": {
+   "amount": null,
+   "basis": "undisclosed",
+   "url": "https://www.privsource.com/acquisitions/deal/O3S0Zz"
+  },
+  "summary": "Case-management and automation software for insolvency practitioners, lenders and debt collectors. Owned via Atlas Bidco by Macquarie Capital Principal Finance, Pollen Street and management since Nov 2021; acquisitive (RiskLogix Apr 2025, Webio May 2025, Australia's Bravure Sep 2025).",
+  "signals": [
+   {
+    "date": "2021-11-16",
+    "title": "Funds advised by Permira Credit support Macquarie Capital Principal Finance, Pollen Street Capital and senior management to acquire Aryza",
+    "url": "https://permira.com/news-and-insights/announcements/funds-advised-by-permira-credit-support-macquarie-capital-principal-finance-pollen-street-capital-and-senior-management-to-acquire-aryza-a-provider-of-software-to-insolvency-practitioners-banks-and-loan-administrators",
+    "publisher": "Permira"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "macquarie-capital-biocatch",
+  "firm": "macquarie-capital",
+  "name": "BioCatch",
+  "slug": "biocatch",
+  "industry": "fintech",
+  "industryLabel": "Behavioural biometrics fraud prevention",
+  "hq": "Tel Aviv, Israel",
+  "geos": [
+   "United States",
+   "Europe",
+   "Asia-Pacific"
+  ],
+  "apac": false,
+  "heldSince": null,
+  "stake": "minority",
+  "valuation": {
+   "amount": "US$1.3bn EV (May 2024); ~US$2.4bn sale to Visa (Jul 2026)",
+   "basis": "reported",
+   "url": "https://techcrunch.com/2024/05/02/permira-to-acquire-digital-fraud-detection-company-biocatch-in-1-3b-deal"
+  },
+  "summary": "Behavioural-biometrics fraud and account-takeover detection for banks. Macquarie Capital, an existing shareholder, increased its stake in Permira's May-2024 majority buyout; Permira agreed in Jul 2026 to sell BioCatch to Visa for ~US$2.4bn, implying a Macquarie exit on close.",
+  "signals": [
+   {
+    "date": "2026-07-16",
+    "title": "Permira agrees sale of BioCatch to Visa",
+    "url": "https://www.permira.com/news-and-insights/announcements/permira-agrees-sale-of-biocatch-to-visa",
+    "publisher": "Permira"
+   },
+   {
+    "date": "2024-05-02",
+    "title": "Permira to acquire digital fraud detection company BioCatch in $1.3B deal",
+    "url": "https://techcrunch.com/2024/05/02/permira-to-acquire-digital-fraud-detection-company-biocatch-in-1-3b-deal",
+    "publisher": "TechCrunch"
+   }
+  ],
+  "exit": {
+   "status": "process",
+   "note": "Sale to Visa announced 2026-07-16; completion not confirmed in sources"
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "macquarie-capital-nuix",
+  "firm": "macquarie-capital",
+  "name": "Nuix",
+  "slug": "nuix",
+  "industry": "data",
+  "industryLabel": "Investigative analytics and eDiscovery software",
+  "hq": "Sydney, Australia",
+  "geos": [
+   "Australia",
+   "United States",
+   "United Kingdom"
+  ],
+  "apac": true,
+  "heldSince": "2011",
+  "stake": "minority",
+  "valuation": {
+   "amount": "A$170.3m (Macquarie's 28.6–29.75% stake, Mar 2026)",
+   "basis": "reported",
+   "url": "https://simplywall.st/stocks/au/software/asx-nxl/nuix-shares/ownership"
+  },
+  "summary": "ASX-listed forensic data-processing and investigative analytics software sold to regulators, law firms and enterprises. Macquarie Capital remains Nuix's largest holder (~29.75%) after selling down from ~76% at the Dec-2020 IPO; a legacy principal position awaiting full exit.",
+  "signals": [
+   {
+    "date": "2026-09-01",
+    "title": "ECP Asset Management exits Nuix stake",
+    "url": "https://filingreader.com/news-wire/sydney/2026-09-01/ecp-asset-management-exits-nuix-stake",
+    "publisher": "FilingReader"
+   },
+   {
+    "date": "2025-11-19",
+    "title": "UBS Group AG no longer substantial holder in Nuix",
+    "url": "https://filingreader.com/news-wire/sydney/2025-11-19/ubs-group-ag-no-longer-substantial-holder-in-nuix",
+    "publisher": "FilingReader"
+   },
+   {
+    "date": "2024-11-08",
+    "title": "Nuix rises from the ashes",
+    "url": "https://fnarena.com/index.php/2024/11/08/nuix-rises-from-the-ashes/",
+    "publisher": "FNArena"
+   }
+  ],
+  "exit": {
+   "status": "partial",
+   "note": "Sold ~A$565m of stock at Dec-2020 ASX IPO; retains 95.65m shares (29.75%) per 2025–26 substantial-holder data"
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "macquarie-capital-philtower",
+  "firm": "macquarie-capital",
+  "name": "PhilTower (merged PhilTower Consortium / MIDC)",
+  "slug": "philtower",
+  "industry": "infra",
+  "industryLabel": "Independent telecom tower company Philippines",
+  "hq": "Manila, Philippines",
+  "geos": [
+   "Philippines"
+  ],
+  "apac": true,
+  "heldSince": "2024-09",
+  "stake": "co-control",
+  "valuation": {
+   "amount": "US$700–800m (Nov 2024 report); sellers now seek ≥US$1bn",
+   "basis": "reported",
+   "url": "https://bnnbloomberg.ca/business/international/2024/11/15/macquarie-is-said-to-weigh-telco-tower-firm-sale-in-philippines"
+  },
+  "summary": "One of the Philippines' largest independent towercos (3,300+ towers, 2,100+ committed) created by the Sep-2024 merger of PhilTower and Meralco's MIDC. Macquarie Capital holds ~45% alongside Stonepeak, Meralco and Global Network; a sale process has stalled on valuation.",
+  "signals": [
+   {
+    "date": "2026-01-19",
+    "title": "PhilTower's $1 Billion Sale Plan Is Said to Stall on Valuation",
+    "url": "https://www.bloomberg.com/news/articles/2026-01-19/philtower-s-1-billion-sale-plan-is-said-to-stall-on-valuation",
+    "publisher": "Bloomberg"
+   },
+   {
+    "date": "2024-11-15",
+    "title": "Macquarie Is Said to Weigh Telco Tower Firm Sale in Philippines",
+    "url": "https://bnnbloomberg.ca/business/international/2024/11/15/macquarie-is-said-to-weigh-telco-tower-firm-sale-in-philippines",
+    "publisher": "BNN Bloomberg"
+   }
+  ],
+  "exit": {
+   "status": "process",
+   "note": "Sale explored since Nov 2024; stalled on valuation Jan 2026; Macquarie reported seeking a new sell-side advisor (Infralogic)"
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "macquarie-capital-sapia-ai",
+  "firm": "macquarie-capital",
+  "name": "Sapia.ai",
+  "slug": "sapia-ai",
+  "industry": "ai",
+  "industryLabel": "AI-driven inclusive hiring platform",
+  "hq": "Melbourne, Australia",
+  "geos": [
+   "Australia",
+   "United Kingdom"
+  ],
+  "apac": true,
+  "heldSince": "2022-11",
+  "stake": "minority",
+  "valuation": {
+   "amount": "A$17m Series A raised",
+   "basis": "reported",
+   "url": "https://hamiltonlocke.com.au/hamilton-locke-advises-on-macquarie-capitals-series-a-round-investment-in-sapia-ai/"
+  },
+  "summary": "Chat-based AI interviewing and candidate-assessment SaaS sold to large employers (Woolworths and others). Macquarie Capital's venture arm co-anchored the A$17m Series A with W23 and is supporting UK expansion.",
+  "signals": [
+   {
+    "date": "2022-11-24",
+    "title": "Hamilton Locke Advises on Macquarie Capital's Series A Round Investment in Sapia.ai",
+    "url": "https://hamiltonlocke.com.au/hamilton-locke-advises-on-macquarie-capitals-series-a-round-investment-in-sapia-ai/",
+    "publisher": "Hamilton Locke"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "macquarie-capital-wavenet",
+  "firm": "macquarie-capital",
+  "name": "Wavenet",
+  "slug": "wavenet",
+  "industry": "other",
+  "industryLabel": "UK managed IT and communications",
+  "hq": "Solihull, United Kingdom",
+  "geos": [
+   "United Kingdom"
+  ],
+  "apac": false,
+  "heldSince": "2021",
+  "stake": "majority",
+  "valuation": {
+   "amount": "£1.2bn+ (potential sale, Sep 2024 report)",
+   "basis": "reported",
+   "url": "https://bnnbloomberg.ca/business/international/2024/09/17/macquarie-weighs-stake-sale-in-16-billion-wavenet"
+  },
+  "summary": "UK's largest independent IT managed services provider (~£500m revenue, 2,000 staff, 22,000 clients) after the May-2024 merger with Daisy Corporate Services. Macquarie Capital Principal Finance has been majority owner since 2021 and remained largest shareholder post-merger.",
+  "signals": [
+   {
+    "date": "2024-09-17",
+    "title": "Macquarie Weighs Stake Sale in £1.2 Billion Wavenet",
+    "url": "https://bnnbloomberg.ca/business/international/2024/09/17/macquarie-weighs-stake-sale-in-16-billion-wavenet",
+    "publisher": "BNN Bloomberg"
+   }
+  ],
+  "exit": {
+   "status": "rumoured",
+   "note": "Stake sale weighed Sep 2024 with Houlihan Lokey; formal process flagged for 2025; no 2025–26 outcome found"
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "navis-caring-group",
+  "firm": "navis",
+  "name": "Caring Group",
+  "slug": "caring-group",
+  "industry": "other",
+  "industryLabel": "Tech-enabled home care, disability services",
+  "hq": "Australia",
+  "geos": [
+   "Australia"
+  ],
+  "apac": true,
+  "heldSince": "2023",
+  "stake": "unknown",
+  "valuation": {
+   "amount": "A$150m",
+   "basis": "reported deal value at Navis entry, 2023",
+   "url": "https://www.theweeklysource.com.au/navis-capital-looking-to-sell-home-care-business-caring-group/"
+  },
+  "summary": "Home care and disability provider (4,500 clients, 2,000 support workers, 40+ franchisees); Navis bought in 2023 for A$150m, added Dementia Caring (A$139m) and invested in technology. Revenue A$200m FY23 to A$327m FY25, EBITDA ~A$10m.",
+  "signals": [],
+  "exit": {
+   "status": "rumoured",
+   "note": "The Weekly Source (2026): Navis looking to sell; discussions early-stage, deal not expected before 2027"
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "navis-device-technologies",
+  "firm": "navis",
+  "name": "Device Technologies",
+  "slug": "device-technologies",
+  "industry": "other",
+  "industryLabel": "Medical device distribution ANZ, SEA",
+  "hq": "Sydney, Australia",
+  "geos": [
+   "Australia",
+   "New Zealand",
+   "Southeast Asia"
+  ],
+  "apac": true,
+  "heldSince": "2018-12",
+  "stake": "control",
+  "valuation": {
+   "amount": "A$700m",
+   "basis": "entry EV, 2018 (from Pemba Capital/HarbourVest)",
+   "url": "https://sandbox.mergr.com/navis-capital-partners-acquires-device-technologies-australia-pty"
+  },
+  "summary": "Australia's largest independent medtech distributor (Intuitive Surgical key principal); bolt-ons across ANZ/SEA under Navis. Mergermarket: early engagement with PE and strategic buyers, Morgan Stanley/Jefferies advising, EBITDA A$110-120m, value well above A$1bn.",
+  "signals": [],
+  "exit": {
+   "status": "process",
+   "note": "Mergermarket reports sale preparation with Morgan Stanley and Jefferies (report date not confirmed in this pass)"
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "navis-eton-solutions",
+  "firm": "navis",
+  "name": "Eton Solutions",
+  "slug": "eton-solutions",
+  "industry": "software",
+  "industryLabel": "Family office wealth-management software",
+  "hq": "Singapore / United States",
+  "geos": [
+   "Singapore",
+   "United States",
+   "Asia-Pacific"
+  ],
+  "apac": true,
+  "heldSince": null,
+  "stake": "unknown",
+  "valuation": {
+   "amount": null,
+   "basis": null,
+   "url": null
+  },
+  "summary": "Family-office platform software provider (AtlasFive) operating out of the US and Singapore; named by PEI as a post-Fund VIII-close Navis investment. Date and stake not confirmed in this pass.",
+  "signals": [],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "navis-moneythor",
+  "firm": "navis",
+  "name": "Moneythor",
+  "slug": "moneythor",
+  "industry": "fintech",
+  "industryLabel": "Digital banking personalisation software",
+  "hq": "Singapore",
+  "geos": [
+   "Singapore",
+   "Asia-Pacific",
+   "Middle East"
+  ],
+  "apac": true,
+  "heldSince": "2021-01",
+  "stake": "unknown",
+  "valuation": {
+   "amount": null,
+   "basis": "undisclosed",
+   "url": "https://media.dealstreetasia.com/stories/navis-capital-moneythor-223917"
+  },
+  "summary": "Singapore fintech (founded 2013) selling personalisation/engagement software to banks; Navis Fund VIII growth investment completed 18 Jan 2021. Reported 2026 wins include First Abu Dhabi Bank (Jan) and Saudi Investment Bank (Jul).",
+  "signals": [
+   {
+    "date": "2021-01-19",
+    "title": "Malaysia's Navis Capital invests in Singapore's fintech solutions firm Moneythor",
+    "url": "https://www.caixinglobal.com/2021-01-19/malaysias-navis-capital-invests-in-singapores-fintech-solutions-firm-moneythor-101652599.html",
+    "publisher": "Caixin Global / DealStreetAsia"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "navis-software-combined",
+  "firm": "navis",
+  "name": "Software Combined",
+  "slug": "software-combined",
+  "industry": "software",
+  "industryLabel": "Vertical software aggregation platform",
+  "hq": "Australia",
+  "geos": [
+   "Australia"
+  ],
+  "apac": true,
+  "heldSince": null,
+  "stake": "unknown",
+  "valuation": {
+   "amount": null,
+   "basis": null,
+   "url": null
+  },
+  "summary": "Australian software aggregation platform ('Software Combined Bidco') funded from Navis Asia Fund VIII per PEI/PitchBook. Entry date, stake and deal size were not visible in this pass; most SSG-relevant Navis asset.",
+  "signals": [],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "ta-associates-accion-labs",
+  "firm": "ta-associates",
+  "name": "Accion Labs",
+  "slug": "accion-labs",
+  "industry": "software",
+  "industryLabel": "Digital product engineering services",
+  "hq": "Pittsburgh, United States",
+  "geos": [
+   "United States",
+   "India"
+  ],
+  "apac": false,
+  "heldSince": "2020-03",
+  "stake": "majority",
+  "valuation": {
+   "amount": "US$1bn",
+   "basis": "valuation sought in reported exit exploration (Bloomberg via Private Equity Wire)",
+   "url": "https://www.privateequitywire.co.uk/ta-associates-exploring-1bn-accion-labs-exit-reports-say/"
+  },
+  "summary": "India-delivery-centred software product engineering firm (founded 2011) building digital products for enterprise and ISV clients. TA invested in 2020 and again in 2023; True North bought a US$93m minority from TA; TA is reported to be weighing a ~US$1bn sale.",
+  "signals": [
+   {
+    "date": "2020-03-26",
+    "title": "TA Associates Announces Strategic Growth Investment in Accion Labs",
+    "url": "https://www.businesswire.com/news/home/20200326005064/en/TA-Associates-Announces-Strategic-Growth-Investment-in-Accion-Labs",
+    "publisher": "Business Wire"
+   }
+  ],
+  "exit": {
+   "status": "rumoured",
+   "note": "Bloomberg-sourced report (Private Equity Wire, date not visible in results): TA working with an adviser on sale of its majority stake at ~US$1bn; may not result in a deal."
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "ta-associates-aptean",
+  "firm": "ta-associates",
+  "name": "Aptean",
+  "slug": "aptean",
+  "industry": "software",
+  "industryLabel": "Vertical ERP and supply-chain software",
+  "hq": "Alpharetta, United States",
+  "geos": [
+   "United States",
+   "Europe",
+   "Global"
+  ],
+  "apac": false,
+  "heldSince": "2019-02",
+  "stake": "unknown",
+  "valuation": {
+   "amount": "US$3.55bn",
+   "basis": "reported valuation, Oct 2022 round (TA lead, Insight Partners)",
+   "url": "https://www.techzine.eu/news/infrastructure/91172/insight-partners-acquires-stake-in-3-6-billion-software-firm-aptean"
+  },
+  "summary": "Acquisitive vertical ERP, supply-chain and compliance software vendor for mid-market manufacturers and distributors. TA co-led the 2019 buyout with Vista, became lead shareholder in 2022; Insight, Charlesbank and Clearlake (Jul 2024) are co-investors.",
+  "signals": [
+   {
+    "date": "2024-07-01",
+    "title": "Aptean Secures Strategic Investment from Clearlake Capital Group",
+    "url": "https://www.aptean.com/en-GB/resources/pressroom/press-release/aptean-secures-strategic-investment-from-clearlake-capital-group",
+    "publisher": "Aptean"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "ta-associates-atria-convergence-technologies",
+  "firm": "ta-associates",
+  "name": "Atria Convergence Technologies (ACT Fibernet)",
+  "slug": "atria-convergence-technologies",
+  "industry": "infra",
+  "industryLabel": "Fibre broadband ISP, India",
+  "hq": "Bengaluru, India",
+  "geos": [
+   "India"
+  ],
+  "apac": true,
+  "heldSince": "2016",
+  "stake": "co-control",
+  "valuation": {
+   "amount": "US$1.2bn",
+   "basis": "EV of lapsed Partners Group 75% deal, 2021; revived 2026 process reportedly targets ~US$1bn EV",
+   "url": "https://tele.net.in/partners-group-to-acquire-about-75-per-cent-stake-in-act-fibernet-for-900-million/"
+  },
+  "summary": "India's largest non-telco wired broadband provider (~5% share, 30+ cities) selling fibre internet to homes and SMEs. TA and True North hold 94.66% together after a US$500m 2016 deal; a decade-old holding now back in a sale process.",
+  "signals": [],
+  "exit": {
+   "status": "process",
+   "note": "2026: True North and TA appointed Nomura and Ambit to sell ACT at ~US$1bn EV, IMs already sent (Communications Today; exact date not visible in results). Partners Group's 2021 deal at ~US$1.2bn EV collapsed."
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "ta-associates-netsmart-technologies",
+  "firm": "ta-associates",
+  "name": "Netsmart Technologies",
+  "slug": "netsmart-technologies",
+  "industry": "healthit",
+  "industryLabel": "EHR for behavioural and post-acute care",
+  "hq": "Overland Park, United States",
+  "geos": [
+   "United States"
+  ],
+  "apac": false,
+  "heldSince": "2018",
+  "stake": "co-control",
+  "valuation": {
+   "amount": "US$5bn+ (incl. debt)",
+   "basis": "valuation targeted in reported sale exploration, Jan 2024; ~US$250m EBITDA",
+   "url": "https://www.aol.com/news/exclusive-netsmarts-owners-explore-sale-190517879.html"
+  },
+  "summary": "EHR, HIE and telehealth software for behavioural health, IDD, child and family services, home health and hospice providers. TA bought Allscripts' stake alongside GI Partners in 2018; owners hired Goldman Sachs and William Blair to explore a US$5bn+ sale.",
+  "signals": [
+   {
+    "date": "2024-01-18",
+    "title": "Exclusive-Netsmart's owners explore a sale valuing it at $5 billion -sources",
+    "url": "https://www.aol.com/news/exclusive-netsmarts-owners-explore-sale-190517879.html",
+    "publisher": "Reuters"
+   }
+  ],
+  "exit": {
+   "status": "process",
+   "note": "Jan 2024: GI Partners and TA exploring sale at >US$5bn incl. debt with Goldman Sachs and William Blair; no completed transaction surfaced in 2025–26 results."
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "ta-associates-nous-infosystems",
+  "firm": "ta-associates",
+  "name": "Nous Infosystems",
+  "slug": "nous-infosystems",
+  "industry": "software",
+  "industryLabel": "Digital IT services, India delivery",
+  "hq": "Bengaluru, India",
+  "geos": [
+   "United States",
+   "India",
+   "Europe"
+  ],
+  "apac": true,
+  "heldSince": "2025-03",
+  "stake": "unknown",
+  "valuation": {
+   "amount": null,
+   "basis": null,
+   "url": null
+  },
+  "summary": "Mid-size digital IT and software engineering services provider with India delivery centres. TA's 2025 strategic investment is meant to fund new verticals and scaled service offerings; terms undisclosed.",
+  "signals": [
+   {
+    "date": "2025-03-20",
+    "title": "Shardul Amarchand Mangaldas advises TA Associates on strategic investment in Nous Infosystems to support continued growth and innovation",
+    "url": "https://www.amsshardul.com/shardul-amarchand-mangaldas-advises-ta-associates-on-strategic-investment-in-nous-infosystems-to-support-continued-growth-and-innovation/",
+    "publisher": "Shardul Amarchand Mangaldas"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "ta-associates-oxane-partners",
+  "firm": "ta-associates",
+  "name": "Oxane Partners",
+  "slug": "oxane-partners",
+  "industry": "fintech",
+  "industryLabel": "Private credit portfolio technology",
+  "hq": "London, United Kingdom",
+  "geos": [
+   "United Kingdom",
+   "United States",
+   "India"
+  ],
+  "apac": false,
+  "heldSince": "2026-09",
+  "stake": "unknown",
+  "valuation": {
+   "amount": "US$200–250m",
+   "basis": "reported potential EV, 2026",
+   "url": "https://alternativecreditinvestor.com/2026/07/30/ta-associates-backs-private-credit-tech-provider-oxane/"
+  },
+  "summary": "FCA-regulated private-credit technology and managed-services firm (Oxane Panorama platform) serving 100+ banks and private debt funds, with large Gurgaon/Hyderabad delivery teams. TA's growth investment signed Jul 2026, closed 15 Sep 2026.",
+  "signals": [
+   {
+    "date": "2026-07-30",
+    "title": "TA Associates backs private credit tech provider Oxane",
+    "url": "https://alternativecreditinvestor.com/2026/07/30/ta-associates-backs-private-credit-tech-provider-oxane/",
+    "publisher": "Alternative Credit Investor"
+   },
+   {
+    "date": "2026-07-29",
+    "title": "Oxane Partners Announces Strategic Growth Investment From TA",
+    "url": "https://www.businesswire.com/news/home/20260729931521/en/",
+    "publisher": "Business Wire"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "ta-associates-unit4",
+  "firm": "ta-associates",
+  "name": "Unit4",
+  "slug": "unit4",
+  "industry": "software",
+  "industryLabel": "Cloud ERP for services organisations",
+  "hq": "Utrecht, Netherlands",
+  "geos": [
+   "Europe",
+   "United Kingdom",
+   "North America"
+  ],
+  "apac": false,
+  "heldSince": "2021",
+  "stake": "majority",
+  "valuation": {
+   "amount": "US$2bn+",
+   "basis": "entry EV, Mar 2021 (TA majority, Partners Group minority); sale being marketed off €150–160m EBITDA",
+   "url": "https://www.unquote.com/benelux/official-record/3023315/ta-associates-partners-group-buy-unit4-in-usd2bn-deal"
+  },
+  "summary": "People-centric cloud ERP, HCM and FP&A suite for mid-market services, public-sector and non-profit organisations. TA bought control from Advent in 2021; TA and Partners Group have mandated Arma Partners to run a sale.",
+  "signals": [
+   {
+    "date": "2025-11-28",
+    "title": "New research, vertical focus and migration momentum – Unit4 EMEA Analyst Summit 2025",
+    "url": "https://www.techmarketview.com/news/archive/2025/11/28/new-research-vertical-focus-and-migration-momentum-unit4-emea-analyst-summit-2025",
+    "publisher": "TechMarketView"
+   }
+  ],
+  "exit": {
+   "status": "process",
+   "note": "TA and Partners Group mandated Arma Partners on a sale, marketed off €150–160m EBITDA (9fin; exact date not visible in results); €875m 2028 TLB outstanding."
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "ta-associates-vastu-housing-finance",
+  "firm": "ta-associates",
+  "name": "Vastu Housing Finance",
+  "slug": "vastu-housing-finance",
+  "industry": "fintech",
+  "industryLabel": "Tech-led affordable housing lender",
+  "hq": "Mumbai, India",
+  "geos": [
+   "India"
+  ],
+  "apac": true,
+  "heldSince": "2024-07",
+  "stake": "unknown",
+  "valuation": {
+   "amount": "₹10,000 crore (~US$1.2bn)",
+   "basis": "reported valuation at TA entry, Jul 2024 (US$400m deal incl. US$75m primary)",
+   "url": "https://dealstreetasia.com/stories/ta-associates-vastu-housing-finance-403548"
+  },
+  "summary": "Proprietary-tech affordable housing, small-business and used-vehicle lender to self-employed borrowers in semi-urban India (230+ branches, 13 states). TA led a ~US$400m growth round in 2024; Prosus later took 8.4%. ICRA AA- (Stable).",
+  "signals": [
+   {
+    "date": "2024-07-11",
+    "title": "TA Announces Strategic Growth Investment in Vastu Housing Finance",
+    "url": "https://www.ta.com/news/ta-announces-strategic-growth-investment-in-vastu-housing-finance/",
+    "publisher": "TA Associates"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "ta-associates-veracode",
+  "firm": "ta-associates",
+  "name": "Veracode",
+  "slug": "veracode",
+  "industry": "software",
+  "industryLabel": "Application security testing SaaS",
+  "hq": "Burlington, United States",
+  "geos": [
+   "United States",
+   "Europe",
+   "Global"
+  ],
+  "apac": false,
+  "heldSince": "2022-03",
+  "stake": "majority",
+  "valuation": {
+   "amount": "US$2.5bn",
+   "basis": "entry valuation, Mar 2022",
+   "url": "https://www.businesswire.com/news/home/20220315005831/en/Veracode-Announces-Significant-Growth-Investment-from-TA-Associates"
+  },
+  "summary": "Cloud application-security platform (SAST, DAST, SCA, ASPM, AI-assisted Veracode Fix) sold to enterprise dev and security teams. TA took majority from Thoma Bravo (which kept a minority) at US$2.5bn in 2022; new ACV reportedly +81% in 2025.",
+  "signals": [
+   {
+    "date": "2025-03-20",
+    "title": "Veracode Achieves Record Year with Significant Growth and Strategic Expansion",
+    "url": "https://www.businesswire.com/news/home/20250320889134/en/Veracode-Achieves-Record-Year-with-Significant-Growth-and-Strategic-Expansion",
+    "publisher": "Business Wire"
+   },
+   {
+    "date": "2022-03-15",
+    "title": "Veracode Announces Significant Growth Investment from TA Associates",
+    "url": "https://www.businesswire.com/news/home/20220315005831/en/Veracode-Announces-Significant-Growth-Investment-from-TA-Associates",
+    "publisher": "Business Wire"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "ta-associates-viridian-financial-group",
+  "firm": "ta-associates",
+  "name": "Viridian Financial Group",
+  "slug": "viridian-financial-group",
+  "industry": "markets",
+  "industryLabel": "Diversified wealth advice and lending",
+  "hq": "Melbourne, Australia",
+  "geos": [
+   "Australia"
+  ],
+  "apac": true,
+  "heldSince": "2025-06",
+  "stake": "unknown",
+  "valuation": {
+   "amount": null,
+   "basis": null,
+   "url": null
+  },
+  "summary": "Australian advice-led financial services group (Viridian Advisory, Infinity Capital Solutions, Smartmove Lending) with ~A$16bn FUM and 15,000+ clients. TA's APAC team (Edward Sippel, Lily Xu) joined the board; deal signed Jun 2025, close expected Q3 2025.",
+  "signals": [
+   {
+    "date": "2025-06-29",
+    "title": "Viridian Financial Group Welcomes Strategic Growth Investment from TA Associates to Expand Leading Diversified Financial Services Business in Australia",
+    "url": "https://www.businesswire.com/news/home/20250629161172/en",
+    "publisher": "Business Wire"
+   }
+  ],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
+ },
+ {
+  "id": "ta-associates-yarra-capital-management",
+  "firm": "ta-associates",
+  "name": "Yarra Capital Management",
+  "slug": "yarra-capital-management",
+  "industry": "markets",
+  "industryLabel": "Australian active asset manager",
+  "hq": "Melbourne, Australia",
+  "geos": [
+   "Australia"
+  ],
+  "apac": true,
+  "heldSince": null,
+  "stake": "unknown",
+  "valuation": {
+   "amount": null,
+   "basis": null,
+   "url": null
+  },
+  "summary": "Independent Australian equities and fixed income manager created through the TA-backed management buyout of Goldman Sachs Asset Management's Australian business; later absorbed Nikko AM Australia and Tyndall funds. TA SVP Lily Xu sits as board observer.",
+  "signals": [],
+  "exit": {
+   "status": "none",
+   "note": ""
+  },
+  "firstSeen": "2026-10-06T00:58:19Z"
  },
  {
   "id": "tpg-airtel-money",

@@ -1,12 +1,12 @@
 {
  "pull": {
-  "at": "2026-10-06T00:13:25Z",
-  "added": 2
+  "at": "2026-10-06T00:58:19Z",
+  "added": 122
  },
  "counts": {
-  "deals": 473,
-  "targets": 25,
-  "portcos": 36
+  "deals": 595,
+  "targets": 37,
+  "portcos": 69
  },
  "window": 90
 }
