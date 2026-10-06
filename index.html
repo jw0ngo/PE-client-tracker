@@ -176,7 +176,7 @@ a { color: inherit; }
     <div class="empty"><b>Loading announcements.</b><br>Each one will show the event, the thesis it fits, and the SSG pitch it opens.</div>
   </div>
   <p class="foot" id="footNews">Priority is the one list: the latest news relevant to SSG, APAC first. An APAC item is in whenever it carries an event or a focus area; a global item only when it is live or signed and in a focus area, or a fund close, a new platform or a senior hire. The rest is kept behind the link at the bottom; the page carries the last 90 days and the archive in the repo keeps everything. Event, thesis and APAC are read from the headline by keyword; the matched words sit under each tag. <span id="footTriage">Pursue, Watch, Dismiss and notes are saved and shared with anyone who can open this page.</span></p>
-  <p class="foot" id="footPortcos" hidden>Portcos are the firm's current portfolio companies that matter to SSG: focus-area companies first, APAC-weighted, and within that the longest held at the top, because four or more years is where a sponsor starts planning the exit. A reported sale or IPO process is tagged on the card. Tap a card for the business in a sentence and its five latest headlines, which are the hand-kept signals plus anything in the news feed that names the company. Valuations are estimates with their basis beside them.</p>
+  <p class="foot" id="footPortcos" hidden>Portcos are the firm's current portfolio companies that matter to SSG: focus-area companies first, APAC-weighted, and within that the longest held at the top, because four or more years is where a sponsor starts planning the exit. A reported sale or IPO process is tagged on the card. Tap a card for the business in a sentence and its five latest headlines, which are the hand-kept signals plus a daily news search on the company's own name. Valuations are estimates with their basis beside them.</p>
   <p class="foot" id="footTargets" hidden>Targets are Jobi's candidates, not anything Warburg Pincus has said: companies in a focus area that look like what the firm buys, with the signals that make the case. A live process is reported by the press; everything else is a watch. Priority puts sponsor-owned companies first, longest hold at the top: a fund four or more years in is the seller most likely to run a process.</p>
 </div>
 <div class="toast" id="toast"></div>
@@ -449,7 +449,8 @@ function toast(msg) {
 }
 
 function classified() {
-  return items.filter((i) => (i.firm || FIRMS[0].id) === firm.id).map((i) => {
+  // A story found by a portco's own news search belongs in Announcements only if it names the firm.
+  return items.filter((i) => (i.firm || FIRMS[0].id) === firm.id && !(i.portco && !firm.match.test(`${i.title} ${i.summary || ''}`))).map((i) => {
     const t = triage[i.id] || {};
     return { ...i, ...classify(firm, i), status: t.status || 'new', note: t.note || '' };
   });
@@ -565,7 +566,7 @@ const sinceLabel = (p) => { if (!p.heldSince) return ''; const [y, m] = String(p
 const portcoRe = (p) => new RegExp(`\\b${escRe((p.name || '').replace(/\s*\((.*?)\)\s*/g, ' ').replace(/,?\s+(inc|ltd|limited|pte|plc|llc|corp|co|group|holdings?)\.?$/i, '').trim())}\\b`, 'i');
 function portcoNews(p) {
   const re = portcoRe(p);
-  const fromFeed = re.source.length > 6 ? items.filter((i) => re.test(`${i.title} ${i.summary || ''}`)).map((i) => ({ date: i.date, title: i.title, url: i.url, publisher: i.publisher, feed: true })) : [];
+  const fromFeed = items.filter((i) => i.portco === p.slug || (re.source.length > 6 && re.test(`${i.title} ${i.summary || ''}`))).map((i) => ({ date: i.date, title: i.title, url: i.url, publisher: i.publisher, feed: true }));
   const all = [...(p.signals || []), ...fromFeed].filter((g) => g.date && !Number.isNaN(Date.parse(g.date))).sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
   const kept = [];
   for (const g of all) {
