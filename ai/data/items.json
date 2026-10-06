@@ -60,6 +60,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "04044c5d531a",
+  "theme": "agents",
+  "title": "Constructor Launches Agentic Checkout, Powered by Stripe--Letting Shoppers Go From Product Discovery to Purchase Within a Single AI Agent Experience",
+  "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQTVdxcEZJcG5VVFh6TEZJZVhQQWRKS0kycHFPR0JRUXVzNGVQSDhmRjB2VmJ2WnpZN2hoYTFOSVEyajBwZ1BXSmY0NjBwdDRwZVA1dlphN183RjVfaVdGQ09IaGVWQm95cUVDSVhZRERIVFRCLVZwSkZ6dlhITFVmNkNzS2t2NTdiakhUZDJMS3l6QmY1VllrX0pHUFc4ZFlUX2tvNUNVN0RYM0tlZExjUTFHaUpEdEFpY2ZScndlMDFidjlqUEdScm1aQUZJb2ZGMk9CZWFlZjIwa0Q3UGpnVERwTmpSN0ZTWVQwTFRpN1Z4T1c2c0N4OWhtOGJBSFpjT09hMG5Vbk51bTJGNjdHdjk2THZueXUxR2tFNFpRVnAtSGctNUJTYg?oc=5",
+  "date": "2026-10-05T12:30:00.000Z",
+  "summary": "",
+  "publisher": "PR Newswire",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "044ef2541d35",
   "theme": "labs",
   "title": "PitchBook: Anthropic’s Leaked Financials Reflect Fast Growth, but Not a $2 Trillion Valuation",
@@ -118,6 +130,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "053d3f1abb16",
+  "theme": "infra",
+  "title": "Infineon Technologies (XTRA:IFX) Heads To Data Centre World Asia 2026",
+  "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMXd1NjR1WDhERE8xWnROZnZJTlk4Q0JOaTRUMENlOGVCZW5ZckFXbzV1ZUY0SktoUElRcUhDTThrVjdMeTJ4RTZuSjVoWktPQ0VoczlMT3hvUE5FblA4Tkt1SWZPVXFEaVB4ekVoZHV6NlZGeE9SN2F3czZ0ZEdVaGRJbEMtZmJRSlFYRXE2S1Q1NHRCbUNqT0xjQV9LVnRMNXc?oc=5",
+  "date": "2026-09-30T15:08:39.000Z",
+  "summary": "",
+  "publisher": "Yahoo Finance",
+  "source": "power",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "056dee1067df",
@@ -214,6 +238,18 @@
   "source": "apac",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "08bcf9465dba",
+  "theme": "infra",
+  "title": "AI Chip Rally Broadens as Micron's Outlook, Lower Yields Lift Nvidia, AMD and Peers",
+  "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE96bS1WbUVMM3VreHA2ZE53UUQtV0JFaGViakdDUk50YURXOGVONUVndW4tY3FvYmZrUWpicHZoNWVscVZ1dG1VdU1xeEM2akctQXBCV3hEb0RXLXhaZkpWRHZmLUpiU3dfQTdUY1pfUTdWZEE5TWc?oc=5",
+  "date": "2026-10-02T18:34:00.000Z",
+  "summary": "",
+  "publisher": "finance.biggo.com",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "08e00a6f13d7",
@@ -348,6 +384,18 @@
   "firstSeen": "2026-10-05T08:01:27.460Z"
  },
  {
+  "id": "0e33ebec2227",
+  "theme": "labs",
+  "title": "OpenAI apologises for Australian government website hack, pledges to rebuild trust",
+  "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOeFF6OGVfVWdkd1FLdW84d0stdzF3Qk9fbWpBZGpMWC1FX3VlWU1sSWJYV0NPNVozNWtaUFhWWnZ6SmFHekN1RmhDcWE5amFPay1PUG1QX2JPUlZXb0N6Y0JRd0JKSngxbWFxMU5qWlBTbjRzd2dPNFU5ZkdQLV9HY0pvNnFyMERJeUtfYXpEZjNoRm92akFZLXhGVzhMWEpHXzM2d0FNbXpzbE9yLWVOaW1qNzhCZTJSQWs2Q0dXdTVodWlqeGxQRWEzdVV3bVpSb1dHckFvTzNEVU0xczBTTTcwZGMydw?oc=5",
+  "date": "2026-09-29T04:28:00.000Z",
+  "summary": "",
+  "publisher": "The Business Times",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "0e4b12ea9ec8",
   "theme": "agents",
   "title": "OpenClaw Foundation is launching a free, open-source enterprise control plane for AI agents",
@@ -370,6 +418,30 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "100175f356ad",
+  "theme": "agents",
+  "title": "The Media Shop and PubMatic Launch Southeast Asia’s First Agentic Luxury Campaign",
+  "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOYldaaDctUGhCWTg2MG1oQWlVNm1PUHhtVW5uTGxZT3RCU3cwWEdLczRfTEVEZENTMGk5b05GNFdUNU9Pa3RtTkF3MV9ha3dSVlVIQmVJekdJZk9RWjhEVmJ3djVybkR3MC1WN00yR1RVeGp3UjFyZHdhQ0RWblRpV244VHVJVzZVSjItOHhjQXJjamNqbXJ1WDFQVWc1OTh4NkZ5SHNVVGRRbm1LUzdhbTNsQllvSm80Q2x0UEJJMXMtSGRM?oc=5",
+  "date": "2026-10-05T12:11:27.000Z",
+  "summary": "",
+  "publisher": "exchangewire.com",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
+  "id": "1142a22e88c8",
+  "theme": "infra",
+  "title": "Taiwan Semiconductor Stock Hits 52-Week High — What's Going On?",
+  "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcHVVVWR0WEFkdTdlVXFSUXJDV2lPQkpMdTFsTjB2NWJqTUJtakVBRXhvMkkyM0JDUE01a2VXMS1ZSXRpVGhyaC1FOWJ3dnFzS0VwMm9UTGZHbkh1MEh3NXlUR0JiZFF5SHpDTGd0ekV1ckR0QlJZUkg0WFdwWU1wR2xHa19WSEQzR0dscUJPV3dGVUFEdDBSNUU0bmtmUklOX3h1dlFva0tRTDR4MVliZ0N6R1R2bTd2Uk5j?oc=5",
+  "date": "2026-10-05T12:17:28.000Z",
+  "summary": "",
+  "publisher": "TradingView",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "1145b2bd7ff7",
@@ -406,6 +478,18 @@
   "source": "apac",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "122717185922",
+  "theme": "agents",
+  "title": "Ignite UI Enterprise MCP Toolchain for AI Launched by Infragistics",
+  "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPMFV5bm5KRHRmdExyVk0xRklLQVZQcERfZDJyeVRSZWJaNmRXekZQMmZPVXIySFlTbzJXRTNjMk9JSW9Vc1NuS043M1BiUVE1d1lsNGxFN09aQXdkNy1fQXRyRG8yMzdFdDB0ZjVtN29raXhqV3F1Tm41NEJfME9yZTQ4bURxME1tRHg3cm5HZTg1alppSDkyYlFxREp2cWlGSGc?oc=5",
+  "date": "2026-10-05T21:04:06.000Z",
+  "summary": "",
+  "publisher": "App Developer Magazine",
+  "source": "protocols",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "124fe2d06524",
@@ -466,6 +550,18 @@
   "source": "apac",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "13f2a25afd78",
+  "theme": "infra",
+  "title": "3 Data Center Stocks Facing The AI Power And Regulation Squeeze",
+  "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPUjh3WmVfRlAtY29sTm1ReUlCbFo0ZnJPQWlTaURDS2ZYU0RTcnlnVnFVYkZqN2NXZ3hfWDM1b3Rib3VKSFl4Q0VzX2lSZmNERnlUejd0a293U182aE84el9UTlJ0ZC16RXl3b1o0MmhvczAxTEJVNFUxazY5cEFxVmROSlNJVU92N2hfTXVJQjYtSTByRldOc0tjVnlmc3MydWFEOWc1RWlRTndBRjYxRXlHMEU3RkdYaTZnbEtIRnlzSkxfbU9UQl9UUlhmRG54aEUxbmItQ1jSAd4BQVVfeXFMTXlyMGZNSjdQSGZDOVV4RW5NejlINUpVUjFueVRCaUQyd3NaOU05eWpGVENrZWFxaFFqN09fc0VMVEF2ZFN6eUJJeHFIZTRKMk5lZmI0RlpKdTI0Ri1DelQ0c29ZQkt1d0ZGLXhZZXFmNG9hT0tTclJYSGlDWnoyeVFZcVRqcjU0YkpUR05tbnZUcmJNTEpOT1drNFdEaTdzdnlXWEpndERFcjUtcjE5MnpoMVpkT0pJMlhUTUZlNG5WSnBucFBJVUtndGFwRHYyMW5iOEkwTFhkbWR1Tk53?oc=5",
+  "date": "2026-10-03T07:55:28.000Z",
+  "summary": "",
+  "publisher": "Simply Wall Street",
+  "source": "power",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "1403bf82a4dd",
@@ -588,6 +684,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "1a0ffe5e61b3",
+  "theme": "agents",
+  "title": "Zimyo Launches 3.0 With Zim, Spearheading the Shift to Agentic AI in HR",
+  "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcll5TlF4QjlWVE5TNVFTQ3I1MlprVVB0eUZnd0xtcGdPcnM5anYzUWJwS0ZIZXdLdWE4UG0wUy1kaXFsMG1YeUJaUXNXU2NLZndmS3V6b3lYR09MWG9ETEloekEtSU5oSEw3SFZleFJWZlFTUGtJa2s2cm9Lc0txN2V1QUFZTFFtb0c0NUxIWVFfZzFCMjVKbkRqeUpld2sxemNldTl6VDVKX2E5azlMSERNSdIBswFBVV95cUxQcll5TlF4QjlWVE5TNVFTQ3I1MlprVVB0eUZnd0xtcGdPcnM5anYzUWJwS0ZIZXdLdWE4UG0wUy1kaXFsMG1YeUJaUXNXU2NLZndmS3V6b3lYR09MWG9ETEloekEtSU5oSEw3SFZleFJWZlFTUGtJa2s2cm9Lc0txN2V1QUFZTFFtb0c0NUxIWVFfZzFCMjVKbkRqeUpld2sxemNldTl6VDVKX2E5azlMSERNSQ?oc=5",
+  "date": "2026-10-05T09:33:21.000Z",
+  "summary": "",
+  "publisher": "TheWire.in",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "1a5178d295d8",
   "theme": "infra",
   "title": "South Korea Integrates Homegrown AI Chips and Cloud — KACI Unveils Industrial Field Validation Results",
@@ -648,6 +756,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "1cf5aad42a62",
+  "theme": "infra",
+  "title": "DayOne plans 200MW data center in Japan’s Imari City",
+  "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5GMWtFSm51dW85TFJHRW9iaXBLaW9sUnFWQm5DWmxrZ3RGaHliUVNUUGR6Zkc1d2tMNTNGQWlxdVRhMGtULWRBdmMzZG84eVZVOEpMWjBoZHY4N0FVNUJHSENzMk5LR0h2NDNSWTlIejdRWUd4WjRj?oc=5",
+  "date": "2026-10-05T02:39:00.000Z",
+  "summary": "",
+  "publisher": "W.Media",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "1cfafb4f19e5",
   "theme": "agents",
   "title": "OpenAI Launches Dots, Always-On AI Agents Inside ChatGPT",
@@ -658,6 +778,30 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "1d78f3f800ab",
+  "theme": "capital",
+  "title": "German robotics startup RobCo hits $1B valuation: WSJ (BOTZ:NASDAQ)",
+  "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNWHhBa3ItNXhyakxQalRVTlc0NmJNYnQ0Nmp4WVpmX051NEY2SDUzMV84VFlPdGc3WnE1YVhpYWl1SzZvaXFoQUdmbGsyemZxNjczOXl3ZEU2cVMzYm55WVFGRkY1Uk1tTFRDRXZPN1k1cnJvMEh3RDhDNWZVcFdEOXIweEEzWEhFLXYwQkF2QmpUaGs?oc=5",
+  "date": "2026-10-05T08:54:35.000Z",
+  "summary": "",
+  "publisher": "Seeking Alpha",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
+  "id": "1d8a0e308257",
+  "theme": "labs",
+  "title": "OpenAI launches Dots, its bubbly agentic avatar",
+  "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOekZiSGZ1NGF6RnhoMlYxaEVocWlzMkJGazhjOFB3SnNzaFl1cmNkQTJabkoyME9QWUM0M2RsVXJiVjYzLTIxSC1rb2g3MGVFQlIzX2ZGN2ZTakpOdDNTOWpMMWs5THg3M0pyUU0tdmxTSkdUQUcwbDZDXzdUTHRzS0gxRFJJVTVS?oc=5",
+  "date": "2026-09-29T17:17:15.000Z",
+  "summary": "",
+  "publisher": "TechCrunch",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "1dd3ed4640b9",
@@ -708,6 +852,30 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "1f9c1e3a494f",
+  "theme": "agents",
+  "title": "AI agents tried to hack Canadian government website, research firm says",
+  "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUmNiT1Y4eWRXQmYwTXdWR1FGZl9yYXVISGI1NWtkdnJfa2JsUUt5NUYtQVVrTjBYZ0RvWHlFOThJWkk4cE9fSE5aY1EyUGdiLUNQYkRlQ3lSOEZteklGekZjXzVFU1NWWjBULVh1bHdRTEVzY01KQURRN3lBazdPRE9TdldLZkptYjBJbE1PeExtRTFyQ0cwa2czQ0hsZWhBVGJ1R2s2enM?oc=5",
+  "date": "2026-10-01T03:15:00.000Z",
+  "summary": "",
+  "publisher": "The Straits Times",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
+  "id": "1fc82aa7dd91",
+  "theme": "agents",
+  "title": "Legit Security launches agentic remediation for open-source dependency vulnerabilities",
+  "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQUVZ2VU85cVU5eUVaeGlCdkhtd1hBc1Y5SVBQVTZVZUhKMEpWQVQxWFhCZXJJSUdERGVDT0Z0SkROM0tTRU1xczAwY2ZTLVZpMjl3dWh0NlI1Mk1WMWxvSlQyX1JDdDk2QmpzS1QzMWVFdm1odkJaNG9lVElZdDkzX2h3N0FQVUo5WF91TVpSNVNVNkgxUzcxVWhlZ3hwR0lLZHJKbXJlWU5jQQ?oc=5",
+  "date": "2026-09-30T14:44:23.000Z",
+  "summary": "",
+  "publisher": "DevOps.com",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "203ff1d460a8",
   "theme": "labs",
   "title": "OpenAI launches Dots AI agents amid safety scrutiny",
@@ -718,6 +886,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "213d7d070651",
+  "theme": "agents",
+  "title": "Zimyo Launches 3.0 With Zim AI to Bring Agentic AI Into HR Workflows",
+  "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUm1MUVNjbVdWSmZiWUh0WmdZSTRBcndTQjlQZWljOHh2TlZSME9uR3BuUDhMSlVpMnpCZGRyTFkxRDBLYzNvd0VQa1Axb3M2LXRHdGtKZk5NaExGZXFfNk9wRVlqblA5cHV1b3FuRXlTYVJOUEtLTEctX1hvUlV4alZBdGhQX3FsV04zUTduUVN5dHV4bFFaM2hfb0ZWV3FISy1INWx3?oc=5",
+  "date": "2026-10-05T11:48:17.000Z",
+  "summary": "",
+  "publisher": "konsulteer.com",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "21722866188e",
@@ -768,6 +948,30 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "23055a2a6498",
+  "theme": "agents",
+  "title": "AMD Launches Ross Agentic AI to Automate Embedded Hardware and Software Engineering",
+  "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQb3FKR0h3S1l2N1NHbWNCY0hyWnBjR2FfWlJlSHJsNlFuY3gzOVpmZ08zN0JHdmdPS1o2WkRiM3dMSktKUkRqdjNSQWNwNUlkQVhUY2RLekhQdXY2d1hfdXZGa0pGZGRQc2xqanVnZVNBWU5qZDZ2QksxWTFYRl8yME9zdUlvN2NQZGxucVI5MXMyNlA1Y2ZmSHl4QlV2d0xtaU01R1ZOZGpNZ203djFjandCUVVDak5wVXc?oc=5",
+  "date": "2026-10-02T11:02:37.000Z",
+  "summary": "",
+  "publisher": "konsulteer.com",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
+  "id": "237e44a893f4",
+  "theme": "infra",
+  "title": "Jabil forecasts full-year results above estimates on AI data center demand",
+  "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPbkJoOVB4X0VsUm5vX0tmQWh4QVVwaDJaamlOQi1BMlI2TzRGd3ZSa000Tm5QbDZDeDZtY0lCaUhMaHltY0pmNk1IQ2tUVmxqRTh1dEpYWGk4d0dDM1M3d1NMSnlxQXB1SE1iWTdNcVRnSmRLaGRMbmN4bEVMeHZubFdpY0NqeDJjdGthSVQtSHM0TzQ3Sl9hUHR5cFYxcHFKdVNZMWRIMUlNVE5odXoxXzZ0V0cwNE0?oc=5",
+  "date": "2026-09-30T12:08:22.000Z",
+  "summary": "",
+  "publisher": "Reuters",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "23a8fed63584",
   "theme": "capital",
   "title": "Singapore's OneByZero raises $20M Series A from Jungle Ventures for enterprise AI",
@@ -804,6 +1008,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "25ff5616892d",
+  "theme": "labs",
+  "title": "OpenAI announces ‘dots’ agent after scrapping launch of new AI model over safety concerns",
+  "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUjJKXy1xWWNFX3hLZktkaW5tZ2Q3cHoyZ3FnTDRHM2hQSlFjRVJ5X253RUNmZTg5VjJtOUFnMlhpZHN5VU5meVFGTWRFbWprUnBrb3pnMjl1bjJIUWdjQ2ZXa0w5V2g0X3E4ODloa0FmTXc3MTlHMDBQZFh6LXpYbTUwbVBYcTZSMEh1MXRQbFdyRFdBbzhPbmFn?oc=5",
+  "date": "2026-09-30T16:13:00.000Z",
+  "summary": "",
+  "publisher": "The Guardian",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "26306a5c9bda",
   "theme": "capital",
   "title": "South Korea's Elice Group Targets approximately $742 Million Valuation in KOSDAQ IPO, Joining the 1 Trillion Won Club",
@@ -838,6 +1054,30 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "26fce4a9f063",
+  "theme": "infra",
+  "title": "Singapore’s DayOne Files for US IPO Joining AI Data Center Rush",
+  "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZG9YTmdPWWFVWWp0SVF6LVNINV9sclBFUWV5d3NCXzktUUtTUkVBczUtR2UyQnVNQTdIemNRQmUxUWRhakhtVklrcEYzdkxOZ1BaLUpnUWpDN0hJWC1pSUMwUUJlYlhUUnQ4TjB5SmRBMUNKNDNwMjlIb0FsRlhSaWNPZ2RDQW1kSlEyZ1E2SnVLWVMtdVdNZ0FucGhsOUQ2b1dQSUJudzFKTWF4RHNVOWxRMlg?oc=5",
+  "date": "2026-10-05T20:35:13.000Z",
+  "summary": "",
+  "publisher": "Bloomberg.com",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
+  "id": "2776d5cd2af8",
+  "theme": "enterprise",
+  "title": "Agentic Regulatory Horizon Scanning for Lawyers",
+  "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Fbmx2Z0xBOTY3MnJWSEF0dFBVT2pNaGVlMFhucUdwQnBsaUIzMXpDY2N2LXJta1g0aHZDSE1TZXJHQ1JoT1BMQ1VMY002TlBGaWRNUU40eUNtalpaSnItVFRvaHY?oc=5",
+  "date": "2026-09-30T18:56:52.000Z",
+  "summary": "",
+  "publisher": "Harvey",
+  "source": "challengers",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "27e0f720652a",
@@ -946,6 +1186,30 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "2ceee3a8cb08",
+  "theme": "agents",
+  "title": "Flank launches senior legal advisory board to shape agentic AI strategy",
+  "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPQW4tMkhRRmlqbXFzdk5vRzVEaEdZMkxiMTVxOXQtT0J0RjRWM0ZjWWdIdGJRNlhzaXhSTzk4N3RLS2VXZ0lkT29kaWdFbWhGcXJFOTQxMW5PVEh2UGRLaF8xNlZaWlp6aHgtLU1vZjJ5ZWhlOGlwZ2h6TG5QM3ZPaERtLV9tWHZZTlJaR2tvcEpHOEtUcVNpT1FQby1iVVVxdFE?oc=5",
+  "date": "2026-10-05T17:54:36.000Z",
+  "summary": "",
+  "publisher": "Legal IT Insider",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
+  "id": "2d2f7d5ee99d",
+  "theme": "capital",
+  "title": "OpenAI Eyes $30bn Funding Round As Investors Push Valuation Toward $1.4tn",
+  "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPd3c2UDU2bm8wclM3eWlhQmZwVkoycUE0RkhVQlpGYmF4X0poVjVheWJDbzlkYl8wR3E0Y1hNZlZyQndDdjVqQmhmUmZHMmlXQ0tsRGNZdjc3ejRMQzFWLUZnYzhKLTRhNGxoVDB4ZTJFV1Nrd1FleVlVdlp1UmJCWDJfaTlwWTd2RG5uMjBjTm5qNmVXN2lqVg?oc=5",
+  "date": "2026-09-30T20:52:27.000Z",
+  "summary": "",
+  "publisher": "Arise News",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "2d8586a35303",
@@ -1068,6 +1332,18 @@
   "firstSeen": "2026-10-05T08:01:27.460Z"
  },
  {
+  "id": "322638fceec2",
+  "theme": "agents",
+  "title": "Flydubai copilot attack: Indian captain stabbed, jet lands in Saudi",
+  "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNdGVueG9PXzVQWDlINm43am12dk1mOXhaaFJYQ2IxLXBybkxDejJtWTAzLUVLUUJ4RjZnOXNqSkR5UzRiT0FFLVdRbTczakljREEydGlyZmgzd3NacDhlZVJXTkFiV0ljQzdqR1g4ZWgwdFdOX25oTktGNjRYY1BtM19MVkRMZF9kZnBzRkFTM2ZnbEdLODVWaUZqY3BlN0NNSm5lSDFhV2dhRlZnT3NwaWpPTUx2bWpQbGN1dXJmODR6aUJzdGVEOGkzbFVpWkh5dnpaRdIB2gFBVV95cUxORWpyNFNMaTc0ZnBkZG9FNTZCZXg1TDM4b3JkMjk3bnhkLUViUzJZMmpEV0V2WTZyTWNuR3NRRnlXTjBkeTBacXN6STU1R1NBemxyanNjQW1MVEZLMDJqc2k2dnNuQlpSMkxvSkxsQ0RZWjNOeUJqVl8tSE54MkRsaDZjTjRfeEFaSC1mUG5sUHNHdnBTbnlyR0cwOGlkcEt0MjJocW5rYWNTOVhsOC0tdmEtdkM4dks0S2xnN2ttNXpMM3BlcUt6MEVNZkZsZDVteEQzOE5oN2ZVdw?oc=5",
+  "date": "2026-10-01T12:56:48.000Z",
+  "summary": "",
+  "publisher": "indiatoday.in",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "32d294e08aa6",
   "theme": "labs",
   "title": "Introducing Gemini 3.8 Live with Live Avatar",
@@ -1126,6 +1402,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T08:01:27.460Z"
+ },
+ {
+  "id": "354f6ee7c27e",
+  "theme": "capital",
+  "title": "Australia's Firmus to allocate half of up to $5.5 billion IPO to existing investors, sources say",
+  "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOZHZOWGI4QjZKWVZhRHZUTHkycks2SmVqVDVkUWM5a1M1RTVkaThFa1AzMDhsRUx1UDZsLVZIc3RNVnpBcWhiN0M1UE1xcTVSbWwzOVNxQzZ4ZkZyUTQzaUtJOHBKbHRaSTFtODRBOWpWTzBBUERiTnVBai0wbmsySWV4aExpQ3Rra1VjYTE1cEplVUxmbmFiWElabnh6U2FhbHdLOGg2cHV1UHo5NkpsNm1YZDJMekVoZ3pRUEZtOUx5RWF0MENBcjV5VTZLWnU4UzZjNDllV0VRRWNOM3NHdVF3Z3JoMDNmZUVLZjJtM0V3RnZFblhQc01mVXhtdzlDREljX3hmNkItS09o0gGMAkFVX3lxTE5kdk5YYjhCNkpZVmFEdlRMeTJySzZKZWpUNWRRYzlrUzVFNWRpOEVrUDMwOGxFTHVQNmwtVkhzdE1WekFxaGI3QzVQTXFxNVJtbDM5U3FDNnhmRnJRNDNpS0k4cEpsdFpJMW04NEE5alZPMEFQRGJOdUFqLTBuazJJZXhoTGlDdGtrVWNhMTVwSmVVTGZuYWJYSVpueHpTYWFsd0s4aDZwdXVQejk2Smw2bVhkMkx6RWhnelFQRm05THlFYXQwQ0FyNXlVNktadThTNmM0OWVXRVFFY04zc0d1UXdncmgwM2ZlRUtmMm0zRXdGdkVuWFBzTWZVeG13OUNESWNfeGY2Qi1LT2g?oc=5",
+  "date": "2026-10-05T08:23:00.000Z",
+  "summary": "",
+  "publisher": "The Economic Times",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "3676f5e29419",
@@ -1198,6 +1486,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "38367612b0de",
+  "theme": "agents",
+  "title": "More & More to Host Agentic Finance Summit With etoro, Pantera Capital and Chainlink, During TOKEN2049 Singapore",
+  "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOTGRkVmZzXzk4ZS1INTJtbHJtZkYtQlNzVHhyWW9pUWYyNTJHak54M3RHSkptVHdKeEhGc2hhLVZWN2JXWTdBTU1rZ0RmM2I1MHRDaEJWMVBsT3NCTTBkWHpWSXpnTGFrSmJsVGZScEFWZEtDUmdFRzlQY2dtbGhwNjRhQjNTVzJCT3F5SXBaWWJ0YlpZMFU4N3BiekFfREtBWWw0R0RoWUpWUTZ2a1BCQ1pHc0cxMnF1TjA5OGlUNzlTTTJpNWhqdGlKNzNGRGU3TFVSek1xeXlkaWxUZkt3?oc=5",
+  "date": "2026-10-02T07:00:00.000Z",
+  "summary": "",
+  "publisher": "CryptoRank",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "385e24206a16",
@@ -1368,6 +1668,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "3ee0ac4c8770",
+  "theme": "capital",
+  "title": "Indian Startup IPO Tracker 2026",
+  "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBnS183TEQzMHI1QjlKSDhLSmhWSWhMLTBYanJITEFPYU9wSEJDYTZTMXhMUDAtV1hQYnZETzBCLWJGYTV4aVhUcDUyQ2xDbU5BMnBfWVNSN0YxNVhmakQ1U0tNLXgzOUxhbkJN?oc=5",
+  "date": "2026-10-04T07:00:00.000Z",
+  "summary": "",
+  "publisher": "Inc42",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "40776727a068",
   "theme": "agents",
   "title": "OpenAI is launching always-on AI agents that work for you around the clock",
@@ -1378,6 +1690,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "40b8b36adad4",
+  "theme": "infra",
+  "title": "I’m Loading Up on Taiwan Semiconductor Ahead of Oct. 15 Earnings",
+  "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPbkNEWl85eWtEb2FPMUNHTFh4aTlOMVNUMGJ5b3NzaHEyY1BHZVluVjAxQXdhdlRMdkJ6ZzRfNXNfSXhTMnZrTXJsdkl4dW5FeHBaRDhKTjd2N2M4ZndIMTJ0cVFTNlphb0c4ZEJ3NGtRbUNfMGZYWkU2c2tPZ0xaUXR1YnVlR2dxaTdULVp0X3hLU3RaV2otTHlIVGIxZlBqQTdxLW8zUlBnZw?oc=5",
+  "date": "2026-10-05T11:15:00.000Z",
+  "summary": "",
+  "publisher": "24/7 Wall St.",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "40eba03a52b0",
@@ -1462,6 +1786,18 @@
   "source": "apac",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "4296b6ac0c44",
+  "theme": "agents",
+  "title": "Aprika Adds Slack, Teams and MCP to Mission Control -",
+  "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPa183ZGFTY0VGTXZyYUYwaU5iYzZGTUhKX3QxRXR2a2JGbThmbUdneFUyWE15RmdjX3JuaFk1YlJvWmdKb3VpNjl3LVhKQXpteFd0R2Nrd0VpZTNSMnJENFcxM1gwajRQU3RhaGM3R2VNZnhsbXQ4VW81S1Voc0hDUmN4c0x4UkZNZzFqRnFucmpUT2p5U3lrVk16WXQ?oc=5",
+  "date": "2026-10-05T10:48:15.000Z",
+  "summary": "",
+  "publisher": "Enterprise Times",
+  "source": "protocols",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "436a00fe5ab5",
@@ -1596,6 +1932,30 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "4a2c4d32c53d",
+  "theme": "infra",
+  "title": "Wärtsilä to supply 282 MW onsite power solution for a U.S. data center as AI growth intensifies demand for reliable power",
+  "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQdUI2SzlmRHZoMldnck4yaTRVRVBpOGpTT3BpWWlscDkzV2p4ak42eDdCcFM1d3hHMXFXWEFUOXhqcE1BX3BTcnd6SjdEYWpzTm9mMGtyTWtPZUZKbDdWWnBMRXQ5bFlwOTZTUDFiR0doTUQ3RHVoN2hNN0NmWUZXOEdxMXRyNlgwZE9CZS0tbENOWS1pNnJVRjlETjhtNFBMR3BhUF96blg2M2o0aHBvVDdJWk56TVVBcDF5TDV0X3dvaEl1ZU9rNFNYeFdzZGNvdWU5WUw1TzFKY1NwTWZzZ1hPZFBHY1VMbE5UN01oeUs2NjRNUlpuUTRfOVJqOTRhakVwWVVn?oc=5",
+  "date": "2026-10-05T10:00:00.000Z",
+  "summary": "",
+  "publisher": "Wärtsilä",
+  "source": "power",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
+  "id": "4af00091ad1c",
+  "theme": "infra",
+  "title": "‘At what cost?’ Southeast Asia starts to rethink its AI data centre boom",
+  "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQRUw1T2I5Q1FCZEZJbEdKbnFQMzdKdWs0MFcwTFBSNFlhZ1NidFJJZzRFV3JYQnhIaXVqSnlBSjBzQThNQ25PX2U3dEZwRGlkSGxaR1ZxTVEzZHk3WUJGOTZHaUVMLXQzTGJyUVB0SjlRdDVHTnVEOG5zbWRpVkdCeUZPeFd4OVBUdzBrZUVYcDEyQ2s1bWw5cGFlUk9jc1I1TE1UTFpiOFdnU0llV21hVmdpYnVScVpGQ3kyYVZJZTBUN3B0UHVYSmRyZ2VoS1FLdERwclBUXzluaENUYXZsb2RFTG5yMFY1aUE?oc=5",
+  "date": "2026-10-05T08:11:25.000Z",
+  "summary": "",
+  "publisher": "South China Morning Post",
+  "source": "power",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "4b34be2f33b7",
   "theme": "capital",
   "title": "Aignosis Raises Rs 4 Crore to Expand AI-Assisted Autism Screening Across India",
@@ -1716,6 +2076,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "5037b88b6ceb",
+  "theme": "agents",
+  "title": "LILT Launches AURORA, the First Multilingual AI Leaderboard That Measures Frontier Models on Non-English Enterprise Agentic Tasks Grounded in Language and Culture",
+  "url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxPa2U1eDNuM0JGR2hFZl9hNW9XamtoS0l1MDB2UWMyTU9VVHVFdEpBZ0NuN1lyaFFwVi1VZFAwX0lsQ2JUVVBEY21HaVZTenN5b0JmeW5jSktNRE5oNEZVU0lKWnAwMWp4NkJQdnhlZXo4Qkc5NTg0RkhWZjg2NGU5bVpPOUNQUjZiUTRhVlU3aUxpcGFWZm5TbmpmNUxseHlZSVhncWpMbHVOM1NPTEtOajh3dU5vWWFMNXJ1RkNRZFdCbXFqYUpvdmdtRFVPZWh2dXR5aHVnVmtrUWNqS1FJb0R4eDVFbFNvWVJKZ3FUaEtFWXo2djcyT2Ffa3pfT2RvSFB4SUYwQ0ZKQ1Z3QmhaakhzOVZUa1NsUG80UFVBdW15bFBTQ1ZuQ1VXSVU1TGZ1dG5nbWFLOUpmVTVidHljdVQ0SGE?oc=5",
+  "date": "2026-09-30T15:00:00.000Z",
+  "summary": "",
+  "publisher": "Morningstar",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "50a444ffadd7",
   "theme": "infra",
   "title": "Japan's $15 Billion AI Data Centre Push: JERA, Dell and RHAELM Target a New Era of AI Infrastructure",
@@ -1776,6 +2148,42 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "52b301b6bd24",
+  "theme": "infra",
+  "title": "Samsung Galaxy Tab S12 series Singapore price and specs",
+  "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZHFvV0t3ZENRLUNmUkpnX0tHeGNyVXc4SVdxUVFXNmVndTZzN1FLa28wbnBOVkJSenZ1eDdpUUV2ckJUZkNrV3ByZm5WRzBKUzA1RU5nZDFwVXJ2bFE1RFp6c3Z3N1FmTTRLejdZU0ZwR1N1SXcwem85LS1MSE53WWlyWjJUdzZPQWR3Y0hpZEtNQzBtTHhEM3RENA?oc=5",
+  "date": "2026-10-02T07:00:00.000Z",
+  "summary": "",
+  "publisher": "The Tech Revolutionist",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
+  "id": "52f495105571",
+  "theme": "capital",
+  "title": "AMD Acquires World Labs: $8.2 Billion for Fei-Fei Li’s AI Startup",
+  "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOd1hHWmJIS1Vqdlpscjc4M05RNEpoaDlMUEpmcFdhdGVFOFp0cktnMGVNVDZkenp3TERDQndRNTd2cG5XVWxYcFRLLWdHY0tjbGV0elM0VF9QWG5DY2NvbzBDVW85UjV5YWF3T2NRTnExOC1yTzhZYUZPVzM2VTl3cHVJYkxDaDRvbDMtUndkUlZMaTNsck9UMUJ6a0M?oc=5",
+  "date": "2026-09-30T03:21:47.000Z",
+  "summary": "",
+  "publisher": "basic-tutorials.com",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
+  "id": "530e4a212d77",
+  "theme": "capital",
+  "title": "Etched fields funding offers at $40B+ valuation, sources say",
+  "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNRXdxYnpXd3ZNcU4yZGhqMHN0eG9zYlVrUHREU3AxQzNiS2VVdWRaTHItdEZVaHNPNFFTbTdlMURXbWUtWGI4OTJQXy0wXzNaYmFVN0RFeXR3cDlJeTdOVzdwRUFBSnBFb2xkd2R0U1A1Mnc1WXQ2YTBIZm1EUVJ0WFVOZTJVLXFxOEt3b3FhV25pVGY4LS1B?oc=5",
+  "date": "2026-10-05T20:24:09.000Z",
+  "summary": "",
+  "publisher": "TechCrunch",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "532327104d7a",
   "theme": "infra",
   "title": "Midea Showcases Breakthrough Cooling Technologies for High-Density AI Data Centers at Data Center World Asia 2026",
@@ -1788,6 +2196,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "5331b183e207",
+  "theme": "infra",
+  "title": "Investor boosts Taiwan Semiconductor shares ahe...",
+  "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSlM3bHRkNnN3UjQtNC1YcEVnR0pwM0NRNVNBci1oM2RIYVR5SEpEc2otWmIwOGNyZ3NrQ2pieTVrV1V3eU9GM0VkdXVkZ2Fnc0IwemFidld5V2lfd29yVEthNGlBa2xtOEdDUUNNaGF1ZTgyVkktbldsRkFubDhnXy1tM2Z0MmVpdkhUTVFsZVRodUhNOXFaalJSeXV1UDlQTTEzaXJn?oc=5",
+  "date": "2026-10-05T11:39:56.000Z",
+  "summary": "",
+  "publisher": "Pluang",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "5462a7abf741",
   "theme": "agents",
   "title": "Inshorts Group's Jatan Desai on how AI agents are redefining India's news ecosystem",
@@ -1798,6 +2218,30 @@
   "source": "apac",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "54e2fde43e92",
+  "theme": "capital",
+  "title": "AMD to acquire Fei-Fei Li’s World Labs in $8.2 billion deal",
+  "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOMmgzQV9ZQ0lidlFua2VaTk5Vanh5SHpVRUU2UVdzTFBsc1RwcTJyMUFhNDNtVHRTclFhem5HcmpJNERRaDhTUjFEdjY3Zy1KLUk1MGphNjJEeTBrd3Q5LVRhOU55b3FSbWI5T2lpelM5ejdxMmxuYlYydWxoLVdRbmlQVkZaejNfdS1vcldScGg0NFl0cm51bHBHVTdPTDZmWS1qT0NKOERpTVFsMWdJVzdPN0VGSXZEbHVFcXBwdTgxYlgwUU00UzVRSdIB0AFBVV95cUxNLVJ4N3FIWXZiZWtTYlBuRHQ0eE02dWxjMWdCV2gwemZKalpIU1lHM1FneVU4TnptVGdVNnBUZzVKZkduQ1U5RVB5eXEyREFocV9URjRWSldvcHgtUGdWVGE0ZVp5ZHREX3NvSW9DMXN0WWk5TnB3b1FBNHI5UzE1T04wUVd6MGllT2xTa1hZVU51SkhJQTZUTEVjSjlfQkJ4YVlDeV9CQ0QtYjFkekpsS2F3Sl9oQm1GODdiTENqTkNQbjctOWRDYnpTQU1Nb2It?oc=5",
+  "date": "2026-09-29T12:23:15.000Z",
+  "summary": "",
+  "publisher": "ET Enterprise AI",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
+  "id": "556e96d84e43",
+  "theme": "infra",
+  "title": "What makes Singapore a prime location for semiconductor companies driving innovation?",
+  "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPRjA5QTlZcllPbmJwVUQ5Wk9nMGQ5bVlRXzRjSVd5Znlla2t2Sy1TZFVWbzRTY01xc0pOaUFqdHNLUHV2TmY3SlRwUUpBNmtyaWlNV0IzRGt6UXNPZzJDT2ozVFU3ZnU5cW43WmxQMHBPUm9Md1VqUTNlNVdiM0Zwc0FaN3RRakNBWDhIcGRqc0lqbDM5UG5ZVFRFc0JRUEFsLUJZSWZtbXZ6RWxDTzB5bm94bGd5MUxVU0NMUTliSWVIQzkwV0Yw?oc=5",
+  "date": "2026-10-01T07:00:00.000Z",
+  "summary": "",
+  "publisher": "edb.gov.sg",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "55d600e78cda",
@@ -1872,6 +2316,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "57391a8fc852",
+  "theme": "agents",
+  "title": "WealthAi Launches AI Agents to Automate Wealth Management Onboarding and KYC",
+  "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNY2xnU2dqQjJRb0N1RzEwaXNyTUF0SlBUNXVoTVNCVnY0bHpiNHVIVEZQYXd1bEtuZnNuYXdpcElLazQ3eU1LVlE2ZXBuVk9td0NOc2xudGgyMnh6UVRGTDIzdDNTYUdhODBrOV9ybXNUQjhWZWF6SmlCUmJfUjJROVlRN2NvSDY3RnRkRVltaTRrZlo0UE5ka24zUm9QM2RfbHh5dVpEN3B1czYxOEZMekhLRQ?oc=5",
+  "date": "2026-10-02T10:56:24.000Z",
+  "summary": "",
+  "publisher": "FF News",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "577b7b6eb083",
   "theme": "infra",
   "title": "NVIDIA Launches Open Agent Safety Platform to Secure Agents From Testing to Deployment",
@@ -1918,6 +2374,18 @@
   "source": "apac",
   "official": false,
   "firstSeen": "2026-10-05T08:01:27.460Z"
+ },
+ {
+  "id": "594be2cb0406",
+  "theme": "capital",
+  "title": "Exclusive | Robotics Startup RobCo Hits $1 Billion Valuation",
+  "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQ0d1U2ttS2JZU1YyTTRobnlEbnZKQXFqbnZKU0JGY05tTmNMMFVkOUFfVWxzX2RjV1hQaUNfeDhfMjEyNU5wNzdNeHFFSVpuVkdLLUVnc204Qk1ocG5UU2stNzByVjhidmFXTU1ndXlXY3ZtQ3BRMlVnbUtZcGgyenZZVHBTcTZZ?oc=5",
+  "date": "2026-10-05T07:00:00.000Z",
+  "summary": "",
+  "publisher": "WSJ",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "5a4c56bef1e1",
@@ -2124,6 +2592,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "5fd76cb733cb",
+  "theme": "infra",
+  "title": "Samsung earnings kick off key October for chip industry",
+  "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9oS2xKd3kwUktubGxxc2NIMWJON2FzRXZPQlA0MkFWWGMwUk1lRVB1N3VBTjAtUXZrUEp3WUh1cmhkbXpvbk8tUlhQSmZLd1FFNUVBWFViSdIBV0FVX3lxTE9oS2xKd3kwUktubGxxc2NIMWJON2FzRXZPQlA0MkFWWGMwUk1lRVB1N3VBTjAtUXZrUEp3WUh1cmhkbXpvbk8tUlhQSmZLd1FFNUVBWFViSQ?oc=5",
+  "date": "2026-10-05T05:33:46.000Z",
+  "summary": "",
+  "publisher": "Aju Press",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "6162a8815e6a",
   "theme": "infra",
   "title": "Micron Q4 Earnings Beat Estimates on Strong Pricing and AI Demand",
@@ -2268,6 +2748,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "66e556df9f64",
+  "theme": "agents",
+  "title": "NYAI Launches NYAI AI Studio: India’s First Agentic AI Infrastructure Platform for Legal and Compliance",
+  "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQWjhCMmJFSkM2bm1BaGhlMTR6UzVoVlFoSGZOWHBhYzFIMGYydlE3bF93WjNQekhoV0dTUlBRSlpqQnZhY3pXb2tvUTBMQkFoSVlCTUxUempLb3JpTjRmRk40aUQweWpzZTltZFpiLTFTNUE5d0dfV1NzLTNBUGtlcVFiT0xyYTZXakM1RWpJWXFTZWtuRGVOcnUzYktQTzd4RktBdHNWcGppMUdWOG0tOW1qNHFlX3Fucm1YWHRxc2VsNjFyRUxQN0RuWnJXWktsMUktQVNoaw?oc=5",
+  "date": "2026-10-05T07:17:04.000Z",
+  "summary": "",
+  "publisher": "Passionate In Marketing",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "68652a2af63b",
   "theme": "labs",
   "title": "Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the Rails",
@@ -2364,6 +2856,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "6b040d5a4a7a",
+  "theme": "labs",
+  "title": "Google Gemini Free Tier Downgraded Starting Oct. 9, Limited to Flash-Lite Model",
+  "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9CcTdIWjV2NGcyNlF4UVZqcTk0SHpRd0M4bTluUVdYRUhrRFBLcG56ZkctTVJoeUFFbU9rQmp2MTdNV2xPYTdOczFpNVNQY2JETU1hVENJZWR1Rk9HMXJFOUtmT0JMdnY3VzM4bmdTbUtCNXlBaXc?oc=5",
+  "date": "2026-10-03T18:16:00.000Z",
+  "summary": "",
+  "publisher": "finance.biggo.com",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "6bd2cf234967",
   "theme": "infra",
   "title": "Amazon to invest $1 billion over five years in US data center communities",
@@ -2446,6 +2950,18 @@
   "source": "saas",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "715e03a28a49",
+  "theme": "agents",
+  "title": "Pervaziv AI Launches Cortex CLI, Bringing Enterprise Agentic AI to the Terminal",
+  "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZzNDcUtfdXZhMWRLNjNRWjhINzlJclpHT2d3U0JJRS1CLWxweC03bjBoT19DTGZVNmhxQnFaVnlLTzNxYlRMYjc4Z1FRQjVRVlJwbFE5V1lWVGxuOVRnTS1qNWtBb25nMjgyWFJtOTh3WFJqbkM3Um5jWGhjNWVfSnlhS2pVSGFYbFBxV1h5UzhOaVhQNmJ1TG5lTURiN3VBVnd6Y0Z5VmdLa1hoOWdTaTZ5ZmQtRkE0WEE?oc=5",
+  "date": "2026-10-05T10:18:26.000Z",
+  "summary": "",
+  "publisher": "AiThority",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "7292b781a2ef",
@@ -2700,6 +3216,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "7b32b5c0f317",
+  "theme": "capital",
+  "title": "Chinese startup ShengShu raises 2 billion yuan to advance artificial general intelligence",
+  "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPa2pDNXlrRFJKYlJNekkxN0lVQlBYWjZoX1BWRG1ZRERTTXBVbUF4TUN5d0JHM25sdGV1ZWRTUF9GcHhBbjVyYnp6S0tNdVN1S2NweV9GZmJVYmhnbnJiMmJJY2JrOUtwOTRPWGdRck54N09udlMxQWd5OXNKOFVZNmEwQ1dKcW51NlZzZHJZMWpmSkxmM0hUMmg5YW8yN3Itb2dhOG1FYXNPU21RalQySm5wQ0lfdU9JQ3lLTm01aURHRmVuR1ZlQnh5LU1MVXNGdV9HTmhUeHBRSERzamZz?oc=5",
+  "date": "2026-10-04T02:15:00.000Z",
+  "summary": "",
+  "publisher": "thestandard.com.hk",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "7ba478dfd075",
   "theme": "agents",
   "title": "Five MCP Authentication Mechanisms Shipped in Two Weeks – the Pattern",
@@ -2772,6 +3300,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "7f95aea8ab72",
+  "theme": "infra",
+  "title": "Mitsubishi Electric Releases Chip-to-Grid AI Data Center Designs",
+  "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQd3N2MVJQZWw1Q3dfWE1qcjZ1X1ZsTjNEU0ZYdWdTdjhBTUQ1ZVVzTU91SWRiQlFkZ21OU1daMjhDZnAtd3U1Ti1nOHJCaWR5Z3VYekpxdnNyV2lCZGdhcTBVbjZ0UmZEMU9KUkFSYXR1cVFJQVVuSF9oVWdwOG1nd1FCN0NYczVGcUhraHlBUi1kdjRxMjhEVmtn?oc=5",
+  "date": "2026-10-05T11:30:00.000Z",
+  "summary": "",
+  "publisher": "Refindustry",
+  "source": "power",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "800951f2ccdb",
   "theme": "capital",
   "title": "ElevenLabs Doubles Valuation to $22B Through Secondary Sale",
@@ -2782,6 +3322,30 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "803ad0bce384",
+  "theme": "infra",
+  "title": "Nvidia rival AMD to buy industry pioneer’s AI start-up World Labs for US$8.2 billion",
+  "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOc3hyMnJFS042XzFaY05PSkUwUDF2SjI3OGZ5bGhVbEFWRVlvZnM2Mld0NVJwa1dMSlYwVjlJdVdvam50U3VSODFmMzNiOVc5ZTI5b2UyS3NxZFppcmR1RDlQWmVrSk9VVEtQaGlIZkMwcUotZE5aR3luQnA2X0ZHTU1ySVUzQmh4ckhFQ0V3U3Y5cFZXbHpkODhFZ1RURm9GdENPY2gtaUFhMVE4TE4zYUdVZWhmLWpmUGpIWg?oc=5",
+  "date": "2026-09-29T00:36:00.000Z",
+  "summary": "",
+  "publisher": "The Straits Times",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
+  "id": "80b80eeda7cd",
+  "theme": "capital",
+  "title": "OpenAI Eyes $30B Pre-IPO Round at $1.4T Valuation",
+  "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNaXBKZnRaMnlUUThCWEtMV0t2YWQtZERWX2YweWFjcHUtYU1mbExybnVMRjd1M05DZlh3TU9Qb19PY3lBd2xBNTR0SUVsVmdvckRTNF8wbmdZMExTM3hIY3N1WU5qdDd6QkQtV1ZRY0U4MV81SVduOTJHSG1TbU8tV1FqZVVaOTlWeXRGUXR3?oc=5",
+  "date": "2026-09-30T16:18:28.000Z",
+  "summary": "",
+  "publisher": "theaiinsider.tech",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "80ce63aba3b6",
@@ -2796,6 +3360,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "81708ca7c227",
+  "theme": "labs",
+  "title": "OpenAI scraps rollout of new model over safety concerns",
+  "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBWbzNuakJ3LVhhLTFCNncwcGVBQ0dWNVljVHZqaVRqbFVLZEROd1RvX0J6V1hlSUhxZmNxSjVzekQ5ellmMmxrUWthZm82VXdEVlZvQXdjV2RwSzQ?oc=5",
+  "date": "2026-09-29T09:14:13.000Z",
+  "summary": "",
+  "publisher": "BBC",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "8203697fb22c",
   "theme": "labs",
   "title": "Anthropic releases Sonnet 5.5, 30% faster and 30% cheaper for the work",
@@ -2808,6 +3384,18 @@
   "firstSeen": "2026-10-05T05:58:59Z"
  },
  {
+  "id": "82ce181cf135",
+  "theme": "infra",
+  "title": "Samsung Launches New Cassette AC Lineup for Premium Architectural Spaces with AI Cooling and Mood Lighting",
+  "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOOVU4azFBOUROTUN6QUN5YzIyUmRicGJwc2RfaHhQLVdmN0g1c1ZJM3pPVFpaZ3hyak01eGo5Wl9VZWcwTTZVX0hSZUUxbUtsdnp1a09BUHNZR01rQ05WWTVvcFFGZFJISXZiaW5DUFFjdTI2RFhER0otSEljVGVsYWZxVXRUSDkxQ3dQX3BFN0VoQ2RMNVJfZEljNy10WHUwaFBqd0ZzOXJfekVZS2FOZlp6czlySi1FWmFUZ0RoZ1dxdWg2QV9OTmJzbmpGN3M?oc=5",
+  "date": "2026-10-05T07:11:28.000Z",
+  "summary": "",
+  "publisher": "Samsung Global Newsroom",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "82d4e7448cb9",
   "theme": "capital",
   "title": "This AI infra company is giving Rs 96 lakh to each employee in cash and stock after IPO",
@@ -2818,6 +3406,18 @@
   "source": "apac",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "832b59480815",
+  "theme": "labs",
+  "title": "Reflection AI readies a US open-weight model to challenge DeepSeek and Qwen",
+  "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRUZwci11V3N2OU9kcXhNYUVqOGRkRHFvdjVRa0FqY21ESW9NamRYNnhWM1VUdGZnaUw5Vy1SVlE5YUtQcFRnN2ZUNHpLNE9TV2hTb1FaVkNyQmJvQUwyUlZHMjllc3NRbjl5bEtPRXZkOGNKZUhnSHNQVDFORTdMQXRjUHRYVWdaNE1fQTU3ZzVmblN4cXRuLTVYN2NzNXpleWRVR1BR?oc=5",
+  "date": "2026-10-05T09:29:47.000Z",
+  "summary": "",
+  "publisher": "Startup Fortune",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "8428741f8566",
@@ -2856,6 +3456,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "85abb6075290",
+  "theme": "infra",
+  "title": "TSMC Surges 3% as Taiwan Stocks Hit Record High—AI Rally Spreads Across Asia",
+  "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5CQUlGdzJyTHpJZl9BNnd1Z1JQNEdBdWJjS1ljOGhrNWZVeWlucG1JekRNM1JTS1BYQ1dtYmkwSm9Nekc2VU1CVjhhYlRxc0U0YlpnSnNLWFkwdGpnN1ZFS3FaWGxLcjdWNmExWlNtZDVYNGpJYUE?oc=5",
+  "date": "2026-10-05T09:05:00.000Z",
+  "summary": "",
+  "publisher": "finance.biggo.com",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "85c95beae6f9",
   "theme": "infra",
   "title": "Chinese AI Chips Could Flood the Market. Alibaba’s New Chip Is 3X Better Than Its Predecessor.",
@@ -2866,6 +3478,42 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "85f2857fb708",
+  "theme": "labs",
+  "title": "OpenAI Launches Pro 500 and Reserves Dots for Its Premium Offers",
+  "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRE9rSnlyeEl0YjRSOTMtaEx6N2VlcUZDa3lzbm5FWXBpbXg2QWN1bFR3ODYwYjRINmRZNHg2TDZRUXpyRWlLY01zMnExZm96M056SkQxYTBsS2ZDSEpnREFfU1Q4dUtrWEZhY3EwYTA2MlVnNkhKZUpfRW0zRmdwNXF5VEdwazV0cTk1al9mM2hVNWlTSzFxMXFnN1l3Q1k?oc=5",
+  "date": "2026-09-30T01:17:10.000Z",
+  "summary": "",
+  "publisher": "Brief IA",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
+  "id": "85f77f8cc711",
+  "theme": "labs",
+  "title": "OpenAI agents hacked Australian government sites, here's what happened - GSMArena.com news",
+  "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOLV9pZFBvTmNJcjVnbWJ2NkVKUmxQME9YekdBSkNNbl9hVDFVRXdUTThPSHo2cklVb2hvdGtmckhCQUV1UlpYSkVibnc4NW91NFNxTkdlMndudExYNlhmcko1WnFkbEM0QzZCcUFpOWVMZVVGSHRwMV9SQjVEcnk1M0dtdHFxem1KeTdVWmptejl1UE01X3lfWnRvZlJIZTNndnotblpVLVZEcWtD0gGoAUFVX3lxTE5DUllpU21uUWVmOVh0Rk5yc0c3dTdCcFI5blJ5UTE0UHJTRGpPckJTTG1nTXRySGpRdFFlZXBsZUdtWnNLUHZKUUdtSXphTUJZMEQxNlJzSjZJemRVTWdpSUl6NVdsTGc5S2tiNGd5eVpSMlJQTzJrQ3pXWXpwTnhvMlViOHNObjRYZjV3OEo3a1lzUTFTczQ5LVNvODIxVnNMdWlGa3J4eg?oc=5",
+  "date": "2026-09-29T21:01:02.000Z",
+  "summary": "",
+  "publisher": "GSMArena.com",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
+  "id": "860d7169e7f6",
+  "theme": "enterprise",
+  "title": "Oracle Unveils Fusion Claw + Expands Agentic Applications: NYSE Content Update",
+  "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPdW5VNzZld2NOYmQwblJrMlVYS00wWVlvazZQSkhwQW1jZWpTZXl0NU9TeDZLbHFsLW5RQ3ZtZFgzV196NjBXNGdOcEJ5SkZJTU0tX0lHSmczczNsZUV0cUJUY3BTeXFPVW9zaEdGMUlwQ016R09hdHptUzAxclpaeXdEZWc3b3IzMjRwUVpucDhNYzZiSGp2QzRJbVRUUEF6bXgzYUFKZFAzZFpud2t6SHliMkxOZjNYbGtUYnpibWRsTjFrNHc?oc=5",
+  "date": "2026-09-29T12:57:40.000Z",
+  "summary": "",
+  "publisher": "PA Media",
+  "source": "challengers",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "86949364e550",
@@ -2928,6 +3576,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "8bc61cffaf00",
+  "theme": "infra",
+  "title": "Axis Bank to Double Data Center Loans, Riding on India’s AI Push",
+  "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNNzNIbWlsT2ZfZkNoNDZ6a09TSENVdXhFaGw2NDBRYTY2V0tkUjFYOElMUlFkMzEwQV9aU1BIanByOE9HTGxzY2dMbVAtX09KaUdtSFEwbDdoWVBDLVJZRU91Zi1FUFFoNlR6SWcxNkpJQlBOc1JFTFZMNXgwRXQ3RG0wYmN2NzA1S19IZ2pfZnpDemJEamhBVm83U3NMT1pJMm1va2lGblFtd3l3RE4wd1VuWGI?oc=5",
+  "date": "2026-10-01T06:08:00.000Z",
+  "summary": "",
+  "publisher": "Bloomberg.com",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "8d53eae4ff62",
   "theme": "infra",
   "title": "Micron posts record earnings, signals upside for Samsung, SK hynix",
@@ -2950,6 +3610,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "8f3722918e20",
+  "theme": "infra",
+  "title": "Taiwan Semiconductor hits record high on early talks with Musk's Texas chip venture Terafab",
+  "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNaWtaRTR6UFl2MDFzVDFSclBqYmhJQkdIeWtHcWJwSW1MbTFZX1pWaW0xYzdnNkRVNmg0Y01vd0RUWVNWM2g5dEdBaS1HMFdKS2NNQndEUXdzT2dvY1BwaWExaVltNURVYTBzNXpmUFRWa19MWkpJZVkzZUZCZTl4cDNtT3V1aUpITzdQODNmUC1sbXhnbHE2TFFCMlVsWTBZVXFXQ1VNbXctRVRz?oc=5",
+  "date": "2026-10-05T17:13:55.000Z",
+  "summary": "",
+  "publisher": "Pluang",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "8fcea627eb5d",
@@ -3084,6 +3756,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "91f2e94476ed",
+  "theme": "labs",
+  "title": "Anthropic IPO: What ETF Investors Should Know",
+  "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQOHR4TllGRUpkMjNxZk1HekhBU3ltbzBpaDBsNURDWktFTWgtWjVFc0l1bU9EUjZCSGZ2UmhGWXlSUTBVbHFmcVJjTGVUSm1taFVQMGFxSnpHWkxPdjhCMUFHbXN3ZWFlN28zdXJBNWdiXzdpbjRMMVZvZHlkVW45aEhzamVEVmR5dEFWWnVPYlE0aGFZbC1zejI3MHVuTHRU?oc=5",
+  "date": "2026-10-02T13:00:00.000Z",
+  "summary": "",
+  "publisher": "TradingView",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "926e7079ae0d",
   "theme": "infra",
   "title": "Singapore’s BDx AI sticks to 2027 target after Indonesia halts work on data centre",
@@ -3106,6 +3790,30 @@
   "source": "protocols",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "938a836dd495",
+  "theme": "infra",
+  "title": "AI’s Semiconductor Boom Has a Clear Center of Gravity: Taiwan Semiconductor",
+  "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBaXzZRbEs0RVF0enM1UmFQdDJuV19fWHZIX3pCWGtlUlJFa2l5MGY2WnpSQjhKMTdBT2d5YlFKMW5yQmYzMTMwQ0hvZ3BualZDT3V0VTRFbUdheXJSU0dKNEpzTzdpSGtFUkE?oc=5",
+  "date": "2026-09-30T11:15:34.000Z",
+  "summary": "",
+  "publisher": "TradingView",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
+  "id": "94438565c5e5",
+  "theme": "agents",
+  "title": "MongoDB Launches Atlas Agent Engine to Bring AI Agents Into Production",
+  "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWWRhSGdwbFc3bHVHeHpIWkZnank1SHdfMEFidWtZT2wwR3FCajdic1E5MDVSeXczLVlpeE93eGIwLVQ3elA1ZWVKSEFJREhFbGV6c3V4M2JseHM4X3RydmdQS1hFMWthLWZ0TXpBZ0xXMW1WUVZRRnZWMXhqZWhzVVVVZHExRVo4bWptcTZiakRKSFMxNHpYX1QwSUd5ZndoWGNzUi1BcGM?oc=5",
+  "date": "2026-09-30T07:47:55.000Z",
+  "summary": "",
+  "publisher": "konsulteer.com",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "9456f4f55d58",
@@ -3396,6 +4104,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "9cf7688a50d1",
+  "theme": "agents",
+  "title": "Promevo Launches Insights by Promevo for a Total View of AI Agents, Gemini Enterprise Adoption, and Google Cloud Spend",
+  "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNbG5TcGZHdlpsX3dhU2VaUU5uS1pzSEV0d0RsX29DekRzclcxc0RtOG0wb3I4aXAxYTRFcHJabEZFT253ZXFNYS1ueDVDeTFlU1Bwam8wSF8xblRmcUhVMFpkcmpySnoxdDlzN0JnSFdIcFp4N25uRjBrbHI3OVd2YXB4MnNZLXYyZUlEdE1vWEFZYXZuNGk4bGl0b0hNU2ZzRnhVXzRSSzdEUW1lZlNJdWZtaGpiaUNoMW1uc0VsQ1pPWnMxbnc0Und4MUNCZUVkV0xvNnhuT2l2bWFfR0F1UkRmWTlNaGdjS2pULWg2R3pfaXRvNlJYSHVHUXQ5ZVRrTXc?oc=5",
+  "date": "2026-10-05T15:04:00.000Z",
+  "summary": "",
+  "publisher": "PR Newswire",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "9e82f44f07c2",
   "theme": "agents",
   "title": "Salesforce Agentforce Pricing 2026: Flex Credits, $2 Conversations and $550 Enterprise Plans Explained",
@@ -3442,6 +4162,18 @@
   "source": "apac",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "a0d0449cb6bd",
+  "theme": "infra",
+  "title": "Inspur Communication Showcases AI‑Ready Infrastructure at Data Centre World Asia 2026",
+  "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPc29RdXItNnlGbzMzSWFGX09VU3VYd3QzdXJ6by16X2xNRnBNbFd5czJERXRXZ3RvXzczQzlRZnZXQWlmX3hETHhKSWxwX084RmZaamhHNHhZem95a2s0a2xvcHFhdUE1a3V2S1l1ZHdDZnlpMkx3NWxIMzZDZ1BISnEtZjdMWlU4djlRMkMxY3FZbVFMRUVhR2xiSjNqaWlFaFprS053LWJLRVV0VWEwR1BB?oc=5",
+  "date": "2026-10-02T11:47:19.000Z",
+  "summary": "",
+  "publisher": "Macau Business",
+  "source": "power",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "a0d43dd2a89a",
@@ -3492,6 +4224,18 @@
   "firstSeen": "2026-10-05T08:01:27.460Z"
  },
  {
+  "id": "a2d4df717dba",
+  "theme": "agents",
+  "title": "Coforge Launches CXNova, an Agentic AI Platform for Customer Experience",
+  "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNenF5QXlxQjlxUUpmN05LWDlEX0FRTDlMZGVyZ1pDcmtYMk90aERNc2tqN3l1SmxDcUI1d0h2TVEzVkhjUmVNanlUZjN5cmR2NjF5bEF1X3NWX2pYRXN1NFV6c2R4WWxCMHViMjV2MmNlTXM3SkdzUlgyN3BlanNBRTQ2ckxKaFZPT0Y4b3RRWFZXMVExREFpdmFlUF9jcmhTbll3TVdMSlhSWVNp?oc=5",
+  "date": "2026-09-30T11:31:46.000Z",
+  "summary": "",
+  "publisher": "analyticsindiamag.com",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "a2e0c689d34e",
   "theme": "agents",
   "title": "Asia Today: AI Agents, Fintech, Healthtech & Digital Insurance Shifts",
@@ -3526,6 +4270,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "a589e1664d36",
+  "theme": "capital",
+  "title": "OneByZero raises US$20 million Series A to expand enterprise AI across Asia Pacific",
+  "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxORGw1Wm1rdmVIVldjVmotWm1rbmhBUXJQaWp1TUlrQzZYWEZtX1NKY0I3SUQzQ1V1dVZGdWVOUE1Jd0JUUF9lZVRoQXdsUEFWbGRiaDFUeDFhWmVEbW1BY1M4RUp1bEJqZE5sV3ZIekowM3JuZmM5Und4WFlPU3ZIREtoZV9rQU0wTTNQZmwyQ1RyWk9oc0pMVWp1Nl9aM2FScUFWMHpORGhpQQ?oc=5",
+  "date": "2026-10-05T20:00:37.000Z",
+  "summary": "",
+  "publisher": "Tech Edition",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "a5a0b822608f",
@@ -3732,6 +4488,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "b01e3163f082",
+  "theme": "labs",
+  "title": "Anthropic reportedly races toward a $2 trillion valuation IPO before Thanksgiving, with roadshows potentially starting as early as mid-November.",
+  "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxONTdfVV9aV1dVdDlEVm5aR0ZDUE5IYVozSXJRbTlfczB4OXQzQTlleXpVenVLaVBTNzRHSXdrbElKUUNxWDA4Z3lZWTZMXzJzSWZaWm9WNThLb3BDMjlJb3hXWXZEcXUzTnlvY3BnN09mbXZzLUlYUlFOdWdkckJhaG1ySVpxcGpJa1BPQ2lpZHNjc0o5ZVQzbHppNGR2RkNzVzVkdXVCNkZCcTRyYk53?oc=5",
+  "date": "2026-10-01T19:04:26.000Z",
+  "summary": "",
+  "publisher": "富途牛牛",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "b144b86005b8",
   "theme": "infra",
   "title": "Samsung Introduces Galaxy Tab S12 Series: The Ultimate Productivity Powerhouse Built for Growth",
@@ -3768,6 +4536,18 @@
   "firstSeen": "2026-10-05T08:01:27.460Z"
  },
  {
+  "id": "b27ea61a0f91",
+  "theme": "agents",
+  "title": "Vida rolls out outcome-based billing for AI agents, shifting pricing to pay-for-results",
+  "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOb0JXVkMxTzdsZkx1VzBOdmFZX1RYeUx5c3dPcWdMWlVUSFV1ODhYUlNvT2RiSm96aDl5UW4za0NOSUlNTHJGVUdwVzdFZ2RjdDgwb2J6a0JkWUZQdVpxVXNhRUZaUENuNU41cDJPbzhtT18yRlJsSUkwb0JiMGs4dUJ5a3pOa1hRZmJ1VFZldVh0UGZDRmQtcWUwNmZKZDBjb2l1SlduTlYtMmRmb1FhY2ZSbTN5dWNQQXF1WUh4blpXaUNMenU4cGQwM2s4cDdxZGNRZHdsVFF5Y0hDanJtX29R?oc=5",
+  "date": "2026-10-05T13:03:01.000Z",
+  "summary": "",
+  "publisher": "TradingView",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "b54d15674b87",
   "theme": "agents",
   "title": "Chinese AI agents can lie, fabricate and circumvent rules, just like their US counterparts: Why it matters",
@@ -3790,6 +4570,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "b64d1a9e1410",
+  "theme": "agents",
+  "title": "ESET Expands PROTECT Portfolio to Secure AI Agents and Enterprise Workflows",
+  "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZ09kUXdwbjZYMHhPTzZ2UXEtcWhodEpPVTZQS3U2SWVYRVZhYXp2cVZxTzlzR2hXM1cxQm12TUpteS1XdHhGZDFWVjlYaXFHS3ZWUm9VZmtHX3JTX1p0TXRfV3F1NmRJakRRM1BMLUlEWjFSY1R0eUI2UlBmZXhJT3Fib2w3TFAwdEJlNl9rWlJUQ2tmVnFXOGpxdUxKY1JUeE5SZ0ZJVUpRbmZVeC00?oc=5",
+  "date": "2026-10-01T10:57:48.000Z",
+  "summary": "",
+  "publisher": "konsulteer.com",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "b6956efdb26a",
@@ -3850,6 +4642,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "b8cb59a09cfc",
+  "theme": "capital",
+  "title": "Cybersecurity startup Zaperon raises ₹7 Cr in Seed Round led by Inflection Point Ventures",
+  "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOTkVLNGh3QjdKaUVoTHRvbFBzazlVYlpueTRFNFFiR2xMYlhaM0wycUk4emNnWk93SFliZzEwcWMyOUUxR2xiMlJ1SHh1MXNQOWkzVzdnSWhYczhlNTYwSng5VERTcWpsOE9wNGN6dVdTVEhCTmVuMzJUMHN1N1kzQ3AwTDVLY0x6X19YUFBBdDVYajBHUXpqaVVWcG1uUU5ocEU3MThXWVNQeG5LbUxvYjFybEhvOFdqSzBQMlg3TlM5X0hpcFJPUA?oc=5",
+  "date": "2026-10-05T09:12:32.000Z",
+  "summary": "",
+  "publisher": "India Technology News",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "b95e52d56a73",
@@ -4212,6 +5016,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "c88ba3d28c4d",
+  "theme": "labs",
+  "title": "OpenAI seeks $30 billion funding round at $1.4 trillion value",
+  "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE96S0xybk5XaFNpVGdXcHV3UnRBRW1uNzBRc0JJcGZsRG1zV18xaVdkOGNLYTE5Nmpnc3FaNkF3RkNiVFlZZTlNcUVDdHR5UXFWTDZFekZMRUZTcjhTaGtLMTU1R0RjVm1haEhYaHdEN18?oc=5",
+  "date": "2026-09-29T18:51:25.000Z",
+  "summary": "",
+  "publisher": "qz.com",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "c8db15559233",
   "theme": "labs",
   "title": "OpenAI launches GPT-6.1 Sol and a $500 plan for high-demand users",
@@ -4392,6 +5208,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "cf4bc1e3c19e",
+  "theme": "infra",
+  "title": "South Korea's Q3 Semiconductor ETF Performance Diverges Sharply: Large-Cap Funds Plunge While Materials/Parts/Equipment Funds Hold Up",
+  "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9SWDNQZ25JUUQwLUwtSnRnanMxVi1VTDJPLXJiSU1wdk93ekd4eklSUVZkNkFQcGJEUzlOMkMzYmlKV0xfR08waDRLSjZTbG90SVlHV3hzbmVWQUFXYUxnbXJJUU5yQzBnR1RReWZuSHpXQ05xUGc?oc=5",
+  "date": "2026-10-05T22:05:00.000Z",
+  "summary": "",
+  "publisher": "finance.biggo.com",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "cf79c01cccd7",
   "theme": "capital",
   "title": "Roze AI, AI Wireless Fire Safety Platform, Files for Nasdaq Capital Market IPO",
@@ -4402,6 +5230,18 @@
   "source": "apac",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "cf83cc41c893",
+  "theme": "infra",
+  "title": "3 No-Brainer Stocks to Buy If Data Center Expenditures Hit $3 Trillion by 2030",
+  "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNWo2RUVSWnRQV2dFTkRnVHZhV2Rva2pnNmttWnF2NV8zTTVBYnJaeFdzRHY4SVhXWXBCNFhWYkh6Rzk1WS03UXkwbGp4cW9tVjhOYnJDbV9heG9iTFVwVkppX2NNam1GcF9pN1hHd1dkdUc4Q2RCQUtwNkx6elZpVnFXbTUtLUtGNXJZdVo3d0FBc3ViLXBZTw?oc=5",
+  "date": "2026-10-04T02:00:00.000Z",
+  "summary": "",
+  "publisher": "The Motley Fool",
+  "source": "power",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "cfa22839b8bb",
@@ -4426,6 +5266,30 @@
   "source": "apac",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "d111c5330acd",
+  "theme": "labs",
+  "title": "OpenAI launches visual ads that appear alongside image generation results",
+  "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNRHIxVVpMc3hoNWJ3RHBzOUM0WGEyTy0yOXF1UnBDNTBSMnBwT2ljY1ZtZHhhX1JuT19QY2ZUd2hmMUVlSmpWdnR3cmNNR29vanpvdlJLMmZtNDBQUUtOY01URmdxajFIUnF3T1dXWm44aUxxcGxycmNkbzJ5WUdoT3N2Y2h4a2x6UnUwV2hTNWlFOFFDOVBfdWtxSlY5OG5Na1UzQjhCbnFiZXlh?oc=5",
+  "date": "2026-10-05T15:14:24.000Z",
+  "summary": "",
+  "publisher": "TechCrunch",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
+  "id": "d1443a60af05",
+  "theme": "enterprise",
+  "title": "Atlassian shares rise as software names rebound and investors look ahead to AI and pricing catalysts",
+  "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQeUwwWDNackZYeXpFQmt6bmdEeUZqVzVmYkktMmxXdFNraUMtd1N0ZGd5dmdsamNqM0cxOVlPU3pPMnZ0VXRHSGQzRF9XNmRqOTVxalRIb0lhZkZFQnpOUHRObUstdGxwWlQxQmdYMm5VRmRMVndwR1NLMF9DdkFHWmVnbUhvbGUyMU53UExnd0ROWXhYNFc5MXdNWXU0ZXpWekI3bGF1QmFFNExOZ1duOWdRZ0sya0lGYlZndVpuY2tVcGkwa0FESFg2V3J0dw?oc=5",
+  "date": "2026-10-05T17:36:00.000Z",
+  "summary": "",
+  "publisher": "quiverquant.com",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "d152613bbd9f",
@@ -4572,6 +5436,30 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "d80671985dba",
+  "theme": "agents",
+  "title": "Gladly Launches Agentic Commerce to End Retail's Two-Bot Era",
+  "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSkNnZkk2TWFNQkJVaFF0V2tUY2N2V2N6TG5jcmRUeDRqcWRkd0dOQ1FzZVZBLWFPeVFGMUE1dWY3MzlFZ1VkMkFGQ3VMX09qN3RSbXl5MHhES3ZzU2pZLTRnakROUWpOY3phOVBxUFl4dTQtQkc4c2JYVGdEdFNZMW51M2pxVGlKNkQteUZlaFB2UkhkYU9paFZickhtRlBYelBBcjNHTUlzUTBPdGc3S08yek55QQ?oc=5",
+  "date": "2026-10-05T13:00:00.000Z",
+  "summary": "",
+  "publisher": "PR Newswire",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
+  "id": "d8baf634328f",
+  "theme": "agents",
+  "title": "Promevo launches Insights to track Gemini Enterprise adoption and AI agents",
+  "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMTBBUi1xUjRnemhybEhzc0JFSHIxZGp5bkNzRzF0cVpXQ08yRWVXQklvRWRXaWNqcmNSUmRtejFpa1YtM003YkpXVHh1Yy11cU1EVEQ2QW1SY19CYW9OOUt1aE9KVU9ZNDEzR2NMT0Z4MDBYdlFWQk90MDAyaWpVUFVSTkhmV0hiUGxBNTZ1Zy1vRjVJQzluMEJpY2VGc25CZ3NfYjBuc0JjY3Y3YS1OLS1R?oc=5",
+  "date": "2026-10-05T13:00:00.000Z",
+  "summary": "",
+  "publisher": "SiliconANGLE",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "d9057e30460c",
   "theme": "infra",
   "title": "Samsung Galaxy Tab S12 Series Prices Announced for Indian Market with Special Deals",
@@ -4606,6 +5494,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "d98913be82f9",
+  "theme": "agents",
+  "title": "Genea Launches MCP Server for Cloud-Native Access Control",
+  "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNV3lZV1MySGI4YTRTWVdic1dpalRiMXFEWnpOSkRPX0tVRURVOXFIbDd6aEk3NXY1LVNfMGcyRmx0NnVLRmRNc21GNEN1SW5iOUhtTTdwQzlSSmtnVks3dVE4VnVZQnBvNXlDSXk3WG9fZ1NERy14WmNib2VnaldRX0l4VVlydHNmTDB1UGRVUkQ2aHBIclk2X3dBYw?oc=5",
+  "date": "2026-09-29T15:00:00.000Z",
+  "summary": "",
+  "publisher": "Yahoo Finance",
+  "source": "protocols",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "da89c3787bef",
@@ -4680,6 +5580,18 @@
   "firstSeen": "2026-10-05T08:01:27.460Z"
  },
  {
+  "id": "dc9b6861e0aa",
+  "theme": "agents",
+  "title": "Digital Realty launches ServiceFabric MCP for AI control",
+  "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVklwc1Q1Sm0zMGYya3lkaFhobHBvZXVFRHdQVEVubWhTWnFnYzExSEJramJGVW03NXMtUmV0R0FteUdybUpxY3FNT1JsQ191ZzlvQWJXM25kcXVjVW9ndDhvUEdMRDBJdG1pOUpzcG5hQ09SX2NVVnUyNGMxMUJHTmFQYVQwcy0wTVpsN1dVcVQ4ckhNVTFxTWt6aGJFcUd5aVlMMlAzNnVZVVJZaVBWakdvTQ?oc=5",
+  "date": "2026-10-05T12:29:45.000Z",
+  "summary": "",
+  "publisher": "scanx.trade",
+  "source": "protocols",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "dd917136eb46",
   "theme": "capital",
   "title": "Anthropic IPO could value AI firm at over $2 trillion despite $42 billion loss in 2025",
@@ -4702,6 +5614,18 @@
   "source": "openai",
   "official": true,
   "firstSeen": "2026-10-05T08:01:27.460Z"
+ },
+ {
+  "id": "de03c04562af",
+  "theme": "labs",
+  "title": "OpenAI unveils AI assistant 'dots' while safety worries delay new model",
+  "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA4R0gxZ2RzNURmYjgwTUVuemhuT201TFc5a2FjaFRqMXo2OXUwck8yNTFraEtkY2swOWdIb2liQXZGVTRrTGFhVV82S2JBRFJybExmQ28zcGdaT1U?oc=5",
+  "date": "2026-09-30T05:18:13.000Z",
+  "summary": "",
+  "publisher": "BBC",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "de98d1d7becb",
@@ -4752,6 +5676,42 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "e090e2570f1a",
+  "theme": "infra",
+  "title": "Mitsui Fudosan to build data center in abandoned tunnel in Japan",
+  "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNT2JieTRSbXpPVGdzN0t0dG1pdlV2OVFpS1B1aTZNQXlFLUI4b2tvcjhZVnZFaVJrQmVaTDhla2x1R1hQbEMxSElMaHFkTHpqRHBPVDRDRVV5U2RPM1EtcC1QX0RRcXZ1YzdOOXJkaUd0MFN4Smk5aFdsZlZlcy1tVUY4RnVhdjhDVnI5eWlBNmx4N0hycjZzUDJIQzZTejBOWXhtZVV2R29kSWt5Ykdob2pVR3cta29UbV9nTGZPblA2THZpallXS2lSdDM?oc=5",
+  "date": "2026-10-05T20:00:00.000Z",
+  "summary": "",
+  "publisher": "Nikkei Asia",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
+  "id": "e0f19f840483",
+  "theme": "labs",
+  "title": "OpenAI sued for trademark infringement over 'Astra' AI model",
+  "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPcW56VDk1TEhMTEdHUmg1RlB0cVIza055bEQ1OWJsLTk3OEFySUJNTzhSQ0Q0bTloYnBGN2VXaTBQUmxnNEd0UUtuc0NEeDR1UjZjWERWeEZURlpNOHVfQUo3TnBKaVF6ekJ4SDktZEdUQW5XUThabHMwdXVlRWl2ZHd0OVNHdDF2UmlRZ2ZWVjREeXhmZ3l3RXZUV3Z2MnNZQlFrOEdaUllrdkNGWmNv?oc=5",
+  "date": "2026-10-05T17:09:34.000Z",
+  "summary": "",
+  "publisher": "Reuters",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
+  "id": "e1047d40f0d8",
+  "theme": "agents",
+  "title": "AI agents found in China, likely on Tencent infrastructure — TechCrunch",
+  "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUTFBaG81cnAwek1aS1JxY1ZYS3ZjYjZWVlVfVTM4UlpNVHhLUGVlOGpEYjNWaG9hMFpwTkowUkNJY0VwYjRtUW9nQ3dWTnZfZzZRMnBnZ1JoSXdkWDZ2X3dsczdMcjRxTFZNd2JndkVZczBZVXRVUTRmTVRQY0NRSGcxRlZ6c0dKSDlpWUNmemI3cEtkVlJjdWduRnp0MkNKSy04MjdPYUd3Sjg?oc=5",
+  "date": "2026-10-05T14:57:54.000Z",
+  "summary": "",
+  "publisher": "UA.NEWS",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "e128e94e48c7",
   "theme": "capital",
   "title": "FTC chair Ferguson wary of AI firms seeking regulation plus antitrust exemptions",
@@ -4786,6 +5746,18 @@
   "source": "power",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "e2479b48abf1",
+  "theme": "labs",
+  "title": "Promevo launches Insights to track Gemini Enterprise adoption and AI agents",
+  "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMTBBUi1xUjRnemhybEhzc0JFSHIxZGp5bkNzRzF0cVpXQ08yRWVXQklvRWRXaWNqcmNSUmRtejFpa1YtM003YkpXVHh1Yy11cU1EVEQ2QW1SY19CYW9OOUt1aE9KVU9ZNDEzR2NMT0Z4MDBYdlFWQk90MDAyaWpVUFVSTkhmV0hiUGxBNTZ1Zy1vRjVJQzluMEJpY2VGc25CZ3NfYjBuc0JjY3Y3YS1OLS1R?oc=5",
+  "date": "2026-10-05T13:00:00.000Z",
+  "summary": "",
+  "publisher": "SiliconANGLE",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "e27e74612a05",
@@ -4834,6 +5806,30 @@
   "source": "openai",
   "official": true,
   "firstSeen": "2026-10-05T08:01:27.460Z"
+ },
+ {
+  "id": "e3e6b6263ada",
+  "theme": "infra",
+  "title": "Japan's largest power producer teams with Dell on $15bn data center",
+  "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNZzdXMzVfNjdGV29yY1ZJS19udmtGZU84WVc2N0VHSmJIbkU1ZHpyZWlwR0xWYkEzbXdYR3VYejJ6dWNQQ3dtRXpvTzJtdHNtSVVOaXNFejB4S2NUdXFtZ0xDOXpvLVRMRzZJbUtYN21heWl0WDFiZUtQYjVCaTc0aTdzakhjeFBzNjF5ZS1HRkxqemZ5SnF2dU5ZWlFleWlGclE0ZUExeEVaTWVxRExNMWViWTRkb0RhelNRMlZHa1FQOVhuRjNvbjhxaTFIRUE?oc=5",
+  "date": "2026-10-01T09:33:00.000Z",
+  "summary": "",
+  "publisher": "Nikkei Asia",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
+  "id": "e3ed5e915ffa",
+  "theme": "infra",
+  "title": "AI Financing Partnerships Are Credit-Positive for Nvidia and Data Center Operators",
+  "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQTU5vTHBEbmdscEZ2Ri1YbkJ0VzdLVWg3b25RbHVUQWlMN3U2c0lqc0VzVFRfR2VWc0RzTXRTOGF3dG9qYWdld0hSVjVkdjN2Zkl4WVh4cjZ4ejdMUDhTZC1UUXI5ZER4MGp2Y0k0NldJNVJrak5NY0MyM25RbTZ0b2NIY0tNRTFZM3ZXVEZLOE8zbXRMUmF2TmcxTHpzdXEyci1HZmZ6c0x3ZF9H?oc=5",
+  "date": "2026-10-05T21:56:15.000Z",
+  "summary": "",
+  "publisher": "Morningstar",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "e5bfa46a1d57",
@@ -4908,6 +5904,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "e8915286b4f6",
+  "theme": "labs",
+  "title": "Tibo Just Vowed \"28 Consecutive Days of Model Releases or Resets\" — OpenAI Now Faces a Severe Trust Crisis",
+  "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1ROXVMQ2IzMDdRV3gxNTFLTERyd0VSYU00ZmowV1EzQU9mSXd5clYzTUJrMmx6WnpYU3JBMGNwUWVnU3B6STVndW54VllVLVZVcWhR?oc=5",
+  "date": "2026-10-05T06:21:17.000Z",
+  "summary": "",
+  "publisher": "eu.36kr.com",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "e89d2d1965e4",
   "theme": "agents",
   "title": "Samsung hosts forum focused on agentic AI",
@@ -4954,6 +5962,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "ea94f6948968",
+  "theme": "labs",
+  "title": "OpenAI Launches Virtual Try-On and Favorites in ChatGPT",
+  "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZDMwcU5Sc2I1YnRqdDExbDVaZjg0ZEw1U3dNN3ZQRHJyeTlEdF9wdVYxVEJvNThEN3JZLTd5QXllQmJfWWlwakd4QWZkSDhfcGJmMk5fX3RmaXdEQmtVQWJUVWVfWnR4RnRsV09Bb0ZQSHZhaVlVMmFzeHM1bmpVNE1JVzlybHlqaFV0ZEk1Z19JMTg?oc=5",
+  "date": "2026-10-01T22:18:54.000Z",
+  "summary": "",
+  "publisher": "Brief IA",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "eb36e7d8862b",
@@ -5098,6 +6118,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "f21a257511d6",
+  "theme": "capital",
+  "title": "AMD to buy Fei-Fei Li's AI startup World Labs for $8.2B",
+  "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPRmdTZzNTaU1uc21uV18wRDFVQ2tDdEx6NUFmc0dPN1FnOU9BMHloOVZUNkR6dFRpZHVqaS1nVVdHTWJEVXpOc1VFc2ItOUJHbGFFQUozSlIyVmZSaGpONWo3bmhWOUZ3ZlhTRjZJZjRZQkMtT3dzVDBfc0swbGU0VE1FOGY4d09udWFDRXlpYnhHZFk?oc=5",
+  "date": "2026-09-29T08:19:25.000Z",
+  "summary": "",
+  "publisher": "TNGlobal",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "f331d10258a5",
@@ -5256,6 +6288,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "f7c0e0a31b0e",
+  "theme": "agents",
+  "title": "Why Agentic AI Could Force India’s GCCs to Rethink Ownership",
+  "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdXVKUlFtN0g2emg0RnZjTTB5WG1la0RXbXN5VWdUeDBYZFUweEhFODVZWnRCN05XVG1SOGxscU9WMXJwb3I0NU43V00tWFNMRUJ4Z1o5OXZncEx6eXA1b3VKbGZCdUt1TkpuaEhvbDRFU2xVeWFTRGhFeVNPNGJEb2hhc09PRlZpYjRRQkdEbTNzWjc1MVg0WUYtamU?oc=5",
+  "date": "2026-10-05T10:57:36.000Z",
+  "summary": "",
+  "publisher": "cxotoday.com",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
   "id": "f7ddb45582a4",
   "theme": "infra",
   "title": "Robinhood Says No Immediate Plans to Enter South Korea, But Notes Demand for Korean Semiconductor and AI Stocks",
@@ -5278,6 +6322,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "f85ad4b1b915",
+  "theme": "capital",
+  "title": "AI startup Instinct raises $1 billion, valued at $10 billion | Tap to know more | Inshorts",
+  "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTkZwa0hGd09tVk1HcXR3N0lCMXFVeG1NNGRfcjFINmZnV2tObUVKMlZ1dzlZSkFuSGlReWtSeVA4OHU4VVpKWHBFQURnSmxCN3FLS2FPVmM0dEUzMFdjR090cjBweEN5d1JqekQ5MEQzNDFkSjd4M09OVnc2T081cnM0Z3Z0TTEwT0tXV3BnZ1lFalXSAZgBQVVfeXFMTlNxWGVGem9VTXBiRzhQYXlKdFVFZGpiTHhXaW90NGhsMnZBQTNtamJyQUF6dWdJNDlPZ2N4YmNZMDZOSHZhQk1vbmRSQlRCdE5HeUNrTmhqd0dPVFlhOXNrN2UzMjZYT05aNTYtanRYcEltMllsaXBPQlRoUVI1WDFqS1BpNG0yMjBiSWxFQzZjRG1OaFRReGQ?oc=5",
+  "date": "2026-09-29T04:22:03.000Z",
+  "summary": "",
+  "publisher": "Inshorts",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "f9885d74dfb1",
@@ -5326,6 +6382,18 @@
   "source": "apac",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "fbd064b6a459",
+  "theme": "capital",
+  "title": "AI startup EliseAI valued at $4 billion in latest funding round",
+  "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSWFRUkROTGVjTWZvMUlUcWRxdWJ0Q3ZDcTFKMzdpLWRTRVJweTZwSkM0UGIzdHhab212OEhmQXRzSlhucTVsV3J5S2VFcEFhWVQyZ2U4NWZDcGY3NTNsa1c5THRCb3hMa3lIcmJlYXI0dWRaSGNGdkY2WmhKaGVLeC0zM09QTE1ZU2NRN0hKR3YxQVA0Y0lmdkVvMnQ3and1cHc?oc=5",
+  "date": "2026-09-29T12:25:37.000Z",
+  "summary": "",
+  "publisher": "Reuters",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-06T00:02:17.930Z"
  },
  {
   "id": "fd169722ce07",
