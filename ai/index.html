@@ -392,7 +392,6 @@ const $ = (id) => document.getElementById(id);
 const themeOf = (i) => THEMES.find((t) => t.id === i.theme) || THEMES[0];
 // Headlines open a Google News search for the story rather than one outlet's copy of it. The
 // original article stays reachable as the small "source" link.
-const gnews = (q) => `https://www.google.com/search?tbm=nws&q=${encodeURIComponent(q)}`;
 // A Google News description is the headline plus the outlet; that is not a summary.
 const norm = (s) => String(s || '').replace(/\s+/g, ' ').trim().toLowerCase();
 const echo = (i) => norm(i.summary).startsWith(norm(i.title).slice(0, 60));
@@ -451,10 +450,9 @@ function card(i) {
         <span class="kind">${esc(KIND[i.kind] || 'News')}</span>
         <span class="beat">${esc(themeOf(i).short)}</span>
         <span>${esc(i.publisher || '')}</span>
-        <a class="src" href="${esc(i.url)}" target="_blank" rel="noopener noreferrer">source</a>
         <span class="when">${esc(dayLabel(i.date))}</span>
       </div>
-      <a class="title" href="${esc(gnews(i.title))}" target="_blank" rel="noopener noreferrer">${esc(i.title)}</a>
+      <a class="title" href="${esc(i.url)}" target="_blank" rel="noopener noreferrer">${esc(i.title)}</a>
       ${fit ? `<div class="fit">${fit}</div>` : ''}
       ${i.move ? `<p class="move">${esc(i.move)}</p>` : ''}
       ${i.summary && !echo(i) ? `<p class="summary">${esc(i.summary)}</p>` : ''}
