@@ -124,18 +124,18 @@ a { color: inherit; }
       <h1 id="h1">AI & Tech Tracker</h1>
       <span class="stamp" id="stamp">loading</span>
     </div>
-    <p class="blurb">What the AI and tech industry did this week, read for what it changes in a software target's technology thesis.</p>
+    <p class="blurb">The transactions side of AI and tech this week: the companies that could be bought, the deals done on ones like them, the sponsors doing them, and the platform shifts that change what a target is worth.</p>
     <div class="seg" id="seg">
       <button data-seg="priority">Priority</button>
       <button data-seg="pipeline" id="segPipeline">Pipeline</button>
     </div>
-    <div class="focus" id="focus"><span class="focus-label">Diligence lenses</span><div class="chips" id="chips"></div></div>
+    <div class="focus" id="focus"><span class="focus-label">Sectors</span><div class="chips" id="chips"></div></div>
     <div class="banner" id="banner" hidden></div>
   </div>
   <div class="list" id="list">
-    <div class="empty"><b>Loading developments.</b><br>Each one will show the event, the diligence lens it touches, and what to re-check on a software target.</div>
+    <div class="empty"><b>Loading developments.</b><br>Each one will show the event, the sector it sits in, and what it opens for SSG.</div>
   </div>
-  <p class="foot" id="foot">Priority is the one list: the latest developments relevant to SSG, APAC first. An APAC item is in whenever it carries an event or a lens; a global item only when it is live or signed and in a lens, or a billion-dollar round or deal. The rest is kept behind the link at the bottom; the page carries the last 90 days and the archive in the repo keeps everything. Event, lens and APAC are read from the headline by keyword; the matched words sit under each tag, and the small label is the beat the story came from. <span id="footTriage">Pursue, Watch, Dismiss and notes are saved and shared with anyone who can open this page.</span></p>
+  <p class="foot" id="foot">Priority is the one list: the latest developments relevant to SSG, APAC first. An APAC item is in whenever it carries an event or a sector; a global item when it is a transaction — a sale process, a deal or a listing in one of SSG's sectors, a growth round of $100m or more, anything with a billion-dollar figure — or a platform shift that reaches a sector. The rest is kept behind the link at the bottom; the page carries the last 90 days and the archive in the repo keeps everything. Event, sector and APAC are read from the headline by keyword; the matched words sit under each tag, and the small label is the beat the story came from. <span id="footTriage">Pursue, Watch, Dismiss and notes are saved and shared with anyone who can open this page.</span></p>
 </div>
 <div class="toast" id="toast"></div>
 
@@ -146,26 +146,31 @@ const NAV = {"here":"ai","pe":"../","ai":"./"};
 document.getElementById('nav').innerHTML = [['pe', 'PE Clients'], ['ai', 'AI &amp; Tech']]
   .map(([k, l]) => `<a href="${String(NAV[k]).replace(/"/g, '&quot;')}"${NAV.here === k ? ' class="on"' : ''}>${l}</a>`).join('');
 const THEMES = [{
-  id: "labs", name: "Frontier labs", short: "Labs", blurb: "Model releases and capability steps from the labs whose outputs every software target now builds on.",
-  defaultLens: "platform", match: /\b(openai|chatgpt|gpt-\d|gpt-?5|o[345]\b|anthropic|claude|google deepmind|deepmind|gemini|meta ai|llama|xai|grok|mistral|deepseek|qwen|alibaba cloud|moonshot|kimi|zhipu|glm-?\d|baidu|ernie|bytedance|doubao|sakana|cohere|ai21|reka|perplexity)\b/i
+  id: "ma", name: "AI & tech M&A", short: "M&A", blurb: "Acquisitions, take-privates, mergers and carve-outs of software, AI and tech companies: who is buying what, at what price, and the diligence each one opens.", aliases: ["capital"],
+  defaultLens: null, match: /\b(acquires?|acquired|acquiring|acquisition|to buy|buys|bought|buyout|take[- ]private|takes? private|taken private|takeover|merger|merges?|carve[- ]out|divests?|divestiture|snaps? up|scoops? up|agreed to (?:buy|acquire)|agrees to (?:buy|acquire)|sells? (?:its |a )?(?:[\w-]+ )?(?:unit|business|division|arm|stake)|sale of|to be acquired)\b/i
 },{
-  id: "agents", name: "Agents & dev tools", short: "Agents", blurb: "Coding agents, agent platforms and the protocols between them: where \"the software writes itself\" meets a target's R&D line.",
-  defaultLens: null, match: /\b(agent|agents|agentic|copilot|cursor|windsurf|replit|devin|cognition|lovable|bolt\.new|v0\b|claude code|codex|gemini cli|github copilot|mcp\b|model context protocol|a2a\b|langchain|langgraph|crewai|autogen|openai agents|agentforce|vibe coding|developer tools|dev tools|ide\b)\b/i
+  id: "targets", name: "Targets & scale-ups", short: "Targets", blurb: "The companies a sponsor could buy next: growth rounds, secondaries and valuation marks, and the sale processes, reviews and mandates that say one is in play.", aliases: [],
+  defaultLens: null, match: /\b(raises?|raised|funding round|series [b-h]\b|growth round|growth equity|late[- ]stage|pre[- ]ipo|tender offer|secondary (?:sale|share sale|transaction)|secondaries|valuation|valued at|unicorn|explor(?:es|ing|ed) (?:a |an |strategic )?(?:sale|options|alternatives)|strategic (?:review|alternatives|options)|hires? (?:advisers|advisors|bankers|banks)|dual[- ]track|weigh(?:s|ing)? (?:a |an )?(?:sale|ipo|listing|bid|offer|options)|in (?:early |advanced |exclusive |final )?talks|sale process|up for sale|on the block|seeks? (?:a )?buyers?|courts? (?:buyers|bidders|suitors)|attracts? (?:interest|bids|suitors)|bidders?|suitors?|nears? (?:a )?deal|mulls? (?:a )?(?:sale|ipo))\b/i
 },{
-  id: "enterprise", name: "Enterprise software", short: "Enterprise", blurb: "Incumbents repricing and rebuilding around AI, and the AI-native challengers attacking their categories. The moat question, live.",
-  defaultLens: null, match: /\b(salesforce|servicenow|sap\b|workday|oracle|microsoft 365|copilot|adobe|atlassian|hubspot|zendesk|intuit|snowflake|databricks|palantir|uipath|shopify|monday\.com|freshworks|zoho|notion|canva|figma|glean|harvey|sierra|decagon|writer|cognizant|accenture|infosys|tcs\b|wipro|saas|software stocks?|seat-based|per-seat|enterprise ai|ai adoption)\b/i
+  id: "sponsors", name: "Sponsors in tech", short: "Sponsors", blurb: "Private equity and growth investors buying, backing and selling software and AI companies, and the tech funds they raise: the buyers SSG works for.", aliases: [],
+  defaultLens: null, match: /\b(thoma bravo|vista equity|silver lake|\bhg\b(?! insights)|hg capital|francisco partners|insight partners|general atlantic|permira|advent international|advent\b|bain capital|blackstone|kkr|tpg\b|warburg pincus|eqt\b|cvc\b|carlyle|apax|clearlake|accel-kkr|marlin equity|turn\/river|symphony technology|stg partners|providence equity|genstar|gi partners|\bpag\b|baring private|hillhouse|temasek|gic\b|softbank|sequoia|a16z|andreessen horowitz|tiger global|coatue|lightspeed|accel\b|index ventures|iconiq|dragoneer|private equity|buyout firm|buyout group|growth equity|sponsor-backed|pe-backed|private-equity)\b/i
 },{
-  id: "infra", name: "Compute & infrastructure", short: "Compute", blurb: "Chips, data centres, power and the capex behind them: what inference costs next year, and who controls the supply.",
-  defaultLens: null, match: /\b(nvidia|amd\b|intel|tsmc|broadcom|arm\b|qualcomm|samsung|sk hynix|micron|hbm|gpu|gpus|tpu|tpus|trainium|inferentia|maia|data cent(?:er|re)s?|datacent(?:er|re)s?|coreweave|lambda|nebius|crusoe|oracle cloud|azure|aws|google cloud|hyperscaler|hyperscalers|capex|gigawatt|megawatt|nuclear|stargate|supercomputer|chips?|semiconductor)\b/i
+  id: "listings", name: "IPOs & public comps", short: "IPOs", blurb: "Tech IPO filings, pricings and delistings, and the public software results and re-ratings that set the multiples a private target is valued against.", aliases: [],
+  defaultLens: null, match: /\b(ipo|ipos|initial public offering|files? (?:for|to go) public|files? (?:a |an |its )?(?:draft )?(?:prospectus|s-1|drhp|f-1)|goes public|went public|going public|lists? on|listing|listed on|debuts? on|prices? (?:its )?(?:ipo|shares|offering)|direct listing|spac|delists?|delisting|take[- ]private|earnings|quarterly results|financial results|guidance|shares? (?:fall|fell|drop|dropped|jump|jumped|surge|surged|plunge|plunged|soar|soared|rise|rose|slide|slid|tumble|tumbled)|stock (?:falls?|fell|drops?|jumps?|surges?|plunges?|soars?|rises?))\b/i
 },{
-  id: "capital", name: "Deals & capital", short: "Capital", blurb: "Who is funding, buying and listing AI companies, at what price. Where the multiples come from before they reach a software target.",
-  defaultLens: null, match: /\b(raises?|raised|funding|valuation|valued at|series [a-h]\b|acquires?|acquired|acquisition|to buy|buys|merger|ipo|initial public offering|lists? on|stake|investment|invests?|tender offer|secondary|unicorn|venture|vc\b|private equity|softbank|sequoia|a16z|andreessen|thrive|lightspeed|temasek|gic\b|mubadala|mgx\b)\b/i
+  id: "platforms", name: "Platform shifts", short: "Platforms", blurb: "Frontier models, agent platforms and incumbents' AI moves that change what a target's technology is worth: the moat, pricing and platform questions a DD team still has to score.", aliases: ["labs","agents","enterprise","infra"],
+  defaultLens: "ai", match: /\b(openai|chatgpt|gpt-\d|gpt-?5|anthropic|claude|google deepmind|deepmind|gemini|meta ai|llama|xai|grok|mistral|deepseek|qwen|alibaba cloud|moonshot|kimi|zhipu|baidu|bytedance|doubao|sakana|cohere|perplexity|agentic|ai agents?|coding agents?|copilot|cursor|windsurf|replit|devin|claude code|codex|mcp\b|model context protocol|agentforce|salesforce|servicenow|sap\b|workday|oracle|microsoft|adobe|atlassian|snowflake|databricks|palantir|nvidia|hyperscaler|per-seat|seat-based|consumption-based|usage-based)\b/i
 }];
 
-const LENSES = [{"id":"moat","label":"Moat compression","short":"Moat","strong":["ai agent","ai agents","agentic","autonomous agent","autonomous agents","copilot","ai-native","ai native","replaces","replace","replacing","disrupt","disrupts","disruption","disrupting","threat to","challenger","challengers","commoditi","commoditise","commoditize","commoditization","commoditisation","vibe coding","coding agent","coding agents","coding assistant","customer service agent","service agent","built-in","natively","end-to-end","moat","moats","seat compression","headcount","does the work","no-code","low-code","vertical ai","vertical agent"],"weak":["saas","software","incumbent","incumbents","startup","startups","vertical","workflow","workflows","automation","automate","automates","enterprise","rival","rivals","competes","competition","competitor","competitors","market share","customers"]},{"id":"pricing","label":"Pricing model","short":"Pricing","strong":["pricing","price cut","price cuts","cuts prices","cuts price","price increase","price hike","raises prices","per seat","per-seat","seat-based","per user","per-user","consumption-based","consumption based","usage-based","usage based","outcome-based","outcome based","pay per","pay-per","free tier","paid tier","premium tier","subscription price","token price","token prices","per million tokens","api price","api prices","api pricing","cheaper","discount","discounts","bundle","bundles","bundling","unbundle","unbundling","new plan","new tier","pro plan","max plan","enterprise plan","a month","per month","/month"],"weak":["price","prices","cost","costs","subscription","subscriptions","seats","revenue","margin","margins","arr","monetization","monetisation","monetize","monetise","plan","tier","ads","advertising"]},{"id":"platform","label":"Platform dependency","short":"Platform","strong":["open-weights","open weights","open-weight","open weight","open-source model","open source model","open-source","open source","open-sources","deprecate","deprecates","deprecated","deprecation","api change","api changes","exclusive","exclusivity","default provider","default model","default assistant","multi-model","model-agnostic","switching costs","lock-in","lock in","vendor lock","distribution deal","distribution agreement","preinstalled","pre-installed","default search","app store","mcp","model context protocol","interoperability","interoperable","rate limit","rate limits","terms of service","build vs buy","in-house model","in-house models","own model","own models","first-party","first party","wrapper","wrappers","foundation model","frontier model","compute deal","cloud deal","cloud agreement","primary cloud"],"weak":["api","apis","platform","ecosystem","integration","integrations","partnership","partner","partners","developers","developer","sdk","cloud","azure","aws","google cloud","bedrock","vertex","marketplace","plugin","plugins","extension","extensions"]},{"id":"cost","label":"Compute cost","short":"Compute","strong":["gpu","gpus","chip","chips","tpu","tpus","accelerator","accelerators","semiconductor","semiconductors","data center","data centers","data centre","data centres","datacenter","datacenters","capex","capital expenditure","capital expenditures","capital spending","inference cost","inference costs","training cost","training costs","compute cost","compute costs","cost per token","tokens per second","gigawatt","gigawatts","megawatt","megawatts","nuclear","power demand","power supply","electricity demand","hbm","memory chips","foundry","fab","blackwell","rubin","tsmc","supply constraints","shortage","shortages","gross margin","gross margins","unit economics","burn rate","cash burn","compute capacity","cluster","clusters","supercomputer","export controls","h20","h100","h200","gb200","gb300","mi300","mi350","mi400"],"weak":["compute","infrastructure","cloud","servers","server","hardware","electricity","energy","power","cost","costs","margin","margins","efficiency","efficient","cheaper","inference","training","capacity","spending","investment"]},{"id":"reg","label":"Regulation & trust","short":"Regulation","strong":["regulation","regulations","regulator","regulators","regulatory","ai act","export controls","export control","export ban","export curbs","sanctions","antitrust","anti-trust","competition authority","competition watchdog","ftc","doj","european commission","lawsuit","lawsuits","sues","sued","copyright","ruling","court","judge","settlement","settles","fine","fined","fines","ban","bans","banned","compliance","data protection","gdpr","privacy","safety","jailbreak","breach","data breach","outage","hack","hacked","vulnerability","executive order","legislation","national security","licence requirement","license requirement","sovereign ai","data residency","investigation","probe","subpoena","watchdog","misuse","deepfake","deepfakes","prompt injection","guardrails"],"weak":["law","laws","legal","government","policy","security","trust","audit","liability","restrictions","guidelines","standards","ethics","oversight","parliament","congress","senate"]}];
+const LENSES = [{"id":"software","label":"Vertical & enterprise software","short":"Software","strong":["software","saas","enterprise software","cybersecurity","security software","cloud platform","erp","workflow","developer tools","infrastructure software","b2b software","software company","software firm","software maker","software provider","saas company","saas firm","erp","crm","hcm","payroll software","practice management"],"weak":["cloud","platform","automation","technology","digital","it services","subscription","arr","recurring revenue"]},{"id":"fintech","label":"Fintech","short":"Fintech","strong":["fintech","financial technology","payments","payment","insurtech","wealthtech","wealth tech","regtech","core banking","banking software","lending platform","neobank","digital bank","remittance","investment accounting","trading platform","brokerage","buy now pay later","bnpl","merchant acquiring","card issuing","fund administration","wealth management platform"],"weak":["financial services","lending","credit","banking","insurance","wealth","asset management","capital markets","treasury","compliance"]},{"id":"healthit","label":"Health IT","short":"Health IT","strong":["healthcare it","health it","healthtech","health tech","digital health","medical software","clinical software","healthcare data","health data","care management","electronic health","ehr","emr","telehealth","medtech software"],"weak":["healthcare","health","clinical","hospital","care","patient","pharma","life sciences"]},{"id":"data","label":"Data & analytics","short":"Data","strong":["information services","data provider","market data","data and analytics","data & analytics","analytics","intelligence","benchmarking","ratings","credit data","risk data","pricing data","data platform","proprietary data","research and data","index provider","data business","databases","data connectivity","data integration","data management","data infrastructure","data-management","data management software","master data","data catalog","data catalogue","data quality","data governance","data observability","analytics software","business intelligence"],"weak":["data","insights","research","information","content","index","reporting"]},{"id":"ai","label":"AI applications","short":"AI Apps","strong":["artificial intelligence","machine learning","generative ai","genai","agentic","ai-native","ai-powered","ai-driven","ai platform","vertical software","vertical saas","llm","computer vision","workflow automation","ai startup","ai company","ai firm","ai lab","frontier model","foundation model","large language model","coding agent","ai agent","ai agents"],"weak":["software","saas","cloud","automation","platform","workflow","erp","cybersecurity"]},{"id":"markets","label":"Marketplaces & internet","short":"Marketplaces","strong":["marketplace","marketplaces","two-sided","network effects","classifieds","b2b platform","b2b marketplace","e-commerce platform","ecommerce platform","online platform","aggregator","booking platform","travel distribution","freight network","exchange platform","super app","super-app"],"weak":["network","e-commerce","ecommerce","online","travel","logistics","exchange","connects","buyers and sellers","community"]},{"id":"cyber","label":"Cybersecurity","short":"Cyber","strong":["cybersecurity","cyber security","security software","security company","security firm","security startup","identity management","identity and access","iam","zero trust","endpoint security","siem","threat detection","threat intelligence","application security","cloud security","data security","email security","network security","soc","vulnerability management","infosec"],"weak":["security","threat","threats","identity","encryption","compliance","risk","fraud"]},{"id":"devtools","label":"Dev tools & infrastructure software","short":"Dev tools","strong":["developer tools","developer tool","devtools","dev tools","observability","api management","data infrastructure","database","databases","cloud infrastructure","devops","platform engineering","integration platform","ipaas","middleware","mlops","vector database","data pipeline","data pipelines","open-source software","open source software","infrastructure software","it management","it operations","itsm"],"weak":["infrastructure","cloud","platform","api","apis","open source","open-source","developers","developer","kubernetes","monitoring"]}];
 const RUMOUR = /\b(opens? (?:its |the )?(?:books|door|data room)|due diligence|data room|sweetens?|(?:improved|revised|higher|sweetened|rival|unsolicited) (?:[^\s]+ ){0,4}?(?:bid|offer|proposal)|lifts? (?:its |the )?(?:bid|offer)|raises? (?:its |the )?(?:bid|offer)|vies? for|vying for|weighs? (?:a )?bids?|in talks|talks to|weighs|weighing|considers|considering|explores?|exploring|mulls|mulling|eyes?|eyeing|nears|nearing|said to|sources say|people familiar|according to people|in the running|shortlist(?:ed)?|binding bids?|non-binding|frontrunner|front-runner|bid for|bids for|takeover bid|takeover offer|revised offer|higher bid|could sell|could buy|plans to sell|seeks? buyers?|hires? (?:banks?|advisers?|advisors?)|kicks off sale|sale process|strategic review|strategic options|strategic alternatives|joins? (?:the )?race|race for|(?:wanting|looking|seeking|keen) to (?:buy|acquire)|interested in (?:buying|acquiring)|suitors?|bid talks|circles?|circling|reportedly|is said to|plans to|planning to|preparing to|poised to|is working on|working on|testing|in development|internally|leak|leaked|leaks|could launch|may launch|expected to|set to launch|set to release|aims to|will reportedly)\b/i;
 const LIVE = /\b(launch(?:es|ed)|releases?|released|introduc(?:es|ed)|debuts?|debuted|now available|generally available|general availability|rolls? out|rolled out|rolling out|ships?|shipped|completes?|completed|closes?|closed|goes live|went live|live today|available today|starting today|is out|open to all)\b/i;
 const MONEY = /(?:\$|US\$|USD|€|£|A\$|S\$|¥|₹|HK\$)?\s?(\d+(?:[.,]\d+)?)\s?(tn|trillion|bn|billion|b\b|mn|million|m\b)/i;
+function moneyBn(title) {
+  const m = MONEY.exec(title); if (!m) return 0;
+  const n = parseFloat(m[1].replace(',', '.')); const u = m[2].toLowerCase();
+  return u.startsWith('t') ? n * 1000 : u.startsWith('b') ? n : n / 1000;
+}
 function bigMoney(title) {
   const m = MONEY.exec(title); if (!m) return false;
   const n = parseFloat(m[1].replace(',', '.')); const u = m[2].toLowerCase();
@@ -184,118 +189,157 @@ function sameStory(a, b) {
   return n >= 3 && n / Math.min(a.size, b.size) >= 0.5;
 }
 const ownName = (f) => new RegExp([f.match.source, ...String(f.name || '').toLowerCase().split(/\s+/).filter(Boolean).map((w) => `\\b${w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`)].join('|'), 'i');
-const EVENTS = [["pricing", /\b(pay[- ]to[- ]play|charg(?:e|es|ed|ing) (?:for|per|by)|bill(?:s|ed|ing)? (?:per|by|for)|meter(?:s|ed|ing)?|monetis|monetiz|paywall|editions?|bundl(?:es|ed|ing)|unbundl|per[- ]action|per[- ]conversation|per[- ]task|credits?\b|pric(?:e|es|ed|ing)|per[- ]seat|per[- ]user|per million tokens|free tier|paid tier|cheaper|discount(?:s|ed)?|cuts? (?:the )?(?:price|cost)s?|slash(?:es|ed)? (?:price|cost)s?|price hike|subscription (?:price|plan|tier)s?|new (?:plan|tier)s?|\$\d+(?:\.\d+)?(?:\/|\s?per\s|\s?a\s)(?:month|user|seat|mo\b|year))/i],
+const EVENTS = [["process", /\b(explor(?:es|ing|ed) (?:a |an |strategic )?(?:sale|options|alternatives|ipo|listing)|strategic (?:review|alternatives|options)|hires? (?:advisers|advisors|bankers|banks)|appoints? (?:advisers|advisors|bankers)|dual[- ]track|weigh(?:s|ing)? (?:a |an )?(?:sale|ipo|listing|bid|offer|options)|in (?:early |advanced |exclusive |final |preliminary )?talks|sale process|up for sale|on the block|seeks? (?:a )?buyers?|courts? (?:buyers|bidders|suitors)|attracts? (?:interest|bids|suitors)|draws? (?:interest|bids)|bidders?|suitors?|bids? for|nears? (?:a )?deal|close to (?:a )?deal|poised to (?:buy|acquire|sell)|considers? (?:selling|a sale)|puts? (?:[\w-]+ )?up for sale|mulls? (?:a )?(?:sale|ipo|listing)|received (?:an? )?(?:offer|approach|proposal)|takeover (?:approach|interest|bid|offer|proposal)|non-binding|binding (?:bid|offer)|final (?:bid|offer))\b/i],
+  ["ipo", /\b(ipo|ipos|initial public offering|files? (?:for|to go) public|files? (?:a |an |its )?(?:draft |updated )?(?:prospectus|s-1|drhp|f-1)|goes public|went public|going public|lists? on (?:the )?(?:nasdaq|nyse|asx|sgx|nse|bse|hkex|tse|kosdaq|kospi|lse)|debuts? on|prices? (?:its )?(?:ipo|shares|offering)|direct listing|spac|delists?|delisting|first day of trading|market debut|ahead of (?:its |an? |the )?(?:[\w-]+ )?(?:ipo|listing|float)|(?:ipo|listing) plans?|floats? on|to float)\b/i],
+  ["fund", /\b(closes?|closed|closing of|raises?|raised|final close|first close|hard cap|hits? (?:its )?(?:hard cap|target))\b.{0,80}?\bfund\b|\bfund\b.{0,60}?\b(close|closes|closed|closing)\b/i],
+  ["deal", /\b(acquires?|acquired|acquiring|acquisition|to buy|buys|bought|buyout|take[- ]private|takeover|merger|merges?|acqui-?hire|acquihire|licens(?:es|ing) (?:deal|agreement)|absorbs?|snaps? up|scoops? up)\b/i],
+  ["funding", /\b(raises?|raised|raising|funding round|funding|series [a-h]\b|seed round|valuation|valued at|investment of|invests?|invested|tender offer|secondary (?:sale|share sale)|ipo|initial public offering|files? (?:for|to go) public|goes public|lists? on|debuts? on|backs|backed by|takes? (?:a )?(?:minority )?stake|stake in|commits? \$|pledges? \$|to invest)\b/i],
+  ["pricing", /\b(pay[- ]to[- ]play|charg(?:e|es|ed|ing) (?:for|per|by)|bill(?:s|ed|ing)? (?:per|by|for)|meter(?:s|ed|ing)?|monetis|monetiz|paywall|editions?|bundl(?:es|ed|ing)|unbundl|per[- ]action|per[- ]conversation|per[- ]task|credits?\b|pric(?:e|es|ed|ing)|per[- ]seat|per[- ]user|per million tokens|free tier|paid tier|cheaper|discount(?:s|ed)?|cuts? (?:the )?(?:price|cost)s?|slash(?:es|ed)? (?:price|cost)s?|price hike|subscription (?:price|plan|tier)s?|new (?:plan|tier)s?|\$\d+(?:\.\d+)?(?:\/|\s?per\s|\s?a\s)(?:month|user|seat|mo\b|year))/i],
   ["research", /\b(paper|study|studies|researchers?|arxiv|report finds|finds? that|survey|system card|safety report|red[- ]team(?:ing|ed)?)\b/i],
   ["incident", /\b(outage|went down|goes down|is down|down for|data breach|breach(?:ed)?|hacked|hack\b|vulnerability|vulnerabilities|exploit(?:ed)?|jailbreak|jailbroken|prompt injection|security (?:flaw|incident|issue|hole)|recall(?:ed|s)?|deepfake|deepfakes|scam|misuse|exposed (?:data|chats|conversations))\b/i],
   ["regulation", /\b(regulat(?:or|ors|ion|ions|ory)|ai act|export (?:controls?|ban|curbs?|restrictions?|licen[cs]es?)|antitrust|anti-trust|competition (?:authority|watchdog|commission)|ftc|doj|european commission|eu (?:fines?|rules?|probes?|orders?)|lawsuit|sues?|sued|copyright|court|ruling|rules? (?:that|against|in favou?r)|judge|settlement|settles?|fines?|fined|bans?|banned|legislation|bill\b|executive order|probe|investigation|investigates?|subpoena|complaint|privacy watchdog|data protection|gdpr|licen[cs]e requirement|national security|sovereign)\b/i],
-  ["funding", /\b(raises?|raised|raising|funding round|funding|series [a-h]\b|seed round|valuation|valued at|investment of|invests?|invested|tender offer|secondary (?:sale|share sale)|ipo|initial public offering|files? (?:for|to go) public|goes public|lists? on|debuts? on|backs|backed by|takes? (?:a )?(?:minority )?stake|stake in|commits? \$|pledges? \$|to invest)\b/i],
   ["earnings", /\b(earnings|quarterly results|financial results|reports? (?:first|second|third|fourth)[- ]quarter|q[1-4] (?:results|revenue|earnings)|revenue (?:rose|grew|jumps?|jumped|soars?|falls?|fell|hits?|tops?|beats?|misses?|reaches|reached|doubles?|doubled|tripled)|guidance|forecasts?|outlook|beats? (?:estimates|expectations|forecasts)|misses? (?:estimates|expectations|forecasts)|annuali[sz]ed revenue|run[- ]rate|\barr\b|capex|capital (?:expenditure|spending)|spending plans?|to spend \$|profit(?:able|ability)?|net loss|cash burn|burn rate|margins?)\b/i],
   ["market", /\b(shares? (?:fall|fell|drop|dropped|plunge|plunged|slide|slid|tumble|tumbled|sink|sank|rise|rose|jump|jumped|surge|surged|rally|rallied|soar|soared)|stock (?:falls?|fell|drops?|plunges?|slides?|tumbles?|sinks?|rises?|jumps?|surges?|rallies?|soars?)|sell-?off|selloff|market (?:cap|value)|wipes? .{0,25}? off|downgrades?|analysts? (?:warn|say|cut|raise|see|expect)|short[- ]seller|valuation (?:drops?|falls?|hits?))\b/i],
-  ["deal", /\b(acquires?|acquired|acquiring|acquisition|to buy|buys|bought|buyout|take[- ]private|takeover|merger|merges?|acqui-?hire|acquihire|licens(?:es|ing) (?:deal|agreement)|absorbs?|snaps? up|scoops? up)\b/i],
   ["people", /\b(appoints?|appointed|names|named|hires?|hired|hiring|joins|joined|promotes?|promoted|poach(?:es|ed)|resigns?|resigned|departs?|departed|leaves|left|steps? down|stepping down|quits?|exodus|exits? (?:the )?(?:company|firm|lab))\b.{0,100}?\b(ceo|cfo|cto|coo|cpo|chief|head of|president|chairman|chairwoman|chair\b|founder|co-?founder|researcher|researchers|scientist|scientists|engineer|engineers|team|executive|executives|leader|lead\b|vp\b|board)\b/i],
   ["partnership", /\b(partners? with|partnership|partnering|teams? up|tie-?up|alliance|joint venture|collaborat(?:es|ion|ing)|deal with|agreement with|signs? (?:a )?(?:deal|agreement|contract|pact)|to supply|supply (?:deal|agreement)|integrates? with|integration with|available (?:on|in|through) (?:aws|azure|google cloud|bedrock|vertex|snowflake|databricks|salesforce|microsoft 365|workspace|copilot)|brings? .{0,40}? to (?:aws|azure|google cloud|snowflake|databricks|salesforce|workspace|copilot|windows|iphone|android)|picks? .{0,30}? (?:as|for) (?:its )?(?:ai|model|cloud|chip))\b/i],
   ["launch", /\b(launch(?:es|ed|ing)?|unveils?|unveiled|releases?|released|introduc(?:es|ed|ing)|rolls? out|rolled out|rolling out|ships?|shipped|debuts?|debuted|now available|generally available|general availability|\bga\b|public preview|previews?|open[- ]sourc(?:es|ed|ing)|open[- ]weights?|new (?:model|models|version|feature|features|tool|tools|agent|agents|app|mode|api|chip|chips|gpu)|announces? (?:new )?(?:model|models|version|feature|tool|agent|agents|app|update|chip)|upgrades?|updates?|adds?|teases?|expands? .{0,30}? to|gives? (?:[^\s]+ ){0,4}?(?:access|first)|early access|opens? (?:up )?(?:access|its api|the api)|available to|offers? (?:[^\s]+ ){0,3}?(?:access|preview))\b/i],
   ["research", /\b(benchmark|benchmarks|evaluation|evals?|breakthrough|scores? \d|outperforms?|beats? (?:gpt|claude|gemini|llama|humans?|doctors|lawyers)|tops? [\w-]*bench|swe-bench|leaderboard|state[- ]of[- ]the[- ]art|\bsota\b|widens? (?:its |the )?(?:\w+ )?lead)\b/i]];
 const ANGLES = {
-  "pricing:announced": {
+  "process:rumour": {
     "heat": 3,
-    "move": "Pricing move — re-run NRR and seat-count exposure on any target priced per seat in this stack; consumption pricing migrates the category."
+    "move": "Live process — a sale, review or mandate is open and buy-side tech DD is being scoped now. The sponsors named are the pitch list; the most time-critical call on this page."
+  },
+  "process:announced": {
+    "heat": 3,
+    "move": "Live process — a sale, review or mandate is open and buy-side tech DD is being scoped now. The sponsors named are the pitch list; the most time-critical call on this page."
+  },
+  "process:live": {
+    "heat": 3,
+    "move": "Live process — a sale, review or mandate is open and buy-side tech DD is being scoped now. The sponsors named are the pitch list; the most time-critical call on this page."
+  },
+  "deal:rumour": {
+    "heat": 3,
+    "move": "Deal in talks — buy-side DD is being scoped or is under way. Pre-read the target's stack and the acquirer's category map before it is signed."
+  },
+  "deal:announced": {
+    "heat": 3,
+    "move": "Signed — buy-side DD is done. Pitch the post-close work: 100-day tech plan, integration or separation, AI roadmap. Note the multiple as a comp."
+  },
+  "deal:live": {
+    "heat": 2,
+    "move": "Closed — the value-creation window. Platform consolidation, R&D productivity, pricing. The seller now has capital to deploy; the buyer has a thesis to prove."
+  },
+  "ipo:rumour": {
+    "heat": 2,
+    "move": "IPO reported — a dual-track means a sale is also in play. Approach the sponsor before the bank mandate narrows the options; the filing will carry the tech story a buyer would test."
+  },
+  "ipo:announced": {
+    "heat": 2,
+    "move": "Listing — vendor DD and the equity story are being written. A sponsor-backed IPO is also the comp for every private target in the category."
+  },
+  "ipo:live": {
+    "heat": 2,
+    "move": "Listed — a new public comp for the category. Carry the multiple into the next valuation discussion; a sponsor still holding will sell down over the year."
+  },
+  "fund:announced": {
+    "heat": 2,
+    "move": "Dry powder — a new tech fund is a buyer for the next three to four years. Note the sponsor, the strategy and the cheque size; the deal team will be scoping targets now."
+  },
+  "fund:live": {
+    "heat": 2,
+    "move": "Dry powder — a new tech fund is a buyer for the next three to four years. Note the sponsor, the strategy and the cheque size; the deal team will be scoping targets now."
+  },
+  "fund:rumour": {
+    "heat": 1,
+    "move": "Fundraise reported — a sponsor about to have fresh capital for the sectors it names."
+  },
+  "funding:rumour": {
+    "heat": 2,
+    "move": "Round reported — the valuation sets the comp before the term sheet does. A growth investor coming in is the seller in three to five years."
+  },
+  "funding:announced": {
+    "heat": 2,
+    "move": "Growth round — a scaled, investor-backed company, two to four years from a process. Note the valuation as the comp and the lead investor as the future seller."
+  },
+  "funding:live": {
+    "heat": 2,
+    "move": "Growth round — a scaled, investor-backed company, two to four years from a process. Note the valuation as the comp and the lead investor as the future seller."
+  },
+  "earnings:announced": {
+    "heat": 2,
+    "move": "Disclosed numbers — the comps a buyer will use. Benchmark a target's growth, gross margin and AI attach against these."
+  },
+  "earnings:live": {
+    "heat": 2,
+    "move": "Disclosed numbers — the comps a buyer will use. Benchmark a target's growth, gross margin and AI attach against these."
+  },
+  "market:announced": {
+    "heat": 2,
+    "move": "Public comp re-rated — the multiple just moved for this category. Ask whether the target's category is the one being repriced."
+  },
+  "market:rumour": {
+    "heat": 2,
+    "move": "Public comp re-rated — the multiple just moved for this category. Ask whether the target's category is the one being repriced."
+  },
+  "pricing:announced": {
+    "heat": 2,
+    "move": "Pricing move — re-run NRR and seat exposure on any target priced per seat in this stack; consumption pricing migrates the category and its multiple."
   },
   "pricing:live": {
-    "heat": 3,
-    "move": "Pricing move — re-run NRR and seat-count exposure on any target priced per seat in this stack; consumption pricing migrates the category."
+    "heat": 2,
+    "move": "Pricing move — re-run NRR and seat exposure on any target priced per seat in this stack; consumption pricing migrates the category and its multiple."
   },
   "pricing:rumour": {
-    "heat": 2,
-    "move": "Pricing change reported — stress the target's pricing model before the vendor confirms; the market reprices on the rumour."
+    "heat": 1,
+    "move": "Pricing change reported — stress the target's pricing model before the vendor confirms."
   },
   "launch:live": {
-    "heat": 3,
+    "heat": 2,
     "move": "Capability step shipped — re-test any target whose moat is a workflow this now does natively. Refresh the build-vs-buy read."
   },
   "launch:announced": {
-    "heat": 2,
+    "heat": 1,
     "move": "Capability step announced — list the targets whose roadmap assumed this was 12 months out; the gap just closed."
   },
   "launch:rumour": {
     "heat": 1,
     "move": "Launch reported — a watch item. Note which target categories it would touch; score it when it ships."
   },
-  "deal:announced": {
-    "heat": 3,
-    "move": "Consolidation — a target's dependency, partner or competitor changes hands. Check platform exposure and the acquirer's roadmap for the category."
+  "partnership:announced": {
+    "heat": 1,
+    "move": "Distribution shift — someone gets default placement in a stack. Check channel and platform risk for a target competing in that stack."
   },
-  "deal:live": {
-    "heat": 2,
-    "move": "Deal closed — integration is now; expect bundling into the acquirer's stack. Re-check channel and partnership risk for targets in the category."
+  "partnership:live": {
+    "heat": 1,
+    "move": "Distribution shift — someone gets default placement in a stack. Check channel and platform risk for a target competing in that stack."
   },
-  "deal:rumour": {
-    "heat": 3,
-    "move": "Deal in talks — who ends up owning this capability sets the competitive map for the category. Pre-read the exposure before it is signed."
-  },
-  "funding:announced": {
-    "heat": 2,
-    "move": "Fresh capital for a challenger — map the incumbent categories it attacks; a funded AI-native rival is a price-pressure and churn line in any DD there."
-  },
-  "funding:live": {
-    "heat": 2,
-    "move": "Fresh capital for a challenger — map the incumbent categories it attacks; a funded AI-native rival is a price-pressure and churn line in any DD there."
-  },
-  "funding:rumour": {
-    "heat": 2,
-    "move": "Round reported — the valuation sets the comp before the term sheet does. Note it for the next multiple discussion."
-  },
-  "earnings:announced": {
-    "heat": 2,
-    "move": "Disclosed numbers — benchmark a target's AI attach rate, gross margin and capex intensity against these; they are the comps a buyer will use."
-  },
-  "earnings:live": {
-    "heat": 2,
-    "move": "Disclosed numbers — benchmark a target's AI attach rate, gross margin and capex intensity against these; they are the comps a buyer will use."
+  "partnership:rumour": {
+    "heat": 1,
+    "move": "Partnership reported — note which distribution it would redraw; score it when signed."
   },
   "regulation:announced": {
-    "heat": 2,
+    "heat": 1,
     "move": "Compliance line moves — check target exposure: data residency, model provenance, copyright in training data, export-controlled compute."
   },
   "regulation:live": {
-    "heat": 2,
+    "heat": 1,
     "move": "Compliance line moves — check target exposure: data residency, model provenance, copyright in training data, export-controlled compute."
   },
   "regulation:rumour": {
     "heat": 1,
     "move": "Regulatory move reported — a watch item for targets in the jurisdiction or the data class it would touch."
   },
-  "partnership:announced": {
-    "heat": 2,
-    "move": "Distribution shift — someone gets default placement in a stack. Check channel and platform risk for any target competing in that stack."
-  },
-  "partnership:live": {
-    "heat": 2,
-    "move": "Distribution shift — someone gets default placement in a stack. Check channel and platform risk for any target competing in that stack."
-  },
-  "partnership:rumour": {
-    "heat": 1,
-    "move": "Partnership reported — note which distribution it would redraw; score it when signed."
-  },
   "incident:announced": {
-    "heat": 2,
-    "move": "Reliability or security event — a dependency risk to raise for any target running on this provider. Ask for their fallback and incident history."
+    "heat": 1,
+    "move": "Reliability or security event — a dependency risk to raise for any target running on this provider."
   },
   "incident:live": {
-    "heat": 2,
-    "move": "Reliability or security event — a dependency risk to raise for any target running on this provider. Ask for their fallback and incident history."
-  },
-  "market:announced": {
-    "heat": 2,
-    "move": "Public comp re-rated — the multiple just moved for this category. Carry it into the valuation discussion and ask whether the target's category is the one being repriced."
-  },
-  "market:rumour": {
-    "heat": 2,
-    "move": "Public comp re-rated — the multiple just moved for this category. Carry it into the valuation discussion and ask whether the target's category is the one being repriced."
+    "heat": 1,
+    "move": "Reliability or security event — a dependency risk to raise for any target running on this provider."
   },
   "people:announced": {
     "heat": 1,
-    "move": "Talent signal — weak alone, strong with a product read. A lab losing a team or a vendor gaining one says where the next capability lands."
+    "move": "Talent signal — a new CFO or a banker turned CEO often precedes a process; a lab losing a team says where the next capability lands."
   },
   "research:announced": {
     "heat": 1,
@@ -325,10 +369,14 @@ function scoreTerms(src, strong, weak) {
   return { score, hits };
 }
 function lenses(title, summary) {
-  const src = `${title} . ${summary || ''}`;
+  // "AI" counts only as the capitalised word, as on the PE page: lowercase "ai" is inside too
+  // many names. "Artificial intelligence" is folded to it first.
+  const src = `${title} . ${summary || ''}`.replace(/artificial intelligence/gi, 'AI');
+  const bareAI = /(^|[^A-Za-z])AI(?=[^A-Za-z]|$)/.test(src);
   const out = [];
   for (const l of LENSES) {
-    const r = scoreTerms(src, l.strong, l.weak);
+    const r = scoreTerms(src.replace(/(^|[^A-Za-z])AI(?=[^A-Za-z]|$)/g, '$1  '), l.strong, l.weak);
+    if (l.id === 'ai' && bareAI) { r.score += 2; r.hits.unshift('AI'); }
     if (r.score >= 2) out.push({ id: l.id, label: l.short, score: r.score, terms: r.hits.slice(0, 4) });
   }
   return out.sort((a, b) => b.score - a.score);
@@ -341,6 +389,10 @@ function classify(t, raw) {
   for (const [k, re] of EVENTS) {
     if (re.test(title)) { kind = k; break; }
   }
+  // Two words that are not a deal: talent, customer or user acquisition. And talks to raise money
+  // are a round, not a sale process.
+  if (kind === 'deal' && /\b(talent|customer|user|client|land|player|lead) acquisition\b/i.test(title)) kind = 'other';
+  if (kind === 'process' && /\b(?:talks|discussions) (?:to|about|over) (?:rais(?:e|ing)|invest(?:ing)?|fund(?:ing)?)|\brais(?:e|es|ing) \$|\bfunding round\b|\bvaluation of\b/i.test(title)) kind = 'funding';
   // Official posts are announcements by definition; coverage can only report.
   const rumour = !raw.official && RUMOUR.test(title) && kind !== 'earnings';
   const stage = rumour ? 'rumour' : LIVE.test(title) ? 'live' : 'announced';
@@ -357,14 +409,19 @@ function classify(t, raw) {
   const ageDays = raw.date ? Math.max(0, (Date.now() - Date.parse(raw.date)) / 86400000) : 30;
   const base = angle ? angle.heat : 0;
 
-  // Relevance, APAC first. An APAC item is in whenever the headline carries an event or a lens.
-  // A global item has to be big: a live or signed event (heat 2+) in a lens, or a money event — a
-  // round, a deal — with a billion-dollar figure in the headline, so a $200m Series C in Austin
-  // stays out while a $3bn acquisition comes in. Filtered items stay in the store, hidden on the page.
-  const money = bigMoney(title) || /\b(ipo|s-1|initial public offering|go(?:es|ing)? public|listing)\b/i.test(title);
-  const relevant = apac ? (kind !== 'other' || ln.length > 0 || rumour)
+  // Relevance, APAC first. An APAC item is in whenever the headline carries an event.
+  // A global item is in when it is a transaction — a process, a deal or a listing in one of SSG's
+  // sectors (or of any size with a billion-dollar figure), or a growth round of $100m or more in a
+  // sector — and otherwise only when it is a platform shift that reaches a sector: a pricing move
+  // or a shipped capability step in a lens, or any event with a billion-dollar figure. Filtered
+  // items stay in the store, hidden on the page.
+  const TXN = kind === 'process' || kind === 'deal' || kind === 'ipo' || kind === 'fund';
+  // An APAC item is in on an event or a reported process; a sector word alone is commentary.
+  const relevant = apac ? (kind !== 'other' || rumour)
+    : TXN ? (ln.length > 0 || bigMoney(title) || !!raw.official)
+    : kind === 'funding' ? (bigMoney(title) || (moneyBn(title) >= 0.1 && ln.length > 0))
     : !!angle && bigMoney(title) ? true
-    : base >= 2 && (kind === 'funding' || kind === 'deal' ? money : ln.length > 0);
+    : base >= 2 && ln.length > 0 && (kind === 'pricing' || kind === 'launch' || kind === 'earnings' || kind === 'market');
 
   // Priority is the one list: heat is the event, lens fit tilts it, APAC tilts it harder than a
   // lens, and a seven-day half-life keeps it current — a model release is old news in a fortnight.
@@ -378,7 +435,7 @@ function classify(t, raw) {
     relevant,
     move: angle ? angle.move : null,
     heat: !angle || ageDays > 30 ? 'cool'
-      : base >= 3 && ln.length && ageDays <= 7 ? 'hot'
+      : base >= 3 && ageDays <= 7 ? 'hot'
       : base >= 2 ? 'warm' : 'cool',
     score: Math.round(score * 10) / 10,
   };
@@ -387,9 +444,9 @@ function classify(t, raw) {
 const DATA = { base: 'data/' };
 const PUBLIC = typeof DATA !== 'undefined';
 
-const KIND = { launch: 'Launch', pricing: 'Pricing', funding: 'Funding', deal: 'M&A', partnership: 'Partnership', earnings: 'Numbers', market: 'Market', regulation: 'Regulation', incident: 'Incident', people: 'People', research: 'Research', other: 'News' };
+const KIND = { process: 'Process', deal: 'M&A', ipo: 'IPO', fund: 'Fund', funding: 'Funding', launch: 'Launch', pricing: 'Pricing', partnership: 'Partnership', earnings: 'Numbers', market: 'Market', regulation: 'Regulation', incident: 'Incident', people: 'People', research: 'Research', other: 'News' };
 const $ = (id) => document.getElementById(id);
-const themeOf = (i) => THEMES.find((t) => t.id === i.theme) || THEMES[0];
+const themeOf = (i) => THEMES.find((t) => t.id === i.theme || (t.aliases || []).includes(i.theme)) || THEMES[0];
 // Headlines open a Google News search for the story rather than one outlet's copy of it. The
 // original article stays reachable as the small "source" link.
 // A Google News description is the headline plus the outlet; that is not a summary.
@@ -517,7 +574,7 @@ function render() {
     }
     list = kept;
   }
-  const emptyMsg = !loaded ? '<b>Loading developments.</b><br>Each one will show the event, the diligence lens it touches, and what to re-check on a software target.'
+  const emptyMsg = !loaded ? '<b>Loading developments.</b><br>Each one will show the event, the sector it sits in, and what it opens for SSG.'
     : v.seg === 'pipeline' ? 'Nothing marked Pursue or Watch yet.'
     : all.length ? 'Nothing matches this filter.' : '<b>Nothing stored yet.</b><br>The morning pull fills it; ask Jobi to run one now.';
   // A day label before the first card of each day: a quiet day then reads as quiet, not as a
