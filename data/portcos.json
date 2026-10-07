@@ -23,8 +23,8 @@
   "summary": "AI-enabled revenue-cycle management for 150+ US hospital systems (~12,000 staff in India/Philippines/US, ~US$60m EBITDA); BPEA bought it in 2019 and EQT launched a sale via JPMorgan/BofA in early 2025 with Blackstone the frontrunner.",
   "signals": [],
   "exit": {
-   "status": "process",
-   "note": "Sale process launched early 2025 (JPMorgan, BofA); binding bids received, Blackstone frontrunner at US$1.1–1.3bn vs TPG–General Atlantic, Frazier, Vitruvian; no signing reported in results"
+   "note": "Sale process launched early 2025 (JPMorgan, BofA); binding bids received, Blackstone frontrunner at US$1.1–1.3bn vs TPG–General Atlantic, Frazier, Vitruvian; no signing reported in results",
+   "status": "process"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -51,8 +51,8 @@
   "summary": "Healthcare-only IT services, data/analytics and digital engineering for US payers, providers and medtech (FY25 revenue US$427.6m); BPEA bought control in 2019, sold part to Bain Capital in 2022, and EQT is now selling its remaining 40%.",
   "signals": [],
   "exit": {
-   "status": "process",
-   "note": "JPMorgan mandated Dec 2025 to sell EQT's 40%; binding bids from Advent and PAG (CVC, TA also interested; Blackstone, OTPP, Temasek, ChrysCapital reported in Feb 2026) at US$1.5–1.7bn vs US$2–2.5bn ask"
+   "note": "JPMorgan mandated Dec 2025 to sell EQT's 40%; binding bids from Advent and PAG (CVC, TA also interested; Blackstone, OTPP, Temasek, ChrysCapital reported in Feb 2026) at US$1.5–1.7bn vs US$2–2.5bn ask",
+   "status": "process"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -79,14 +79,14 @@
   "signals": [
    {
     "date": "2025-06-27",
+    "publisher": "PTI via The Week",
     "title": "Credila Fin Services files updated draft papers for IPO to raise Rs 5,000 cr",
-    "url": "https://www.theweek.in/wire-updates/business/2025/06/27/dcm17-biz-ipo-credila-fin.html",
-    "publisher": "PTI via The Week"
+    "url": "https://www.theweek.in/wire-updates/business/2025/06/27/dcm17-biz-ipo-credila-fin.html"
    }
   ],
   "exit": {
-   "status": "process",
-   "note": "IPO: SEBI approval 15 May 2025, updated DRHP 27 Jun 2025; EQT affiliate to sell Rs 950 cr in OFS; dates/price band not yet announced"
+   "note": "IPO: SEBI approval 15 May 2025, updated DRHP 27 Jun 2025; EQT affiliate to sell Rs 950 cr in OFS; dates/price band not yet announced",
+   "status": "process"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -116,14 +116,14 @@
   "signals": [
    {
     "date": "2024-09-09",
+    "publisher": "EQT",
     "title": "EQT to acquire GeBBS Healthcare Solutions, a leading healthcare technology solutions provider",
-    "url": "https://eqtgroup.com/news/2024/eqt-to-acquire-gebbs-healthcare-solutions-a-leading-healthcare-technology-solutions-provider/",
-    "publisher": "EQT"
+    "url": "https://eqtgroup.com/news/2024/eqt-to-acquire-gebbs-healthcare-solutions-a-leading-healthcare-technology-solutions-provider/"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -152,14 +152,14 @@
   "signals": [
    {
     "date": "2025-04-09",
+    "publisher": "IFS",
     "title": "IFS attracts EUR 15 billion valuation",
-    "url": "https://ifs.com/news/corporate/ifs-attracts-eur-15-billion-valuation",
-    "publisher": "IFS"
+    "url": "https://ifs.com/news/corporate/ifs-attracts-eur-15-billion-valuation"
    }
   ],
   "exit": {
-   "status": "rumoured",
-   "note": "May 2026 reports: CEO Mark Moffat says IFS preparing an IPO within two years, venue London, Europe or New York"
+   "note": "May 2026 reports: CEO Mark Moffat says IFS preparing an IPO within two years, venue London, Europe or New York",
+   "status": "rumoured"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -186,32 +186,32 @@
   "signals": [
    {
     "date": "2026-01-02",
+    "publisher": "Business Standard",
     "title": "Sebi approves eight IPOs, including confidential filings by Indira IVF",
-    "url": "https://www.business-standard.com/markets/ipo/sebi-approves-eight-ipos-126010200990_1.html",
-    "publisher": "Business Standard"
+    "url": "https://www.business-standard.com/markets/ipo/sebi-approves-eight-ipos-126010200990_1.html"
    },
    {
     "date": "2025-07-16",
+    "publisher": "Business Standard",
     "title": "EQT-backed Indira IVF refiles DRHP via confidential route",
-    "url": "https://www.business-standard.com/markets/ipo/eqt-backed-indira-ivf-refiles-drhp-via-confidential-route-125071600958_1.html",
-    "publisher": "Business Standard"
+    "url": "https://www.business-standard.com/markets/ipo/eqt-backed-indira-ivf-refiles-drhp-via-confidential-route-125071600958_1.html"
    },
    {
     "date": "2025-07-15",
+    "publisher": "Business Standard / Bloomberg",
     "title": "Indira IVF's $408 million India IPO may see EQT, founders exit stake",
-    "url": "https://www.business-standard.com/markets/news/indira-ivf-s-408-million-india-ipo-may-see-eqt-founders-exit-stake-125071501657_1.html",
-    "publisher": "Business Standard / Bloomberg"
+    "url": "https://www.business-standard.com/markets/news/indira-ivf-s-408-million-india-ipo-may-see-eqt-founders-exit-stake-125071501657_1.html"
    },
    {
     "date": "2025-02-11",
+    "publisher": "Business Standard",
     "title": "EQT-backed Indira IVF confidentially files draft papers for Rs 6,500 cr IPO",
-    "url": "https://www.business-standard.com/markets/ipo/eqt-backed-indira-ivf-confidentially-files-draft-papers-for-rs-6-500-cr-ipo-125021101658_1.html",
-    "publisher": "Business Standard"
+    "url": "https://www.business-standard.com/markets/ipo/eqt-backed-indira-ivf-confidentially-files-draft-papers-for-rs-6-500-cr-ipo-125021101658_1.html"
    }
   ],
   "exit": {
-   "status": "process",
-   "note": "IPO: first DRHP Feb 2025 withdrawn Mar 2025; refiled Jul 2025; SEBI observations issued 30 Dec 2025; launch pending"
+   "note": "IPO: first DRHP Feb 2025 withdrawn Mar 2025; refiled Jul 2025; SEBI observations issued 30 Dec 2025; launch pending",
+   "status": "process"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -240,20 +240,20 @@
   "signals": [
    {
     "date": "2025-11-14",
+    "publisher": "Business Standard",
     "title": "Sagility soars 7% as over 950 million equity shares change hands on NSE",
-    "url": "https://www.business-standard.com/markets/news/sagility-soars-7-as-over-950-million-equity-shares-change-hands-on-nse-125111400664_1.html",
-    "publisher": "Business Standard"
+    "url": "https://www.business-standard.com/markets/news/sagility-soars-7-as-over-950-million-equity-shares-change-hands-on-nse-125111400664_1.html"
    },
    {
     "date": "2025-05-27",
+    "publisher": "Business Standard",
     "title": "Sagility India drops as promoter launches OFS",
-    "url": "https://www.business-standard.com/markets/capital-market-news/sagility-india-drops-as-promoter-launches-ofs-125052701071_1.html",
-    "publisher": "Business Standard"
+    "url": "https://www.business-standard.com/markets/capital-market-news/sagility-india-drops-as-promoter-launches-ofs-125052701071_1.html"
    }
   ],
   "exit": {
-   "status": "listed",
-   "note": "Listed Nov 2024; promoter Sagility B.V. sold 15% OFS (May 2025, ~US$314m) and 16.4% block (14 Nov 2025, Rs 3,660 cr) — holding now ~51%"
+   "note": "Listed Nov 2024; promoter Sagility B.V. sold 15% OFS (May 2025, ~US$314m) and 16.4% block (14 Nov 2025, Rs 3,660 cr) — holding now ~51%",
+   "status": "listed"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -283,20 +283,20 @@
   "signals": [
    {
     "date": "2026-06-22",
+    "publisher": "Bernama / PRNewswire",
     "title": "Straive Acquires NextGen Invent To Boost Data & AI Operationalization Capabilities",
-    "url": "https://bernama.com/en/press/news.php?id=2571368",
-    "publisher": "Bernama / PRNewswire"
+    "url": "https://bernama.com/en/press/news.php?id=2571368"
    },
    {
     "date": "2025-06-18",
+    "publisher": "PR Newswire via StreetInsider",
     "title": "Straive Acquires SG Analytics to Bolster Data Analytics & AI Operationalization Capabilities",
-    "url": "https://www.streetinsider.com/PRNewswire/Straive+Acquires+SG+Analytics+to+Bolster+Data+Analytics+%26amp%3B+AI+Operationalization+Capabilities/24950791.html",
-    "publisher": "PR Newswire via StreetInsider"
+    "url": "https://www.streetinsider.com/PRNewswire/Straive+Acquires+SG+Analytics+to+Bolster+Data+Analytics+%26amp%3B+AI+Operationalization+Capabilities/24950791.html"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -326,14 +326,14 @@
   "signals": [
    {
     "date": "2026-04-28",
+    "publisher": "MT Newswires via Placera",
     "title": "Market Chatter: EQT's Virtusa Corp Mulls Indian IPO",
-    "url": "https://www.placera.se/telegram/eqt-market-chatter-eqt-s-virtusa-corp-mulls-indian-ipo-20260428",
-    "publisher": "MT Newswires via Placera"
+    "url": "https://www.placera.se/telegram/eqt-market-chatter-eqt-s-virtusa-corp-mulls-indian-ipo-20260428"
    }
   ],
   "exit": {
-   "status": "process",
-   "note": "India IPO being prepared (Apr 2026 reports): raise >US$1bn at US$7bn+; roadshow H2 2026, listing late 2026/2027"
+   "note": "India IPO being prepared (Apr 2026 reports): raise >US$1bn at US$7bn+; roadshow H2 2026, listing late 2026/2027",
+   "status": "process"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -360,38 +360,38 @@
   "signals": [
    {
     "date": "2025-09-12",
+    "publisher": "Simpson Thacher",
     "title": "Waystar and Selling Stockholders Complete $705 Million Secondary Offering",
-    "url": "https://www.stblaw.com/about-us/news/view/2025/09/12/waystar-and-selling-stockholders-complete-$705-million-secondary-offering",
-    "publisher": "Simpson Thacher"
+    "url": "https://www.stblaw.com/about-us/news/view/2025/09/12/waystar-and-selling-stockholders-complete-$705-million-secondary-offering"
    },
    {
     "date": "2025-09-10",
+    "publisher": "Waystar",
     "title": "Waystar Announces Launch of Secondary Offering of Common Stock",
-    "url": "https://www.waystar.com/news/waystar-announces-launch-of-secondary-offering-of-common-stock/",
-    "publisher": "Waystar"
+    "url": "https://www.waystar.com/news/waystar-announces-launch-of-secondary-offering-of-common-stock/"
    },
    {
     "date": "2025-07-23",
+    "publisher": "Waystar via Finviz",
     "title": "Waystar to Acquire Iodine Software, Accelerating the AI-Powered Transformation of Healthcare Payments",
-    "url": "https://finviz.com/news/112914/waystar-to-acquire-iodine-software-accelerating-the-ai-powered-transformation-of-healthcare-payments",
-    "publisher": "Waystar via Finviz"
+    "url": "https://finviz.com/news/112914/waystar-to-acquire-iodine-software-accelerating-the-ai-powered-transformation-of-healthcare-payments"
    },
    {
     "date": "2025-05-22",
+    "publisher": "Simpson Thacher",
     "title": "Waystar and Selling Stockholders Complete $557 Million Secondary Offering",
-    "url": "https://www.stblaw.com/about-us/news/view/2025/05/22/waystar-and-selling-stockholders-complete-$557-million-secondary-offering",
-    "publisher": "Simpson Thacher"
+    "url": "https://www.stblaw.com/about-us/news/view/2025/05/22/waystar-and-selling-stockholders-complete-$557-million-secondary-offering"
    },
    {
     "date": "2025-02-26",
+    "publisher": "Simpson Thacher",
     "title": "Waystar and Selling Stockholders Complete $920 Million Secondary Offering",
-    "url": "https://www.stblaw.com/about-us/news/view/2025/02/26/waystar-and-selling-stockholders-complete-$920-million-secondary-offering",
-    "publisher": "Simpson Thacher"
+    "url": "https://www.stblaw.com/about-us/news/view/2025/02/26/waystar-and-selling-stockholders-complete-$920-million-secondary-offering"
    }
   ],
   "exit": {
-   "status": "listed",
-   "note": "Listed Jun 2024; EQT at 23.8% after Feb 2025 secondary, further reduced in May and Sep 2025 secondaries"
+   "note": "Listed Jun 2024; EQT at 23.8% after Feb 2025 secondary, further reduced in May and Sep 2025 secondaries",
+   "status": "listed"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -421,26 +421,26 @@
   "signals": [
    {
     "date": "2025-10-30",
+    "publisher": "WSO2",
     "title": "WSO2 Expands Leadership Team with Appointment of Sudesh Vasudevan as VP, Head of Corporate Development",
-    "url": "https://wso2.com/about/news/wso2-expands-leadership-team-with-appointment-sudesh-vasudevan-vp-head-corporate-development/",
-    "publisher": "WSO2"
+    "url": "https://wso2.com/about/news/wso2-expands-leadership-team-with-appointment-sudesh-vasudevan-vp-head-corporate-development/"
    },
    {
     "date": "2025-05-28",
+    "publisher": "WSO2 via StreetInsider",
     "title": "WSO2 Acquires Leading API Analytics and Monetization Startup Moesif",
-    "url": "https://www.streetinsider.com/Press+Releases/WSO2+Acquires+Leading+API+Analytics+and+Monetization+Startup+Moesif/24859036.html",
-    "publisher": "WSO2 via StreetInsider"
+    "url": "https://www.streetinsider.com/Press+Releases/WSO2+Acquires+Leading+API+Analytics+and+Monetization+Startup+Moesif/24859036.html"
    },
    {
     "date": "2024-08-14",
+    "publisher": "Intelligent CIO",
     "title": "EQT completes acquisition of WSO2 adding to global portfolio of enterprise software companies",
-    "url": "https://www.intelligentcio.com/north-america/2024/08/14/eqt-completes-acquisition-of-wso2-adding-to-global-portfolio-of-enterprise-software-companies/",
-    "publisher": "Intelligent CIO"
+    "url": "https://www.intelligentcio.com/north-america/2024/08/14/eqt-completes-acquisition-of-wso2-adding-to-global-portfolio-of-enterprise-software-companies/"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -1042,14 +1042,14 @@
   "signals": [
    {
     "date": "2021-11-16",
+    "publisher": "Permira",
     "title": "Funds advised by Permira Credit support Macquarie Capital Principal Finance, Pollen Street Capital and senior management to acquire Aryza",
-    "url": "https://permira.com/news-and-insights/announcements/funds-advised-by-permira-credit-support-macquarie-capital-principal-finance-pollen-street-capital-and-senior-management-to-acquire-aryza-a-provider-of-software-to-insolvency-practitioners-banks-and-loan-administrators",
-    "publisher": "Permira"
+    "url": "https://permira.com/news-and-insights/announcements/funds-advised-by-permira-credit-support-macquarie-capital-principal-finance-pollen-street-capital-and-senior-management-to-acquire-aryza-a-provider-of-software-to-insolvency-practitioners-banks-and-loan-administrators"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -1078,20 +1078,20 @@
   "signals": [
    {
     "date": "2026-07-16",
+    "publisher": "Permira",
     "title": "Permira agrees sale of BioCatch to Visa",
-    "url": "https://www.permira.com/news-and-insights/announcements/permira-agrees-sale-of-biocatch-to-visa",
-    "publisher": "Permira"
+    "url": "https://www.permira.com/news-and-insights/announcements/permira-agrees-sale-of-biocatch-to-visa"
    },
    {
     "date": "2024-05-02",
+    "publisher": "TechCrunch",
     "title": "Permira to acquire digital fraud detection company BioCatch in $1.3B deal",
-    "url": "https://techcrunch.com/2024/05/02/permira-to-acquire-digital-fraud-detection-company-biocatch-in-1-3b-deal",
-    "publisher": "TechCrunch"
+    "url": "https://techcrunch.com/2024/05/02/permira-to-acquire-digital-fraud-detection-company-biocatch-in-1-3b-deal"
    }
   ],
   "exit": {
-   "status": "process",
-   "note": "Sale to Visa announced 2026-07-16; completion not confirmed in sources"
+   "note": "Sale to Visa announced 2026-07-16; completion not confirmed in sources",
+   "status": "process"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -1120,26 +1120,26 @@
   "signals": [
    {
     "date": "2026-09-01",
+    "publisher": "FilingReader",
     "title": "ECP Asset Management exits Nuix stake",
-    "url": "https://filingreader.com/news-wire/sydney/2026-09-01/ecp-asset-management-exits-nuix-stake",
-    "publisher": "FilingReader"
+    "url": "https://filingreader.com/news-wire/sydney/2026-09-01/ecp-asset-management-exits-nuix-stake"
    },
    {
     "date": "2025-11-19",
+    "publisher": "FilingReader",
     "title": "UBS Group AG no longer substantial holder in Nuix",
-    "url": "https://filingreader.com/news-wire/sydney/2025-11-19/ubs-group-ag-no-longer-substantial-holder-in-nuix",
-    "publisher": "FilingReader"
+    "url": "https://filingreader.com/news-wire/sydney/2025-11-19/ubs-group-ag-no-longer-substantial-holder-in-nuix"
    },
    {
     "date": "2024-11-08",
+    "publisher": "FNArena",
     "title": "Nuix rises from the ashes",
-    "url": "https://fnarena.com/index.php/2024/11/08/nuix-rises-from-the-ashes/",
-    "publisher": "FNArena"
+    "url": "https://fnarena.com/index.php/2024/11/08/nuix-rises-from-the-ashes/"
    }
   ],
   "exit": {
-   "status": "partial",
-   "note": "Sold ~A$565m of stock at Dec-2020 ASX IPO; retains 95.65m shares (29.75%) per 2025–26 substantial-holder data"
+   "note": "Sold ~A$565m of stock at Dec-2020 ASX IPO; retains 95.65m shares (29.75%) per 2025–26 substantial-holder data",
+   "status": "partial"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -1166,20 +1166,20 @@
   "signals": [
    {
     "date": "2026-01-19",
+    "publisher": "Bloomberg",
     "title": "PhilTower's $1 Billion Sale Plan Is Said to Stall on Valuation",
-    "url": "https://www.bloomberg.com/news/articles/2026-01-19/philtower-s-1-billion-sale-plan-is-said-to-stall-on-valuation",
-    "publisher": "Bloomberg"
+    "url": "https://www.bloomberg.com/news/articles/2026-01-19/philtower-s-1-billion-sale-plan-is-said-to-stall-on-valuation"
    },
    {
     "date": "2024-11-15",
+    "publisher": "BNN Bloomberg",
     "title": "Macquarie Is Said to Weigh Telco Tower Firm Sale in Philippines",
-    "url": "https://bnnbloomberg.ca/business/international/2024/11/15/macquarie-is-said-to-weigh-telco-tower-firm-sale-in-philippines",
-    "publisher": "BNN Bloomberg"
+    "url": "https://bnnbloomberg.ca/business/international/2024/11/15/macquarie-is-said-to-weigh-telco-tower-firm-sale-in-philippines"
    }
   ],
   "exit": {
-   "status": "process",
-   "note": "Sale explored since Nov 2024; stalled on valuation Jan 2026; Macquarie reported seeking a new sell-side advisor (Infralogic)"
+   "note": "Sale explored since Nov 2024; stalled on valuation Jan 2026; Macquarie reported seeking a new sell-side advisor (Infralogic)",
+   "status": "process"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -1207,14 +1207,14 @@
   "signals": [
    {
     "date": "2022-11-24",
+    "publisher": "Hamilton Locke",
     "title": "Hamilton Locke Advises on Macquarie Capital's Series A Round Investment in Sapia.ai",
-    "url": "https://hamiltonlocke.com.au/hamilton-locke-advises-on-macquarie-capitals-series-a-round-investment-in-sapia-ai/",
-    "publisher": "Hamilton Locke"
+    "url": "https://hamiltonlocke.com.au/hamilton-locke-advises-on-macquarie-capitals-series-a-round-investment-in-sapia-ai/"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -1241,14 +1241,14 @@
   "signals": [
    {
     "date": "2024-09-17",
+    "publisher": "BNN Bloomberg",
     "title": "Macquarie Weighs Stake Sale in £1.2 Billion Wavenet",
-    "url": "https://bnnbloomberg.ca/business/international/2024/09/17/macquarie-weighs-stake-sale-in-16-billion-wavenet",
-    "publisher": "BNN Bloomberg"
+    "url": "https://bnnbloomberg.ca/business/international/2024/09/17/macquarie-weighs-stake-sale-in-16-billion-wavenet"
    }
   ],
   "exit": {
-   "status": "rumoured",
-   "note": "Stake sale weighed Sep 2024 with Houlihan Lokey; formal process flagged for 2025; no 2025–26 outcome found"
+   "note": "Stake sale weighed Sep 2024 with Houlihan Lokey; formal process flagged for 2025; no 2025–26 outcome found",
+   "status": "rumoured"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -1274,8 +1274,8 @@
   "summary": "Home care and disability provider (4,500 clients, 2,000 support workers, 40+ franchisees); Navis bought in 2023 for A$150m, added Dementia Caring (A$139m) and invested in technology. Revenue A$200m FY23 to A$327m FY25, EBITDA ~A$10m.",
   "signals": [],
   "exit": {
-   "status": "rumoured",
-   "note": "The Weekly Source (2026): Navis looking to sell; discussions early-stage, deal not expected before 2027"
+   "note": "The Weekly Source (2026): Navis looking to sell; discussions early-stage, deal not expected before 2027",
+   "status": "rumoured"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -1303,8 +1303,8 @@
   "summary": "Australia's largest independent medtech distributor (Intuitive Surgical key principal); bolt-ons across ANZ/SEA under Navis. Mergermarket: early engagement with PE and strategic buyers, Morgan Stanley/Jefferies advising, EBITDA A$110-120m, value well above A$1bn.",
   "signals": [],
   "exit": {
-   "status": "process",
-   "note": "Mergermarket reports sale preparation with Morgan Stanley and Jefferies (report date not confirmed in this pass)"
+   "note": "Mergermarket reports sale preparation with Morgan Stanley and Jefferies (report date not confirmed in this pass)",
+   "status": "process"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -1332,8 +1332,8 @@
   "summary": "Family-office platform software provider (AtlasFive) operating out of the US and Singapore; named by PEI as a post-Fund VIII-close Navis investment. Date and stake not confirmed in this pass.",
   "signals": [],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -1362,14 +1362,14 @@
   "signals": [
    {
     "date": "2021-01-19",
+    "publisher": "Caixin Global / DealStreetAsia",
     "title": "Malaysia's Navis Capital invests in Singapore's fintech solutions firm Moneythor",
-    "url": "https://www.caixinglobal.com/2021-01-19/malaysias-navis-capital-invests-in-singapores-fintech-solutions-firm-moneythor-101652599.html",
-    "publisher": "Caixin Global / DealStreetAsia"
+    "url": "https://www.caixinglobal.com/2021-01-19/malaysias-navis-capital-invests-in-singapores-fintech-solutions-firm-moneythor-101652599.html"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -1395,8 +1395,8 @@
   "summary": "Australian software aggregation platform ('Software Combined Bidco') funded from Navis Asia Fund VIII per PEI/PitchBook. Entry date, stake and deal size were not visible in this pass; most SSG-relevant Navis asset.",
   "signals": [],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -1424,14 +1424,14 @@
   "signals": [
    {
     "date": "2020-03-26",
+    "publisher": "Business Wire",
     "title": "TA Associates Announces Strategic Growth Investment in Accion Labs",
-    "url": "https://www.businesswire.com/news/home/20200326005064/en/TA-Associates-Announces-Strategic-Growth-Investment-in-Accion-Labs",
-    "publisher": "Business Wire"
+    "url": "https://www.businesswire.com/news/home/20200326005064/en/TA-Associates-Announces-Strategic-Growth-Investment-in-Accion-Labs"
    }
   ],
   "exit": {
-   "status": "rumoured",
-   "note": "Bloomberg-sourced report (Private Equity Wire, date not visible in results): TA working with an adviser on sale of its majority stake at ~US$1bn; may not result in a deal."
+   "note": "Bloomberg-sourced report (Private Equity Wire, date not visible in results): TA working with an adviser on sale of its majority stake at ~US$1bn; may not result in a deal.",
+   "status": "rumoured"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -1460,14 +1460,14 @@
   "signals": [
    {
     "date": "2024-07-01",
+    "publisher": "Aptean",
     "title": "Aptean Secures Strategic Investment from Clearlake Capital Group",
-    "url": "https://www.aptean.com/en-GB/resources/pressroom/press-release/aptean-secures-strategic-investment-from-clearlake-capital-group",
-    "publisher": "Aptean"
+    "url": "https://www.aptean.com/en-GB/resources/pressroom/press-release/aptean-secures-strategic-investment-from-clearlake-capital-group"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -1493,8 +1493,8 @@
   "summary": "India's largest non-telco wired broadband provider (~5% share, 30+ cities) selling fibre internet to homes and SMEs. TA and True North hold 94.66% together after a US$500m 2016 deal; a decade-old holding now back in a sale process.",
   "signals": [],
   "exit": {
-   "status": "process",
-   "note": "2026: True North and TA appointed Nomura and Ambit to sell ACT at ~US$1bn EV, IMs already sent (Communications Today; exact date not visible in results). Partners Group's 2021 deal at ~US$1.2bn EV collapsed."
+   "note": "2026: True North and TA appointed Nomura and Ambit to sell ACT at ~US$1bn EV, IMs already sent (Communications Today; exact date not visible in results). Partners Group's 2021 deal at ~US$1.2bn EV collapsed.",
+   "status": "process"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -1521,14 +1521,14 @@
   "signals": [
    {
     "date": "2024-01-18",
+    "publisher": "Reuters",
     "title": "Exclusive-Netsmart's owners explore a sale valuing it at $5 billion -sources",
-    "url": "https://www.aol.com/news/exclusive-netsmarts-owners-explore-sale-190517879.html",
-    "publisher": "Reuters"
+    "url": "https://www.aol.com/news/exclusive-netsmarts-owners-explore-sale-190517879.html"
    }
   ],
   "exit": {
-   "status": "process",
-   "note": "Jan 2024: GI Partners and TA exploring sale at >US$5bn incl. debt with Goldman Sachs and William Blair; no completed transaction surfaced in 2025–26 results."
+   "note": "Jan 2024: GI Partners and TA exploring sale at >US$5bn incl. debt with Goldman Sachs and William Blair; no completed transaction surfaced in 2025–26 results.",
+   "status": "process"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -1557,14 +1557,14 @@
   "signals": [
    {
     "date": "2025-03-20",
+    "publisher": "Shardul Amarchand Mangaldas",
     "title": "Shardul Amarchand Mangaldas advises TA Associates on strategic investment in Nous Infosystems to support continued growth and innovation",
-    "url": "https://www.amsshardul.com/shardul-amarchand-mangaldas-advises-ta-associates-on-strategic-investment-in-nous-infosystems-to-support-continued-growth-and-innovation/",
-    "publisher": "Shardul Amarchand Mangaldas"
+    "url": "https://www.amsshardul.com/shardul-amarchand-mangaldas-advises-ta-associates-on-strategic-investment-in-nous-infosystems-to-support-continued-growth-and-innovation/"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -1593,20 +1593,20 @@
   "signals": [
    {
     "date": "2026-07-30",
+    "publisher": "Alternative Credit Investor",
     "title": "TA Associates backs private credit tech provider Oxane",
-    "url": "https://alternativecreditinvestor.com/2026/07/30/ta-associates-backs-private-credit-tech-provider-oxane/",
-    "publisher": "Alternative Credit Investor"
+    "url": "https://alternativecreditinvestor.com/2026/07/30/ta-associates-backs-private-credit-tech-provider-oxane/"
    },
    {
     "date": "2026-07-29",
+    "publisher": "Business Wire",
     "title": "Oxane Partners Announces Strategic Growth Investment From TA",
-    "url": "https://www.businesswire.com/news/home/20260729931521/en/",
-    "publisher": "Business Wire"
+    "url": "https://www.businesswire.com/news/home/20260729931521/en/"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -1635,14 +1635,14 @@
   "signals": [
    {
     "date": "2025-11-28",
+    "publisher": "TechMarketView",
     "title": "New research, vertical focus and migration momentum – Unit4 EMEA Analyst Summit 2025",
-    "url": "https://www.techmarketview.com/news/archive/2025/11/28/new-research-vertical-focus-and-migration-momentum-unit4-emea-analyst-summit-2025",
-    "publisher": "TechMarketView"
+    "url": "https://www.techmarketview.com/news/archive/2025/11/28/new-research-vertical-focus-and-migration-momentum-unit4-emea-analyst-summit-2025"
    }
   ],
   "exit": {
-   "status": "process",
-   "note": "TA and Partners Group mandated Arma Partners on a sale, marketed off €150–160m EBITDA (9fin; exact date not visible in results); €875m 2028 TLB outstanding."
+   "note": "TA and Partners Group mandated Arma Partners on a sale, marketed off €150–160m EBITDA (9fin; exact date not visible in results); €875m 2028 TLB outstanding.",
+   "status": "process"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -1669,14 +1669,14 @@
   "signals": [
    {
     "date": "2024-07-11",
+    "publisher": "TA Associates",
     "title": "TA Announces Strategic Growth Investment in Vastu Housing Finance",
-    "url": "https://www.ta.com/news/ta-announces-strategic-growth-investment-in-vastu-housing-finance/",
-    "publisher": "TA Associates"
+    "url": "https://www.ta.com/news/ta-announces-strategic-growth-investment-in-vastu-housing-finance/"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -1705,20 +1705,20 @@
   "signals": [
    {
     "date": "2025-03-20",
+    "publisher": "Business Wire",
     "title": "Veracode Achieves Record Year with Significant Growth and Strategic Expansion",
-    "url": "https://www.businesswire.com/news/home/20250320889134/en/Veracode-Achieves-Record-Year-with-Significant-Growth-and-Strategic-Expansion",
-    "publisher": "Business Wire"
+    "url": "https://www.businesswire.com/news/home/20250320889134/en/Veracode-Achieves-Record-Year-with-Significant-Growth-and-Strategic-Expansion"
    },
    {
     "date": "2022-03-15",
+    "publisher": "Business Wire",
     "title": "Veracode Announces Significant Growth Investment from TA Associates",
-    "url": "https://www.businesswire.com/news/home/20220315005831/en/Veracode-Announces-Significant-Growth-Investment-from-TA-Associates",
-    "publisher": "Business Wire"
+    "url": "https://www.businesswire.com/news/home/20220315005831/en/Veracode-Announces-Significant-Growth-Investment-from-TA-Associates"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -1745,14 +1745,14 @@
   "signals": [
    {
     "date": "2025-06-29",
+    "publisher": "Business Wire",
     "title": "Viridian Financial Group Welcomes Strategic Growth Investment from TA Associates to Expand Leading Diversified Financial Services Business in Australia",
-    "url": "https://www.businesswire.com/news/home/20250629161172/en",
-    "publisher": "Business Wire"
+    "url": "https://www.businesswire.com/news/home/20250629161172/en"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
@@ -1778,8 +1778,8 @@
   "summary": "Independent Australian equities and fixed income manager created through the TA-backed management buyout of Goldman Sachs Asset Management's Australian business; later absorbed Nikko AM Australia and Tyndall funds. TA SVP Lily Xu sits as board observer.",
   "signals": [],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
  },
