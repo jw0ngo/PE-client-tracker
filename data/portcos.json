@@ -81,14 +81,14 @@
   "signals": [
    {
     "date": "2024-08-20",
+    "publisher": "EQT",
     "title": "EQT to invest in Compass to accelerate company's innovation and education software solutions",
-    "url": "https://eqtgroup.com/news/eqt-to-invest-in-compass-to-accelerate-companys-innovation-and-education-software-solutions-2024-08-20",
-    "publisher": "EQT"
+    "url": "https://eqtgroup.com/news/eqt-to-invest-in-compass-to-accelerate-companys-innovation-and-education-software-solutions-2024-08-20"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -149,26 +149,26 @@
   "signals": [
    {
     "date": "2026-04-30",
+    "publisher": "Herald Economy (Korea)",
     "title": "EQT clears Douzone Bizon delisting threshold after securing required stake",
-    "url": "https://www.heraldk.com/article/2026043001264656909",
-    "publisher": "Herald Economy (Korea)"
+    "url": "https://www.heraldk.com/article/2026043001264656909"
    },
    {
     "date": "2026-02-23",
+    "publisher": "Bizwatch (Korea)",
     "title": "EQT launches KRW 120,000-per-share tender offer for Douzone Bizon",
-    "url": "https://news.bizwatch.co.kr/article/market/2026/02/23/0008",
-    "publisher": "Bizwatch (Korea)"
+    "url": "https://news.bizwatch.co.kr/article/market/2026/02/23/0008"
    },
    {
     "date": "2025-11-06",
+    "publisher": "EQT",
     "title": "EQT to invest USD 930 million in Douzone Bizon, a leading provider of ERP and software solutions in South Korea",
-    "url": "https://eqtgroup.com/news/eqt-to-invest-usd-930-million-in-douzone-bizon-a-leading-provider-of-erp-and-software-solutions-in-south-korea-2025-11-06",
-    "publisher": "EQT"
+    "url": "https://eqtgroup.com/news/eqt-to-invest-usd-930-million-in-douzone-bizon-a-leading-provider-of-erp-and-software-solutions-in-south-korea-2025-11-06"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -320,20 +320,20 @@
   "signals": [
    {
     "date": "2026-03-11",
+    "publisher": "Nihon M&A Center news",
     "title": "Mamezou Holdings: result of tender offer by Roodhalsgans 1 (EQT) - offer completed, 92.13% of voting rights",
-    "url": "https://www.nihon-ma.co.jp/news/20260311_202A-31/",
-    "publisher": "Nihon M&A Center news"
+    "url": "https://www.nihon-ma.co.jp/news/20260311_202A-31/"
    },
    {
     "date": "2026-01-23",
+    "publisher": "EQT",
     "title": "EQT to launch USD 371 million tender offer for MAMEZO",
-    "url": "https://eqtgroup.com/news/eqt-to-launch-usd-371-million-tender-offer-for-mamezo-2026-01-23",
-    "publisher": "EQT"
+    "url": "https://eqtgroup.com/news/eqt-to-launch-usd-371-million-tender-offer-for-mamezo-2026-01-23"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -362,8 +362,8 @@
   "summary": "Southeast Asia's leading property-listings and proptech group (Singapore, Malaysia, Thailand, Vietnam); EQT Private Capital Asia (BPEA Fund VII) took it private from the NYSE for ~US$1.1bn in December 2024 as KKR and TPG exited, installed Lewis Ng as CEO (from March 2025), and in 2025 restructured around the core marketplace, cutting 170+ roles and closing financing and home-services units.",
   "signals": [],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -391,14 +391,14 @@
   "signals": [
    {
     "date": "2025-12-04",
+    "publisher": "EQT",
     "title": "EQT to invest in PropertyMe, a leading Australian cloud-based proptech company",
-    "url": "https://eqtgroup.com/news/eqt-to-invest-in-propertyme-a-leading-australian-cloud-based-proptech-company-2025-12-04",
-    "publisher": "EQT"
+    "url": "https://eqtgroup.com/news/eqt-to-invest-in-propertyme-a-leading-australian-cloud-based-proptech-company-2025-12-04"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -519,26 +519,26 @@
   "signals": [
    {
     "date": "2026-03-09",
+    "publisher": "Virtuos newsroom",
     "title": "Virtuos expands Board of Directors to champion next phase of collaborative game development",
-    "url": "https://www.virtuosgames.com/news/virtuos-expands-board-of-directors-to-champion-next-phase-of-collaborative-game-development/",
-    "publisher": "Virtuos newsroom"
+    "url": "https://www.virtuosgames.com/news/virtuos-expands-board-of-directors-to-champion-next-phase-of-collaborative-game-development/"
    },
    {
     "date": "2025-07-17",
+    "publisher": "Fortune",
     "title": "Virtuos, the studio behind Oblivion Remastered, is reportedly laying off 7% of its global staff",
-    "url": "https://www.fortune.com/2025/07/17/virtuos-layoffs-elder-scrolls-oblivion-remastered-games-list/",
-    "publisher": "Fortune"
+    "url": "https://www.fortune.com/2025/07/17/virtuos-layoffs-elder-scrolls-oblivion-remastered-games-list/"
    },
    {
     "date": "2025-01-22",
+    "publisher": "Business Wire",
     "title": "Virtuos launches a new era of collaborative game development with strategic acquisitions of Pipeworks (USA), Abstraction (Netherlands) and Umanaia (Canada)",
-    "url": "https://www.businesswire.com/news/home/20250122696336/en",
-    "publisher": "Business Wire"
+    "url": "https://www.businesswire.com/news/home/20250122696336/en"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -567,6 +567,12 @@
   "summary": "30,000-person IT services firm (BFSI, healthcare, telecom) with delivery concentrated in India and Sri Lanka; BPEA took it private from Nasdaq in 2021 and EQT is now preparing a US$1bn+ India IPO with Citi, JPMorgan and Morgan Stanley.",
   "signals": [
    {
+    "date": "2026-09-30",
+    "publisher": "Mint",
+    "title": "Virtusa seeks India banks for billion-dollar IPO",
+    "url": "https://www.magzter.com/stories/newspaper/Mint-New-Delhi/VIRTUSA-SEEKS-INDIA-BANKS-FOR-BILLIONDOLLAR-IPO"
+   },
+   {
     "date": "2026-04-28",
     "publisher": "MT Newswires via Placera",
     "title": "Market Chatter: EQT's Virtusa Corp Mulls Indian IPO",
@@ -574,7 +580,7 @@
    }
   ],
   "exit": {
-   "note": "India IPO being prepared (Apr 2026 reports): raise >US$1bn at US$7bn+; roadshow H2 2026, listing late 2026/2027",
+   "note": "Mint, 30 Sep 2026: adding domestic banks to IPO syndicate (Citi, Morgan Stanley, JPMorgan named in April); $1bn+ raise at ~$7bn; no DRHP filed yet, listing late 2026/2027",
    "status": "process"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
@@ -809,21 +815,27 @@
   "summary": "Hyderabad-based cloud HCM platform serving 1,000+ enterprises (Starbucks, Nivea, AXA, Cigna); KKR took a minority stake in March 2025 via its Asia Next Generation Technology strategy, co-leading a US$140m round with Partners Group (Gravity Holdings participating) to fund product and international expansion.",
   "signals": [
    {
+    "date": "2026-08-17",
+    "publisher": "Mint via Investing.com",
+    "title": "Microsoft, Salesforce eye Darwinbox buyout ahead of planned IPO - Mint",
+    "url": "https://www.investing.com/news/stock-market-news/microsoft-salesforce-eye-darwinbox-buyout-ahead-of-planned-ipo-mint-93CH-4864245"
+   },
+   {
     "date": "2025-03-25",
+    "publisher": "HR Dive (press release)",
     "title": "Darwinbox Raises $140 Million Investment Co-led by Partners Group and KKR to Accelerate Global Expansion",
-    "url": "https://www.hrdive.com/press-release/20250325-darwinbox-raises-140-million-investment-co-led-by-partners-group-and-kkr-t-1/",
-    "publisher": "HR Dive (press release)"
+    "url": "https://www.hrdive.com/press-release/20250325-darwinbox-raises-140-million-investment-co-led-by-partners-group-and-kkr-t-1/"
    },
    {
     "date": "2025-03-05",
+    "publisher": "Business Standard",
     "title": "Darwinbox secures $140 million investment from Partners Group, KKR",
-    "url": "https://business-standard.com/finance/investment/darwinbox-secures-140-million-investment-from-partners-group-kkr-125030500834_1.html",
-    "publisher": "Business Standard"
+    "url": "https://business-standard.com/finance/investment/darwinbox-secures-140-million-investment-from-partners-group-kkr-125030500834_1.html"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "Mint, mid-Aug 2026: Salesforce, Microsoft and ADP reported to have approached founders/board about buying out shareholders at ~$1.8-2.0bn; IPO also planned, board yet to decide",
+   "status": "rumoured"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -1119,26 +1131,26 @@
   "signals": [
    {
     "date": "2026-06-10",
+    "publisher": "BusinessMirror",
     "title": "PLDT in talks with KKR to resolve Maya IPO issues",
-    "url": "https://businessmirror.com.ph/2026/06/10/pldt-in-talks-with-kkr-to-resolve-maya-ipo-issues/",
-    "publisher": "BusinessMirror"
+    "url": "https://businessmirror.com.ph/2026/06/10/pldt-in-talks-with-kkr-to-resolve-maya-ipo-issues/"
    },
    {
     "date": "2026-04-06",
+    "publisher": "Manila Bulletin",
     "title": "Maya pushes ahead with IPO as Iran conflict threatens timeline",
-    "url": "https://mb.com.ph/2026/04/06/maya-pushes-ahead-with-ipo-as-iran-conflict-threatens-timeline",
-    "publisher": "Manila Bulletin"
+    "url": "https://mb.com.ph/2026/04/06/maya-pushes-ahead-with-ipo-as-iran-conflict-threatens-timeline"
    },
    {
     "date": "2025-01-17",
+    "publisher": "Reuters via Interaksyon",
     "title": "KKR hires Goldman for selling stake in Philippine fintech Maya, sources say",
-    "url": "https://interaksyon.philstar.com/business/2025/01/17/290457/kkr-hires-goldman-for-selling-stake-in-philippine-fintech-maya-sources-say/",
-    "publisher": "Reuters via Interaksyon"
+    "url": "https://interaksyon.philstar.com/business/2025/01/17/290457/kkr-hires-goldman-for-selling-stake-in-philippine-fintech-maya-sources-say/"
    }
   ],
   "exit": {
-   "status": "process",
-   "note": "BusinessMirror, 10 Jun 2026: PLDT and KKR still negotiating Maya IPO (Philippines + US, H2 2026 target) or a KKR trade sale; Goldman mandated Jan 2025."
+   "note": "BusinessMirror, 10 Jun 2026: PLDT and KKR still negotiating Maya IPO (Philippines + US, H2 2026 target) or a KKR trade sale; Goldman mandated Jan 2025.",
+   "status": "process"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -1312,14 +1324,14 @@
   "signals": [
    {
     "date": "2026-04-07",
+    "publisher": "Pipeline Road (citing Bloomberg)",
     "title": "KKR-backed SmartHR considers Tokyo IPO at $1bn valuation",
-    "url": "https://pipelineroad.com/news/20260407-kkr-backed-smarthr-considers-tokyo-ipo-at-1bn-valuation",
-    "publisher": "Pipeline Road (citing Bloomberg)"
+    "url": "https://pipelineroad.com/news/20260407-kkr-backed-smarthr-considers-tokyo-ipo-at-1bn-valuation"
    }
   ],
   "exit": {
-   "status": "process",
-   "note": "Bloomberg via Private Equity Wire, Jul 2026: Tokyo IPO postponed to at least 2027 after investors questioned the c.US$1bn valuation."
+   "note": "Bloomberg via Private Equity Wire, Jul 2026: Tokyo IPO postponed to at least 2027 after investors questioned the c.US$1bn valuation.",
+   "status": "process"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -1354,26 +1366,26 @@
   "signals": [
    {
     "date": "2026-09-02",
+    "publisher": "Company release via Viet Nam News",
     "title": "KKR-Singtel Consortium Completes Acquisition of STTGDC; Company Launches Refreshed Global Brand",
-    "url": "https://vietnamnews.vn/media-outreach/1798770/kkr-singtel-consortium-completes-acquisition-of-sttgdc-company-launches-refreshed-global-brand-for-next-phase-of-growth.html",
-    "publisher": "Company release via Viet Nam News"
+    "url": "https://vietnamnews.vn/media-outreach/1798770/kkr-singtel-consortium-completes-acquisition-of-sttgdc-company-launches-refreshed-global-brand-for-next-phase-of-growth.html"
    },
    {
     "date": "2026-02-04",
+    "publisher": "CNBC",
     "title": "KKR and Singtel to take full ownership of data center firm STT GDC for about $5 billion",
-    "url": "https://www.cnbc.com/2026/02/04/kkr-and-singtel-stake-in-stt-gdc-for-over-5-billion.html",
-    "publisher": "CNBC"
+    "url": "https://www.cnbc.com/2026/02/04/kkr-and-singtel-stake-in-stt-gdc-for-over-5-billion.html"
    },
    {
     "date": "2026-02-03",
+    "publisher": "Forbes",
     "title": "KKR, Singtel To Buy Stake In Data Center Operator STT GDC For $5.2 Billion Amid AI Boom",
-    "url": "https://www.forbes.com/sites/yessarrosendar/2026/02/03/kkr-singtel-to-buy-stake-in-data-center-operator-stt-gdc-for-52-billion-amid-ai-boom/",
-    "publisher": "Forbes"
+    "url": "https://www.forbes.com/sites/yessarrosendar/2026/02/03/kkr-singtel-to-buy-stake-in-data-center-operator-stt-gdc-for-52-billion-amid-ai-boom/"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -1537,14 +1549,14 @@
   "signals": [
    {
     "date": "2026-01-12",
+    "publisher": "Startup Daily",
     "title": "Cheque-in: 3 startups kick off 2026 raising $25.8 million",
-    "url": "https://www.startupdaily.net/topic/funding/cheque-in-3-startups-kick-off-2026-raising-25-8-million/",
-    "publisher": "Startup Daily"
+    "url": "https://www.startupdaily.net/topic/funding/cheque-in-3-startups-kick-off-2026-raising-25-8-million/"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -1659,20 +1671,20 @@
   "signals": [
    {
     "date": "2025-11-17",
+    "publisher": "SiliconANGLE",
     "title": "Sakana AI lands $135M on $2.635B valuation to accelerate frontier research and applied AI in Japan",
-    "url": "https://siliconangle.com/2025/11/17/sakana-ai-lands-135m-2-635b-valuation-accelerate-frontier-research-applied-ai-japan/",
-    "publisher": "SiliconANGLE"
+    "url": "https://siliconangle.com/2025/11/17/sakana-ai-lands-135m-2-635b-valuation-accelerate-frontier-research-applied-ai-japan/"
    },
    {
     "date": "2025-11-17",
+    "publisher": "Tech Startups",
     "title": "Sakana AI raises $135M at a $2.65B valuation to become Japan's most valuable unicorn startup",
-    "url": "https://techstartups.com/2025/11/17/sakana-ai-raises-135m-at-a-2-65b-valuation-to-become-japans-most-valuable-private-startup/",
-    "publisher": "Tech Startups"
+    "url": "https://techstartups.com/2025/11/17/sakana-ai-raises-135m-at-a-2-65b-valuation-to-become-japans-most-valuable-private-startup/"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -1771,20 +1783,20 @@
   "signals": [
    {
     "date": "2026-10-06",
+    "publisher": "IPE Real Assets",
     "title": "Macquarie Capital invests in Asia-Pacific data centre platform Zerra DC",
-    "url": "https://realassets.ipe.com/news/macquarie-capital-invests-in-asia-pacific-data-centre-platform-zerra-dc/10138808.article",
-    "publisher": "IPE Real Assets"
+    "url": "https://realassets.ipe.com/news/macquarie-capital-invests-in-asia-pacific-data-centre-platform-zerra-dc/10138808.article"
    },
    {
     "date": "2026-10-06",
+    "publisher": "DealStreetAsia",
     "title": "Macquarie backs Singapore's Zerra DC for APAC data centre expansion",
-    "url": "https://www.dealstreetasia.com/?p=497197",
-    "publisher": "DealStreetAsia"
+    "url": "https://www.dealstreetasia.com/?p=497197"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -1815,8 +1827,8 @@
   "summary": "Southeast Asian arm of India's CarDekho Group, running OTO (Indonesia), Carmudi and Zigwheels (Philippines) - used car and bike financing (200k+ disbursements, US$1bn+ GMV since 2020) plus auto classifieds; Navis Capital Partners co-led/anchored its first external round of US$60m with Dragon Fund in December 2024 to scale financing in Indonesia and the Philippines.",
   "signals": [],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -1869,9 +1881,16 @@
    "url": "https://sandbox.mergr.com/navis-capital-partners-acquires-device-technologies-australia-pty"
   },
   "summary": "Australia's largest independent medtech distributor (Intuitive Surgical key principal); bolt-ons across ANZ/SEA under Navis. Mergermarket: early engagement with PE and strategic buyers, Morgan Stanley/Jefferies advising, EBITDA A$110-120m, value well above A$1bn.",
-  "signals": [],
+  "signals": [
+   {
+    "date": "2026-07-13",
+    "publisher": "Jerry Borrell (AsiaWatch)",
+    "title": "AsiaWatch for July 13th, 2026",
+    "url": "https://jerryborrell.substack.com/p/asiawatch-for-july-13th-2026"
+   }
+  ],
   "exit": {
-   "note": "Mergermarket reports sale preparation with Morgan Stanley and Jefferies (report date not confirmed in this pass)",
+   "note": "The Australian, 9 Jul 2026: Blackstone at front of queue; AsiaWatch 13 Jul: Navis retained Jefferies and Morgan Stanley to assess offers from Blackstone, Carlyle, CVC and EQT, reportedly seeking ~$1bn",
    "status": "process"
   },
   "firstSeen": "2026-10-06T00:58:19Z"
@@ -2092,14 +2111,14 @@
   "signals": [
    {
     "date": "2026-02-04",
+    "publisher": "Angel One",
     "title": "Fractal Analytics Files INR 2,833.9 Crore IPO With Fresh Issue and OFS Components",
-    "url": "https://www.angelone.in/news/ipos/fractal-analytics-files-2-833-9-crore-ipo-with-fresh-issue-and-ofs-components",
-    "publisher": "Angel One"
+    "url": "https://www.angelone.in/news/ipos/fractal-analytics-files-2-833-9-crore-ipo-with-fresh-issue-and-ofs-components"
    }
   ],
   "exit": {
-   "status": "listed",
-   "note": "Listed NSE/BSE 2026-02-16 at INR 876 vs INR 900 issue price (Chanakya Ni Pothi); TA did not sell in the OFS"
+   "note": "Listed NSE/BSE 2026-02-16 at INR 876 vs INR 900 issue price (Chanakya Ni Pothi); TA did not sell in the OFS",
+   "status": "listed"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -2238,14 +2257,14 @@
   "signals": [
    {
     "date": "2024-03-19",
+    "publisher": "TA Associates",
     "title": "TA Announces Completion of Tender Offer for Payroll Inc.",
-    "url": "https://ta.com/news/ta-announces-completion-of-tender-offer-for-payroll-inc",
-    "publisher": "TA Associates"
+    "url": "https://ta.com/news/ta-announces-completion-of-tender-offer-for-payroll-inc"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -2451,14 +2470,14 @@
   "signals": [
    {
     "date": "2022-05-09",
+    "publisher": "Business Wire",
     "title": "TA Associates Announces Strategic Growth Investment in Zifo RnD Solutions",
-    "url": "https://www.businesswire.com/news/home/20220509005560/en/TA-Associates-Announces-Strategic-Growth-Investment-in-Zifo-RnD-Solutions",
-    "publisher": "Business Wire"
+    "url": "https://www.businesswire.com/news/home/20220509005560/en/TA-Associates-Announces-Strategic-Growth-Investment-in-Zifo-RnD-Solutions"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -2757,14 +2776,14 @@
   "signals": [
    {
     "date": "2024-02-12",
+    "publisher": "Business Standard",
     "title": "SoftBank-backed Eruditus plans to shift to India from Singapore for IPO",
-    "url": "https://www.business-standard.com/markets/ipo/softbank-backed-eruditus-plans-to-shift-to-india-from-singapore-for-ipo-124021201529_1.html",
-    "publisher": "Business Standard"
+    "url": "https://www.business-standard.com/markets/ipo/softbank-backed-eruditus-plans-to-shift-to-india-from-singapore-for-ipo-124021201529_1.html"
    }
   ],
   "exit": {
-   "status": "rumoured",
-   "note": "Business Standard, 2024-02 and 2025: redomiciling to India ahead of an IPO; management says no timeline"
+   "note": "Business Standard, 2024-02 and 2025: redomiciling to India ahead of an IPO; management says no timeline",
+   "status": "rumoured"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -2928,26 +2947,26 @@
   "signals": [
    {
     "date": "2026-08-20",
+    "publisher": "The Korea Times",
     "title": "Kakao Mobility pursues US IPO, seeks to raise $1 bil.",
-    "url": "https://www.koreatimes.co.kr/business/companies/20260820/kakao-mobility-pursues-us-ipo-seeks-to-raise-1-bil",
-    "publisher": "The Korea Times"
+    "url": "https://www.koreatimes.co.kr/business/companies/20260820/kakao-mobility-pursues-us-ipo-seeks-to-raise-1-bil"
    },
    {
     "date": "2025-05-13",
+    "publisher": "Enterprise AM",
     "title": "Mubadala plans to invest USD 400 mn in South Korea's Kakao Mobility via a consortium",
-    "url": "https://enterpriseam.com/uae/2025/05/13/mubadala-plans-to-invest-usd-400-mn-in-south-koreas-kakao-mobility-via-a-consortium/",
-    "publisher": "Enterprise AM"
+    "url": "https://enterpriseam.com/uae/2025/05/13/mubadala-plans-to-invest-usd-400-mn-in-south-koreas-kakao-mobility-via-a-consortium/"
    },
    {
     "date": "2021-06-09",
+    "publisher": "The Trusted Insight / CNA",
     "title": "South Korea's Kakao Mobility secures US$126 million investment from TPG consortium, Carlyle",
-    "url": "https://www.thetrustedinsight.com/investment-news/south-koreas-kakao-mobility-secures-us126-million-investment-from-tpg-consortium-carlyle-cna-20210609213/",
-    "publisher": "The Trusted Insight / CNA"
+    "url": "https://www.thetrustedinsight.com/investment-news/south-koreas-kakao-mobility-secures-us126-million-investment-from-tpg-consortium-carlyle-cna-20210609213/"
    }
   ],
   "exit": {
-   "status": "process",
-   "note": "Korea Times, 2026-08-20: board resolved to issue US ADRs, confidential F-1 filed mid-2026, BofA/Morgan Stanley/UBS mandated; listing is TPG consortium's exit vehicle"
+   "note": "Korea Times, 2026-08-20: board resolved to issue US ADRs, confidential F-1 filed mid-2026, BofA/Morgan Stanley/UBS mandated; listing is TPG consortium's exit vehicle",
+   "status": "process"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -2975,14 +2994,14 @@
   "signals": [
    {
     "date": "2018-09-19",
+    "publisher": "Business Standard / PTI",
     "title": "Livspace raises USD 70 mln from Goldman Sachs, TPG Growth, others",
-    "url": "https://business-standard.com/amp/article/pti-stories/livspace-raises-usd-70-mln-from-goldman-sachs-tpg-growth-others-118091900205_1.html",
-    "publisher": "Business Standard / PTI"
+    "url": "https://business-standard.com/amp/article/pti-stories/livspace-raises-usd-70-mln-from-goldman-sachs-tpg-growth-others-118091900205_1.html"
    }
   ],
   "exit": {
-   "status": "rumoured",
-   "note": "Inc42 / IPO Central, 2025: Indian IPO targeted for 2026 after reverse flip; no DRHP found as of Oct 2026"
+   "note": "Inc42 / IPO Central, 2025: Indian IPO targeted for 2026 after reverse flip; no DRHP found as of Oct 2026",
+   "status": "rumoured"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -3329,8 +3348,8 @@
   "summary": "Singapore digital-telco group running the Circles X SaaS platform for operators (customers include KDDI, e&, AT&T, Telkomsel), the Circles.Life consumer MVNO brand and the Jetpac eSIM travel product; Warburg Pincus has been a minority growth investor since 2019 alongside Peak XV, Founders Fund and EDBI, and the company remains on Warburg's active portfolio as of June 2026.",
   "signals": [],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -3456,26 +3475,26 @@
   "signals": [
    {
     "date": "2024-12-16",
+    "publisher": "PR Newswire via Kyodo News PR Wire",
     "title": "Everise expands and diversifies its healthcare services portfolio with the acquisition of Continuum Global Solutions vertical",
-    "url": "https://kyodonewsprwire.jp/release/202412161801",
-    "publisher": "PR Newswire via Kyodo News PR Wire"
+    "url": "https://kyodonewsprwire.jp/release/202412161801"
    },
    {
     "date": "2024-09-24",
+    "publisher": "AAP / Cision",
     "title": "Everise Signs Agreement to Acquire Continuum Global Solutions' Healthcare Vertical",
-    "url": "https://www.aap.com.au/aapreleases/cision20240924ae14312",
-    "publisher": "AAP / Cision"
+    "url": "https://www.aap.com.au/aapreleases/cision20240924ae14312"
    },
    {
     "date": "2023-12-21",
+    "publisher": "Brookfield",
     "title": "Brookfield and Everise Announce the Successful Closure of Investment by Warburg Pincus, for the Next Phase of Growth",
-    "url": "https://bam.brookfield.com/press-releases/brookfield-and-everise-announce-successful-closure-investment-warburg-pincus-next",
-    "publisher": "Brookfield"
+    "url": "https://bam.brookfield.com/press-releases/brookfield-and-everise-announce-successful-closure-investment-warburg-pincus-next"
    }
   ],
   "exit": {
-   "status": "none",
-   "note": ""
+   "note": "",
+   "status": "none"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -3502,14 +3521,14 @@
   "signals": [
    {
     "date": "2026-10-05",
+    "publisher": "Forbes Italia",
     "title": "GCash: Mynt prices IPO at PHP 6.60, raising up to US$973m",
-    "url": "https://forbes.it/2026/10/05/gcash-ipo-mynt-970-milioni-dollari",
-    "publisher": "Forbes Italia"
+    "url": "https://forbes.it/2026/10/05/gcash-ipo-mynt-970-milioni-dollari"
    }
   ],
   "exit": {
-   "status": "process",
-   "note": "Forbes Italia, 5 Oct 2026: IPO priced, listing on PSE 20 Oct 2026; Warburg Pincus funds among selling shareholders alongside Ant Group and management (partial sell-down)."
+   "note": "Forbes Italia, 5 Oct 2026: IPO priced, listing on PSE 20 Oct 2026; Warburg Pincus funds among selling shareholders alongside Ant Group and management (partial sell-down).",
+   "status": "process"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -3537,20 +3556,20 @@
   "signals": [
    {
     "date": "2025-12-17",
+    "publisher": "Free Malaysia Today / Bloomberg",
     "title": "GoTo's rebound hinges on shareholder vote as Grab merger eyed",
-    "url": "https://fmtv5.freemalaysiatoday.com/category/business/2025/12/17/gotos-rebound-hinges-on-shareholder-vote-as-grab-merger-eyed",
-    "publisher": "Free Malaysia Today / Bloomberg"
+    "url": "https://fmtv5.freemalaysiatoday.com/category/business/2025/12/17/gotos-rebound-hinges-on-shareholder-vote-as-grab-merger-eyed"
    },
    {
     "date": "2025-11-24",
+    "publisher": "Fortune",
     "title": "GoTo taps new CEO in step toward game-changing Grab takeover",
-    "url": "https://fortune.com/2025/11/24/goto-taps-new-ceo-in-step-toward-game-changing-grab-takeover",
-    "publisher": "Fortune"
+    "url": "https://fortune.com/2025/11/24/goto-taps-new-ceo-in-step-toward-game-changing-grab-takeover"
    }
   ],
   "exit": {
-   "status": "listed",
-   "note": "IDX-listed since Apr 2022; Grab takeover talks ongoing (Fortune, 24 Nov 2025; FMT/Bloomberg, 17 Dec 2025); Warburg's residual stake size not disclosed."
+   "note": "IDX-listed since Apr 2022; Grab takeover talks ongoing (Fortune, 24 Nov 2025; FMT/Bloomberg, 17 Dec 2025); Warburg's residual stake size not disclosed.",
+   "status": "listed"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -3579,8 +3598,8 @@
   "summary": "Hong Kong-based end-to-end generative-AI drug discovery company; Warburg Pincus led its US$255m Series C in June 2021 and held c.10% via its Mesolite vehicle pre-IPO, and the company listed on HKEX in Dec 2025 raising HK$2.28bn with Tencent and Eli Lilly as cornerstones.",
   "signals": [],
   "exit": {
-   "status": "listed",
-   "note": "HKEX IPO priced at HK$24.05 raising HK$2.277bn, trading from 30 Dec 2025 (Fierce Biotech / BiopharmaTrend); Warburg's post-IPO holding not confirmed."
+   "note": "HKEX IPO priced at HK$24.05 raising HK$2.277bn, trading from 30 Dec 2025 (Fierce Biotech / BiopharmaTrend); Warburg's post-IPO holding not confirmed.",
+   "status": "listed"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -3742,14 +3761,14 @@
   "signals": [
    {
     "date": "2026-05-21",
+    "publisher": "Data Center Dynamics",
     "title": "PDG looking to sell China data centers - report",
-    "url": "https://www.datacenterdynamics.com/en/news/pdg-looking-to-sell-china-data-centers-report/",
-    "publisher": "Data Center Dynamics"
+    "url": "https://www.datacenterdynamics.com/en/news/pdg-looking-to-sell-china-data-centers-report/"
    }
   ],
   "exit": {
-   "status": "process",
-   "note": "FT via DCD / Private Equity Wire, May 2026: sale process for China data centres (up to US$1bn) via CICC; Mergermarket: Goldman Sachs running strategic review that may include a minority stake sale."
+   "note": "FT via DCD / Private Equity Wire, May 2026: sale process for China data centres (up to US$1bn) via CICC; Mergermarket: Goldman Sachs running strategic review that may include a minority stake sale.",
+   "status": "process"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  },
@@ -3913,20 +3932,20 @@
   "signals": [
    {
     "date": "2024-09-25",
+    "publisher": "Bloomberg",
     "title": "Warburg Leads $125 Million Round by Software Startup Whatfix",
-    "url": "https://www.bloomberg.com/news/articles/2024-09-25/warburg-leads-125-million-round-by-software-startup-whatfix",
-    "publisher": "Bloomberg"
+    "url": "https://www.bloomberg.com/news/articles/2024-09-25/warburg-leads-125-million-round-by-software-startup-whatfix"
    },
    {
     "date": "2024-09-25",
+    "publisher": "Business Today",
     "title": "Whatfix defies SaaS funding slump with $125 mn Series E round, CEO Batti talks IPO path",
-    "url": "https://www.businesstoday.in/amp/entrepreneurship/story/whatfix-defies-saas-funding-slump-with-125-mn-series-e-round-ceo-batti-talks-ipo-path-447497-2024-09-25",
-    "publisher": "Business Today"
+    "url": "https://www.businesstoday.in/amp/entrepreneurship/story/whatfix-defies-saas-funding-slump-with-125-mn-series-e-round-ceo-batti-talks-ipo-path-447497-2024-09-25"
    }
   ],
   "exit": {
-   "status": "rumoured",
-   "note": "Mergermarket (ION Analytics): Whatfix in talks with advisers as it eyes a 2026 India IPO with primary and secondary components; no DRHP found as of Oct 2026."
+   "note": "Mergermarket (ION Analytics): Whatfix in talks with advisers as it eyes a 2026 India IPO with primary and secondary components; no DRHP found as of Oct 2026.",
+   "status": "rumoured"
   },
   "firstSeen": "2026-10-09T07:11:58Z"
  }

@@ -697,13 +697,19 @@
   "hq": "Sydney, Australia",
   "listed": "ASX: PPT",
   "apac": true,
-  "live": true,
+  "live": false,
   "ownership": "listed",
   "owner": "",
   "ownerSince": "",
   "why": "Wealth/corporate-trust group with technology-heavy corporate trust and platform businesses; rejected an EQT-controlled A$21.64/share indicative proposal on 1 Jul 2026, so a contested take-private is open and Macquarie Capital-style FIG/fintech sponsors may circle. Weakest fit (financial services, not pure software).",
   "move": "Scope a carve-out tech DD on corporate trust/wealth platforms in case a sponsor seeks a product and technology assessment.",
   "signals": [
+   {
+    "date": "2026-10-07",
+    "publisher": "Kalkine",
+    "title": "Perpetual (ASX:PPT) After EQT Walks Away, the Standalone Plan Faces Its Test",
+    "url": "https://kalkine.com.au/news/financial/perpetual-asxppt-after-eqt-walks-away-the-standalone-plan-faces-its-test"
+   },
    {
     "date": "2026-07-01",
     "publisher": "StockWireX",
