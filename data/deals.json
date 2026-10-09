@@ -9625,30 +9625,6 @@
   "portco": "airtel-money"
  },
  {
-  "id": "bd6ed6b91bad",
-  "firm": "warburg-pincus",
-  "title": "Stock grants vested on three dates as Hello Group (MOMO) director acquired 1,563 depositary shares each day.",
-  "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcWVOUGxyZTNMSUdaQ3ZvZ2t5TEZHN1dUNnIzSUxMUXlBSm82LWNCVS1pOVpQX1lOa2dGVWE5MkUtby1sbkdXZDVuQUMzOEJNNlV6bUYxWnYyU2VjT3ZsZWFTZGZyYWVGUnBfdXd6U1l6Q3IyX1lheGthRjJXRWFheE4xdTdDX2VjbG1xZ2Z3VVNFVEFaNGV2aFE4RDA5VFFHUkxfYUtmRzBqNkFTQlE?oc=5",
-  "date": "2026-10-08T10:09:49.000Z",
-  "publisher": "Stock Titan",
-  "source": "portco:momo",
-  "official": false,
-  "firstSeen": "2026-10-09T00:13:53.254Z",
-  "portco": "momo"
- },
- {
-  "id": "1a1015ff7715",
-  "firm": "warburg-pincus",
-  "title": "On three vesting dates, Hello Group (MOMO) director Dave Qi acquired 1,563 depositary shares each.",
-  "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNUFFQZDBlcF9PRmRmQmxoY0hzcXRsamhTZnB5SmU3T1A1UUd6bWpjZDZ5T3p4QVlwb3dBbTVLUm8zVUNnR1l5U1pKZlJiVUhOWW9OcHNESGlSZk1RVWhBN2IybzZhcHEwZV9iVjA1WHZ0R0JIc1kzbjRRTXRZUVd4WnVBZnZzTWlHUk1naHhpaFlIVXN2LXRNNVNmTUpLNEItVHFlbXE2V3AwRVB3bnc?oc=5",
-  "date": "2026-10-08T10:04:07.000Z",
-  "publisher": "Stock Titan",
-  "source": "portco:momo",
-  "official": false,
-  "firstSeen": "2026-10-09T00:13:53.254Z",
-  "portco": "momo"
- },
- {
   "id": "185ac4750407",
   "firm": "tpg",
   "title": "Boomi Hires Proofpoint Finance Veteran Mike Hickman as CFO",
@@ -9973,18 +9949,6 @@
   "portco": "viridian-financial-group"
  },
  {
-  "id": "86e7414f78e9",
-  "firm": "ta-associates",
-  "title": "Viridian Metals Inc. (VIRMF) Company Profile & Facts",
-  "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5pd0o2T29pMHV4dTVmdURDYUo5ZHVWaTFpNmtSZ1VlVW5MR2M0OEcyMkVSOGp2RVJES0dxU2RBLWs5Y01EenVNY3ZpSW9LV3hKdEUzZXBkZkFxbUkxaGc?oc=5",
-  "date": "2026-10-07T17:08:29.000Z",
-  "publisher": "Yahoo! Finance Canada",
-  "source": "portco:viridian-financial-group",
-  "official": false,
-  "firstSeen": "2026-10-08T00:14:37.721Z",
-  "portco": "viridian-financial-group"
- },
- {
   "id": "7243658c1d11",
   "firm": "warburg-pincus",
   "title": "MTN Unveils Upgraded MoMo App That Is Faster, Safer, and Easier To Use",
@@ -10007,6 +9971,18 @@
   "official": false,
   "firstSeen": "2026-10-08T00:14:37.721Z",
   "portco": "fractal-analytics"
+ },
+ {
+  "id": "a65065995953",
+  "firm": "ta-associates",
+  "title": "Viridian Metals Stock Climbs 2.35% as Kraken Step-Out Drilling Hits Sulphides Across 3 Kilometres Ahead of Key Assays (CN:VRDN)",
+  "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPUVdWZXF6VkZwWDlRVmtySm5UakV6SV9JNjZjOVFINGdNb1pOSXdJeGk5QThPblpwQWd4Rnp2dUE2TC1oVnVKVXhwa3JlZldzRm9aejdaR3BVNGxPMVlNdG1IS0hjWWV3REg0ekl5YW9NcGd0d0pXeUVyaWk0bkFfQTlvWkV3YzBFVTBFcFVKWElITkRwc2YteE5HUE5KV1daRWxMblVXUml3NTlfSmRCN0ZBa1pGdm1ONmF0bkk2YXZrRWhrdjZWNU1nRjhscW1McDlObUNGWC1XTFNMTXF6emVuZmYzSDhm?oc=5",
+  "date": "2026-10-07T15:32:00.000Z",
+  "publisher": "kalkine.ca",
+  "source": "portco:viridian-financial-group",
+  "official": false,
+  "firstSeen": "2026-10-08T00:14:37.721Z",
+  "portco": "viridian-financial-group"
  },
  {
   "id": "0e05786c3ed2",
@@ -10153,6 +10129,18 @@
   "portco": "unit4"
  },
  {
+  "id": "3e78c118f7df",
+  "firm": "warburg-pincus",
+  "title": "Scammers target ECG customers with fake meter sales and MoMo payment calls",
+  "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxONERQbW9YSW1Qd1hLV091MDF2ZHhJSnh2bXI5X3FlVXRVYW1pWEhwdVJWeDZ0VkVHOW1HaVFQRG13dlVENGs4YS1fdVJXRjV0YXMyQ3p1eU9XTjZ2MlNGWGlJblFMRHA3eWRDOGJoVmVmZk94RjItYlVjQzdydE9TaEhQZlljOVNUemt0bUs3UVJLQlVaeDktWnV3cFdZZ3d2TFVldENNSDBwcVlLZ1ZNeC1yUVd6WUF0N2FhbjQtNjJudw?oc=5",
+  "date": "2026-10-07T04:42:50.000Z",
+  "publisher": "Graphic Online",
+  "source": "portco:momo",
+  "official": false,
+  "firstSeen": "2026-10-08T00:14:37.721Z",
+  "portco": "momo"
+ },
+ {
   "id": "854cd54e681a",
   "firm": "kkr",
   "title": "MYOB Beyond the Ballot 2026: National and Labour clash on how to back SMEs",
@@ -10201,6 +10189,18 @@
   "portco": "waystar"
  },
  {
+  "id": "649080d32a10",
+  "firm": "warburg-pincus",
+  "title": "Momo M-40 all season tyres available in 76 sizes",
+  "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxORXp0a1ZfaVQ0NTFIRExSMDZObWNYX04yYm4xaGpmWDRWN0pEbzNDYjEzNUdJazJOZkN1b04zZC1mbXNIU0dVNkN0Vkp2OU9YSTh2aXhDa1BmdmYzWEctNll1bEtEcDhOOXQzbFBFWVYwTzlscG1JNXgzWG1NRFVMTWRvc0lXOEtzR05B?oc=5",
+  "date": "2026-10-06T17:05:57.000Z",
+  "publisher": "Tyrepress",
+  "source": "portco:momo",
+  "official": false,
+  "firstSeen": "2026-10-07T00:14:27.072Z",
+  "portco": "momo"
+ },
+ {
   "id": "114afc493557",
   "firm": "eqt",
   "title": "WSO2 opens first Africa-based office in Johannesburg, deepening investment in the continent's modernization",
@@ -10223,18 +10223,6 @@
   "official": false,
   "firstSeen": "2026-10-07T00:14:27.072Z",
   "portco": "cdata-software"
- },
- {
-  "id": "e13dbd644071",
-  "firm": "ta-associates",
-  "title": "Unit4 completes acquisition of professional services platform Napta",
-  "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNb09tYmJPQ0I3ckFrRGdUb2J3Uy00RDgteWZQX2dXX1VHandqeGZySVB1R3Uzc1VYWEFCcFNKMlBLM3FxY196dWtMRGNtRHB6NTMzWDAzem9WVlV4WC1Jb0lSXzVtYV9OZHlMODRWSG5FVkxpT2thc1YtWmtzS3Y0b2wxNUhiZ1MwZGZIZ1Q0ODVYMXM5cm9MVXVyUEVaSk9TMW16S1dqSFFGcWNmUWfSAa4BQVVfeXFMTW9PbWJiT0NCN3JBa0RnVG9id1MtNEQ4LXlmUF9nV19VR2p3anhmcklQdUd1M3NVWFhBQnBTSjJQSzNxcWNfenVrTERjbURwejUzM1gwM3pvVlZVeFgtSW9JUl81bWFfTmR5TDg0VkhuRVZMaU9rYXNWLVprc0t2NG9sMTVIYmdTMGRmSGdUNDg1WDFzOXJvTFV1clBFWkpPUzFtektXakhRRnFjZlFn?oc=5",
-  "date": "2026-10-06T12:07:43.000Z",
-  "publisher": "Consultancy.uk",
-  "source": "portco:unit4",
-  "official": false,
-  "firstSeen": "2026-10-07T00:14:27.072Z",
-  "portco": "unit4"
  },
  {
   "id": "60b18ef2f6aa",
@@ -10261,30 +10249,6 @@
   "portco": "capillary-technologies"
  },
  {
-  "id": "387982430043",
-  "firm": "ta-associates",
-  "title": "Unit4 Buys Napta to Boost Skills-Based Resourcing -",
-  "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUTg2cWh4d1FENVY1Mm5RbXRiYUR1MkQtNnFSNk5SdmtmbEZ6VlhDZnQ3akhrUC1PZWV4YVpDQjNDb0tBczVMUjRmbFMwUkNDYUREM0xkaVNsSVFDenhoZXdUZG53SEUtcnBWR0pkSWF6Qjd3aUZmM3BxWm55cmxOUjlySkFHazVDV2hEQ3R3RkJodlJmMHBaNDJJZw?oc=5",
-  "date": "2026-10-06T10:00:45.000Z",
-  "publisher": "Enterprise Times",
-  "source": "portco:unit4",
-  "official": false,
-  "firstSeen": "2026-10-07T00:14:27.072Z",
-  "portco": "unit4"
- },
- {
-  "id": "3e73bc856df0",
-  "firm": "ta-associates",
-  "title": "Unit4 to Acquire Napta and Accelerate Skills-Based Resource Management for Professional & Business Services Firms",
-  "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQUGE0LU9ibXcwZVVzY1ROUDVSeXJDekFJNXF6R2tSb0laVlRTOFVFQkdLZjMtbUJWbUVrMGZSR2Q1dXNzc1RFcklULTZnU3BmR201THkwSkVuRWM5VFRPeWh3RTVpWURZSVNuMzZRZWFOM1g1c2JPY2hxYlpFLXNkZXBXWFdyOGE1czdLZnYtRU5sWkNhdDF3bVNsVFV5eHpzeFdSbkhLVllOVlNfTnFDNjdSYjRZRHd4NHZrd1pFRElyZ3RHd29HNWJyRUNabWF2QXdmaDlQYXZxRHNqQ3JJRFVkYkE0aHJQNHdQd3g0LVVnQUxBUHUyUTNId1A?oc=5",
-  "date": "2026-10-06T10:00:00.000Z",
-  "publisher": "PR Newswire",
-  "source": "portco:unit4",
-  "official": false,
-  "firstSeen": "2026-10-07T00:14:27.072Z",
-  "portco": "unit4"
- },
- {
   "id": "06ce10052386",
   "firm": "navis",
   "title": "WMIT to Showcase Korean Medical Device Technologies at Hospital Expo 2026",
@@ -10307,18 +10271,6 @@
   "official": false,
   "firstSeen": "2026-10-07T00:14:27.072Z",
   "portco": "privy"
- },
- {
-  "id": "d78e5ee1c166",
-  "firm": "ta-associates",
-  "title": "Unit4 acquires Napta to expand into resource, skills management",
-  "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOczVKVVNva2NoUk1PaUpMUEV3aVRfbHBCOHdyWm1sRFJ5LTdZaEF1cm5tUnMySXItWUU1UEwxYnM4R3hXeEtDR1VqdWU4WGo4eGVlV0tDcUxsYTVXVVZxcGQ4aERFTVBNeDlLMkNiWjMxZDl0ZWkxY1hBMVNZOFpfNzM3eFJuazhMUnJjRHJSNzIwS2VuVC1RQ1VNUy1KQmN0?oc=5",
-  "date": "2026-10-06T07:09:30.000Z",
-  "publisher": "Constellation Research",
-  "source": "portco:unit4",
-  "official": false,
-  "firstSeen": "2026-10-07T00:14:27.072Z",
-  "portco": "unit4"
  },
  {
   "id": "7756ea91df13",
@@ -10717,6 +10669,18 @@
   "portco": "samsung-sds"
  },
  {
+  "id": "6095f2d52191",
+  "firm": "ta-associates",
+  "title": "Unit4 Hires Anja Sadock as CMO to Support Its 2030 Growth Plan",
+  "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxObHJHWlJlRllzVkxTcVpUSGp3LTVDREpCUzVzSnBUd1Q5Y2dtYzM0c2daWGRDQ0NDVmxEZWdNYWdITEJ2ZU9fSEtraVJFWFVrRTgyZzJKalYtSDFDY0JWNmRSUWFXSkY1UHpyODZhS1QzT240SGtoTEd4NXhibjhMTXotUGJHRDN6RkYyQ05BUC0tZmVqOTMwbW8zTGZMZUUxNDU5dEdXUEdRd0k?oc=5",
+  "date": "2026-10-02T08:00:29.000Z",
+  "publisher": "thekeyexecutives.com",
+  "source": "portco:unit4",
+  "official": false,
+  "firstSeen": "2026-10-06T02:13:34.554Z",
+  "portco": "unit4"
+ },
+ {
   "id": "0798f55d6fc2",
   "firm": "warburg-pincus",
   "title": "The Rise of the AI Gateway: Assessing CData's Connect AI Gateway",
@@ -10859,18 +10823,6 @@
   "official": false,
   "firstSeen": "2026-10-06T02:13:34.554Z",
   "portco": "bmc-software"
- },
- {
-  "id": "e695b49e43d9",
-  "firm": "tpg",
-  "title": "Novotech to acquire Agilex Biolabs",
-  "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1UMmNzMzNGVk1MQ2IyZU5oRTFrTEpRdjBIY2hrX21iQWVjaDUxcHVGN25FcFNlRjQ5cElIWkFvWXFLcERvc09XSnlhbGJXUnJJdUpRb0VIZjZqTUVXR29yamlDR3pTbmh4N25CaUZncmx4UQ?oc=5",
-  "date": "2026-10-01T11:03:51.000Z",
-  "publisher": "pharmatimes.com",
-  "source": "portco:novotech",
-  "official": false,
-  "firstSeen": "2026-10-06T02:13:34.554Z",
-  "portco": "novotech"
  },
  {
   "id": "1c126fa10501",
@@ -11281,18 +11233,6 @@
   "portco": "gebbs-healthcare-solutions"
  },
  {
-  "id": "32987252856e",
-  "firm": "tpg",
-  "title": "Novotech to acquire Agilex Biolabs expanding Australian bioanalytical Clcapabilities",
-  "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPZS1icXFob1lfTHUxVUlQTlo5V2ROc25UcEZKWUppaUtReUVlUEVpSkFVVUlWN2poVUZKSWJWem90dkhDOG1BVjlRQUdQLXpCUTN2TDJhWjJYSlNUQjJ3S3RYRUk1QklXM3pYOWVwQWtLUGw5ZWJZXy1EcG9YZ183UVFtTWIxTTFZRENtUjlPTDBwUEhEUldadkdxV2t2WmxoS1BLSmxIYzNON1hRMXJTUHJseDlJaHVCLWZMaXRydmZwN3V4RkpZ0gHOAUFVX3lxTE5BQlN6SDJqa0NzVTBoNk9sVGR0YjlfUzRiTHJkNWZKMDI3Z1ZYeXd2c0RHU3JoeTBBeXNKaGVZRTlZUGNmWHdmT2k5eDVrdXBBcDVoWHNjcFl4YmJjUlNXbnJXZUVhZ2pkOVVpRElPVk13SWZkQ0c2d2l3bF9FVk9TbDJVYVY2aWgzWE5CUkdDS1gwNFlJYkRweUZ1MFg1cWlDYWRfQVpNOFpqVE1oM0VjajhSMUZtLXFfMWRkQURqNWZ3ZkxMM19sMk9naDV3?oc=5",
-  "date": "2026-09-28T12:45:05.000Z",
-  "publisher": "indianpharmapost.com",
-  "source": "portco:novotech",
-  "official": false,
-  "firstSeen": "2026-10-06T02:13:34.554Z",
-  "portco": "novotech"
- },
- {
   "id": "cdf28771af8c",
   "firm": "warburg-pincus",
   "title": "Bloomberg and Clearwater Analytics Sign Up NFU Mutual -",
@@ -11351,18 +11291,6 @@
   "official": false,
   "firstSeen": "2026-10-09T00:13:53.254Z",
   "portco": "vistaar-financial-services"
- },
- {
-  "id": "32502a6350d5",
-  "firm": "tpg",
-  "title": "Novotech To Acquire Agilex Biolabs From Healius To Expand Australian Bioanalytical Services",
-  "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSzRhanptVnhpMkxCX0N2a1Zod2Q4RllhTnpDUTlGdVc4bXoxaG41TU1id0E4ZkhhRk11SFk3b3JSMHlYdjhkZ0s0aEZfaUxBZjVHeWp2Z1Y4bFhidzAyZTZ1Z0JzUExxOGRBaWdEWkZmY2xrMXhpR3FLV2U2WkhtSDV1MjdDQTJHTnVHWjAxVWk0TXNDTkx5QmM3SGYtdVRVU0JfRUNRWHlsTlo3WE1QQtIBtgFBVV95cUxPQVRIaldJM0F4cS1LWm95ZmNLYjNiYnNWR0NRMHJEOEhzUlh0OVJyYzItUTNaOERSYTV0Nm9wSXhKMDJuU1BwTmhZaDlzNFB3LWpIWjBNOU1POGdhZUYwZDdQc0VmVkRmaURMSWIwSFVTenFTUEl0QWZ3N3ZZT2lHN1BmcEcyTTk3S1VMUWpqMVVGbkYxcGk0VVdLdnEyWTB6Qk5zdFBkX2FQSFRlbDdJNDgzS3ltQQ?oc=5",
-  "date": "2026-09-25T16:47:58.000Z",
-  "publisher": "Pulse 2.0",
-  "source": "portco:novotech",
-  "official": false,
-  "firstSeen": "2026-10-06T02:13:34.554Z",
-  "portco": "novotech"
  },
  {
   "id": "dba28c7f742c",
@@ -11425,12 +11353,12 @@
   "portco": "novotech"
  },
  {
-  "id": "ccb35bdd8aaa",
+  "id": "c9404e0b5f36",
   "firm": "tpg",
-  "title": "Novotech buys Agilex Biolabs from Healius in ~$70M deal",
-  "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdll4U0s2RHRrZlpZQ3lVcXB0VTlPbjM5TS1DYU8ycEdzWkRVQzQ0Q2FEdlZ2cjZwTmpaaHYzeVJOMWVNYU41SXpBNWF4VkpHVVEyQ3M1VDdLOFBiVnlUbUZjbE14dEZBSDhLLVpxdnVVdXdpbW55VnBwSTBZNU1Dc0t1OEhJeERNMGswODVUU00?oc=5",
-  "date": "2026-09-25T04:02:36.000Z",
-  "publisher": "Dealroom",
+  "title": "Healius Confirms Sale of Agilex Biolabs to Novotech at AU$160 Million",
+  "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPalhTa3hZMmZuUWlvRnZ5Mm04d1VUXzRNX2wzTVpPaXRrckQ0YjFWM19QM19vRGNEa0psajZNQUYzcWZBUUZTMjNkbkd0ckt0amd4enZfRGJLWUNJcWlreG9mcTZ2MmVmeVNUTkdvQjdVVXhSVFNuSW1TdnFmaUVKUV9WX0hLSHF2ZzVGSjNsV0lhaGQ0emYyeWNad1NXTzNNZDUySDBSbFpKb3pZRi1HUnlxMWlTYmtKMW5yWHB3bw?oc=5",
+  "date": "2026-09-25T03:38:23.000Z",
+  "publisher": "marketscreener.com",
   "source": "portco:novotech",
   "official": false,
   "firstSeen": "2026-10-06T02:13:34.554Z",
@@ -11447,6 +11375,42 @@
   "official": false,
   "firstSeen": "2026-10-08T00:14:37.721Z",
   "portco": "dream-sports"
+ },
+ {
+  "id": "611946dbf93b",
+  "firm": "tpg",
+  "title": "Healius to Sell Agilex Biolabs to Novotech Unit for AU$160 Million; Shares Up 11%",
+  "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNd3BYelI5eUlKeU9obVBUckNpU1J4QUE1anBIWEtDQmUxMkwwd0w1YTV4ZnVGcVZvMER1b3owRFJsanNLMW0wWmRwUVhpUTdJRHdiU0ZVc0NhQndqSjBEeXU5anExdU95YVp3STJKWHFBczgwcGZnV3IxWjhuUEl2aFdKZTV0YkJOQnlLd1BHZHprbVRlN2tsMGIweGkwTWFyVkFpLW5QQVlxSTd1Z2o1ZFBFRVBxc0MwWTRHbTNtdjFaR21xTU9FSXRneWk?oc=5",
+  "date": "2026-09-25T01:01:18.000Z",
+  "publisher": "marketscreener.com",
+  "source": "portco:novotech",
+  "official": false,
+  "firstSeen": "2026-10-09T00:13:53.254Z",
+  "portco": "novotech"
+ },
+ {
+  "id": "c736a3b7431e",
+  "firm": "tpg",
+  "title": "Healius (ASX:HLS) Agrees to Sell Agilex Biolabs to Novotech for A$160 Million Enterprise Value",
+  "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPYlFJam1hUDBqNW9maHVsbnRURm9NZGtYMEtfR0NnX21WY2trb2padGpDaVRXY2JfMjBYYjB1aFQ3Ml9ORUREbXJxUGl2aFBqM3BVWHViT3VwVVctNmJiT2xEUXpUcTMzOTFCVUZyeTFTZEc3MmdhaUJPUUxaV2VpQThfTXhheU0xNWtqREwwQkpSTXFFNC1kbTVrR1UweGEybWxBcU5vaTlUc1lQR21mWXl5S2JBT3VBTF9kRnhuTXM5U01GUWp4Qg?oc=5",
+  "date": "2026-09-25T01:01:00.000Z",
+  "publisher": "Kalkine",
+  "source": "portco:novotech",
+  "official": false,
+  "firstSeen": "2026-10-06T02:13:34.554Z",
+  "portco": "novotech"
+ },
+ {
+  "id": "80eb0f20ae3d",
+  "firm": "tpg",
+  "title": "Healius to Sell Agilex Biolabs to Novotech Unit for AU$160 Million",
+  "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNYllmbDc1WGFieEZZYXFtaXBsTF9GOEZjMFNNS0czMkVNbG9zRFpRTHFUV2dxRkIyQ2lSTkFNX1ozZHJFT3FEVWw5YzRSaU02NG9vbmo4SWJlTS1UZlpobzdGanpkNEVQd3g1WDRmRl9udWl5bnJ6cXBYZUpXOGVVUUJZZ2tHeTM2WmRFdlNGYU9raXFNRFQwRDB4WDZURTlYSXFLVERXcTJ0WTV5MXlXX29PZ3RHSndKenlr?oc=5",
+  "date": "2026-09-24T23:23:15.000Z",
+  "publisher": "marketscreener.com",
+  "source": "portco:novotech",
+  "official": false,
+  "firstSeen": "2026-10-06T02:13:34.554Z",
+  "portco": "novotech"
  },
  {
   "id": "4ff9fa5df8cc",
@@ -11929,6 +11893,18 @@
   "portco": "altimetrik"
  },
  {
+  "id": "8fdc7066713d",
+  "firm": "ta-associates",
+  "title": "Unit4’s 2030 ERP Growth Strategy Takes Shape With New Leadership Appointments",
+  "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9zT2NCazNWSEUwTTVFWmlhMG5nOEhWMnM1WXp4NnBGLTJ3SHV6T1pEMFhJOVQwUW5kRk15TkIwbzViNV9VcDAxYWYxN0h6ejd3TGVORG4yaDMxeW1oVnd5VFZtTQ?oc=5",
+  "date": "2026-09-08T07:00:00.000Z",
+  "publisher": "ERP Today",
+  "source": "portco:unit4",
+  "official": false,
+  "firstSeen": "2026-10-06T02:13:34.554Z",
+  "portco": "unit4"
+ },
+ {
   "id": "2f9493ea2092",
   "firm": "tpg",
   "title": "Dream Sports elevates Pooja Sabharwal to Senior Vice President, Corporate Communications",
@@ -11975,6 +11951,30 @@
   "official": false,
   "firstSeen": "2026-10-06T02:13:34.554Z",
   "portco": "surescripts"
+ },
+ {
+  "id": "24af34df75bf",
+  "firm": "ta-associates",
+  "title": "Unit4 hires two new executives: Stuart Nash (COO) and Anja Sadock (CMO)",
+  "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxObGN1dEplVFlGVDJtOTlXeWFLOXZCcXVGOVQ1UkQxbkdYN0VXWnE0aTRzNk5TaDRsYjgxZmhGTklZR1pXbXhUNUhMQjZpMHZ0dGNvSlhfWmt5MDRMeTVEM0NFckQ0MEVzRHFSaUZUM2dXcmRDTS1MS2l2MkFJX3MydVVSNVN4S0g3bVBUODdTa2R1c1BpNXNrVTktN3FUUmFGSTFiMk5vWdIBrAFBVV95cUxOam1VWTM4Q0ZDUG5fc09YcGlBTHZ1Tm1UYkh1NjUtZzVvMUc0QkpkdjA2YWh0MzN6a1FfakFhanRrOWh0dWU2eHR3bGhMMWxkMVFFSzlGaVJQZjhrdzJYOC1HcU1pbkZXVl9EdWJvRHFZRUJGTENtOTUxTzQ5bnVHRXhtY1ItSDd2em5WU29CWFhCVFdEUWphdUxSUEJsS2R4TkFfRVVYODBSamZV?oc=5",
+  "date": "2026-09-02T07:00:00.000Z",
+  "publisher": "Consultancy.eu",
+  "source": "portco:unit4",
+  "official": false,
+  "firstSeen": "2026-10-06T02:13:34.554Z",
+  "portco": "unit4"
+ },
+ {
+  "id": "849779cfb6c6",
+  "firm": "ta-associates",
+  "title": "Can Unit4’s new CMO make it impossible to ignore? -",
+  "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdV8xUVJXc0NxNEhlOHpxX0h4bXBXeDA0akZFVFI5NWx4R29LSEpVVTBEQnQyM1BxWTZnd1l1UmFrYXhnWV9mNG11eE1mZ19ZY1JJYjRuQ0tyUVg5V25mZkhSa2x0Ukp0ekduS0c1cWhrQUlFXzR3NVo1TnI3a1Y2eVNHV0txUF9TeTUxaE5sb0ZXUkllbnJpaw?oc=5",
+  "date": "2026-09-01T07:00:56.000Z",
+  "publisher": "Enterprise Times",
+  "source": "portco:unit4",
+  "official": false,
+  "firstSeen": "2026-10-09T00:13:53.254Z",
+  "portco": "unit4"
  },
  {
   "id": "0255ab6d8455",
@@ -12445,30 +12445,6 @@
   "portco": "veracode"
  },
  {
-  "id": "1b15604614b2",
-  "firm": "eqt",
-  "title": "Straive Number of Employees 2026 | Employee Count & Headcount Data",
-  "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1zTlYxZ25WLUkzdXZDY2J4V2hQVXVYTUFucTU5OHhfR241QVJ6N2tkX1g3MEJ5SDI1eHJUSVN1SmFsdVBOTW5QaGpydWNUYUpnU3RKZGdTRDJRSjVBNkYzbnVNak93dw?oc=5",
-  "date": "2026-07-30T06:57:36.000Z",
-  "publisher": "Revelio Labs",
-  "source": "portco:straive",
-  "official": false,
-  "firstSeen": "2026-10-06T02:13:34.554Z",
-  "portco": "straive"
- },
- {
-  "id": "33bc57bb95fb",
-  "firm": "eqt",
-  "title": "GeBBS Healthcare Number of Employees 2026 | Employee Count & Headcount Data",
-  "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1tLW9KYk5mSXp5TWNMSWowUUJRdksyR3haQVowR2hKbW05cXI2NnhBZDZxem1OWDdiMV80Z051ai1qVUFzX2RuSjl1TFFLVURjWW5ndmw4dXZGb1NXcGY4LXF4OXZPYzk3NVRhR3I0RFZOUQ?oc=5",
-  "date": "2026-07-29T22:31:38.000Z",
-  "publisher": "Revelio Labs",
-  "source": "portco:gebbs-healthcare-solutions",
-  "official": false,
-  "firstSeen": "2026-10-06T02:13:34.554Z",
-  "portco": "gebbs-healthcare-solutions"
- },
- {
   "id": "74525906ea2d",
   "firm": "ta-associates",
   "title": "TA backs private credit tech firm Oxane Partners in growth deal",
@@ -12479,18 +12455,6 @@
   "official": false,
   "firstSeen": "2026-10-06T02:13:34.554Z",
   "portco": "oxane-partners"
- },
- {
-  "id": "b62401a90fda",
-  "firm": "warburg-pincus",
-  "title": "Avanse Financial Services Number of Employees 2026 | Employee Count & Headcount Data",
-  "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE94LWtHTlgzTldkY2o0RGZTazV4NzlIQU4zWjF5THdlcG9IbEpJWTlKcGdkNC1jaGliTVlPWW1vSDZkZmJaampNSDFiXzNudDE1Vk1DeGZLcnJOYmlUWHU3WTNGaWpkMGdIRmtrZW9yMjdBN3BjcWtJcHhZbTZ0dw?oc=5",
-  "date": "2026-07-29T12:43:14.000Z",
-  "publisher": "Revelio Labs",
-  "source": "portco:avanse-financial-services",
-  "official": false,
-  "firstSeen": "2026-10-07T00:14:27.072Z",
-  "portco": "avanse-financial-services"
  },
  {
   "id": "c52ba7b6c4ca",
@@ -12517,18 +12481,6 @@
   "portco": "oxane-partners"
  },
  {
-  "id": "910d3931fe7d",
-  "firm": "ta-associates",
-  "title": "Veracode Number of Employees 2026 | Employee Count & Headcount Data",
-  "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9hdms2eEpVOV9BRkVqN0FFNlJIOHpRTEpzLWxUUkRCRmcyZTF5QmN4bFhoSTM2dGpSc2stN1VmV2VoMmkxTTBzdV96dFhERGFfalBHaE1ndXFzbDB4R1JHckVjZDdpREk?oc=5",
-  "date": "2026-07-29T04:57:24.000Z",
-  "publisher": "Revelio Labs",
-  "source": "portco:veracode",
-  "official": false,
-  "firstSeen": "2026-10-06T02:13:34.554Z",
-  "portco": "veracode"
- },
- {
   "id": "cdbe0ed00ee7",
   "firm": "ta-associates",
   "title": "LLMs Are Getting Smarter, But Not Safer: Veracode 2026 GenAI Code Security Report Finds AI-Generated Code Security Has Stalled at 56% Pass Rate",
@@ -12539,6 +12491,18 @@
   "official": false,
   "firstSeen": "2026-10-06T02:13:34.554Z",
   "portco": "veracode"
+ },
+ {
+  "id": "33966663208f",
+  "firm": "warburg-pincus",
+  "title": "Avendus Capital advises Avanse on its primary capital raise of INR 800 cr from Kedaara Capital",
+  "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxQVkNBLW5kWFVQd2c5WGI3WHJJVG9CS0I0V2hyZWNUN1ZRa1RhNkVBMk43cjlPOGpKUVdkMGtXRjZRbENKOVNHakQ4Z25OdnZSZ2VxS2l0cWZOVGlvRFpCYVJkUGFIQVdieER2elAyd2dwaEphcGdlX1c0OVV6Unk0UXM0T2VjcVg0eHFtMVU1MW9wLUNpbmJIVno3UXRoWWVHZ2NNWVJvcy1HQnNRM1FBUi1NWXE4X3BkamxVSFVtVmtJSDRpVHpSTmRTSHhsa2U0OEl2WU54Y2xqbTdiT0pVbkhWMVlQRE9vUDRCNXBCU1d1YzBlSmpFWlVWZTVrRmhMWkJuZjl2RkhaX3BHQnlYTVlJczZxaEIwb1UweDFYaw?oc=5",
+  "date": "2026-07-24T21:41:12.000Z",
+  "publisher": "Avendus",
+  "source": "portco:avanse-financial-services",
+  "official": false,
+  "firstSeen": "2026-10-06T02:13:34.554Z",
+  "portco": "avanse-financial-services"
  },
  {
   "id": "4136eff98b75",
@@ -12611,6 +12575,18 @@
   "official": false,
   "firstSeen": "2026-10-06T02:13:34.554Z",
   "portco": "indira-ivf"
+ },
+ {
+  "id": "f226a51b75ca",
+  "firm": "eqt",
+  "title": "Constructing intelligent search experiences with Straive and Shelf",
+  "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOdVpObnBidmdyQjAyRTJ1X0JDRlJpMEgzYTlQaXZuREZsbE1HZVpyQzJOSDFiV19KQTM4cDdQTUI5YXRfbnZENzhQNFRUZl9uTU5Oa0dFenhjYjh1NXpJcklvd0drWWM4RHBhcExxMHY0QzhEa2dOLXRhdEVOR1E0YVhTczlfYUlaRlhvQWNjQnNuYmpNaUFYWWhKVTY3cnJUY3VOcWp3MlV6MURYQW9BdDVmY3ZPSXMwa1p6ZzJ3?oc=5",
+  "date": "2026-07-20T07:00:00.000Z",
+  "publisher": "KMWorld",
+  "source": "portco:straive",
+  "official": false,
+  "firstSeen": "2026-10-09T00:13:53.254Z",
+  "portco": "straive"
  },
  {
   "id": "20dacc6e25a7",
@@ -12937,18 +12913,6 @@
   "portco": "internet-brands"
  },
  {
-  "id": "a373c5046615",
-  "firm": "macquarie-capital",
-  "title": "Aryza to acquire Umbrella Tech to expand AI enabled financial services platform",
-  "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQMWVxREROaW1tLVFEQXlyYWloUzkyQW13cUFybUpKc29vdlFmZmx2U1d0VUY5bHJOU0lQcXdlelpDUlJ0OHNGVVU0cDhhX0lENWRKNERmWnlZd21RNzlZT3g0eC1tb1pRRzU4b1BtTnFIMkQ2MnlLalZ5dXZQYlNnWVkzTVRkQXZxQ1BlMU9HTnZuOUNBNGNGVzlyNnVhcUJJQ0xGU0lQdHhzVExCZVdGUDBHeFRuTkg1WmRfYlpmTnlUbV9PaWxyZFdFOUNfVlNsU0lNTWNhUXdxbzhQelE?oc=5",
-  "date": "2026-04-23T07:00:00.000Z",
-  "publisher": "Norton Rose Fulbright",
-  "source": "portco:aryza",
-  "official": false,
-  "firstSeen": "2026-10-06T02:13:34.554Z",
-  "portco": "aryza"
- },
- {
   "id": "183e2f652031",
   "firm": "warburg-pincus",
   "title": "Growing risk of a spike in business insolvencies amid the Middle East war, says CreditorWatch",
@@ -12959,18 +12923,6 @@
   "official": false,
   "firstSeen": "2026-10-06T02:13:34.554Z",
   "portco": "creditorwatch"
- },
- {
-  "id": "e34374bb6cd9",
-  "firm": "eqt",
-  "title": "JSA advises GeBBS Healthcare Solutions on acquisition of RND OptimizAR",
-  "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxORm1VSWZGZmdENV9FSVA4Tl9BX21nMUpSRVIxSnV6TEZnMnRtT2Q3UmJnU3JaNm1LYlprQWVUa3RJOUtrakJYN3N4NUpTcGFOMklkd1F1azIzTm5ES2JfZXN5YXJ5X3RMMU5vd0R6SWxxYUxqYTlGdlZ1WGZJRFlDZGtsbFBlRnQxR0cwNkxVMENrRzRVM2NjNWlsOGRldDNWSGktOFpBemJlQk5wUkhybGJFbVEzTy1OdGxv0gHIAUFVX3lxTE1xRzdRUDJ2OWRyQ0UzcFJHVTJ5Z0dJMjE3SHc4YzNLRkhGMnh4WGFLbWx5b2lKT1B0d1R4RzI0VjFvYTh5YXhNdDgxanRZazJlWWFOdzVqSFdDcWZ1NjFwMlQ0ZDNjdHg3T2txc2lMRWZMQU5PUVM4T2Fzalc4Q0h0aHhDcVR1bE0wbUdCc1FlQ1NOZ0dJU3hmZVZTZGVTOGF5LWJ3cG1VSEhrM3hJN3hvTVIySXZ2ZGh6SExvYTlTN25aaXVRR0pq?oc=5",
-  "date": "2026-04-15T07:00:00.000Z",
-  "publisher": "Bar and Bench",
-  "source": "portco:gebbs-healthcare-solutions",
-  "official": false,
-  "firstSeen": "2026-10-06T02:13:34.554Z",
-  "portco": "gebbs-healthcare-solutions"
  },
  {
   "id": "633a9790170e",
@@ -13247,18 +13199,6 @@
   "official": false,
   "firstSeen": "2026-10-06T02:13:34.554Z",
   "portco": "nous-infosystems"
- },
- {
-  "id": "c1fedbd9e8e1",
-  "firm": "ta-associates",
-  "title": "PE-backed Accion Labs buys product engineering firm NetServ",
-  "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPcldxQ3o0c2F5Q3MzYXNkcEZJeFk1b1BoNXdSZGJCaTY2MDZTS05IMERmOGx1MEcxcnpBa3J6enlqSHhMQl9tRUFmSll6eDN1R09mdFF1X2h5QnE3MTRYdjEzTG1GTDVjdlREeW5zdWhTXzZFRy1CS19ZTDZobDN4cDZ1VVhILUdkUzJz?oc=5",
-  "date": "2025-09-11T07:00:00.000Z",
-  "publisher": "VCCircle",
-  "source": "portco:accion-labs",
-  "official": false,
-  "firstSeen": "2026-10-06T02:13:34.554Z",
-  "portco": "accion-labs"
  },
  {
   "id": "59217364b6f8",
