@@ -85,6 +85,12 @@ a { color: inherit; }
 .tag.official { color: var(--ok); background: var(--ok-soft); }
 .tag.reported { color: var(--hot); background: var(--hot-soft); }
 .tag.press { color: var(--info); background: var(--info-soft); }
+.hs { font-family: var(--mono); font-size: 11px; font-weight: 700; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--rule); color: var(--muted); background: var(--bg); font-variant-numeric: tabular-nums; cursor: pointer; line-height: 1.5; }
+.hs::before { content: 'H '; font-weight: 500; opacity: .7; }
+.hs.hot { color: var(--hot); border-color: var(--hot); background: var(--hot-soft); }
+.hs.warm { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
+.hsx { display: flex; flex-wrap: wrap; gap: 4px 10px; margin-top: 7px; font-family: var(--mono); font-size: 11px; color: var(--muted); }
+.hsx span b { color: var(--fg); font-weight: 600; }
 .kind { font-family: var(--display); font-weight: 700; font-size: 14px; color: var(--fg); letter-spacing: .01em; }
 .beat { font-family: var(--mono); font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--faint); }
 .when { margin-left: auto; font-family: var(--mono); font-size: 11.5px; color: var(--faint); font-variant-numeric: tabular-nums; }
@@ -135,7 +141,7 @@ a { color: inherit; }
   <div class="list" id="list">
     <div class="empty"><b>Loading developments.</b><br>Each one will show the event, the sector it sits in, and what it opens for SSG.</div>
   </div>
-  <p class="foot" id="foot">Priority is the one list: the latest developments relevant to SSG, APAC first. An APAC item is in whenever it carries an event or a sector; a global item when it is a transaction — a sale process, a deal or a listing in one of SSG's sectors, a growth round of $100m or more, anything with a billion-dollar figure — or a platform shift that reaches a sector. The rest is kept behind the link at the bottom; the page carries the last 90 days and the archive in the repo keeps everything. Event, sector and APAC are read from the headline by keyword; the matched words sit under each tag, and the small label is the beat the story came from. <span id="footTriage">Pursue, Watch, Dismiss and notes are saved and shared with anyone who can open this page.</span></p>
+  <p class="foot" id="foot">Priority is ordered by Heat, a 0–100 score for the Singapore SSG team: APAC relevance (25 — Singapore and SE Asia first, then India and ANZ, then North Asia), live process (20), technology intensity (20), sponsor relationship (15), deal size (10) and recency (10). Tap the H number for the breakdown. An item is on the list when it is relevant: an APAC item whenever it carries an event or a sector; a global item when it is a transaction — a sale process, a deal or a listing in one of SSG's sectors, a growth round of $100m or more, anything with a billion-dollar figure — or a platform shift that reaches a sector. The rest is kept behind the link at the bottom; the page carries the last 90 days and the archive in the repo keeps everything. Event, sector and APAC are read from the headline by keyword; the matched words sit under each tag, and the small label is the beat the story came from. <span id="footTriage">Pursue, Watch, Dismiss and notes are saved and shared with anyone who can open this page.</span></p>
 </div>
 <div class="toast" id="toast"></div>
 
@@ -441,6 +447,99 @@ function classify(t, raw) {
   };
 }
 
+const HEAT = {"WEIGHTS":{"apac":25,"live":20,"tech":20,"sponsor":15,"size":10,"recency":10},"BANDS":{"hot":65,"warm":40},"APAC":[[25,"Singapore / SE Asia",/\b(singapore|singaporean|sgd|malaysia|malaysian|kuala lumpur|ringgit|indonesia|indonesian|jakarta|rupiah|vietnam|vietnamese|hanoi|ho chi minh|thailand|thai|bangkok|baht|philippines?|filipino|manila|cambodia|myanmar|brunei|asean|southeast asia|south-east asia|south east asia|sea ltd|shopee|grab|gojek|goto|temasek|gic|khazanah|dbs|ocbc|uob|sea-based)\b|(?:^|[^A-Za-z])S\$/i],[20,"India / ANZ",/\b(india|indian|mumbai|bengaluru|bangalore|delhi|gurugram|gurgaon|hyderabad|chennai|pune|noida|crore|cr|lakh|rupees?|inr|nse|bse|sebi|australia|australian|aussie|sydney|melbourne|brisbane|perth|asx|aud|new zealand|nz|nzx)\b|₹|\bRs\.?\s?\d|(?:^|[^A-Za-z])(?:A|NZ)\$/i],[16,"Japan / Korea / Greater China",/\b(japan|japanese|tokyo|osaka|jpy|yen|nikkei|korea|korean|seoul|kospi|kosdaq|china|chinese|beijing|shanghai|shenzhen|hangzhou|yuan|rmb|cny|hong kong|hkd|hkex|taiwan|taiwanese|taipei|twd|macau)\b|¥|(?:^|[^A-Za-z])(?:HK|NT)\$/i],[10,"Asia (regional)",/\b(asia|asian|apac|asia[- ]pacific|softbank|samsung|alibaba|tencent|bytedance|reliance industries|jio|tata|infosys|wipro|nomura|mizuho|mufg|mitsubishi|sumitomo|hyundai|sk hynix|rakuten|kakao|naver|ntt|kddi|sony|hitachi|fujitsu|nec)\b/i]],"LIVE":{"deals":{"acquire:rumour":20,"addon:rumour":20,"exit:rumour":20,"acquire:signed":14,"addon:signed":14,"invest:rumour":12,"exit:signed":10,"fund":10,"invest:signed":8,"acquire:closed":6,"addon:closed":6,"exit:closed":6,"invest:closed":6,"platform":6,"people":6,"rumour":8},"items":{"process":20,"deal:rumour":20,"ipo:rumour":16,"deal:announced":14,"ipo:announced":12,"funding:rumour":10,"ipo:live":10,"fund":10,"funding":8,"deal:live":6,"earnings":6,"market":6,"pricing":6,"people":5,"launch":3,"partnership":3,"regulation":3,"incident":2,"research":2,"rumour":6}},"SECTORS":[{"id":"data","strong":["information services","data provider","market data","data and analytics","data & analytics","analytics","intelligence","benchmarking","ratings","credit data","risk data","pricing data","data platform","proprietary data","research and data","index provider","data business","databases","data connectivity","data integration","data management","data infrastructure"],"weak":["data","insights","research","information","content","index","reporting"]},{"id":"fintech","strong":["fintech","financial technology","payments","payment","insurtech","wealthtech","wealth tech","regtech","core banking","banking software","lending platform","neobank","digital bank","remittance","investment accounting","trading platform","brokerage","buy now pay later","bnpl","merchant acquiring","card issuing","fund administration","wealth management platform"],"weak":["financial services","lending","credit","banking","insurance","wealth","asset management","capital markets","treasury","compliance"]},{"id":"ai","strong":["artificial intelligence","machine learning","generative ai","genai","agentic","ai-native","ai-powered","ai-driven","ai platform","vertical software","vertical saas","llm","computer vision","workflow automation"],"weak":["software","saas","cloud","automation","platform","workflow","erp","cybersecurity"]},{"id":"markets","strong":["marketplace","marketplaces","two-sided","network effects","classifieds","b2b platform","b2b marketplace","e-commerce platform","ecommerce platform","online platform","aggregator","booking platform","travel distribution","freight network","exchange platform","super app","super-app"],"weak":["network","e-commerce","ecommerce","online","travel","logistics","exchange","connects","buyers and sellers","community"]},{"id":"software","strong":["software","saas","enterprise software","vertical software","cybersecurity","security software","cloud platform","erp","workflow","developer tools","infrastructure software","artificial intelligence","machine learning","generative ai","genai","agentic","ai-native","ai-powered","ai-driven","ai platform","vertical software","vertical saas","llm","computer vision","workflow automation"],"weak":["cloud","platform","automation","technology","digital","it services"]},{"id":"healthit","strong":["healthcare it","health it","healthtech","health tech","digital health","medical software","clinical software","healthcare data","health data","care management","electronic health","ehr","emr","telehealth","medtech software"],"weak":["healthcare","health","clinical","hospital","care","patient","pharma","life sciences"]}],"TECH_TIER":{"software":1,"ai":1,"fintech":1,"healthit":1,"data":1,"cyber":1,"devtools":1,"internet":2,"markets":2},"TECH_PTS":{"1":[20,15],"2":[14,10],"3":[8,6]},"TECH_WORDS":/\b(software|saas|platform|digital|tech|technology|technologies|cloud|apps?|online|e-?commerce|it services|outsourcing|bpo|analytics|cyber(?:security)?|semiconductors?|chips?|telecoms?|internet)\b/i,"INFRA_WORDS":/\b(data cent(?:re|er)s?|fibre|fiber|towers?|hyperscale|datacenters?)\b/i,"TECH_WORD_PTS":6,"INFRA_PTS":5,"TRACKED":[{"id":"warburg-pincus","name":"Warburg Pincus","match":/warburg/i,"exclude":null,"tier":"A"},{"id":"kkr","name":"KKR","match":/\bKKR\b/,"exclude":null,"tier":"A"},{"id":"tpg","name":"TPG","match":/\bTPG\b(?!\s*(?:telecom|telecoms|mobile|internet))/i,"exclude":/\bTPG\s+Telecom\b|\bthe points guy\b|\bpoints and miles\b|\bTPG Online Daily\b|\bTPG Architecture\b|\bTPG (?:Mortgage|RE Finance)\b|\bTRTX\b|\bTPG(?:['’]s)?\b(?:\W+\w+){0,3}?\W+(?:5g|4g|mobile|broadband|nbn|prepaid|sim|customers|subscribers|outage)\b|\b(?:telco|vodafone|iinet|felix mobile|lebara|ASX:\s?TPG)\b/i,"tier":"A"},{"id":"eqt","name":"EQT","match":/\bEQT\b|\bBPEA\b|[Bb]aring [Pp]rivate [Ee]quity [Aa]sia/,"exclude":/\bEQT (?:Corp|Corporation|Production|Midstream|Holdings)\b|\bEquity Trustees\b|\bASX:\s?EQT\b|\bnatural gas\b|\bshale\b|\bAppalachi|\bMarcellus\b|\bEquitrans\b|\bNYSE:\s?EQT\b|\bmcfe?\b|\bgas producer\b|\bgas pipeline\b|\bdrilling\b|\bwellhead\b|\bLNG\b|\badidas\b|\bjersey\b|\bsneaker|\btrainers?\b|\bEQT (?:Support|Concept|Gazelle)\b/i,"tier":"A"},{"id":"navis","name":"Navis Capital","match":/\bNavis\b/i,"exclude":/\bKaleris\b|\bCargotec\b|\bterminal operating\b|\bNavis N4\b|\byacht|\bNavis (?:Technologies|Ltd|Marine|Clinic)\b|\bport (?:software|automation)\b/i,"tier":"B"},{"id":"ta-associates","name":"TA Associates","match":/\bTA Associates\b|\bTA[- ]backed\b/i,"exclude":/\bTA Instruments\b|\bTA Securities\b|\bTA Global\b/i,"tier":"B"},{"id":"macquarie-capital","name":"Macquarie Capital","match":/\bMacquarie Capital\b|\bMacquarie['’]s? (?:principal|private[- ]equity|technology|tech|growth|venture)\b|\bMacquarie[- ]backed\b/,"exclude":/\bMacquarie University\b|\bMacquarie Island\b|\bLake Macquarie\b|\bPort Macquarie\b|\bMacquarie Dictionary\b|\bMacquarie Park\b|\bMacquarie Street\b|\bMacquarie Bank (?:term deposit|savings|home loan|mortgage)/i,"tier":"B"}],"TIER_PTS":{"A":15,"B":12},"REMOVED":3,"OTHER_SPONSOR":8,"GENERIC_SPONSOR":5,"SPONSORS":[["blackstone",/\bblackstone\b/i],["bain-capital",/\bbain capital\b/i],["carlyle",/\bcarlyle\b/i],["advent",/\badvent\b/i],["permira",/\bpermira\b/i],["cvc",/\bcvc\b/],["pag",/\bPAG\b/],["apax",/\bapax\b/i],["hg",/\bHg\b(?! \w+ (?:road|street))/],["thoma-bravo",/\bthoma bravo\b/i],["vista",/\bvista equity\b|\bvista\b(?= (?:equity|partners|to|buys|acquires))/i],["general-atlantic",/\bgeneral atlantic\b/i],["insight",/\binsight partners\b/i],["silver-lake",/\bsilver lake\b/i],["brookfield",/\bbrookfield\b/i],["temasek",/\btemasek\b/i],["gic",/\bGIC\b/],["softbank",/\bsoftbank\b/i],["baring",/\bbaring\b/i],["chryscapital",/\bchryscapital\b/i],["kedaara",/\bkedaara\b/i],["true-north",/\btrue north\b/i],["multiples",/\bmultiples\b/i],["everstone",/\beverstone\b/i],["pacific-equity-partners",/\bpacific equity partners\b|\bPEP\b/],["quadrant",/\bquadrant\b/i],["bgh",/\bBGH\b/],["affinity",/\baffinity equity\b/i],["mbk",/\bMBK\b/],["hillhouse",/\bhillhouse\b/i],["primavera",/\bprimavera\b/i],["bain",/\bbain\b(?! capital)/i],["partners-group",/\bpartners group\b/i],["cppib",/\bCPP(?:IB)?\b|\bcanada pension\b/i],["otpp",/\bOTPP\b|\bontario teachers\b/i],["adia",/\bADIA\b|\babu dhabi investment authority\b/i],["mubadala",/\bmubadala\b/i],["goldman",/\bgoldman sachs\b/i],["tpg-newquest",/\bnewquest\b/i],["stonepeak",/\bstonepeak\b/i],["digitalbridge",/\bdigitalbridge\b/i],["eqt-exeter",/\bexeter\b/i],["clearlake",/\bclearlake\b/i],["francisco-partners",/\bfrancisco partners\b/i],["warburg-pincus",/\bwarburg\b/i],["accel-kkr",/\baccel-kkr\b/i],["hellman-friedman",/\bhellman\b/i],["leonard-green",/\bleonard green\b/i],["genstar",/\bgenstar\b/i],["nordic-capital",/\bnordic capital\b/i],["ardian",/\bardian\b/i],["bc-partners",/\bBC Partners\b/],["l-catterton",/\bl catterton\b/i],["kohlberg",/\bkohlberg\b(?! kravis)/i],["veritas",/\bveritas capital\b/i],["gtcr",/\bGTCR\b/],["summit-partners",/\bsummit partners\b/i],["tiger-global",/\btiger global\b/i],["coatue",/\bcoatue\b/i]],"GENERIC":/\b(private equity|buyout|take[- ]private|sponsor-backed|pe-backed|growth equity|financial sponsor|-backed)\b/i,"FX":{"USD":1,"SGD":0.75,"AUD":0.65,"NZD":0.6,"EUR":1.1,"GBP":1.3,"JPY":0.0067,"INR":0.012,"HKD":0.13,"CNY":0.14,"KRW":0.00072,"MYR":0.22,"CAD":0.73,"TWD":0.031},"SIZE":[[10,10],[3,9],[1,8],[0.5,6],[0.25,5],[0.1,4],[0.025,2],[0,1]],"RECENCY":[[1,10],[2,9],[3,8],[7,6],[14,4],[30,2],[90,1]]};
+const HEAT_MONEY = /(US\$|USD|A\$|AUD|S\$|SGD|HK\$|HKD|NZ\$|NZD|C\$|CAD|¥|JPY|₹|Rs\.?|INR|€|EUR|£|GBP|RM|NT\$|TWD|RMB|CNY|KRW|\$)?\s?(\d+(?:[.,]\d+)*)\s?(tn|trillion|bn|billion|b\b|mn|million|m\b|crore|cr\b|lakh)/i;
+const HEAT_CCY = {"us$":"USD","usd":"USD","$":"USD","a$":"AUD","aud":"AUD","s$":"SGD","sgd":"SGD","hk$":"HKD","hkd":"HKD","nz$":"NZD","nzd":"NZD","c$":"CAD","cad":"CAD","¥":"JPY","jpy":"JPY","₹":"INR","rs":"INR","rs.":"INR","inr":"INR","€":"EUR","eur":"EUR","£":"GBP","gbp":"GBP","rm":"MYR","nt$":"TWD","twd":"TWD","rmb":"CNY","cny":"CNY","krw":"KRW"};
+function HEAT_amount(text) {
+  const m = HEAT_MONEY.exec(text || '');
+  if (!m) return null;
+  const n = parseFloat(m[2].replace(/,/g, ''));
+  if (Number.isNaN(n)) return null;
+  const u = m[3].toLowerCase();
+  const bn = u.startsWith('t') ? n * 1000 : u.startsWith('b') ? n : u === 'crore' || u === 'cr' ? n / 100 : u === 'lakh' ? n / 10000 : n / 1000;
+  const ccy = (u === 'crore' || u === 'cr' || u === 'lakh') ? 'INR' : HEAT_CCY[(m[1] || '').toLowerCase()] || null;
+  return { text: m[0].trim(), bn: Math.round(bn * 1000) / 1000, ccy };
+}
+function heatSectors(text) {
+  const src = String(text || '').replace(/artificial intelligence/gi, 'AI');
+  const bareAI = /(^|[^A-Za-z])AI(?=[^A-Za-z]|$)/.test(src);
+  const out = [];
+  for (const s of HEAT.SECTORS) {
+    const r = scoreTerms(src.replace(/(^|[^A-Za-z])AI(?=[^A-Za-z]|$)/g, '$1  '), s.strong, s.weak);
+    if (s.id === 'ai' && bareAI) r.score += 2;
+    if (r.score >= 2) out.push({ id: s.id, score: r.score });
+  }
+  return out.sort((a, b) => b.score - a.score);
+}
+function heatFacts(col, row, cls) {
+  const title = row.title || '';
+  const text = `${title} . ${row.summary || ''}`;
+  const money = HEAT_amount(title) || HEAT_amount(row.summary || '');
+  // The catalogue read, plus any sector the classifier found that it did not (a frontier lab's
+  // model release carries the AI lens by rule, not by keyword).
+  const sectors = heatSectors(text);
+  for (const s of cls.theses || cls.lenses || []) if (s && s.id && !sectors.some((x) => x.id === s.id)) sectors.push({ id: s.id, score: s.score || 2 });
+  sectors.sort((a, b) => b.score - a.score);
+  return { col, kind: cls.kind || 'other', stage: cls.stage || '', rumour: !!cls.rumour, official: !!row.official,
+    firm: row.firm || null, text, sectors, money, date: row.date || null };
+}
+function heatScore(f, now) {
+  const W = HEAT.WEIGHTS;
+  const parts = { apac: 0, live: 0, tech: 0, sponsor: 0, size: 0, recency: 0 };
+  const why = {};
+  // apac
+  for (const [pts, label, re] of HEAT.APAC) if (re.test(f.text)) { parts.apac = pts; why.apac = label; break; }
+  // live
+  const L = HEAT.LIVE[f.col] || HEAT.LIVE.items;
+  const key = `${f.kind}:${f.stage}`;
+  parts.live = key in L ? L[key] : f.kind in L ? L[f.kind] : (f.kind === 'other' && f.rumour ? L.rumour : 0);
+  why.live = parts.live ? (f.kind === 'other' ? 'reported' : `${f.kind} ${f.stage}`.trim()) : '';
+  // tech
+  if (f.sectors.length) {
+    const top = f.sectors[0];
+    const tier = HEAT.TECH_TIER[top.id] || 3;
+    parts.tech = HEAT.TECH_PTS[tier][top.score >= 4 ? 0 : 1];
+    why.tech = `${top.id} ×${top.score}`;
+  } else if (HEAT.TECH_WORDS.test(f.text)) { parts.tech = HEAT.TECH_WORD_PTS; why.tech = 'tech words'; }
+  else if (HEAT.INFRA_WORDS.test(f.text)) { parts.tech = HEAT.INFRA_PTS; why.tech = 'infrastructure'; }
+  // sponsor: the tracked client the row belongs to (deals), any tracked client named, another
+  // known sponsor, a generic PE word — the best of them.
+  let best = 0, who = '';
+  for (const t of HEAT.TRACKED) {
+    const named = t.match.test(f.text) && !(t.exclude && t.exclude.test(f.text));
+    if (t.id === f.firm) { const p = HEAT.TIER_PTS[t.tier] - (named || f.official ? 0 : HEAT.REMOVED); if (p > best) { best = p; who = named || f.official ? t.name : `${t.name} portco`; } }
+    else if (named) { const p = HEAT.TIER_PTS[t.tier]; if (p > best) { best = p; who = t.name; } }
+  }
+  if (best < HEAT.OTHER_SPONSOR) for (const [id, re] of HEAT.SPONSORS) if (re.test(f.text)) { best = HEAT.OTHER_SPONSOR; who = id; break; }
+  if (best < HEAT.GENERIC_SPONSOR && HEAT.GENERIC.test(f.text)) { best = HEAT.GENERIC_SPONSOR; who = 'PE'; }
+  parts.sponsor = best; why.sponsor = who;
+  // size: a figure counts as a deal size only when there is an event to size — the "$8 trillion
+  // economy" in a commentary piece is not one.
+  if (f.money && f.money.bn > 0 && parts.live > 0) {
+    const usd = f.money.bn * (HEAT.FX[f.money.ccy || 'USD'] || 1);
+    for (const [floor, pts] of HEAT.SIZE) if (usd >= floor) { parts.size = pts; break; }
+    why.size = f.money.text;
+  }
+  // recency (a view: only when a clock is given)
+  if (now && f.date) {
+    const age = (now - Date.parse(f.date)) / 86400000;
+    if (!Number.isNaN(age)) {
+      for (const [days, pts] of HEAT.RECENCY) if (age <= days) { parts.recency = pts; break; }
+      why.recency = age <= 1 ? 'today' : `${Math.floor(age)}d`;
+    }
+  }
+  for (const k of Object.keys(parts)) parts[k] = Math.min(parts[k], W[k]);
+  const stat = parts.apac + parts.live + parts.tech + parts.sponsor + parts.size;
+  const score = stat + parts.recency;
+  return { score, static: stat, band: score >= HEAT.BANDS.hot ? 'hot' : score >= HEAT.BANDS.warm ? 'warm' : 'cool', parts, why };
+}
+function heatLabel(h) {
+  const W = HEAT.WEIGHTS;
+  const bit = (k, name) => `${name} ${h.parts[k]}/${W[k]}${h.why[k] ? ' ' + h.why[k] : ''}`;
+  return `Heat ${h.score} · ${bit('apac', 'APAC')} · ${bit('live', 'Live')} · ${bit('tech', 'Tech')} · ${bit('sponsor', 'Sponsor')} · ${bit('size', 'Size')} · ${bit('recency', 'Recency')}`;
+}
+
+
 const DATA = { base: 'data/' };
 const PUBLIC = typeof DATA !== 'undefined';
 
@@ -487,9 +586,17 @@ function toast(msg) {
 function classified() {
   return items.map((i) => {
     const t = triage[i.id] || {};
-    return { ...i, ...classify(themeOf(i), i), status: t.status || 'new', note: t.note || '' };
+    const c = classify(themeOf(i), i);
+    // The Heat Score (lib/heat.js): one 0–100 number for the Singapore SSG team; its band replaces
+    // the classifier's hot/warm/cool so the border, the count and the order all read the same rule.
+    const h = heatScore(heatFacts('items', i, c), Date.now());
+    return { ...i, ...c, heat: h.band, hs: h.score, hparts: h.parts, hwhy: h.why, hlabel: heatLabel(h), status: t.status || 'new', note: t.note || '' };
   });
 }
+// The breakdown under a card when its heat badge is tapped: part by part, with the words that set it.
+const openHeat = new Set();
+const heatRow = (i) => `<div class="hsx">${[['apac', 'APAC'], ['live', 'Live'], ['tech', 'Tech'], ['sponsor', 'Sponsor'], ['size', 'Size'], ['recency', 'Recency']]
+  .map(([k, n]) => `<span>${n} <b>${i.hparts[k]}</b>/${HEAT.WEIGHTS[k]}${i.hwhy[k] ? ` · ${esc(i.hwhy[k])}` : ''}</span>`).join('')}</div>`;
 
 function card(i) {
   const fit = i.lenses.map((l) => `<span class="ln" title="${esc(l.terms.join(', '))}">${esc(l.label)}<i>${esc(l.terms.slice(0, 2).join(' · '))}</i></span>`).join('')
@@ -503,12 +610,14 @@ function card(i) {
   return `
     <article class="item ${i.heat}${i.status === 'dismiss' ? ' gone' : ''}" data-id="${i.id}">
       <div class="meta">
+        <span class="hs ${i.heat}" data-heat="1" title="${esc(i.hlabel)}">${i.hs}</span>
         <span class="tag ${i.official ? 'official' : i.rumour ? 'reported' : 'press'}">${i.official ? 'OFFICIAL' : i.rumour ? 'REPORTED' : 'PRESS'}</span>
         <span class="kind">${esc(KIND[i.kind] || 'News')}</span>
         <span class="beat">${esc(themeOf(i).short)}</span>
         <span>${esc(i.publisher || '')}</span>
         <span class="when">${esc(dayLabel(i.date))}</span>
       </div>
+      ${openHeat.has(i.id) ? heatRow(i) : ''}
       <a class="title" href="${esc(i.url)}" target="_blank" rel="noopener noreferrer">${esc(i.title)}</a>
       ${fit ? `<div class="fit">${fit}</div>` : ''}
       ${i.move ? `<p class="move">${esc(i.move)}</p>` : ''}
@@ -555,10 +664,9 @@ function render() {
     if (v.lens !== 'all') list = list.filter((i) => i.lenses.some((l) => l.id === v.lens));
     if (v.apac) list = list.filter((i) => i.apac);
   }
-  // Priority is the latest relevant news: newest day first, and within a day the event, the
-  // thesis fit and APAC decide. A week-old live process never sits above this morning's story.
-  const day = (i) => Math.max(0, daysAgo(Date.parse(i.date)));   // calendar days, the same as dayLabel
-  if (v.seg === 'priority') list.sort((a, b) => (b.status === 'pursue') - (a.status === 'pursue') || day(a) - day(b) || b.score - a.score);
+  // Priority is ordered by Heat (lib/heat.js), recency being one of its six parts: the hottest
+  // story leads whatever its day, and within a score the newer report comes first.
+  if (v.seg === 'priority') list.sort((a, b) => (b.status === 'pursue') - (a.status === 'pursue') || b.hs - a.hs || Date.parse(b.date) - Date.parse(a.date));
   else list.sort((a, b) => (b.status === 'pursue') - (a.status === 'pursue') || Date.parse(b.date) - Date.parse(a.date));
 
   // One card per story. Later reports of a story already on the list fold into its "Also" line;
@@ -577,11 +685,11 @@ function render() {
   const emptyMsg = !loaded ? '<b>Loading developments.</b><br>Each one will show the event, the sector it sits in, and what it opens for SSG.'
     : v.seg === 'pipeline' ? 'Nothing marked Pursue or Watch yet.'
     : all.length ? 'Nothing matches this filter.' : '<b>Nothing stored yet.</b><br>The morning pull fills it; ask Jobi to run one now.';
-  // A day label before the first card of each day: a quiet day then reads as quiet, not as a
-  // feed that stopped. Pipeline keeps its own order and no labels.
-  const dayHead = (i) => { const k = day(i); return `<div class="day">${k === 0 ? 'Today' : k === 1 ? 'Yesterday' : esc(new Date(i.date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' }))}</div>`; };
-  let lastDay = -1;
-  $('list').innerHTML = list.length ? list.map((i) => { const k = v.seg === 'priority' ? day(i) : -1; const head = k !== lastDay ? dayHead(i) : ''; lastDay = k; return head + card(i); }).join('') : `<div class="empty">${emptyMsg}</div>`;
+  // A band label before the first card of each heat band, so the list reads hot, warm, cool.
+  // Pipeline keeps its own order and no labels.
+  const BAND = { hot: `Hot · ${HEAT.BANDS.hot}+`, warm: `Warm · ${HEAT.BANDS.warm}–${HEAT.BANDS.hot - 1}`, cool: `Cool · under ${HEAT.BANDS.warm}` };
+  let lastBand = '';
+  $('list').innerHTML = list.length ? list.map((i) => { const k = v.seg === 'priority' ? i.heat : ''; const head = k && k !== lastBand ? `<div class="day">${BAND[k]}</div>` : ''; lastBand = k; return head + card(i); }).join('') : `<div class="empty">${emptyMsg}</div>`;
   const gone = hidden.length + dismissed.length;
   if (v.seg === 'priority' && gone) {
     const what = [hidden.length ? `${hidden.length} below the bar` : '', dismissed.length ? `${dismissed.length} dismissed` : ''].filter(Boolean).join(', ');
@@ -615,6 +723,7 @@ $('chips').addEventListener('click', (e) => {
 $('list').addEventListener('click', async (e) => {
   const cardEl = e.target.closest('.item'); if (!cardEl) return;
   const id = cardEl.dataset.id;
+  if (e.target.closest('[data-heat]')) { if (openHeat.has(id)) openHeat.delete(id); else openHeat.add(id); render(); return; }
   const st = e.target.closest('[data-st]');
   if (st) {
     const cur = (triage[id] || {}).status || 'new';
