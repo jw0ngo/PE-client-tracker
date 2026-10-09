@@ -417,6 +417,14 @@ function retrospective(row, held, firm) {
   }
   return null;
 }
+const BUYS = /\b(?:acquires?|acquiring|to acquire|buys|bought|snaps? up|scoops? up|completes? (?:the |its )?(?:acquisition|purchase) of|agree[sd]? to (?:buy|acquire)|takes? over|merges? with|to buy|purchases?)\b(?! by\b)/i;
+function portcoBuyer(title, portcos) {
+  for (const p of (Array.isArray(portcos) ? portcos : [portcos])) {
+    const name = p && (typeof p === 'string' ? p : p.name); const re = name ? companyRe(name) : null;
+    if (re && new RegExp(`${re.source}(?:\\W+\\w+){0,5}?\\W+${BUYS.source}`, 'i').test(title || '')) return name;
+  }
+  return null;
+}
 function classify(t, raw) {
   const title = raw.title || '';
   const summary = raw.summary || '';
@@ -515,7 +523,7 @@ function heatFacts(col, row, cls) {
   for (const s of cls.theses || cls.lenses || []) if (s && s.id && !sectors.some((x) => x.id === s.id)) sectors.push({ id: s.id, score: s.score || 2 });
   sectors.sort((a, b) => b.score - a.score);
   return { col, kind: cls.kind || 'other', stage: cls.stage || '', rumour: !!cls.rumour, official: !!row.official,
-    firm: row.firm || null, text, sectors, money, date: row.date || null, retro: cls.retro || null };
+    firm: row.firm || null, text, sectors, money, date: row.date || null, retro: cls.retro || null, buyerIndustry: cls.buyerIndustry || null };
 }
 function heatScore(f, now) {
   const W = HEAT.WEIGHTS;
@@ -537,6 +545,9 @@ function heatScore(f, now) {
     const tier = HEAT.TECH_TIER[top.id] || 3;
     parts.tech = HEAT.TECH_PTS[tier][top.score >= 4 ? 0 : 1];
     why.tech = `${top.id} ×${top.score}`;
+  } else if (f.buyerIndustry && HEAT.TECH_TIER[f.buyerIndustry]) {
+    // A portco add-on with no sector word in the headline: the buyer's own industry, read thin.
+    parts.tech = HEAT.TECH_PTS[HEAT.TECH_TIER[f.buyerIndustry]][1]; why.tech = `${f.buyerIndustry} (buyer)`;
   } else if (HEAT.TECH_WORDS.test(f.text)) { parts.tech = HEAT.TECH_WORD_PTS; why.tech = 'tech words'; }
   else if (HEAT.INFRA_WORDS.test(f.text)) { parts.tech = HEAT.INFRA_PTS; why.tech = 'infrastructure'; }
   // sponsor: the tracked client the row belongs to (deals), any tracked client named, another

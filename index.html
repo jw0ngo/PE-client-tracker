@@ -181,7 +181,7 @@ a { color: inherit; }
   <div class="list" id="list">
     <div class="empty"><b>Loading announcements.</b><br>Each one will show the event, the thesis it fits, and the SSG pitch it opens.</div>
   </div>
-  <p class="foot" id="footNews">Priority is ordered by Heat, a 0–100 score for the Singapore SSG team: APAC relevance (25 — Singapore and SE Asia first, then India and ANZ, then North Asia), live process (20), technology intensity (20), sponsor relationship (15), deal size (10) and recency (10). Tap the flame number for the breakdown. An item is on the list when it is relevant: an APAC item whenever it carries an event or a focus area; a global item only when it is live or signed and in a focus area, or a fund close, a new platform or a senior hire. The rest is kept behind the link at the bottom; the page carries the last 90 days and the archive in the repo keeps everything. Event, thesis and APAC are read from the headline by keyword; the matched words sit under each tag. A story tagged BACKGROUND is a profile page or a re-told old deal (the text, the url or the holding date gives it away) and sits below the bar. <span id="footTriage">Pursue, Watch, Dismiss and notes are saved and shared with anyone who can open this page.</span></p>
+  <p class="foot" id="footNews">Priority is ordered by Heat, a 0–100 score for the Singapore SSG team: APAC relevance (25 — Singapore and SE Asia first, then India and ANZ, then North Asia), live process (20), technology intensity (20), sponsor relationship (15), deal size (10) and recency (10). Tap the flame number for the breakdown. An item is on the list when it is relevant: an APAC item whenever it carries an event or a focus area; a global item only when it is live or signed and in a focus area, or a fund close, a new platform or a senior hire. The rest is kept behind the link at the bottom; the page carries the last 90 days and the archive in the repo keeps everything. Event, thesis and APAC are read from the headline by keyword; the matched words sit under each tag. A portfolio company buying something is an add-on and is listed here with the buyer's name, whether or not the headline names the firm. A story tagged BACKGROUND is a profile page or a re-told old deal (the text, the url or the holding date gives it away) and sits below the bar. <span id="footTriage">Pursue, Watch, Dismiss and notes are saved and shared with anyone who can open this page.</span></p>
   <p class="foot" id="footPortcos" hidden>Portcos are the firm's current portfolio companies that matter to SSG: focus-area companies first, APAC-weighted, and within that the longest held at the top, because four or more years is where a sponsor starts planning the exit. A reported sale or IPO process is tagged on the card. Tap a card for the business in a sentence and its five latest headlines, which are the hand-kept signals plus a daily news search on the company's own name. Valuations are estimates with their basis beside them.</p>
   <p class="foot" id="footTargets" hidden>Targets are Jobi's candidates, not anything Warburg Pincus has said: companies in a focus area that look like what the firm buys, with the signals that make the case. A live process is reported by the press; everything else is a watch. Priority puts sponsor-owned companies first, longest hold at the top: a fund four or more years in is the seller most likely to run a process.</p>
 </div>
@@ -365,6 +365,14 @@ function retrospective(row, held, firm) {
   }
   return null;
 }
+const BUYS = /\b(?:acquires?|acquiring|to acquire|buys|bought|snaps? up|scoops? up|completes? (?:the |its )?(?:acquisition|purchase) of|agree[sd]? to (?:buy|acquire)|takes? over|merges? with|to buy|purchases?)\b(?! by\b)/i;
+function portcoBuyer(title, portcos) {
+  for (const p of (Array.isArray(portcos) ? portcos : [portcos])) {
+    const name = p && (typeof p === 'string' ? p : p.name); const re = name ? companyRe(name) : null;
+    if (re && new RegExp(`${re.source}(?:\\W+\\w+){0,5}?\\W+${BUYS.source}`, 'i').test(title || '')) return name;
+  }
+  return null;
+}
 function classify(f, raw, held) {
   const title = raw.title;
   const all = `${title} . ${raw.summary || ''}`;
@@ -396,12 +404,17 @@ function classify(f, raw, held) {
   const rumour = !raw.official && RUMOUR.test(title);
   const closed = /\b(completes?|completed|completion|closes|closed|finali[sz]es)\b/i.test(title);
   const stage = rumour ? 'rumour' : closed ? 'closed' : 'signed';
-  const angle = ANGLES[`${kind}:${stage}`] || ANGLES[`${kind}:signed`] || null;
+  let angle = ANGLES[`${kind}:${stage}`] || ANGLES[`${kind}:signed`] || null;
 
   const th = theses(f, title, raw.summary || '');
   const apac = APAC.test(all);
   const ageDays = raw.date ? Math.max(0, (Date.now() - Date.parse(raw.date)) / 86400000) : 30;
   const retro = retrospective(raw, held, f);
+  const buyer = held ? portcoBuyer(title, held) : null;
+  // The buying portco's own industry, for the Heat Score's tech read when the headline has no sector word.
+  const buyerIndustry = buyer ? (((Array.isArray(held) ? held : [held]).find((h) => h && h.name === buyer) || {}).industry || null) : null;
+  // A portco named as the acquirer is an add-on whatever the firm's own name does in the headline.
+  if (buyer && !retro && (kind === 'acquire' || kind === 'addon' || kind === 'other' || kind === 'invest')) { kind = 'addon'; angle = ANGLES[`addon:${stage}`] || ANGLES['addon:signed']; }
   const base = retro ? 0 : angle ? angle.heat : 0;
 
   // Relevance, APAC first. The team's business is Asia-Pacific, so an APAC item is in whenever
@@ -412,6 +425,7 @@ function classify(f, raw, held) {
   // platform, a senior hire — that matter wherever they happen. Everything else is kept in the store and
   // hidden on the page behind "show filtered", never deleted.
   const relevant = retro ? false
+    : buyer ? true
     : apac ? (kind !== 'other' || th.length > 0 || rumour)
     : !!angle && bigMoney(title) ? true
     : base >= 3 ? true
@@ -430,6 +444,8 @@ function classify(f, raw, held) {
     apac,
     relevant,
     retro,
+    buyer,
+    buyerIndustry,
     move: retro || !angle ? null : angle.move,
     heat: !angle || ageDays > 30 ? 'cool'
       : base >= 3 && th.length && ageDays <= 10 ? 'hot'
@@ -472,7 +488,7 @@ function heatFacts(col, row, cls) {
   for (const s of cls.theses || cls.lenses || []) if (s && s.id && !sectors.some((x) => x.id === s.id)) sectors.push({ id: s.id, score: s.score || 2 });
   sectors.sort((a, b) => b.score - a.score);
   return { col, kind: cls.kind || 'other', stage: cls.stage || '', rumour: !!cls.rumour, official: !!row.official,
-    firm: row.firm || null, text, sectors, money, date: row.date || null, retro: cls.retro || null };
+    firm: row.firm || null, text, sectors, money, date: row.date || null, retro: cls.retro || null, buyerIndustry: cls.buyerIndustry || null };
 }
 function heatScore(f, now) {
   const W = HEAT.WEIGHTS;
@@ -494,6 +510,9 @@ function heatScore(f, now) {
     const tier = HEAT.TECH_TIER[top.id] || 3;
     parts.tech = HEAT.TECH_PTS[tier][top.score >= 4 ? 0 : 1];
     why.tech = `${top.id} ×${top.score}`;
+  } else if (f.buyerIndustry && HEAT.TECH_TIER[f.buyerIndustry]) {
+    // A portco add-on with no sector word in the headline: the buyer's own industry, read thin.
+    parts.tech = HEAT.TECH_PTS[HEAT.TECH_TIER[f.buyerIndustry]][1]; why.tech = `${f.buyerIndustry} (buyer)`;
   } else if (HEAT.TECH_WORDS.test(f.text)) { parts.tech = HEAT.TECH_WORD_PTS; why.tech = 'tech words'; }
   else if (HEAT.INFRA_WORDS.test(f.text)) { parts.tech = HEAT.INFRA_PTS; why.tech = 'infrastructure'; }
   // sponsor: the tracked client the row belongs to (deals), any tracked client named, another
@@ -584,17 +603,18 @@ function toast(msg) {
 }
 
 function classified() {
-  // A story found by a portco's own news search belongs in Announcements only if it names the firm.
-  return items.filter((i) => (i.firm || FIRMS[0].id) === firm.id && !(i.portco && !firm.match.test(`${i.title} ${i.summary || ''}`))).map((i) => {
+  // A story found by a portco's own news search belongs in Announcements if it names the firm, or if
+  // the portco is the buyer (an add-on is SSG work whether or not the sponsor is in the headline).
+  const held = portcos.filter((p) => p.firm === firm.id).map((p) => ({ name: p.name, heldSince: p.heldSince, industry: p.industry }));
+  return items.filter((i) => (i.firm || FIRMS[0].id) === firm.id).map((i) => {
     const t = triage[i.id] || {};
-    // The portco the story is about, so a re-told old acquisition reads as background, not news.
-    const pc = i.portco ? portcos.find((p) => p.slug === i.portco) : null;
-    const c = classify(firm, i, pc ? { name: pc.name, heldSince: pc.heldSince } : null);
+    const c = classify(firm, i, held.length ? held : null);
+    if (i.portco && !c.buyer && !firm.match.test(`${i.title} ${i.summary || ''}`)) return null;
     // The Heat Score (lib/heat.js): one 0–100 number for the Singapore SSG team; its band replaces
     // the classifier's hot/warm/cool so the border, the count and the order all read the same rule.
     const h = heatScore(heatFacts('deals', i, c), Date.now());
     return { ...i, ...c, heat: h.band, hs: h.score, hparts: h.parts, hwhy: h.why, hlabel: heatLabel(h), status: t.status || 'new', note: t.note || '' };
-  });
+  }).filter(Boolean);
 }
 // The breakdown under a card when its heat badge is tapped: part by part, with the words that set it.
 const openHeat = new Set();
@@ -615,7 +635,7 @@ function card(i) {
       <div class="meta">
         <span class="hs ${i.heat}" data-heat="1" title="${esc(i.hlabel)}">${i.hs}</span>
         ${i.retro ? `<span class="tag press" title="${esc(i.retro.reason)}">BACKGROUND${i.retro.year ? ' · ' + i.retro.year : ''}</span>` : `<span class="tag ${i.official ? 'release' : i.rumour ? 'reported' : 'press'}">${i.official ? 'RELEASE' : i.rumour ? 'REPORTED' : 'PRESS'}</span>`}
-        <span class="kind">${esc(KIND[i.kind] || 'News')}</span>
+        <span class="kind">${esc(KIND[i.kind] || 'News')}${i.buyer ? ` · ${esc(i.buyer)}` : ''}</span>
         <span>${esc(i.publisher || '')}</span>
         <span class="when">${esc(dayLabel(i.date))}</span>
       </div>
