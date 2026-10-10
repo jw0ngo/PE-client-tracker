@@ -540,6 +540,18 @@
   "firstSeen": "2026-10-05T08:01:27.460Z"
  },
  {
+  "id": "0b551188b553",
+  "theme": "sponsors",
+  "title": "SoftBank seeks $100 billion for AI-refined projects from Middle Eastern investors — fund would be used to acquire companies and improve their operations using artificial intelligence and robotics",
+  "url": "https://news.google.com/rss/articles/CBMi-gJBVV95cUxOczhValhJNGY3ckVNdDdWTnFhbDAtbVBERllEOGNnRVdWZDc1dzBNVlFuLWstVGd4QUpzaG50S2dxanhHVnBHOEktVmJtNzBaa3B5YVJMQ1dfYkpqaVJsU2hvQUE5YnZaclhPUk1lRG1SLW91ZXFPQkdzUVc1UVl4cGYtbC1Jdlh2cUZvVHNZdFpHeEpzc1RuU2tPVTdiY0FmaGI1X2x2WEMtcWhxOW9UczVIOGdoZlYtbzZhcS1kSV82S0ZOeWNiRV9KZnR0dnh1QkVTWmRjTVNzampaX19kV0VMeXVTNmRMRFBUd0JMbnA1TldTQ2x3RTB2OFdYNVZCcFBSYzE3SExqeDRFMWhLRW00UXZianJfbUU0ZEtDQmxGRzBJSllLdlZ2V0RseWZDRVppSHlnLVNEU3p4OVpNSUhjbzlCRmF2elQzRGRRMlJqQ0dNNWJabGZteHpaVTdBS2d4YWFqdy1MRlh5RXVfbDBZTWx1akx5MFE?oc=5",
+  "date": "2026-10-10T15:40:00.000Z",
+  "summary": "",
+  "publisher": "Tom's Hardware",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-10T23:47:30.382Z"
+ },
+ {
   "id": "0be0464888eb",
   "theme": "infra",
   "title": "This AI-Tied Play Packs Chips And An Earnings Punch",
@@ -1056,6 +1068,30 @@
   "firstSeen": "2026-10-09T00:18:26.262Z"
  },
  {
+  "id": "16b30da7c1d3",
+  "theme": "platforms",
+  "title": "Microsoft Launches High-Speed Decision Model Decision-1, 35x Faster Than GPT-6 Sol",
+  "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1HSGJ3WjFtd3JlT1ZfNHM2cy1pdzhoUHBlOXNDZnpabTBnQW5UMEM4WE94bXM4eGE3SDkyMl9kckZvMWlnMkxMR1YzTEo0VkwzS3NXb0NjVkc4SjdoSDBJeC1Ydkc4U2NUYmthR29tMUZkU0QycEE?oc=5",
+  "date": "2026-10-10T02:25:00.000Z",
+  "summary": "",
+  "publisher": "BigGo Finance",
+  "source": "incumbents",
+  "official": false,
+  "firstSeen": "2026-10-10T23:47:30.382Z"
+ },
+ {
+  "id": "172593c0e98f",
+  "theme": "listings",
+  "title": "Australian data centre operator pulls $5bn IPO",
+  "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQTWVzMEVPdHpnTlpjaW5TbmxndmhtdlZkV3dQaWVaU3p0M1A5OFBCdFJxcXRYZ2lGS0ZQR05uNnhLbFdrNEZTNVI5cnhqNTVXbFh1NFNYaVZaZXdHSEJoeVlpbllINDR2a2J4b1hIMnhwUjkxNFhWY0RzMnFIelBvWGE5bUY?oc=5",
+  "date": "2026-10-09T02:57:21.000Z",
+  "summary": "",
+  "publisher": "Financial Times",
+  "source": "ipos",
+  "official": false,
+  "firstSeen": "2026-10-10T23:47:30.382Z"
+ },
+ {
   "id": "178bc8503a76",
   "theme": "ma",
   "title": "Schneider Electric to acquire PTC in $22.6B deal",
@@ -1476,6 +1512,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "1e7f8becafdb",
+  "theme": "ma",
+  "title": "Qualcomm to Acquire PickNik to Advance the Future of Open Robotics and Physical AI",
+  "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOT0R4VjBSQVhPQi1pQzMzQWozOWlPSzBxSWxKNk4yYWlocnExZnNvMF9EVFF3eVp1RFJ2VDdrNGNBd2xUa0lueHdidkp2VGNBNVdtQVlGaU1MMU40NWVPS05UdnNXbmgwekh0bWdDdVVoc2UwdEdMUzVTVXZKVm9lVjNFMjU0M3ZocGI2bER4d19LVWd6c29LVHNQUW5yT2JUX3F0aGZFVlJuLXRHSm1TQQ?oc=5",
+  "date": "2026-09-23T07:00:00.000Z",
+  "summary": "",
+  "publisher": "Qualcomm",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-10T23:47:30.382Z"
+ },
+ {
   "id": "1fd6d7d6d7bc",
   "theme": "platforms",
   "title": "OpenAI releases progress on more than 300 math research problems, stunning humans",
@@ -1560,6 +1608,18 @@
   "firstSeen": "2026-10-07T00:18:46.308Z"
  },
  {
+  "id": "21de1688a054",
+  "theme": "ma",
+  "title": "Diversis Capital acquires majority of Tideworks Technology from Carrix (Blackstone-backed)",
+  "url": "https://www.sidley.com/en/newslanding/newsannouncements/2026/10/sidley-represents-diversis-capital-in-its-acquisition-of-majority-ownership-of-tideworks-technology",
+  "date": "2026-10-01T00:00:00Z",
+  "summary": "Software-focused PE firm Diversis took majority ownership of Tideworks, terminal operating system software used at 130+ marine and rail terminals, from Carrix (majority owned by Blackstone Infrastructure Partners). Terms undisclosed.",
+  "publisher": "Sidley Austin",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-10T22:52:00Z"
+ },
+ {
   "id": "23055a2a6498",
   "theme": "agents",
   "title": "AMD Launches Ross Agentic AI to Automate Embedded Hardware and Software Engineering",
@@ -1570,6 +1630,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-06T00:02:17.930Z"
+ },
+ {
+  "id": "230dfa8b0744",
+  "theme": "ma",
+  "title": "Nvidia in talks to acquire US ‘open’ model start-up Reflection AI",
+  "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSFAzNzlXTG5BbHZkbU5EX3lMZEl6Z3ZROVJPbE5NbFNwdXQtZ3N3cDlCYTNBVlg2VF9fTVE5RnIxS0I3b0dUejNudmZseG03RzVCdTBBS3hWaWM5S05KYV9WLWVOMENkODV0N2RXQzctank0bVpfSWo1bjNmbGg0Wi1RWFA?oc=5",
+  "date": "2026-10-10T18:14:28.000Z",
+  "summary": "",
+  "publisher": "Financial Times",
+  "source": "strategics",
+  "official": false,
+  "firstSeen": "2026-10-10T23:47:30.382Z"
  },
  {
   "id": "237b9e19afd1",
@@ -2146,6 +2218,18 @@
   "source": "apac",
   "official": false,
   "firstSeen": "2026-10-09T23:48:08.047Z"
+ },
+ {
+  "id": "2ed09426d3bb",
+  "theme": "platforms",
+  "title": "CyberSentriq Launches AI Platform To Secure, Back Up Microsoft 365 For MSPs",
+  "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQllndTRxUXBvMmFVUFVqY240eXQwSVl4SURUdGFjdDhBQW5fTkk5VmdZemVSZTdyLVBTaXhteXZtVWtYRUFwWDczUk45VV9lVl9pd1FBS0tQaDA1bjRZUTNnM3FUZGtFV3ZRNjE5N0NFWFozVEd6Z283UlZ2NjVXbU1WbGNCaEZ4WEg1X0RhbTVmSmFVeHZtamh6MGxENkI1LXgzV1FsdzhGUlE?oc=5",
+  "date": "2026-10-08T19:50:00.000Z",
+  "summary": "",
+  "publisher": "CRN",
+  "source": "incumbents",
+  "official": false,
+  "firstSeen": "2026-10-10T23:47:30.382Z"
  },
  {
   "id": "2ed4bd27c069",
@@ -3072,6 +3156,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "48d5920843f4",
+  "theme": "ma",
+  "title": "Nvidia in talks to buy Reflection AI or deepen its investment, FT reports",
+  "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSVduTko2Z0dwNlV6R1FsRVNXQXY4bnpuSjN3b3R0d2lNeTVvSmw4TDdVb1VNNFlXRHhTUTc1aDctTlk5Q0ZVRGk1cjZsSFRxOHNfOTI3ODdBekQ2QnFQclZqRTI1WDJSRFh0MTVyMGFvczA2MDRsY1ZabDlDUkl3TEctN3MxY0ZOdUpBMmVwdGxDM3Rmb2JwUUlENkU1SVNjMXZSX0xwUHRscElFU3hDc0d6d1VrOW9mLUpYd0NJR0xTcnZUNmZWcXNjTXlLSTZldDctWlUwV2VMQQ?oc=5",
+  "date": "2026-10-10T18:40:53.000Z",
+  "summary": "",
+  "publisher": "TradingView",
+  "source": "strategics",
+  "official": false,
+  "firstSeen": "2026-10-10T23:47:30.382Z"
+ },
+ {
   "id": "48d880ae907a",
   "theme": "ma",
   "title": "Beam Global Signs Definitive Agreement to Acquire Drone Technology Company ScoutDI, Creating a Vertically Integrated U.S. Drone Platform for Industrial and Defense Markets",
@@ -3660,6 +3756,18 @@
   "firstSeen": "2026-10-08T00:21:57.193Z"
  },
  {
+  "id": "57387ab6c7e8",
+  "theme": "platforms",
+  "title": "Microsoft AI Releases Microsoft-Decision-1: A Qwen3.5-9B Decision-Scoring Model",
+  "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOWTgtVm1CMzAyYlMtVWJVa3VqeEZYMHBzY1ZsaTVXNUJ0VDZoY0Z4cy1rRi1xd2RkaU1WVGtqUmpzNWlBMjZoeEREOGNhdUZiVHU0RGlhWVZpZTFDcVFreHdMZm5KNjExUmJUajJHWUR5OGF0ZTJXVDRHUUZ1eVkwS01yckxVa0FseG1RbWthYmVCQ0F0NEhYNE0weHJ6MzJ3YXpOT09rcVN2d2JOYml0UjBzblNPcWNDWk800gG7AUFVX3lxTE5ZOC1WbUIzMDJiUy1VYlVrdWp4RlgwcHNjVmxpNVc1QnRUNmhjRnhzLWtGLXF3ZGRpTVZUa2pSanM1aUEyNmh4REQ4Y2F1RmJUdTREaWFZVmllMUNxUWt4d0xmbko2MTFSYlRqMkdZRHk4YXRlMldUNEdRRnV5WTBLTXJyTFVrQWx4bVFta2FiZUJDQXQ0SFg0TTB4cnozMndhek5PT2txU3Z3Yk5iaXRSMHNuU09xY0NaTzQ?oc=5",
+  "date": "2026-10-10T06:03:09.000Z",
+  "summary": "",
+  "publisher": "MarkTechPost",
+  "source": "incumbents",
+  "official": false,
+  "firstSeen": "2026-10-10T23:47:30.382Z"
+ },
+ {
   "id": "57391a8fc852",
   "theme": "agents",
   "title": "WealthAi Launches AI Agents to Automate Wealth Management Onboarding and KYC",
@@ -3694,6 +3802,18 @@
   "source": "apac",
   "official": false,
   "firstSeen": "2026-10-07T11:38:17.671Z"
+ },
+ {
+  "id": "57c8be2fc5a7",
+  "theme": "platforms",
+  "title": "Mistral AI Releases Mistral Large 4 (Le Chonk): A 1.05T Parameter Multimodal MoE Model",
+  "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNZU1HNUhiVS01TkxtQTZvRkUwNGZmak1hQ0MtbE41MUUyWkN6a1BhM19UdzJjZU9wSldJSVpmU0kwOUdGekJVNWljN2VKVVFoeUc4ckdyYlhUWFQ2U0hLWDIzSk9xbGo4cGNHUERZeXlOSHBmZmZmdk1JbkVfZTlXM2lmb202MWJ4Z1czZVB1R3h3UTBUMjc5OFM2S1loWHBqYUxYX0RPTTJXSnVLUm9lUTNpTjc0Y2IxcWQ4VFJGUjZ5VllOQi1FYlVB0gHKAUFVX3lxTE1lTUc1SGJVLTVOTG1BNm9GRTA0ZmZqTWFDQy1sTjUxRTJaQ3prUGEzX1R3MmNlT3BKV0lJWmZTSTA5R0Z6QlU1aWM3ZUpVUWh5RzhyR3JiWFRYVDZTSEtYMjNKT3FsajhwY0dQRFl5eU5IcGZmZmZ2TUluRV9lOVczaWZvbTYxYnhnVzNlUHVHeHdRMFQyNzk4UzZLWWhYcGphTFhfRE9NMldKdUtSb2VRM2lONzRjYjFxZDhUUkZSNnlWWU5CLUViVUE?oc=5",
+  "date": "2026-10-06T17:30:46.000Z",
+  "summary": "",
+  "publisher": "MarkTechPost",
+  "source": "labs",
+  "official": false,
+  "firstSeen": "2026-10-10T23:47:30.382Z"
  },
  {
   "id": "57ca977506b6",
@@ -4066,6 +4186,18 @@
   "source": "incumbents",
   "official": false,
   "firstSeen": "2026-10-07T11:38:17.671Z"
+ },
+ {
+  "id": "61ee8705021c",
+  "theme": "ma",
+  "title": "Nvidia in Talks for Additional Investment or Acquisition of AI Startup Reflection AI: FT",
+  "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1ySWVoZUZDN0xOVUVKaVc0RGpsSTEtLUxVaWFmbWl2WkZNM3dSSVB2WlNHWEdvcHEtUW9Rci0yWkEyWS04ZWRRWTZxbldGOXpwWmFic2NtOHZSUGJTaWRIWXZSZHA1T01JYTBjZnV3?oc=5",
+  "date": "2026-10-10T20:21:53.000Z",
+  "summary": "",
+  "publisher": "news.sbs.co.kr",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-10T23:47:30.382Z"
  },
  {
   "id": "632a95bf7ebd",
@@ -4956,6 +5088,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "76256ae59c8b",
+  "theme": "sponsors",
+  "title": "Audax Private Equity acquires majority stake in Integrate demand marketing SaaS",
+  "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOaVpKM1hZMTE5YUx5NmI2YVdtOTliU1c0V2I1Q1pvQTRqUk1kdUZEZXNUWFNJa2Via0JIZFZoaXV1clk4TElUQnZzald6SmRMUEc1U0RoLWJpV0pLOHhYVGhPZTJEME1uSUtaMGdFSFVzTzA0VkV0dGU2aDd5Z0g2MDdxb2VYdkZETk02SHJHaTRNaUhZbUhSTGNMWHdyWERwdWdURjBycFo2TFQ2RkpHbFQxRQ?oc=5",
+  "date": "2026-09-21T19:53:50.000Z",
+  "summary": "",
+  "publisher": "Dealroom",
+  "source": "pe",
+  "official": false,
+  "firstSeen": "2026-10-10T23:47:30.382Z"
+ },
+ {
   "id": "76aba6b53dae",
   "theme": "labs",
   "title": "OpenAI launches cute, ‘capable’ AI agents after shelving deceptive model",
@@ -4990,6 +5134,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "77687483d4e3",
+  "theme": "ma",
+  "title": "Hexagon to acquire geotechnical software firm Rocscience for $535m",
+  "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOdzIzU0xoQ2plOHZLTmVkSUp2X3YwZWgyTkw3Z3dIeTZrTkNsOHdmWExGZlFzLVZfRW1EbXB2Y3Y1RTJ6NzBBMF9RWVJCOU1lUngyeVdOT3lHelJNN002Wi1fN3JDcnNDZVA3bjh4YnpfNXA5cE8xc1dqVXE0RVhiUThJd05qOE5xa0NUYlRyU3d0U2I4cVJqM3FrNDdwc2RlRWtzY2RTNTJHbzNaUUdEdGt5ZEVYZDdEQ3BVak43WUs?oc=5",
+  "date": "2026-10-09T10:46:46.000Z",
+  "summary": "",
+  "publisher": "Construction Briefing",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-10T23:47:30.382Z"
  },
  {
   "id": "7778189695c2",
@@ -5230,6 +5386,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "7e25eb555076",
+  "theme": "platforms",
+  "title": "OpenAI launches Decisions API that reduces complex evaluations to yes, no, or pick one",
+  "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMk03cFp1MGRpX3RDZ3dPYmVRR2JCQm5KY0pNSWE3d25qaVdtVlJtX01JbjIxTG9uTUVMT200dmwtY1MxR0ROMlRpU01tVGR4ZUpCMTUzWTJCTk1xREZOcjA2VGdTMDJFZ1NXN0JLMDZFcEJIWGtoMXpPOTQ1SklIeVBzNEdzdFk1UGhoR2JDMG4ycmxOalFka0w3eDNsUnZZd0lLUFhPc2FpUTBqMWc?oc=5",
+  "date": "2026-10-07T15:38:42.000Z",
+  "summary": "",
+  "publisher": "The Decoder",
+  "source": "labs",
+  "official": false,
+  "firstSeen": "2026-10-10T23:47:30.382Z"
  },
  {
   "id": "7e80b1828e06",
@@ -5542,6 +5710,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "85d6a7e8f41c",
+  "theme": "ma",
+  "title": "Yext signs agreement to acquire Flamel.ai, extending agentic marketing platform into local paid media",
+  "url": "https://finviz.com/news/397301/yext-signs-definitive-agreement-to-acquire-flamelai-extending-its-agentic-marketing-platform-into-local-paid-media",
+  "date": "2026-09-30T00:00:00Z",
+  "summary": "Yext (listed marketing/search SaaS) will buy Flamel.ai, which runs localized paid ad campaigns for multi-location brands, for undisclosed cash; close expected in Q4 FY27 (Jan 2027).",
+  "publisher": "Business Wire via Finviz",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-10T22:52:00Z"
  },
  {
   "id": "85f104f97fc1",
@@ -6072,6 +6252,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "947edb5ba426",
+  "theme": "ma",
+  "title": "Nvidia Reportedly in Talks to Acquire Reflection AI, Betting on Open-Weight Models and New AI Computing Demand",
+  "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOVTdoMzRYOXY0WFJUQ3FrbmNCSjlyWUx5TFE3VXFlS1NTdjJJdEpVbFJPQjBTY3VmS2FMbE41SF9RbTBrd3FaZFBuNWtqVDlVdU90ckdBTTdZdXNQdWctdWpSWU16SGhXVUpCckpWWTM1dTI2RVl4bDRPaFdHaWRZTWQ0eU1YYktMY01SaUU3WVotVEJ2c09OTjl6Wm5RZHAzXy1sdnNGSW9hSE8yd2MwVXA0emNsNXpXSDZja2N3aWZpSGllTW9tZ0czQV9sa2R2ZUUwWkFIS0I?oc=5",
+  "date": "2026-10-10T20:23:03.000Z",
+  "summary": "",
+  "publisher": "TradingKey",
+  "source": "strategics",
+  "official": false,
+  "firstSeen": "2026-10-10T23:47:30.382Z"
+ },
+ {
   "id": "949caf7268ef",
   "theme": "labs",
   "title": "DeepSeek set to raise at least $15 billion in Tencent-backed funding",
@@ -6300,6 +6492,18 @@
   "firstSeen": "2026-10-09T00:18:26.262Z"
  },
  {
+  "id": "9a7aa1aa7bbc",
+  "theme": "ma",
+  "title": "ECARX Completes RMB1.8 Billion Flyme Software Acquisition to Expand Automotive OS Capabilities",
+  "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNcEtsQldSLTFNSkN6UndTTkEwV0VBdjFGa29aSU9Sd1VOeDVJaXhuZngxSnBQbkpyRjJFRFZUY3RzZS1SSHA2eHZ6OE83MzJuTlplUDZLVk5zQ2JidnpYaWpXYnI0YlN6anhJWTY1Q2ZxVDh0Y285MWo3cHZ2MDBTUU14bVBURjdEbE1ETzh4WnBuRXMtaHlvX1ZRWWxZRXFZcE9SZjM3VlV5VXZUR2g4S0pKZGpjSXFvX0NkQVJNdUJ6UlJ3VFBJOGJnLU1GRFJRM3BxeUZqbS1scWxwcDd1aDdkVDN4dVhNdTZLbUtWRDdTMHR4VER1czJmTml3SjEtcjRQbUNUM3I?oc=5",
+  "date": "2026-10-06T11:36:00.000Z",
+  "summary": "",
+  "publisher": "The Globe and Mail",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-10T23:47:30.382Z"
+ },
+ {
   "id": "9acb650261f4",
   "theme": "sponsors",
   "title": "SoftBank, Grab, Petros team up to explore AI, digital infrastructure platform in Sarawak",
@@ -6394,6 +6598,18 @@
   "source": "apac",
   "official": false,
   "firstSeen": "2026-10-07T11:38:17.671Z"
+ },
+ {
+  "id": "9c681ba75233",
+  "theme": "ma",
+  "title": "Nvidia Pursues Acquisition of Open-Source AI Startup Reflection to Counter DeepSeek",
+  "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1ndDRnTHhKR3pGUHhtSmxvQmdIaHN6TW1LT01Ha3kxSjZwb2I0UEpsN1poNnpwZ3ZxcS01SldaWkZacGV4czUzdGQtQWU2aXo1NzR6WHhtYVh0bHFjT2JCOUIySHVUZFFMZktEZFVmb1RheEdnZVE?oc=5",
+  "date": "2026-10-10T21:25:00.000Z",
+  "summary": "",
+  "publisher": "BigGo Finance",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-10T23:47:30.382Z"
  },
  {
   "id": "9c73d68a962c",
@@ -7368,6 +7584,18 @@
   "firstSeen": "2026-10-05T07:46:33.871Z"
  },
  {
+  "id": "b6e38e0e5f0e",
+  "theme": "listings",
+  "title": "Moonshot AI reportedly files confidentially for Hong Kong IPO, targeting $3bn+ raise",
+  "url": "https://www.scmp.com/tech/big-tech/article/3366271/moonshot-ai-creator-kimi-k3-model-has-filed-hong-kong-ipo-sources",
+  "date": "2026-09-03T00:00:00Z",
+  "summary": "Beijing AI developer Moonshot (Kimi K3) reportedly filed confidentially for a Hong Kong IPO to raise $3-5bn, with Goldman Sachs, CICC and Deutsche Bank; listing targeted as early as Q1 2027. Company declined to comment.",
+  "publisher": "SCMP",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-10T22:52:00Z"
+ },
+ {
   "id": "b742dfc8ecd6",
   "theme": "capital",
   "title": "AI agent startup Instinct hits $10 billion valuation following $1 billion round",
@@ -7882,6 +8110,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-07T00:18:46.308Z"
+ },
+ {
+  "id": "c2f1c3325a4e",
+  "theme": "targets",
+  "title": "Tandem Health Raises $100 Million in the Scaleup Europe Fund’s First Healthtech Deal",
+  "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBaQmExV0swczZQdmZWb1lHWFhKRENNMUR5VGU4VmVRZE9MMjJVZlNGTGNNUGpNMXJBR2lvczZGNzh0X2U2VTFrMGNncmVkcWxlX1dtMlJpOGlYUU1SdnpxLU8xTkhDOWFETEw0WTlMVEw3Zw?oc=5",
+  "date": "2026-09-14T07:00:00.000Z",
+  "summary": "",
+  "publisher": "trendingtopics.eu",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-10T23:47:30.382Z"
  },
  {
   "id": "c34f93dcb9a8",
@@ -10222,6 +10462,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:46:33.871Z"
+ },
+ {
+  "id": "fb80714921f1",
+  "theme": "ma",
+  "title": "TTM closes $1.1 billion acquisition of Epiq Solutions",
+  "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPaVRCbHJBNzBqVFViSW5XUzIwTHRDaU5jbVB1YlY4MFVoSlphWnkyODhweDI3UnpBX2dyRUk5Wmh5d3QtTk1JWEVtNVFNVjVmMkpBdUs1dU0xUVh0QTdpcmE3TFZ3cUFhNUZXdzVPeWxYRE91d0xSS01QUldQTVE0SXYzc3BuZmNnTkJLdnV2MlA?oc=5",
+  "date": "2026-10-09T13:32:50.000Z",
+  "summary": "",
+  "publisher": "Evertiq",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-10T23:47:30.382Z"
  },
  {
   "id": "fbd064b6a459",
