@@ -49,6 +49,18 @@
   "firstSeen": "2026-10-05T00:18:25.007Z"
  },
  {
+  "id": "01ebb36a1a4a",
+  "firm": "kkr",
+  "title": "KKR & Co. Inc. stock outperforms competitors despite losses on the day",
+  "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOTHc0VmRrblotU1VkTkZZRGZ2LXFmNktwWXdsd3pyZ2t2NkxhOEdMNTgyeDRNVGRLcGZCZjk2aGZOd3E2RFdUSEVzNDRqYWRSMXd3RGs1TTdzSHo1d3luNlZoSWxiVUZSZVB5bW40SktscVBLS0dvMl9Bb3lWM2szMHhFbzdPcWhRVTlucTRGRE9SLURmclUyZXlDNVYtRnU5ZzhqbmpiLVdvTmVmSFJVUFpsWHc5ZTB5ZmpiTjctNUtjVXBveGFwdnlFUHpRLXdud05Mc3AxMnlTREpy?oc=5",
+  "date": "2026-10-07T20:42:00.000Z",
+  "summary": "",
+  "publisher": "MarketWatch",
+  "source": "recent",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z"
+ },
+ {
   "id": "01f0d1f0961c",
   "firm": "kkr",
   "title": "Venture Visionary Partners LLC Sells 30,581 Shares of KKR & Co. Inc. $KKR",
@@ -83,6 +95,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-06T00:01:51.728Z"
+ },
+ {
+  "id": "038d09a99e63",
+  "firm": "kkr",
+  "title": "KKR Bets on Korea AI Supply Chain After Record $3 Billion Deals",
+  "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWXdweTVtcHc0TDFVZUMxN2I0NS1xRXFhQUFoNFNSVXpPUFRPWkdMMjJrcnlpYUR3NnVVT3pvc3FRMGZBb1hDZ1RmazBsbXVpYW9DeHdyTUVTTThXMjgxM3YtQVJPOEZiMkFMbTVXZDdJWHc5Nm9IUnZUc1o5QVdTdGY1YTl3b1ZwUVNTRHdtajZOSUJnSE03cG1WWGdhNExnYkJGT0VwZmpIX1ZzY0U4Um5TMA?oc=5",
+  "date": "2026-09-21T07:00:00.000Z",
+  "summary": "",
+  "publisher": "Bloomberg.com",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z"
  },
  {
   "id": "03bfbd223235",
@@ -301,6 +325,18 @@
   "firstSeen": "2026-10-09T23:37:40.680Z"
  },
  {
+  "id": "07ec700226e1",
+  "firm": "kkr",
+  "title": "Is KKR Stock Underperforming the Nasdaq?",
+  "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNemp5ME9BYjFRUTlrSldMeUV6elU1VW4tNlo3eTZoVS1iVlVEckhudnc1VktYY1dYMGVCQk8ydmwzSEJkenRMZmtiOExCV2xfQnBUd3F3NV92YkVHLWZKRU1TQVZtaEJ6NWRIblIteUJHMkNoV0tVYjdhY1pndHpQRkNycUtWQlRNUXVPeVB2eEdoR0RaU2lEQjhZdmxGQQ?oc=5",
+  "date": "2026-09-25T07:00:00.000Z",
+  "summary": "",
+  "publisher": "Yahoo Finance",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z"
+ },
+ {
   "id": "082096f35e18",
   "firm": "kkr",
   "title": "KKR delays Korea-Japan tank terminal pick as split vs package sale debate grows - CHOSUNBIZ",
@@ -311,6 +347,19 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:17:26.548Z"
+ },
+ {
+  "id": "0863c2768f16",
+  "firm": "macquarie-capital",
+  "title": "Wavenet Acquire Qubic Group",
+  "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE41VndXd05sZ3RKTEtvZm1iZFFNVGxscVExRm5KRFF6bEkwOWhEWlZjU1VmLWN4WFhSSjMzVVl1ejc3NEktb2RXZ05sUWhLSGYzRmlER1NqUVVTRzg?oc=5",
+  "date": "2026-09-13T21:55:10.000Z",
+  "summary": "",
+  "publisher": "UC Today",
+  "source": "portco:wavenet",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "wavenet"
  },
  {
   "id": "08bd1cffaf9b",
@@ -529,6 +578,18 @@
   "firstSeen": "2026-10-09T00:13:53.254Z"
  },
  {
+  "id": "0fc211aa6891",
+  "firm": "eqt",
+  "title": "EQT launches evergreen EQT Nexus Asia strategy for Asia-Pacific buyouts",
+  "url": "https://en.fnnews.com/news/202609091345043893",
+  "date": "2026-09-09T00:00:00Z",
+  "summary": "EQT introduced EQT Nexus Asia, an open-ended vehicle for Asia-Pacific buyouts in healthcare, services, technology and industrial technology across India, Korea, Japan, Greater China, SE Asia and Australia/NZ.",
+  "publisher": "FN News",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-10T22:53:17Z"
+ },
+ {
   "id": "0fe779ece846",
   "firm": "ta-associates",
   "title": "OneSource Virtual: majority growth investment from TA Associates",
@@ -563,6 +624,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-06T00:58:19.774Z"
+ },
+ {
+  "id": "108ed24334ad",
+  "firm": "eqt",
+  "title": "EQT's Growth Is Moving to Lower-Fee Strategies, and Carry Will Take Longer to Arrive",
+  "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNWHhKcnh5MHBjUUVwX3d5UnJDN0pmZ3p6MjU3emo0Mm0zakFtcThyTDdBMUp5SV9Sanp0cUlPS3J6dEVoQ0laaUQ4YThGOWQ4TEhhVVNldmRpdzJXZnNsYVJ1RWVXZjZmZVdNU2t2NXNnR1lVTmF1WTNOT0JOVjBqeVpmX2tSVkJNTEhVN1c2c3NzeHZldXJyWnpBWWdQRklyQjBjaDBfUEdEbkhHcV9Ya0RMbzF5MWVRSlNlbFo3VTY4b185OE11c0xIeGFQR2M?oc=5",
+  "date": "2026-10-07T21:49:35.000Z",
+  "summary": "",
+  "publisher": "Morningstar",
+  "source": "recent",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z"
  },
  {
   "id": "109056ece3f1",
@@ -1334,6 +1407,18 @@
   "firstSeen": "2026-10-05T07:17:26.548Z"
  },
  {
+  "id": "243c5ccd66d0",
+  "firm": "kkr",
+  "title": "KKR (KKR) Joined A Non Binding Bid For Uniper SE",
+  "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMkNucVdINjBBa2JUYjVUZVlxR2JhdG1xV2tsdU8yZXRVQUNVcmpIMGh3bU9UdmZzXzB2UlBmZWJJajF4M0tYYlQyWXJJdlNBNEFUcFVabXk1TGhpRUtIMUQtdlpCNWpwUi11d1NHMW9OOU1RTm5tM2pDRHloOFI5UFg2NzVWQnpkZGFva3M3dWpJSURrNlFFeUptdGt6dXVncHJmWWVKeTN6c0ZkZG41YjQ0eGU2WGlQcUxr0gHAAUFVX3lxTFBCLW05R0RWSVZCRGpKaEtWU0NMRWc5cUJ1Um0yTkJubHNoYUtRQ1dzcUE5MnI2OEtaNGxXem0tNGNuZkt5ZXdLVVpTRUlYNjhJYjF4RXd4NXRRRHNELU9WVU5rN21mdG42Y2tFSndQZXpuZXJGa01tZ1Q1d3REdC1QWWdrSDdxejJMekNWRl9ObWlEdEMzOHJYWHVWejRFV2VkT1Mzc2RVbHpKa25nc1U2QmZQaXNsR21SN1htRUJBYg?oc=5",
+  "date": "2026-10-09T23:38:49.000Z",
+  "summary": "",
+  "publisher": "Simply Wall Street",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z"
+ },
+ {
   "id": "2462fe017df5",
   "firm": "kkr",
   "title": "Integer receives HSR early termination; KKR deal $127/sh, special meeting Oct 21",
@@ -2005,6 +2090,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:17:26.548Z"
+ },
+ {
+  "id": "3063efeee8cb",
+  "firm": "eqt",
+  "title": "EQT Group to invest $50bn in India over 4 years",
+  "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWk5kT0lSX3k4Zl9vWDBCeUd2RVdwMm1ELUZUYV93UWVncVdnSzhJdjE0bXlTU1lVTFBRQ2NzMDBzRnZGN0FuMUVVd1hTc1NvNU5ZcmFlbE83OGktTXdxSjdFMnNpQTFmblM2bWcyVGJmN2NmMDBXUHBOVnk0a3I1VzctMHNwekRsOE94WGVrUExueE9aSzk0MjJB?oc=5",
+  "date": "2026-09-16T07:00:00.000Z",
+  "summary": "",
+  "publisher": "NewsBytes",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z"
  },
  {
   "id": "30d9e956f1ec",
@@ -3649,6 +3746,18 @@
   "portco": "oxane-partners"
  },
  {
+  "id": "55e06473dd3b",
+  "firm": "ta-associates",
+  "title": "Goodwin advises TA Associates on strategic growth investment in Oxane Partners",
+  "url": "https://www.goodwinlaw.com/en/news-and-events/news/2026/07/announcements-privateequity-goodwin-advises-ta-associates-growth-investment-oxane-partners",
+  "date": "2026-07-30T00:00:00Z",
+  "summary": "TA Associates made a strategic growth investment in Oxane Partners, a technology-driven solutions provider to the private credit industry.",
+  "publisher": "Goodwin",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-10T22:53:17Z"
+ },
+ {
   "id": "5613f8d21146",
   "firm": "tpg",
   "title": "Musixmatch Eyes Bigger Role in Music Industry, Backed by TPG",
@@ -3973,6 +4082,18 @@
   "firstSeen": "2026-10-05T07:17:26.548Z"
  },
  {
+  "id": "602f07bfc8f6",
+  "firm": "tpg",
+  "title": "Singapore: Nirmala Sitharaman Meets TPG Executive Chairman Jim Coulter #Gallery",
+  "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObkpuUjBYZFRFd3ZaX010OFBOQTZFWUpxRk1iSnY5QzkwQ0xMWEljRTR4bW5WYU4yTEprZkliVFZPNGlwWnBlR09OdUhjcEhkVlM0NUhqUkZhcjZZWXlDeExWZkVhNUVFOU1YNjZMRFZxQ1ItMDQxLXpERkRHLWRLMDVCQzhlTzJUQk80V3g1d2Vub0p2TWRqU2dTeVNyNHZETXBYdzNQRFlybS1PRnR1RnRSOXpULUdNS2c?oc=5",
+  "date": "2026-10-10T23:35:36.000Z",
+  "summary": "",
+  "publisher": "Social News XYZ",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z"
+ },
+ {
   "id": "6043cfb2477c",
   "firm": "tpg",
   "title": "TPG-managed NewQuest sells another Rs 115 crore worth of Shadowfax shares in bulk deal",
@@ -4019,6 +4140,18 @@
   "source": "apac",
   "official": false,
   "firstSeen": "2026-10-06T00:58:19.774Z"
+ },
+ {
+  "id": "61050ef773bc",
+  "firm": "eqt",
+  "title": "The Technical Signals Behind (EQT) That Institutions Follow",
+  "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOYnRzQm8za3lOZmF2bFY5VzdRZURlX3E3VWtBUHFmbzg1MHpXZEVRbUEwLVlMc0NYblUxWEozS3VDaUlpaG12RTR4SmZlR2FEVHZjX1EtcWh0TDIwX1FOY3JuRlZ4X2pjZXZhcGdxb213RjNZdzZ5cmlvcHdpYWcyYlZPOVdIRGJ0V0kyQ3RiUVFWa3pwVVdfSGltS0k1Zk9aLUJOMmFpam9HaDNUcDItWnNFc1F3UjNuVDNubWxRb2lxclpfSFBGT21MTGpIRzdfT2ljNg?oc=5",
+  "date": "2026-10-09T16:46:01.000Z",
+  "summary": "",
+  "publisher": "Stock Traders Daily",
+  "source": "recent",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z"
  },
  {
   "id": "6171ef35b2ab",
@@ -4346,6 +4479,18 @@
   "firstSeen": "2026-10-05T00:18:25.007Z"
  },
  {
+  "id": "6901f0eca362",
+  "firm": "kkr",
+  "title": "GIC Acquires 16 Hotel Marriott Portfolio from KKR",
+  "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOTFRtWU9vWk94S3VIWUEzTkJuT3RtWU5EYVhNVXZ6bGNDRllqZURabWd2NGRWT2lhUXNsQ3BLTWZnYkw5RWNQYmY2SWk1SENlTDlTNlZYbHRScC16T3JPOHB4OXpGMXZQZ3FNbnlVVVZTcWtETEpMdlNWQXU1UEREU2IwaDhyUFE3dzRzdjZyRUVFQnhX?oc=5",
+  "date": "2026-10-06T08:23:14.000Z",
+  "summary": "",
+  "publisher": "Sovereign Wealth Fund Institute | SWFI",
+  "source": "recent",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z"
+ },
+ {
   "id": "692bdd5021d9",
   "firm": "kkr",
   "title": "KKR-Backed Consortium Agrees A$7.7 Billion Steadfast Buyout",
@@ -4368,6 +4513,19 @@
   "source": "recent",
   "official": false,
   "firstSeen": "2026-10-07T00:14:27.072Z"
+ },
+ {
+  "id": "6a16699b8ba7",
+  "firm": "tpg",
+  "title": "Kakao blocks Kakao Mobility US ADR listing, hindering TPG exit plan - CHOSUNBIZ",
+  "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1JVk9VNTNWU3JER0JpYkJQd1pBbHNHNENVLXBsVm1ta2kxVXJVMWtIZDFMREhlODVDTUlXQ25KVUdKSlpPX0FjcW9SUHM2a0VpZDF2LXN4UUhBUjVKZkctb1BjYjgwQUhTUDNBd1ZKQ2RENXpDZ1RzRzR30gGOAUFVX3lxTE5PUWNYZndDQVNseGV6WnVJUHY5cV9Lb29aUGlBUFpBbmhERXBiUi1rZWZteUNTSlNvcGRxYWkzOUltSlo5aTdHdTZ0WDU1U1I1a3ZZRnRpamNrRWg5R3BveWJDWlh2YmZjb1QtUkdsWW1IVTlzR215cU9DM1hxOU1iMWFrTUdXYVZMbU9ZcFE?oc=5",
+  "date": "2026-09-22T07:00:00.000Z",
+  "summary": "",
+  "publisher": "Chosunbiz",
+  "source": "portco:kakao-mobility",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "kakao-mobility"
  },
  {
   "id": "6a8e0c21147a",
@@ -4406,6 +4564,18 @@
   "firstSeen": "2026-10-05T07:17:26.548Z"
  },
  {
+  "id": "6afa2d2772e5",
+  "firm": "eqt",
+  "title": "EQT stock holds EUR 25.53 after a week between EUR 24.69 and EUR 25.53",
+  "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNb2RFSVIxazVfZnMxdkR2UG9GczJzNEthNmI1NllIZ1dzSF9hUzY2WGwxQlU4QW5oOFJ5WUFsaHVQZWZqMGNRbFRaX19DcmJ5dDdUd2RocmRnTGM0RXVrQnVwbVJKYU1wdXBqSFVpY3dfRFNTQkI2ZkpfZnctc2tLQm5wMC1Yd0gxc1pPcE1TSXYwUXZKUjhSMGJLcU5ZTXI3aEItVEJ5aDdQeHhhOU9obklGTjYwYjVVMVZfYnU0YnBBYXJIdlJ2anV3WVpNZw?oc=5",
+  "date": "2026-10-10T08:48:47.000Z",
+  "summary": "",
+  "publisher": "AD HOC NEWS",
+  "source": "recent",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z"
+ },
+ {
   "id": "6b01df5dd878",
   "firm": "warburg-pincus",
   "title": "Blackstone, Bain, Warburg prepare final bids for Fuji Media property unit",
@@ -4440,6 +4610,18 @@
   "source": "backed",
   "official": false,
   "firstSeen": "2026-10-06T00:58:19.774Z"
+ },
+ {
+  "id": "6b9e10e4747c",
+  "firm": "tpg",
+  "title": "TPG agrees ₩1.3 trillion deal for majority stake in Lotte Rental",
+  "url": "https://view.asiae.co.kr/en/article/2026081118542294129",
+  "date": "2026-08-11T00:00:00Z",
+  "summary": "TPG Capital Asia to buy Hotel Lotte and Busan Lotte Hotel's 61.2% of Lotte Rental at 59,000 won a share (~$925m); closing subject to Korea FTC approval.",
+  "publisher": "Asiae",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-10T22:53:17Z"
  },
  {
   "id": "6ba72909f5b1",
@@ -4537,6 +4719,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T00:18:25.007Z"
+ },
+ {
+  "id": "6d40c7975185",
+  "firm": "warburg-pincus",
+  "title": "Warburg Pincus on its GP-led strategy, primaries-secondaries convergence in private equity",
+  "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNTFFtV1p4WFNhbUpybjNTZU9XWXdoNm52Zm42Qm44RnpxMFV4elItTkZJQ3Rsa3lFbm12YW1BT0ZXbU8wTHN5THlId0dmODgtM3doMlBRcExjM193WjhRSExYTzZQTkJ4YmRhdHVHZlF1V3cwb19GaUFwMWhrU051MUtRT1R1THR5ZlVNYl8xb2hfbWxBVWZPcUNERG54TFl5M1p1eGdSUks4LUF1aklHT2hyNzJ6dG1BdTFhamxlUnhUUllmMXA3aTRrWDNSeEptcVZv?oc=5",
+  "date": "2026-10-08T07:00:00.000Z",
+  "summary": "",
+  "publisher": "ION Analytics",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z"
  },
  {
   "id": "6d586b98db50",
@@ -6858,6 +7052,18 @@
   "firstSeen": "2026-10-03T01:40:00.000Z"
  },
  {
+  "id": "abaf45ac7ec0",
+  "firm": "kkr",
+  "title": "KKR & Co. Inc. stock outperforms competitors on strong trading day",
+  "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPb2FYMkpXQmplQ0Y3WlRSVVJXRGJGaURwR3hFSEdmT3h1VW9IZThqZDNMYVdnMEFhcjU1cHFSRmxWaUluQUdWbmQ0d0dXdTZzSmM4SEd5bDV2V3JqWGZKZXQtN3QwelRCVmZEVUwzYzVtTGdtNG0wa3VJNDJrR2FENjdNdWxKbDQzQWVYZHAwZV9JYUZDS1RzWENBaEF2aHZQYW8tSTdScXN4QUE4MFZULV96TDdqYWlqQld3ZjFJaGtKYkdSOHNxV2txMXhzZDBjWkhlVWd4VQ?oc=5",
+  "date": "2026-10-09T20:41:00.000Z",
+  "summary": "",
+  "publisher": "MarketWatch",
+  "source": "recent",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z"
+ },
+ {
   "id": "abb64b946c60",
   "firm": "tpg",
   "title": "Fitch Affirms TPG at 'A-?'?; Outlook Stable",
@@ -7592,6 +7798,18 @@
   "firstSeen": "2026-10-06T00:58:19.774Z"
  },
  {
+  "id": "bcbca301e942",
+  "firm": "warburg-pincus",
+  "title": "Max's Warburg deal hits foreign equity ceiling",
+  "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQVTd1a0JmQklXc2tZQzNfQlF3VlZ1U3ZnSEpNeWdHaWZiQ203X0dBd2JHejM5MEVYekY2LS1URzktQTNXWlZHMEc5N1lzd0JlaG1kWDVheXczbWhQZmgxQlZNbFVqUURRT0hxckwzeVBZc1MzcC03Z0o4YUpUaGVuVEdVbE5VSWR0ZHgtUTRoTDEwTkF2dGpFd3hyUDI?oc=5",
+  "date": "2026-09-26T07:00:00.000Z",
+  "summary": "",
+  "publisher": "The Economic Times",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z"
+ },
+ {
   "id": "bd44fc587aa2",
   "firm": "kkr",
   "title": "Market Chatter: Banks to Sell 3.6 Billion Pounds of Debt Backing KKR's Buyout of DCC Energy",
@@ -8147,6 +8365,18 @@
   "firstSeen": "2026-10-06T00:58:19.774Z"
  },
  {
+  "id": "ce4efec63b3d",
+  "firm": "kkr",
+  "title": "KKR ‘continues to pursue secondaries’ strategy amid firm build-out",
+  "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcG45czVOdGFMbVhkZTBFV3VYOENha01kaU5TVHRjNS1XX1BlZlF2MXVOVkpQRnBMdVoxeTdNZkhTbWlGOXR2UXRGcXByTG9weEExQmpFM0h4U1o1TGNoWkgzOXdqaExUV05fRUZzVWdYcUd2WjJWQ3RCLTJJNXVpYjBkYTlobi1ta0x5X0R2NGZvUVNpV2dHXzF4MUVKbGg5WkVXSWlJRDc?oc=5",
+  "date": "2026-10-09T12:16:04.000Z",
+  "summary": "",
+  "publisher": "PEI Secondaries Investor",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z"
+ },
+ {
   "id": "ce961b1f27f4",
   "firm": "kkr",
   "title": "Samsung Affiliates Put USD 1 Billion Into KKR-Backed Helix",
@@ -8339,6 +8569,18 @@
   "firstSeen": "2026-10-06T00:58:19.774Z"
  },
  {
+  "id": "d3566385fef3",
+  "firm": "tpg",
+  "title": "FM Sitharaman meets GIC, Temasek, TPG, IHH Healthcare executives in Singapore to discuss investment opportunities",
+  "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQUVYwanpPeEZwdjlnME5RdENWajA3UndrMGhlMWIydXZ5bXhFR0hidkpXaGhPNjZqRU9NaG15YkxINGtQTXJNcV9jYnVnQ1BQcjNRRlQtS25vVk5mWjBBN3g0VkkxaTVaOS1HNVRlQ3Y5aEcwaUp2cF81b01oX0xQMmE4WTc3d182RzFBUTRLWUpyTzZRNmJ4NEtMeEtmVmEwV19DWjBvT0NEckc2YmFHVDVPdGd4akw0VnEzaHBaVTlUeUVHZHQtT0s1Zlo0T0FzRmFUOWN1TXlfOHZLMWlrWmJBcWl4SnZwV293OVNJbFlRX0k?oc=5",
+  "date": "2026-10-10T13:38:00.000Z",
+  "summary": "",
+  "publisher": "ANI News",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z"
+ },
+ {
   "id": "d373cf3415dc",
   "firm": "kkr",
   "title": "KKR bets on fund admin with $5.1bn Gen II Fund Services deal; Main picks up Germany’s Raynet; Ambienta’s Maccaferri makes two add-ons",
@@ -8385,6 +8627,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T07:17:26.548Z"
+ },
+ {
+  "id": "d469e5a177aa",
+  "firm": "tpg",
+  "title": "FM Sitharaman meets GIC, Temasek, TPG, IHH Healthcare executives in Singapore to discuss investment...",
+  "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPNUhyOVJWS1djby1pd19JRXhnZzV0TkNPM2VaS1Y1SW82TkxleVdsUGxmYVVGektlY2dnWGJ3TGw2YVlNX3JZRVd5QWFnV2tDRWcxM1NWVmoxNG51T2VJMEU1WVlCSVFOdTdnbTN5c2x6RzBDekdCaG1oaEtFUkRHNkNaeTNucVA0dkhud2NVRU11ZGVPYVY2aU03QW5GZE1ab0J4emM1N2FONmpVT0dtTFk1M011blZmSE1uZ0Y3VjRJaDU0WVZEM29mdkMyckxiWU5ZcWRRRF9GYmY2Si1fYnlB0gHnAUFVX3lxTE55MFJwQklndE44ckpzUEUtRFlHbzRmV2wxZ0poaHVQSkU5ZWRla1l6ZzhzdVJrNGNKUWRoR1lWRHc2Nkl0RWdyVHl5YUUtNE1lVHFqU3cwRndhRXlKUXRJVmtIY2lFMlpYVlVTczNyNWM5anVyS2ZvZ0RqZ2lYQkhIeW5VS2hNRHpfZUxBN215Yk9zZjhuRXBtcEhsR3Q4eFNfX3lIS1ZHQmVaQ0g1bTUwVkdKeFhacWtKM0RwakRKUjdReXJHSzQ5VXFOeV9hM3JvWGdYdHBUbXFKemZ3ZnRQSnpIb2oxWQ?oc=5",
+  "date": "2026-10-10T13:47:47.000Z",
+  "summary": "",
+  "publisher": "Lokmat Times",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z"
  },
  {
   "id": "d55918fad0cd",
@@ -8710,6 +8964,19 @@
   "source": "backed",
   "official": false,
   "firstSeen": "2026-10-08T00:14:37.721Z"
+ },
+ {
+  "id": "db6044c4a423",
+  "firm": "tpg",
+  "title": "TPG eyes mixed-ADR exit as Kakao Mobility weighs new-share funding - CHOSUNBIZ",
+  "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNMWpJbVFEcUdnelE2RkZpZUhTTnFNdUREVHI3RlQyZFBndjN5UUNFY2diWDQtbk1vbXB4ajRrdDRYNWdUM0tXVUZQN3FGLVpHRnlDSHk3S1loTFBCOUx6YXZLSjJhT2tHenZmbmJvR0xIOWxJRG5uS0hfb0JMeGxYY1hBZEJhTXdFMVQ4Q3JROGxDRFBw0gGUAUFVX3lxTE0xakltUURxR2d6UTZGRmllSFNOcU11RERUcjdGVDJkUGd2M3lRQ0VjZ2JYNC1uTW9tcHhqNGt0NFg1Z1QzS1dVRlA3cUYtWkdGeUNIeTdLWWhMUEI5THphdktKMmFPa0d6dmZuYm9HTEg5bElEbm5LSF9vQkx4bFhjWEFkQmFNd0UxVDhDclE4bENEUHA?oc=5",
+  "date": "2026-10-10T21:00:00.000Z",
+  "summary": "",
+  "publisher": "Chosunbiz",
+  "source": "coverage",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "kakao-mobility"
  },
  {
   "id": "db91d055eef6",
@@ -9049,6 +9316,18 @@
   "firstSeen": "2026-10-09T23:37:40.680Z"
  },
  {
+  "id": "e3280a0d801c",
+  "firm": "kkr",
+  "title": "KKR coach warns Gautam Gambhir's constant changes could hurt India's consistency",
+  "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPX0x6aTlISFNuQ0VLY0VZb2UwZEFHWV9JdnZyODh5RFdmb0R5bm0xTEItd0RDYk1qTzhJcC1USkJ6RWcxc3RHNS1BbldFZnpnOFVEcXptakEzRUktYXpuenpqZG5qNk53SVRKZWgyS0hNY05pWGtabUVGMVBKMXhkLWFERlo3R1F0Y1dubDJWVzFZckU5SkNsaU1lVjJtbFg2ZUY2SjFKRTZnM2ZlYkJHWFBrMlN2RURsSmJWWFhvNy1uTE85VXphX0lJSDI1TUFBUkHSAdIBQVVfeXFMT19Memk5SEhTbkNFS2NFWW9lMGRBR1lfSXZ2cjg4eURXZm9EeW5tMUxCLXdEQ2JNak84SXAtVEpCekVnMXN0RzUtQW5XRWZ6ZzhVRHF6bWpBM0VJLWF6bnp6amRuajZOd0lUSmVoMktITWNOaVhrWm1FRjFQSjF4ZC1hREZaN0dRdGNXbmwyVlcxWXJFOUpDbGlNZVYybWxYNmVGNkoxSkU2ZzNmZWJCR1hQazJTdkVEbEpiVlhYbzctbkxPOVV6YV9JSUgyNU1BQVJB?oc=5",
+  "date": "2026-10-10T15:28:32.000Z",
+  "summary": "",
+  "publisher": "India Today",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z"
+ },
+ {
   "id": "e34bb44a3a4a",
   "firm": "warburg-pincus",
   "title": "Ingenia receives third takeover offer from Warburg Pincus",
@@ -9071,6 +9350,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T00:18:25.007Z"
+ },
+ {
+  "id": "e3cd26b141e2",
+  "firm": "tpg",
+  "title": "TPG Is Maintained at Overweight by Barclays",
+  "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNN0dnbTVSYXJXN25PVDRFcWlhbzQ3VTdlWi1yQVRoQ0dXeDRQUEtrLVFNVWdaOXBoN2FUN0xDQTJIYXRrTkltMGtfT3ZQbEsxWmFvQXhpWDlHN3VnRnNGYXU2ekNQUmRZNEN2TG5uOE1tblNVRllickN0M3ptV1NvbE1UemR0N1RRZDFESWhKX2g?oc=5",
+  "date": "2026-10-09T02:12:25.000Z",
+  "summary": "",
+  "publisher": "Moomoo",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z"
  },
  {
   "id": "e3d3c640577c",
@@ -9216,6 +9507,18 @@
   "source": "coverage",
   "official": false,
   "firstSeen": "2026-10-05T00:18:25.007Z"
+ },
+ {
+  "id": "e6eeb5258512",
+  "firm": "eqt",
+  "title": "Media: EQT teams up with Norway’s oil fund for potential EUR 11bn bid",
+  "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9faGxHWTZBaWY3em1tMmJRNl9MN2hSWEJpeHhKQXlDUXNLNDIxN2ctUEhReVZTS2FHUlVuelphOG8wSWNPM2VwRGVjR1hqdHpMOU82MERZeE1IWEZCOUJlU3JqeHFVZnA5OW5wTmY0RQ?oc=5",
+  "date": "2026-09-16T07:00:00.000Z",
+  "summary": "",
+  "publisher": "AMWatch",
+  "source": "apac",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z"
  },
  {
   "id": "e744ea866bb0",
@@ -10324,6 +10627,462 @@
   "firstSeen": "2026-10-09T00:13:53.254Z"
  },
  {
+  "id": "7fdb0bbab826",
+  "firm": "macquarie-capital",
+  "title": "Sakana AI’s LLM Peer Review System Catches 73% of Core-Claim Errors",
+  "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPOW1sUHpJLVk4NlJhRWJiUmNnaFRXODZ5a19XTEdSQlVKYVdQcGY5UDdEdkFKY0Ytd3lsei1tSGswVDJVSEw5QlZrRm9hYWp4RXRHQkZEdDVNX2ZrWWhnRXZ6U09pWUw2OFJrOEdMX3pFQnNiNjd1UHNjSElJZmRsaTlMeXBqSkhKSFl5NWhvV254UndwQ0pjSTE4aDlWVDBseDZWVG5jcENtbnNpVE4zcHZn0gGyAUFVX3lxTE85bWxQekktWTg2UmFFYmJSY2doVFc4NnlrX1dMR1JCVUphV1BwZjlQN0R2QUpjRi13eWx6LW1IazBUMlVITDlCVmtGb2FhanhFdEdCRkR0NU1fZmtZaGdFdnpTT2lZTDY4Ums4R0xfekVCc2I2N3VQc2NISUlmZGxpOUx5cGpKSEpIWXk1aG9XbnhSd3BDSmNJMThoOVZUMGx4NlZUbmNwQ21uc2lUTjNwdmc?oc=5",
+  "date": "2026-10-10T22:02:18.000Z",
+  "publisher": "MarkTechPost",
+  "source": "portco:sakana-ai",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "sakana-ai"
+ },
+ {
+  "id": "5e067eabc331",
+  "firm": "tpg",
+  "title": "Microscope Digital Cameras Market To 2035: Digital Pathology Adoption Drives Growth - News and Statistics",
+  "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQdjhmT01FbDNSMXU0OEFyUV9ZR19NZ1lvYkV4LUtGWlo4a1pZNk9EMGR2MXZmbEkyZmJBSUFCcE9zWmt2QVR5dlh2ZXRfSDNpTnlEWGVoSFZJNDZoakM5ZnJkLTF2VmNnZERDVEFXZ0pkWVhVdHVwWGVmZF83aVZOMWwzT3E2VjNLSGIyaUZtb2tmYmZZTXZubU5BU0hOUWhKR0tRQ3B6NGpjNzVmR3FYMjFDQlhCdmZVUTZ1WWNn?oc=5",
+  "date": "2026-10-10T19:46:05.000Z",
+  "publisher": "IndexBox",
+  "source": "portco:pathology-asia-holdings",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "pathology-asia-holdings"
+ },
+ {
+  "id": "707f2247f3c4",
+  "firm": "ta-associates",
+  "title": "Paul Toboni's Comments About Nationals' Payroll Situation Should Be Encouraging",
+  "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPUTFsdzdJZUI0NE55SnQwR21TUlZKR3RNLWRCWEQzbEpSZ1R0U1MxVlNWaUZEQ2FCT1VXWFVXV0l4V3QyeDdyUE83MmZmM25SS19vNUd2U2F2QVhNdkVTUEo4OE45Q2xzTDJfcnBzeDlvTkN5MHFQbndwN2ZscHhRQ091UFpVWnlGY05UU2ZrX21xOEtqTnpJYlJpeVprUjBI?oc=5",
+  "date": "2026-10-10T19:29:51.000Z",
+  "publisher": "Sports Illustrated",
+  "source": "portco:payroll-inc",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "payroll-inc"
+ },
+ {
+  "id": "e150a438e92c",
+  "firm": "warburg-pincus",
+  "title": "Capillary Blood Collection Devices Market Forecast to 2035, Driven by Home Diagnostics and Point-of-Care Testing",
+  "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOVGR4WDRtY2h3R19OT0JHek9tMmN2LS1rUlR1U09RWTlhVnIwSUQ2M3lUNm93NlJONmc0M09BcHBWcnFiNTVrQUx1SDc5MHZsWklIRVhaT0dFeGtBR19TZHRVYjlpbHpWY1VJQmE3VVNveVpFbkZscFZQQjJJaGhyYkN0VnVrSE5BamdzWktRVEVPRXRscTNQd3hXWndoNVp3emNPRlVqd04yeDlnTTFWb2NrbTBoSmtaTDFhdExnbDVwUEltZ2dwYVRCZTdXRFlzbzJvU1c1TjU?oc=5",
+  "date": "2026-10-10T19:16:05.000Z",
+  "publisher": "IndexBox",
+  "source": "portco:capillary-technologies",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "capillary-technologies"
+ },
+ {
+  "id": "959794e41239",
+  "firm": "ta-associates",
+  "title": "Guardians would need $80 million payroll increase to reach proposed cap floor | Jeff Schudel",
+  "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQcGNKbzE3ZEt4VXZ0aVdjQ1ZocFU5amIxN0JMYTlUZEROemNwWTlKb0M4eFFKZGxLbmhJQkQtTU04VFRzem5YNWE2azk3cE1PTGdMWnVvX2piTkxydzBjR085VE1CNGZJS3VKV1ZIYXl6ZzAwVlZrSFBvalo3OWVWUWtZOUJzWGRfNHpiTktfMzRhVVlabV9QVVl4U0FCZzZGazB2MlF6aEp4SXpISUJWdE9VSTBTNUVvX3Ayakh6QjBUaGxfUHROdQ?oc=5",
+  "date": "2026-10-10T18:59:46.000Z",
+  "publisher": "News-Herald",
+  "source": "portco:payroll-inc",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "payroll-inc"
+ },
+ {
+  "id": "6a59376395f8",
+  "firm": "warburg-pincus",
+  "title": "Daev MOMO Paints a Wall at 268 Main Street in Buffalo",
+  "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZi1IWFprWkJ6bmhLNk9hQzVQbnhOQVR2T0RUaUx0TlJPaTJiRzN6Ni1XaEZObGtQdXpOZDNHYThYRmxaTjN3YTNhS0ZkTTNhZ0ZqQ2tpMi1ZQmRPWWUtd3lSRjJvZnpQMkZsMF9JSzhQQ2pCVXh6NjF3M3V0eW10QWViMEJ4dDdtZERVNTJyNDA0azVzUF9N?oc=5",
+  "date": "2026-10-10T18:02:51.000Z",
+  "publisher": "StreetArtNews",
+  "source": "portco:momo",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "momo"
+ },
+ {
+  "id": "0c20d8c4ad64",
+  "firm": "eqt",
+  "title": "Former IAS, IFS officers defend Election Commission and SIR in an open letter",
+  "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQS3pYb1pNYzhIQmNxOWZkTnhIazBpQmh5ckwzZ1loZ3QtcXFpVXN3aDBleThSbVpLWHE2RmtIMkpzM05Vc2FzM3B2aWxDR1dBVFNqZ0xHSEdmOENxMVh1SldpVWhQb3BSVExoN3p1Mld6Znh4a2xUX1V1VmVDQXB2MFpGa1gyWUo3ZlR0V2N2SXF2Q2cwV2VKOVlQSmVRM2lfYkFpM1lyMUZYcW1kdUo4RlB4TE01eUh5UXdEd1FZMlMxWC1fblMxREhtel9HNGN20gHXAUFVX3lxTE52XzBsMUdvVC1tRDdDRWE1Vk9YQzRkbVNJZlZaNkZqdTZMLS04M0VMN1kycXFMR3NyN0NuaUpJMDFPN3RwYVVPelFaRmRrV3JiSkFtTXYxdmhBb09uc1diMUs0ejZoUFd2bkZ2cFBHOGphWHlBWWdLTkVzVEozMXg5aW5Vd1NydW9NUEhEMnprZ2J6bmI3ekFLa3RtMVo1NUlYNmdGLXpRZ3c1bnl1T055QTN2QXN5OHFHZlBBbkpZbFYxQUJRd3U0cFg4WlpsMDY2RTQzZ1FV?oc=5",
+  "date": "2026-10-10T17:20:39.000Z",
+  "publisher": "The Hindu",
+  "source": "portco:ifs",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "ifs"
+ },
+ {
+  "id": "aa0ccac7b66f",
+  "firm": "eqt",
+  "title": "Ex-IAS, IFS officers defend SIR and EC, question rigging charges",
+  "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxObV9nUkN3amtNSkw4cUduTGdIVlVLaWw3VXU5UzgtVGZnN1o0Z1pmYnNsam9QRnpHOVotaVdhVWxGampRVEhMb09DOWlSNUZPcjBSalFLb1lGaTMwbTl4MDU0VmY4aDNvd25kc1JzRXpDQ0k4WHhGd09GSnlrSEtyVjdwM0tkdEplamlCQy1xbDNmcUtFSF91SjdYRmVJczd3VHJvY2pxdVRKUFZvcll4ZnZ6ONIBuAFBVV95cUxQdjltZFk4UVRsSHpETWs4OTNqa25FbDVIZ01VY0dzX3dHZVJ6RGVWLUoyaktPdllhZTkySXZ4eTRYV3VWbmpKVDUyNTBHRVl0S3ZueWtyZEJMTUpfQjE1MHlmajdvc1JHRkJyenlYWjZvVDBMNmxLaFAwbHJRVXN6S0Z4VllMSTFtUmxWMXAzXzA3NFM1dEhxbW1mUTFVOUFUYndwMjhZT0k0Ukg1MUNqeUJUOUFqWUlq?oc=5",
+  "date": "2026-10-10T16:12:00.000Z",
+  "publisher": "The Statesman",
+  "source": "portco:ifs",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "ifs"
+ },
+ {
+  "id": "0809cb175110",
+  "firm": "tpg",
+  "title": "Airtel Money Lists on London Stock Exchange at £5.3bn Valuation",
+  "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPUVRvTy1RTkYtZC13dmN5bjY0cmc1azZxTWZERmhFSEtQUHlGQU5jS2xMa0t6R3kyWHNpajhyeUpzc2Q5WWU0Z205X2xNamhCaF81WDdGbFNjQnFYT2t0VzNlU1o5dE5XYTctb0pFMW9kaDhvMXN0ejlqd3hMdExSTGRCZ2VQMGJnek9hQVRudXlZN2M2a0pPcGZ6UU5SR1g1RkJ2VQ?oc=5",
+  "date": "2026-10-10T15:44:34.000Z",
+  "publisher": "THISDAYLIVE",
+  "source": "portco:airtel-money",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "airtel-money"
+ },
+ {
+  "id": "549527dee6ff",
+  "firm": "eqt",
+  "title": "Suzuki reflects on the good times -- and a few 'what ifs' -- from 5 years with Cubs",
+  "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPOGI4UldGQVg1UzNLNHdsbVlyM0E5R0lUU01kRHFLQzY4ODhhZEd2U3JFZlRBT1N0SHNRaWtIZGhUZklMU2xOTFlaRXdQMVJlaGhHQUF1WXVRZG9BQTZuUndUNDlxODIxNTZDVVZHel9hdmVSYWdKVU1ZRV9xRHZTT28tWjQwWm13ZHd5UkUtNA?oc=5",
+  "date": "2026-10-10T15:13:34.000Z",
+  "publisher": "MLB.com",
+  "source": "portco:ifs",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "ifs"
+ },
+ {
+  "id": "787ab6c3d65e",
+  "firm": "kkr",
+  "title": "Jio Platforms IPO: ₹30,200 Crore Issue Targets ₹10.3 Lakh Crore Valuation",
+  "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZHVQaTBSVFY3bnZBaWdXSnI5eFVFN0dlLW0yMmVabU4zR08wWEtCZjhkNVBMWWM4TEdpeWtjcmJvczBQRTVXaTVFVjdNSlFzMEVCN0Vlcm9SSURtWHN4YWoyT1JmS1owVTdnY1RDYndDc0ltc3czUzNRYWZTZkt2eEdMajI?oc=5",
+  "date": "2026-10-10T15:01:24.000Z",
+  "publisher": "NiftyTrader",
+  "source": "portco:jio-platforms",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "jio-platforms"
+ },
+ {
+  "id": "8c9b523f7293",
+  "firm": "tpg",
+  "title": "Jio Platforms IPO: ₹30,200 Crore Issue Targets ₹10.3 Lakh Crore Valuation",
+  "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZHVQaTBSVFY3bnZBaWdXSnI5eFVFN0dlLW0yMmVabU4zR08wWEtCZjhkNVBMWWM4TEdpeWtjcmJvczBQRTVXaTVFVjdNSlFzMEVCN0Vlcm9SSURtWHN4YWoyT1JmS1owVTdnY1RDYndDc0ltc3czUzNRYWZTZkt2eEdMajI?oc=5",
+  "date": "2026-10-10T15:01:24.000Z",
+  "publisher": "NiftyTrader",
+  "source": "portco:jio-platforms",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "jio-platforms"
+ },
+ {
+  "id": "36ecd6c5ca14",
+  "firm": "ta-associates",
+  "title": "SaaStr AI App of the Week: Remote. The $300M Payroll Platform Your AI Agent Can Run",
+  "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbFQxZm1CNk05WHhCd0RNc0V0WkJmZk5maEs5X0pseTAtWm9VdjBKd2hyUi1jMFJEaVpaN2hFbGJXMmlJd1dkLVZKSkZJOEhrVkhZc19YRnhwamdVbDZwSDI1Rk91N290b1I1MjdQMzdqb3BHVEdBTzRfT0Etd01IakZmVVg0TjFHU2s0aXREelBRMV9DRzBDTW5VNW5DVGptSGpteUxscw?oc=5",
+  "date": "2026-10-10T14:52:47.000Z",
+  "publisher": "saastr.com",
+  "source": "portco:payroll-inc",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "payroll-inc"
+ },
+ {
+  "id": "c737b44315e8",
+  "firm": "eqt",
+  "title": "124 former IAS, IFS, IRS officers write open letter to citizens; defend Election Commission, SIR",
+  "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQbFBLTTZ5NTBMUS1EeXVIUVBoQU5CbUdSZ0pwN0VMRDhPYmk4SG5XTlljQll6MHAzRENqVHhaQm01dWlyOHhUcGJacjNCb2ZiVUo3Q0c5dEtPRy0tTjRWQjBuNWZlaUpOWVRQOEFsbXprS3JxMkVrUDV0SkpLb001ZUlfbVNaQnZ2QWJTb1oxYmhfUTZITnJFM3N1NE1HTFdXa0lDVmlMUVdNTG9tOFdGdnVzSS1NUUpZQm44S3VqX21Bdm9JdEU1alpXRGY5d9IB0gFBVV95cUxNdTI5UlVFYmZnc0NNYTM3eTYycmFZTHJvM2JqTGNBRElxNXJiM2ZfOU04MEFUamxHS0pFRnN0MEZoRkp6b2s0NVg4VDd2UnIxRGROSmNFN2JGX0c4UDN6N1UtTXVheGgtOENheGZDNWo3TWt1ZWpTT1RmT2RhWG5NcjNVMEw1WFBqdDRQSXJoWk91N1ZZdTlWUlZFZHdQS1NReWM3Z0JKNDJteVd4dE9WT1lubzJLVU81bUd4Y25fRnRtb19wU3RVXy1jdnQ3NXVsU1E?oc=5",
+  "date": "2026-10-10T14:07:30.000Z",
+  "publisher": "The Tribune",
+  "source": "portco:ifs",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "ifs"
+ },
+ {
+  "id": "8867c244d494",
+  "firm": "eqt",
+  "title": "124 former IAS, IFS officers write open letter to citizens, defend EC, SIR",
+  "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRlhJbmI0aEtQT2QydnlRbkpBVklsN1FJOGJXSmxWZVRCOEZKQ2d2MXhNOE56MVdXSk5mOXdwVFhpOVkxLVc1MzRYNGFUNng1YmdnOEJXSHJ0SG1NMzJIa0NZdlVfVzR1WWdBMnViSjhsdXNEbzd1dzJOT2JYQ2MydGdSZ2VUZG5PcVozektBVEZ5VEJuZ1g5a3puTW9yeXVUek1Dd2hQeGdLaWVmUU5KZnBmajU?oc=5",
+  "date": "2026-10-10T13:00:40.000Z",
+  "publisher": "Deccan Herald",
+  "source": "portco:ifs",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "ifs"
+ },
+ {
+  "id": "7e4e8ce16cfd",
+  "firm": "tpg",
+  "title": "Department of Pathology, DMC&H, Organises CME and Workshop on Modern Immunodiagnostics",
+  "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQmtmTTgxLTdoVmlDblhsTnlTckRyUmUxSm14YUhBYUFTbWc3NjZpbFhhSkF3U0dTdzdVaXJucTBqVDVJdk8wUG11V1BZaEJWZ2Q0aHZLUkkwdl8zUThiejZZdGVKUlVVYmx6VHhBQWpSUTZhTkFuZGduWVA2aDBhN3ZUVE51TGNKbXA3Wms3clkwR2ZOTVFuUjFDbzhCbHZZUThTQnZiNWFxandidWo1UXYyVkNvRlNNSWpJ?oc=5",
+  "date": "2026-10-10T12:12:54.000Z",
+  "publisher": "Cityairnews",
+  "source": "portco:pathology-asia-holdings",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "pathology-asia-holdings"
+ },
+ {
+  "id": "f41ad3105303",
+  "firm": "tpg",
+  "title": "Airtel Money slips below £1.96 offer price after London debut",
+  "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMVgwUHZ1WkFKX0UzS2RSRkU1dzV2YjZQaFNRSi1NZERqSGtxcC1faVI4X2pQVU9JRHM3dXhzMkdQUjV6MWljQklONzNXRnNaM0Vtd20yelF5UklyenNJRzFBUWNNR0RQVEZwWlRsN0xXMnVFV0hqeDVFX1N2MGw1VGFhaC1BV1VjaVZseGNpLWc4VnhZ?oc=5",
+  "date": "2026-10-10T12:04:06.000Z",
+  "publisher": "London Daily News",
+  "source": "portco:airtel-money",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "airtel-money"
+ },
+ {
+  "id": "390f11d409f6",
+  "firm": "ta-associates",
+  "title": "Nominate local Yarra Ranges legends for community awards",
+  "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZnhyOVM0QXdPdHJBd1Z3Y2ZVT2VmV3l2eUFHaUc5Z0ktZWZPR3dTUVBOZldQMmItMHVoamZkLU1oQ3JOcUdGU1BRQjJ1a0Q0dFdoR3R4eWFpMklwbVhadlRSWGw0Y0Vlb19VbXZBNHZXS1pIQ0JUbUU2QlpLYTVqaXUtTnZJY1prLUFCam9zOUZCWTZEamhMUVMzb2owd2YyZ1g3aEotY2p4TGZSWnRtdWhCTQ?oc=5",
+  "date": "2026-10-10T12:00:03.000Z",
+  "publisher": "Upper Yarra Star Mail",
+  "source": "portco:yarra-capital-management",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "yarra-capital-management"
+ },
+ {
+  "id": "1c0969e5b86f",
+  "firm": "kkr",
+  "title": "Can Reliance Jio Simultaneously Pitch Itself To Global Investors As A Technology Giant While Its Billionaire Owner Is Being Publicly Accused By Elon Musk Of Benefiting From A System That Delays A Potential Competitor's Entry Into India?",
+  "url": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxPdk4tU29uNFlIRmNqRDNsU2JwM1hERndMYTVkMVZmdlFjQmljcG5UeThnV0d6eGNMREJUVFhUdnNUajlONXljazFmcHMtY3VDal9tSTNZbWIyclhjcjRYV0F0RzNlT09Zc2tfdEljaTU2RE1VR3FiT3k2TEphMUVxS3BKQ2h3b1hOLTdTTXFMUkVNZ3dnWFZNVThDcTAwUGFUSWcxWFZWSzU5dHlabjhiTFAxTWVkLVI1T0pJd1lSbThrS09hb29WNXA5RmQ0dmVrZ2hnWWs1ZU1lTWdMZ3pFUGc2SkRuUmwxanFwV1FwNDgxX21ndS1tVWo3VFJsb3BZOFV4RG1FNzBuOXZmZlhTV1g0TzlvYkJ6WHlqLVo2emxJd2FhSmJOUjNlaGFRMS1uQTNFcFpxbmVoeVFGN21qODU1QWxXUThSeDg5U2hmTVV5THZMM1hr?oc=5",
+  "date": "2026-10-10T11:50:11.000Z",
+  "publisher": "Inventiva",
+  "source": "portco:jio-platforms",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "jio-platforms"
+ },
+ {
+  "id": "3cf9e2ceb870",
+  "firm": "tpg",
+  "title": "Can Reliance Jio Simultaneously Pitch Itself To Global Investors As A Technology Giant While Its Billionaire Owner Is Being Publicly Accused By Elon Musk Of Benefiting From A System That Delays A Potential Competitor's Entry Into India?",
+  "url": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxPdk4tU29uNFlIRmNqRDNsU2JwM1hERndMYTVkMVZmdlFjQmljcG5UeThnV0d6eGNMREJUVFhUdnNUajlONXljazFmcHMtY3VDal9tSTNZbWIyclhjcjRYV0F0RzNlT09Zc2tfdEljaTU2RE1VR3FiT3k2TEphMUVxS3BKQ2h3b1hOLTdTTXFMUkVNZ3dnWFZNVThDcTAwUGFUSWcxWFZWSzU5dHlabjhiTFAxTWVkLVI1T0pJd1lSbThrS09hb29WNXA5RmQ0dmVrZ2hnWWs1ZU1lTWdMZ3pFUGc2SkRuUmwxanFwV1FwNDgxX21ndS1tVWo3VFJsb3BZOFV4RG1FNzBuOXZmZlhTV1g0TzlvYkJ6WHlqLVo2emxJd2FhSmJOUjNlaGFRMS1uQTNFcFpxbmVoeVFGN21qODU1QWxXUThSeDg5U2hmTVV5THZMM1hr?oc=5",
+  "date": "2026-10-10T11:50:11.000Z",
+  "publisher": "Inventiva",
+  "source": "portco:jio-platforms",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "jio-platforms"
+ },
+ {
+  "id": "29f6cc1918e5",
+  "firm": "kkr",
+  "title": "Jio Platforms IPO: How Reliance boss Mukesh Ambani's mega issue compares with India's 5 biggest IPOs - price, valuation",
+  "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPN0Z6YlhQbi1IeWVtazNhNzAyRERaQm1FMEsxRTdXTEE4eEd4M195TlgxQWRIZFZzM3ZrSmthOHdnbHVvUVhPbEtldTBPclRVTW9BME5hT3BHRWduUWtiTkxHd3B2amRiQ0ZrQzFvU3FCMHZKVkhMdnVvekgwRFZPU1liN21OTmNyWWtiUDlrellfWnJCWFZKcVBDMmRFU01WTVY5d08wYkZOci0zMGxGWm4zeG1LZDlZU0E1a1NGVzlyOEZqN3RqZnZhbEltR0Fzb043cGc0ZUpTMnotQ3RvSWdfSkdfSnpCa2w5S0RHWUNUNFl6NkhFdUI0LS1GNDhScEE?oc=5",
+  "date": "2026-10-10T11:18:43.000Z",
+  "publisher": "TradingView",
+  "source": "portco:jio-platforms",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "jio-platforms"
+ },
+ {
+  "id": "8a4db5ced1ce",
+  "firm": "ta-associates",
+  "title": "Card surcharge ban brings change",
+  "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQaUU5TGhfU1dvbVpqUTA4dTlZdUFyTmlvX1NFVkdYUHFvWTZTbjU4NjNKVVN5XzIxR0tzb0Y5b2FLcHNlalp3bXV3WURTNEhYVllvYkpiSm94c3BDVFZ0a1dTSy1uU3NsYWg2QlJ3RGlGS3oyRm9YdUhtWWhuUGg4M2hIeGxHLTdZQ1NmQTFVclZNaDQ?oc=5",
+  "date": "2026-10-10T11:00:02.000Z",
+  "publisher": "Upper Yarra Star Mail",
+  "source": "portco:yarra-capital-management",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "yarra-capital-management"
+ },
+ {
+  "id": "885a5425f8d2",
+  "firm": "tpg",
+  "title": "Rotary Club of Hyderabad Deccan takes the wheel for cancer pathology and diagnostics",
+  "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbnotaDRYNjNhcko3czN2SjY5NkZxVzhWam1CUmZBSDhQM1J0REwyajkzT21HNHdsLW5ES2h4dHNXclBIeno1bVNEMktmRWE5Y3czRUsxMVNDWWJmSUlWamtTRnU3c0xRMG1YS25laGlLYWdzZmgzU2Q1OGx6bVlsSVBQNXRKVlFRN2NqN2lqZDZFTGZsVTlWQm1rWlJ2ME1Gczk4Yk5IWUJPQ0k5WmhtUQ?oc=5",
+  "date": "2026-10-10T10:49:08.000Z",
+  "publisher": "Telangana Today",
+  "source": "portco:pathology-asia-holdings",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "pathology-asia-holdings"
+ },
+ {
+  "id": "245a4d790f02",
+  "firm": "warburg-pincus",
+  "title": "Capillary Separation Modules Market Forecast to 2035: Biologics QC Demand Drives Growth at 6.2% CAGR",
+  "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNbTlQNkFXWjhTLVB4eWV2RHVXVVZmWXVFNHN4SUhYekkxUkpVeXl5Z1EtbXhWTldJSU9CU0R4WVZCdmdKTVNEQ1dlWU8zMHA0V2hnenpSLXVYMEdjZUhUcHZoaE5rOGR1dnpWUDI3VTVQTTBCMUoxZU1IZnZkemw1amxmTGlKMVBDNUd4OVRVN2FCN2U0YllfY0hoelV6c3FxM0hrb3IyN0VzX0puRnY0RHVpa3Y5QjhyWk0zazd6TkxfN2VxQkJn?oc=5",
+  "date": "2026-10-10T10:16:05.000Z",
+  "publisher": "IndexBox",
+  "source": "portco:capillary-technologies",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "capillary-technologies"
+ },
+ {
+  "id": "a90071cdceb1",
+  "firm": "ta-associates",
+  "title": "ExtraOrdinary Event to celebrate life, diversity and all abilities",
+  "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYUFaUzg2dUItekVJY242SjBOQVphdzlob05FaTE0UUxxSjNIbF9KUkxUbEJHWm90bW9QUlVQWDBPY1YzcFBoQWphTUE1RGctaHJzVDFkekxQeU1PY2JqSlk4M25Nb09kWUIwMUZseEJLTFk5VXZYSnN1LWxTY1V5NzRuLWVjSVBGd0ZEakhWdEo1SHFXRGdVNXJLQ1A4Vmplc1p4MWxrV0ZTZjZnQTc4dkNxN05NTzNDNTduX1gtaw?oc=5",
+  "date": "2026-10-10T10:00:03.000Z",
+  "publisher": "Upper Yarra Star Mail",
+  "source": "portco:yarra-capital-management",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "yarra-capital-management"
+ },
+ {
+  "id": "0b754e6c9193",
+  "firm": "tpg",
+  "title": "Lung Cancer Genetic Testing Costs in China Could Drop to a Few Hundred Yuan as Zhong Nanshan's Team Unveils AI Pathology Model",
+  "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE0xelRFOFRyTUhHV0c0VjZJSzh4NWx0SHVseDZWVncwalBqSG9FSXdxYTFUVEdXTXMtNmhyRVZ6RjdOYnpDcDFpb3VEV2lrNjFncE5panFNcWh1ZVlPcEpRVUJ2QlhlbVpUVUd0dXZWMTJCNkJPYlE?oc=5",
+  "date": "2026-10-10T09:35:00.000Z",
+  "publisher": "BigGo Finance",
+  "source": "portco:pathology-asia-holdings",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "pathology-asia-holdings"
+ },
+ {
+  "id": "749338434bed",
+  "firm": "warburg-pincus",
+  "title": "Navratri 2026 Farali Momo: Steamed Dumplings For A Himalayan Twist To Your Fasting Menu",
+  "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQcmJRQldjWlZQU3lwanhidFIxSWNtZHV6cl93a2g4MEVpNTJuZEYxS0N5T1g5YlNNTTU2V3B3T3prY05qUDdTNFYwTlBOY2FJanQtMmpsWDN4YVRjSFZzbWd5blZNNkpQaWl3RnNZM2U5a0g5TDg3c3RUd2R6MVRCR0g5LTJwLVJkaF82S05uV1NkbExFajRuLTQ4SnUtTXN5dG92TXRnV01wRjJRVTZyOEd1UGhsd00tdmV4eVZWNNIBvwFBVV95cUxQcmJRQldjWlZQU3lwanhidFIxSWNtZHV6cl93a2g4MEVpNTJuZEYxS0N5T1g5YlNNTTU2V3B3T3prY05qUDdTNFYwTlBOY2FJanQtMmpsWDN4YVRjSFZzbWd5blZNNkpQaWl3RnNZM2U5a0g5TDg3c3RUd2R6MVRCR0g5LTJwLVJkaF82S05uV1NkbExFajRuLTQ4SnUtTXN5dG92TXRnV01wRjJRVTZyOEd1UGhsd00tdmV4eVZWNA?oc=5",
+  "date": "2026-10-10T06:25:33.000Z",
+  "publisher": "Slurrp",
+  "source": "portco:momo",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "momo"
+ },
+ {
+  "id": "41f929ddbc1b",
+  "firm": "tpg",
+  "title": "Airtel Money debuts on LSE in biggest listing in 5 years",
+  "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSVVEVzlfTTRITVJkaEtCaTIyR1VRcldFbGRfeHRraXVTU1pUNzlQbXlrelJuTFNvUDVsOWd6ZmtkYS1oNl96THEtWFZxSDBIc0dFekJYU3N1N28yTkNPbGprYUFoLWlfX0dKVXpxS1lOWEtOWGpoTUpoODRYc2dVSUpyRnpTaUNXeHQ1dmFRaTNhVkRIMG5oUUZxY1RjT2x1TmUyMEwxbmlzbTZzRGNwbGtkcTV5c29penpUZ2JOUm1NTEt3M3IxVlpvT0xLcl80R2tLMUhlWU4yZ9IB0wFBVV95cUxQOWt1Z2pQel9JRXlBdzA1X2hSb01UelZlbWJUMWNBZUNMUFh3d0RLN2xMN2otSVo5U1NaaTZobGtjM1FyaGg4ZXJFd1gtYm12dkR2bldEMXcyYXdaMkFybFQtNHFqYXdyeVpPVFVwVHU0RE1ESXRDQ1RxRDhVcU9VbF94UkhlTzZ5a2ZXSURGOGRzb2VpTnVXREJ0N3NuOV9MUGRybGxGSHRtU1FHSTNMU1lqS2ppQzRPeEI4MnhHRHpPTFlLQzczVUlMbUY2NG5qVUY0?oc=5",
+  "date": "2026-10-10T03:56:23.000Z",
+  "publisher": "The Economic Times",
+  "source": "portco:airtel-money",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "airtel-money"
+ },
+ {
+  "id": "3550003f0e90",
+  "firm": "warburg-pincus",
+  "title": "From Angh to Shape of Momo, here are 8 Indian films that dwell in the Northeast",
+  "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNeGFJZmN4Vm0tQW45X1hKbzUxclZiNGNZNDhueDJzcDhlZnYxcExOR1NDcW1OOEFYb2lBOGhiZTRHeUdtQUVGTElQOG5vSmp6ZHdLa2pBSTFrWHRKZnRpM3hOWERJaEEtN1NTemhmeXI4RzY5YWxvMjkwMndXT3dUeThQa0haN3FIOXpNVGx5S05LOF9fU2Fnb1NTNTVsVWx1V2ZrYzd0ZkZRckRoNTk5V29GeFgtVmw1M0JYaA?oc=5",
+  "date": "2026-10-10T03:30:00.000Z",
+  "publisher": "Architectural Digest India",
+  "source": "portco:momo",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "momo"
+ },
+ {
+  "id": "041e8602210e",
+  "firm": "ta-associates",
+  "title": "India's New Labour Codes 2026: Key Changes in Payroll and Statutory Compliance",
+  "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTHR3RlJnYWhxbUo2NmRRT09ZTnU2ZUg4SW1QMVpHNzRyUjBGWGlheFBwWXNBRUo1MGk4dUtpT3hIMjNHdl9qb0E4bDBBbXFXM3UzOFZFOUU5cm1lLTR2ZUt3Z1dCVFNCRlNsRWt5NHFPNzIwcDhLZGotbmgwVHhSZEhVU2NkTlNSY2hIUkQzajF1UUJtTmdHckF6TjgyUU5xb0lTTE8xY3FIOUpTRUFVaTZGN1IwMWJ0QVRlWHYzbEY?oc=5",
+  "date": "2026-10-10T03:24:00.000Z",
+  "publisher": "CAclubindia",
+  "source": "portco:payroll-inc",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "payroll-inc"
+ },
+ {
+  "id": "a698d7681064",
+  "firm": "tpg",
+  "title": "Airtel Money’s London IPO Got A Steady First Day Pop",
+  "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNUk4anRSMENicV9Ra3NUVWZ0WEVod19jZmxhQ1R3bkd3bThtUE9EcXZIMDRpT2QxbWtrX3hwbHhXOVhKZVN5eFBQVkNkeFpBS1V5Ym5xeHNwdmV3RzVZaTNXdm1QaGZ0OUpkdEttTGNjWUx1emZiWk9qVnVtS0lkUlhPemdIc2M?oc=5",
+  "date": "2026-10-10T01:41:15.000Z",
+  "publisher": "Finimize",
+  "source": "portco:airtel-money",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "airtel-money"
+ },
+ {
+  "id": "e805cbbfa19c",
+  "firm": "warburg-pincus",
+  "title": "GCash parent Mynt prices proposed IPO at ₱6.60 per share following strong institutional demand",
+  "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOVGhWam1iczFJbkFvSlZqNW9WcWQ1RHU1VEVFSTJwbnVISlVrY3Bpd0gyMUktWjktUjFRUTdGMFlaSThYbHhMeGdFRlJNRVBDZHRjQ2JFRmJwYUNQM1dSeGNOMXRXLVBiS3VOMDB3UVdLYmIxaTI2cV83VVl0STNWWlFKbkY1UnByWUgzc1I3MjRURDA1TjVpX1B1c2VRVGJSbDFFeHVlaVV5dk91T2Zwb0IwRVF5dDhVUkZ3RkE5NU92eDhSSGNEalc3ODd3Z1HSAdwBQVVfeXFMTU5zRVZRZWRYdWtIUERIRjJQWll4Mm5uWUVGQklsVm1JUUp4LUZLNDFJWE53c0syd3MzdmMyQ1JHV2VNYzdDazA3cDAwendielRKMmx1S2xUbHdRekdSdHNDYnMzMDNqUXZ1bHJSbGhvUmZFZUV0M04xYUI2dzFmQ2ozelhWeDRyVXg3NHBRRmFQY19wdHNnSjFyTk1ObjhIaDRUR3FVRkxKam01YnB5VTNEV2wxa0l1RGVPX014OFNPT1VuaU9SNnBhemhPOHJEWmNUVDF1RzNueFlsZQ?oc=5",
+  "date": "2026-10-10T01:10:16.000Z",
+  "publisher": "SunStar Publishing Inc.",
+  "source": "portco:gcash",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "gcash"
+ },
+ {
+  "id": "12717aaa1993",
+  "firm": "ta-associates",
+  "title": "Late artist Fred Williams’ widow Lyn lists historic South Yarra home for $12m",
+  "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNQ084alQ1T3dRQ0xmOWRfanRCTWJ0WHd5U2ZLOU9FdG9EaGZ4b1ZuU0s1X1hIVVhhNTFDb1FMZ19NUHNxYnliSGdTU3JodGFpdURXWk5mRGZiRUxYRDhQNFBiZnRKUWJDS0Q2WXRDUDI4Rml2VEVzUGtKMUxfWF9IdXlrOWxIcEx3d1ZzR2xINVhXa3FlN2pLQmEyU0c2NVhhQUUzWk1kYXRzQlg5ODNUNg?oc=5",
+  "date": "2026-10-10T01:04:52.000Z",
+  "publisher": "Real Estate",
+  "source": "portco:yarra-capital-management",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "yarra-capital-management"
+ },
+ {
+  "id": "b670c26cb23e",
+  "firm": "tpg",
+  "title": "Airtel Money lists on LSE at £5.3bn valuation",
+  "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1ZamV1SHpHcWlDM1VOUlhpdENkeVhCMWJ5UWs2RF94Q1FUM19VMV9OZ3B4dWVjOW9KQUYwZU1uX0VyQ0hKcXhzTE1kaG5GUFRQR3dacm9BX3dHaFZ2dml6cnJ5ZXgwbEdleEg1QmRMLUtVeEU?oc=5",
+  "date": "2026-10-10T00:17:22.000Z",
+  "publisher": "Punch Newspapers",
+  "source": "portco:airtel-money",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "airtel-money"
+ },
+ {
+  "id": "9936f6f2977f",
+  "firm": "ta-associates",
+  "title": "Viridian Magnesium Supplement Review UK 2026",
+  "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0zelRJbXdfLUNmeGtfelVFWTJqZXJWWk9vUUlBTk5WeS1ZNXA4Ym5US19haEoxSFh6U191V0Q3RUptak9QRWFnNTAtbzJRUnpZS3g2UkEwRkZQOXk0OUduODlfRFo1X200cHdDdA?oc=5",
+  "date": "2026-10-10T00:00:00.000Z",
+  "publisher": "https://balancejournal.co/",
+  "source": "portco:viridian-financial-group",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "viridian-financial-group"
+ },
+ {
+  "id": "07ff9696f4e2",
+  "firm": "kkr",
+  "title": "Visitors view art works of Yayoi Kusama at Stedelijk Museum in Amsterdam",
+  "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOS2RYcjFQMlA0cjY4WlRTUExyaWg5ajJGdGxXNktwQ2hsRjQxcG44WnJ6ZXZzZW05Z1ZqUmswNU54dlQzRjBrRW5BY19FaU84blFybXRpc3p5UGhLTjBzYUNtZndzel9PNkpEWXRYUkkwVkhkaDZtUWtLNFNvY0taSmxuNHh5QQ?oc=5",
+  "date": "2026-10-09T23:46:01.000Z",
+  "publisher": "Xinhua",
+  "source": "portco:yayoi",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "yayoi"
+ },
+ {
+  "id": "fba9062fe1c7",
+  "firm": "kkr",
+  "title": "Visitors view art works of Yayoi Kusama at Stedelijk Museum in Amsterdam-Xinhua",
+  "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOLTIwMGNVTk9VQzQwVm9NbnBpb0tiM2FvWWp6U3lsSnpBZWlWcmhLSWloc0JzMzhITzE4X2VTWWQ4d2QtNll6MjdaNzdCRlMyYkFQMXdIMkFGeVJoZjVLUU5TOG5DeEFRR2dlUWlFTkxMZERBRlFuUDc5V19TNFdhT2VOalVrUndmMTh5ZXFCSmFuZw?oc=5",
+  "date": "2026-10-09T23:46:01.000Z",
+  "publisher": "新华网",
+  "source": "portco:yayoi",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "yayoi"
+ },
+ {
+  "id": "cbe06972d43e",
+  "firm": "ta-associates",
+  "title": "Viridian Metals Inc. (VIRMF) valuation measures and financial statistics",
+  "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4wS3FfaHRTLWpUWjQtVGFFd2ZZNEsybjVmZDFuZ0RoWDFrLWJEMWN3UW8xWW84MmtqUEhxOVFBemwtNkxjano2S183NmxSem1qVjFQaXlVVElGMWM0SWFLalZ5dE5taTA?oc=5",
+  "date": "2026-10-09T23:42:36.000Z",
+  "publisher": "Yahoo Finance UK",
+  "source": "portco:viridian-financial-group",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "viridian-financial-group"
+ },
+ {
   "id": "bb3c587c89c7",
   "firm": "tpg",
   "title": "LigoLab Introduces AI-Assisted Voice Interface for Anatomic Pathology Workflows",
@@ -10336,16 +11095,16 @@
   "portco": "pathology-asia-holdings"
  },
  {
-  "id": "bd3772c42a11",
-  "firm": "tpg",
-  "title": "London Stock Exchange Welcomes Airtel Money to the Main Market",
-  "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQlk0bDJ2OHlIeFNMTW0yUUkzRVN4Ymc3Zkp5VGg4ekVBNFEwLV9VQ2ZoRmlXOUdrOUJvV244UzdEY2s2dTFaTUxVZWJwQWN5Rzctd0N5Y3pqOGNpUlpzNWl2b0FTbmZZM3YyUU1GbHdDaW1jcldEWUw5aFduSDVEcGJSQ1V6TFN1NUNfd2RhblVPWTlNR1B2Y192MGc0Rk9CaXAwcURmRDBONGVhVVY3S2VETUJoVEFwUkE?oc=5",
-  "date": "2026-10-09T23:01:56.000Z",
-  "publisher": "Nigeria Communications Week",
-  "source": "portco:airtel-money",
+  "id": "4f48a2f8da64",
+  "firm": "kkr",
+  "title": "THE NETHERLANDS-AMSTERDAM-YAYOI KUSAMA-EXHIBITION",
+  "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNM0VEUFdUVms1ZXRCbFJPXzZ3WmNFNlFWYXItLUtqaEdLdUhFNlpIeHk2T0oxcGRzQU5EMWloa0hRZ29jd3RsVWZrelg5emNNV0Y5N0JHSHlPcnhHekozYkRvaUNhMDZlVE9WYktuLUxSSkl1bmJBd2FNRHJ6MHpSbkFwTmhxTTF0eVgxc0JsdmcyVXRvdWprZ0hPQQ?oc=5",
+  "date": "2026-10-09T22:45:00.000Z",
+  "publisher": "Big News Network.com",
+  "source": "portco:yayoi",
   "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "airtel-money"
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "yayoi"
  },
  {
   "id": "375b8bbae0d3",
@@ -10384,138 +11143,6 @@
   "portco": "momo"
  },
  {
-  "id": "7f280af5005a",
-  "firm": "ta-associates",
-  "title": "AI Payroll Dashboards: Gusto Rebuilds Gusto Pro Around a Multi-Client AI Assistant",
-  "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBQSUY0NkpFOTN4N0syc2x1NXVPQ1dWd05EQW5fSU1rMDhmbU1mYmtKZUIxRGhDSW5aN1JjMlJaX0RiamlNQTBmdFBhLWhQNmxZOUxfVF9aNnpkRHJZOWphMlozakx6OVE?oc=5",
-  "date": "2026-10-09T21:27:53.000Z",
-  "publisher": "Trend Hunter",
-  "source": "portco:payroll-inc",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "payroll-inc"
- },
- {
-  "id": "20d31bbed916",
-  "firm": "tpg",
-  "title": "Jio's $60-Billion Haircut: A Crashing Market, a Musk Post and a Roadshow on the Rocks",
-  "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdHhwbzBaSzJnQ3Qyc2ZWUHVGdWZ0dHQtX0tFaXFubno2LWM4dS1SQlNjRnFMTk5mSHJsT2RoaTd5VTBKZG85Z3NiZE84VnNXb1RicTg0UlNvdWtKMUVaVFFMOWtCb0NoSjVWblMta09YbWJCczhzZGxtZnQzX1JkcFZrVGRCeDhxMUJaV3RmZmd3c2cxOUNvWjVYZmZ5bDBTYlVOWUZaYWtUN0Z5T04xTk5TVzVpTXBrRXRLT0hWS3Bsd3Zz?oc=5",
-  "date": "2026-10-09T20:45:06.000Z",
-  "publisher": "BW Businessworld",
-  "source": "portco:jio-platforms",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "jio-platforms"
- },
- {
-  "id": "d35716e6cdc2",
-  "firm": "kkr",
-  "title": "Jio's $60-Billion Haircut: A Crashing Market, a Musk Post and a Roadshow on the Rocks",
-  "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdHhwbzBaSzJnQ3Qyc2ZWUHVGdWZ0dHQtX0tFaXFubno2LWM4dS1SQlNjRnFMTk5mSHJsT2RoaTd5VTBKZG85Z3NiZE84VnNXb1RicTg0UlNvdWtKMUVaVFFMOWtCb0NoSjVWblMta09YbWJCczhzZGxtZnQzX1JkcFZrVGRCeDhxMUJaV3RmZmd3c2cxOUNvWjVYZmZ5bDBTYlVOWUZaYWtUN0Z5T04xTk5TVzVpTXBrRXRLT0hWS3Bsd3Zz?oc=5",
-  "date": "2026-10-09T20:45:06.000Z",
-  "publisher": "BW Businessworld",
-  "source": "portco:jio-platforms",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "jio-platforms"
- },
- {
-  "id": "af000b8941d2",
-  "firm": "tpg",
-  "title": "Intranasal Rotenone Model Recreates Brain-First Spread of Parkinson’s Pathology in Mice",
-  "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOT0Z0NXlubm9qSVBsNWh2X19WRHZyUy1KX0FtT3JaMWwwenh4djBWdGIyZmJlQzdYMG5vNW5Bcm9BcnJvWl90Ulo5QjZyck1zX1JmM0gyWmctclJ5Q3A3cTdjajBHdXFTLWptcEo1NjVsdllxbmFXY3M4Z3F3NDRpa3BJUFFyUGQ1elh3ZnM4X0xESmp0OW4yTkFuSlVDMm9zYXNPdFFpdi1uUi13SEhZcw?oc=5",
-  "date": "2026-10-09T20:33:19.000Z",
-  "publisher": "Bioengineer.org",
-  "source": "portco:pathology-asia-holdings",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "pathology-asia-holdings"
- },
- {
-  "id": "665b1fb60ec1",
-  "firm": "kkr",
-  "title": "Jio Platforms targets valuation of $106 bn for India’s biggest IPO",
-  "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQV2JfUy14c3VKVFdSN3E5R2VpMXJ3MklScWZXRjJIM2ZwZjFuUVZxRmVNSTZCSHNaTDdOdXBBelFYby1WZjZfVXJsdlBRQ3VTOGJrb2FaWk05UTNZQkFzZ2FSTm5aY21hWDlFc21SMHE1ZFFiNkx5ZE9IcTVIWEZ5ZmdzSkxDemNGODVBQjNCbHBuaTlzVWs3Vm9RTUxiRGE1Uk5XdGt5akFqb2lCdzNv0gG0AUFVX3lxTE1EbjNqaDR0NF9UbkRQVVdSMndHRXlxRFFzWksxNlBaUTl5VXdFejFJZ05vRWkyMEphV2NUNlZUZFo2Z0g0UURydkZtbW1QOUF3YXZxTDByd00waXdSYXlHQ3dHQ1htb2t6cmtZY2xvWHhqVHJzdzNwQW5IWGM5aEFnSzdoRFdQaXpUVWtlM2lZWHQ0Q0tYVDR1UjRMQXlQVHV3XzBYajQ1QWlCN3VBQkVqWXFtYQ?oc=5",
-  "date": "2026-10-09T19:23:35.000Z",
-  "publisher": "MillenniumPost",
-  "source": "portco:jio-platforms",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "jio-platforms"
- },
- {
-  "id": "747e9899c741",
-  "firm": "tpg",
-  "title": "Jio Platforms targets valuation of $106 bn for India’s biggest IPO",
-  "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQV2JfUy14c3VKVFdSN3E5R2VpMXJ3MklScWZXRjJIM2ZwZjFuUVZxRmVNSTZCSHNaTDdOdXBBelFYby1WZjZfVXJsdlBRQ3VTOGJrb2FaWk05UTNZQkFzZ2FSTm5aY21hWDlFc21SMHE1ZFFiNkx5ZE9IcTVIWEZ5ZmdzSkxDemNGODVBQjNCbHBuaTlzVWs3Vm9RTUxiRGE1Uk5XdGt5akFqb2lCdzNv0gG0AUFVX3lxTE1EbjNqaDR0NF9UbkRQVVdSMndHRXlxRFFzWksxNlBaUTl5VXdFejFJZ05vRWkyMEphV2NUNlZUZFo2Z0g0UURydkZtbW1QOUF3YXZxTDByd00waXdSYXlHQ3dHQ1htb2t6cmtZY2xvWHhqVHJzdzNwQW5IWGM5aEFnSzdoRFdQaXpUVWtlM2lZWHQ0Q0tYVDR1UjRMQXlQVHV3XzBYajQ1QWlCN3VBQkVqWXFtYQ?oc=5",
-  "date": "2026-10-09T19:23:35.000Z",
-  "publisher": "MillenniumPost",
-  "source": "portco:jio-platforms",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "jio-platforms"
- },
- {
-  "id": "ddd1e589a152",
-  "firm": "tpg",
-  "title": "Airtel Money debuts on London Stock Exchange",
-  "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxONkJNREE3a3M2ZVZBRDNVTE9veXNYVnJOdTBRZjI4VURwQzI1cXNpMHJNM05OX2tDZk1LU2J3eFBpdmV6ckoyaUxKNjlDV1NnRXdkOFEzOUtBdjliZWlDeElRc0RsTWlqTkVXU21oQVNuN2ZQdk1icGNXdWtMb3NVc0JLeThjSXYyZzFnQ21Xcl9Wb1Bl0gGaAUFVX3lxTFBXZFFld191SDExSGQ0Z3gxQXg0cmhpczJfNlZHb3lydFV1M1BwWTNOMGxwbHM3ZWhrdlg1TkI1QlJic01GVWRaUDI5eFhYLXhHeHFoZUtUcmhZRFZERjNsTl9XaEVqRWR2RHRGR3lzaVgxR0FXY2syUnd3RTNNWTJOWnVRMEdHa1IyUTNGM2tNU0R3SVA3eGFZa0E?oc=5",
-  "date": "2026-10-09T19:23:15.000Z",
-  "publisher": "MillenniumPost",
-  "source": "portco:airtel-money",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "airtel-money"
- },
- {
-  "id": "bd93da6f5f3c",
-  "firm": "tpg",
-  "title": "Ambani Heir Faces Tough Questions In Meetings For Record Jio IPO",
-  "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVE9yN2NPSzZmQ0drTVI0UndtU3lCT0U5U1pqUG45Z1lIZi0wYkRrNHhZWTlmREVCOGloWnFDaTZHam95ME9CaWgtbjEwWWtRUnFURUh0eGx5aEx0TXl5ellrMlBDenNNN1RsQ2FjbXZWdlZzNkNnYWpIZkxVZWdtTGxXRWZJNkJiaExMUXY1VUpxU05palpSckh3YzE5NFFTaWZIb2s5UjLSAbABQVVfeXFMTjQzSjNpbExiQjJGdmVDT05GLXFqZjdhZTRwZ0l6S0lhVDhoSTRNeHlsWUpNMmlsSFI5VXY1SU55d0ZFS3YzSkF0ZlFCT2U4NW5raGgzNzMteXMxZ0dtZVRoUjF0RFU1R2ZyOEV2RG8zNzVjZ2xyV3ZBU0QwaEFYcDBuY1Q5c0hwNVpsRENZRmtQdHpJU0hEa1ZKZDh3NUJnaUFsZzlIeGN3MVE5MzJPMV8?oc=5",
-  "date": "2026-10-09T19:19:17.000Z",
-  "publisher": "NDTV",
-  "source": "portco:jio-platforms",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "jio-platforms"
- },
- {
-  "id": "958b81bcbdc1",
-  "firm": "tpg",
-  "title": "Airtel Money Marks London’s Biggest Debut in Years",
-  "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQ1R0R0VJcGhCd3VpM3BVLXM3UmtqMTRhRVFYNXVaS29Cck5MY2ZWRGVWMHpBMzJfdms1eVU1TzFzMnYzdk91ekRpRmdEdXRybHVNRXIxakFWOENmZUY1MkstM0NvTHBISkZORUpQYU9mR1M2TUFjQkJrWFp2QzByR25KcXI0YWZYb29rc1M0T3FHcGhrVHQxZUtOa1NKUjVCRGY0TkFERlFaMTF6YkNrM05GNA?oc=5",
-  "date": "2026-10-09T19:18:04.000Z",
-  "publisher": "Bloomberg.com",
-  "source": "portco:airtel-money",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "airtel-money"
- },
- {
-  "id": "945128e3c86e",
-  "firm": "ta-associates",
-  "title": "SBJ 360: MLB playoff brings success for low payroll clubs",
-  "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5NTUVnalI2Y2x0b0xWeHVjZFV6RjhScjhLU3U3N0VqaTJlR1ZjN2FYS0NoUm1mRU1iZTBsUDYyVUJ2SFM5UWVXNTU0V2JkLUQxeVlKdzlvVThrQmNFSzZMTGNxQV80a3ktU2ZpMHEyUWtlSWFG?oc=5",
-  "date": "2026-10-09T18:36:40.000Z",
-  "publisher": "Sports Business Journal",
-  "source": "portco:payroll-inc",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "payroll-inc"
- },
- {
-  "id": "446e667d7ab8",
-  "firm": "eqt",
-  "title": "Santa Barbara Fiduciary Launches Presidio Private to Help Families Prepare for the “What Ifs”",
-  "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQaGg4UWpXQ2ZRa1pqZldEYXFicVdSbDlpdTBfVEd0ZGZKNzdkeWdhNlM2YkpkeDRfbWF2V2ZldmlkTGhOcGFIZGdvY1VPVDhtVjFKTF9xMVNmNTEyeVBheWx5SUg1Rnhta3N1VUtPbEVDZEZpUUl5R3pWbjdqc1hHaWRHRW92ZXM4SGhhWGpWQl9ORk5IdTdYMV9oYU9KZ1lCU2drZ2x1UVpJNzhpNFYxZTd6dmNmX0xCOURjX2tRaFUtOW14QmxjekFRcw?oc=5",
-  "date": "2026-10-09T18:18:04.000Z",
-  "publisher": "The Santa Barbara Independent",
-  "source": "portco:ifs",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "ifs"
- },
- {
   "id": "575e77bdd262",
   "firm": "warburg-pincus",
   "title": "GCash IPO seen putting PH firms back on foreign investors’ radar",
@@ -10526,30 +11153,6 @@
   "official": false,
   "firstSeen": "2026-10-09T23:37:40.680Z",
   "portco": "gcash"
- },
- {
-  "id": "bb2c177722c2",
-  "firm": "tpg",
-  "title": "Airtel Money makes London Stock Exchange debut with $7 billion valuation",
-  "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxORmg2aVRDYmE3dTA0QXI1OVlVX0Z6bzVxUF9VM3ZvVEEzUW9JVFZwb21yRERVOE95TS1oaERtS0RXaHRFVEMzZVNTWUNGY09nVkI0a2ItQkltTHk4Q2RjakFnVDh6UE9obEZYT3hxdnNmdGtJT3JmUThubXJFMkwxNE1neW9FOW0zX1pxdlZ0SnZBdU1XaksxZVpsQW9LZkVUeTBVQkVURE1aNnA0RVRGcGR6cHRkdXl5SW5Ga0hPeWZUSFJYalNwNU8xNFk4OWlDRmd2Ty1aWVlhYkc40gHcAUFVX3lxTE5GaDZpVENiYTd1MDRBcjU5WVVfRnpvNXFQX1Uzdm9UQTNRb0lUVnBvbXJERFU4T3lNLWhoRG1LRFdodEVUQzNlU1NZQ0ZjT2dWQjRrYi1CSW1MeThDZGNqQWdUOHpQT2hsRlhPeHF2c2Z0a0lPcmZROG5tckUyTDE0TWd5b0U5bTNfWnF2VnRKdkF1TVdqSzFlWmxBb0tmRVR5MFVCRVRETVo2cDRFVEZwZHpwdGR1eXlJbkZrSE95ZlRIUlhqU3A1TzE0WTg5aUNGZ3ZPLVpZWWFiRzg?oc=5",
-  "date": "2026-10-09T18:15:21.000Z",
-  "publisher": "Business Standard",
-  "source": "portco:airtel-money",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "airtel-money"
- },
- {
-  "id": "3d063f247f2f",
-  "firm": "tpg",
-  "title": "London Stock Exchange Welcomes Airtel Money Debut on £5.3 billion Valuation",
-  "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQbk9GNkdCcEZGdDUtNmczamE2QlN0ZkdYV3FNY1NqM3piTjBuQ25sYk04N0pkNVBpVl81ODJ5Q3lzVjJzZ2x6aVlxSUJnb2FwWmFZaXRnR2JLSkxseW9tbGNIeHB5UnpKV0xLM0g5QzRQTHRsazFfY0RmNlRldkQyZGdLRExzamFlVGl1dXZyUmlkcTVwYlBGUWVXNEw?oc=5",
-  "date": "2026-10-09T18:13:32.000Z",
-  "publisher": "Techeconomy",
-  "source": "portco:airtel-money",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "airtel-money"
  },
  {
   "id": "e5febe1bf971",
@@ -10600,18 +11203,6 @@
   "portco": "fractal-analytics"
  },
  {
-  "id": "47df10120833",
-  "firm": "ta-associates",
-  "title": "State of the Twins' payroll: 2027 salaries on the books, toughest decisions, and flexibility",
-  "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxON3VPMTJRejBEM0xHUko3NV93UWU3RzhLQ2pBTUxsUWZuS1F2WXh0a0dYd2twN1VDaWdMamhWR1lNVFY2R0JWTnF2cnlUTmdJY0pnYXlNTTFna3Y2ZEpOSm11eS1tcEVCaEVLOVBHdm5DOU83TlNWamRiLVFRU3hlbTFpN0VCelNhXzJYb2p0MVhGYjNPc2RsbWlJNXBnTFlZTGJ6OFlnZ2RGYnBmTGMtZVpsWHc2Q3RLSnc?oc=5",
-  "date": "2026-10-09T16:02:29.000Z",
-  "publisher": "AaronGleeman.com",
-  "source": "portco:payroll-inc",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "payroll-inc"
- },
- {
   "id": "058e84f86f30",
   "firm": "warburg-pincus",
   "title": "Wanted to Kill - Had to Marry: New \"Firefly Wedding\" Trailer Introduces Hitman Shinpei Goto",
@@ -10624,30 +11215,6 @@
   "portco": "goto-group"
  },
  {
-  "id": "5fe2dfbaf92c",
-  "firm": "tpg",
-  "title": "Aiforia and PathAI Partner to Expand Access to Digital Pathology AI Tools",
-  "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQRmttaElYbWZWRmVfNWhtd1M5aGdVN20zQ2haXzJvaFo3ajhFMWFpd3JsRk1GSFdESHhKb2gwdmdXVVNlOE5tc1JPT3N4LVVyanBZTWlURmM4U19oYTQ0WkdVQi1uOE9fV3VUQkNSMHFOOUFrUmxoN3lMQzJvZHFWNEVpNVpKRXcyNXp6QTlrdGhoSHVDcmswYkZTZzNFd1ZrWWFqcFNuOUdSZXRHVlZfdDJDQjZHdHZH?oc=5",
-  "date": "2026-10-09T15:43:38.000Z",
-  "publisher": "Clinical Lab Products",
-  "source": "portco:pathology-asia-holdings",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "pathology-asia-holdings"
- },
- {
-  "id": "e8d8c987c31c",
-  "firm": "eqt",
-  "title": "IFS Loops: How Agentic AI Moves From Insight to Execution",
-  "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBTRGp3aE5QcHcxbEFtSFYwUURkT1F2WFFHUmVMckFtQkRHaFg0T0s4ckpqYzAxMDhmV1A4NkYweEtHRDhCSW95QnBqQ21UUjJPb2MzSDZYSy1BNzBMR1FkcTNiVDJ3ZGV2QnNieA?oc=5",
-  "date": "2026-10-09T15:12:55.000Z",
-  "publisher": "ERP Today",
-  "source": "portco:ifs",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "ifs"
- },
- {
   "id": "39072467286b",
   "firm": "warburg-pincus",
   "title": "Stage set for GCash’s record P92.3B IPO, October 20 listing eyed",
@@ -10658,18 +11225,6 @@
   "official": false,
   "firstSeen": "2026-10-09T23:37:40.680Z",
   "portco": "gcash"
- },
- {
-  "id": "c5cfe62eef37",
-  "firm": "eqt",
-  "title": "IFS vs. BX: Which Stock Should Value Investors Buy Now?",
-  "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5XUVZEYk1YeHhldDJ0VlhaTVhGZkpRTTNSbFgxOHdvb2hZZ0ZuY1IzdGlfUmoyWlFiSUt1c3JyWTdDSUF2R0VGRWlBeVVZa2Rhem9IZUVVbGhjXzdMdUI0WG52RVltdG5jQU1CNlJWVmtwSU5NNXBmQWhB?oc=5",
-  "date": "2026-10-09T14:40:02.000Z",
-  "publisher": "Yahoo Finance Australia",
-  "source": "portco:ifs",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "ifs"
  },
  {
   "id": "f673b5316a0c",
@@ -10720,18 +11275,6 @@
   "portco": "gcash"
  },
  {
-  "id": "99ff4f850d2b",
-  "firm": "ta-associates",
-  "title": "AI data center boom adds almost 20K U.S. payroll jobs a month, RenMac says (XT:NASDAQ)",
-  "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUDhwN0ptdHU4azNjZTRtd3Q4Ym0xVDBNRUthc1BoY2xRZXNHbzhIbUZFaU5OTDhxUWdmU21YQXpxdzJkYndocnZhbUNLT1NBTThiaTRzU1dwVFN2dW9FMlRxSkZ4Y2VEQmVfSXVDb2hhbmhoTjd1MGxUOHp3WTI0aTl2Nk9XRmVxV2k0QWZKam5mYnpwTWJQaXVadXFmWUlpcElVSFpVM01xTUg0cUE?oc=5",
-  "date": "2026-10-09T13:06:39.000Z",
-  "publisher": "Seeking Alpha",
-  "source": "portco:payroll-inc",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "payroll-inc"
- },
- {
   "id": "98ab42eb2978",
   "firm": "eqt",
   "title": "PropertyMe links Claude and ChatGPT to live agency data with AiMe Connect",
@@ -10756,18 +11299,6 @@
   "portco": "unit4"
  },
  {
-  "id": "5dd649ecd278",
-  "firm": "eqt",
-  "title": "India celebrates IFS Day on October 9",
-  "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNYlVmYUlJYmk4aGRJc1RiWkpWaTkzdlBpZVpZTy1YVXVwemxxMlFOSXBrR0JsM0puQ3hPUzdCckpJSU1UMy1mS084YVZISG4yTjRHMlJTQVc5SG1NY3czc0hyRkVBa2MyTDNNWnNab1FvM0x0eEpqTmZNMG9kWEt5MUktQnNWcENrbGFfcDNaN2hnendNbU5pa1h2dHBuYWFzMENCbGt4WS1oQWdKbDAtU01n?oc=5",
-  "date": "2026-10-09T11:43:53.000Z",
-  "publisher": "Manorama Yearbook",
-  "source": "portco:ifs",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "ifs"
- },
- {
   "id": "99aec668a2ec",
   "firm": "kkr",
   "title": "Yayoi Kusama Museum new exhibit unveils a ‘ladder to heaven’",
@@ -10778,18 +11309,6 @@
   "official": false,
   "firstSeen": "2026-10-09T23:37:40.680Z",
   "portco": "yayoi"
- },
- {
-  "id": "4a559151f4e6",
-  "firm": "eqt",
-  "title": "Joshua Garcia, Julia Barretto ponder what-ifs in new 'Always Yours, Never Mine' scene",
-  "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPQmxrcGgwRGNsa1lQTDU3TDl2Ti13V0IxVzBKZW1xTEFiNmlFaWpwV01PR2hlMGFfODhBMUUwWkdUb0RjcUh3VWFtcUVONm1xVndWZUJMU2RKVU5JejZ4dlMtbEVkYzJqOXVuVFJ1T1RwWmZNQlczTGd0c182Z3VMdUJoREZrUGVMblluRmduTHJtVGxvT2tObTFnak5GOWpKdmdPUVhxM1hDTVpXYVdnVGYtNHhzV25pTGo5OThJeUdudFVuUDdjNEJsVTRyeE1oOVp2QWw5cnRKUnNSWExweEJB?oc=5",
-  "date": "2026-10-09T11:00:35.000Z",
-  "publisher": "ABS-CBN",
-  "source": "portco:ifs",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "ifs"
  },
  {
   "id": "982d602b6660",
@@ -10864,28 +11383,16 @@
   "portco": "nuix"
  },
  {
-  "id": "cd9c9ba8445c",
+  "id": "7c55ff25c050",
   "firm": "ta-associates",
-  "title": "A century of kindness: Yarra Valley local Gloria Reade celebrates 100 years",
-  "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNSllYWVpOd1IzMV9LQnBzWHc3TFVFYzJJMGk1STB0RXFDTUM5TVQtOHFpWkRfc1Q0UmZHanRHSVFBc09FX2hsQnBmYUwyamJja2trZl9ObE5mcEdVc25YZXBRc0NNQWhRcVlBdzY1Y1NTOGxtN0VQTnM4SHNOalFyOEplZkl3Nmt5RXhrcVprUXB5RGpvQkM2TWNZWXJ2b09ZNjNEUkMwaUtwcEFMdEFZMGVaRnNhMVB5a3luSlZPMEttb3BHVTBjTw?oc=5",
-  "date": "2026-10-09T00:09:31.000Z",
-  "publisher": "Lilydale Star Mail",
-  "source": "portco:yarra-capital-management",
+  "title": "RBC Capital Maintains Viridian Therapeutics(VRDN.US) With Buy Rating, Maintains Target Price $38",
+  "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQTWJSRElkOUlCMmdXWGUxaXZ0eW03UXlHRy1NYjQ0ZVZYTnRmV2dfUFVjNFNOUWpOREtLZUVVd1JETEwtSkFhRW1UcWlaOWd0RldIUTJIREhGUlF3YTZ0c2FmOHRqU0tMWlV0NlNmd3VIRy0tZnpyYzllb2tRTG5HNjVyejhNdnl6dTZ0YU94M3Z6b3VmYUxCWUtMaVc1SjR5dTFyamlNYzZpQ3daNjVlc0JOZWhLdmdoMER4cA?oc=5",
+  "date": "2026-10-09T02:31:00.000Z",
+  "publisher": "Moomoo",
+  "source": "portco:viridian-financial-group",
   "official": false,
-  "firstSeen": "2026-10-09T00:13:53.254Z",
-  "portco": "yarra-capital-management"
- },
- {
-  "id": "8b5ab50c49f2",
-  "firm": "ta-associates",
-  "title": "Digital meter milestone helps outer east homes track water usage",
-  "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOSHc4b1BaaEEwNzBlajRNWThrdWlmZ0IxU0lCMFk2Y0pHTXh2alM1MVF1aVprNkdfcFlIY053dzNDbTE3WGZRczdKdUJCb21GYjBUN1lHbWd3bFFlVWI4UW5iUnF1eDI1cWYyeXBlZU5uYndpR09laGdwMzRfMGh4U1c1a3pqUFZaYkxlRGFmdWZIV2RJMnZrTUhncjRyVExCSUxKc3V1czRyTDR4VndtdE9ZN1dxZmxSOFZpbDdn?oc=5",
-  "date": "2026-10-09T00:03:49.000Z",
-  "publisher": "Upper Yarra Star Mail",
-  "source": "portco:yarra-capital-management",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "yarra-capital-management"
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "viridian-financial-group"
  },
  {
   "id": "965dc2c94174",
@@ -10898,30 +11405,6 @@
   "official": false,
   "firstSeen": "2026-10-09T23:37:40.680Z",
   "portco": "gcash"
- },
- {
-  "id": "e8f1a9c717bd",
-  "firm": "warburg-pincus",
-  "title": "PSE enters new territory with GCash’s IPO. But to thrive, it must go further.",
-  "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPTGprUy03U0hUSWFQdmxuNG5saUc1ZE9Ka3kyMDM2ck9xODhHeHNGZjNJdlliMTdibzFqeXoxN3lTb2Mwa3hTR0xCN1N1X2VBbXVHZXNEZzVwOUwwU3NIRlJtT2VtNnB3ZTItMl9VQnhobUFxUDVsSW53cEJDc2RNSml6VFFxNk4yRkNteg?oc=5",
-  "date": "2026-10-08T23:26:03.000Z",
-  "publisher": "Rappler",
-  "source": "portco:gcash",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "gcash"
- },
- {
-  "id": "4dea504ed608",
-  "firm": "ta-associates",
-  "title": "REVEALED: Liquidator appointments for businesses in the Yarra council area for October 8",
-  "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQZVZPd1lfZnRscVJuR0NWd2xBcjJWakxoX3pxQzNiSEtyUm1DZElmclJrck9HRjZpazc3ZEdDUjFQdXB4blVCUWk0ZXd6NEdkbjZNc0RrbC1xQThZdGFJRUwtVHJTNEZjSmZpSS1DNjVsOFE1WTBBQXFLTk1NRUo2OEZrYTBSSDhmMi1rNFJKT1pQcEg5RW52UEVXbzRvOGlaQUl5WTYxMkg1S19iSV90NzRickw0c0pzZVZXWUxLcHlWNmo3M1doclVrQlJDVHNHM2duLWhuN1NvaUhjSVE0dnlqeGJMa20wcDdMVktkUGkxdVI5blJqVQ?oc=5",
-  "date": "2026-10-08T23:15:43.000Z",
-  "publisher": "Herald Sun",
-  "source": "portco:yarra-capital-management",
-  "official": false,
-  "firstSeen": "2026-10-09T00:13:53.254Z",
-  "portco": "yarra-capital-management"
  },
  {
   "id": "4c190a71479b",
@@ -10948,18 +11431,6 @@
   "portco": "nuix"
  },
  {
-  "id": "0dcd8a4ebc7c",
-  "firm": "ta-associates",
-  "title": "Have your say to improve road safety on Rathdowne Street",
-  "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOTFNuT3JKa3c4MnNxOFRfOVVadnctUDBhaG4wa1h4QXU5b2VQdzU1TzFRVVNBM05HWjVEUVhwOEs4Y3NwOTZ4ZDAtcTFPRkhsT0JsZ09QT0JYbFVhcXlOcVFDNFlCZ3BmRUdMQkM4WGpidkdrREV0RnR6Tk9Tb1ZyeEpYYXMtdGFMSk84MlZpckk5ckc0OENpSnctbE1ZdkQtdkRxOTRyd21ERl9nQmVz?oc=5",
-  "date": "2026-10-08T22:53:56.000Z",
-  "publisher": "Yarra City",
-  "source": "portco:yarra-capital-management",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "yarra-capital-management"
- },
- {
   "id": "6cb664c0a6c9",
   "firm": "ta-associates",
   "title": "Total debt of Viridian Metals Inc – FWB:PG6",
@@ -10970,18 +11441,6 @@
   "official": false,
   "firstSeen": "2026-10-09T23:37:40.680Z",
   "portco": "viridian-financial-group"
- },
- {
-  "id": "5feb6e30c8e4",
-  "firm": "tpg",
-  "title": "Blood biomarkers help track gut pathology in celiac disease",
-  "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPdjh5Q1hpU3ViSjN1cmgwM3RQRnVDUFNQNXVfdGRwQkl3ZDZNUGVNODAyZXVvY2NPaS1kR0drQy1jbzBNcS1OSXpCb0g2XzVCZFY0VU9PTE9GRnlaN3kyc2ZqdTVtYXhZaFE4YlJieThHMUFGWkViSUZRUkhNN21lQ3MtSGxmZVdvdW5PZWUyM1NqLUoyZUluZ0JtLTZRTzNPdFRwNGxwWmZNMzQ?oc=5",
-  "date": "2026-10-08T18:49:00.000Z",
-  "publisher": "News-Medical",
-  "source": "portco:pathology-asia-holdings",
-  "official": false,
-  "firstSeen": "2026-10-09T00:13:53.254Z",
-  "portco": "pathology-asia-holdings"
  },
  {
   "id": "41e71f74a3ee",
@@ -10996,48 +11455,12 @@
   "portco": "aptean"
  },
  {
-  "id": "6d1b5364af73",
-  "firm": "warburg-pincus",
-  "title": "Naa Momo Lartey Calls for Stronger Enforcement of Social Protection Laws",
-  "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1rZWdXcUZRX2xmLTJJcmdWSHpNeHo4dk9hajQ2elctbnZtdG5NdTgzYTh6MDlVcjBMeE9MQm1VTHlsbHU1OTNQOGlWb01CSlhuTzBvRW05S2dGYWlZY1lkc1Q1RdIBXEFVX3lxTE9Ic3VzOFJLRXRVWW5mOHBzRmJIdEtXb3BmdEU0ZGRyV1RrUS1Jdlg4ZTVMeE44T0d5aGk2WUdyRVRsRTJ4TDZ3VkFGaXV3ckJkMkZIek1BLXpvOWtQ?oc=5",
-  "date": "2026-10-08T16:42:36.000Z",
-  "publisher": "Modern Ghana",
-  "source": "portco:momo",
-  "official": false,
-  "firstSeen": "2026-10-09T00:13:53.254Z",
-  "portco": "momo"
- },
- {
   "id": "e9a5f4ec935c",
   "firm": "ta-associates",
   "title": "Viridian Metals Inc. (VIRMF) Recent Insider Transactions",
   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5aMjhQaFp4NHNRNTdTc3ZvTkRNbUN2OUdlMUI1M3NqWHBuTV8zMmNSMWxLMDJFVUtEc2NUSjR0eks2bmFxZUtYcG5NcEJDYnV5NFJ0UlpaQ2xFM0hRMVpQNTRjUUhBbjJmRDY4b2daRQ?oc=5",
   "date": "2026-10-08T16:41:58.000Z",
   "publisher": "Yahoo! Finance Canada",
-  "source": "portco:viridian-financial-group",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "viridian-financial-group"
- },
- {
-  "id": "adeb9db85024",
-  "firm": "ta-associates",
-  "title": "Viridian Metals Inc. (VIRMF) Insider Ownership & Holdings",
-  "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE42MlIyU3BZeDlXTHVuX2JOektWMlk3NzNMVUxnaG5QeGdsUHZ2LU5BTnJXZFVlRVVGU0hXWEk4RG1yeUJ5WWZRSXJlNGVOclR1WGx5OF9jUWp6YnBCNnZQZWR0eHh1OWM?oc=5",
-  "date": "2026-10-08T16:33:19.000Z",
-  "publisher": "Yahoo! Finance Canada",
-  "source": "portco:viridian-financial-group",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "viridian-financial-group"
- },
- {
-  "id": "2e1a08787874",
-  "firm": "ta-associates",
-  "title": "Viridian Metals Inc. (VIRMF) stock major holders",
-  "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1jM1FkOTdiTlRHN0d4OWJCbU4wdnBheG10U2hSQ3QyMVU3SEk5MmZZN0prczFpUmZ6N1NuVFBBUVZGc01KQ2EzV2RiTGdvSHQwTU55cU1UQjRhb3ZfNGc?oc=5",
-  "date": "2026-10-08T16:28:53.000Z",
-  "publisher": "Yahoo Finance UK",
   "source": "portco:viridian-financial-group",
   "official": false,
   "firstSeen": "2026-10-09T23:37:40.680Z",
@@ -11054,30 +11477,6 @@
   "official": false,
   "firstSeen": "2026-10-09T00:13:53.254Z",
   "portco": "capillary-technologies"
- },
- {
-  "id": "47d894971ebf",
-  "firm": "ta-associates",
-  "title": "Viridian, 2026 by Michael McHugh",
-  "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxORTZFYld0TmhUU3FqWHI2SUg3VWlEcDU1Q1VxMWg5UDV6b2g4d1VVa1lPZE9aREJzbzM0V1JpYXlyUVdLRm1pWG50SGRpR0c1NEk2engwQ3dXdm9MWnVuLTk4d08tdkEyTTJ4di1SYXhaYldhaDBYbHp6S2cwUXFMWGJlb3V5VDRmMVZnM2Y4NmxyMElxcTVF?oc=5",
-  "date": "2026-10-08T15:19:50.000Z",
-  "publisher": "Ocula",
-  "source": "portco:viridian-financial-group",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "viridian-financial-group"
- },
- {
-  "id": "373528fda71d",
-  "firm": "tpg",
-  "title": "A psychiatrist warns that ignoring dual pathology fuels stigma and leads to a wrong approach.",
-  "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOUHhON0ZUSUJfTFlMNDY5aTl3RXVRUkVGTHlCdWg3Vlk0OTZsS1Y3czlVVkhIRzU4OFphbDdDQlU0UGR5M1A4cTZHcThyc0xXUFBBWHZGZDh5UnJjQ095SUNqWXIxZ2V2S0xMUk1Ec3ZaN3M2MUlYdjAyYjltbzlXYThyRlhXZ0htN0VVTEZwRG5zTjd4RU43c2x1Z1pGYU9HTDltel9WUDNxY1ZRbHJlZllNbjRaSjJsdzNReHNkWXRsY3U0d3NF0gHMAUFVX3lxTFBMa0t1MTBXUGxrX2ZQNTR5THUyOHBaU1NUTDZrOEFFMlozR2Zna3hRT2RFYUVyY19vY25GbWlrOTV5dE9UeU5QS0cxa2c5dEdSSU5PTHp0Q3o2SUxqWENZemtWdGlPS05FUUdJeEtaZ0g3U3FpSHk2Q3dsYWdfV1dYNkdjcjV5RzdfRjhyRnd6R1hPdExIYWN2cEszT3NPelNtVE1zRVU4eEVZU2lSUTNCeDNHQ0JFTEpQOU5FYkpWY2d5cEE2ZGlYWGQwNQ?oc=5",
-  "date": "2026-10-08T14:48:50.000Z",
-  "publisher": "Demócrata",
-  "source": "portco:pathology-asia-holdings",
-  "official": false,
-  "firstSeen": "2026-10-09T00:13:53.254Z",
-  "portco": "pathology-asia-holdings"
  },
  {
   "id": "3fd3446da545",
@@ -11260,6 +11659,18 @@
   "portco": "waystar"
  },
  {
+  "id": "80704bd15537",
+  "firm": "warburg-pincus",
+  "title": "Digital Adoption Platform Whatfix Partners with LKQ Europe",
+  "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOaDFBTmk1TEtBejI1bGlfanV6ZHpxdV9fdkVFcWgyeU5xWU1NR0VJZHJCZFZtbXc5Q3RibV83ZFRTdm5nVEpsYmltMkxrRDYwZG5jWW1CTnFzcktGdlNEVHFLa2xnYm9UZ18zSjdjQ2JRWWpVMXJydnVsN3Z5aXN5c1V0ZGhBNTQ?oc=5",
+  "date": "2026-10-07T20:47:18.000Z",
+  "publisher": "Finovate",
+  "source": "portco:whatfix",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "whatfix"
+ },
+ {
   "id": "900105657dd6",
   "firm": "warburg-pincus",
   "title": "Whatfix Archives",
@@ -11308,18 +11719,6 @@
   "portco": "perfios"
  },
  {
-  "id": "7243658c1d11",
-  "firm": "warburg-pincus",
-  "title": "MTN Unveils Upgraded MoMo App That Is Faster, Safer, and Easier To Use",
-  "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQR3dKQ0lyVFN2N1B6cjlDS3oxaDUtUVJLeTBqZVd4ZkJWcWE0SFR0RWt0b3hac1NzcmFISkEzdFNxcFZTUVNFQlJ0c1BYSlVHdE9sY2ZleHhqWUl0amFpQTJQblVYcXVEOXdYdmljYU1GMlM1MENaQi02b3BPTUVVRExKQ091ZGkzMFRMUEMwcnZsZW1Cb05iVDdjbENrZDRHS285ZF84VUtKSVZyM1HSAbYBQVVfeXFMTVZ4S0pSakNXc3NQY3pUOXhienQyVm96emZqRFhYczVFSGRvbGNVTVdBX1pXSVlfYjlKeDk3OFdIcjFBLVJjSVVkcGhIbGpoME42a3cxLW5VdDhpQ1VfTl9USUdhYVhFV1BhNTZrUEhjV2MzY3Q0NFBVWlBlTHRXQlFnMVI5VnhGMG45RFAyaWdNTEpYeHQ2ZVhka3ZuYW50d1RvZ3Fqc0xVVHhOWE5KdGVOelFNdFE?oc=5",
-  "date": "2026-10-07T17:03:31.000Z",
-  "publisher": "Nilepost",
-  "source": "portco:momo",
-  "official": false,
-  "firstSeen": "2026-10-09T00:13:53.254Z",
-  "portco": "momo"
- },
- {
   "id": "efab80573cd0",
   "firm": "tpg",
   "title": "Fractal Analytics sets up AI subsidiary in Qatar Free Zones",
@@ -11342,30 +11741,6 @@
   "official": false,
   "firstSeen": "2026-10-08T00:14:37.721Z",
   "portco": "sapia-ai"
- },
- {
-  "id": "471315d0e5db",
-  "firm": "kkr",
-  "title": "Yayoi Kusama and her impact on India",
-  "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOc1pVUHdxeGNUZkgwdzN5ZWg5OUJVb1B3R1htVVhtZXlsaGhZZmViU2tGYUtYRXZ2dTZ5bm5aZ1VLQ285aC1WcTZIeHlsbE5DNzgzS3pabkRvaVBqNTFwalRVamVCR0Q0LWZwTjRGSkNKb0JZNFhKdHhpTXhfU1RfMlV1WVFKX1Q5bEwzc1pscy1hdGNOYUZyaDdtbTBiRHRwRGtuNXZ2bEM3NjlScnItVlp1R1dqYWQxNml3R0Rn0gHDAUFVX3lxTE9wOUZCSUhzeHhvcm5Ta25uc25XblQ1YlNHSlAxR3VEX0VPalFLXzlFbjY5b3BxMWIxRGpWN1I4bERPRmVzSlNIX1I0U0U1aU9LX0twMWtrdHloNFZOenZJR1k0bk9KcFNpalhScUtZcWlNNmVrUWlIbTNZVGowX3c5dVpNc1dzWjB3cVI5dFBNTUJsQ3RLUW9xeUVkQWRRTWJsY1JKMnZfdm56ZUtzZHNmTTkyUDc5RHRoMjJDWmtSeEtRdw?oc=5",
-  "date": "2026-10-07T15:10:00.000Z",
-  "publisher": "The Times of India",
-  "source": "portco:yayoi",
-  "official": false,
-  "firstSeen": "2026-10-08T00:14:37.721Z",
-  "portco": "yayoi"
- },
- {
-  "id": "c8d38d7ce787",
-  "firm": "warburg-pincus",
-  "title": "ECG warns customers against fake meter sales, MoMo scams",
-  "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOd0E4cXIwNEhKeTFkSXdsd2lrcFVhS1hmMEFjRFF0Z0djemZaVHVfcGRDWGowSkxJWXdRNnUzY014dnlWa295WERnT1VSbUwzLXAxT2Y5Z0ZydU5tRUpZRzZnM0lNc3lILXd5dnVIYkRReGwwdllNU0h2LWVOVmROaVFfSG53SnhBTVNKdWlSS3NpazE2WWhJcWZlY0V0M2RZTnc?oc=5",
-  "date": "2026-10-07T14:56:52.000Z",
-  "publisher": "GBC Ghana Online",
-  "source": "portco:momo",
-  "official": false,
-  "firstSeen": "2026-10-08T00:14:37.721Z",
-  "portco": "momo"
  },
  {
   "id": "896e55d23493",
@@ -11414,6 +11789,18 @@
   "official": false,
   "firstSeen": "2026-10-09T23:37:40.680Z",
   "portco": "whatfix"
+ },
+ {
+  "id": "71980eb8e409",
+  "firm": "ta-associates",
+  "title": "Fractal Analytics (FRACTAL.NS) Slips 2.81% to ₹721.3 as Shares Retreat Toward Key Support Zone - Percent Above MA",
+  "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPTVBTLWViUHlqMjJkbGo3LTNTbVNZUU1FdmYxc0QtZ0xNMllXcTFQbmZyN2ZzYWkzeXp5QUU3V0JEbUtQaC04WHZJSS03dFdDUnV0SEtkT290Y09hVlY0NDRxV3M5S2ZCUmpRTExRZ3FJOEh2SXAzbTdSbDhJY2FWdDRBY1BQVmVMYzhwSnR2ZW04dlhTYzlxNkk0WFJYNXBDcTJjNW5wZlBFSEdxdWdPVUlLZEdLZWZuWmw3Zy1TY1hfcW9qb3FOOHNR?oc=5",
+  "date": "2026-10-07T12:31:20.000Z",
+  "publisher": "https://www.siam.in/",
+  "source": "portco:fractal-analytics",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "fractal-analytics"
  },
  {
   "id": "4efe4e8f2efc",
@@ -11512,18 +11899,6 @@
   "portco": "myob"
  },
  {
-  "id": "47816ece85cc",
-  "firm": "kkr",
-  "title": "Yayoi Kusama's seminal art in pictures",
-  "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0taVg3b0tZR0U4akVXbGN0Z1FJbDVDalpLWWd1VjV5ZTUwZk9Md3UxenpERkdwSVp0blpLSHdZM29CQkNlRGd0elJpOHltaUxMell5akMyU1N2UER1aTBIbnhpV1NvWS1RUTFlYzJaUndRQjV6amszTUxR?oc=5",
-  "date": "2026-10-07T02:01:05.000Z",
-  "publisher": "DW.com",
-  "source": "portco:yayoi",
-  "official": false,
-  "firstSeen": "2026-10-08T00:14:37.721Z",
-  "portco": "yayoi"
- },
- {
   "id": "9c1a58dbd9e9",
   "firm": "eqt",
   "title": "PropertyMe connects Claude and ChatGPT to the market-leading platform 6,500 real estate agencies run their business on",
@@ -11546,6 +11921,18 @@
   "official": false,
   "firstSeen": "2026-10-09T23:37:40.680Z",
   "portco": "zerra"
+ },
+ {
+  "id": "c3a17ff068e0",
+  "firm": "warburg-pincus",
+  "title": "PLDT, Smart unify loyalty programs with Capillary",
+  "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1xZElUYTllUUlWWDBxei1tbG5EaFRXdzcxV2F6VnBjelhkdGdqZVk5ZTNmTlZ4c3BYWmJ5ODV3d1c4c2ZaTDBMdFhudURwV0VOYjlTV19yRVFXbko5Vkw4MDhZMHJldTdJNkptVnltOVg4SGg5Y25mS1lPTEUtUdIBgwFBVV95cUxNemNxUVNjNVl0Nm15UldmUDRhWmFlV2ZmRlVyanVZbXh3eTFlT0ROVC1CbnZ1eUFtV29IQnBhdVo3TktLZlpPYzdGRlp3OHl1bEI4RmlUS3I4dm9CMW5LODRMZ2xHeEM0YU9ncFpYVU93MWkwSUZUQUd4UnlwOGJHMlh0bw?oc=5",
+  "date": "2026-10-07T00:39:57.000Z",
+  "publisher": "Back End News",
+  "source": "portco:capillary-technologies",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "capillary-technologies"
  },
  {
   "id": "99b987fc15b9",
@@ -11692,18 +12079,6 @@
   "portco": "sagility"
  },
  {
-  "id": "9d0e7943f23f",
-  "firm": "warburg-pincus",
-  "title": "Promega Launches 24-Capillary Spectrum CE System for STR Analysis",
-  "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTnR2WjVQSEU4YmFGeC1EcVhCaUF5NEpXUDJ3VmZqekpXVzFablU5bHU5NGV2eVBtM2tzbTlZNXpSM2pDZkg4TFdQWjZ2RnFFVW96VC1qNGhUcXhwNVRseDFPQVlvLUFKMjVfYVJBZzcwbDZUeVUzLVdQTjAxWHloMDJTVVNScDh5bjlqTUR6VV8yWHg5NFZhcnpxYzNJOHZqQVRVblM2NUtESWxjMEZHbE5pMVQ1Z3FocEplNnhDTQ?oc=5",
-  "date": "2026-10-06T07:00:00.000Z",
-  "publisher": "Business Wire",
-  "source": "portco:capillary-technologies",
-  "official": false,
-  "firstSeen": "2026-10-08T00:14:37.721Z",
-  "portco": "capillary-technologies"
- },
- {
   "id": "262229593439",
   "firm": "kkr",
   "title": "What Privy by IDfy's 50+ Enterprise Implementations Reveal About India's Privacy Reality",
@@ -11800,18 +12175,6 @@
   "portco": "insilico-medicine"
  },
  {
-  "id": "0a8137cb36fe",
-  "firm": "warburg-pincus",
-  "title": "PLDT, Smart Partner with Capillary to Unify Loyalty Programs",
-  "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxORzJYV2h3aHFycWFpQnVXX19mMGpEMzFSQkxITURRSXFQZjItT0wxRFNLbDBRSEQ4Rmk0V3hJR3R5STQ0VnRfS3pGd1ZNUTg2bG5zTGpESlNOMFBKaEN2SFA5eTZtRGhWVXh6LTdzQzBIRGkyMHdXSVNZVUw5LW5xX0tDWmZ0ZVhtSnZPZnFaanBYTHhwR2h6NzVfRlQ4RnFwT2RkZzRQdjkxWmRGLWREbFhILUw?oc=5",
-  "date": "2026-10-06T00:16:19.000Z",
-  "publisher": "The Fast Mode",
-  "source": "portco:capillary-technologies",
-  "official": false,
-  "firstSeen": "2026-10-07T00:14:27.072Z",
-  "portco": "capillary-technologies"
- },
- {
   "id": "b0845622324b",
   "firm": "macquarie-capital",
   "title": "Zerra DC Targets 2GW as AI Drives Regional Data Centre Demand",
@@ -11822,18 +12185,6 @@
   "official": false,
   "firstSeen": "2026-10-09T23:37:40.680Z",
   "portco": "zerra"
- },
- {
-  "id": "4783bb95ff06",
-  "firm": "warburg-pincus",
-  "title": "PLDT and Smart partner with Capillary to unify loyalty programs",
-  "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaUxWcktnNXhhdW44RGFpVUliZnBoamdnT3A5YUR0ekhKQ1Z4cFZ6dUdiVDdfaHdIc2tVS0oyRkpuVGdJblk3RUdOZzBmYWlMRUVUWmUtZWRqcFFPRHlXWGZTUGw0d1R4ZUNwX0N1dFc0RExuYXFvdldVNGFJN0J2MUdFX1pReHM4Sy0zb21Hd1U?oc=5",
-  "date": "2026-10-05T20:01:55.000Z",
-  "publisher": "Bilyonaryo Business",
-  "source": "portco:capillary-technologies",
-  "official": false,
-  "firstSeen": "2026-10-06T02:13:34.554Z",
-  "portco": "capillary-technologies"
  },
  {
   "id": "d07893342349",
@@ -11906,18 +12257,6 @@
   "official": false,
   "firstSeen": "2026-10-06T02:13:34.554Z",
   "portco": "cdata-software"
- },
- {
-  "id": "790d868c1601",
-  "firm": "kkr",
-  "title": "Yayoi Kusama at OGR Turin: Infinity Mirrored Room and The Quantum Effect",
-  "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9GaFZzbUZ0RVpPOU8ydk5ZeFB4bDZnMWdjdTdIZWhnTnI1MXdDeFpidzFQLVdwdTNwdXVoZlpjT1p1LVpWbVBVY0dfeW9yam4wUGJjc1dTUS1vcnQ5amYweFZBS29FNFhSN1NPYmZKN2dlZUpBdmRFVUZn?oc=5",
-  "date": "2026-10-05T12:37:41.000Z",
-  "publisher": "UniversiNet Magazine",
-  "source": "portco:yayoi",
-  "official": false,
-  "firstSeen": "2026-10-07T00:14:27.072Z",
-  "portco": "yayoi"
  },
  {
   "id": "f05ae40415e5",
@@ -12736,18 +13075,6 @@
   "portco": "whatfix"
  },
  {
-  "id": "d5f8895a4e92",
-  "firm": "warburg-pincus",
-  "title": "Whatfix: People Are the Missing Link in Digital Transformation",
-  "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5NRmZyYTZPcnJYY3VHMWk0S291dkIzb01XaWdNeF9nZHVNMlBta1pxck45NTYzOXBldzNaWmtOY2ZzcXhhZGR5WVVfQTRxT1hIc0V5S2J2QW92c1hGbU1CdXZybFYtY3g1aXAwRnNjdkRCTkc4LUUyeVRB?oc=5",
-  "date": "2026-09-29T18:22:40.000Z",
-  "publisher": "FTF News",
-  "source": "portco:whatfix",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "whatfix"
- },
- {
   "id": "d52d4c7feed9",
   "firm": "warburg-pincus",
   "title": "CData’s AI gateway governs agents’ access to enterprise data",
@@ -12796,18 +13123,6 @@
   "portco": "instructure"
  },
  {
-  "id": "135ebf03a99f",
-  "firm": "tpg",
-  "title": "Fractal Analytics to attend SBIFM-Amundi investor seminar on Oct 9",
-  "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSE5aS011VmwyWjREOGZpSVdiejNaWWc2ekxyVVp3U21WLVh3QVk1RmxUaUFVSGk3OGpJU1doaVZVYXhtQlRtSkNLbXQ4VnZYOW9hMDQ1SGhTeEF0akdZbXU4eFQ4c1pkb1JzSmN2bkFjTEpWSFRTb29tZkRKOE1CMkxySHhWd3BKMDFZTjEtQTdYTHEyMTNfazNhSXc3akhXSmFvRU5GU04tTUJkWDZhMkgxM181SjBo?oc=5",
-  "date": "2026-09-29T11:21:46.000Z",
-  "publisher": "scanx.trade",
-  "source": "portco:fractal-analytics",
-  "official": false,
-  "firstSeen": "2026-10-06T02:13:34.554Z",
-  "portco": "fractal-analytics"
- },
- {
   "id": "0f0fd2a481c9",
   "firm": "macquarie-capital",
   "title": "du Partners With Sapia.ai to Deploy AI-Powered Recruitment Across UAE Workforce",
@@ -12830,6 +13145,18 @@
   "official": false,
   "firstSeen": "2026-10-06T02:13:34.554Z",
   "portco": "sapia-ai"
+ },
+ {
+  "id": "e38ee75fae16",
+  "firm": "tpg",
+  "title": "Infomedia Press (INFOMEDIA.NS) Holds Near ₹5.19 as Stock Grinds Along Lower Support Band - Post-Earnings Moves",
+  "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQWWd6d0ZRWFhOUkYwNVN3cVFYWE9fbXl1b1FOcFpCaF9vR2YzX0NXX2FnbTlWckVIZklJdTVDelBpVlI3YjBQcUNPVjlSQVNIb05LOWlxZnYzWXRDQjFOaEVpeUdwMjBwRjZQbU1VVHRUdkp2QjMtbGVWSl9GV3YyQnYtai0zTjBPNjVJSHJhSUI1cUNadUFjaXkxSGVfTmVhQmtJZXRsQzJISXRFRE9oY0xadEh2SWVBXzVnbTA3am1EUndG?oc=5",
+  "date": "2026-09-29T07:00:00.000Z",
+  "publisher": "https://www.siam.in/",
+  "source": "portco:infomedia",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "infomedia"
  },
  {
   "id": "4601c41371f9",
@@ -13216,6 +13543,18 @@
   "portco": "straive"
  },
  {
+  "id": "93c0c13754d4",
+  "firm": "tpg",
+  "title": "Surescripts, Oracle Health partner on prior authorization tool",
+  "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPQVRuUFk1S0ZGdUUzV0xQVTV5YVdFY0s2V09ZMkVpenhhUXpGYkU4YjlWUGhKaE1sVlRTU2pBYmtBdUVvOGtBdmhOMGdGUzRiWkJIX1duaGpybldmaDl3RjdPVGNVNDQwTnYxRGxlRmdWNjhtVkNPck91WmpfTHc1NklyaXVNUTc1YXQzWlBOSDlmVzNEX3MtMnlLLXR5cDZiU3YxUnFpazB0MmZqM3ZkTmlvdlhFTFJmUHc?oc=5",
+  "date": "2026-09-24T07:00:00.000Z",
+  "publisher": "Investing.com",
+  "source": "portco:surescripts",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "surescripts"
+ },
+ {
   "id": "9e6951f8b923",
   "firm": "tpg",
   "title": "E-Prescribing Approval Workflows: Surescripts Brings Prior Authorization to Oracle Health",
@@ -13366,18 +13705,6 @@
   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNbEQ4REZXYXVHVXNqTHVqbGxHS1lmR2wxUG9HRDl6M1VPc2RwSnRseE12a2ZBd3hPMnN3TE5hZjQ3UG93YnZPZWMyMlhjNDRsM3R2UjJxZXltMUROMVF3SzFMNTdYMktBcE9QREp2QlMzZ2NONi1veXdyelo3SEtYTDNoN2UzNzJKbFRYZzdyVTRuNkFEbXc?oc=5",
   "date": "2026-09-21T07:00:00.000Z",
   "publisher": "Value Research",
-  "source": "portco:infomedia",
-  "official": false,
-  "firstSeen": "2026-10-06T02:13:34.554Z",
-  "portco": "infomedia"
- },
- {
-  "id": "3a4d72ee1471",
-  "firm": "tpg",
-  "title": "Infomedia Press AGM resolutions pass with 95.77% shareholder approval",
-  "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNR21EYUJLRllBVnBRbHRvYTJKTzZtM3laSzFSckVIcEJiUVRrWE4zRVBDM1VwNnRHclpCTW5YY0JjcU9Hay1UTk9XSUI3SFVzUUNtd3RUWkdoODEtNWRWMW9PQ2xoQjhFenltWEdEeVZxU01RcGJDRXViZ0E3MFU2RXBfOE1KbFM2Y0FZeXFBVVZEZDZjRi1IeUpNdjlEd2ZpOUtLV1dCWQ?oc=5",
-  "date": "2026-09-18T14:05:48.000Z",
-  "publisher": "scanx.trade",
   "source": "portco:infomedia",
   "official": false,
   "firstSeen": "2026-10-06T02:13:34.554Z",
@@ -13600,18 +13927,6 @@
   "portco": "perfios"
  },
  {
-  "id": "14337013cffd",
-  "firm": "macquarie-capital",
-  "title": "Sakana AI Researchers Introduce PC-ALM, a Layer-Local Alternative to Backpropagation That Trains 1000-Layer Networks",
-  "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPQVRXakFUdTN1dWhLQWdQYkdONm50aWR0VXNITjlDa1R0b0xvR2RlS1VsT3ZOZU1mUzBwSlVfRnZHcExzOWV2NXBYTmVlWmt5eXBlT21ObHhwc3ZMMHR2bndOVXFlNjR6Wjk0dmFVa0gtQmt6eU8xWWd3aDZHZEZnNW96SDlRNnpyZE9DWWNsazgyb1lWVGd6V1llbmFSZ0x5QUl6YmRUTWxRY1hPdGk1X2RwVnIyTmM3WXU4alJhWmwzYzZncU50Z255VlY2T2FyNUs2SzJ0TjdBZUxTejNEdzlmQzIzYzNGazVnY9IB7AFBVV95cUxPQVRXakFUdTN1dWhLQWdQYkdONm50aWR0VXNITjlDa1R0b0xvR2RlS1VsT3ZOZU1mUzBwSlVfRnZHcExzOWV2NXBYTmVlWmt5eXBlT21ObHhwc3ZMMHR2bndOVXFlNjR6Wjk0dmFVa0gtQmt6eU8xWWd3aDZHZEZnNW96SDlRNnpyZE9DWWNsazgyb1lWVGd6V1llbmFSZ0x5QUl6YmRUTWxRY1hPdGk1X2RwVnIyTmM3WXU4alJhWmwzYzZncU50Z255VlY2T2FyNUs2SzJ0TjdBZUxTejNEdzlmQzIzYzNGazVnYw?oc=5",
-  "date": "2026-09-14T07:00:00.000Z",
-  "publisher": "MarkTechPost",
-  "source": "portco:sakana-ai",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "sakana-ai"
- },
- {
   "id": "84fb5e62662f",
   "firm": "kkr",
   "title": "Instructure Appoints Stephan Geering as Chief Privacy Officer to Guide Responsible AI Strategy",
@@ -13672,6 +13987,18 @@
   "portco": "instructure"
  },
  {
+  "id": "c7f946348e64",
+  "firm": "macquarie-capital",
+  "title": "PhilTower joins GSMA, seeks stronger digital connectivity nationwide",
+  "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNFA2MkxvdWlPYnRqaThQZGJpVDc1akJieXMtQUxkT191cXRZa2tmV04wUlYtOUpGQ1NDbTRRMzZ0WDMxZDBFUE5mUmxsWWdfSldQN29GbUl1aTQ5YXczUVp5cGE3ekItUldBVkZfWldsQVp6QkdFM2NGVEc1aTVELVlnTFJFaVdKWXAwWVlxX2Q1U09TOV9R?oc=5",
+  "date": "2026-09-11T07:00:00.000Z",
+  "publisher": "Philippine Information Agency",
+  "source": "portco:philtower",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "philtower"
+ },
+ {
   "id": "1226beca13cb",
   "firm": "tpg",
   "title": "Nightmare end to Alcaraz dream",
@@ -13706,6 +14033,18 @@
   "official": false,
   "firstSeen": "2026-10-06T02:13:34.554Z",
   "portco": "oxane-partners"
+ },
+ {
+  "id": "9244783314b6",
+  "firm": "kkr",
+  "title": "SmartHR Revenue 2024: $53.6M Est., $1.6B Valuation (2021)",
+  "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1VUXllejdxWFFOMkJybnZJZ2p3Q2RVdkNFZElfLVpkRWlfcTEzN3B3YlJLUXRrYzFTMkZnLVNkVENhRWsyelAzdi15N2Iya28?oc=5",
+  "date": "2026-09-10T07:00:00.000Z",
+  "publisher": "GetLatka",
+  "source": "portco:smarthr",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "smarthr"
  },
  {
   "id": "cc59cb4fda24",
@@ -13828,16 +14167,16 @@
   "portco": "netsmart-technologies"
  },
  {
-  "id": "c8450ad893c4",
+  "id": "b4220e059a69",
   "firm": "tpg",
-  "title": "ScriptMed® Achieves Surescripts Certification for RxTransfer to Support Specialty, Infusion, and Hub Pharmacies",
-  "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPeE9KZVFkVTJWaFJWTlZrVFc3NkRzZG9TLTRfRnlEemVRdm9UeDJIaFVrdHNhVEtvN3R4MDBJQjVyMm9NTjNnc3lLVUYySDZmOFE1X2wxaGw1bENBdEFRTXVhbklobEllWVVfTGRGa1RkdTRmalFFRDAwZUxkelVCVzNWOUdDenhZbU9hWmY4SVByZ0NQcTlGN0dncnpzdVdfYXAzS0poeXVrc2JWZHlQSFhsMWNtQ0Z5a3hxT0NPRGJjcXVCSkl6VFdiNWppZllDbWFJOWpRRXBpeGVzWVFNemRHYTNRWlduVlRRWlVTek9hazdveFZLRw?oc=5",
+  "title": "Altimetrik wins AWS generative AI specialisation",
+  "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdExBYmlrem9GbXlOX2hPSzIyRlNRaU42OWV5ODFmYXBHLXBpWTdwT3hqT2h6LUljX0hUUk9yTUd6WmN1WjBHakMxeTdhNUs3YTQ5SjJjRlVfaHNUQXRicXA0YjZVVnZXa292czBoUFQyYWltaUtaYjk0akdTSGZDdUhERUpQZWM?oc=5",
   "date": "2026-09-03T07:00:00.000Z",
-  "publisher": "Business Wire",
-  "source": "portco:surescripts",
+  "publisher": "ChannelLife UK",
+  "source": "portco:altimetrik",
   "official": false,
-  "firstSeen": "2026-10-06T02:13:34.554Z",
-  "portco": "surescripts"
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "altimetrik"
  },
  {
   "id": "ce793fc15141",
@@ -13876,18 +14215,6 @@
   "portco": "altimetrik"
  },
  {
-  "id": "156b9ed7d914",
-  "firm": "tpg",
-  "title": "Altimetrik Achieves the AWS Generative AI Specialization",
-  "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOM3ZNYUQ5WU9DVU1OQ1B3N0kyeVkzaXhKU3J3YUoyWERvVkJITXlZZnFwLVV3QlhvaHEwN2RPdkpLSk5DVmVtS0draDVaWEZoNlpFQTU2c05jb05WNGlQeGtYYjZQZW9xTnljYXB0dTJzcl9vV2V4Z1p4c0JsSkFvQW9CVnhLSGZVYk5SQlE0SkhoVF9ZemI5LXBrTkp2MFhDcXNFYlRPVy0zcGRtU3ZIZDB5aGRCNmFWT2F1NkE2VDdHeHZoUHZEaHNvRXRGRTVkY2E40gHYAUFVX3lxTE1RWEdScl9oMTVKSWdqREJDTDQtRnRSQUVyUHdjUk9uX2NiOHNZcUQ3ZlhzYTJJeWlzN19ZSlhHS1ZqeUV5Q2NRYWE5ajE4QW00SjhPOGU0MXZhYURrbzVDMkhGbHJQTXpITnFFSVVOMkJRcG8wcVZyMlBQYmh2T0JmQlZDOWpibVhBWjlZRWllaG9QdVpyN2tsdEt1aHlkQ0NHUjZlNzEzdS1Kelpwbnc0Z1hFbUYwOENpVFBNWHVMMndyWUk0WGxSRVM0U1RYbE50cnpsNGd5Vg?oc=5",
-  "date": "2026-09-01T07:00:00.000Z",
-  "publisher": "Business Standard",
-  "source": "portco:altimetrik",
-  "official": false,
-  "firstSeen": "2026-10-06T02:13:34.554Z",
-  "portco": "altimetrik"
- },
- {
   "id": "33ce26840be2",
   "firm": "warburg-pincus",
   "title": "Avanse Financial Services - 2026 Latest Shareholding & Valuation",
@@ -13910,6 +14237,18 @@
   "official": false,
   "firstSeen": "2026-10-09T23:37:40.680Z",
   "portco": "sttgdc"
+ },
+ {
+  "id": "87a00bdc93c0",
+  "firm": "tpg",
+  "title": "AvidXchange Holdings Inc (AVDX) Financials – Balance Sheet, Profit & Loss, Cash Flow",
+  "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWlg5VC00OWxzN3dvUUp4bWo4ZjVGbFdBemNrM3NHWHFvbzdTSkhMTnB6R0ZQa05oUk1rWDZQcFVOYXQ2OG1nZzFBVjhPb2JSb1hNZjRWdU16UHMtUFFZdGtKNkRZdHBWblAwbEQwZ0VBM0ZVZjZGNGY2UTdCcUQtSENaTkhyZE1TaG5Zc0hsbjNYWGQtUHlWMV9qUmcyeUU?oc=5",
+  "date": "2026-08-30T19:54:31.000Z",
+  "publisher": "Value Research",
+  "source": "portco:avidxchange",
+  "official": false,
+  "firstSeen": "2026-10-10T23:39:14.030Z",
+  "portco": "avidxchange"
  },
  {
   "id": "0a680700a773",
@@ -14956,18 +15295,6 @@
   "portco": "sttgdc"
  },
  {
-  "id": "f87e550a3334",
-  "firm": "tpg",
-  "title": "AvidXchange Powers Embedded AP Payments for Acumatica Customers",
-  "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcE5UV3Mza2h6Slg3Wmp4ekJYOWdWbHlpa1EyVHFQUmdOT1RGbmJZT3ByWWh5d1VDd2lZSXc1TEQwRjdsOXBQTjE0RjlTZ0VMSWo0V2xEczhacFNLQ05FdkhZUkVzTmwySmI1cDl5Y1VLR2hfcmR5V0VjbEhzTGU1OFQwWV8tM3AxcUNVVE45Ti1RVnBMcEtKZHdwZS1IbGdpSFhOQ0ZVSk5SQzR4?oc=5",
-  "date": "2026-05-26T07:00:00.000Z",
-  "publisher": "Yahoo Finance",
-  "source": "portco:avidxchange",
-  "official": false,
-  "firstSeen": "2026-10-06T02:13:34.554Z",
-  "portco": "avidxchange"
- },
- {
   "id": "98261e85d4e1",
   "firm": "macquarie-capital",
   "title": "Aryza extends partnership with Citizens Advice to advance digital debt advice services",
@@ -15412,18 +15739,6 @@
   "portco": "philtower"
  },
  {
-  "id": "2b8a6bcb0893",
-  "firm": "macquarie-capital",
-  "title": "PhilTower MIDC completes 1000 built-to-suit telco towers in the Philippines",
-  "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSWZDNjBIM1FuTXJCZDVYLW5KR3ZPb2xiWldaMW5IQWZOWVE3MTFPMnNtSmxfNlpkSjNFekNpd3JldnNkRXdHc25xNWJSdFFCeE4yNWR3NS1naW5aOUZnYXl4OXVXMkxiUUU4RGdhYTljOTVuZC15RnE3U0VHNndpWjNVOVMxcmhTTlk0S296b1J4SFpxSC1hX0tLek1oUG1MSlZGSzd3?oc=5",
-  "date": "2025-11-21T08:00:00.000Z",
-  "publisher": "walastech.com",
-  "source": "portco:philtower",
-  "official": false,
-  "firstSeen": "2026-10-06T02:13:34.554Z",
-  "portco": "philtower"
- },
- {
   "id": "3c6dfbcfb86a",
   "firm": "navis",
   "title": "Technology aggregator Software Combined ups the ante in Holland with acquisition of WCC Group",
@@ -15466,18 +15781,6 @@
   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZFRJY0wyTzhoOFl5azNxUFZQb1U4RGtVaEVULTJFUmU3QnFqaWNSZGFMck51SFJXXzdwZko1QnlmVVl6QXdpRmx4RU1BTmpBZG9JbnY5Y3V4YkZCRkowUTdrUmpPTjZpaGsxeXhUSGRQc1BXbWROUGxSNGYwdC1ENjRPT0dpMEtlaE8zOURHb3RrQWtHcWdISDZYSkFiLTQ4NEVaaHRxbW03X1UyUnY1X0Q5RzNEVDFUektUZNIBwgFBVV95cUxONTVfMlUyZ0tKSi03RnNmeFVJeGUyMHVITFdyNHlCb0YwWDlrY2lqMGlyM0I5NENpSXlKd0ljeXh6cDJvSk1KbzN1TlNJa2ZCZXN0c1FYOWgzWDRnWTdrQWRVMkhYbE5ETHRjbXlMUndPZUxoekJod3hpUzRrS1ktYlB4eUhoUm1TZUFWXy1HRjlwb1luRlhYZjM3LUdYWFFtY000d3pnME4yNUl2ck5yOEZFQ1cwV1plY3pacGNzanFwZw?oc=5",
   "date": "2025-11-18T08:00:00.000Z",
   "publisher": "Pulse 2.0",
-  "source": "portco:smarthr",
-  "official": false,
-  "firstSeen": "2026-10-09T23:37:40.680Z",
-  "portco": "smarthr"
- },
- {
-  "id": "6cc96862312f",
-  "firm": "kkr",
-  "title": "Japan’s Largest Startup Secondary: Our Partnership with General Atlantic and SmartHR",
-  "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBjS2RHdGpHZDZKamFrcVZub1M2d1dIODllbFk0eHlnN2tablQtOW9pdkhVV1ItMU9uZHotN1d5ZTY5RS1TUXF5RE9kMVppNFJ0cy1mWG80bHBtRFh5bnJGWExjT2UwNkJjQUR3X2RwYVU4aF9OUzBMYw?oc=5",
-  "date": "2025-11-18T08:00:00.000Z",
-  "publisher": "Coral Capital",
   "source": "portco:smarthr",
   "official": false,
   "firstSeen": "2026-10-09T23:37:40.680Z",
